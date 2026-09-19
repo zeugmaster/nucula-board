@@ -2,17 +2,89 @@
 <export version="E">
   <design>
     <source>nucula-v2.kicad_sch</source>
-    <date>2026-09-20T00:24:19</date>
+    <date>2026-09-20T01:16:34</date>
     <tool>Eeschema 10.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
-        <title>Nucula v2 - USB-C, battery power and ESP32-C3</title>
+        <title>Nucula v2 - system interconnect</title>
         <company/>
-        <rev>A-draft</rev>
+        <rev>B-draft</rev>
         <date>2026-09-20</date>
         <source>nucula-v2.kicad_sch</source>
-        <comment number="1" value="Adapted from Olimex ESP32-C3-DevKit-Lipo Rev C; CERN-OHL-S-2.0"/>
-        <comment number="2" value="Schematic only / protected 4.2 V single-cell Li-ion / 100 mA charge"/>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/">
+      <title_block>
+        <title>Nucula v2 - USB-C, battery power and ESP32-C3</title>
+        <company/>
+        <rev>B-draft</rev>
+        <date>2026-09-20</date>
+        <source>power-mcu.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/">
+      <title_block>
+        <title>PN7160 I2C NFC controller and antenna matching</title>
+        <company/>
+        <rev>B-draft</rev>
+        <date>2026-09-20</date>
+        <source>nfc.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/OLED / SSD1309 / 0x3C/" tstamps="/5acfde84-8974-5dc1-b34a-03f7d512478f/">
+      <title_block>
+        <title>SSD1309 OLED glass interface and 12.5 V boost</title>
+        <company/>
+        <rev>B-draft</rev>
+        <date>2026-09-20</date>
+        <source>oled.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/Keyboard / breakaway / 0x20/" tstamps="/6c00fde6-8bde-5e2e-b170-424fcc6b0cd6/">
+      <title_block>
+        <title>Detachable PCF8574T keyboard interface</title>
+        <company/>
+        <rev>B-draft</rev>
+        <date>2026-09-20</date>
+        <source>keyboard.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
         <comment number="3" value=""/>
         <comment number="4" value=""/>
         <comment number="5" value=""/>
@@ -24,6 +96,214 @@
     </sheet>
   </design>
   <components>
+    <comp ref="C49">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Voltage">10 V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Tolerance">20%</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="10 V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Tolerance" value="20%"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7e18938f-73df-5f6d-8ba2-2bcf5cd19901</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C50">
+      <value>2.2uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Voltage">10 V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Tolerance">20%</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="10 V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Tolerance" value="20%"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3f352f1a-89d2-50a1-88ba-5d95c4c61168</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J4">
+      <value>MAIN LINK / OPTIONAL</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Assembly">DNP; populate to reconnect broken-off keyboard</field>
+        <field name="PCB Region">MAIN</field>
+        <field name="Pinout">1=3V3; 2=GND; 3=SDA; 4=SCL; 5=INT_N</field>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x05" description="Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Assembly" value="DNP; populate to reconnect broken-off keyboard"/>
+      <property name="PCB Region" value="MAIN"/>
+      <property name="Pinout" value="1=3V3; 2=GND; 3=SDA; 4=SCL; 5=INT_N"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>842cfe59-6e90-5aa3-b385-86e1b98c1d04</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R19">
+      <value>2.2k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>264e530d-9616-5ae1-9022-9d3c550b7ddf</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R20">
+      <value>2.2k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ec2951f0-2cbd-5dc4-9666-f9590809fa97</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R40">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>979d53e6-a49a-5886-87f7-eff9f80d2f1e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U9">
+      <value>MCP1700T-3002E/TT</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://ww1.microchip.com/downloads/en/DeviceDoc/MCP1700-Data-Sheet-20001826F.pdf</datasheet>
+      <fields>
+        <field name="MPN">MCP1700T-3002E/TT</field>
+        <field name="Manufacturer">Microchip</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://ww1.microchip.com/downloads/en/DeviceDoc/MCP1700-Data-Sheet-20001826F.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Regulator_Linear" part="MCP1700x-300xxTT" description="250mA Low Quiscent Current LDO, 3.0V output, SOT-23"/>
+      <property name="MPN" value="MCP1700T-3002E/TT"/>
+      <property name="Manufacturer" value="Microchip"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="regulator linear ldo"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b5fb9b3f-880e-5eed-abea-57580d7f0a8a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="3"/>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
     <comp ref="C1">
       <value>22uF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
@@ -39,11 +319,11 @@
       <property name="Voltage" value="10 V"/>
       <property name="Dielectric" value="X5R"/>
       <property name="Tolerance" value="20%"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>5fde2fe7-2a29-5c71-8fe3-4f7dd33aa30a</tstamps>
       <units>
         <unit name="A">
@@ -69,11 +349,11 @@
       <property name="Voltage" value="10 V"/>
       <property name="Dielectric" value="X5R"/>
       <property name="Tolerance" value="20%"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>0e974981-d311-57eb-97b6-dc83ad86da53</tstamps>
       <units>
         <unit name="A">
@@ -99,11 +379,11 @@
       <property name="Voltage" value="16 V"/>
       <property name="Dielectric" value="C0G"/>
       <property name="Tolerance" value="10%"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>667bec95-1424-5c70-9e75-0c625479ad49</tstamps>
       <units>
         <unit name="A">
@@ -129,11 +409,11 @@
       <property name="Voltage" value="10 V"/>
       <property name="Dielectric" value="X5R"/>
       <property name="Tolerance" value="20%"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>1863bf37-9a39-5e90-9ea6-402fa906e60f</tstamps>
       <units>
         <unit name="A">
@@ -159,11 +439,11 @@
       <property name="Voltage" value="10 V"/>
       <property name="Dielectric" value="X5R"/>
       <property name="Tolerance" value="20%"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>f3cab67a-f9ee-599c-896c-375a997c9bc4</tstamps>
       <units>
         <unit name="A">
@@ -189,11 +469,11 @@
       <property name="Voltage" value="10 V"/>
       <property name="Dielectric" value="X5R"/>
       <property name="Tolerance" value="20%"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>5b641081-95fa-51ca-badd-8265e4f1bf9b</tstamps>
       <units>
         <unit name="A">
@@ -219,12 +499,12 @@
       <property name="Voltage" value="16 V"/>
       <property name="Dielectric" value="X7R"/>
       <property name="Tolerance" value="10%"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="dnp"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>dea7d118-9510-50b4-b308-e7815c889dd3</tstamps>
       <units>
         <unit name="A">
@@ -250,12 +530,12 @@
       <property name="Voltage" value="16 V"/>
       <property name="Dielectric" value="X7R"/>
       <property name="Tolerance" value="10%"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="dnp"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>1b180e63-2891-5b81-a54b-71b80145e00b</tstamps>
       <units>
         <unit name="A">
@@ -281,11 +561,11 @@
       <property name="Voltage" value="10 V"/>
       <property name="Dielectric" value="X5R"/>
       <property name="Tolerance" value="20%"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>907b83cf-8e6a-5e32-a503-d24f735111ee</tstamps>
       <units>
         <unit name="A">
@@ -311,11 +591,11 @@
       <property name="Voltage" value="16 V"/>
       <property name="Dielectric" value="X7R"/>
       <property name="Tolerance" value="10%"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>80a7b244-ffbe-5c38-8309-15992c6e858a</tstamps>
       <units>
         <unit name="A">
@@ -341,11 +621,11 @@
       <property name="Voltage" value="16 V"/>
       <property name="Dielectric" value="X7R"/>
       <property name="Tolerance" value="10%"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>286653a8-6193-5f97-baed-bbfc9d6b69a1</tstamps>
       <units>
         <unit name="A">
@@ -371,11 +651,11 @@
       <property name="Voltage" value="16 V"/>
       <property name="Dielectric" value="X7R"/>
       <property name="Tolerance" value="10%"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>f75f0047-e691-5bba-ae47-e12d4204758b</tstamps>
       <units>
         <unit name="A">
@@ -401,11 +681,11 @@
       <property name="Voltage" value="16 V"/>
       <property name="Dielectric" value="X7R"/>
       <property name="Tolerance" value="10%"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>948ce316-44cc-5122-8a6b-b58bce7571b3</tstamps>
       <units>
         <unit name="A">
@@ -431,11 +711,11 @@
       <property name="Voltage" value="16 V"/>
       <property name="Dielectric" value="X7R"/>
       <property name="Tolerance" value="10%"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>b0633649-6e0f-59c9-8fe1-bbba7812acbb</tstamps>
       <units>
         <unit name="A">
@@ -447,26 +727,26 @@
       </units>
     </comp>
     <comp ref="D1">
-      <value>SS14</value>
+      <value>B340A</value>
       <footprint>Diode_SMD:D_SMA</footprint>
-      <datasheet>https://www.vishay.com/docs/88746/ss12.pdf</datasheet>
+      <datasheet>https://www.diodes.com/datasheet/download/B340A.pdf</datasheet>
       <fields>
-        <field name="MPN">SS14-E3/61T</field>
-        <field name="Manufacturer">Vishay</field>
-        <field name="Rating">40 V, 1 A</field>
+        <field name="MPN">B340A-13-F</field>
+        <field name="Manufacturer">Diodes Incorporated</field>
+        <field name="Rating">3 A / 40 V; SMA; layout thermal derating required</field>
         <field name="Footprint">Diode_SMD:D_SMA</field>
-        <field name="Datasheet">https://www.vishay.com/docs/88746/ss12.pdf</field>
+        <field name="Datasheet">https://www.diodes.com/datasheet/download/B340A.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
-      <property name="MPN" value="SS14-E3/61T"/>
-      <property name="Manufacturer" value="Vishay"/>
-      <property name="Rating" value="40 V, 1 A"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="MPN" value="B340A-13-F"/>
+      <property name="Manufacturer" value="Diodes Incorporated"/>
+      <property name="Rating" value="3 A / 40 V; SMA; layout thermal derating required"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="diode Schottky"/>
       <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>c556e5c3-d85a-53cf-9168-b40a8ab4a683</tstamps>
       <units>
         <unit name="A">
@@ -478,26 +758,26 @@
       </units>
     </comp>
     <comp ref="D2">
-      <value>SS14</value>
+      <value>B340A</value>
       <footprint>Diode_SMD:D_SMA</footprint>
-      <datasheet>https://www.vishay.com/docs/88746/ss12.pdf</datasheet>
+      <datasheet>https://www.diodes.com/datasheet/download/B340A.pdf</datasheet>
       <fields>
-        <field name="MPN">SS14-E3/61T</field>
-        <field name="Manufacturer">Vishay</field>
-        <field name="Rating">40 V, 1 A</field>
+        <field name="MPN">B340A-13-F</field>
+        <field name="Manufacturer">Diodes Incorporated</field>
+        <field name="Rating">3 A / 40 V; SMA; layout thermal derating required</field>
         <field name="Footprint">Diode_SMD:D_SMA</field>
-        <field name="Datasheet">https://www.vishay.com/docs/88746/ss12.pdf</field>
+        <field name="Datasheet">https://www.diodes.com/datasheet/download/B340A.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
-      <property name="MPN" value="SS14-E3/61T"/>
-      <property name="Manufacturer" value="Vishay"/>
-      <property name="Rating" value="40 V, 1 A"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="MPN" value="B340A-13-F"/>
+      <property name="Manufacturer" value="Diodes Incorporated"/>
+      <property name="Rating" value="3 A / 40 V; SMA; layout thermal derating required"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="diode Schottky"/>
       <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>dfe6ebe9-f665-54f0-ab9e-4c7190fa131c</tstamps>
       <units>
         <unit name="A">
@@ -518,11 +798,11 @@
         <field name="Description">Red indicator, populated; approximately 1 mA</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
       <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>a48fb3ea-f964-5e14-9479-9a3e8af1b2f8</tstamps>
       <units>
         <unit name="A">
@@ -547,11 +827,11 @@
       <libsource lib="Connector" part="USB_C_Receptacle_USB2.0_16P" description="USB 2.0-only 16P Type-C Receptacle connector"/>
       <property name="Manufacturer" value="GCT"/>
       <property name="MPN" value="USB4105-GF-A"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="usb universal serial bus type-C USB2.0"/>
       <property name="ki_fp_filters" value="USB*C*Receptacle*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>42a6e863-2f8a-5ae0-a699-660d029f6a70</tstamps>
       <units>
         <unit name="A">
@@ -591,11 +871,11 @@
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="MPN" value="B2B-PH-K-S(LF)(SN)"/>
       <property name="Manufacturer" value="JST"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="connector"/>
       <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>cd082d78-ca39-58be-8545-48813c058a91</tstamps>
       <units>
         <unit name="A">
@@ -624,11 +904,11 @@
       <property name="Previous MPN" value="NRS3015T2R2MNGH"/>
       <property name="Manufacturer" value="Taiyo Yuden"/>
       <property name="Rating" value="Isat &gt;=1.48 A, Irms &gt;=1.5 A; 2.2uH +/-20%"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
       <property name="ki_fp_filters" value="Choke_* *Coil* Inductor_* L_*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>0811c434-e182-5721-9c75-61a95fef227e</tstamps>
       <units>
         <unit name="A">
@@ -653,11 +933,11 @@
       <libsource lib="Transistor_FET" part="IRLML6402" description="-3.7A Id, -20V Vds, 65mOhm Rds, P-Channel HEXFET Power MOSFET, SOT-23"/>
       <property name="MPN" value="IRLML6402TRPBF"/>
       <property name="Manufacturer" value="Infineon"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="P-Channel HEXFET MOSFET"/>
       <property name="ki_fp_filters" value="SOT?23*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>79399427-b446-5303-843a-d11d21d52201</tstamps>
       <units>
         <unit name="A">
@@ -684,11 +964,11 @@
       <libsource lib="Transistor_FET" part="BSS138" description="50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23"/>
       <property name="Manufacturer" value="onsemi"/>
       <property name="MPN" value="BSS138"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="N-Channel MOSFET"/>
       <property name="ki_fp_filters" value="SOT?23*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>45197200-ab07-5f7b-8374-0767c462effb</tstamps>
       <units>
         <unit name="A">
@@ -713,11 +993,11 @@
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>d890758a-17ad-5c82-9729-3444e9947d6b</tstamps>
       <units>
         <unit name="A">
@@ -741,11 +1021,11 @@
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>75b09263-e031-5f30-97d4-a648e0ea7b42</tstamps>
       <units>
         <unit name="A">
@@ -769,11 +1049,11 @@
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>bc1a941c-2f57-5e63-8b7c-ff2a7ba69a83</tstamps>
       <units>
         <unit name="A">
@@ -797,11 +1077,11 @@
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>aee24e08-8da0-58f6-bcf3-3c7fa3cfe205</tstamps>
       <units>
         <unit name="A">
@@ -825,11 +1105,11 @@
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>1ec6074d-c4ca-54ab-a980-6fa82466bb01</tstamps>
       <units>
         <unit name="A">
@@ -853,11 +1133,11 @@
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="0.1%"/>
       <property name="Rating" value="0.1 W"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>4c311325-fe05-5245-93a6-485fcf86877b</tstamps>
       <units>
         <unit name="A">
@@ -881,11 +1161,11 @@
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="0.1%"/>
       <property name="Rating" value="0.1 W"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>8a9f864c-c28d-5149-a619-0acfd945122e</tstamps>
       <units>
         <unit name="A">
@@ -909,11 +1189,11 @@
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>28f9cca0-1767-559b-abe0-952e86422a61</tstamps>
       <units>
         <unit name="A">
@@ -937,11 +1217,11 @@
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>ac79a500-2f73-5b64-81e8-9dc9cf10aea6</tstamps>
       <units>
         <unit name="A">
@@ -965,11 +1245,11 @@
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>7c8f352f-fdff-5bfc-ad3e-20365e27c5ab</tstamps>
       <units>
         <unit name="A">
@@ -993,11 +1273,11 @@
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>5cf0af4f-da25-5efd-b54d-400d15cf5c52</tstamps>
       <units>
         <unit name="A">
@@ -1021,11 +1301,11 @@
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>fd246eef-8386-54c4-8b0d-f50e6a25d2d1</tstamps>
       <units>
         <unit name="A">
@@ -1049,11 +1329,11 @@
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>03bd6588-2248-5130-8c59-4fbe685d1bea</tstamps>
       <units>
         <unit name="A">
@@ -1077,11 +1357,11 @@
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>fa6beb57-0f48-5279-b615-025a512c2475</tstamps>
       <units>
         <unit name="A">
@@ -1105,11 +1385,11 @@
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>0e5e15a5-92f7-5471-9e96-4eec5db28ca1</tstamps>
       <units>
         <unit name="A">
@@ -1133,11 +1413,11 @@
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>b3ec53b3-5c2b-5fb8-91d3-b0bf8f631307</tstamps>
       <units>
         <unit name="A">
@@ -1161,11 +1441,11 @@
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>f28d4119-7baa-5c28-93dd-ff6156f2dc01</tstamps>
       <units>
         <unit name="A">
@@ -1189,11 +1469,11 @@
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>905967cb-3850-5498-a70c-6e1aee83d3d7</tstamps>
       <units>
         <unit name="A">
@@ -1217,10 +1497,10 @@
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
       <property name="MPN" value="B3U-1000P"/>
       <property name="Manufacturer" value="Omron"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>bf963711-220b-539b-9587-264bf5d9fb93</tstamps>
       <units>
         <unit name="A">
@@ -1244,10 +1524,10 @@
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
       <property name="MPN" value="B3U-1000P"/>
       <property name="Manufacturer" value="Omron"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>f5f0cf59-2c40-5dc0-a454-ea460c2c9e77</tstamps>
       <units>
         <unit name="A">
@@ -1272,11 +1552,11 @@
       <libsource lib="Nucula_Project" part="TP4054-42-SOT235" description="800mA Standalone Linear Li-Ion Battery Charger with Thermal Regulation in SOT23-5/TSOT23-5"/>
       <property name="MPN" value="TP4054-42-SOT235"/>
       <property name="Manufacturer" value="Top Power ASIC"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="Battery Charger"/>
       <property name="ki_fp_filters" value="SOT?23?5*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>58c5012b-5fea-5a1e-a7a2-40b1677cf0a3</tstamps>
       <units>
         <unit name="A">
@@ -1304,11 +1584,11 @@
       <libsource lib="Nucula_Project" part="SY8089AAAC" description="High Efficiency 5.5V, 2A continuous, 3A peak, 1MHz Synchronous Step Down Regulator"/>
       <property name="MPN" value="SY8089AAAC"/>
       <property name="Manufacturer" value="Silergy"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="DCDC"/>
       <property name="ki_fp_filters" value="SOT?23?5*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>7e705bc7-f671-571c-8ecd-7fd9c315aa79</tstamps>
       <units>
         <unit name="A">
@@ -1337,11 +1617,11 @@
       <libsource lib="Nucula_Project" part="ESP32-C3-WROOM-02-N4" description="ESP32-C3 Wi-Fi and Bluetooth LE module, 4 MB flash, PCB antenna, -40 to +85 C"/>
       <property name="MPN" value="ESP32-C3-WROOM-02-N4"/>
       <property name="Manufacturer" value="Espressif"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="esp32 espressif WiFi Bluetooth LE"/>
       <property name="ki_fp_filters" value="ESP32-C3-WROOM-02-N4"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>19caf1ff-6a81-527f-bbac-dceec7b6846a</tstamps>
       <units>
         <unit name="A">
@@ -1383,11 +1663,11 @@
       <libsource lib="Power_Protection" part="USBLC6-2SC6" description="Very low capacitance ESD protection diode, 2 data-line, SOT-23-6"/>
       <property name="MPN" value="USBLC6-2SC6"/>
       <property name="Manufacturer" value="STMicroelectronics"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="usb ethernet video"/>
       <property name="ki_fp_filters" value="SOT?23*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>abde35b5-7ac4-52cf-b388-2034731b4d8d</tstamps>
       <units>
         <unit name="A">
@@ -1416,11 +1696,11 @@
       <libsource lib="Nucula_Project" part="TLV803EA30DCKR" description="3.08 V supervisor, active-low open-drain RESET, 200 ms delay, DCK/SC70: 1 GND, 2 RESET, 3 VDD"/>
       <property name="MPN" value="TLV803EA30DCKR"/>
       <property name="Manufacturer" value="Texas Instruments"/>
-      <property name="Sheetname" value="nucula-v2"/>
-      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="supply voltage supervisor"/>
       <property name="ki_fp_filters" value="SOT?323* SC?70*"/>
-      <sheetpath names="/" tstamps="/"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>bafd9da2-9e3f-5112-80f9-a27c935447af</tstamps>
       <units>
         <unit name="A">
@@ -1428,6 +1708,2171 @@
             <pin num="3"/>
             <pin num="1"/>
             <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="A1">
+      <value>13.56MHz coil / TBD</value>
+      <footprint>Nucula_Project:NFC_Antenna_Interface_TBD</footprint>
+      <fields>
+        <field name="Status">PLACEHOLDER: no coil geometry or inductance selected</field>
+        <field name="Footprint">Nucula_Project:NFC_Antenna_Interface_TBD</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Nucula_Project" part="NFC_Loop_TBD" description="Two-terminal 13.56 MHz coil plus reference/shield ground; geometry and tuning TBD"/>
+      <property name="Status" value="PLACEHOLDER: no coil geometry or inductance selected"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>9a5ae9f3-ed58-5272-ac95-d1f39e2ff60d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C15">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Voltage">10 V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Tolerance">20%</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="10 V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Tolerance" value="20%"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>7827c62b-57bd-5eac-8936-7f6f7e7c2605</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C16">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Voltage">10 V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="10 V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>8102b47b-6782-564e-9c90-45ecd341fd54</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C17">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Voltage">10 V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Tolerance">20%</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="10 V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Tolerance" value="20%"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>2aa116b8-efc1-50a2-88ea-765f56b04573</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C18">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Voltage">10 V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="10 V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>e06f232d-72a6-5639-b736-1396373d4103</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C19">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Voltage">10 V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Tolerance">20%</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="10 V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Tolerance" value="20%"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>50737c67-94f6-523e-b668-7f2ce2fbc47a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C20">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Voltage">10 V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="10 V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>dd01c379-d7ba-577b-87f9-bd46bacfdfce</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C21">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Voltage">10 V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Tolerance">20%</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="10 V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Tolerance" value="20%"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>1b90b343-fe82-5100-ac13-57ab818b2927</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C22">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Voltage">10 V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="10 V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>2b2467de-da84-5958-87b1-da513ac99c69</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C23">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Voltage">10 V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Tolerance">20%</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="10 V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Tolerance" value="20%"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>2542e529-0579-5e0c-a680-704d9e184418</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C24">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Voltage">10 V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="10 V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>5ce926c3-cf4f-5359-8e9f-603ab491ca89</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C25">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Voltage">10 V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="10 V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>8e6991e6-9fb5-5bd0-b9c8-b88df6b4bf09</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C26">
+      <value>10pF START</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Voltage">50 V</field>
+        <field name="Dielectric">C0G</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="50 V"/>
+      <property name="Dielectric" value="C0G"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>9d8e11d5-60d6-58c4-a58e-9627b6414b4c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C27">
+      <value>10pF START</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Voltage">50 V</field>
+        <field name="Dielectric">C0G</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="50 V"/>
+      <property name="Dielectric" value="C0G"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>b818bbb2-b95d-519b-ae8e-91f505e9bed3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C28">
+      <value>TBD C_RX</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Voltage">50 V</field>
+        <field name="Dielectric">C0G</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="50 V"/>
+      <property name="Dielectric" value="C0G"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>7e2045d5-87e3-5d95-815e-387f5eff7f46</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C29">
+      <value>TBD C_RX</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Voltage">50 V</field>
+        <field name="Dielectric">C0G</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="50 V"/>
+      <property name="Dielectric" value="C0G"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>1e688433-df89-5108-a238-35c6ef34a22a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C30">
+      <value>TBD C_EMC</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Voltage">50 V</field>
+        <field name="Dielectric">C0G</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="50 V"/>
+      <property name="Dielectric" value="C0G"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>a67107f6-7473-5a38-b8d4-e1a9adc77f33</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C31">
+      <value>TBD C_EMC</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Voltage">50 V</field>
+        <field name="Dielectric">C0G</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="50 V"/>
+      <property name="Dielectric" value="C0G"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>848fedf4-9609-5abb-ab61-f1743acbad1b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C32">
+      <value>TBD C_SER</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Voltage">50 V</field>
+        <field name="Dielectric">C0G</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="50 V"/>
+      <property name="Dielectric" value="C0G"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>d02606c1-58d6-5d2c-8d9a-d6edc5c5aec2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C33">
+      <value>TBD C_SER</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Voltage">50 V</field>
+        <field name="Dielectric">C0G</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="50 V"/>
+      <property name="Dielectric" value="C0G"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>08e419f3-d600-5f3f-b76c-d82d85c11a10</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C34">
+      <value>TBD C_TRIM</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Voltage">50 V</field>
+        <field name="Dielectric">C0G</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="50 V"/>
+      <property name="Dielectric" value="C0G"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>63d1bfb8-494e-5bb3-9386-a2b22d1ab290</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C35">
+      <value>TBD C_TRIM</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Voltage">50 V</field>
+        <field name="Dielectric">C0G</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="50 V"/>
+      <property name="Dielectric" value="C0G"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>2c217a49-de39-5286-abea-33a5c9faeac8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C36">
+      <value>TBD C_SHUNT</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Voltage">50 V</field>
+        <field name="Dielectric">C0G</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="50 V"/>
+      <property name="Dielectric" value="C0G"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>7fbbc3b9-5ef9-59d0-b6e7-0c1c29c76438</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C37">
+      <value>TBD C_SHUNT</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Voltage">50 V</field>
+        <field name="Dielectric">C0G</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="50 V"/>
+      <property name="Dielectric" value="C0G"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>7b6ed097-34a4-58e1-99bc-820d5d93c04d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C38">
+      <value>TBD C_TRIM</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Voltage">50 V</field>
+        <field name="Dielectric">C0G</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="50 V"/>
+      <property name="Dielectric" value="C0G"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>79295eed-d456-53f0-8025-b3c052739fb7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C39">
+      <value>TBD C_TRIM</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Voltage">50 V</field>
+        <field name="Dielectric">C0G</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="50 V"/>
+      <property name="Dielectric" value="C0G"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>00c6a735-b197-5699-add5-a13337f517a1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L2">
+      <value>TBD L_EMC</value>
+      <footprint>Nucula_Project:L_Coilcraft_0805HQ_2012Metric</footprint>
+      <fields>
+        <field name="Status">TUNE: high-Q RF inductor, &gt;=0.5 A; self-resonance above operating band</field>
+        <field name="Reference Role">L1</field>
+        <field name="Footprint">Nucula_Project:L_Coilcraft_0805HQ_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="Status" value="TUNE: high-Q RF inductor, &gt;=0.5 A; self-resonance above operating band"/>
+      <property name="Reference Role" value="L1"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <property name="ki_fp_filters" value="Choke_* *Coil* Inductor_* L_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>42fcab6c-cfaf-503d-8759-1e3f7bce7aec</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L3">
+      <value>TBD L_EMC</value>
+      <footprint>Nucula_Project:L_Coilcraft_0805HQ_2012Metric</footprint>
+      <fields>
+        <field name="Status">TUNE: high-Q RF inductor, &gt;=0.5 A; self-resonance above operating band</field>
+        <field name="Reference Role">L2</field>
+        <field name="Footprint">Nucula_Project:L_Coilcraft_0805HQ_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="Status" value="TUNE: high-Q RF inductor, &gt;=0.5 A; self-resonance above operating band"/>
+      <property name="Reference Role" value="L2"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <property name="ki_fp_filters" value="Choke_* *Coil* Inductor_* L_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>6dbc3405-a2d4-5c31-be9b-c706e93d5ff9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R21">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>443d8287-0829-5cce-a2d8-1e6ae8226cb8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R22">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>85982226-4548-5931-8a5b-f5306e1107fd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R23">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>0e849f5c-9ca1-5f73-9ab0-092e8e5ef9af</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R24">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>2e658b18-b332-5440-ba05-a64d327fb2c7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R25">
+      <value>TBD R_RX</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>a59820dc-97f2-5f15-9a6e-1e67034b495c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R26">
+      <value>TBD R_RX</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>2ad3aeb7-83e8-503f-a0c0-4aeb3b316b3f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R27">
+      <value>TBD R_DAMP</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Rating">0.25 W; RF loss/temperature to verify</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Rating" value="0.25 W; RF loss/temperature to verify"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>a1f38158-82a9-5eb6-8e4a-d6fda96d2aae</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R28">
+      <value>TBD R_DAMP</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Rating">0.25 W; RF loss/temperature to verify</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Rating" value="0.25 W; RF loss/temperature to verify"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>56352fd9-9683-5ed0-8009-1987ecbddad1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R29">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>f2188a76-0cb1-519c-b623-7d05e3ea746f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U6">
+      <value>PN7160A1HN/C100E</value>
+      <footprint>Nucula_Project:PN7160A1HN_C100E</footprint>
+      <datasheet>https://www.nxp.com/docs/en/data-sheet/PN7160_PN7161.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">NXP</field>
+        <field name="MPN">PN7160A1HN/C100E</field>
+        <field name="I2C Address">0x28</field>
+        <field name="Footprint">Nucula_Project:PN7160A1HN_C100E</field>
+        <field name="Datasheet">https://www.nxp.com/docs/en/data-sheet/PN7160_PN7161.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Nucula_Project" part="PN7160A1HN_C100E" description="NXP PN7160 I2C NFC controller, HVQFN40 plus EP; pin 22 TVDD_IN2"/>
+      <property name="Manufacturer" value="NXP"/>
+      <property name="MPN" value="PN7160A1HN/C100E"/>
+      <property name="I2C Address" value="0x28"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>348c1185-a294-5096-8bfb-d4e7ffed9d42</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="5"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="10"/>
+            <pin num="2"/>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="39"/>
+            <pin num="37"/>
+            <pin num="40"/>
+            <pin num="30"/>
+            <pin num="29"/>
+            <pin num="11"/>
+            <pin num="32"/>
+            <pin num="33"/>
+            <pin num="34"/>
+            <pin num="35"/>
+            <pin num="36"/>
+            <pin num="38"/>
+            <pin num="6"/>
+            <pin num="28"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="18"/>
+            <pin num="22"/>
+            <pin num="31"/>
+            <pin num="26"/>
+            <pin num="27"/>
+            <pin num="17"/>
+            <pin num="25"/>
+            <pin num="21"/>
+            <pin num="19"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="23"/>
+            <pin num="24"/>
+            <pin num="4"/>
+            <pin num="9"/>
+            <pin num="20"/>
+            <pin num="41"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Y1">
+      <value>27.12MHz / CL TBD</value>
+      <footprint>Crystal:Crystal_SMD_SeikoEpson_TSX3225-4Pin_3.2x2.5mm</footprint>
+      <fields>
+        <field name="Manufacturer">Epson</field>
+        <field name="Candidate Family">TSX-3225 27.1200MHz</field>
+        <field name="MPN">TBD load capacitance / ESR / drive grade</field>
+        <field name="Status">27.12 MHz fixed; load capacitors require crystal selection</field>
+        <field name="Footprint">Crystal:Crystal_SMD_SeikoEpson_TSX3225-4Pin_3.2x2.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="Crystal_GND24" description="Four pin crystal, GND on pins 2 and 4"/>
+      <property name="Manufacturer" value="Epson"/>
+      <property name="Candidate Family" value="TSX-3225 27.1200MHz"/>
+      <property name="MPN" value="TBD load capacitance / ESR / drive grade"/>
+      <property name="Status" value="27.12 MHz fixed; load capacitors require crystal selection"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="ki_keywords" value="quartz ceramic resonator oscillator"/>
+      <property name="ki_fp_filters" value="Crystal*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>4f85ef23-3ea8-537b-918b-1203830baf56</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C40">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Voltage">10 V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Tolerance">20%</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="10 V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Tolerance" value="20%"/>
+      <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
+      <property name="Sheetfile" value="oled.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/OLED / SSD1309 / 0x3C/" tstamps="/5acfde84-8974-5dc1-b34a-03f7d512478f/"/>
+      <tstamps>1c4569f4-0cc5-5522-8bc3-47f37d64bf35</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C41">
+      <value>22pF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Voltage">50 V</field>
+        <field name="Dielectric">C0G</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="50 V"/>
+      <property name="Dielectric" value="C0G"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
+      <property name="Sheetfile" value="oled.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/OLED / SSD1309 / 0x3C/" tstamps="/5acfde84-8974-5dc1-b34a-03f7d512478f/"/>
+      <tstamps>fdba3c09-5d89-57d6-9424-2b8d8de123ac</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C42">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Voltage">25 V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Tolerance">20%</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="25 V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Tolerance" value="20%"/>
+      <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
+      <property name="Sheetfile" value="oled.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/OLED / SSD1309 / 0x3C/" tstamps="/5acfde84-8974-5dc1-b34a-03f7d512478f/"/>
+      <tstamps>1ac6b4e0-9732-5d0d-a0de-d67a3a492ceb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C43">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Voltage">10 V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="10 V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
+      <property name="Sheetfile" value="oled.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/OLED / SSD1309 / 0x3C/" tstamps="/5acfde84-8974-5dc1-b34a-03f7d512478f/"/>
+      <tstamps>d683cd50-ec64-5828-a1dc-8027ba0e1be9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C44">
+      <value>4.7uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Voltage">10 V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Tolerance">20%</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="10 V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Tolerance" value="20%"/>
+      <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
+      <property name="Sheetfile" value="oled.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/OLED / SSD1309 / 0x3C/" tstamps="/5acfde84-8974-5dc1-b34a-03f7d512478f/"/>
+      <tstamps>6e8c127a-b65b-5fc6-97dc-425c83667bd4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C45">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Voltage">25 V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="25 V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
+      <property name="Sheetfile" value="oled.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/OLED / SSD1309 / 0x3C/" tstamps="/5acfde84-8974-5dc1-b34a-03f7d512478f/"/>
+      <tstamps>feb4a930-a343-5538-8efc-497ce25a632a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C46">
+      <value>4.7uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Voltage">25 V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Tolerance">20%</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="25 V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Tolerance" value="20%"/>
+      <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
+      <property name="Sheetfile" value="oled.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/OLED / SSD1309 / 0x3C/" tstamps="/5acfde84-8974-5dc1-b34a-03f7d512478f/"/>
+      <tstamps>7dab9274-064c-5126-bdf1-d78dc3bcfc72</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C47">
+      <value>2.2uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Voltage">25 V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Tolerance">20%</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="25 V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Tolerance" value="20%"/>
+      <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
+      <property name="Sheetfile" value="oled.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/OLED / SSD1309 / 0x3C/" tstamps="/5acfde84-8974-5dc1-b34a-03f7d512478f/"/>
+      <tstamps>ef70034b-dc29-564a-a6cf-cde446293da5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C48">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Voltage">10 V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="10 V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
+      <property name="Sheetfile" value="oled.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/OLED / SSD1309 / 0x3C/" tstamps="/5acfde84-8974-5dc1-b34a-03f7d512478f/"/>
+      <tstamps>941ed04d-2252-5d04-97c7-b835dd0ce130</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D4">
+      <value>SS14</value>
+      <footprint>Diode_SMD:D_SMA</footprint>
+      <datasheet>https://www.vishay.com/docs/88746/ss12.pdf</datasheet>
+      <fields>
+        <field name="MPN">SS14-E3/61T</field>
+        <field name="Manufacturer">Vishay</field>
+        <field name="Footprint">Diode_SMD:D_SMA</field>
+        <field name="Datasheet">https://www.vishay.com/docs/88746/ss12.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <property name="MPN" value="SS14-E3/61T"/>
+      <property name="Manufacturer" value="Vishay"/>
+      <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
+      <property name="Sheetfile" value="oled.kicad_sch"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/OLED / SSD1309 / 0x3C/" tstamps="/5acfde84-8974-5dc1-b34a-03f7d512478f/"/>
+      <tstamps>4412fcc6-6e77-5c8a-bd74-a1c6fa436edd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="DS1">
+      <value>SSD1309 / 26-pad glass</value>
+      <footprint>Connector_FFC-FPC:Hirose_FH12-26S-0.5SH_1x26-1MP_P0.50mm_Horizontal</footprint>
+      <datasheet>https://files.waveshare.com/wiki/2.42inch-OLED-Module/SSD1309Datasheet.pdf</datasheet>
+      <fields>
+        <field name="MPN">TBD exact OLED glass</field>
+        <field name="Footprint Status">PROVISIONAL: confirm 26-pin 0.5 mm flex/contact side; may require solder pads instead</field>
+        <field name="I2C Address">0x3C</field>
+        <field name="Footprint">Connector_FFC-FPC:Hirose_FH12-26S-0.5SH_1x26-1MP_P0.50mm_Horizontal</field>
+        <field name="Datasheet">https://files.waveshare.com/wiki/2.42inch-OLED-Module/SSD1309Datasheet.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Nucula_Project" part="SSD1309_COG_26" description="26-contact OLED glass interface from Waveshare reference; FPC mechanics provisional"/>
+      <property name="MPN" value="TBD exact OLED glass"/>
+      <property name="Footprint Status" value="PROVISIONAL: confirm 26-pin 0.5 mm flex/contact side; may require solder pads instead"/>
+      <property name="I2C Address" value="0x3C"/>
+      <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
+      <property name="Sheetfile" value="oled.kicad_sch"/>
+      <sheetpath names="/OLED / SSD1309 / 0x3C/" tstamps="/5acfde84-8974-5dc1-b34a-03f7d512478f/"/>
+      <tstamps>2a3ab38c-5292-5ecc-ac25-dcc4a9a3a6be</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="5"/>
+            <pin num="23"/>
+            <pin num="21"/>
+            <pin num="22"/>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="24"/>
+            <pin num="25"/>
+            <pin num="26"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L4">
+      <value>10uH</value>
+      <footprint>Nucula_Project:L_Coilcraft_LPS4018</footprint>
+      <datasheet>https://www.coilcraft.com/en-us/products/power/shielded-inductors/ferrite-drum/lps/lps4018/lps4018-103/</datasheet>
+      <fields>
+        <field name="Manufacturer">Coilcraft</field>
+        <field name="MPN">LPS4018-103MRC</field>
+        <field name="Rating">Isat 1.1 A at 10% drop; Irms 0.9 A at 20 C rise</field>
+        <field name="Footprint">Nucula_Project:L_Coilcraft_LPS4018</field>
+        <field name="Datasheet">https://www.coilcraft.com/en-us/products/power/shielded-inductors/ferrite-drum/lps/lps4018/lps4018-103/</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="Manufacturer" value="Coilcraft"/>
+      <property name="MPN" value="LPS4018-103MRC"/>
+      <property name="Rating" value="Isat 1.1 A at 10% drop; Irms 0.9 A at 20 C rise"/>
+      <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
+      <property name="Sheetfile" value="oled.kicad_sch"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <property name="ki_fp_filters" value="Choke_* *Coil* Inductor_* L_*"/>
+      <sheetpath names="/OLED / SSD1309 / 0x3C/" tstamps="/5acfde84-8974-5dc1-b34a-03f7d512478f/"/>
+      <tstamps>b95d1ce8-0893-597f-9971-b3ef24588f98</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q3">
+      <value>IRLML6402</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.infineon.com/dgdl/irlml6402pbf.pdf?fileId=5546d462533600a401535668d5c2263c</datasheet>
+      <fields>
+        <field name="MPN">IRLML6402TRPBF</field>
+        <field name="Role">OLED boost input disconnect</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://www.infineon.com/dgdl/irlml6402pbf.pdf?fileId=5546d462533600a401535668d5c2263c</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Transistor_FET" part="IRLML6402" description="-3.7A Id, -20V Vds, 65mOhm Rds, P-Channel HEXFET Power MOSFET, SOT-23"/>
+      <property name="MPN" value="IRLML6402TRPBF"/>
+      <property name="Role" value="OLED boost input disconnect"/>
+      <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
+      <property name="Sheetfile" value="oled.kicad_sch"/>
+      <property name="ki_keywords" value="P-Channel HEXFET MOSFET"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
+      <sheetpath names="/OLED / SSD1309 / 0x3C/" tstamps="/5acfde84-8974-5dc1-b34a-03f7d512478f/"/>
+      <tstamps>e722ba33-29c2-58bc-912c-13b3d7d2262c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q4">
+      <value>BSS138</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.onsemi.com/pub/Collateral/BSS138-D.PDF</datasheet>
+      <fields>
+        <field name="MPN">BSS138</field>
+        <field name="Manufacturer">onsemi</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://www.onsemi.com/pub/Collateral/BSS138-D.PDF</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Transistor_FET" part="BSS138" description="50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23"/>
+      <property name="MPN" value="BSS138"/>
+      <property name="Manufacturer" value="onsemi"/>
+      <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
+      <property name="Sheetfile" value="oled.kicad_sch"/>
+      <property name="ki_keywords" value="N-Channel MOSFET"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
+      <sheetpath names="/OLED / SSD1309 / 0x3C/" tstamps="/5acfde84-8974-5dc1-b34a-03f7d512478f/"/>
+      <tstamps>9a8f3bfe-f322-5b89-98cc-4af6a2e1616d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q5">
+      <value>BSS138</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.onsemi.com/pub/Collateral/BSS138-D.PDF</datasheet>
+      <fields>
+        <field name="MPN">BSS138</field>
+        <field name="Manufacturer">onsemi</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://www.onsemi.com/pub/Collateral/BSS138-D.PDF</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Transistor_FET" part="BSS138" description="50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23"/>
+      <property name="MPN" value="BSS138"/>
+      <property name="Manufacturer" value="onsemi"/>
+      <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
+      <property name="Sheetfile" value="oled.kicad_sch"/>
+      <property name="ki_keywords" value="N-Channel MOSFET"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
+      <sheetpath names="/OLED / SSD1309 / 0x3C/" tstamps="/5acfde84-8974-5dc1-b34a-03f7d512478f/"/>
+      <tstamps>3255348a-2e70-552c-8e7e-6f7775eed747</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R30">
+      <value>1.8M</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tolerance">0.1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="0.1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
+      <property name="Sheetfile" value="oled.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/OLED / SSD1309 / 0x3C/" tstamps="/5acfde84-8974-5dc1-b34a-03f7d512478f/"/>
+      <tstamps>d93b035f-1222-567a-9e36-6af54c9db0e3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R31">
+      <value>200k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tolerance">0.1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="0.1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
+      <property name="Sheetfile" value="oled.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/OLED / SSD1309 / 0x3C/" tstamps="/5acfde84-8974-5dc1-b34a-03f7d512478f/"/>
+      <tstamps>93be78f2-eafd-5ed9-9ab1-3f97b2775191</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R32">
+      <value>910k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
+      <property name="Sheetfile" value="oled.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/OLED / SSD1309 / 0x3C/" tstamps="/5acfde84-8974-5dc1-b34a-03f7d512478f/"/>
+      <tstamps>6c0a6cee-12e2-5e96-91c7-2e3e92c3286a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R33">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
+      <property name="Sheetfile" value="oled.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/OLED / SSD1309 / 0x3C/" tstamps="/5acfde84-8974-5dc1-b34a-03f7d512478f/"/>
+      <tstamps>69dd729d-5fd2-5b9e-a36f-4b190821ec39</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R34">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
+      <property name="Sheetfile" value="oled.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/OLED / SSD1309 / 0x3C/" tstamps="/5acfde84-8974-5dc1-b34a-03f7d512478f/"/>
+      <tstamps>af462215-9f31-5cc9-9963-80b9acb78de5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R35">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
+      <property name="Sheetfile" value="oled.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/OLED / SSD1309 / 0x3C/" tstamps="/5acfde84-8974-5dc1-b34a-03f7d512478f/"/>
+      <tstamps>a7380c19-38c2-5f39-a07e-c13fabf903f8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R36">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
+      <property name="Sheetfile" value="oled.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/OLED / SSD1309 / 0x3C/" tstamps="/5acfde84-8974-5dc1-b34a-03f7d512478f/"/>
+      <tstamps>ac5a819a-5ec3-5d3e-96bf-9ea742e6ae38</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U7">
+      <value>AP3012KTR-E1</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <datasheet>https://www.diodes.com/datasheet/download/AP3012.pdf</datasheet>
+      <fields>
+        <field name="MPN">AP3012KTR-E1</field>
+        <field name="Manufacturer">Diodes Incorporated</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">https://www.diodes.com/datasheet/download/AP3012.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Regulator_Switching" part="AP3012" description="500mA, Adjustable Step-Up Voltage Regulator, 1.5MHz Frequency, SOT-23-5"/>
+      <property name="MPN" value="AP3012KTR-E1"/>
+      <property name="Manufacturer" value="Diodes Incorporated"/>
+      <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
+      <property name="Sheetfile" value="oled.kicad_sch"/>
+      <property name="ki_keywords" value="Step-Up Boost Voltage Regulator"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
+      <sheetpath names="/OLED / SSD1309 / 0x3C/" tstamps="/5acfde84-8974-5dc1-b34a-03f7d512478f/"/>
+      <tstamps>c257c2f9-28b0-5617-9827-0c05ce7929cd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="5"/>
+            <pin num="4"/>
+            <pin num="2"/>
+            <pin num="1"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C51">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="PCB Region">BREAKAWAY_KEYBOARD</field>
+        <field name="Voltage">10 V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="PCB Region" value="BREAKAWAY_KEYBOARD"/>
+      <property name="Voltage" value="10 V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value="Keyboard / breakaway / 0x20"/>
+      <property name="Sheetfile" value="keyboard.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Keyboard / breakaway / 0x20/" tstamps="/6c00fde6-8bde-5e2e-b170-424fcc6b0cd6/"/>
+      <tstamps>b4207ed7-271e-5292-9fb7-ecbd22c586a2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C52">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="PCB Region">BREAKAWAY_KEYBOARD</field>
+        <field name="Voltage">10 V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Tolerance">20%</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="PCB Region" value="BREAKAWAY_KEYBOARD"/>
+      <property name="Voltage" value="10 V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Tolerance" value="20%"/>
+      <property name="Sheetname" value="Keyboard / breakaway / 0x20"/>
+      <property name="Sheetfile" value="keyboard.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Keyboard / breakaway / 0x20/" tstamps="/6c00fde6-8bde-5e2e-b170-424fcc6b0cd6/"/>
+      <tstamps>495da4ae-77c8-524f-91e3-465860da31f6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J3">
+      <value>KEYBOARD / USER FIT</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Assembly">DNP - user installs keyboard header</field>
+        <field name="PCB Region">BREAKAWAY_KEYBOARD</field>
+        <field name="Pinout">1..8=P0..P7; 9=GND</field>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x09" description="Generic connector, single row, 01x09, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Assembly" value="DNP - user installs keyboard header"/>
+      <property name="PCB Region" value="BREAKAWAY_KEYBOARD"/>
+      <property name="Pinout" value="1..8=P0..P7; 9=GND"/>
+      <property name="Sheetname" value="Keyboard / breakaway / 0x20"/>
+      <property name="Sheetfile" value="keyboard.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/Keyboard / breakaway / 0x20/" tstamps="/6c00fde6-8bde-5e2e-b170-424fcc6b0cd6/"/>
+      <tstamps>5c202ce7-bf23-50be-a212-418c695774b3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J5">
+      <value>MODULE LINK / OPTIONAL</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Assembly">DNP; populate after breaking off to reconnect cable</field>
+        <field name="PCB Region">BREAKAWAY_KEYBOARD</field>
+        <field name="Pinout">1=3V3; 2=GND; 3=SDA; 4=SCL; 5=INT_N</field>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x05" description="Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Assembly" value="DNP; populate after breaking off to reconnect cable"/>
+      <property name="PCB Region" value="BREAKAWAY_KEYBOARD"/>
+      <property name="Pinout" value="1=3V3; 2=GND; 3=SDA; 4=SCL; 5=INT_N"/>
+      <property name="Sheetname" value="Keyboard / breakaway / 0x20"/>
+      <property name="Sheetfile" value="keyboard.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/Keyboard / breakaway / 0x20/" tstamps="/6c00fde6-8bde-5e2e-b170-424fcc6b0cd6/"/>
+      <tstamps>df92e692-a469-5229-a305-7927af5122d1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R37">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="PCB Region">BREAKAWAY_KEYBOARD</field>
+        <field name="Tolerance">1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="PCB Region" value="BREAKAWAY_KEYBOARD"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="Keyboard / breakaway / 0x20"/>
+      <property name="Sheetfile" value="keyboard.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Keyboard / breakaway / 0x20/" tstamps="/6c00fde6-8bde-5e2e-b170-424fcc6b0cd6/"/>
+      <tstamps>aa4e3450-ddff-5094-9d8a-086a07aa91d0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R38">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="PCB Region">BREAKAWAY_KEYBOARD</field>
+        <field name="Tolerance">1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="PCB Region" value="BREAKAWAY_KEYBOARD"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="Keyboard / breakaway / 0x20"/>
+      <property name="Sheetfile" value="keyboard.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Keyboard / breakaway / 0x20/" tstamps="/6c00fde6-8bde-5e2e-b170-424fcc6b0cd6/"/>
+      <tstamps>68ed5402-5f29-5e50-8469-b7aff97f20a0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R39">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="PCB Region">BREAKAWAY_KEYBOARD</field>
+        <field name="Tolerance">1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="PCB Region" value="BREAKAWAY_KEYBOARD"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="Keyboard / breakaway / 0x20"/>
+      <property name="Sheetfile" value="keyboard.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Keyboard / breakaway / 0x20/" tstamps="/6c00fde6-8bde-5e2e-b170-424fcc6b0cd6/"/>
+      <tstamps>46f822e0-51bd-5a2a-a966-26fc9775d7d6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U8">
+      <value>PCF8574T</value>
+      <footprint>Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm</footprint>
+      <datasheet>https://www.nxp.com/docs/en/data-sheet/PCF8574_PCF8574A.pdf</datasheet>
+      <fields>
+        <field name="MPN">PCF8574T/3,518</field>
+        <field name="Manufacturer">NXP</field>
+        <field name="I2C Address">0x20</field>
+        <field name="PCB Region">BREAKAWAY_KEYBOARD</field>
+        <field name="Footprint">Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm</field>
+        <field name="Datasheet">https://www.nxp.com/docs/en/data-sheet/PCF8574_PCF8574A.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Interface_Expansion" part="PCF8574T" description="8-bit I/O Expander, I2C interface, interrupt output, fixed address bits 0b0100xxx, SOIC-16"/>
+      <property name="MPN" value="PCF8574T/3,518"/>
+      <property name="Manufacturer" value="NXP"/>
+      <property name="I2C Address" value="0x20"/>
+      <property name="PCB Region" value="BREAKAWAY_KEYBOARD"/>
+      <property name="Sheetname" value="Keyboard / breakaway / 0x20"/>
+      <property name="Sheetfile" value="keyboard.kicad_sch"/>
+      <property name="ki_keywords" value="NXP Port-Expander"/>
+      <property name="ki_fp_filters" value="*SOIC*7.5x10.3mm?P1.27mm*"/>
+      <sheetpath names="/Keyboard / breakaway / 0x20/" tstamps="/6c00fde6-8bde-5e2e-b170-424fcc6b0cd6/"/>
+      <tstamps>9eaa17ec-be78-5b9e-928a-2f62668483e6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="13"/>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="16"/>
+            <pin num="8"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
           </pins>
         </unit>
       </units>
@@ -1484,6 +3929,50 @@
         <pin num="2" name="Pin_2" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x05">
+      <description>Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x05</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x09">
+      <description>Generic connector, single row, 01x09, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x09</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x09, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="Device" part="C">
       <description>Unpolarized capacitor</description>
       <footprints>
@@ -1499,6 +3988,27 @@
       <pins>
         <pin num="1" name="" type="passive"/>
         <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Crystal_GND24">
+      <description>Four pin crystal, GND on pins 2 and 4</description>
+      <footprints>
+        <fp>Crystal*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal_GND24</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Four pin crystal, GND on pins 2 and 4</field>
+        <field name="KLC_S3.3">The rectangle is not a symbol body but a graphical element</field>
+        <field name="KLC_S4.1">Some pins are on 50mil grid to make the symbol small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="G" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="G" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Device" part="D_Schottky">
@@ -1578,6 +4088,38 @@
         <pin num="2" name="" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="Interface_Expansion" part="PCF8574T">
+      <description>8-bit I/O Expander, I2C interface, interrupt output, fixed address bits 0b0100xxx, SOIC-16</description>
+      <docs>https://www.nxp.com/docs/en/data-sheet/PCF8574_PCF8574A.pdf</docs>
+      <footprints>
+        <fp>*SOIC*7.5x10.3mm?P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">PCF8574T</field>
+        <field name="Footprint">Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm</field>
+        <field name="Datasheet">https://www.nxp.com/docs/en/data-sheet/PCF8574_PCF8574A.pdf</field>
+        <field name="Description">8-bit I/O Expander, I2C interface, interrupt output, fixed address bits 0b0100xxx, SOIC-16</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A0" type="input"/>
+        <pin num="2" name="A1" type="input"/>
+        <pin num="3" name="A2" type="input"/>
+        <pin num="4" name="P0" type="bidirectional"/>
+        <pin num="5" name="P1" type="bidirectional"/>
+        <pin num="6" name="P2" type="bidirectional"/>
+        <pin num="7" name="P3" type="bidirectional"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="P4" type="bidirectional"/>
+        <pin num="10" name="P5" type="bidirectional"/>
+        <pin num="11" name="P6" type="bidirectional"/>
+        <pin num="12" name="P7" type="bidirectional"/>
+        <pin num="13" name="~{INT}" type="open_collector"/>
+        <pin num="14" name="SCL" type="input"/>
+        <pin num="15" name="SDA" type="bidirectional"/>
+        <pin num="16" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
     <libpart lib="Nucula_Project" part="ESP32-C3-WROOM-02-N4">
       <description>ESP32-C3 Wi-Fi and Bluetooth LE module, 4 MB flash, PCB antenna, -40 to +85 C</description>
       <docs>https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf</docs>
@@ -1613,6 +4155,117 @@
         <pin num="17" name="IO1" type="bidirectional"/>
         <pin num="18" name="IO0" type="bidirectional"/>
         <pin num="19" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Nucula_Project" part="NFC_Loop_TBD">
+      <description>Two-terminal 13.56 MHz coil plus reference/shield ground; geometry and tuning TBD</description>
+      <fields>
+        <field name="Reference">A</field>
+        <field name="Value">NFC_Loop_TBD</field>
+        <field name="Footprint">Nucula_Project:NFC_Antenna_Interface_TBD</field>
+        <field name="Datasheet"/>
+        <field name="Description">Two-terminal 13.56 MHz coil plus reference/shield ground; geometry and tuning TBD</field>
+      </fields>
+      <pins>
+        <pin num="1" name="LOOP_A" type="passive"/>
+        <pin num="2" name="LOOP_B" type="passive"/>
+        <pin num="3" name="REF_GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Nucula_Project" part="PN7160A1HN_C100E">
+      <description>NXP PN7160 I2C NFC controller, HVQFN40 plus EP; pin 22 TVDD_IN2</description>
+      <docs>https://www.nxp.com/docs/en/data-sheet/PN7160_PN7161.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">PN7160A1HN_C100E</field>
+        <field name="Footprint">Nucula_Project:PN7160A1HN_C100E</field>
+        <field name="Datasheet">https://www.nxp.com/docs/en/data-sheet/PN7160_PN7161.pdf</field>
+        <field name="Description">NXP PN7160 I2C NFC controller, HVQFN40 plus EP; pin 22 TVDD_IN2</field>
+        <field name="MPN">PN7160A1HN/C100E</field>
+        <field name="Manufacturer">NXP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="I2C_ADR0" type="input"/>
+        <pin num="2" name="DWL_REQ" type="input"/>
+        <pin num="3" name="I2C_ADR1" type="input"/>
+        <pin num="4" name="VSS(PAD)" type="power_in"/>
+        <pin num="5" name="I2C_SDA" type="bidirectional"/>
+        <pin num="6" name="VDD(PAD)" type="power_in"/>
+        <pin num="7" name="I2C_SCL" type="input"/>
+        <pin num="8" name="IRQ" type="output"/>
+        <pin num="9" name="VSS(A)" type="power_in"/>
+        <pin num="10" name="VEN" type="input"/>
+        <pin num="11" name="I.C._1" type="no_connect"/>
+        <pin num="12" name="VBAT2" type="power_in"/>
+        <pin num="13" name="VDD(UP)" type="power_in"/>
+        <pin num="14" name="VDD(TX)" type="power_out"/>
+        <pin num="15" name="RXN" type="input"/>
+        <pin num="16" name="RXP" type="input"/>
+        <pin num="17" name="VDD(VMID)" type="passive"/>
+        <pin num="18" name="TVDD_IN" type="power_in"/>
+        <pin num="19" name="TX2" type="output"/>
+        <pin num="20" name="VSS(TX)" type="power_in"/>
+        <pin num="21" name="TX1" type="output"/>
+        <pin num="22" name="TVDD_IN2" type="power_in"/>
+        <pin num="23" name="ANT1" type="passive"/>
+        <pin num="24" name="ANT2" type="passive"/>
+        <pin num="25" name="VDD(HF)" type="passive"/>
+        <pin num="26" name="VDD(A)" type="power_in"/>
+        <pin num="27" name="VDD" type="power_in"/>
+        <pin num="28" name="VBAT" type="power_in"/>
+        <pin num="29" name="XTAL2" type="output"/>
+        <pin num="30" name="NFC_CLK_XTAL1" type="input"/>
+        <pin num="31" name="VDD(D)" type="power_out"/>
+        <pin num="32" name="N.C._1" type="no_connect"/>
+        <pin num="33" name="N.C._2" type="no_connect"/>
+        <pin num="34" name="N.C._3" type="no_connect"/>
+        <pin num="35" name="N.C._4" type="no_connect"/>
+        <pin num="36" name="N.C._5" type="no_connect"/>
+        <pin num="37" name="DCDC_EN" type="output"/>
+        <pin num="38" name="I.C._2" type="no_connect"/>
+        <pin num="39" name="WKUP_REQ" type="input"/>
+        <pin num="40" name="CLK_REQ" type="output"/>
+        <pin num="41" name="VSS" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Nucula_Project" part="SSD1309_COG_26">
+      <description>26-contact OLED glass interface from Waveshare reference; FPC mechanics provisional</description>
+      <docs>https://files.waveshare.com/wiki/2.42inch-OLED-Module/SSD1309Datasheet.pdf</docs>
+      <fields>
+        <field name="Reference">DS</field>
+        <field name="Value">SSD1309_COG_26</field>
+        <field name="Footprint">Connector_FFC-FPC:Hirose_FH12-26S-0.5SH_1x26-1MP_P0.50mm_Horizontal</field>
+        <field name="Datasheet">https://files.waveshare.com/wiki/2.42inch-OLED-Module/SSD1309Datasheet.pdf</field>
+        <field name="Description">26-contact OLED glass interface from Waveshare reference; FPC mechanics provisional</field>
+        <field name="Footprint Status">PROVISIONAL: confirm panel flex pitch, orientation and contact side before layout</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VSS" type="power_in"/>
+        <pin num="3" name="VSS" type="power_in"/>
+        <pin num="4" name="NC" type="no_connect"/>
+        <pin num="5" name="VDD" type="power_in"/>
+        <pin num="6" name="BS1" type="input"/>
+        <pin num="7" name="BS2" type="input"/>
+        <pin num="8" name="~{CS}" type="input"/>
+        <pin num="9" name="~{RES}" type="input"/>
+        <pin num="10" name="SA0_DC" type="input"/>
+        <pin num="11" name="RW" type="input"/>
+        <pin num="12" name="E_RD" type="input"/>
+        <pin num="13" name="D0_SCL" type="input"/>
+        <pin num="14" name="D1_SDA_IN" type="input"/>
+        <pin num="15" name="D2_SDA_OUT" type="open_collector"/>
+        <pin num="16" name="D3" type="input"/>
+        <pin num="17" name="D4" type="input"/>
+        <pin num="18" name="D5" type="input"/>
+        <pin num="19" name="D6" type="input"/>
+        <pin num="20" name="D7" type="input"/>
+        <pin num="21" name="IREF" type="passive"/>
+        <pin num="22" name="VCOMH" type="passive"/>
+        <pin num="23" name="VCC_PANEL" type="power_in"/>
+        <pin num="24" name="GND" type="power_in"/>
+        <pin num="25" name="GND" type="power_in"/>
+        <pin num="26" name="GND" type="power_in"/>
       </pins>
     </libpart>
     <libpart lib="Nucula_Project" part="SY8089AAAC">
@@ -1701,6 +4354,46 @@
         <pin num="6" name="I/O1" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="Regulator_Linear" part="MCP1700x-300xxTT">
+      <description>250mA Low Quiscent Current LDO, 3.0V output, SOT-23</description>
+      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/20001826D.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MCP1700x-300xxTT</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">http://ww1.microchip.com/downloads/en/DeviceDoc/20001826D.pdf</field>
+        <field name="Description">250mA Low Quiscent Current LDO, 3.0V output, SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VO" type="power_out"/>
+        <pin num="3" name="VI" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Switching" part="AP3012">
+      <description>500mA, Adjustable Step-Up Voltage Regulator, 1.5MHz Frequency, SOT-23-5</description>
+      <docs>https://www.diodes.com/assets/Datasheets/AP3012.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AP3012</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">https://www.diodes.com/assets/Datasheets/AP3012.pdf</field>
+        <field name="Description">500mA, Adjustable Step-Up Voltage Regulator, 1.5MHz Frequency, SOT-23-5</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SW" type="passive"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="FB" type="input"/>
+        <pin num="4" name="~{SHDN}" type="input"/>
+        <pin num="5" name="IN" type="power_in"/>
+      </pins>
+    </libpart>
     <libpart lib="Switch" part="SW_Push">
       <description>Push button switch, generic, two pins</description>
       <fields>
@@ -1764,11 +4457,20 @@
     <library logical="Device">
       <uri>${KICAD10_SYMBOL_DIR}/Device.kicad_sym</uri>
     </library>
+    <library logical="Interface_Expansion">
+      <uri>${KICAD10_SYMBOL_DIR}/Interface_Expansion.kicad_sym</uri>
+    </library>
     <library logical="Nucula_Project">
       <uri>${KIPRJMOD}/libraries/Nucula_Project.kicad_sym</uri>
     </library>
     <library logical="Power_Protection">
       <uri>${KICAD10_SYMBOL_DIR}/Power_Protection.kicad_sym</uri>
+    </library>
+    <library logical="Regulator_Linear">
+      <uri>${KICAD10_SYMBOL_DIR}/Regulator_Linear.kicad_sym</uri>
+    </library>
+    <library logical="Regulator_Switching">
+      <uri>${KICAD10_SYMBOL_DIR}/Regulator_Switching.kicad_sym</uri>
     </library>
     <library logical="Switch">
       <uri>${KICAD10_SYMBOL_DIR}/Switch.kicad_sym</uri>
@@ -1778,50 +4480,291 @@
     </library>
   </libraries>
   <nets>
-    <net code="1" name="/+3V3" class="Default">
+    <net code="1" name="/+3V0" class="Default">
+      <node ref="C43" pin="1" pintype="passive"/>
+      <node ref="C44" pin="1" pintype="passive"/>
+      <node ref="C50" pin="1" pintype="passive"/>
+      <node ref="DS1" pin="5" pinfunction="VDD_5" pintype="power_in"/>
+      <node ref="DS1" pin="6" pinfunction="BS1_6" pintype="input"/>
+      <node ref="R19" pin="1" pintype="passive"/>
+      <node ref="R20" pin="1" pintype="passive"/>
+      <node ref="R35" pin="1" pintype="passive"/>
+      <node ref="U9" pin="2" pinfunction="VO_2" pintype="power_out"/>
+    </net>
+    <net code="2" name="/+3V3" class="Default">
       <node ref="C10" pin="1" pintype="passive"/>
       <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="C15" pin="1" pintype="passive"/>
+      <node ref="C16" pin="1" pintype="passive"/>
       <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="C49" pin="1" pintype="passive"/>
       <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="C51" pin="1" pintype="passive"/>
+      <node ref="C52" pin="1" pintype="passive"/>
       <node ref="C6" pin="1" pintype="passive"/>
       <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="J4" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="J5" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
       <node ref="L1" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R10" pin="1" pintype="passive"/>
       <node ref="R11" pin="1" pintype="passive"/>
       <node ref="R17" pin="1" pintype="passive"/>
+      <node ref="R37" pin="1" pintype="passive"/>
+      <node ref="R38" pin="1" pintype="passive"/>
+      <node ref="R39" pin="1" pintype="passive"/>
+      <node ref="R40" pin="1" pintype="passive"/>
       <node ref="R6" pin="1" pintype="passive"/>
       <node ref="R8" pin="1" pintype="passive"/>
       <node ref="R9" pin="1" pintype="passive"/>
       <node ref="U3" pin="1" pinfunction="3V3_1" pintype="power_in"/>
       <node ref="U5" pin="3" pinfunction="VDD_3" pintype="power_in"/>
+      <node ref="U6" pin="6" pinfunction="VDD(PAD)_6" pintype="power_in"/>
+      <node ref="U8" pin="16" pinfunction="VDD_16" pintype="power_in"/>
+      <node ref="U9" pin="3" pinfunction="VI_3" pintype="power_in"/>
     </net>
-    <net code="2" name="/BOOT_N" class="Default">
+    <net code="3" name="/I2C_SCL" class="Default">
+      <node ref="DS1" pin="13" pinfunction="D0_SCL_13" pintype="input"/>
+      <node ref="J4" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="J5" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="R20" pin="2" pintype="passive"/>
+      <node ref="R39" pin="2" pintype="passive"/>
+      <node ref="U3" pin="4" pinfunction="IO5_4" pintype="bidirectional"/>
+      <node ref="U6" pin="7" pinfunction="I2C_SCL_7" pintype="input"/>
+      <node ref="U8" pin="14" pinfunction="SCL_14" pintype="input"/>
+    </net>
+    <net code="4" name="/I2C_SDA" class="Default">
+      <node ref="DS1" pin="14" pinfunction="D1_SDA_IN_14" pintype="input"/>
+      <node ref="DS1" pin="15" pinfunction="D2_SDA_OUT_15" pintype="open_collector"/>
+      <node ref="J4" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="J5" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="R19" pin="2" pintype="passive"/>
+      <node ref="R38" pin="2" pintype="passive"/>
+      <node ref="U3" pin="3" pinfunction="IO4_3" pintype="bidirectional"/>
+      <node ref="U6" pin="5" pinfunction="I2C_SDA_5" pintype="bidirectional"/>
+      <node ref="U8" pin="15" pinfunction="SDA_15" pintype="bidirectional"/>
+    </net>
+    <net code="5" name="/KEY_INT_N" class="Default">
+      <node ref="J4" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
+      <node ref="J5" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
+      <node ref="R37" pin="2" pintype="passive"/>
+      <node ref="R40" pin="2" pintype="passive"/>
+      <node ref="U3" pin="11" pinfunction="IO20/RXD_11" pintype="bidirectional"/>
+      <node ref="U8" pin="13" pinfunction="~{INT}_13" pintype="open_collector"/>
+    </net>
+    <net code="6" name="/Keyboard / breakaway / 0x20/KEY_P0" class="Default">
+      <node ref="J3" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="U8" pin="4" pinfunction="P0_4" pintype="bidirectional"/>
+    </net>
+    <net code="7" name="/Keyboard / breakaway / 0x20/KEY_P1" class="Default">
+      <node ref="J3" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="U8" pin="5" pinfunction="P1_5" pintype="bidirectional"/>
+    </net>
+    <net code="8" name="/Keyboard / breakaway / 0x20/KEY_P2" class="Default">
+      <node ref="J3" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="U8" pin="6" pinfunction="P2_6" pintype="bidirectional"/>
+    </net>
+    <net code="9" name="/Keyboard / breakaway / 0x20/KEY_P3" class="Default">
+      <node ref="J3" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="U8" pin="7" pinfunction="P3_7" pintype="bidirectional"/>
+    </net>
+    <net code="10" name="/Keyboard / breakaway / 0x20/KEY_P4" class="Default">
+      <node ref="J3" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
+      <node ref="U8" pin="9" pinfunction="P4_9" pintype="bidirectional"/>
+    </net>
+    <net code="11" name="/Keyboard / breakaway / 0x20/KEY_P5" class="Default">
+      <node ref="J3" pin="6" pinfunction="Pin_6_6" pintype="passive"/>
+      <node ref="U8" pin="10" pinfunction="P5_10" pintype="bidirectional"/>
+    </net>
+    <net code="12" name="/Keyboard / breakaway / 0x20/KEY_P6" class="Default">
+      <node ref="J3" pin="7" pinfunction="Pin_7_7" pintype="passive"/>
+      <node ref="U8" pin="11" pinfunction="P6_11" pintype="bidirectional"/>
+    </net>
+    <net code="13" name="/Keyboard / breakaway / 0x20/KEY_P7" class="Default">
+      <node ref="J3" pin="8" pinfunction="Pin_8_8" pintype="passive"/>
+      <node ref="U8" pin="12" pinfunction="P7_12" pintype="bidirectional"/>
+    </net>
+    <net code="14" name="/NFC / PN7160 / 0x28/NFC_ADR0" class="Default">
+      <node ref="R23" pin="1" pintype="passive"/>
+      <node ref="U6" pin="1" pinfunction="I2C_ADR0_1" pintype="input"/>
+    </net>
+    <net code="15" name="/NFC / PN7160 / 0x28/NFC_ADR1" class="Default">
+      <node ref="R24" pin="1" pintype="passive"/>
+      <node ref="U6" pin="3" pinfunction="I2C_ADR1_3" pintype="input"/>
+    </net>
+    <net code="16" name="/NFC / PN7160 / 0x28/NFC_DWL_REQ" class="Default">
+      <node ref="R21" pin="1" pintype="passive"/>
+      <node ref="U6" pin="2" pinfunction="DWL_REQ_2" pintype="input"/>
+    </net>
+    <net code="17" name="/NFC / PN7160 / 0x28/NFC_RXN" class="Default">
+      <node ref="C28" pin="1" pintype="passive"/>
+      <node ref="U6" pin="15" pinfunction="RXN_15" pintype="input"/>
+    </net>
+    <net code="18" name="/NFC / PN7160 / 0x28/NFC_RXP" class="Default">
+      <node ref="C29" pin="1" pintype="passive"/>
+      <node ref="U6" pin="16" pinfunction="RXP_16" pintype="input"/>
+    </net>
+    <net code="19" name="/NFC / PN7160 / 0x28/NFC_TVDD" class="Default">
+      <node ref="C23" pin="1" pintype="passive"/>
+      <node ref="C24" pin="1" pintype="passive"/>
+      <node ref="U6" pin="14" pinfunction="VDD(TX)_14" pintype="power_out"/>
+      <node ref="U6" pin="18" pinfunction="TVDD_IN_18" pintype="power_in"/>
+      <node ref="U6" pin="22" pinfunction="TVDD_IN2_22" pintype="power_in"/>
+    </net>
+    <net code="20" name="/NFC / PN7160 / 0x28/NFC_TX1" class="Default">
+      <node ref="L2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U6" pin="21" pinfunction="TX1_21" pintype="output"/>
+    </net>
+    <net code="21" name="/NFC / PN7160 / 0x28/NFC_TX2" class="Default">
+      <node ref="L3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U6" pin="19" pinfunction="TX2_19" pintype="output"/>
+    </net>
+    <net code="22" name="/NFC / PN7160 / 0x28/NFC_VDD18" class="Default">
+      <node ref="C21" pin="1" pintype="passive"/>
+      <node ref="C22" pin="1" pintype="passive"/>
+      <node ref="U6" pin="26" pinfunction="VDD(A)_26" pintype="power_in"/>
+      <node ref="U6" pin="27" pinfunction="VDD_27" pintype="power_in"/>
+      <node ref="U6" pin="31" pinfunction="VDD(D)_31" pintype="power_out"/>
+    </net>
+    <net code="23" name="/NFC / PN7160 / 0x28/NFC_VDDUP" class="Default">
+      <node ref="C19" pin="1" pintype="passive"/>
+      <node ref="C20" pin="1" pintype="passive"/>
+      <node ref="R29" pin="2" pintype="passive"/>
+      <node ref="U6" pin="13" pinfunction="VDD(UP)_13" pintype="power_in"/>
+    </net>
+    <net code="24" name="/NFC / PN7160 / 0x28/NFC_VMID" class="Default">
+      <node ref="C25" pin="1" pintype="passive"/>
+      <node ref="U6" pin="17" pinfunction="VDD(VMID)_17" pintype="passive"/>
+    </net>
+    <net code="25" name="/NFC / PN7160 / 0x28/NFC_XTAL1" class="Default">
+      <node ref="C26" pin="1" pintype="passive"/>
+      <node ref="U6" pin="30" pinfunction="NFC_CLK_XTAL1_30" pintype="input"/>
+      <node ref="Y1" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="26" name="/NFC / PN7160 / 0x28/NFC_XTAL2" class="Default">
+      <node ref="C27" pin="1" pintype="passive"/>
+      <node ref="U6" pin="29" pinfunction="XTAL2_29" pintype="output"/>
+      <node ref="Y1" pin="3" pinfunction="3_3" pintype="passive"/>
+    </net>
+    <net code="27" name="/NFC / PN7160 / 0x28/RF_EMC_N" class="Default">
+      <node ref="C31" pin="2" pintype="passive"/>
+      <node ref="C33" pin="1" pintype="passive"/>
+      <node ref="C35" pin="1" pintype="passive"/>
+      <node ref="L3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R26" pin="2" pintype="passive"/>
+    </net>
+    <net code="28" name="/NFC / PN7160 / 0x28/RF_EMC_P" class="Default">
+      <node ref="C30" pin="1" pintype="passive"/>
+      <node ref="C32" pin="1" pintype="passive"/>
+      <node ref="C34" pin="1" pintype="passive"/>
+      <node ref="L2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R25" pin="2" pintype="passive"/>
+    </net>
+    <net code="29" name="/NFC / PN7160 / 0x28/RF_MATCH_N" class="Default">
+      <node ref="C33" pin="2" pintype="passive"/>
+      <node ref="C35" pin="2" pintype="passive"/>
+      <node ref="C37" pin="2" pintype="passive"/>
+      <node ref="C39" pin="2" pintype="passive"/>
+      <node ref="R28" pin="1" pintype="passive"/>
+    </net>
+    <net code="30" name="/NFC / PN7160 / 0x28/RF_MATCH_P" class="Default">
+      <node ref="C32" pin="2" pintype="passive"/>
+      <node ref="C34" pin="2" pintype="passive"/>
+      <node ref="C36" pin="1" pintype="passive"/>
+      <node ref="C38" pin="1" pintype="passive"/>
+      <node ref="R27" pin="1" pintype="passive"/>
+    </net>
+    <net code="31" name="/NFC_IRQ" class="Default">
+      <node ref="U3" pin="5" pinfunction="IO6_5" pintype="bidirectional"/>
+      <node ref="U6" pin="8" pinfunction="IRQ_8" pintype="output"/>
+    </net>
+    <net code="32" name="/NFC_VEN" class="Default">
+      <node ref="R22" pin="1" pintype="passive"/>
+      <node ref="U3" pin="6" pinfunction="IO7_6" pintype="bidirectional"/>
+      <node ref="U6" pin="10" pinfunction="VEN_10" pintype="input"/>
+    </net>
+    <net code="33" name="/OLED / SSD1309 / 0x3C/OLED_12V5" class="Default">
+      <node ref="C41" pin="1" pintype="passive"/>
+      <node ref="C42" pin="1" pintype="passive"/>
+      <node ref="C45" pin="1" pintype="passive"/>
+      <node ref="C46" pin="1" pintype="passive"/>
+      <node ref="D4" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="DS1" pin="23" pinfunction="VCC_PANEL_23" pintype="power_in"/>
+      <node ref="R30" pin="1" pintype="passive"/>
+    </net>
+    <net code="34" name="/OLED / SSD1309 / 0x3C/OLED_BOOST_IN" class="Default">
+      <node ref="C40" pin="1" pintype="passive"/>
+      <node ref="L4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="Q3" pin="3" pinfunction="D_3" pintype="passive"/>
+      <node ref="U7" pin="4" pinfunction="~{SHDN}_4" pintype="input"/>
+      <node ref="U7" pin="5" pinfunction="IN_5" pintype="power_in"/>
+    </net>
+    <net code="35" name="/OLED / SSD1309 / 0x3C/OLED_FB" class="Default">
+      <node ref="C41" pin="2" pintype="passive"/>
+      <node ref="R30" pin="2" pintype="passive"/>
+      <node ref="R31" pin="1" pintype="passive"/>
+      <node ref="U7" pin="3" pinfunction="FB_3" pintype="input"/>
+    </net>
+    <net code="36" name="/OLED / SSD1309 / 0x3C/OLED_GATE_N" class="Default">
+      <node ref="Q3" pin="1" pinfunction="G_1" pintype="input"/>
+      <node ref="Q4" pin="3" pinfunction="D_3" pintype="passive"/>
+      <node ref="R33" pin="2" pintype="passive"/>
+    </net>
+    <net code="37" name="/OLED / SSD1309 / 0x3C/OLED_IREF" class="Default">
+      <node ref="DS1" pin="21" pinfunction="IREF_21" pintype="passive"/>
+      <node ref="R32" pin="1" pintype="passive"/>
+    </net>
+    <net code="38" name="/OLED / SSD1309 / 0x3C/OLED_RES_N" class="Default">
+      <node ref="C48" pin="1" pintype="passive"/>
+      <node ref="DS1" pin="9" pinfunction="~{RES}_9" pintype="input"/>
+      <node ref="Q5" pin="3" pinfunction="D_3" pintype="passive"/>
+      <node ref="R35" pin="2" pintype="passive"/>
+    </net>
+    <net code="39" name="/OLED / SSD1309 / 0x3C/OLED_SW" class="Default">
+      <node ref="D4" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="L4" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U7" pin="1" pinfunction="SW_1" pintype="passive"/>
+    </net>
+    <net code="40" name="/OLED / SSD1309 / 0x3C/OLED_VCOMH" class="Default">
+      <node ref="C47" pin="1" pintype="passive"/>
+      <node ref="DS1" pin="22" pinfunction="VCOMH_22" pintype="passive"/>
+    </net>
+    <net code="41" name="/OLED_PWR_EN" class="Default">
+      <node ref="Q4" pin="1" pinfunction="G_1" pintype="input"/>
+      <node ref="R34" pin="1" pintype="passive"/>
+      <node ref="U3" pin="15" pinfunction="IO3_15" pintype="bidirectional"/>
+    </net>
+    <net code="42" name="/OLED_RESET" class="Default">
+      <node ref="Q5" pin="1" pinfunction="G_1" pintype="input"/>
+      <node ref="R36" pin="1" pintype="passive"/>
+      <node ref="U3" pin="10" pinfunction="IO10_10" pintype="bidirectional"/>
+    </net>
+    <net code="43" name="/Power + ESP32-C3/BOOT_N" class="Default">
       <node ref="R11" pin="2" pintype="passive"/>
       <node ref="R14" pin="1" pintype="passive"/>
       <node ref="U3" pin="8" pinfunction="IO9_8" pintype="bidirectional"/>
     </net>
-    <net code="3" name="/BUCK_FB" class="Default">
+    <net code="44" name="/Power + ESP32-C3/BUCK_FB" class="Default">
       <node ref="C3" pin="2" pintype="passive"/>
       <node ref="R6" pin="2" pintype="passive"/>
       <node ref="R7" pin="1" pintype="passive"/>
       <node ref="U2" pin="5" pinfunction="FB_5" pintype="input"/>
     </net>
-    <net code="4" name="/ESP_EN" class="Default">
+    <net code="45" name="/Power + ESP32-C3/ESP_EN" class="Default">
       <node ref="C12" pin="1" pintype="passive"/>
       <node ref="R8" pin="2" pintype="passive"/>
       <node ref="SW1" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U3" pin="2" pinfunction="EN_2" pintype="input"/>
       <node ref="U5" pin="2" pinfunction="~{RESET}_2" pintype="open_collector"/>
     </net>
-    <net code="5" name="/STRAP_GPIO2" class="Default">
+    <net code="46" name="/Power + ESP32-C3/STRAP_GPIO2" class="Default">
       <node ref="R9" pin="2" pintype="passive"/>
       <node ref="U3" pin="16" pinfunction="IO2_16" pintype="bidirectional"/>
     </net>
-    <net code="6" name="/STRAP_GPIO8" class="Default">
+    <net code="47" name="/Power + ESP32-C3/STRAP_GPIO8" class="Default">
       <node ref="R10" pin="2" pintype="passive"/>
       <node ref="U3" pin="7" pinfunction="IO8_7" pintype="bidirectional"/>
     </net>
-    <net code="7" name="/USB_5V" class="Default">
+    <net code="48" name="/Power + ESP32-C3/USB_5V" class="Default">
       <node ref="C1" pin="1" pintype="passive"/>
       <node ref="D1" pin="1" pinfunction="K_1" pintype="passive"/>
       <node ref="D2" pin="2" pinfunction="A_2" pintype="passive"/>
@@ -1830,43 +4773,43 @@
       <node ref="R5" pin="1" pintype="passive"/>
       <node ref="U1" pin="4" pinfunction="VCC_4" pintype="power_in"/>
     </net>
-    <net code="8" name="/USB_D+" class="Default">
+    <net code="49" name="/Power + ESP32-C3/USB_D+" class="Default">
       <node ref="J1" pin="A6" pinfunction="D+_A6" pintype="bidirectional"/>
       <node ref="J1" pin="B6" pinfunction="D+_B6" pintype="bidirectional"/>
       <node ref="U4" pin="3" pinfunction="I/O2_3" pintype="passive"/>
     </net>
-    <net code="9" name="/USB_D-" class="Default">
+    <net code="50" name="/Power + ESP32-C3/USB_D-" class="Default">
       <node ref="J1" pin="A7" pinfunction="D-_A7" pintype="bidirectional"/>
       <node ref="J1" pin="B7" pinfunction="D-_B7" pintype="bidirectional"/>
       <node ref="U4" pin="1" pinfunction="I/O1_1" pintype="passive"/>
     </net>
-    <net code="10" name="/USB_ESD_D+" class="Default">
+    <net code="51" name="/Power + ESP32-C3/USB_ESD_D+" class="Default">
       <node ref="R13" pin="1" pintype="passive"/>
       <node ref="U4" pin="4" pinfunction="I/O2_4" pintype="passive"/>
     </net>
-    <net code="11" name="/USB_ESD_D-" class="Default">
+    <net code="52" name="/Power + ESP32-C3/USB_ESD_D-" class="Default">
       <node ref="R12" pin="1" pintype="passive"/>
       <node ref="U4" pin="6" pinfunction="I/O1_6" pintype="passive"/>
     </net>
-    <net code="12" name="/USB_PRESENT_N" class="Default">
+    <net code="53" name="/Power + ESP32-C3/USB_PRESENT_N" class="Default">
       <node ref="Q2" pin="3" pinfunction="D_3" pintype="passive"/>
       <node ref="R17" pin="2" pintype="passive"/>
       <node ref="U3" pin="17" pinfunction="IO1_17" pintype="bidirectional"/>
     </net>
-    <net code="13" name="/VBAT" class="Default">
+    <net code="54" name="/Power + ESP32-C3/VBAT" class="Default">
       <node ref="C2" pin="1" pintype="passive"/>
       <node ref="J2" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
       <node ref="Q1" pin="3" pinfunction="D_3" pintype="passive"/>
       <node ref="R15" pin="1" pintype="passive"/>
       <node ref="U1" pin="3" pinfunction="BAT_3" pintype="power_out"/>
     </net>
-    <net code="14" name="/VBAT_ADC" class="Default">
+    <net code="55" name="/Power + ESP32-C3/VBAT_ADC" class="Default">
       <node ref="C13" pin="1" pintype="passive"/>
       <node ref="R15" pin="2" pintype="passive"/>
       <node ref="R16" pin="1" pintype="passive"/>
       <node ref="U3" pin="18" pinfunction="IO0_18" pintype="bidirectional"/>
     </net>
-    <net code="15" name="/VBUS" class="Default">
+    <net code="56" name="/Power + ESP32-C3/VBUS" class="Default">
       <node ref="C14" pin="1" pintype="passive"/>
       <node ref="D1" pin="2" pinfunction="A_2" pintype="passive"/>
       <node ref="J1" pin="A4" pinfunction="VBUS_A4" pintype="passive"/>
@@ -1877,39 +4820,107 @@
       <node ref="R18" pin="1" pintype="passive"/>
       <node ref="U4" pin="5" pinfunction="VBUS_5" pintype="passive"/>
     </net>
-    <net code="16" name="/VSYS" class="Default">
+    <net code="57" name="/VSYS" class="Default">
+      <node ref="C17" pin="1" pintype="passive"/>
+      <node ref="C18" pin="1" pintype="passive"/>
       <node ref="C4" pin="1" pintype="passive"/>
       <node ref="D2" pin="1" pinfunction="K_1" pintype="passive"/>
       <node ref="Q1" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="Q3" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="R29" pin="1" pintype="passive"/>
+      <node ref="R33" pin="1" pintype="passive"/>
       <node ref="U2" pin="1" pinfunction="EN_1" pintype="input"/>
       <node ref="U2" pin="4" pinfunction="IN_4" pintype="power_in"/>
+      <node ref="U6" pin="12" pinfunction="VBAT2_12" pintype="power_in"/>
+      <node ref="U6" pin="28" pinfunction="VBAT_28" pintype="power_in"/>
     </net>
-    <net code="17" name="GND" class="Default">
+    <net code="58" name="GND" class="Default">
+      <node ref="A1" pin="3" pinfunction="REF_GND_3" pintype="passive"/>
       <node ref="C1" pin="2" pintype="passive"/>
       <node ref="C10" pin="2" pintype="passive"/>
       <node ref="C11" pin="2" pintype="passive"/>
       <node ref="C12" pin="2" pintype="passive"/>
       <node ref="C13" pin="2" pintype="passive"/>
       <node ref="C14" pin="2" pintype="passive"/>
+      <node ref="C15" pin="2" pintype="passive"/>
+      <node ref="C16" pin="2" pintype="passive"/>
+      <node ref="C17" pin="2" pintype="passive"/>
+      <node ref="C18" pin="2" pintype="passive"/>
+      <node ref="C19" pin="2" pintype="passive"/>
       <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C20" pin="2" pintype="passive"/>
+      <node ref="C21" pin="2" pintype="passive"/>
+      <node ref="C22" pin="2" pintype="passive"/>
+      <node ref="C23" pin="2" pintype="passive"/>
+      <node ref="C24" pin="2" pintype="passive"/>
+      <node ref="C25" pin="2" pintype="passive"/>
+      <node ref="C26" pin="2" pintype="passive"/>
+      <node ref="C27" pin="2" pintype="passive"/>
+      <node ref="C30" pin="2" pintype="passive"/>
+      <node ref="C31" pin="1" pintype="passive"/>
+      <node ref="C36" pin="2" pintype="passive"/>
+      <node ref="C37" pin="1" pintype="passive"/>
+      <node ref="C38" pin="2" pintype="passive"/>
+      <node ref="C39" pin="1" pintype="passive"/>
       <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C40" pin="2" pintype="passive"/>
+      <node ref="C42" pin="2" pintype="passive"/>
+      <node ref="C43" pin="2" pintype="passive"/>
+      <node ref="C44" pin="2" pintype="passive"/>
+      <node ref="C45" pin="2" pintype="passive"/>
+      <node ref="C46" pin="2" pintype="passive"/>
+      <node ref="C47" pin="2" pintype="passive"/>
+      <node ref="C48" pin="2" pintype="passive"/>
+      <node ref="C49" pin="2" pintype="passive"/>
       <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C50" pin="2" pintype="passive"/>
+      <node ref="C51" pin="2" pintype="passive"/>
+      <node ref="C52" pin="2" pintype="passive"/>
       <node ref="C6" pin="2" pintype="passive"/>
       <node ref="C7" pin="2" pintype="passive"/>
       <node ref="C8" pin="2" pintype="passive"/>
       <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="DS1" pin="1" pinfunction="GND_1" pintype="power_in"/>
+      <node ref="DS1" pin="10" pinfunction="SA0_DC_10" pintype="input"/>
+      <node ref="DS1" pin="11" pinfunction="RW_11" pintype="input"/>
+      <node ref="DS1" pin="12" pinfunction="E_RD_12" pintype="input"/>
+      <node ref="DS1" pin="16" pinfunction="D3_16" pintype="input"/>
+      <node ref="DS1" pin="17" pinfunction="D4_17" pintype="input"/>
+      <node ref="DS1" pin="18" pinfunction="D5_18" pintype="input"/>
+      <node ref="DS1" pin="19" pinfunction="D6_19" pintype="input"/>
+      <node ref="DS1" pin="2" pinfunction="VSS_2" pintype="power_in"/>
+      <node ref="DS1" pin="20" pinfunction="D7_20" pintype="input"/>
+      <node ref="DS1" pin="24" pinfunction="GND_24" pintype="power_in"/>
+      <node ref="DS1" pin="25" pinfunction="GND_25" pintype="power_in"/>
+      <node ref="DS1" pin="26" pinfunction="GND_26" pintype="power_in"/>
+      <node ref="DS1" pin="3" pinfunction="VSS_3" pintype="power_in"/>
+      <node ref="DS1" pin="7" pinfunction="BS2_7" pintype="input"/>
+      <node ref="DS1" pin="8" pinfunction="~{CS}_8" pintype="input"/>
       <node ref="J1" pin="A1" pinfunction="GND_A1" pintype="passive"/>
       <node ref="J1" pin="A12" pinfunction="GND_A12" pintype="passive"/>
       <node ref="J1" pin="B1" pinfunction="GND_B1" pintype="passive"/>
       <node ref="J1" pin="B12" pinfunction="GND_B12" pintype="passive"/>
       <node ref="J1" pin="SH" pinfunction="SHIELD_SH" pintype="passive"/>
       <node ref="J2" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J3" pin="9" pinfunction="Pin_9_9" pintype="passive"/>
+      <node ref="J4" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J5" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
       <node ref="Q2" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="Q4" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="Q5" pin="2" pinfunction="S_2" pintype="passive"/>
       <node ref="R1" pin="2" pintype="passive"/>
       <node ref="R16" pin="2" pintype="passive"/>
       <node ref="R18" pin="2" pintype="passive"/>
       <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="R21" pin="2" pintype="passive"/>
+      <node ref="R22" pin="2" pintype="passive"/>
+      <node ref="R23" pin="2" pintype="passive"/>
+      <node ref="R24" pin="2" pintype="passive"/>
       <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="R31" pin="2" pintype="passive"/>
+      <node ref="R32" pin="2" pintype="passive"/>
+      <node ref="R34" pin="2" pintype="passive"/>
+      <node ref="R36" pin="2" pintype="passive"/>
       <node ref="R5" pin="2" pintype="passive"/>
       <node ref="R7" pin="2" pintype="passive"/>
       <node ref="SW1" pin="2" pinfunction="2_2" pintype="passive"/>
@@ -1920,74 +4931,121 @@
       <node ref="U3" pin="9" pinfunction="GND_9" pintype="power_in"/>
       <node ref="U4" pin="2" pinfunction="GND_2" pintype="passive"/>
       <node ref="U5" pin="1" pinfunction="GND_1" pintype="power_in"/>
+      <node ref="U6" pin="20" pinfunction="VSS(TX)_20" pintype="power_in"/>
+      <node ref="U6" pin="39" pinfunction="WKUP_REQ_39" pintype="input"/>
+      <node ref="U6" pin="4" pinfunction="VSS(PAD)_4" pintype="power_in"/>
+      <node ref="U6" pin="41" pinfunction="VSS_41" pintype="power_in"/>
+      <node ref="U6" pin="9" pinfunction="VSS(A)_9" pintype="power_in"/>
+      <node ref="U7" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U8" pin="1" pinfunction="A0_1" pintype="input"/>
+      <node ref="U8" pin="2" pinfunction="A1_2" pintype="input"/>
+      <node ref="U8" pin="3" pinfunction="A2_3" pintype="input"/>
+      <node ref="U8" pin="8" pinfunction="GND_8" pintype="power_in"/>
+      <node ref="U9" pin="1" pinfunction="GND_1" pintype="power_in"/>
+      <node ref="Y1" pin="2" pinfunction="G_2" pintype="passive"/>
+      <node ref="Y1" pin="4" pinfunction="G_4" pintype="passive"/>
     </net>
-    <net code="18" name="Net-(D3-K)" class="Default">
+    <net code="59" name="Net-(A1-LOOP_A)" class="Default">
+      <node ref="A1" pin="1" pinfunction="LOOP_A_1" pintype="passive"/>
+      <node ref="R27" pin="2" pintype="passive"/>
+    </net>
+    <net code="60" name="Net-(A1-LOOP_B)" class="Default">
+      <node ref="A1" pin="2" pinfunction="LOOP_B_2" pintype="passive"/>
+      <node ref="R28" pin="2" pintype="passive"/>
+    </net>
+    <net code="61" name="Net-(C28-Pad2)" class="Default">
+      <node ref="C28" pin="2" pintype="passive"/>
+      <node ref="R25" pin="1" pintype="passive"/>
+    </net>
+    <net code="62" name="Net-(C29-Pad2)" class="Default">
+      <node ref="C29" pin="2" pintype="passive"/>
+      <node ref="R26" pin="1" pintype="passive"/>
+    </net>
+    <net code="63" name="Net-(D3-K)" class="Default">
       <node ref="D3" pin="1" pinfunction="K_1" pintype="passive"/>
       <node ref="R4" pin="2" pintype="passive"/>
     </net>
-    <net code="19" name="Net-(J1-CC1)" class="Default">
+    <net code="64" name="Net-(J1-CC1)" class="Default">
       <node ref="J1" pin="A5" pinfunction="CC1_A5" pintype="bidirectional"/>
       <node ref="R1" pin="1" pintype="passive"/>
     </net>
-    <net code="20" name="Net-(J1-CC2)" class="Default">
+    <net code="65" name="Net-(J1-CC2)" class="Default">
       <node ref="J1" pin="B5" pinfunction="CC2_B5" pintype="bidirectional"/>
       <node ref="R2" pin="1" pintype="passive"/>
     </net>
-    <net code="21" name="Net-(R14-Pad2)" class="Default">
+    <net code="66" name="Net-(R14-Pad2)" class="Default">
       <node ref="R14" pin="2" pintype="passive"/>
       <node ref="SW2" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="22" name="Net-(U1-PROG)" class="Default">
+    <net code="67" name="Net-(U1-PROG)" class="Default">
       <node ref="R3" pin="1" pintype="passive"/>
       <node ref="U1" pin="5" pinfunction="PROG_5" pintype="passive"/>
     </net>
-    <net code="23" name="Net-(U1-~{CHRG})" class="Default">
+    <net code="68" name="Net-(U1-~{CHRG})" class="Default">
       <node ref="R4" pin="1" pintype="passive"/>
       <node ref="U1" pin="1" pinfunction="~{CHRG}_1" pintype="open_collector"/>
     </net>
-    <net code="24" name="Net-(U2-LX)" class="Default">
+    <net code="69" name="Net-(U2-LX)" class="Default">
       <node ref="L1" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U2" pin="3" pinfunction="LX_3" pintype="power_out"/>
     </net>
-    <net code="25" name="Net-(U3-IO18)" class="Default">
+    <net code="70" name="Net-(U3-IO18)" class="Default">
       <node ref="C7" pin="1" pintype="passive"/>
       <node ref="R12" pin="2" pintype="passive"/>
       <node ref="U3" pin="13" pinfunction="IO18_13" pintype="bidirectional"/>
     </net>
-    <net code="26" name="Net-(U3-IO19)" class="Default">
+    <net code="71" name="Net-(U3-IO19)" class="Default">
       <node ref="C8" pin="1" pintype="passive"/>
       <node ref="R13" pin="2" pintype="passive"/>
       <node ref="U3" pin="14" pinfunction="IO19_14" pintype="bidirectional"/>
     </net>
-    <net code="27" name="unconnected-(J1-SBU1-PadA8)" class="Default">
+    <net code="72" name="unconnected-(DS1-NC-Pad4)" class="Default">
+      <node ref="DS1" pin="4" pinfunction="NC_4" pintype="no_connect"/>
+    </net>
+    <net code="73" name="unconnected-(J1-SBU1-PadA8)" class="Default">
       <node ref="J1" pin="A8" pinfunction="SBU1_A8" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="28" name="unconnected-(J1-SBU2-PadB8)" class="Default">
+    <net code="74" name="unconnected-(J1-SBU2-PadB8)" class="Default">
       <node ref="J1" pin="B8" pinfunction="SBU2_B8" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="29" name="unconnected-(U3-IO3-Pad15)" class="Default">
-      <node ref="U3" pin="15" pinfunction="IO3_15" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="30" name="unconnected-(U3-IO4-Pad3)" class="Default">
-      <node ref="U3" pin="3" pinfunction="IO4_3" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="31" name="unconnected-(U3-IO5-Pad4)" class="Default">
-      <node ref="U3" pin="4" pinfunction="IO5_4" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="32" name="unconnected-(U3-IO6-Pad5)" class="Default">
-      <node ref="U3" pin="5" pinfunction="IO6_5" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="33" name="unconnected-(U3-IO7-Pad6)" class="Default">
-      <node ref="U3" pin="6" pinfunction="IO7_6" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="34" name="unconnected-(U3-IO10-Pad10)" class="Default">
-      <node ref="U3" pin="10" pinfunction="IO10_10" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="35" name="unconnected-(U3-IO20/RXD-Pad11)" class="Default">
-      <node ref="U3" pin="11" pinfunction="IO20/RXD_11" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="36" name="unconnected-(U3-IO21/TXD-Pad12)" class="Default">
+    <net code="75" name="unconnected-(U3-IO21/TXD-Pad12)" class="Default">
       <node ref="U3" pin="12" pinfunction="IO21/TXD_12" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="76" name="unconnected-(U6-ANT1-Pad23)" class="Default">
+      <node ref="U6" pin="23" pinfunction="ANT1_23" pintype="passive+no_connect"/>
+    </net>
+    <net code="77" name="unconnected-(U6-ANT2-Pad24)" class="Default">
+      <node ref="U6" pin="24" pinfunction="ANT2_24" pintype="passive+no_connect"/>
+    </net>
+    <net code="78" name="unconnected-(U6-CLK_REQ-Pad40)" class="Default">
+      <node ref="U6" pin="40" pinfunction="CLK_REQ_40" pintype="output+no_connect"/>
+    </net>
+    <net code="79" name="unconnected-(U6-DCDC_EN-Pad37)" class="Default">
+      <node ref="U6" pin="37" pinfunction="DCDC_EN_37" pintype="output+no_connect"/>
+    </net>
+    <net code="80" name="unconnected-(U6-I.C._1-Pad11)" class="Default">
+      <node ref="U6" pin="11" pinfunction="I.C._1_11" pintype="no_connect"/>
+    </net>
+    <net code="81" name="unconnected-(U6-I.C._2-Pad38)" class="Default">
+      <node ref="U6" pin="38" pinfunction="I.C._2_38" pintype="no_connect"/>
+    </net>
+    <net code="82" name="unconnected-(U6-N.C._1-Pad32)" class="Default">
+      <node ref="U6" pin="32" pinfunction="N.C._1_32" pintype="no_connect"/>
+    </net>
+    <net code="83" name="unconnected-(U6-N.C._2-Pad33)" class="Default">
+      <node ref="U6" pin="33" pinfunction="N.C._2_33" pintype="no_connect"/>
+    </net>
+    <net code="84" name="unconnected-(U6-N.C._3-Pad34)" class="Default">
+      <node ref="U6" pin="34" pinfunction="N.C._3_34" pintype="no_connect"/>
+    </net>
+    <net code="85" name="unconnected-(U6-N.C._4-Pad35)" class="Default">
+      <node ref="U6" pin="35" pinfunction="N.C._4_35" pintype="no_connect"/>
+    </net>
+    <net code="86" name="unconnected-(U6-N.C._5-Pad36)" class="Default">
+      <node ref="U6" pin="36" pinfunction="N.C._5_36" pintype="no_connect"/>
+    </net>
+    <net code="87" name="unconnected-(U6-VDD(HF)-Pad25)" class="Default">
+      <node ref="U6" pin="25" pinfunction="VDD(HF)_25" pintype="passive+no_connect"/>
     </net>
   </nets>
 </export>

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Export and check the power/USB draft against datasheet-derived connections.
+"""Export and check the complete hierarchical draft against datasheet pin maps.
 
 Run from anywhere. Requires KiCad 10 and its standard footprint/3D libraries.
 Creates docs/erc.json, docs/netlist.xml, docs/bom.csv and docs/verification.json.
@@ -36,8 +36,10 @@ components = {c.attrib['ref']: c for c in xml.findall('./components/comp')}
 net_of = {}
 net_members = {}
 for net in xml.findall('./nets/net'):
-    name = net.attrib['name'].removeprefix('/')
+    raw_name = net.attrib['name']
+    name = raw_name.rsplit('/', 1)[-1] if raw_name.startswith('/') else raw_name
     nodes = {f"{p.attrib['ref']}.{p.attrib['pin']}" for p in net.findall('node')}
+    assert name not in net_members, f'Ambiguous local net name: {name}'
     net_members[name] = nodes
     for node in nodes:
         assert node not in net_of, f'Duplicate pin {node}'
@@ -48,9 +50,10 @@ for net in xml.findall('./nets/net'):
 groups = {
     'VBUS': 'J1.A4 J1.A9 J1.B4 J1.B9 D1.2 U4.5 Q2.1 R18.1 C14.1',
     'USB_5V': 'D1.1 D2.2 Q1.1 R5.1 U1.4 C1.1 D3.2',
-    'VSYS': 'D2.1 Q1.2 U2.1 U2.4 C4.1',
+    'VSYS': 'D2.1 Q1.2 U2.1 U2.4 C4.1 C17.1 C18.1 Q3.2 R29.1 R33.1 U6.12 U6.28',
     'VBAT': 'U1.3 J2.1 Q1.3 C2.1 R15.1',
-    '+3V3': 'L1.2 R6.1 C3.1 C5.1 C6.1 C9.1 C10.1 U3.1 U5.3 C11.1 R8.1 R9.1 R10.1 R11.1 R17.1',
+    '+3V3': 'L1.2 R6.1 C3.1 C5.1 C6.1 C9.1 C10.1 U3.1 U5.3 C11.1 R8.1 R9.1 R10.1 R11.1 R17.1 C15.1 C16.1 C49.1 C51.1 C52.1 J4.1 J5.1 R37.1 R38.1 R39.1 R40.1 U6.6 U8.16 U9.3',
+    '+3V0': 'C43.1 C44.1 C50.1 DS1.5 DS1.6 R19.1 R20.1 R35.1 U9.2',
     'BUCK_FB': 'U2.5 R6.2 R7.1 C3.2',
     'ESP_EN': 'U3.2 U5.2 R8.2 C12.1 SW1.1',
     'BOOT_N': 'U3.8 R11.2 R14.1',
@@ -62,34 +65,109 @@ groups = {
     'USB_D+': 'J1.A6 J1.B6 U4.3',
     'USB_ESD_D-': 'U4.6 R12.1',
     'USB_ESD_D+': 'U4.4 R13.1',
+    'I2C_SDA': 'DS1.14 DS1.15 J4.3 J5.3 R19.2 R38.2 U3.3 U6.5 U8.15',
+    'I2C_SCL': 'DS1.13 J4.4 J5.4 R20.2 R39.2 U3.4 U6.7 U8.14',
+    'KEY_INT_N': 'J4.5 J5.5 R37.2 R40.2 U3.11 U8.13',
+    'NFC_IRQ': 'U3.5 U6.8',
+    'NFC_VEN': 'R22.1 U3.6 U6.10',
+    'NFC_ADR0': 'R23.1 U6.1',
+    'NFC_ADR1': 'R24.1 U6.3',
+    'NFC_DWL_REQ': 'R21.1 U6.2',
+    'NFC_RXN': 'C28.1 U6.15',
+    'NFC_RXP': 'C29.1 U6.16',
+    'NFC_TVDD': 'C23.1 C24.1 U6.14 U6.18 U6.22',
+    'NFC_TX1': 'L2.1 U6.21',
+    'NFC_TX2': 'L3.1 U6.19',
+    'NFC_VDD18': 'C21.1 C22.1 U6.26 U6.27 U6.31',
+    'NFC_VDDUP': 'C19.1 C20.1 R29.2 U6.13',
+    'NFC_VMID': 'C25.1 U6.17',
+    'NFC_XTAL1': 'C26.1 U6.30 Y1.1',
+    'NFC_XTAL2': 'C27.1 U6.29 Y1.3',
+    'RF_EMC_P': 'C30.1 C32.1 C34.1 L2.2 R25.2',
+    'RF_EMC_N': 'C31.2 C33.1 C35.1 L3.2 R26.2',
+    'RF_MATCH_P': 'C32.2 C34.2 C36.1 C38.1 R27.1',
+    'RF_MATCH_N': 'C33.2 C35.2 C37.2 C39.2 R28.1',
+    'OLED_PWR_EN': 'Q4.1 R34.1 U3.15',
+    'OLED_RESET': 'Q5.1 R36.1 U3.10',
+    'OLED_12V5': 'C41.1 C42.1 C45.1 C46.1 D4.1 DS1.23 R30.1',
+    'OLED_BOOST_IN': 'C40.1 L4.1 Q3.3 U7.4 U7.5',
+    'OLED_FB': 'C41.2 R30.2 R31.1 U7.3',
+    'OLED_GATE_N': 'Q3.1 Q4.3 R33.2',
+    'OLED_IREF': 'DS1.21 R32.1',
+    'OLED_RES_N': 'C48.1 DS1.9 Q5.3 R35.2',
+    'OLED_SW': 'D4.2 L4.2 U7.1',
+    'OLED_VCOMH': 'C47.1 DS1.22',
 }
+for i, pin in enumerate([4, 5, 6, 7, 9, 10, 11, 12]):
+    groups[f'KEY_P{i}'] = f'J3.{i+1} U8.{pin}'
 for name, nodes in groups.items():
     assert net_members[name] == set(nodes.split()), f'{name}: {net_members[name]} != {nodes}'
 for nodes in ['U2.3 L1.1', 'U1.5 R3.1', 'U1.1 R4.1', 'R4.2 D3.1',
               'J1.A5 R1.1', 'J1.B5 R2.1', 'R14.2 SW2.1',
-              'R12.2 U3.13 C7.1', 'R13.2 U3.14 C8.1']:
+              'R12.2 U3.13 C7.1', 'R13.2 U3.14 C8.1',
+              'A1.1 R27.2', 'A1.2 R28.2', 'C28.2 R25.1', 'C29.2 R26.1']:
     expected = set(nodes.split())
     assert net_members[net_of[next(iter(expected))]] == expected, nodes
 for pin in ('J1.A1 J1.A12 J1.B1 J1.B12 J1.SH J2.2 U1.2 U2.2 U3.9 U3.19 U4.2 U5.1 '
-            'Q2.2 R1.2 R2.2 R3.2 R5.2 R7.2').split():
+            'Q2.2 R1.2 R2.2 R3.2 R5.2 R7.2 '
+            'U6.4 U6.9 U6.20 U6.39 U6.41 Y1.2 Y1.4 R21.2 R22.2 R23.2 R24.2 '
+            'C15.2 C16.2 C17.2 C18.2 C19.2 C20.2 C21.2 C22.2 C23.2 C24.2 C25.2 '
+            'C26.2 C27.2 C30.2 C31.1 C36.2 C37.1 C38.2 C39.1 A1.3 '
+            'U7.2 Q4.2 Q5.2 R31.2 R32.2 R34.2 R36.2 C40.2 C42.2 C43.2 C44.2 '
+            'C45.2 C46.2 C47.2 C48.2 DS1.1 DS1.2 DS1.3 DS1.7 DS1.8 DS1.10 '
+            'DS1.11 DS1.12 DS1.16 DS1.17 DS1.18 DS1.19 DS1.20 DS1.24 DS1.25 DS1.26 '
+            'U8.1 U8.2 U8.3 U8.8 J3.9 J4.2 J5.2 C49.2 C50.2 C51.2 C52.2 U9.1').split():
     assert net_of[pin] == 'GND', pin
-for pin in 'J1.A8 J1.B8 U3.3 U3.4 U3.5 U3.6 U3.10 U3.11 U3.12 U3.15'.split():
+for pin in ('J1.A8 J1.B8 U3.12 DS1.4 U6.11 U6.23 U6.24 U6.25 '
+            'U6.32 U6.33 U6.34 U6.35 U6.36 U6.37 U6.38 U6.40').split():
     assert net_of[pin].startswith('unconnected-'), pin
 
 values = {r: c.findtext('value') for r, c in components.items()}
 for ref, value in {'U1':'TP4054-42-SOT235', 'U2':'SY8089AAAC', 'U3':'ESP32-C3-WROOM-02-N4',
                    'U5':'TLV803EA30DCKR', 'R1':'5.1k', 'R2':'5.1k', 'R3':'10k',
                    'R6':'220k', 'R7':'48.7k', 'R12':'22R', 'R13':'22R',
-                   'R15':'470k', 'R16':'470k', 'L1':'2.2uH'}.items():
+                   'R15':'470k', 'R16':'470k', 'L1':'2.2uH', 'D1':'B340A','D2':'B340A',
+                   'U6':'PN7160A1HN/C100E','U7':'AP3012KTR-E1','U8':'PCF8574T',
+                   'U9':'MCP1700T-3002E/TT','R19':'2.2k','R20':'2.2k','R21':'10k',
+                   'R22':'100k','R23':'100k','R24':'100k','R29':'0R','R30':'1.8M',
+                   'R31':'200k','R32':'910k','L4':'10uH','D4':'SS14'}.items():
     assert values[ref] == value, (ref, values[ref])
 fields = {r: {f.attrib['name']: f.text or '' for f in c.findall('./fields/field')} for r,c in components.items()}
-for ref in ['R6','R7']:
+for ref in ['R6','R7','R30','R31']:
     assert fields[ref]['Tolerance'] == '0.1%', f'{ref} must be precision 0.1%'
-sch = parse(SCH.read_text())
-instances = {uq(next(p[2] for p in children(s,'property') if uq(p[1])=='Reference')):s for s in children(sch,'symbol')}
-for ref in ['C7','C8']:
-    assert child(instances[ref],'dnp')[1] == 'yes', f'{ref} must remain unpopulated unless USB is retuned'
-assert len(instances) == len(children(sch,'symbol')), 'Duplicate references'
+def properties(item):
+    result = {uq(p[1]): uq(p[2]) for p in children(item, 'property')}
+    assert len(result) == len(children(item, 'property')), f'Duplicate property: {result}'
+    return result
+
+schematics = {}
+instances = {}
+def read_hierarchy(path):
+    assert path not in schematics, f'Repeated sheet: {path}'
+    tree = parse(path.read_text())
+    schematics[path] = tree
+    for symbol in children(tree, 'symbol'):
+        ref = properties(symbol)['Reference']
+        assert ref not in instances, f'Duplicate reference: {ref}'
+        instances[ref] = symbol
+    for sheet in children(tree, 'sheet'):
+        read_hierarchy(path.parent / properties(sheet)['Sheetfile'])
+read_hierarchy(SCH)
+assert len(schematics) == 5
+for ref in ['D1','D2']:
+    assert properties(instances[ref])['Datasheet'] == 'https://www.diodes.com/datasheet/download/B340A.pdf'
+for ref in ['C7','C8','J3','J4','J5','C34','C35','C38','C39','R38','R39']:
+    assert child(instances[ref],'dnp')[1] == 'yes', f'{ref} must remain DNP'
+keyboard = schematics[ROOT / 'keyboard.kicad_sch']
+assert {uq(p[1]) for p in children(keyboard, 'hierarchical_label')} == {
+    '+3V3', 'GND', 'I2C_SDA', 'I2C_SCL', 'KEY_INT_N'}
+for symbol in children(keyboard, 'symbol'):
+    props = properties(symbol)
+    if not props['Reference'].startswith('#'):
+        assert props['PCB Region'] == 'BREAKAWAY_KEYBOARD'
+for ref, address in [('U6','0x28'),('U8','0x20'),('DS1','0x3C')]:
+    assert fields[ref]['I2C Address'] == address
+assert fields['DS1']['Footprint Status'].startswith('PROVISIONAL:')
 
 # Check every physical symbol pin has a matching footprint pad and every referenced
 # 3D model exists; excludes power symbols, which are not physical BOM components.
@@ -133,24 +211,57 @@ assert adc_max < 2.5
 # The application note gives 1 MHz typical, not a guaranteed minimum.
 peak=.5+v_max*(1-v_max/5.5)/(2*.8e6*2.2e-6*.8)
 assert peak < 1.48
+# AP3012 reference limits, precision divider and conservative +/-100 nA FB bias.
+boost_nom = 1.25 * (1 + 1.8e6 / 200e3)
+boost_min = 1.17 * (1 + 1.8e6*.999 / (200e3*1.001)) - 100e-9*1.8e6*1.001
+boost_max = 1.33 * (1 + 1.8e6*1.001 / (200e3*.999)) + 100e-9*1.8e6*1.001
+assert 7 < boost_min < boost_nom < boost_max < 16
+# MCP1700 +/-3% temperature accuracy plus +/-1.5% full-range load allowance.
+# These are regulated-output estimates, not a guarantee through dropout/transients.
+logic_min, logic_max = 3*(1-.03-.015), 3*(1+.03+.015)
+assert logic_max < 3.3
+bus_high_required = max(.75*v_max, .7*v_max, .8*logic_max)
+assert logic_min > bus_high_required
+pullup_sink_mA = (logic_max-.4)/(2200*.99)*1000
+assert pullup_sink_mA < 3
+# Standard-mode 100 kHz, 400 pF design ceiling; tr ~= 0.8473 * R * C.
+rise_ns = .8473*2200*1.01*400e-12*1e9
+assert rise_ns < 1000
+oled_load_A = .030
+boost_input_A = boost_max*oled_load_A/(3*.75)
+boost_peak_A = boost_input_A + 3*(1-3/boost_max)/(2*1.1e6*10e-6*.8)
+assert boost_peak_A < .5  # AP3012 typical limit, not a guaranteed minimum.
+pending = {ref: {'value': values[ref], 'status': fields[ref].get('Status', fields[ref].get('Footprint Status',''))}
+           for ref in components if 'TBD' in values[ref] or ref in ['DS1','Y1']}
 report={
- 'schematic_sha256':hashlib.sha256(SCH.read_bytes()).hexdigest(),
+ 'schematic_sha256':{str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in schematics},
  'kicad_version':subprocess.check_output([CLI,'version'],text=True).strip(),
- 'erc_violations':0,'components':len(components), 'net_count':len(net_members),
+ 'erc_violations':0,'sheets':len(schematics),'components':len(components), 'net_count':len(net_members),
  'checked_named_nets':len(groups),'unique_footprints':len(footprints),'resolved_models':len(models),'components_without_3D':without_models,
  'calculations':{'charge_nominal_mA':charge_mA,'vout_nominal_V':v_nom,'vout_static_min_V':v_min,
                  'vout_static_max_V':v_max,'reset_falling_min_V':reset_min,'reset_release_max_V':release_max,
-                 'VBAT_ADC_max_V':adc_max,'inductor_peak_estimate_A_at_500mA_load':peak},
+                 'VBAT_ADC_max_V':adc_max,'inductor_peak_estimate_A_at_500mA_load':peak,
+                 'OLED_nominal_V':boost_nom,'OLED_static_min_V':boost_min,'OLED_static_max_V':boost_max,
+                 'logic_regulated_min_estimate_V':logic_min,'logic_regulated_max_estimate_V':logic_max,
+                 'I2C_high_required_V':bus_high_required,'I2C_pullup_current_mA_at_VOL_0V4':pullup_sink_mA,
+                 'I2C_rise_ns_at_400pF':rise_ns,'OLED_boost_peak_estimate_A_at_30mA_output':boost_peak_A},
+ 'i2c':{'speed_Hz':100000,'pullup_V':3.0,'addresses':{'PN7160':'0x28','SSD1309':'0x3C','PCF8574T':'0x20'}},
+ 'pending_selection_or_tuning':pending,
  'limits':['Static checks only; no board or bench measurements.',
            'No USB input current/inrush/suspend controller; host-power compliance unresolved.',
            'Full-charge headroom depends on VBUS at connector and D1 forward drop.',
-           'Battery model/polarity and capacitor MPN/DC-bias curves require selection before PCB.'],
+           'Battery model/polarity/discharge rating and MLCC DC-bias curves require selection before PCB.',
+           'Concurrent peak loads can exceed 1 A at the battery; input budget and thermal checks remain open.',
+           'RF values/coil and crystal grade/load require selection and measurement.',
+           'OLED panel/flex footprint is provisional; actual display load and supply sequencing need validation.',
+           'MCP1700 low-current dropout and AP3012 switch-current limits need bench validation.',
+           'Keyboard break line, routing and reconnect cable capacitance are deferred to PCB layout.'],
  'models':sorted(models)
 }
 (DOC/'verification.json').write_text(json.dumps(report,indent=2)+'\n')
 with (DOC/'bom.csv').open('w',newline='') as f:
-    writer=csv.writer(f);writer.writerow(['Reference','Value','Footprint','Manufacturer','MPN','Tolerance','Voltage','Dielectric','DNP','Datasheet'])
+    writer=csv.writer(f,lineterminator='\n');writer.writerow(['Reference','Value','Footprint','Manufacturer','MPN','Tolerance','Voltage','Dielectric','DNP','PCB Region','Status','Datasheet'])
     for ref in sorted(components,key=lambda s:(re.sub(r'\d','',s),int(re.search(r'\d+',s)[0]))):
         c=components[ref];p=fields[ref]
-        writer.writerow([ref,c.findtext('value'),c.findtext('footprint'),p.get('Manufacturer',''),p.get('MPN',''),p.get('Tolerance',''),p.get('Voltage',''),p.get('Dielectric',''),child(instances[ref],'dnp')[1],c.findtext('datasheet')])
-print(json.dumps({k:v for k,v in report.items() if k not in ['models','limits']},indent=2))
+        writer.writerow([ref,c.findtext('value'),c.findtext('footprint'),p.get('Manufacturer',''),p.get('MPN',''),p.get('Tolerance',''),p.get('Voltage',''),p.get('Dielectric',''),child(instances[ref],'dnp')[1],p.get('PCB Region','MAIN'),p.get('Status',p.get('Footprint Status','')),properties(instances[ref]).get('Datasheet',c.findtext('datasheet'))])
+print(json.dumps({k:v for k,v in report.items() if k not in ['models','limits','pending_selection_or_tuning']},indent=2))

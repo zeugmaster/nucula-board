@@ -1,0 +1,8854 @@
+(kicad_sch
+  (version 20250114)
+  (generator "eeschema")
+  (generator_version "10.0")
+  (uuid 3dde2d8e-4349-599d-9fca-8a826b6dfad5)
+  (paper "A3")
+  (title_block
+    (title "PN7160 I2C NFC controller and antenna matching")
+    (date "2026-09-20")
+    (rev "B-draft")
+  )
+  (lib_symbols
+    (symbol "Nucula_Project:PN7160A1HN_C100E"
+      (property "MPN" "PN7160A1HN/C100E"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          ) hide
+        )
+      )
+      (property "Manufacturer" "NXP"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          ) hide
+        )
+      )
+      (property "Description" "NXP PN7160 I2C NFC controller, HVQFN40 plus EP; pin 22 TVDD_IN2"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          ) hide
+        )
+      )
+      (property "Datasheet" "https://www.nxp.com/docs/en/data-sheet/PN7160_PN7161.pdf"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          ) hide
+        )
+      )
+      (property "Footprint" "Nucula_Project:PN7160A1HN_C100E"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          ) hide
+        )
+      )
+      (property "Value" "PN7160A1HN_C100E"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          ) hide
+        )
+      )
+      (property "Reference" "U"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          ) hide
+        )
+      )
+      (pin_names
+        (offset 0.508)
+      )
+      (in_bom yes)
+      (on_board yes)
+      (symbol "PN7160A1HN_C100E_0_1"
+        (rectangle
+          (start -22.86 44.45)
+          (end 22.86 -44.45)
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type background)
+          )
+        )
+      )
+      (symbol "PN7160A1HN_C100E_1_1"
+        (pin bidirectional line
+          (at -27.94 40.64 0)
+          (length 5.08)
+          (name "I2C_SDA"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "5"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin input line
+          (at -27.94 36.83 0)
+          (length 5.08)
+          (name "I2C_SCL"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "7"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin output line
+          (at -27.94 33.02 0)
+          (length 5.08)
+          (name "IRQ"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "8"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin input line
+          (at -27.94 29.21 0)
+          (length 5.08)
+          (name "VEN"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "10"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin input line
+          (at -27.94 25.4 0)
+          (length 5.08)
+          (name "DWL_REQ"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "2"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin input line
+          (at -27.94 21.59 0)
+          (length 5.08)
+          (name "I2C_ADR0"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin input line
+          (at -27.94 17.78 0)
+          (length 5.08)
+          (name "I2C_ADR1"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "3"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin input line
+          (at -27.94 13.97 0)
+          (length 5.08)
+          (name "WKUP_REQ"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "39"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin output line
+          (at -27.94 10.16 0)
+          (length 5.08)
+          (name "DCDC_EN"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "37"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin output line
+          (at -27.94 6.35 0)
+          (length 5.08)
+          (name "CLK_REQ"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "40"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin input line
+          (at -27.94 2.54 0)
+          (length 5.08)
+          (name "NFC_CLK_XTAL1"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "30"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin output line
+          (at -27.94 -1.27 0)
+          (length 5.08)
+          (name "XTAL2"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "29"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin no_connect line
+          (at -27.94 -5.08 0)
+          (length 5.08)
+          (name "I.C._1"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "11"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin no_connect line
+          (at -27.94 -8.89 0)
+          (length 5.08)
+          (name "N.C._1"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "32"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin no_connect line
+          (at -27.94 -12.7 0)
+          (length 5.08)
+          (name "N.C._2"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "33"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin no_connect line
+          (at -27.94 -16.51 0)
+          (length 5.08)
+          (name "N.C._3"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "34"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin no_connect line
+          (at -27.94 -20.32 0)
+          (length 5.08)
+          (name "N.C._4"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "35"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin no_connect line
+          (at -27.94 -24.13 0)
+          (length 5.08)
+          (name "N.C._5"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "36"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin no_connect line
+          (at -27.94 -27.94 0)
+          (length 5.08)
+          (name "I.C._2"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "38"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin power_in line
+          (at 27.94 40.64 180)
+          (length 5.08)
+          (name "VDD(PAD)"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "6"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin power_in line
+          (at 27.94 36.83 180)
+          (length 5.08)
+          (name "VBAT"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "28"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin power_in line
+          (at 27.94 33.02 180)
+          (length 5.08)
+          (name "VBAT2"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "12"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin power_in line
+          (at 27.94 29.21 180)
+          (length 5.08)
+          (name "VDD(UP)"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "13"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin power_out line
+          (at 27.94 25.4 180)
+          (length 5.08)
+          (name "VDD(TX)"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "14"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin power_in line
+          (at 27.94 21.59 180)
+          (length 5.08)
+          (name "TVDD_IN"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "18"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin power_in line
+          (at 27.94 17.78 180)
+          (length 5.08)
+          (name "TVDD_IN2"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "22"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin power_out line
+          (at 27.94 13.97 180)
+          (length 5.08)
+          (name "VDD(D)"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "31"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin power_in line
+          (at 27.94 10.16 180)
+          (length 5.08)
+          (name "VDD(A)"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "26"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin power_in line
+          (at 27.94 6.35 180)
+          (length 5.08)
+          (name "VDD"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "27"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 27.94 2.54 180)
+          (length 5.08)
+          (name "VDD(VMID)"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "17"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 27.94 -1.27 180)
+          (length 5.08)
+          (name "VDD(HF)"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "25"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin output line
+          (at 27.94 -5.08 180)
+          (length 5.08)
+          (name "TX1"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "21"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin output line
+          (at 27.94 -8.89 180)
+          (length 5.08)
+          (name "TX2"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "19"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin input line
+          (at 27.94 -12.7 180)
+          (length 5.08)
+          (name "RXN"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "15"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin input line
+          (at 27.94 -16.51 180)
+          (length 5.08)
+          (name "RXP"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "16"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 27.94 -20.32 180)
+          (length 5.08)
+          (name "ANT1"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "23"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 27.94 -24.13 180)
+          (length 5.08)
+          (name "ANT2"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "24"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin power_in line
+          (at 27.94 -27.94 180)
+          (length 5.08)
+          (name "VSS(PAD)"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "4"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin power_in line
+          (at 27.94 -31.75 180)
+          (length 5.08)
+          (name "VSS(A)"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "9"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin power_in line
+          (at 27.94 -35.56 180)
+          (length 5.08)
+          (name "VSS(TX)"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "20"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin power_in line
+          (at 27.94 -39.37 180)
+          (length 5.08)
+          (name "VSS"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "41"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+      )
+    )
+    (symbol "Device:R"
+      (pin_numbers
+        (hide yes)
+      )
+      (pin_names
+        (offset 0)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "R"
+        (at 2.032 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Value" "R"
+        (at 0 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at -1.778 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Description" "Resistor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "ki_keywords" "R res resistor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "ki_fp_filters" "R_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (symbol "R_0_1"
+        (rectangle
+          (start -1.016 -2.54)
+          (end 1.016 2.54)
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+      )
+      (symbol "R_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 1.27)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 1.27)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "power:GND"
+      (power global)
+      (pin_numbers
+        (hide yes)
+      )
+      (pin_names
+        (offset 0)
+        (hide yes)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "#PWR"
+        (at 0 -6.35 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Value" "GND"
+        (at 0 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "ki_keywords" "global power"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (symbol "GND_0_1"
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 -1.27)
+            (xy 1.27 -1.27)
+            (xy 0 -2.54)
+            (xy -1.27 -1.27)
+            (xy 0 -1.27)
+          )
+          (stroke
+            (width 0)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+      )
+      (symbol "GND_1_1"
+        (pin power_in line
+          (at 0 0 270)
+          (length 0)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Device:Crystal_GND24"
+      (pin_names
+        (offset 1.016)
+        (hide yes)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "Y"
+        (at 3.175 5.08 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (justify left)
+        )
+      )
+      (property "Value" "Crystal_GND24"
+        (at 3.175 3.175 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (justify left)
+        )
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Description" "Four pin crystal, GND on pins 2 and 4"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property private "KLC_S3.3" "The rectangle is not a symbol body but a graphical element"
+        (at 0 -12.7 0)
+        (show_name yes)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property private "KLC_S4.1" "Some pins are on 50mil grid to make the symbol small"
+        (at 0 -15.24 0)
+        (show_name yes)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "ki_keywords" "quartz ceramic resonator oscillator"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "ki_fp_filters" "Crystal*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (symbol "Crystal_GND24_0_1"
+        (polyline
+          (pts
+            (xy -2.54 2.286)
+            (xy -2.54 3.556)
+            (xy 2.54 3.556)
+            (xy 2.54 2.286)
+          )
+          (stroke
+            (width 0)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy -2.54 0)
+            (xy -2.032 0)
+          )
+          (stroke
+            (width 0)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy -2.54 -2.286)
+            (xy -2.54 -3.556)
+            (xy 2.54 -3.556)
+            (xy 2.54 -2.286)
+          )
+          (stroke
+            (width 0)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy -2.032 -1.27)
+            (xy -2.032 1.27)
+          )
+          (stroke
+            (width 0.508)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (rectangle
+          (start -1.143 2.54)
+          (end 1.143 -2.54)
+          (stroke
+            (width 0.3048)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy 0 -3.81)
+            (xy 0 -3.556)
+          )
+          (stroke
+            (width 0)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy 2.032 0)
+            (xy 2.54 0)
+          )
+          (stroke
+            (width 0)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy 2.032 -1.27)
+            (xy 2.032 1.27)
+          )
+          (stroke
+            (width 0.508)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+      )
+      (symbol "Crystal_GND24_1_1"
+        (pin passive line
+          (at -3.81 0 0)
+          (length 1.27)
+          (name "1"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 0 -5.08 90)
+          (length 1.27)
+          (name "G"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 3.81 0 180)
+          (length 1.27)
+          (name "3"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 0 -5.08 90)
+          (length 1.27)
+          (hide yes)
+          (name "G"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "4"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Device:C"
+      (pin_numbers
+        (hide yes)
+      )
+      (pin_names
+        (offset 0.254)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "C"
+        (at 0.635 2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (justify left)
+        )
+      )
+      (property "Value" "C"
+        (at 0.635 -2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (justify left)
+        )
+      )
+      (property "Footprint" ""
+        (at 0.9652 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Description" "Unpolarized capacitor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "ki_keywords" "cap capacitor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "ki_fp_filters" "C_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (symbol "C_0_1"
+        (polyline
+          (pts
+            (xy -2.032 0.762)
+            (xy 2.032 0.762)
+          )
+          (stroke
+            (width 0.508)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy -2.032 -0.762)
+            (xy 2.032 -0.762)
+          )
+          (stroke
+            (width 0.508)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+      )
+      (symbol "C_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 2.794)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 2.794)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "power:PWR_FLAG"
+      (power global)
+      (pin_numbers
+        (hide yes)
+      )
+      (pin_names
+        (offset 0)
+        (hide yes)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "#FLG"
+        (at 0 1.905 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Value" "PWR_FLAG"
+        (at 0 3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Description" "Special symbol for telling ERC where power comes from"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "ki_keywords" "flag power"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (symbol "PWR_FLAG_0_0"
+        (pin power_out line
+          (at 0 0 90)
+          (length 0)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+      )
+      (symbol "PWR_FLAG_0_1"
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 1.27)
+            (xy -1.016 1.905)
+            (xy 0 2.54)
+            (xy 1.016 1.905)
+            (xy 0 1.27)
+          )
+          (stroke
+            (width 0)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Device:L"
+      (pin_numbers
+        (hide yes)
+      )
+      (pin_names
+        (offset 1.016)
+        (hide yes)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "L"
+        (at -1.27 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Value" "L"
+        (at 1.905 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Description" "Inductor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "ki_keywords" "inductor choke coil reactor magnetic"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (symbol "L_0_1"
+        (arc
+          (start 0 2.54)
+          (mid 0.6323 1.905)
+          (end 0 1.27)
+          (stroke
+            (width 0)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (arc
+          (start 0 1.27)
+          (mid 0.6323 0.635)
+          (end 0 0)
+          (stroke
+            (width 0)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (arc
+          (start 0 0)
+          (mid 0.6323 -0.635)
+          (end 0 -1.27)
+          (stroke
+            (width 0)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (arc
+          (start 0 -1.27)
+          (mid 0.6323 -1.905)
+          (end 0 -2.54)
+          (stroke
+            (width 0)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+      )
+      (symbol "L_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 1.27)
+          (name "1"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 1.27)
+          (name "2"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Nucula_Project:NFC_Loop_TBD"
+      (property "Description" "Two-terminal 13.56 MHz coil plus reference/shield ground; geometry and tuning TBD"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          ) hide
+        )
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          ) hide
+        )
+      )
+      (property "Footprint" "Nucula_Project:NFC_Antenna_Interface_TBD"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          ) hide
+        )
+      )
+      (property "Value" "NFC_Loop_TBD"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          ) hide
+        )
+      )
+      (property "Reference" "A"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          ) hide
+        )
+      )
+      (pin_names
+        (offset 0.508)
+      )
+      (in_bom yes)
+      (on_board yes)
+      (symbol "NFC_Loop_TBD_0_1"
+        (rectangle
+          (start -10.16 12.7)
+          (end 10.16 -12.7)
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type background)
+          )
+        )
+      )
+      (symbol "NFC_Loop_TBD_1_1"
+        (pin passive line
+          (at -15.24 7.62 0)
+          (length 5.08)
+          (name "LOOP_A"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at -15.24 -7.62 0)
+          (length 5.08)
+          (name "LOOP_B"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "2"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at -15.24 0 0)
+          (length 5.08)
+          (name "REF_GND"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+          (number "3"
+            (effects
+              (font
+                (size 1.016 1.016)
+              )
+            )
+          )
+        )
+      )
+    )
+  )
+  (text "PN7160 / I2C host + balanced NFC antenna matching"
+    (at 15.24 17.78 0)
+    (effects
+      (font
+        (size 2.0 2.0)
+      )
+      (justify left)
+    )
+    (uuid 2afb5907-282f-57d5-a8b6-65eb5efc6522)
+  )
+  (hierarchical_label "+3V3"
+    (shape input)
+    (at 43.18 30.48 0)
+    (effects
+      (font
+        (size 1.27 1.27)
+      )
+      (justify left)
+    )
+    (uuid 17a0810b-eac6-5de9-b3f1-45ef924d5088)
+  )
+  (wire
+    (pts
+      (xy 43.18 30.48)
+      (xy 35.56 30.48)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 47efb162-bfea-5520-a6c3-14bd687ac9f7)
+  )
+  (label "+3V3"
+    (at 35.56 30.48 180)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify right)
+    )
+    (uuid 4682e020-d412-5191-b980-b19226f45ea7)
+  )
+  (hierarchical_label "VSYS"
+    (shape input)
+    (at 43.18 35.56 0)
+    (effects
+      (font
+        (size 1.27 1.27)
+      )
+      (justify left)
+    )
+    (uuid 76009e26-f5ab-5346-b66f-8f69fac15585)
+  )
+  (wire
+    (pts
+      (xy 43.18 35.56)
+      (xy 35.56 35.56)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 7ffd36c9-e33f-58ec-9b71-5c28ea9917ca)
+  )
+  (label "VSYS"
+    (at 35.56 35.56 180)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify right)
+    )
+    (uuid 24eddf3f-0391-5409-8ab3-95bc27892e2d)
+  )
+  (hierarchical_label "GND"
+    (shape bidirectional)
+    (at 43.18 40.64 0)
+    (effects
+      (font
+        (size 1.27 1.27)
+      )
+      (justify left)
+    )
+    (uuid 14195898-7520-5b9d-b77d-03105f7144db)
+  )
+  (wire
+    (pts
+      (xy 43.18 40.64)
+      (xy 35.56 40.64)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 76e0ca5a-b633-52fc-ac46-a1e552a550d4)
+  )
+  (label "GND"
+    (at 35.56 40.64 180)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify right)
+    )
+    (uuid b50f96ce-6e01-5027-8343-9ce8abf8600f)
+  )
+  (hierarchical_label "I2C_SDA"
+    (shape bidirectional)
+    (at 43.18 45.72 0)
+    (effects
+      (font
+        (size 1.27 1.27)
+      )
+      (justify left)
+    )
+    (uuid a0d7b2d4-0828-57d5-b85e-6baf38d94a4a)
+  )
+  (wire
+    (pts
+      (xy 43.18 45.72)
+      (xy 35.56 45.72)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 414d4b7c-2f52-5302-8fad-cd2598426d01)
+  )
+  (label "I2C_SDA"
+    (at 35.56 45.72 180)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify right)
+    )
+    (uuid cb89d977-1517-5cd9-9d7f-5cc400b3e7f6)
+  )
+  (hierarchical_label "I2C_SCL"
+    (shape input)
+    (at 43.18 50.8 0)
+    (effects
+      (font
+        (size 1.27 1.27)
+      )
+      (justify left)
+    )
+    (uuid 312a2e69-830f-5652-b0b0-4e9417065a89)
+  )
+  (wire
+    (pts
+      (xy 43.18 50.8)
+      (xy 35.56 50.8)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid c2e87afa-ecca-51c8-8c0f-e79565d22909)
+  )
+  (label "I2C_SCL"
+    (at 35.56 50.8 180)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify right)
+    )
+    (uuid 4b5eb14b-2d25-5f86-8b67-b96dc13a2e6a)
+  )
+  (hierarchical_label "NFC_VEN"
+    (shape input)
+    (at 43.18 55.88 0)
+    (effects
+      (font
+        (size 1.27 1.27)
+      )
+      (justify left)
+    )
+    (uuid 5cab1a1a-d500-5ff1-a6d7-4cb6777bade3)
+  )
+  (wire
+    (pts
+      (xy 43.18 55.88)
+      (xy 35.56 55.88)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid e3d1da80-da3a-5ca2-9bdb-46517659f36d)
+  )
+  (label "NFC_VEN"
+    (at 35.56 55.88 180)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify right)
+    )
+    (uuid 13a920c0-6cc2-5e9e-a6c5-fba214f5a7a0)
+  )
+  (hierarchical_label "NFC_IRQ"
+    (shape output)
+    (at 43.18 60.96 0)
+    (effects
+      (font
+        (size 1.27 1.27)
+      )
+      (justify left)
+    )
+    (uuid 3887ba12-adb6-5ac6-a9f0-722b72fbfd45)
+  )
+  (wire
+    (pts
+      (xy 43.18 60.96)
+      (xy 35.56 60.96)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 31bc58a4-dc3c-518f-a5bb-b39f9e984909)
+  )
+  (label "NFC_IRQ"
+    (at 35.56 60.96 180)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify right)
+    )
+    (uuid 889c335b-39d9-5127-be22-58ec146c0726)
+  )
+  (symbol
+    (lib_id "Nucula_Project:PN7160A1HN_C100E")
+    (at 119.38 86.36 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 348c1185-a294-5096-8bfb-d4e7ffed9d42)
+    (property "Reference" "U6"
+      (at 99.06 33.02 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "PN7160A1HN/C100E"
+      (at 99.06 35.56 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Nucula_Project:PN7160A1HN_C100E"
+      (at 119.38 86.36 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" "https://www.nxp.com/docs/en/data-sheet/PN7160_PN7161.pdf"
+      (at 119.38 86.36 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Manufacturer" "NXP"
+      (at 119.38 86.36 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "MPN" "PN7160A1HN/C100E"
+      (at 119.38 86.36 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "I2C Address" "0x28"
+      (at 119.38 86.36 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "5"
+      (uuid 6d7cd855-35ac-544f-b63a-c5b5450066cd)
+    )
+    (pin "7"
+      (uuid dc2fd3b8-4ae6-5261-870a-cb8ff0aa26bf)
+    )
+    (pin "8"
+      (uuid 8cb5412b-201d-590f-9ce1-1c0be3e56b19)
+    )
+    (pin "10"
+      (uuid c86226d7-17fd-58b5-b4af-c2859b2f7f08)
+    )
+    (pin "2"
+      (uuid 4223eca3-e689-5b3d-9600-843829f5c7d1)
+    )
+    (pin "1"
+      (uuid f45f7b15-eca2-5dbc-85e6-063133a3d10b)
+    )
+    (pin "3"
+      (uuid 5fe37bb6-e479-531c-8f4b-4adce35bb4fb)
+    )
+    (pin "39"
+      (uuid 10c92e5c-c980-5b5a-93e5-ad1f7f742cf9)
+    )
+    (pin "37"
+      (uuid dc3b45bd-220f-5438-b9c2-c838c6100f8b)
+    )
+    (pin "40"
+      (uuid 8bb321aa-44d1-5fb4-846c-11e2db008208)
+    )
+    (pin "30"
+      (uuid 25fb52c6-f43f-5558-8d86-cc867b40b780)
+    )
+    (pin "29"
+      (uuid 846155f6-2181-5971-b70b-97a2858535e5)
+    )
+    (pin "11"
+      (uuid b86ef75d-ce18-5f7c-8891-e4d19959602a)
+    )
+    (pin "32"
+      (uuid 7ba74ae4-67e1-52b6-b67e-b5b461f67839)
+    )
+    (pin "33"
+      (uuid e38ff707-a1c6-5a61-b8a6-dc28c6495dca)
+    )
+    (pin "34"
+      (uuid ff395dd2-eecb-5ed7-93c1-e373a6389913)
+    )
+    (pin "35"
+      (uuid 29debb3f-6424-5b3b-9171-ebb9a5af0612)
+    )
+    (pin "36"
+      (uuid 3d186618-794c-50b0-9ddd-12cc4cf2b0f3)
+    )
+    (pin "38"
+      (uuid 3a43662c-4f1f-527a-8468-651d8c2cd3d4)
+    )
+    (pin "6"
+      (uuid 50857852-9ca5-5fa3-b59e-58f8bae6176b)
+    )
+    (pin "28"
+      (uuid d50dcc4e-cfea-5426-8cd9-91aec7b71370)
+    )
+    (pin "12"
+      (uuid c4db05b0-85f1-5b98-b300-1ff245d09e0d)
+    )
+    (pin "13"
+      (uuid 8932e125-5424-527b-8dce-999e18f4cd56)
+    )
+    (pin "14"
+      (uuid a22f6e47-ca5b-5463-bb47-3d4307520424)
+    )
+    (pin "18"
+      (uuid fadad262-9114-5e9c-96af-e79904fd934d)
+    )
+    (pin "22"
+      (uuid 51d34d23-d060-5dd8-b63d-569d364bf23c)
+    )
+    (pin "31"
+      (uuid 7d4cbaa2-a95e-5dbe-8890-784813fa797a)
+    )
+    (pin "26"
+      (uuid f27281b8-5930-55a5-8741-1f0798f3a7f3)
+    )
+    (pin "27"
+      (uuid 98dfe7b8-89bb-532d-81bb-7ea1bb73e7dd)
+    )
+    (pin "17"
+      (uuid 81f573bd-0594-59d9-ba6a-4eb00ecd92a0)
+    )
+    (pin "25"
+      (uuid 6bee8cf3-be0f-5041-af8c-6cd737ea535a)
+    )
+    (pin "21"
+      (uuid f371b6c2-e9e3-5c4f-8056-59294d07dcc9)
+    )
+    (pin "19"
+      (uuid 3e2b84ac-39bd-5853-bb98-982d21e8669c)
+    )
+    (pin "15"
+      (uuid 1e051221-b646-584b-b9bc-33bdb9f2af76)
+    )
+    (pin "16"
+      (uuid db06317c-4dca-5382-9c30-69df268b9d90)
+    )
+    (pin "23"
+      (uuid 67616f26-ffa1-505e-b3ab-8af8cf50106f)
+    )
+    (pin "24"
+      (uuid 7686fb25-ce96-5201-b2f0-660357fb9e72)
+    )
+    (pin "4"
+      (uuid 0d858203-e409-5d6e-a8fa-ccf316e9e260)
+    )
+    (pin "9"
+      (uuid 8b140217-f4d5-5b11-a99e-d536cfdb9416)
+    )
+    (pin "20"
+      (uuid 99d93a39-a0c4-5896-85b0-748ff1596a1c)
+    )
+    (pin "41"
+      (uuid 91c00f4f-c7c1-5898-b71d-69f48dd25b17)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "U6")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 91.44 45.72)
+      (xy 85.09 45.72)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 0f2fcfe9-76a2-522d-bd01-7696859570f0)
+  )
+  (label "I2C_SDA"
+    (at 85.09 45.72 180)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify right)
+    )
+    (uuid 349dee2b-cb1d-5334-97e8-4f8bb6f8705b)
+  )
+  (wire
+    (pts
+      (xy 91.44 49.53)
+      (xy 85.09 49.53)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid fff14ccd-d4db-507b-b6cf-43e63c8a2185)
+  )
+  (label "I2C_SCL"
+    (at 85.09 49.53 180)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify right)
+    )
+    (uuid dc00eefd-a186-5a54-9201-31e22d39c508)
+  )
+  (wire
+    (pts
+      (xy 91.44 53.34)
+      (xy 85.09 53.34)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 503be8f3-6b1e-5795-bc4f-bbd70a22ab25)
+  )
+  (label "NFC_IRQ"
+    (at 85.09 53.34 180)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify right)
+    )
+    (uuid a184b487-f805-5e5c-9469-0f52500927d9)
+  )
+  (wire
+    (pts
+      (xy 91.44 57.15)
+      (xy 85.09 57.15)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid eedd26f0-c307-5a96-9b85-342f7feb6cec)
+  )
+  (label "NFC_VEN"
+    (at 85.09 57.15 180)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify right)
+    )
+    (uuid 507f467b-c8dd-5405-bd8b-049318046649)
+  )
+  (wire
+    (pts
+      (xy 91.44 60.96)
+      (xy 85.09 60.96)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 78cfb015-4bba-513f-9d7e-3031116869d5)
+  )
+  (label "NFC_DWL_REQ"
+    (at 85.09 60.96 180)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify right)
+    )
+    (uuid 0c62f4e6-46b3-5dc0-87dd-7afc1679fb9d)
+  )
+  (wire
+    (pts
+      (xy 91.44 64.77)
+      (xy 85.09 64.77)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid f854d81f-945c-57ab-9a94-0b8f5a02f53a)
+  )
+  (label "NFC_ADR0"
+    (at 85.09 64.77 180)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify right)
+    )
+    (uuid adae0d28-0b8d-537c-9bb9-de2e62c4e042)
+  )
+  (wire
+    (pts
+      (xy 91.44 68.58)
+      (xy 85.09 68.58)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 1f64855f-5697-58db-922a-6a4e44c37f90)
+  )
+  (label "NFC_ADR1"
+    (at 85.09 68.58 180)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify right)
+    )
+    (uuid ff445423-8c59-56c5-843a-be122a6fcc5f)
+  )
+  (wire
+    (pts
+      (xy 91.44 72.39)
+      (xy 85.09 72.39)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid a67b1fdf-bffe-51bd-be71-885593d98a2d)
+  )
+  (label "GND"
+    (at 85.09 72.39 180)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify right)
+    )
+    (uuid 39653e2c-3d6e-51f1-96cc-daa78c1669e3)
+  )
+  (wire
+    (pts
+      (xy 147.32 45.72)
+      (xy 153.67 45.72)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 9bcaf9e9-d5af-52df-8215-1c71f53282ad)
+  )
+  (label "+3V3"
+    (at 153.67 45.72 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid 76ddf37b-fd44-5084-bf46-33496b719276)
+  )
+  (wire
+    (pts
+      (xy 147.32 49.53)
+      (xy 153.67 49.53)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 7d83ef7b-e1aa-5835-a2da-b8a4bfd65481)
+  )
+  (label "VSYS"
+    (at 153.67 49.53 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid f99a287c-ecc0-540a-8ac3-7714ebc44ac9)
+  )
+  (wire
+    (pts
+      (xy 147.32 53.34)
+      (xy 153.67 53.34)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid dc7fdeca-0eb1-5f32-92d9-3f9155388e2a)
+  )
+  (label "VSYS"
+    (at 153.67 53.34 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid b6d17696-a997-5851-9a23-f0a420303fb2)
+  )
+  (wire
+    (pts
+      (xy 147.32 57.15)
+      (xy 153.67 57.15)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 19be3560-b6ae-5f29-acbc-a0933053c507)
+  )
+  (label "NFC_VDDUP"
+    (at 153.67 57.15 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid caf4d840-e1a8-5cff-b78b-c0d68716505b)
+  )
+  (wire
+    (pts
+      (xy 147.32 60.96)
+      (xy 153.67 60.96)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 48d5e554-d213-509e-b12e-090e3d02d9af)
+  )
+  (label "NFC_TVDD"
+    (at 153.67 60.96 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid e7f15e7a-5f73-5aa6-ad4c-54754f000c8e)
+  )
+  (wire
+    (pts
+      (xy 147.32 64.77)
+      (xy 153.67 64.77)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 883f0f3c-eabf-50c9-a7e9-df0508e3b4fc)
+  )
+  (label "NFC_TVDD"
+    (at 153.67 64.77 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid 5044702a-9d86-5da1-9037-1af143014659)
+  )
+  (wire
+    (pts
+      (xy 147.32 68.58)
+      (xy 153.67 68.58)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid ddf393b0-8900-5928-98c2-30847335088f)
+  )
+  (label "NFC_TVDD"
+    (at 153.67 68.58 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid 39ed77b4-b381-51e9-bf31-fd22d50dc76a)
+  )
+  (wire
+    (pts
+      (xy 147.32 72.39)
+      (xy 153.67 72.39)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid c8df08a4-5fda-50b9-b059-e526a6f44258)
+  )
+  (label "NFC_VDD18"
+    (at 153.67 72.39 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid cb15833d-a6a8-5fbe-bebf-0d788cda5f4f)
+  )
+  (wire
+    (pts
+      (xy 147.32 76.2)
+      (xy 153.67 76.2)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid adb5ce05-7c75-5186-a77c-c36efd1d5b7f)
+  )
+  (label "NFC_VDD18"
+    (at 153.67 76.2 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid 8eca740c-8692-5708-9e62-cd272e86b4d4)
+  )
+  (wire
+    (pts
+      (xy 147.32 80.01)
+      (xy 153.67 80.01)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid ccdd28d9-f148-55c5-916b-8b7c5fdd038a)
+  )
+  (label "NFC_VDD18"
+    (at 153.67 80.01 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid 82fe4042-e1c1-5ced-ae7e-736f3675cc73)
+  )
+  (wire
+    (pts
+      (xy 147.32 83.82)
+      (xy 153.67 83.82)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid efe4c4df-135a-5348-8266-77f12c18f7ec)
+  )
+  (label "NFC_VMID"
+    (at 153.67 83.82 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid 1e5965e6-fbc0-5e83-aa4b-c44d29da68cc)
+  )
+  (wire
+    (pts
+      (xy 147.32 91.44)
+      (xy 153.67 91.44)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 7863eb8d-13f7-5e5c-b043-371558896c37)
+  )
+  (label "NFC_TX1"
+    (at 153.67 91.44 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid fe252fb8-0b59-5dc8-84e3-bd87cac320d0)
+  )
+  (wire
+    (pts
+      (xy 147.32 95.25)
+      (xy 153.67 95.25)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 5f59f9cc-84e6-5408-951e-250694bddf4a)
+  )
+  (label "NFC_TX2"
+    (at 153.67 95.25 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid 705c2316-cd11-505c-90d5-759ada5e8b09)
+  )
+  (wire
+    (pts
+      (xy 147.32 99.06)
+      (xy 153.67 99.06)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 8d4721a4-2c27-53b0-8dd8-c516c4d7f3e9)
+  )
+  (label "NFC_RXN"
+    (at 153.67 99.06 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid c3680bfa-b219-56a8-a3a3-d89352f40ca3)
+  )
+  (wire
+    (pts
+      (xy 147.32 102.87)
+      (xy 153.67 102.87)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 8d1a612f-b270-5d01-888e-dabd475986ed)
+  )
+  (label "NFC_RXP"
+    (at 153.67 102.87 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid 973d042d-d0f6-5424-b482-d9a3ecc304a5)
+  )
+  (wire
+    (pts
+      (xy 147.32 114.3)
+      (xy 153.67 114.3)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 727184b4-7c8b-5a86-9673-268aae8bd157)
+  )
+  (label "GND"
+    (at 153.67 114.3 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid 2baf9b5f-f87d-53c2-bb7b-6dffb60a4aee)
+  )
+  (wire
+    (pts
+      (xy 147.32 118.11)
+      (xy 153.67 118.11)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 43e6a3ac-39ea-55cc-b293-e74d7ba9b257)
+  )
+  (label "GND"
+    (at 153.67 118.11 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid c8c72b3e-6763-5f60-9f35-79f43c06a020)
+  )
+  (wire
+    (pts
+      (xy 147.32 121.92)
+      (xy 153.67 121.92)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid f8ef1056-02d0-5b50-9cdb-6cfdd539af28)
+  )
+  (label "GND"
+    (at 153.67 121.92 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid b48f15b5-6229-57c8-b89b-86bb96f46f30)
+  )
+  (wire
+    (pts
+      (xy 147.32 125.73)
+      (xy 153.67 125.73)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 13b66adf-54b5-59c8-ac47-9a9039f02ea8)
+  )
+  (label "GND"
+    (at 153.67 125.73 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid a06fddce-1a16-5731-a786-27248992cf2c)
+  )
+  (wire
+    (pts
+      (xy 91.44 83.82)
+      (xy 85.09 83.82)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 6214861c-7f6b-5a52-a241-2153d0913d96)
+  )
+  (label "NFC_XTAL1"
+    (at 85.09 83.82 180)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify right)
+    )
+    (uuid 49e85a72-fa2f-56f0-828b-01fb29a6de69)
+  )
+  (wire
+    (pts
+      (xy 91.44 87.63)
+      (xy 85.09 87.63)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid caf32560-e51b-520d-8c51-40f80eaa8747)
+  )
+  (label "NFC_XTAL2"
+    (at 85.09 87.63 180)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify right)
+    )
+    (uuid 08316c64-9cbc-58a8-b819-9cf9cc203fc6)
+  )
+  (no_connect
+    (at 91.44 91.44)
+    (uuid 164bdc2d-31a2-50fa-9a2d-00e1923eca4f)
+  )
+  (no_connect
+    (at 147.32 106.68)
+    (uuid d83130a0-85e2-5e6a-992a-6e01ff9511d3)
+  )
+  (no_connect
+    (at 147.32 110.49)
+    (uuid 5fcb5a61-74c8-59f0-8230-f72540f2da33)
+  )
+  (no_connect
+    (at 147.32 87.63)
+    (uuid 83ce46ab-892b-523b-bef1-177152a1b6ba)
+  )
+  (no_connect
+    (at 91.44 95.25)
+    (uuid 2d9add96-e6e1-5def-93e1-5898a3df18be)
+  )
+  (no_connect
+    (at 91.44 99.06)
+    (uuid 0cc89435-35b3-5ca3-97c6-2af235c0e677)
+  )
+  (no_connect
+    (at 91.44 102.87)
+    (uuid 7455cb6e-9ada-578a-8d81-da867c42a9ff)
+  )
+  (no_connect
+    (at 91.44 106.68)
+    (uuid a70dff0b-e88b-5ca6-910e-606294eaaac2)
+  )
+  (no_connect
+    (at 91.44 110.49)
+    (uuid 3df2edc7-3fe0-5998-8cfa-bcefe284ed23)
+  )
+  (no_connect
+    (at 91.44 76.2)
+    (uuid 06d35f71-be05-5f62-99df-c59d04d7825f)
+  )
+  (no_connect
+    (at 91.44 114.3)
+    (uuid 6208ba98-b99f-5cff-9efd-4b786acf3ac5)
+  )
+  (no_connect
+    (at 91.44 80.01)
+    (uuid 1b08d342-9c4c-5934-8338-a50675ce95e1)
+  )
+  (symbol
+    (lib_id "Device:R")
+    (at 20.32 101.6 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 443d8287-0829-5cce-a2d8-1e6ae8226cb8)
+    (property "Reference" "R21"
+      (at 22.86 100.33 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "10k"
+      (at 22.86 102.87 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 20.32 101.6 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 20.32 101.6 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Tolerance" "1%"
+      (at 20.32 101.6 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Rating" "0.1 W"
+      (at 20.32 101.6 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid 29056598-980d-5223-b5f2-3dc7688f18f2)
+    )
+    (pin "2"
+      (uuid d4c09f32-8167-512b-8785-ad7c52518fef)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "R21")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 20.32 97.79)
+      (xy 20.32 93.98)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid e03b1671-b3c3-537d-95b9-452c93098708)
+  )
+  (label "NFC_DWL_REQ"
+    (at 20.32 93.98 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid 5e692c5e-cff0-504d-b2b0-57de9f660112)
+  )
+  (wire
+    (pts
+      (xy 20.32 105.41)
+      (xy 20.32 107.95)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 186142b2-9fe7-5ea5-a1ac-982c99ecc906)
+  )
+  (symbol
+    (lib_id "power:GND")
+    (at 20.32 107.95 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid e6938696-7a97-51d0-b007-71bc09bd3c77)
+    (property "Reference" "#PWR3083"
+      (at 22.86 106.68 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Value" "GND"
+      (at 22.86 109.22 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Footprint" ""
+      (at 20.32 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" ""
+      (at 20.32 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid 30d3e290-3761-5900-b15a-9e116f8ddea5)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "#PWR3083")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:R")
+    (at 38.1 101.6 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 85982226-4548-5931-8a5b-f5306e1107fd)
+    (property "Reference" "R22"
+      (at 40.64 100.33 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "100k"
+      (at 40.64 102.87 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 38.1 101.6 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 38.1 101.6 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Tolerance" "1%"
+      (at 38.1 101.6 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Rating" "0.1 W"
+      (at 38.1 101.6 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid 85e501f5-fd67-5351-961b-1f3965b625c6)
+    )
+    (pin "2"
+      (uuid 5a858e1e-da2f-57ec-932b-43c065d6ef28)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "R22")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 38.1 97.79)
+      (xy 38.1 93.98)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 4fdf6180-73f2-5bbd-b282-9b2808cfe9f4)
+  )
+  (label "NFC_VEN"
+    (at 38.1 93.98 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid 5de67b7c-d855-51d0-ba34-76b9d6515e76)
+  )
+  (wire
+    (pts
+      (xy 38.1 105.41)
+      (xy 38.1 107.95)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid bb349813-7638-53da-b3f0-103a8b225edd)
+  )
+  (symbol
+    (lib_id "power:GND")
+    (at 38.1 107.95 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid e477a1b9-9d14-508a-8271-7e9a3d65b51f)
+    (property "Reference" "#PWR3087"
+      (at 40.64 106.68 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Value" "GND"
+      (at 40.64 109.22 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Footprint" ""
+      (at 38.1 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" ""
+      (at 38.1 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid 2926d68e-3651-5656-84a7-25dba98a886d)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "#PWR3087")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:R")
+    (at 55.88 101.6 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 0e849f5c-9ca1-5f73-9ab0-092e8e5ef9af)
+    (property "Reference" "R23"
+      (at 58.42 100.33 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "100k"
+      (at 58.42 102.87 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 55.88 101.6 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 55.88 101.6 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Tolerance" "1%"
+      (at 55.88 101.6 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Rating" "0.1 W"
+      (at 55.88 101.6 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid 612cd484-ff3a-5e1a-ac9a-a5eb00b09f6f)
+    )
+    (pin "2"
+      (uuid 57a53775-c332-50a0-a65b-fd00174dc1c5)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "R23")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 55.88 97.79)
+      (xy 55.88 93.98)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 41c7877c-c6fc-565a-acac-4fbc09d42bbb)
+  )
+  (label "NFC_ADR0"
+    (at 55.88 93.98 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid b9728682-4f09-5f76-8c72-27b0a58100d4)
+  )
+  (wire
+    (pts
+      (xy 55.88 105.41)
+      (xy 55.88 107.95)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 9c2de1b5-bce6-5cb1-afc7-ebacfd21f9cf)
+  )
+  (symbol
+    (lib_id "power:GND")
+    (at 55.88 107.95 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid 989d532a-11f5-5629-9c9a-574fc064067f)
+    (property "Reference" "#PWR3091"
+      (at 58.42 106.68 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Value" "GND"
+      (at 58.42 109.22 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Footprint" ""
+      (at 55.88 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" ""
+      (at 55.88 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid 6bc0995b-f440-551c-85bb-b026add577c3)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "#PWR3091")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:R")
+    (at 73.66 101.6 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 2e658b18-b332-5440-ba05-a64d327fb2c7)
+    (property "Reference" "R24"
+      (at 76.2 100.33 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "100k"
+      (at 76.2 102.87 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 73.66 101.6 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 73.66 101.6 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Tolerance" "1%"
+      (at 73.66 101.6 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Rating" "0.1 W"
+      (at 73.66 101.6 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid c62714c8-3cbd-5706-8aa0-99141fbaabad)
+    )
+    (pin "2"
+      (uuid eefdd2fd-78bc-5db3-8f89-f682dc6e9e25)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "R24")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 73.66 97.79)
+      (xy 73.66 93.98)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 1280c92a-6c35-5e4c-a54b-ff8b594c0f0e)
+  )
+  (label "NFC_ADR1"
+    (at 73.66 93.98 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid d433634d-b2fc-5dc4-9a88-97493d5bcfc4)
+  )
+  (wire
+    (pts
+      (xy 73.66 105.41)
+      (xy 73.66 107.95)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid d9a42334-2643-51d5-94b1-eaf0bad69ff2)
+  )
+  (symbol
+    (lib_id "power:GND")
+    (at 73.66 107.95 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid b58d1b3a-c382-5b7b-95a6-5bab6db24631)
+    (property "Reference" "#PWR3095"
+      (at 76.2 106.68 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Value" "GND"
+      (at 76.2 109.22 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Footprint" ""
+      (at 73.66 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" ""
+      (at 73.66 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid b61d702b-293f-5f2f-bb33-5e6cff0d25b4)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "#PWR3095")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:Crystal_GND24")
+    (at 55.88 142.24 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 4f85ef23-3ea8-537b-918b-1203830baf56)
+    (property "Reference" "Y1"
+      (at 38.1 129.54 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "27.12MHz / CL TBD"
+      (at 38.1 132.08 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Crystal:Crystal_SMD_SeikoEpson_TSX3225-4Pin_3.2x2.5mm"
+      (at 55.88 142.24 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 55.88 142.24 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Manufacturer" "Epson"
+      (at 55.88 142.24 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Candidate Family" "TSX-3225 27.1200MHz"
+      (at 55.88 142.24 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "MPN" "TBD load capacitance / ESR / drive grade"
+      (at 55.88 142.24 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Status" "27.12 MHz fixed; load capacitors require crystal selection"
+      (at 55.88 142.24 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid aea31d9f-fecb-528c-8801-4159f47cb24c)
+    )
+    (pin "2"
+      (uuid 7aeab827-9b7f-5e20-b6fd-b0f7b83da799)
+    )
+    (pin "3"
+      (uuid 8a6199a8-e4e3-588e-ba71-d79d24201ef4)
+    )
+    (pin "4"
+      (uuid 74b539c8-6b47-578b-a60a-26227e3af141)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "Y1")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 52.07 142.24)
+      (xy 41.91 142.24)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid ffb59b24-905a-59f6-bf49-48295741a6cc)
+  )
+  (label "NFC_XTAL1"
+    (at 41.91 142.24 180)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify right)
+    )
+    (uuid 16df282d-74fa-5474-8c65-2800c5ce4e6f)
+  )
+  (wire
+    (pts
+      (xy 59.69 142.24)
+      (xy 69.85 142.24)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 319c5d5c-4158-5a0b-bea3-1e647cb530da)
+  )
+  (label "NFC_XTAL2"
+    (at 69.85 142.24 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid 581edf25-2ee0-5c9b-9cd9-b6fc144b3603)
+  )
+  (wire
+    (pts
+      (xy 55.88 147.32)
+      (xy 55.88 149.86)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 9d1463cb-de70-5e84-934f-59fd069144ec)
+  )
+  (symbol
+    (lib_id "power:GND")
+    (at 55.88 149.86 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid d0aadc2d-5ef1-5faa-86a5-50ac127284e2)
+    (property "Reference" "#PWR3101"
+      (at 58.42 148.59 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Value" "GND"
+      (at 58.42 151.13 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Footprint" ""
+      (at 55.88 149.86 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" ""
+      (at 55.88 149.86 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid e725f4e9-1a89-5c49-a531-9f559ede4c44)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "#PWR3101")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 33.02 160.02 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 9d8e11d5-60d6-58c4-a58e-9627b6414b4c)
+    (property "Reference" "C26"
+      (at 35.56 158.75 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "10pF START"
+      (at 35.56 161.29 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 33.02 160.02 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 33.02 160.02 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Voltage" "50 V"
+      (at 33.02 160.02 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Dielectric" "C0G"
+      (at 33.02 160.02 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Tolerance" "10%"
+      (at 33.02 160.02 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid ee7a77b7-af80-5b7a-a1d2-164bafabfdf4)
+    )
+    (pin "2"
+      (uuid 510a8bb6-8bf2-51fd-ad67-07b2124c38bb)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "C26")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 33.02 156.21)
+      (xy 33.02 153.67)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 833f4c3f-945c-54b9-9387-f8419f55ccb2)
+  )
+  (label "NFC_XTAL1"
+    (at 33.02 153.67 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid 9a7fcd49-3023-5dd7-a713-e43c2c291fdb)
+  )
+  (wire
+    (pts
+      (xy 33.02 163.83)
+      (xy 33.02 166.37)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 7e30c0c8-898f-55a7-8461-c55cbbdbf3ad)
+  )
+  (symbol
+    (lib_id "power:GND")
+    (at 33.02 166.37 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid 1a011e93-cfa3-5ac5-bb1d-06a571a4c3dc)
+    (property "Reference" "#PWR3105"
+      (at 35.56 165.1 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Value" "GND"
+      (at 35.56 167.64 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Footprint" ""
+      (at 33.02 166.37 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" ""
+      (at 33.02 166.37 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid 2fd18e8b-46e7-5f6c-a794-2e9bec4fb325)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "#PWR3105")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 76.2 160.02 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid b818bbb2-b95d-519b-ae8e-91f505e9bed3)
+    (property "Reference" "C27"
+      (at 78.74 158.75 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "10pF START"
+      (at 78.74 161.29 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 76.2 160.02 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 76.2 160.02 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Voltage" "50 V"
+      (at 76.2 160.02 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Dielectric" "C0G"
+      (at 76.2 160.02 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Tolerance" "10%"
+      (at 76.2 160.02 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid 8414135c-0b02-5f07-bbf6-df97253d4c7b)
+    )
+    (pin "2"
+      (uuid 570d3fae-daa4-5b3c-8b67-83783cc585e5)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "C27")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 76.2 156.21)
+      (xy 76.2 153.67)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 529c196d-65af-5fd9-8fe1-f959d9b87762)
+  )
+  (label "NFC_XTAL2"
+    (at 76.2 153.67 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid 65b44bde-af36-5f3c-af97-55413218d9c8)
+  )
+  (wire
+    (pts
+      (xy 76.2 163.83)
+      (xy 76.2 166.37)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 446d96df-9b25-57ff-b169-ab84e2c73cf7)
+  )
+  (symbol
+    (lib_id "power:GND")
+    (at 76.2 166.37 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid a7d7bf7f-8ba9-5b30-a54d-1a49c9dcfe7a)
+    (property "Reference" "#PWR3109"
+      (at 78.74 165.1 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Value" "GND"
+      (at 78.74 167.64 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Footprint" ""
+      (at 76.2 166.37 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" ""
+      (at 76.2 166.37 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid 3ad281b3-c11e-5e35-a4dc-b3d8f1e95707)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "#PWR3109")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 25.4 207.01 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 7827c62b-57bd-5eac-8936-7f6f7e7c2605)
+    (property "Reference" "C15"
+      (at 27.94 205.74 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "1uF"
+      (at 27.94 208.28 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+      (at 25.4 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 25.4 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Voltage" "10 V"
+      (at 25.4 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Dielectric" "X7R"
+      (at 25.4 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Tolerance" "20%"
+      (at 25.4 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid 1cd9c87f-8535-5636-9514-206110316ea5)
+    )
+    (pin "2"
+      (uuid 6e3f6911-9013-58d8-ace4-aa3f65de10d9)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "C15")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 25.4 203.2)
+      (xy 25.4 200.66)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 93265dea-6d71-5c03-bf01-32636ffa939e)
+  )
+  (label "+3V3"
+    (at 25.4 200.66 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid 626d1c08-b416-594c-bd02-2fdd332350fa)
+  )
+  (wire
+    (pts
+      (xy 25.4 210.82)
+      (xy 25.4 213.36)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 2f0bd841-28a1-565b-ad05-5c95e752b00d)
+  )
+  (symbol
+    (lib_id "power:GND")
+    (at 25.4 213.36 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid 89ef88f5-3c3a-5ca9-bf41-6f12d55f1744)
+    (property "Reference" "#PWR3113"
+      (at 27.94 212.09 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Value" "GND"
+      (at 27.94 214.63 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Footprint" ""
+      (at 25.4 213.36 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" ""
+      (at 25.4 213.36 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid 28d5cb23-e0cb-5fab-9fc7-c41f5ca73d76)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "#PWR3113")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 43.18 207.01 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 8102b47b-6782-564e-9c90-45ecd341fd54)
+    (property "Reference" "C16"
+      (at 45.72 205.74 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "100nF"
+      (at 45.72 208.28 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 43.18 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 43.18 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Voltage" "10 V"
+      (at 43.18 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Dielectric" "X7R"
+      (at 43.18 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Tolerance" "10%"
+      (at 43.18 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid 5a1abe76-e984-5aa8-ad3b-7a9a7397f643)
+    )
+    (pin "2"
+      (uuid 2c043642-6e6e-5a7a-b2b4-4fa73606380c)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "C16")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 43.18 203.2)
+      (xy 43.18 200.66)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 9cb4d8a1-213d-580a-9581-bcd4326950b6)
+  )
+  (label "+3V3"
+    (at 43.18 200.66 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid 0e16c3cb-0bd2-590d-909c-cc9d4d93a477)
+  )
+  (wire
+    (pts
+      (xy 43.18 210.82)
+      (xy 43.18 213.36)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid d20bd913-ed2e-5ec9-ba15-53b57e2b69d8)
+  )
+  (symbol
+    (lib_id "power:GND")
+    (at 43.18 213.36 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid bd3effeb-2c41-59dd-988c-4ca80494d126)
+    (property "Reference" "#PWR3117"
+      (at 45.72 212.09 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Value" "GND"
+      (at 45.72 214.63 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Footprint" ""
+      (at 43.18 213.36 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" ""
+      (at 43.18 213.36 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid 9ecc4f6d-9721-5231-a8db-a30a15204941)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "#PWR3117")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 71.12 207.01 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 2aa116b8-efc1-50a2-88ea-765f56b04573)
+    (property "Reference" "C17"
+      (at 73.66 205.74 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "10uF"
+      (at 73.66 208.28 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+      (at 71.12 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 71.12 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Voltage" "10 V"
+      (at 71.12 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Dielectric" "X7R"
+      (at 71.12 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Tolerance" "20%"
+      (at 71.12 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid c49ece6b-6bae-5b74-bc52-fc389b83c6b5)
+    )
+    (pin "2"
+      (uuid a6d6ff07-8ec4-5ddf-b106-8bf3f8ee0a87)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "C17")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 71.12 203.2)
+      (xy 71.12 200.66)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 54f5326f-6556-50aa-8fe7-c42c18d49023)
+  )
+  (label "VSYS"
+    (at 71.12 200.66 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid f7c5b3dd-8094-5459-a221-ccfe0a1be3c4)
+  )
+  (wire
+    (pts
+      (xy 71.12 210.82)
+      (xy 71.12 213.36)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 95610ac9-4ea6-5ce3-8e5c-c4babe262ea1)
+  )
+  (symbol
+    (lib_id "power:GND")
+    (at 71.12 213.36 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid 39fac64d-ae21-59fa-aadb-5e48fd8cfddc)
+    (property "Reference" "#PWR3121"
+      (at 73.66 212.09 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Value" "GND"
+      (at 73.66 214.63 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Footprint" ""
+      (at 71.12 213.36 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" ""
+      (at 71.12 213.36 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid f92f9f24-249a-5a9c-9911-9092e0287631)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "#PWR3121")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 88.9 207.01 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid e06f232d-72a6-5639-b736-1396373d4103)
+    (property "Reference" "C18"
+      (at 91.44 205.74 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "100nF"
+      (at 91.44 208.28 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 88.9 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 88.9 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Voltage" "10 V"
+      (at 88.9 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Dielectric" "X7R"
+      (at 88.9 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Tolerance" "10%"
+      (at 88.9 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid d4ccc7b0-cd77-5e59-a524-415c2479f477)
+    )
+    (pin "2"
+      (uuid be6ee773-b5d5-509d-ac44-b0f2399076d1)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "C18")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 88.9 203.2)
+      (xy 88.9 200.66)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 9ada9139-6831-5b25-b87e-53f0c71b3a60)
+  )
+  (label "VSYS"
+    (at 88.9 200.66 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid 34648b84-93ec-584d-81be-446321629674)
+  )
+  (wire
+    (pts
+      (xy 88.9 210.82)
+      (xy 88.9 213.36)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid a0ba76b9-83b9-549a-b9e5-8bbc62053081)
+  )
+  (symbol
+    (lib_id "power:GND")
+    (at 88.9 213.36 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid 64e7a70d-f8ee-5294-9266-4835c85e27a0)
+    (property "Reference" "#PWR3125"
+      (at 91.44 212.09 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Value" "GND"
+      (at 91.44 214.63 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Footprint" ""
+      (at 88.9 213.36 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" ""
+      (at 88.9 213.36 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid c00d3821-f438-5769-896f-4961787af9c3)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "#PWR3125")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 116.84 207.01 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 50737c67-94f6-523e-b668-7f2ce2fbc47a)
+    (property "Reference" "C19"
+      (at 119.38 205.74 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "10uF"
+      (at 119.38 208.28 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+      (at 116.84 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 116.84 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Voltage" "10 V"
+      (at 116.84 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Dielectric" "X7R"
+      (at 116.84 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Tolerance" "20%"
+      (at 116.84 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid 7a56f237-30dd-57b6-9298-bc59c83ab5ad)
+    )
+    (pin "2"
+      (uuid 6ef70e05-1027-5bdd-9f50-0a0cd4745219)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "C19")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 116.84 203.2)
+      (xy 116.84 200.66)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 558e3b4d-e16d-51b8-985a-fd05e774ea50)
+  )
+  (label "NFC_VDDUP"
+    (at 116.84 200.66 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid 1ee56436-c899-5f95-861d-56a536443941)
+  )
+  (wire
+    (pts
+      (xy 116.84 210.82)
+      (xy 116.84 213.36)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 4affc01a-c1c0-5e55-986c-33ae06068afa)
+  )
+  (symbol
+    (lib_id "power:GND")
+    (at 116.84 213.36 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid 3536528e-a819-59ec-9d90-10889c8c7177)
+    (property "Reference" "#PWR3129"
+      (at 119.38 212.09 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Value" "GND"
+      (at 119.38 214.63 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Footprint" ""
+      (at 116.84 213.36 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" ""
+      (at 116.84 213.36 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid 23bf9c9d-85fc-587f-b2f8-fa70c3905d15)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "#PWR3129")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 134.62 207.01 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid dd01c379-d7ba-577b-87f9-bd46bacfdfce)
+    (property "Reference" "C20"
+      (at 137.16 205.74 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "100nF"
+      (at 137.16 208.28 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 134.62 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 134.62 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Voltage" "10 V"
+      (at 134.62 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Dielectric" "X7R"
+      (at 134.62 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Tolerance" "10%"
+      (at 134.62 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid f17a2f33-eacd-5a4b-808d-a57e47ff3091)
+    )
+    (pin "2"
+      (uuid 36d38d6c-fbf2-5a92-a14b-519917035f5a)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "C20")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 134.62 203.2)
+      (xy 134.62 200.66)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 37040d49-6920-532b-848e-81f930d507c0)
+  )
+  (label "NFC_VDDUP"
+    (at 134.62 200.66 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid e5e3f7f5-ad8c-5118-bc49-bb9b4bf9f957)
+  )
+  (wire
+    (pts
+      (xy 134.62 210.82)
+      (xy 134.62 213.36)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 027d4037-b498-5199-a43a-afc3b690eb9b)
+  )
+  (symbol
+    (lib_id "power:GND")
+    (at 134.62 213.36 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid dc8b944c-be77-5eb2-9706-7f76c333b8b0)
+    (property "Reference" "#PWR3133"
+      (at 137.16 212.09 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Value" "GND"
+      (at 137.16 214.63 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Footprint" ""
+      (at 134.62 213.36 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" ""
+      (at 134.62 213.36 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid 22b2d6fb-eeca-5c3e-a4d2-d8a15f5623c8)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "#PWR3133")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 162.56 207.01 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 1b90b343-fe82-5100-ac13-57ab818b2927)
+    (property "Reference" "C21"
+      (at 165.1 205.74 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "10uF"
+      (at 165.1 208.28 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+      (at 162.56 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 162.56 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Voltage" "10 V"
+      (at 162.56 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Dielectric" "X7R"
+      (at 162.56 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Tolerance" "20%"
+      (at 162.56 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid 094774e6-62d7-55b6-abd8-2b893483e82f)
+    )
+    (pin "2"
+      (uuid f2a46ade-1e92-5bff-aac6-d399e997598c)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "C21")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 162.56 203.2)
+      (xy 162.56 200.66)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 7a1511e3-ccea-565c-a549-d6ac7284d16c)
+  )
+  (label "NFC_VDD18"
+    (at 162.56 200.66 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid 8895ce64-e7b0-51a3-aaab-532e692bf6cd)
+  )
+  (wire
+    (pts
+      (xy 162.56 210.82)
+      (xy 162.56 213.36)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid eb9ae6fe-3605-5d66-9029-affe1e18967d)
+  )
+  (symbol
+    (lib_id "power:GND")
+    (at 162.56 213.36 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid 2b2f42e1-3e61-5182-8580-a09268780f0c)
+    (property "Reference" "#PWR3137"
+      (at 165.1 212.09 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Value" "GND"
+      (at 165.1 214.63 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Footprint" ""
+      (at 162.56 213.36 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" ""
+      (at 162.56 213.36 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid 7b7a3ef5-b712-553f-98da-374be46f1278)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "#PWR3137")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 180.34 207.01 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 2b2467de-da84-5958-87b1-da513ac99c69)
+    (property "Reference" "C22"
+      (at 182.88 205.74 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "100nF"
+      (at 182.88 208.28 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 180.34 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 180.34 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Voltage" "10 V"
+      (at 180.34 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Dielectric" "X7R"
+      (at 180.34 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Tolerance" "10%"
+      (at 180.34 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid 62f66b69-6b75-54b1-ba04-0dae3af8cd3c)
+    )
+    (pin "2"
+      (uuid 37393851-87a6-51de-af76-baa6b7c36893)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "C22")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 180.34 203.2)
+      (xy 180.34 200.66)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 3752ce46-1cd9-514d-b390-9145a41548e9)
+  )
+  (label "NFC_VDD18"
+    (at 180.34 200.66 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid a257bc2d-0171-5b1b-bcef-b6fa13a3117a)
+  )
+  (wire
+    (pts
+      (xy 180.34 210.82)
+      (xy 180.34 213.36)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid e6071bb5-8660-5698-9f03-130ccb8f16ca)
+  )
+  (symbol
+    (lib_id "power:GND")
+    (at 180.34 213.36 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid 0a6aa8fb-191c-54b3-9442-9b2a0d5917a1)
+    (property "Reference" "#PWR3141"
+      (at 182.88 212.09 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Value" "GND"
+      (at 182.88 214.63 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Footprint" ""
+      (at 180.34 213.36 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" ""
+      (at 180.34 213.36 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid f7f4b0b4-766e-5e63-8a65-f8e3f35f630e)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "#PWR3141")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 208.28 207.01 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 2542e529-0579-5e0c-a680-704d9e184418)
+    (property "Reference" "C23"
+      (at 210.82 205.74 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "10uF"
+      (at 210.82 208.28 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+      (at 208.28 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 208.28 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Voltage" "10 V"
+      (at 208.28 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Dielectric" "X7R"
+      (at 208.28 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Tolerance" "20%"
+      (at 208.28 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid 963419ef-333f-542b-9c9f-9eb7d837d3ce)
+    )
+    (pin "2"
+      (uuid d6302210-b40d-5190-b24b-60b49ca7f725)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "C23")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 208.28 203.2)
+      (xy 208.28 200.66)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 804cc5c6-cdcd-543c-9187-f7cf7f8be266)
+  )
+  (label "NFC_TVDD"
+    (at 208.28 200.66 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid fff1642c-569b-51f2-8d5c-0683421de3c9)
+  )
+  (wire
+    (pts
+      (xy 208.28 210.82)
+      (xy 208.28 213.36)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid f0e9e78d-82fb-53e3-9ae0-46802b949f2b)
+  )
+  (symbol
+    (lib_id "power:GND")
+    (at 208.28 213.36 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid 975e0140-b3c4-595c-8b3d-d7cd510b701b)
+    (property "Reference" "#PWR3145"
+      (at 210.82 212.09 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Value" "GND"
+      (at 210.82 214.63 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Footprint" ""
+      (at 208.28 213.36 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" ""
+      (at 208.28 213.36 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid 1a058969-b9da-5e59-984d-7e88f9cde4d6)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "#PWR3145")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 226.06 207.01 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 5ce926c3-cf4f-5359-8e9f-603ab491ca89)
+    (property "Reference" "C24"
+      (at 228.6 205.74 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "100nF"
+      (at 228.6 208.28 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 226.06 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 226.06 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Voltage" "10 V"
+      (at 226.06 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Dielectric" "X7R"
+      (at 226.06 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Tolerance" "10%"
+      (at 226.06 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid 5d7adfa8-21d6-5ffb-a9f0-dcc88a066aa2)
+    )
+    (pin "2"
+      (uuid 1c654bb6-972d-558d-a3e1-ded7a4eae6d9)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "C24")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 226.06 203.2)
+      (xy 226.06 200.66)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 0b0c9ee9-2e3e-5565-ba3c-5431c6f5b497)
+  )
+  (label "NFC_TVDD"
+    (at 226.06 200.66 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid 241f6ce7-2461-5912-a6a4-e6bc20e9422d)
+  )
+  (wire
+    (pts
+      (xy 226.06 210.82)
+      (xy 226.06 213.36)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 4bcc3a05-ecc5-599c-825c-404ea3d571e0)
+  )
+  (symbol
+    (lib_id "power:GND")
+    (at 226.06 213.36 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid dc8ae928-96ed-5ac3-8704-7ccc918ac2f6)
+    (property "Reference" "#PWR3149"
+      (at 228.6 212.09 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Value" "GND"
+      (at 228.6 214.63 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Footprint" ""
+      (at 226.06 213.36 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" ""
+      (at 226.06 213.36 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid 4b6b0d00-cd47-5d13-8325-615950dd9827)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "#PWR3149")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 254 207.01 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 8e6991e6-9fb5-5bd0-b9c8-b88df6b4bf09)
+    (property "Reference" "C25"
+      (at 256.54 205.74 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "100nF"
+      (at 256.54 208.28 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 254 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 254 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Voltage" "10 V"
+      (at 254 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Dielectric" "X7R"
+      (at 254 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Tolerance" "10%"
+      (at 254 207.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid 25c48cb0-2043-512f-be0c-869064e77a69)
+    )
+    (pin "2"
+      (uuid 9f1e0b45-b2bd-5cdd-9e8e-21a691ca92ce)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "C25")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 254.0 203.2)
+      (xy 254.0 200.66)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 60ea2824-b0c5-5f53-b365-735d2491bee7)
+  )
+  (label "NFC_VMID"
+    (at 254.0 200.66 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid d4bb0966-289c-5a1c-8d4a-f932bd2bd77d)
+  )
+  (wire
+    (pts
+      (xy 254.0 210.82)
+      (xy 254.0 213.36)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid e75aac17-e43f-536a-92b1-a9797d27fc58)
+  )
+  (symbol
+    (lib_id "power:GND")
+    (at 254.0 213.36 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid b268a5e1-3ffe-576b-a562-0cc045b8e20d)
+    (property "Reference" "#PWR3153"
+      (at 256.54 212.09 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Value" "GND"
+      (at 256.54 214.63 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Footprint" ""
+      (at 254.0 213.36 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" ""
+      (at 254.0 213.36 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid 26914160-de7b-53cc-b08c-364b2e2eb251)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "#PWR3153")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:R")
+    (at 116.84 181.61 90)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid f2188a76-0cb1-519c-b623-7d05e3ea746f)
+    (property "Reference" "R29"
+      (at 111.76 173.99 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "0R"
+      (at 111.76 176.53 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 116.84 181.61 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 116.84 181.61 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Tolerance" "1%"
+      (at 116.84 181.61 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Rating" "0.1 W"
+      (at 116.84 181.61 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid c23d0c5b-9a09-5b65-bf4d-a577a2cedb27)
+    )
+    (pin "2"
+      (uuid 5a3f14db-a294-5d6e-b03c-0cbeffd24358)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "R29")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 113.03 181.61)
+      (xy 105.41 181.61)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 29a1f1f8-8ae5-50a3-9e74-64683d14c503)
+  )
+  (label "VSYS"
+    (at 105.41 181.61 180)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify right)
+    )
+    (uuid 87ff43ca-988a-514c-a2bd-d90b05ab2efb)
+  )
+  (wire
+    (pts
+      (xy 120.65 181.61)
+      (xy 128.27 181.61)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid f8ac36a1-19cd-530c-9937-73a16100837e)
+  )
+  (label "NFC_VDDUP"
+    (at 128.27 181.61 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid b52fb9e3-cb92-5398-8c1e-3896ff311655)
+  )
+  (symbol
+    (lib_id "power:PWR_FLAG")
+    (at 147.32 181.61 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid d96b4676-13cc-50c1-9031-26403af94a5c)
+    (property "Reference" "#FLG301"
+      (at 149.86 180.34 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Value" "PWR_FLAG"
+      (at 149.86 182.88 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Footprint" ""
+      (at 147.32 181.61 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" ""
+      (at 147.32 181.61 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid c7088ce1-650a-5b1e-9c50-49ae45d62498)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "#FLG301")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 147.32 181.61)
+      (xy 147.32 185.42)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid e0147890-234e-5ab6-aa3f-eaf3b4ad1770)
+  )
+  (label "NFC_VDDUP"
+    (at 147.32 185.42 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid ceb19361-37e0-5689-b19f-798de0cc2734)
+  )
+  (text "RF values TBD: tune with the actual coil + final stackup"
+    (at 205.74 30.48 0)
+    (effects
+      (font
+        (size 1.5 1.5)
+      )
+      (justify left)
+    )
+    (uuid 0600b760-dd60-555f-9cd1-3eb5e566544c)
+  )
+  (symbol
+    (lib_id "Device:L")
+    (at 228.6 60.96 90)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 42fcab6c-cfaf-503d-8759-1e3f7bce7aec)
+    (property "Reference" "L2"
+      (at 223.52 53.34 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "TBD L_EMC"
+      (at 223.52 55.88 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Nucula_Project:L_Coilcraft_0805HQ_2012Metric"
+      (at 228.6 60.96 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 228.6 60.96 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Status" "TUNE: high-Q RF inductor, >=0.5 A; self-resonance above operating band"
+      (at 228.6 60.96 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Reference Role" "L1"
+      (at 228.6 60.96 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid f2a1158a-25a3-5f93-ad21-202c4d8c3fe4)
+    )
+    (pin "2"
+      (uuid 3e4dedc2-8017-5024-b67e-f1f55f3ea7af)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "L2")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 224.79 60.96)
+      (xy 217.17 60.96)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 258c26f3-04c1-5888-aed6-72fba6c7350e)
+  )
+  (label "NFC_TX1"
+    (at 217.17 60.96 180)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify right)
+    )
+    (uuid f99ed0ff-6a5a-5756-b0b8-597c1189b2bb)
+  )
+  (wire
+    (pts
+      (xy 232.41 60.96)
+      (xy 254 60.96)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid e92f5a48-7dfb-531c-9d60-e09557cb0615)
+  )
+  (label "RF_EMC_P"
+    (at 241.3 60.96 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid 19081728-26d0-519b-a270-b073de6e80df)
+  )
+  (symbol
+    (lib_id "Device:L")
+    (at 228.6 132.08 90)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 6dbc3405-a2d4-5c31-be9b-c706e93d5ff9)
+    (property "Reference" "L3"
+      (at 223.52 124.46 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "TBD L_EMC"
+      (at 223.52 127.0 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Nucula_Project:L_Coilcraft_0805HQ_2012Metric"
+      (at 228.6 132.08 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 228.6 132.08 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Status" "TUNE: high-Q RF inductor, >=0.5 A; self-resonance above operating band"
+      (at 228.6 132.08 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Reference Role" "L2"
+      (at 228.6 132.08 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid 84f4c6ef-13fd-5c11-a276-dfda1166d1e1)
+    )
+    (pin "2"
+      (uuid a78950f1-35c0-5a1c-8bfb-0056cd2191df)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "L3")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 224.79 132.08)
+      (xy 217.17 132.08)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid b3a8e879-f8f1-5b96-a245-bd907509142c)
+  )
+  (label "NFC_TX2"
+    (at 217.17 132.08 180)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify right)
+    )
+    (uuid ca91cdf1-c5c9-5aed-b388-bd1797e2c357)
+  )
+  (wire
+    (pts
+      (xy 232.41 132.08)
+      (xy 254 132.08)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 48ae5e3c-417a-5485-9350-f5295b386e3d)
+  )
+  (label "RF_EMC_N"
+    (at 241.3 132.08 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid 92683055-e0ff-562d-a97c-7ea2ff3780c8)
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 254 78.74 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid a67107f6-7473-5a38-b8d4-e1a9adc77f33)
+    (property "Reference" "C30"
+      (at 256.54 77.47 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "TBD C_EMC"
+      (at 256.54 80.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 254 78.74 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 254 78.74 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Voltage" "50 V"
+      (at 254 78.74 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Dielectric" "C0G"
+      (at 254 78.74 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Tolerance" "10%"
+      (at 254 78.74 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid 8b3e6c78-1e7f-5d22-adc6-c06075667eaa)
+    )
+    (pin "2"
+      (uuid 7d168e1b-a476-54d8-a75b-cda12e60a1c7)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "C30")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 254 60.96)
+      (xy 254.0 74.93)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 8f839ca3-038d-5a18-9b42-000adf823cc2)
+  )
+  (wire
+    (pts
+      (xy 254.0 82.55)
+      (xy 254 96.52)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 81d3c842-7287-5868-9063-2f5d1506abff)
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 254 114.3 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 848fedf4-9609-5abb-ab61-f1743acbad1b)
+    (property "Reference" "C31"
+      (at 256.54 113.03 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "TBD C_EMC"
+      (at 256.54 115.57 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 254 114.3 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 254 114.3 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Voltage" "50 V"
+      (at 254 114.3 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Dielectric" "C0G"
+      (at 254 114.3 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Tolerance" "10%"
+      (at 254 114.3 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid e1a276c6-95fd-5d80-b79e-25bf81a8002e)
+    )
+    (pin "2"
+      (uuid 9af06edd-1533-5679-9490-684d7b5942b4)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "C31")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 254 96.52)
+      (xy 254.0 110.49)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid ef8d6159-21c5-5007-a38a-6a140b06643a)
+  )
+  (wire
+    (pts
+      (xy 254.0 118.11)
+      (xy 254 132.08)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 65948d94-23f5-5e84-8dbc-ddcd86234237)
+  )
+  (symbol
+    (lib_id "power:GND")
+    (at 254 96.52 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid 2d21df8b-708d-5a52-afc9-e60a59dcd8a5)
+    (property "Reference" "#PWR3999"
+      (at 256.54 95.25 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Value" "GND"
+      (at 256.54 97.79 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Footprint" ""
+      (at 254 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" ""
+      (at 254 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid 119fa8a5-4625-5209-b251-b1e0e33e0c72)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "#PWR3999")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (junction
+    (at 254 96.52)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid ff9c3fb4-c312-551d-8fa1-6eb9a3305576)
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 281.94 60.96 90)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid d02606c1-58d6-5d2c-8d9a-d6edc5c5aec2)
+    (property "Reference" "C32"
+      (at 276.86 53.34 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "TBD C_SER"
+      (at 276.86 55.88 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 281.94 60.96 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 281.94 60.96 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Voltage" "50 V"
+      (at 281.94 60.96 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Dielectric" "C0G"
+      (at 281.94 60.96 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Tolerance" "10%"
+      (at 281.94 60.96 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid 39b3bef2-57ed-5015-ab5c-0206b22f8a8f)
+    )
+    (pin "2"
+      (uuid b652fd70-7453-5df0-97e8-103a77dd1818)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "C32")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 278.13 60.96)
+      (xy 254 60.96)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid f5c62150-d439-59ca-a6ea-6291821d6c3b)
+  )
+  (wire
+    (pts
+      (xy 285.75 60.96)
+      (xy 307.34 60.96)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 944ef917-0a82-56c3-b79f-9106b9678a37)
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 281.94 45.72 90)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp yes)
+    (uuid 63d1bfb8-494e-5bb3-9386-a2b22d1ab290)
+    (property "Reference" "C34"
+      (at 276.86 38.1 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "TBD C_TRIM"
+      (at 276.86 40.64 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 281.94 45.72 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 281.94 45.72 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Voltage" "50 V"
+      (at 281.94 45.72 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Dielectric" "C0G"
+      (at 281.94 45.72 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Tolerance" "10%"
+      (at 281.94 45.72 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid 18fb8565-fff3-5999-998b-c50edf87d0ca)
+    )
+    (pin "2"
+      (uuid 8b13e806-b79a-5ea1-b86e-d251c0fd01ce)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "C34")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 278.13 45.72)
+      (xy 254 45.72)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 9a762bb1-0b69-545c-8b8a-a7601d54a86a)
+  )
+  (wire
+    (pts
+      (xy 285.75 45.72)
+      (xy 307.34 45.72)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 7a3d8581-eabd-5090-9aff-caca41cf399d)
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 281.94 132.08 90)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 08e419f3-d600-5f3f-b76c-d82d85c11a10)
+    (property "Reference" "C33"
+      (at 276.86 124.46 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "TBD C_SER"
+      (at 276.86 127.0 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 281.94 132.08 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 281.94 132.08 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Voltage" "50 V"
+      (at 281.94 132.08 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Dielectric" "C0G"
+      (at 281.94 132.08 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Tolerance" "10%"
+      (at 281.94 132.08 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid 6fe92ca6-970c-5d52-a83a-401db4fabee2)
+    )
+    (pin "2"
+      (uuid f534860b-7d18-5899-9c3f-1ff606202569)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "C33")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 278.13 132.08)
+      (xy 254 132.08)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 8db40789-cfdc-54af-bacf-aea47346a477)
+  )
+  (wire
+    (pts
+      (xy 285.75 132.08)
+      (xy 307.34 132.08)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 0ee538ed-a969-53d7-a3df-ae2dae85f5b4)
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 281.94 147.32 90)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp yes)
+    (uuid 2c217a49-de39-5286-abea-33a5c9faeac8)
+    (property "Reference" "C35"
+      (at 276.86 139.7 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "TBD C_TRIM"
+      (at 276.86 142.24 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 281.94 147.32 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 281.94 147.32 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Voltage" "50 V"
+      (at 281.94 147.32 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Dielectric" "C0G"
+      (at 281.94 147.32 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Tolerance" "10%"
+      (at 281.94 147.32 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid a01486a3-2283-5a1f-bea9-359100932d11)
+    )
+    (pin "2"
+      (uuid b8739de0-c8a8-5686-8c0c-99660df094b7)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "C35")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 278.13 147.32)
+      (xy 254 147.32)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid df988b86-c826-527e-8e77-13564f4bfe5e)
+  )
+  (wire
+    (pts
+      (xy 285.75 147.32)
+      (xy 307.34 147.32)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid f8c5225b-7626-5748-bfd9-05005ad698f4)
+  )
+  (wire
+    (pts
+      (xy 254 45.72)
+      (xy 254 60.96)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid a4cac316-1328-5ab4-9153-319549de4dcf)
+  )
+  (junction
+    (at 254 60.96)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid da26bee1-1a6a-5d90-8ced-0ef3c45b0c9c)
+  )
+  (wire
+    (pts
+      (xy 254 132.08)
+      (xy 254 147.32)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid ee8f736f-b74b-5f23-a6fd-77ab5edffc13)
+  )
+  (junction
+    (at 254 132.08)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid 535740e8-b70f-56e9-aa82-d47c7657fccf)
+  )
+  (wire
+    (pts
+      (xy 307.34 45.72)
+      (xy 307.34 60.96)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid da5a5b7b-74e7-5be5-bdbd-ce1bb4bec4be)
+  )
+  (wire
+    (pts
+      (xy 307.34 132.08)
+      (xy 307.34 147.32)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid d301e737-aecf-50c5-8d73-9004b79b11b5)
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 307.34 78.74 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 7fbbc3b9-5ef9-59d0-b6e7-0c1c29c76438)
+    (property "Reference" "C36"
+      (at 309.88 77.47 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "TBD C_SHUNT"
+      (at 309.88 80.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 307.34 78.74 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 307.34 78.74 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Voltage" "50 V"
+      (at 307.34 78.74 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Dielectric" "C0G"
+      (at 307.34 78.74 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Tolerance" "10%"
+      (at 307.34 78.74 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid 01cb8eb7-1adb-5528-bd27-d7991ec188bf)
+    )
+    (pin "2"
+      (uuid cb9bcd73-a00b-50d3-bcc4-59f4be4c8c4f)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "C36")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 307.34 60.96)
+      (xy 307.34 74.93)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 1ba2fd8f-8a09-5ac6-8181-a4972a90f457)
+  )
+  (wire
+    (pts
+      (xy 307.34 82.55)
+      (xy 307.34 96.52)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 9db0c254-a1fc-530c-aa75-6609e56053bd)
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 325.12 78.74 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp yes)
+    (uuid 79295eed-d456-53f0-8025-b3c052739fb7)
+    (property "Reference" "C38"
+      (at 327.66 77.47 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "TBD C_TRIM"
+      (at 327.66 80.01 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 325.12 78.74 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 325.12 78.74 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Voltage" "50 V"
+      (at 325.12 78.74 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Dielectric" "C0G"
+      (at 325.12 78.74 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Tolerance" "10%"
+      (at 325.12 78.74 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid 8e273b9d-66f0-5715-babf-722da51ebe9b)
+    )
+    (pin "2"
+      (uuid 52fefdee-9301-5ebc-b540-4a8e60b3ddcb)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "C38")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 325.12 60.96)
+      (xy 325.12 74.93)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid c758a6be-4a2e-5574-b6e8-309a74e39137)
+  )
+  (wire
+    (pts
+      (xy 325.12 82.55)
+      (xy 325.12 96.52)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 4519839c-1dfc-5707-8ee3-18bcf8fab2e8)
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 307.34 114.3 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 7b6ed097-34a4-58e1-99bc-820d5d93c04d)
+    (property "Reference" "C37"
+      (at 309.88 113.03 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "TBD C_SHUNT"
+      (at 309.88 115.57 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 307.34 114.3 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 307.34 114.3 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Voltage" "50 V"
+      (at 307.34 114.3 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Dielectric" "C0G"
+      (at 307.34 114.3 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Tolerance" "10%"
+      (at 307.34 114.3 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid 49433bbc-0fd7-5fce-8b80-2bb317f93139)
+    )
+    (pin "2"
+      (uuid 8bc3629e-a536-59bf-9334-f3b478a9d28b)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "C37")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 307.34 96.52)
+      (xy 307.34 110.49)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 845f1a45-3c7a-53b2-a187-1352797dfd0b)
+  )
+  (wire
+    (pts
+      (xy 307.34 118.11)
+      (xy 307.34 132.08)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 1250f6b3-b643-50fc-9199-663132fd645e)
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 325.12 114.3 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp yes)
+    (uuid 00c6a735-b197-5699-add5-a13337f517a1)
+    (property "Reference" "C39"
+      (at 327.66 113.03 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "TBD C_TRIM"
+      (at 327.66 115.57 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 325.12 114.3 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 325.12 114.3 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Voltage" "50 V"
+      (at 325.12 114.3 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Dielectric" "C0G"
+      (at 325.12 114.3 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Tolerance" "10%"
+      (at 325.12 114.3 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid 2a04c79a-cec8-507c-b2dd-b60509adca89)
+    )
+    (pin "2"
+      (uuid e57ec185-6e9e-529b-8031-7e76e4f8e477)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "C39")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 325.12 96.52)
+      (xy 325.12 110.49)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 6b263c01-17b8-55d7-93a1-a57338126aff)
+  )
+  (wire
+    (pts
+      (xy 325.12 118.11)
+      (xy 325.12 132.08)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 1d1348bd-0ac1-5182-8cbe-7a05227b0de3)
+  )
+  (wire
+    (pts
+      (xy 307.34 60.96)
+      (xy 345.44 60.96)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid dc946b02-bdd5-5dfc-bc82-7bceefa521ee)
+  )
+  (wire
+    (pts
+      (xy 307.34 132.08)
+      (xy 345.44 132.08)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid d8f5cabb-72af-5331-9fa3-ea09fc3461f8)
+  )
+  (label "RF_MATCH_P"
+    (at 330.2 60.96 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid f9fa0e81-586b-57b6-a070-ddf9212aac7e)
+  )
+  (label "RF_MATCH_N"
+    (at 330.2 132.08 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid 7dedf164-74d7-5dc9-9f7c-5217bba381a3)
+  )
+  (wire
+    (pts
+      (xy 254 96.52)
+      (xy 325.12 96.52)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 6219b578-265d-5bce-9b99-501137b6aeca)
+  )
+  (junction
+    (at 307.34 96.52)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid 14968111-c189-5f15-95af-5de699382a03)
+  )
+  (junction
+    (at 307.34 60.96)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid a20c6732-4596-5086-a05f-8299a54377e9)
+  )
+  (junction
+    (at 325.12 60.96)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid 6d8fce57-e194-5baa-b30b-a4d71f3852e1)
+  )
+  (junction
+    (at 307.34 132.08)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid 4989d633-d98c-5b2c-9cd2-c35aa492db01)
+  )
+  (junction
+    (at 325.12 132.08)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid 7c8978a0-4065-5cfe-a8cf-6dc10ad73207)
+  )
+  (symbol
+    (lib_id "Device:R")
+    (at 349.25 60.96 90)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid a1f38158-82a9-5eb6-8e4a-d6fda96d2aae)
+    (property "Reference" "R27"
+      (at 341.63 53.34 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "TBD R_DAMP"
+      (at 341.63 55.88 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 349.25 60.96 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 349.25 60.96 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Tolerance" "1%"
+      (at 349.25 60.96 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Rating" "0.25 W; RF loss/temperature to verify"
+      (at 349.25 60.96 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid 0fa8d906-e206-5981-901d-7d05a19d964e)
+    )
+    (pin "2"
+      (uuid 4c871835-724a-58ee-8142-8f69bdebcadf)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "R27")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:R")
+    (at 349.25 132.08 90)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 56352fd9-9683-5ed0-8009-1987ecbddad1)
+    (property "Reference" "R28"
+      (at 341.63 134.62 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "TBD R_DAMP"
+      (at 341.63 137.16 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 349.25 132.08 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 349.25 132.08 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Tolerance" "1%"
+      (at 349.25 132.08 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Rating" "0.25 W; RF loss/temperature to verify"
+      (at 349.25 132.08 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid fabd707d-8564-5b7e-bd67-d880025df937)
+    )
+    (pin "2"
+      (uuid bbb14a67-9ccb-5ab9-b4be-45920eaefdc0)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "R28")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Nucula_Project:NFC_Loop_TBD")
+    (at 391.16 96.52 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 9a5ae9f3-ed58-5272-ac95-d1f39e2ff60d)
+    (property "Reference" "A1"
+      (at 378.46 76.2 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "13.56MHz coil / TBD"
+      (at 378.46 78.74 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Nucula_Project:NFC_Antenna_Interface_TBD"
+      (at 391.16 96.52 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 391.16 96.52 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Status" "PLACEHOLDER: no coil geometry or inductance selected"
+      (at 391.16 96.52 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid 7cc159cd-be1b-552e-bf59-113d96e70d7a)
+    )
+    (pin "2"
+      (uuid 7c4b2609-9ba3-5947-9487-b77f34eba6d8)
+    )
+    (pin "3"
+      (uuid bb6c91c9-6f41-53c8-a543-6353c2673406)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "A1")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 353.06 60.96)
+      (xy 368.3 60.96)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 5c4b022b-6de0-5698-8a4d-7fd812f3f394)
+  )
+  (wire
+    (pts
+      (xy 368.3 60.96)
+      (xy 368.3 88.9)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 7154a10d-fb00-5af1-b443-db4ea0351b55)
+  )
+  (wire
+    (pts
+      (xy 368.3 88.9)
+      (xy 375.92 88.9)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 6cd84edc-9bfd-5616-a964-5528b766d4dd)
+  )
+  (wire
+    (pts
+      (xy 353.06 132.08)
+      (xy 368.3 132.08)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 8497d325-e6e9-57ea-ac4b-d7955ea40f9f)
+  )
+  (wire
+    (pts
+      (xy 368.3 132.08)
+      (xy 368.3 104.14)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 2f806892-4045-5091-8d0a-ffc1b45f8cca)
+  )
+  (wire
+    (pts
+      (xy 368.3 104.14)
+      (xy 375.92 104.14)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 5d5d1f65-0e40-5ea5-94be-b5f4aafcea2f)
+  )
+  (wire
+    (pts
+      (xy 375.92 96.52)
+      (xy 370.84 96.52)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 1c17662f-669d-53b5-86f0-aba9459b58bf)
+  )
+  (label "GND"
+    (at 370.84 96.52 180)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify right)
+    )
+    (uuid 342b9181-a337-5fad-9ce4-66062bd165eb)
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 220.98 40.64 90)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 7e2045d5-87e3-5d95-815e-387f5eff7f46)
+    (property "Reference" "C28"
+      (at 215.9 33.02 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "TBD C_RX"
+      (at 215.9 35.56 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 220.98 40.64 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 220.98 40.64 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Voltage" "50 V"
+      (at 220.98 40.64 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Dielectric" "C0G"
+      (at 220.98 40.64 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Tolerance" "10%"
+      (at 220.98 40.64 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid 0dd0f18e-496f-5eb1-96a0-11bbc1df684e)
+    )
+    (pin "2"
+      (uuid 754880e0-12fe-564a-ad20-2424124cd995)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "C28")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 217.17 40.64)
+      (xy 207.01 40.64)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid add5f1fa-1e80-575c-96e7-86e5c9bd502d)
+  )
+  (label "NFC_RXN"
+    (at 207.01 40.64 180)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify right)
+    )
+    (uuid 6f4d2a1e-0f8c-5aae-951d-a2eed83c867a)
+  )
+  (symbol
+    (lib_id "Device:R")
+    (at 242.57 40.64 90)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid a59820dc-97f2-5f15-9a6e-1e67034b495c)
+    (property "Reference" "R25"
+      (at 237.49 33.02 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "TBD R_RX"
+      (at 237.49 35.56 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 242.57 40.64 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 242.57 40.64 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Tolerance" "1%"
+      (at 242.57 40.64 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Rating" "0.1 W"
+      (at 242.57 40.64 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid c11ac35a-8861-50cf-90ae-3a62d2df83cc)
+    )
+    (pin "2"
+      (uuid c9eeb2fb-e4fb-5159-97f5-c950926f6b87)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "R25")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 224.79 40.64)
+      (xy 238.76 40.64)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid a8f818c1-f2b5-51a9-8dfd-7cc65daeccfa)
+  )
+  (wire
+    (pts
+      (xy 246.38 40.64)
+      (xy 251.46 40.64)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 8dd604f8-fbf4-5d37-94f4-c262cbfcbdd1)
+  )
+  (label "RF_EMC_P"
+    (at 251.46 40.64 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid 3657777c-763f-5736-8445-3ca662860ef7)
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 220.98 165.1 90)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 1e688433-df89-5108-a238-35c6ef34a22a)
+    (property "Reference" "C29"
+      (at 215.9 157.48 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "TBD C_RX"
+      (at 215.9 160.02 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 220.98 165.1 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 220.98 165.1 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Voltage" "50 V"
+      (at 220.98 165.1 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Dielectric" "C0G"
+      (at 220.98 165.1 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Tolerance" "10%"
+      (at 220.98 165.1 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid 13486fc6-7b01-5501-a757-b67a39b9c999)
+    )
+    (pin "2"
+      (uuid cb5380a0-87aa-5881-a933-5bca6a79a599)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "C29")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 217.17 165.1)
+      (xy 207.01 165.1)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 8e08fddc-27dd-5817-b2cc-7a6f6b61961a)
+  )
+  (label "NFC_RXP"
+    (at 207.01 165.1 180)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify right)
+    )
+    (uuid 47a82373-7bb2-57d9-845a-e9a4998e956b)
+  )
+  (symbol
+    (lib_id "Device:R")
+    (at 242.57 165.1 90)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 2ad3aeb7-83e8-503f-a0c0-4aeb3b316b3f)
+    (property "Reference" "R26"
+      (at 237.49 157.48 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "TBD R_RX"
+      (at 237.49 160.02 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 242.57 165.1 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Datasheet" ""
+      (at 242.57 165.1 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Tolerance" "1%"
+      (at 242.57 165.1 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (property "Rating" "0.1 W"
+      (at 242.57 165.1 90)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+        (justify left)
+      )
+    )
+    (pin "1"
+      (uuid aee2f16f-531a-582d-a97c-90f36f247866)
+    )
+    (pin "2"
+      (uuid 66aa6d02-83b7-55fb-985a-9fa272599c2c)
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "R26")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 224.79 165.1)
+      (xy 238.76 165.1)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 3409dcbd-6a6a-56d9-b475-295f553b0e8c)
+  )
+  (wire
+    (pts
+      (xy 246.38 165.1)
+      (xy 251.46 165.1)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid e166fdbe-eb25-52dc-9089-1b378d9e7c92)
+  )
+  (label "RF_EMC_N"
+    (at 251.46 165.1 0)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify left)
+    )
+    (uuid 80b6a559-3b98-5adf-874b-0370b2767022)
+  )
+  (text "Pin 14 -> 18 + 22: internal TX-LDO output, not an external supply.\nPin 31 -> 26 + 27: internal 1.8 V rail; decouple only.\nVSYS powers VBAT/VBAT2 and VDD_UP; VDD_PAD uses +3V3.\nADR1:0 = 00 => 0x28. WKUP_REQ low; wake over I2C.\nVEN defaults low. DWL_REQ test access via its labelled net.\nANT1/ANT2/VDHF unused: configure normal RF detection.\n27.12 MHz crystal; confirm ESR, drive and load before ordering."
+    (at 20.32 243.84 0)
+    (effects
+      (font
+        (size 1.15 1.15)
+      )
+      (justify left)
+    )
+    (uuid 51b514d7-bca7-5bd7-a140-9e5da6df46ff)
+  )
+  (text "A1 pads 1/2 = coil ends; pad 3 = reference/shield ground.\nNo center-tap assumption. Coil footprint is a placeholder.\nC34/C35/C38/C39 are optional parallel tuning pads (DNP).\nAll other RF values are unselected; do not fabricate yet.\nSource: parts documentation/PN7160_schematic-3.pdf"
+    (at 205.74 239.0 0)
+    (effects
+      (font
+        (size 1.15 1.15)
+      )
+      (justify left)
+    )
+    (uuid 6e601fa0-bd34-53f8-8bd8-669e9ac45e6a)
+  )
+  (embedded_fonts no)
+)

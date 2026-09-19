@@ -1,6 +1,6 @@
 # USB-C, battery power and ESP32-C3 draft
 
-Revision A-draft, updated 2026-09-20. Open `nucula-v2.kicad_pro` in KiCad 10.
+Revision B-draft, updated 2026-09-20. Open `nucula-v2.kicad_pro` in KiCad 10.
 The schematic is complete for this draft; the PCB remains the original blank board.
 [PDF drawing](schematic.pdf), [BOM](bom.csv), [verification results](verification.json).
 
@@ -15,8 +15,9 @@ from the local reference repository at commit
 The retained circuit is TP4054 charging, Schottky/MOSFET USB-priority power
 selection, and an SY8089 buck converter. The WROOM-02-N4 replaces the reference
 board's MINI module. Its physical pin numbers were checked separately.
-NFC, I/O expansion, connectors for future peripherals, firmware and PCB layout
-are outside this draft.
+This circuit is now on `power-mcu.kicad_sch`. NFC, OLED and I/O expansion are
+integrated on separate sheets; see [peripheral design](peripherals-design.md).
+Firmware and PCB layout remain outside this draft.
 
 ## Power behavior
 
@@ -54,13 +55,16 @@ C1 and C2 provide input/battery bypassing. D3 indicates charging.
 The charger has internal thermal regulation, which does not measure cell temperature.
 [TP4054 Rev 2.1 datasheet](https://www.toppwr.com/uploadfile/file/20240913/66e3d01d4c944.pdf).
 
-D1/D2 use SS14 in SMA. Their forward drop reduces charging headroom: a low USB
+D1/D2 now use **B340A-13-F**, 3 A / 40 V in SMA, for additional current margin
+with NFC and OLED loads. The footprint and topology are unchanged. This rating
+depends on terminal temperature and copper area; verify both diode temperatures
+in the finished layout. Their forward drop reduces charging headroom: a low USB
 voltage or resistive cable can prevent reaching full charge. At a pessimistic
 4.75 V input and 0.5 V D1 drop, only 4.25 V reaches U1, close to the battery's
 4.242 V maximum float voltage and sleep threshold. Full-charge performance at
 minimum VBUS is **not guaranteed**. Validate this corner or replace D1 with a
 lower-loss input stage before a product release.
-[SS14 datasheet](https://www.vishay.com/docs/88746/ss12.pdf),
+[B340A datasheet](https://www.diodes.com/datasheet/download/B340A.pdf),
 [Q1 IRLML6402 pinout and ratings](https://www.infineon.com/assets/row/public/documents/24/49/infineon-irlml6402-datasheet-en.pdf).
 
 ## Regulator and low battery
@@ -102,7 +106,8 @@ Native USB provides Serial/JTAG and ROM download; there is no UART bridge.
 
 GPIO2/8/9 have pullups. Hold BOOT and tap RESET for download mode.
 ESP_EN has the recommended 10 kΩ / 1 µF network plus the supervisor.
-Unused module pins carry explicit no-connect markers for this stage.
+GPIO21 remains reserved with an explicit no-connect marker. GPIO4/5 now carry
+I²C; GPIO6/7 control NFC; GPIO3/10 control the OLED; GPIO20 receives keyboard INT.
 
 GPIO0/ADC1 senses half the battery voltage through 470 kΩ / 470 kΩ and 100 nF.
 The calculated maximum is 2.142 V; use calibrated 11/12 dB attenuation and
@@ -124,7 +129,10 @@ A full 500 mA rail load plus charging can exceed a legacy USB 2.0 port's 500 mA
 budget. For initial powered evaluation use an adequate 5 V source (1 A or more);
 source current capability does not replace USB host enumeration, suspend or
 inrush requirements. Product-level use with arbitrary hosts needs a power-budget
-and input-management revision before layout.
+and input-management revision before layout. The added NFC and OLED loads are
+supplied from VSYS. Simultaneous peak use can exceed 1 A at a low battery;
+the 400 mAh capacity alone does not establish a suitable discharge rating.
+See the explicit load assumptions in [peripheral power budget](peripherals-design.md#power-budget).
 [USB-IF specifications](https://www.usb.org/document-library/usb-20-specification).
 
 Select actual MLCC ordering codes and verify capacitance under DC bias,
@@ -140,7 +148,8 @@ routing, and the module antenna keepout when PCB work begins.
 checks critical pin groups independently of drawing coordinates, checks selected
 values/tolerances and DNP flags, matches physical symbol pins to footprint pads,
 resolves assigned models, and recalculates the static limits above.
-The checked draft has **47 components and zero ERC errors/warnings**. Footprint
+The combined draft has **124 components across five sheets and zero ERC
+errors/warnings**. Footprint
 filter checking is enabled. The drawing was also rendered and visually inspected.
 This is schematic verification, not circuit simulation or hardware validation.
 

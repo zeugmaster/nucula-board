@@ -1,48 +1,125 @@
-Reference,Value,Footprint,Manufacturer,MPN,Tolerance,Voltage,Dielectric,DNP,Datasheet
-C1,22uF,Capacitor_SMD:C_0805_2012Metric,,,20%,10 V,X5R,no,
-C2,22uF,Capacitor_SMD:C_0805_2012Metric,,,20%,10 V,X5R,no,
-C3,22pF,Capacitor_SMD:C_0603_1608Metric,,,10%,16 V,C0G,no,
-C4,22uF,Capacitor_SMD:C_0805_2012Metric,,,20%,10 V,X5R,no,
-C5,22uF,Capacitor_SMD:C_0805_2012Metric,,,20%,10 V,X5R,no,
-C6,22uF,Capacitor_SMD:C_0805_2012Metric,,,20%,10 V,X5R,no,
-C7,DNP / USB tune,Capacitor_SMD:C_0603_1608Metric,,,10%,16 V,X7R,yes,
-C8,DNP / USB tune,Capacitor_SMD:C_0603_1608Metric,,,10%,16 V,X7R,yes,
-C9,22uF,Capacitor_SMD:C_0805_2012Metric,,,20%,10 V,X5R,no,
-C10,100nF,Capacitor_SMD:C_0603_1608Metric,,,10%,16 V,X7R,no,
-C11,100nF,Capacitor_SMD:C_0603_1608Metric,,,10%,16 V,X7R,no,
-C12,1uF,Capacitor_SMD:C_0603_1608Metric,,,10%,16 V,X7R,no,
-C13,100nF,Capacitor_SMD:C_0603_1608Metric,,,10%,16 V,X7R,no,
-C14,100nF,Capacitor_SMD:C_0603_1608Metric,,,10%,16 V,X7R,no,
-D1,SS14,Diode_SMD:D_SMA,Vishay,SS14-E3/61T,,,,no,https://www.vishay.com/docs/88746/ss12.pdf
-D2,SS14,Diode_SMD:D_SMA,Vishay,SS14-E3/61T,,,,no,https://www.vishay.com/docs/88746/ss12.pdf
-D3,CHARGE (red),LED_SMD:LED_0603_1608Metric,,,,,,no,
-J1,USB4105-GF-A,Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal,GCT,USB4105-GF-A,,,,no,https://gct.co/files/drawings/usb4105.pdf
-J2,JST-PH / 1S Li-ion,Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical,JST,B2B-PH-K-S(LF)(SN),,,,no,https://www.jst-mfg.com/product/pdf/eng/ePH.pdf
-L1,2.2uH,Nucula_Project:L_Taiyo-Yuden_NR-30xx,Taiyo Yuden,LSXND3030QKT2R2MNG,,,,no,https://ds.yuden.co.jp/TYCOMPAS/eu/detail?pn=LSXND3030QKT2R2MNG&u=M
-Q1,IRLML6402,Package_TO_SOT_SMD:SOT-23,Infineon,IRLML6402TRPBF,,,,no,https://www.infineon.com/assets/row/public/documents/24/49/infineon-irlml6402-datasheet-en.pdf
-Q2,BSS138,Package_TO_SOT_SMD:SOT-23,onsemi,BSS138,,,,no,https://www.onsemi.com/pub/Collateral/BSS138-D.PDF
-R1,5.1k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,
-R2,5.1k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,
-R3,10k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,
-R4,2.2k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,
-R5,10k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,
-R6,220k,Resistor_SMD:R_0603_1608Metric,,,0.1%,,,no,
-R7,48.7k,Resistor_SMD:R_0603_1608Metric,,,0.1%,,,no,
-R8,10k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,
-R9,10k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,
-R10,10k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,
-R11,10k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,
-R12,22R,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,
-R13,22R,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,
-R14,100R,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,
-R15,470k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,
-R16,470k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,
-R17,100k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,
-R18,100k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,
-SW1,RESET,Button_Switch_SMD:SW_SPST_B3U-1000P,Omron,B3U-1000P,,,,no,
-SW2,BOOT,Button_Switch_SMD:SW_SPST_B3U-1000P,Omron,B3U-1000P,,,,no,
-U1,TP4054-42-SOT235,Package_TO_SOT_SMD:SOT-23-5,Top Power ASIC,TP4054-42-SOT235,,,,no,https://www.toppwr.com/uploadfile/file/20240913/66e3d01d4c944.pdf
-U2,SY8089AAAC,Package_TO_SOT_SMD:SOT-23-5,Silergy,SY8089AAAC,,,,no,https://www.olimex.com/Products/Components/IC/SY8009A/resources/SY8089AAAC.pdf
-U3,ESP32-C3-WROOM-02-N4,Nucula_Project:ESP32-C3-WROOM-02-N4,Espressif,ESP32-C3-WROOM-02-N4,,,,no,https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf
-U4,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,STMicroelectronics,USBLC6-2SC6,,,,no,https://www.st.com/resource/en/datasheet/usblc6-2.pdf
-U5,TLV803EA30DCKR,Package_TO_SOT_SMD:SOT-323_SC-70,Texas Instruments,TLV803EA30DCKR,,,,no,https://www.ti.com/lit/ds/symlink/tlv803e.pdf
+Reference,Value,Footprint,Manufacturer,MPN,Tolerance,Voltage,Dielectric,DNP,PCB Region,Status,Datasheet
+A1,13.56MHz coil / TBD,Nucula_Project:NFC_Antenna_Interface_TBD,,,,,,no,MAIN,PLACEHOLDER: no coil geometry or inductance selected,
+C1,22uF,Capacitor_SMD:C_0805_2012Metric,,,20%,10 V,X5R,no,MAIN,,
+C2,22uF,Capacitor_SMD:C_0805_2012Metric,,,20%,10 V,X5R,no,MAIN,,
+C3,22pF,Capacitor_SMD:C_0603_1608Metric,,,10%,16 V,C0G,no,MAIN,,
+C4,22uF,Capacitor_SMD:C_0805_2012Metric,,,20%,10 V,X5R,no,MAIN,,
+C5,22uF,Capacitor_SMD:C_0805_2012Metric,,,20%,10 V,X5R,no,MAIN,,
+C6,22uF,Capacitor_SMD:C_0805_2012Metric,,,20%,10 V,X5R,no,MAIN,,
+C7,DNP / USB tune,Capacitor_SMD:C_0603_1608Metric,,,10%,16 V,X7R,yes,MAIN,,
+C8,DNP / USB tune,Capacitor_SMD:C_0603_1608Metric,,,10%,16 V,X7R,yes,MAIN,,
+C9,22uF,Capacitor_SMD:C_0805_2012Metric,,,20%,10 V,X5R,no,MAIN,,
+C10,100nF,Capacitor_SMD:C_0603_1608Metric,,,10%,16 V,X7R,no,MAIN,,
+C11,100nF,Capacitor_SMD:C_0603_1608Metric,,,10%,16 V,X7R,no,MAIN,,
+C12,1uF,Capacitor_SMD:C_0603_1608Metric,,,10%,16 V,X7R,no,MAIN,,
+C13,100nF,Capacitor_SMD:C_0603_1608Metric,,,10%,16 V,X7R,no,MAIN,,
+C14,100nF,Capacitor_SMD:C_0603_1608Metric,,,10%,16 V,X7R,no,MAIN,,
+C15,1uF,Capacitor_SMD:C_0805_2012Metric,,,20%,10 V,X7R,no,MAIN,,
+C16,100nF,Capacitor_SMD:C_0603_1608Metric,,,10%,10 V,X7R,no,MAIN,,
+C17,10uF,Capacitor_SMD:C_0805_2012Metric,,,20%,10 V,X7R,no,MAIN,,
+C18,100nF,Capacitor_SMD:C_0603_1608Metric,,,10%,10 V,X7R,no,MAIN,,
+C19,10uF,Capacitor_SMD:C_0805_2012Metric,,,20%,10 V,X7R,no,MAIN,,
+C20,100nF,Capacitor_SMD:C_0603_1608Metric,,,10%,10 V,X7R,no,MAIN,,
+C21,10uF,Capacitor_SMD:C_0805_2012Metric,,,20%,10 V,X7R,no,MAIN,,
+C22,100nF,Capacitor_SMD:C_0603_1608Metric,,,10%,10 V,X7R,no,MAIN,,
+C23,10uF,Capacitor_SMD:C_0805_2012Metric,,,20%,10 V,X7R,no,MAIN,,
+C24,100nF,Capacitor_SMD:C_0603_1608Metric,,,10%,10 V,X7R,no,MAIN,,
+C25,100nF,Capacitor_SMD:C_0603_1608Metric,,,10%,10 V,X7R,no,MAIN,,
+C26,10pF START,Capacitor_SMD:C_0603_1608Metric,,,10%,50 V,C0G,no,MAIN,,
+C27,10pF START,Capacitor_SMD:C_0603_1608Metric,,,10%,50 V,C0G,no,MAIN,,
+C28,TBD C_RX,Capacitor_SMD:C_0603_1608Metric,,,10%,50 V,C0G,no,MAIN,,
+C29,TBD C_RX,Capacitor_SMD:C_0603_1608Metric,,,10%,50 V,C0G,no,MAIN,,
+C30,TBD C_EMC,Capacitor_SMD:C_0603_1608Metric,,,10%,50 V,C0G,no,MAIN,,
+C31,TBD C_EMC,Capacitor_SMD:C_0603_1608Metric,,,10%,50 V,C0G,no,MAIN,,
+C32,TBD C_SER,Capacitor_SMD:C_0603_1608Metric,,,10%,50 V,C0G,no,MAIN,,
+C33,TBD C_SER,Capacitor_SMD:C_0603_1608Metric,,,10%,50 V,C0G,no,MAIN,,
+C34,TBD C_TRIM,Capacitor_SMD:C_0603_1608Metric,,,10%,50 V,C0G,yes,MAIN,,
+C35,TBD C_TRIM,Capacitor_SMD:C_0603_1608Metric,,,10%,50 V,C0G,yes,MAIN,,
+C36,TBD C_SHUNT,Capacitor_SMD:C_0603_1608Metric,,,10%,50 V,C0G,no,MAIN,,
+C37,TBD C_SHUNT,Capacitor_SMD:C_0603_1608Metric,,,10%,50 V,C0G,no,MAIN,,
+C38,TBD C_TRIM,Capacitor_SMD:C_0603_1608Metric,,,10%,50 V,C0G,yes,MAIN,,
+C39,TBD C_TRIM,Capacitor_SMD:C_0603_1608Metric,,,10%,50 V,C0G,yes,MAIN,,
+C40,10uF,Capacitor_SMD:C_0805_2012Metric,,,20%,10 V,X7R,no,MAIN,,
+C41,22pF,Capacitor_SMD:C_0603_1608Metric,,,10%,50 V,C0G,no,MAIN,,
+C42,1uF,Capacitor_SMD:C_0805_2012Metric,,,20%,25 V,X7R,no,MAIN,,
+C43,100nF,Capacitor_SMD:C_0603_1608Metric,,,10%,10 V,X7R,no,MAIN,,
+C44,4.7uF,Capacitor_SMD:C_0805_2012Metric,,,20%,10 V,X7R,no,MAIN,,
+C45,100nF,Capacitor_SMD:C_0603_1608Metric,,,10%,25 V,X7R,no,MAIN,,
+C46,4.7uF,Capacitor_SMD:C_0805_2012Metric,,,20%,25 V,X7R,no,MAIN,,
+C47,2.2uF,Capacitor_SMD:C_0805_2012Metric,,,20%,25 V,X7R,no,MAIN,,
+C48,100nF,Capacitor_SMD:C_0603_1608Metric,,,10%,10 V,X7R,no,MAIN,,
+C49,1uF,Capacitor_SMD:C_0805_2012Metric,,,20%,10 V,X7R,no,MAIN,,
+C50,2.2uF,Capacitor_SMD:C_0805_2012Metric,,,20%,10 V,X7R,no,MAIN,,
+C51,100nF,Capacitor_SMD:C_0603_1608Metric,,,10%,10 V,X7R,no,BREAKAWAY_KEYBOARD,,
+C52,1uF,Capacitor_SMD:C_0805_2012Metric,,,20%,10 V,X7R,no,BREAKAWAY_KEYBOARD,,
+D1,B340A,Diode_SMD:D_SMA,Diodes Incorporated,B340A-13-F,,,,no,MAIN,,https://www.diodes.com/datasheet/download/B340A.pdf
+D2,B340A,Diode_SMD:D_SMA,Diodes Incorporated,B340A-13-F,,,,no,MAIN,,https://www.diodes.com/datasheet/download/B340A.pdf
+D3,CHARGE (red),LED_SMD:LED_0603_1608Metric,,,,,,no,MAIN,,
+D4,SS14,Diode_SMD:D_SMA,Vishay,SS14-E3/61T,,,,no,MAIN,,https://www.vishay.com/docs/88746/ss12.pdf
+DS1,SSD1309 / 26-pad glass,Connector_FFC-FPC:Hirose_FH12-26S-0.5SH_1x26-1MP_P0.50mm_Horizontal,,TBD exact OLED glass,,,,no,MAIN,PROVISIONAL: confirm 26-pin 0.5 mm flex/contact side; may require solder pads instead,https://files.waveshare.com/wiki/2.42inch-OLED-Module/SSD1309Datasheet.pdf
+J1,USB4105-GF-A,Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal,GCT,USB4105-GF-A,,,,no,MAIN,,https://gct.co/files/drawings/usb4105.pdf
+J2,JST-PH / 1S Li-ion,Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical,JST,B2B-PH-K-S(LF)(SN),,,,no,MAIN,,https://www.jst-mfg.com/product/pdf/eng/ePH.pdf
+J3,KEYBOARD / USER FIT,Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical,,,,,,yes,BREAKAWAY_KEYBOARD,,
+J4,MAIN LINK / OPTIONAL,Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical,,,,,,yes,MAIN,,
+J5,MODULE LINK / OPTIONAL,Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical,,,,,,yes,BREAKAWAY_KEYBOARD,,
+L1,2.2uH,Nucula_Project:L_Taiyo-Yuden_NR-30xx,Taiyo Yuden,LSXND3030QKT2R2MNG,,,,no,MAIN,,https://ds.yuden.co.jp/TYCOMPAS/eu/detail?pn=LSXND3030QKT2R2MNG&u=M
+L2,TBD L_EMC,Nucula_Project:L_Coilcraft_0805HQ_2012Metric,,,,,,no,MAIN,"TUNE: high-Q RF inductor, >=0.5 A; self-resonance above operating band",
+L3,TBD L_EMC,Nucula_Project:L_Coilcraft_0805HQ_2012Metric,,,,,,no,MAIN,"TUNE: high-Q RF inductor, >=0.5 A; self-resonance above operating band",
+L4,10uH,Nucula_Project:L_Coilcraft_LPS4018,Coilcraft,LPS4018-103MRC,,,,no,MAIN,,https://www.coilcraft.com/en-us/products/power/shielded-inductors/ferrite-drum/lps/lps4018/lps4018-103/
+Q1,IRLML6402,Package_TO_SOT_SMD:SOT-23,Infineon,IRLML6402TRPBF,,,,no,MAIN,,https://www.infineon.com/assets/row/public/documents/24/49/infineon-irlml6402-datasheet-en.pdf
+Q2,BSS138,Package_TO_SOT_SMD:SOT-23,onsemi,BSS138,,,,no,MAIN,,https://www.onsemi.com/pub/Collateral/BSS138-D.PDF
+Q3,IRLML6402,Package_TO_SOT_SMD:SOT-23,,IRLML6402TRPBF,,,,no,MAIN,,https://www.infineon.com/dgdl/irlml6402pbf.pdf?fileId=5546d462533600a401535668d5c2263c
+Q4,BSS138,Package_TO_SOT_SMD:SOT-23,onsemi,BSS138,,,,no,MAIN,,https://www.onsemi.com/pub/Collateral/BSS138-D.PDF
+Q5,BSS138,Package_TO_SOT_SMD:SOT-23,onsemi,BSS138,,,,no,MAIN,,https://www.onsemi.com/pub/Collateral/BSS138-D.PDF
+R1,5.1k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,MAIN,,
+R2,5.1k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,MAIN,,
+R3,10k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,MAIN,,
+R4,2.2k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,MAIN,,
+R5,10k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,MAIN,,
+R6,220k,Resistor_SMD:R_0603_1608Metric,,,0.1%,,,no,MAIN,,
+R7,48.7k,Resistor_SMD:R_0603_1608Metric,,,0.1%,,,no,MAIN,,
+R8,10k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,MAIN,,
+R9,10k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,MAIN,,
+R10,10k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,MAIN,,
+R11,10k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,MAIN,,
+R12,22R,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,MAIN,,
+R13,22R,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,MAIN,,
+R14,100R,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,MAIN,,
+R15,470k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,MAIN,,
+R16,470k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,MAIN,,
+R17,100k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,MAIN,,
+R18,100k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,MAIN,,
+R19,2.2k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,MAIN,,
+R20,2.2k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,MAIN,,
+R21,10k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,MAIN,,
+R22,100k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,MAIN,,
+R23,100k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,MAIN,,
+R24,100k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,MAIN,,
+R25,TBD R_RX,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,MAIN,,
+R26,TBD R_RX,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,MAIN,,
+R27,TBD R_DAMP,Resistor_SMD:R_0805_2012Metric,,,1%,,,no,MAIN,,
+R28,TBD R_DAMP,Resistor_SMD:R_0805_2012Metric,,,1%,,,no,MAIN,,
+R29,0R,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,MAIN,,
+R30,1.8M,Resistor_SMD:R_0603_1608Metric,,,0.1%,,,no,MAIN,,
+R31,200k,Resistor_SMD:R_0603_1608Metric,,,0.1%,,,no,MAIN,,
+R32,910k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,MAIN,,
+R33,100k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,MAIN,,
+R34,100k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,MAIN,,
+R35,10k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,MAIN,,
+R36,100k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,MAIN,,
+R37,10k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,BREAKAWAY_KEYBOARD,,
+R38,4.7k,Resistor_SMD:R_0603_1608Metric,,,1%,,,yes,BREAKAWAY_KEYBOARD,,
+R39,4.7k,Resistor_SMD:R_0603_1608Metric,,,1%,,,yes,BREAKAWAY_KEYBOARD,,
+R40,100k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,MAIN,,
+SW1,RESET,Button_Switch_SMD:SW_SPST_B3U-1000P,Omron,B3U-1000P,,,,no,MAIN,,
+SW2,BOOT,Button_Switch_SMD:SW_SPST_B3U-1000P,Omron,B3U-1000P,,,,no,MAIN,,
+U1,TP4054-42-SOT235,Package_TO_SOT_SMD:SOT-23-5,Top Power ASIC,TP4054-42-SOT235,,,,no,MAIN,,https://www.toppwr.com/uploadfile/file/20240913/66e3d01d4c944.pdf
+U2,SY8089AAAC,Package_TO_SOT_SMD:SOT-23-5,Silergy,SY8089AAAC,,,,no,MAIN,,https://www.olimex.com/Products/Components/IC/SY8009A/resources/SY8089AAAC.pdf
+U3,ESP32-C3-WROOM-02-N4,Nucula_Project:ESP32-C3-WROOM-02-N4,Espressif,ESP32-C3-WROOM-02-N4,,,,no,MAIN,,https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf
+U4,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,STMicroelectronics,USBLC6-2SC6,,,,no,MAIN,,https://www.st.com/resource/en/datasheet/usblc6-2.pdf
+U5,TLV803EA30DCKR,Package_TO_SOT_SMD:SOT-323_SC-70,Texas Instruments,TLV803EA30DCKR,,,,no,MAIN,,https://www.ti.com/lit/ds/symlink/tlv803e.pdf
+U6,PN7160A1HN/C100E,Nucula_Project:PN7160A1HN_C100E,NXP,PN7160A1HN/C100E,,,,no,MAIN,,https://www.nxp.com/docs/en/data-sheet/PN7160_PN7161.pdf
+U7,AP3012KTR-E1,Package_TO_SOT_SMD:SOT-23-5,Diodes Incorporated,AP3012KTR-E1,,,,no,MAIN,,https://www.diodes.com/datasheet/download/AP3012.pdf
+U8,PCF8574T,Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm,NXP,"PCF8574T/3,518",,,,no,BREAKAWAY_KEYBOARD,,https://www.nxp.com/docs/en/data-sheet/PCF8574_PCF8574A.pdf
+U9,MCP1700T-3002E/TT,Package_TO_SOT_SMD:SOT-23,Microchip,MCP1700T-3002E/TT,,,,no,MAIN,,https://ww1.microchip.com/downloads/en/DeviceDoc/MCP1700-Data-Sheet-20001826F.pdf
+Y1,27.12MHz / CL TBD,Crystal:Crystal_SMD_SeikoEpson_TSX3225-4Pin_3.2x2.5mm,Epson,TBD load capacitance / ESR / drive grade,,,,no,MAIN,27.12 MHz fixed; load capacitors require crystal selection,

@@ -1,7 +1,7 @@
 {
     "$schema": "https://schemas.kicad.org/erc.v1.json",
     "coordinate_units": "mm",
-    "date": "2026-09-20T00:24:19",
+    "date": "2026-09-20T01:16:33",
     "ignored_checks": [
         {
             "description": "Global label only appears once in the schematic",
@@ -26,6 +26,26 @@
         {
             "path": "/",
             "uuid_path": "/204197a3-bb89-4827-bdfe-70b1be259672",
+            "violations": []
+        },
+        {
+            "path": "/Power + ESP32-C3/",
+            "uuid_path": "/204197a3-bb89-4827-bdfe-70b1be259672/fb75d057-1132-5b57-a81b-eb5d982df322",
+            "violations": []
+        },
+        {
+            "path": "/NFC / PN7160 / 0x28/",
+            "uuid_path": "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5",
+            "violations": []
+        },
+        {
+            "path": "/OLED / SSD1309 / 0x3C/",
+            "uuid_path": "/204197a3-bb89-4827-bdfe-70b1be259672/5acfde84-8974-5dc1-b34a-03f7d512478f",
+            "violations": []
+        },
+        {
+            "path": "/Keyboard / breakaway / 0x20/",
+            "uuid_path": "/204197a3-bb89-4827-bdfe-70b1be259672/6c00fde6-8bde-5e2e-b170-424fcc6b0cd6",
             "violations": []
         }
     ],

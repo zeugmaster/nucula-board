@@ -1,14 +1,25 @@
 {
-  "schematic_sha256": "1e15557ef1651d1386ae24c0825a0528a1e7b91535b2c63b082252448eda6cee",
+  "schematic_sha256": {
+    "nucula-v2.kicad_sch": "6ccd3b55d63f88231f0bee54def398f6b995660a27b226e2c99fd4619f09b9df",
+    "power-mcu.kicad_sch": "9f3b08a2a03ea92fbda53b861995204ca860ede68efcacf25e65bb731a4b77b2",
+    "nfc.kicad_sch": "69ab566b6035c4f869083b4aadcb9f4357bc6bd4f8512d4a34f8e86ca36d6f33",
+    "oled.kicad_sch": "20fee91b878ccb64be37714204babd027166e74412e0b04c669e920d741a320b",
+    "keyboard.kicad_sch": "9655c82050767b6eaa6cf416bef472af45ec4f1b38c2e63214400707c0d56eec"
+  },
   "kicad_version": "10.0.6",
   "erc_violations": 0,
-  "components": 47,
-  "net_count": 36,
-  "checked_named_nets": 16,
-  "unique_footprints": 14,
-  "resolved_models": 13,
+  "sheets": 5,
+  "components": 124,
+  "net_count": 87,
+  "checked_named_nets": 57,
+  "unique_footprints": 24,
+  "resolved_models": 20,
   "components_without_3D": [
-    "L1"
+    "L1",
+    "A1",
+    "L2",
+    "L3",
+    "L4"
   ],
   "calculations": {
     "charge_nominal_mA": 100.0,
@@ -18,27 +29,143 @@
     "reset_falling_min_V": 3.0184,
     "reset_release_max_V": 3.1887239999999997,
     "VBAT_ADC_max_V": 2.14221,
-    "inductor_peak_estimate_A_at_500mA_load": 0.9615675506689148
+    "inductor_peak_estimate_A_at_500mA_load": 0.9615675506689148,
+    "OLED_nominal_V": 12.5,
+    "OLED_static_min_V": 11.498781038961042,
+    "OLED_static_max_V": 13.504143963963964,
+    "logic_regulated_min_estimate_V": 2.8649999999999998,
+    "logic_regulated_max_estimate_V": 3.135,
+    "I2C_high_required_V": 2.5449207173955264,
+    "I2C_pullup_current_mA_at_VOL_0V4": 1.2557392102846647,
+    "I2C_rise_ns_at_400pF": 753.08024,
+    "OLED_boost_peak_estimate_A_at_30mA_output": 0.31264263414444066
+  },
+  "i2c": {
+    "speed_Hz": 100000,
+    "pullup_V": 3.0,
+    "addresses": {
+      "PN7160": "0x28",
+      "SSD1309": "0x3C",
+      "PCF8574T": "0x20"
+    }
+  },
+  "pending_selection_or_tuning": {
+    "A1": {
+      "value": "13.56MHz coil / TBD",
+      "status": "PLACEHOLDER: no coil geometry or inductance selected"
+    },
+    "C28": {
+      "value": "TBD C_RX",
+      "status": ""
+    },
+    "C29": {
+      "value": "TBD C_RX",
+      "status": ""
+    },
+    "C30": {
+      "value": "TBD C_EMC",
+      "status": ""
+    },
+    "C31": {
+      "value": "TBD C_EMC",
+      "status": ""
+    },
+    "C32": {
+      "value": "TBD C_SER",
+      "status": ""
+    },
+    "C33": {
+      "value": "TBD C_SER",
+      "status": ""
+    },
+    "C34": {
+      "value": "TBD C_TRIM",
+      "status": ""
+    },
+    "C35": {
+      "value": "TBD C_TRIM",
+      "status": ""
+    },
+    "C36": {
+      "value": "TBD C_SHUNT",
+      "status": ""
+    },
+    "C37": {
+      "value": "TBD C_SHUNT",
+      "status": ""
+    },
+    "C38": {
+      "value": "TBD C_TRIM",
+      "status": ""
+    },
+    "C39": {
+      "value": "TBD C_TRIM",
+      "status": ""
+    },
+    "L2": {
+      "value": "TBD L_EMC",
+      "status": "TUNE: high-Q RF inductor, >=0.5 A; self-resonance above operating band"
+    },
+    "L3": {
+      "value": "TBD L_EMC",
+      "status": "TUNE: high-Q RF inductor, >=0.5 A; self-resonance above operating band"
+    },
+    "R25": {
+      "value": "TBD R_RX",
+      "status": ""
+    },
+    "R26": {
+      "value": "TBD R_RX",
+      "status": ""
+    },
+    "R27": {
+      "value": "TBD R_DAMP",
+      "status": ""
+    },
+    "R28": {
+      "value": "TBD R_DAMP",
+      "status": ""
+    },
+    "Y1": {
+      "value": "27.12MHz / CL TBD",
+      "status": "27.12 MHz fixed; load capacitors require crystal selection"
+    },
+    "DS1": {
+      "value": "SSD1309 / 26-pad glass",
+      "status": "PROVISIONAL: confirm 26-pin 0.5 mm flex/contact side; may require solder pads instead"
+    }
   },
   "limits": [
     "Static checks only; no board or bench measurements.",
     "No USB input current/inrush/suspend controller; host-power compliance unresolved.",
     "Full-charge headroom depends on VBUS at connector and D1 forward drop.",
-    "Battery model/polarity and capacitor MPN/DC-bias curves require selection before PCB."
+    "Battery model/polarity/discharge rating and MLCC DC-bias curves require selection before PCB.",
+    "Concurrent peak loads can exceed 1 A at the battery; input budget and thermal checks remain open.",
+    "RF values/coil and crystal grade/load require selection and measurement.",
+    "OLED panel/flex footprint is provisional; actual display load and supply sequencing need validation.",
+    "MCP1700 low-current dropout and AP3012 switch-current limits need bench validation.",
+    "Keyboard break line, routing and reconnect cable capacitance are deferred to PCB layout."
   ],
   "models": [
     "${KICAD_SHARE}/3dmodels/Button_Switch_SMD.3dshapes/SW_SPST_B3U-1000P.step",
     "${KICAD_SHARE}/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
     "${KICAD_SHARE}/3dmodels/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+    "${KICAD_SHARE}/3dmodels/Connector_FFC-FPC.3dshapes/Hirose_FH12-26S-0.5SH_1x26-1MP_P0.50mm_Horizontal.step",
     "${KICAD_SHARE}/3dmodels/Connector_JST.3dshapes/JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical.step",
+    "${KICAD_SHARE}/3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.step",
+    "${KICAD_SHARE}/3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x09_P2.54mm_Vertical.step",
     "${KICAD_SHARE}/3dmodels/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step",
+    "${KICAD_SHARE}/3dmodels/Crystal.3dshapes/Crystal_SMD_SeikoEpson_TSX3225-4Pin_3.2x2.5mm.step",
     "${KICAD_SHARE}/3dmodels/Diode_SMD.3dshapes/D_SMA.step",
     "${KICAD_SHARE}/3dmodels/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+    "${KICAD_SHARE}/3dmodels/Package_SO.3dshapes/SOIC-16W_7.5x10.3mm_P1.27mm.step",
     "${KICAD_SHARE}/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
     "${KICAD_SHARE}/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
     "${KICAD_SHARE}/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
     "${KICAD_SHARE}/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-323_SC-70.step",
     "${KICAD_SHARE}/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
-    "${KIPRJMOD}/libraries/Nucula_Project.3dshapes/ESP32-C3-WROOM-02-N4.step"
+    "${KICAD_SHARE}/3dmodels/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+    "${KIPRJMOD}/libraries/Nucula_Project.3dshapes/ESP32-C3-WROOM-02-N4.step",
+    "${KIPRJMOD}/libraries/Nucula_Project.3dshapes/PN7160A1HN_C100E.step"
   ]
 }
