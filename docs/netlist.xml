@@ -1,0 +1,1993 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>nucula-v2.kicad_sch</source>
+    <date>2026-09-19T16:26:36</date>
+    <tool>Eeschema 10.0.6</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Nucula v2 - USB-C, battery power and ESP32-C3</title>
+        <company/>
+        <rev>A-draft</rev>
+        <date>2026-09-19</date>
+        <source>nucula-v2.kicad_sch</source>
+        <comment number="1" value="Adapted from Olimex ESP32-C3-DevKit-Lipo Rev C; CERN-OHL-S-2.0"/>
+        <comment number="2" value="Schematic only / protected 4.2 V single-cell Li-ion / 100 mA charge"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Voltage">10 V</field>
+        <field name="Dielectric">X5R</field>
+        <field name="Tolerance">20%</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="10 V"/>
+      <property name="Dielectric" value="X5R"/>
+      <property name="Tolerance" value="20%"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5fde2fe7-2a29-5c71-8fe3-4f7dd33aa30a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Voltage">10 V</field>
+        <field name="Dielectric">X5R</field>
+        <field name="Tolerance">20%</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="10 V"/>
+      <property name="Dielectric" value="X5R"/>
+      <property name="Tolerance" value="20%"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0e974981-d311-57eb-97b6-dc83ad86da53</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C3">
+      <value>22pF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Voltage">16 V</field>
+        <field name="Dielectric">C0G</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="16 V"/>
+      <property name="Dielectric" value="C0G"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>667bec95-1424-5c70-9e75-0c625479ad49</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Voltage">10 V</field>
+        <field name="Dielectric">X5R</field>
+        <field name="Tolerance">20%</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="10 V"/>
+      <property name="Dielectric" value="X5R"/>
+      <property name="Tolerance" value="20%"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1863bf37-9a39-5e90-9ea6-402fa906e60f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C5">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Voltage">10 V</field>
+        <field name="Dielectric">X5R</field>
+        <field name="Tolerance">20%</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="10 V"/>
+      <property name="Dielectric" value="X5R"/>
+      <property name="Tolerance" value="20%"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f3cab67a-f9ee-599c-896c-375a997c9bc4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C6">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Voltage">10 V</field>
+        <field name="Dielectric">X5R</field>
+        <field name="Tolerance">20%</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="10 V"/>
+      <property name="Dielectric" value="X5R"/>
+      <property name="Tolerance" value="20%"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5b641081-95fa-51ca-badd-8265e4f1bf9b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C7">
+      <value>DNP / USB tune</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Voltage">16 V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="16 V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dea7d118-9510-50b4-b308-e7815c889dd3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C8">
+      <value>DNP / USB tune</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Voltage">16 V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="16 V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1b180e63-2891-5b81-a54b-71b80145e00b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C9">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Voltage">10 V</field>
+        <field name="Dielectric">X5R</field>
+        <field name="Tolerance">20%</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="10 V"/>
+      <property name="Dielectric" value="X5R"/>
+      <property name="Tolerance" value="20%"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>907b83cf-8e6a-5e32-a503-d24f735111ee</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C10">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Voltage">16 V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="16 V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>80a7b244-ffbe-5c38-8309-15992c6e858a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C11">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Voltage">16 V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="16 V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>286653a8-6193-5f97-baed-bbfc9d6b69a1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C12">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Voltage">16 V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="16 V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f75f0047-e691-5bba-ae47-e12d4204758b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C13">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Voltage">16 V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="16 V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>948ce316-44cc-5122-8a6b-b58bce7571b3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C14">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Voltage">16 V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="16 V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b0633649-6e0f-59c9-8fe1-bbba7812acbb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D1">
+      <value>SS14</value>
+      <footprint>Diode_SMD:D_SMA</footprint>
+      <datasheet>https://www.vishay.com/docs/88746/ss12.pdf</datasheet>
+      <fields>
+        <field name="MPN">SS14-E3/61T</field>
+        <field name="Manufacturer">Vishay</field>
+        <field name="Rating">40 V, 1 A</field>
+        <field name="Footprint">Diode_SMD:D_SMA</field>
+        <field name="Datasheet">https://www.vishay.com/docs/88746/ss12.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <property name="MPN" value="SS14-E3/61T"/>
+      <property name="Manufacturer" value="Vishay"/>
+      <property name="Rating" value="40 V, 1 A"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c556e5c3-d85a-53cf-9168-b40a8ab4a683</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D2">
+      <value>SS14</value>
+      <footprint>Diode_SMD:D_SMA</footprint>
+      <datasheet>https://www.vishay.com/docs/88746/ss12.pdf</datasheet>
+      <fields>
+        <field name="MPN">SS14-E3/61T</field>
+        <field name="Manufacturer">Vishay</field>
+        <field name="Rating">40 V, 1 A</field>
+        <field name="Footprint">Diode_SMD:D_SMA</field>
+        <field name="Datasheet">https://www.vishay.com/docs/88746/ss12.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <property name="MPN" value="SS14-E3/61T"/>
+      <property name="Manufacturer" value="Vishay"/>
+      <property name="Rating" value="40 V, 1 A"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dfe6ebe9-f665-54f0-ab9e-4c7190fa131c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D3">
+      <value>CHARGE (red)</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <description>Red indicator, populated; approximately 1 mA</description>
+      <fields>
+        <field name="Footprint">LED_SMD:LED_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Red indicator, populated; approximately 1 mA</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a48fb3ea-f964-5e14-9479-9a3e8af1b2f8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>USB4105-GF-A</value>
+      <footprint>Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal</footprint>
+      <datasheet>https://gct.co/files/drawings/usb4105.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">GCT</field>
+        <field name="MPN">USB4105-GF-A</field>
+        <field name="Footprint">Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal</field>
+        <field name="Datasheet">https://gct.co/files/drawings/usb4105.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="USB_C_Receptacle_USB2.0_16P" description="USB 2.0-only 16P Type-C Receptacle connector"/>
+      <property name="Manufacturer" value="GCT"/>
+      <property name="MPN" value="USB4105-GF-A"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="usb universal serial bus type-C USB2.0"/>
+      <property name="ki_fp_filters" value="USB*C*Receptacle*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>42a6e863-2f8a-5ae0-a699-660d029f6a70</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="SH"/>
+            <pin num="A1"/>
+            <pin num="A12"/>
+            <pin num="B1"/>
+            <pin num="B12"/>
+            <pin num="A4"/>
+            <pin num="A9"/>
+            <pin num="B4"/>
+            <pin num="B9"/>
+            <pin num="A5"/>
+            <pin num="B5"/>
+            <pin num="A7"/>
+            <pin num="B7"/>
+            <pin num="A6"/>
+            <pin num="B6"/>
+            <pin num="A8"/>
+            <pin num="B8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J2">
+      <value>JST-PH / 1S Li-ion</value>
+      <footprint>Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</footprint>
+      <datasheet>https://www.jst-mfg.com/product/pdf/eng/ePH.pdf</datasheet>
+      <fields>
+        <field name="MPN">B2B-PH-K-S(LF)(SN)</field>
+        <field name="Manufacturer">JST</field>
+        <field name="Footprint">Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</field>
+        <field name="Datasheet">https://www.jst-mfg.com/product/pdf/eng/ePH.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="MPN" value="B2B-PH-K-S(LF)(SN)"/>
+      <property name="Manufacturer" value="JST"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cd082d78-ca39-58be-8545-48813c058a91</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L1">
+      <value>2.2uH</value>
+      <footprint>Nucula_Project:L_Taiyo-Yuden_NR-30xx</footprint>
+      <datasheet>https://ds.yuden.co.jp/TYCOMPAS/eu/detail?pn=LSXND3030QKT2R2MNG&amp;u=M</datasheet>
+      <fields>
+        <field name="MPN">LSXND3030QKT2R2MNG</field>
+        <field name="Previous MPN">NRS3015T2R2MNGH</field>
+        <field name="Manufacturer">Taiyo Yuden</field>
+        <field name="Rating">Isat &gt;=1.48 A, Irms &gt;=1.5 A; 2.2uH +/-20%</field>
+        <field name="Footprint">Nucula_Project:L_Taiyo-Yuden_NR-30xx</field>
+        <field name="Datasheet">https://ds.yuden.co.jp/TYCOMPAS/eu/detail?pn=LSXND3030QKT2R2MNG&amp;u=M</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="MPN" value="LSXND3030QKT2R2MNG"/>
+      <property name="Previous MPN" value="NRS3015T2R2MNGH"/>
+      <property name="Manufacturer" value="Taiyo Yuden"/>
+      <property name="Rating" value="Isat &gt;=1.48 A, Irms &gt;=1.5 A; 2.2uH +/-20%"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <property name="ki_fp_filters" value="Choke_* *Coil* Inductor_* L_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0811c434-e182-5721-9c75-61a95fef227e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q1">
+      <value>IRLML6402</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.infineon.com/assets/row/public/documents/24/49/infineon-irlml6402-datasheet-en.pdf</datasheet>
+      <fields>
+        <field name="MPN">IRLML6402TRPBF</field>
+        <field name="Manufacturer">Infineon</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://www.infineon.com/assets/row/public/documents/24/49/infineon-irlml6402-datasheet-en.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Transistor_FET" part="IRLML6402" description="-3.7A Id, -20V Vds, 65mOhm Rds, P-Channel HEXFET Power MOSFET, SOT-23"/>
+      <property name="MPN" value="IRLML6402TRPBF"/>
+      <property name="Manufacturer" value="Infineon"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="P-Channel HEXFET MOSFET"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>79399427-b446-5303-843a-d11d21d52201</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q2">
+      <value>BSS138</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.onsemi.com/pub/Collateral/BSS138-D.PDF</datasheet>
+      <description>Inverting VBUS detector; avoids GPIO injection when MCU is unpowered</description>
+      <fields>
+        <field name="Manufacturer">onsemi</field>
+        <field name="MPN">BSS138</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://www.onsemi.com/pub/Collateral/BSS138-D.PDF</field>
+        <field name="Description">Inverting VBUS detector; avoids GPIO injection when MCU is unpowered</field>
+      </fields>
+      <libsource lib="Transistor_FET" part="BSS138" description="50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23"/>
+      <property name="Manufacturer" value="onsemi"/>
+      <property name="MPN" value="BSS138"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="N-Channel MOSFET"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>45197200-ab07-5f7b-8374-0767c462effb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>5.1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d890758a-17ad-5c82-9729-3444e9947d6b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>5.1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>75b09263-e031-5f30-97d4-a648e0ea7b42</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bc1a941c-2f57-5e63-8b7c-ff2a7ba69a83</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R4">
+      <value>2.2k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>aee24e08-8da0-58f6-bcf3-3c7fa3cfe205</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R5">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1ec6074d-c4ca-54ab-a980-6fa82466bb01</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R6">
+      <value>220k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tolerance">0.1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="0.1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4c311325-fe05-5245-93a6-485fcf86877b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R7">
+      <value>48.7k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tolerance">0.1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="0.1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8a9f864c-c28d-5149-a619-0acfd945122e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R8">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>28f9cca0-1767-559b-abe0-952e86422a61</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R9">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ac79a500-2f73-5b64-81e8-9dc9cf10aea6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R10">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7c8f352f-fdff-5bfc-ad3e-20365e27c5ab</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R11">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5cf0af4f-da25-5efd-b54d-400d15cf5c52</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R12">
+      <value>22R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fd246eef-8386-54c4-8b0d-f50e6a25d2d1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R13">
+      <value>22R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>03bd6588-2248-5130-8c59-4fbe685d1bea</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R14">
+      <value>100R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fa6beb57-0f48-5279-b615-025a512c2475</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R15">
+      <value>470k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0e5e15a5-92f7-5471-9e96-4eec5db28ca1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R16">
+      <value>470k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b3ec53b3-5c2b-5fb8-91d3-b0bf8f631307</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R17">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f28d4119-7baa-5c28-93dd-ff6156f2dc01</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R18">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Rating">0.1 W</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Rating" value="0.1 W"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>905967cb-3850-5498-a70c-6e1aee83d3d7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW1">
+      <value>RESET</value>
+      <footprint>Button_Switch_SMD:SW_SPST_B3U-1000P</footprint>
+      <fields>
+        <field name="MPN">B3U-1000P</field>
+        <field name="Manufacturer">Omron</field>
+        <field name="Footprint">Button_Switch_SMD:SW_SPST_B3U-1000P</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="MPN" value="B3U-1000P"/>
+      <property name="Manufacturer" value="Omron"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bf963711-220b-539b-9587-264bf5d9fb93</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW2">
+      <value>BOOT</value>
+      <footprint>Button_Switch_SMD:SW_SPST_B3U-1000P</footprint>
+      <fields>
+        <field name="MPN">B3U-1000P</field>
+        <field name="Manufacturer">Omron</field>
+        <field name="Footprint">Button_Switch_SMD:SW_SPST_B3U-1000P</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="MPN" value="B3U-1000P"/>
+      <property name="Manufacturer" value="Omron"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f5f0cf59-2c40-5dc0-a454-ea460c2c9e77</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>TP4054-42-SOT235</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <datasheet>https://www.toppwr.com/uploadfile/file/20240913/66e3d01d4c944.pdf</datasheet>
+      <fields>
+        <field name="MPN">TP4054-42-SOT235</field>
+        <field name="Manufacturer">Top Power ASIC</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">https://www.toppwr.com/uploadfile/file/20240913/66e3d01d4c944.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Nucula_Project" part="TP4054-42-SOT235" description="800mA Standalone Linear Li-Ion Battery Charger with Thermal Regulation in SOT23-5/TSOT23-5"/>
+      <property name="MPN" value="TP4054-42-SOT235"/>
+      <property name="Manufacturer" value="Top Power ASIC"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="Battery Charger"/>
+      <property name="ki_fp_filters" value="SOT?23?5*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>58c5012b-5fea-5a1e-a7a2-40b1677cf0a3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="4"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="1"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U2">
+      <value>SY8089AAAC</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <datasheet>https://www.olimex.com/Products/Components/IC/SY8009A/resources/SY8089AAAC.pdf</datasheet>
+      <fields>
+        <field name="MPN">SY8089AAAC</field>
+        <field name="Manufacturer">Silergy</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">https://www.olimex.com/Products/Components/IC/SY8009A/resources/SY8089AAAC.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Nucula_Project" part="SY8089AAAC" description="High Efficiency 5.5V, 2A continuous, 3A peak, 1MHz Synchronous Step Down Regulator"/>
+      <property name="MPN" value="SY8089AAAC"/>
+      <property name="Manufacturer" value="Silergy"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="DCDC"/>
+      <property name="ki_fp_filters" value="SOT?23?5*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7e705bc7-f671-571c-8ecd-7fd9c315aa79</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="4"/>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U3">
+      <value>ESP32-C3-WROOM-02-N4</value>
+      <footprint>Nucula_Project:ESP32-C3-WROOM-02-N4</footprint>
+      <datasheet>https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf</datasheet>
+      <description>4 MB flash, onboard antenna; native USB Serial/JTAG</description>
+      <fields>
+        <field name="MPN">ESP32-C3-WROOM-02-N4</field>
+        <field name="Manufacturer">Espressif</field>
+        <field name="Footprint">Nucula_Project:ESP32-C3-WROOM-02-N4</field>
+        <field name="Datasheet">https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf</field>
+        <field name="Description">4 MB flash, onboard antenna; native USB Serial/JTAG</field>
+      </fields>
+      <libsource lib="Nucula_Project" part="ESP32-C3-WROOM-02-N4" description="ESP32-C3 Wi-Fi and Bluetooth LE module, 4 MB flash, PCB antenna, -40 to +85 C"/>
+      <property name="MPN" value="ESP32-C3-WROOM-02-N4"/>
+      <property name="Manufacturer" value="Espressif"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="esp32 espressif WiFi Bluetooth LE"/>
+      <property name="ki_fp_filters" value="ESP32-C3-WROOM-02-N4"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>19caf1ff-6a81-527f-bbac-dceec7b6846a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="18"/>
+            <pin num="17"/>
+            <pin num="16"/>
+            <pin num="15"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="10"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="1"/>
+            <pin num="9"/>
+            <pin num="19"/>
+            <pin num="11"/>
+            <pin num="12"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U4">
+      <value>USBLC6-2SC6</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
+      <datasheet>https://www.st.com/resource/en/datasheet/usblc6-2.pdf</datasheet>
+      <fields>
+        <field name="MPN">USBLC6-2SC6</field>
+        <field name="Manufacturer">STMicroelectronics</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
+        <field name="Datasheet">https://www.st.com/resource/en/datasheet/usblc6-2.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Power_Protection" part="USBLC6-2SC6" description="Very low capacitance ESD protection diode, 2 data-line, SOT-23-6"/>
+      <property name="MPN" value="USBLC6-2SC6"/>
+      <property name="Manufacturer" value="STMicroelectronics"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="usb ethernet video"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>abde35b5-7ac4-52cf-b388-2034731b4d8d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="5"/>
+            <pin num="2"/>
+            <pin num="6"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U5">
+      <value>TLV803EA30DCKR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-323_SC-70</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tlv803e.pdf</datasheet>
+      <fields>
+        <field name="MPN">TLV803EA30DCKR</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-323_SC-70</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tlv803e.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Nucula_Project" part="TLV803EA30DCKR" description="3.08 V supervisor, active-low open-drain RESET, 200 ms delay, DCK/SC70: 1 GND, 2 RESET, 3 VDD"/>
+      <property name="MPN" value="TLV803EA30DCKR"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="Sheetname" value="nucula-v2"/>
+      <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
+      <property name="ki_keywords" value="supply voltage supervisor"/>
+      <property name="ki_fp_filters" value="SOT?323* SC?70*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bafd9da2-9e3f-5112-80f9-a27c935447af</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="3"/>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="USB_C_Receptacle_USB2.0_16P">
+      <description>USB 2.0-only 16P Type-C Receptacle connector</description>
+      <docs>https://www.usb.org/sites/default/files/documents/usb_type-c.zip</docs>
+      <footprints>
+        <fp>USB*C*Receptacle*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">USB_C_Receptacle_USB2.0_16P</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.usb.org/sites/default/files/documents/usb_type-c.zip</field>
+        <field name="Description">USB 2.0-only 16P Type-C Receptacle connector</field>
+      </fields>
+      <pins>
+        <pin num="A1" name="GND" type="passive"/>
+        <pin num="A4" name="VBUS" type="passive"/>
+        <pin num="A5" name="CC1" type="bidirectional"/>
+        <pin num="A6" name="D+" type="bidirectional"/>
+        <pin num="A7" name="D-" type="bidirectional"/>
+        <pin num="A8" name="SBU1" type="bidirectional"/>
+        <pin num="A9" name="VBUS" type="passive"/>
+        <pin num="A12" name="GND" type="passive"/>
+        <pin num="B1" name="GND" type="passive"/>
+        <pin num="B4" name="VBUS" type="passive"/>
+        <pin num="B5" name="CC2" type="bidirectional"/>
+        <pin num="B6" name="D+" type="bidirectional"/>
+        <pin num="B7" name="D-" type="bidirectional"/>
+        <pin num="B8" name="SBU2" type="bidirectional"/>
+        <pin num="B9" name="VBUS" type="passive"/>
+        <pin num="B12" name="GND" type="passive"/>
+        <pin num="SH" name="SHIELD" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x02">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Schottky">
+      <description>Schottky diode</description>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Schottky diode</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="L">
+      <description>Inductor</description>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Inductor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Light emitting diode</field>
+        <field name="Sim.Pins">1=K 2=A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Nucula_Project" part="ESP32-C3-WROOM-02-N4">
+      <description>ESP32-C3 Wi-Fi and Bluetooth LE module, 4 MB flash, PCB antenna, -40 to +85 C</description>
+      <docs>https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf</docs>
+      <footprints>
+        <fp>ESP32-C3-WROOM-02-N4</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ESP32-C3-WROOM-02-N4</field>
+        <field name="Footprint">Nucula_Project:ESP32-C3-WROOM-02-N4</field>
+        <field name="Datasheet">https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf</field>
+        <field name="Description">ESP32-C3 Wi-Fi and Bluetooth LE module, 4 MB flash, PCB antenna, -40 to +85 C</field>
+        <field name="MPN">ESP32-C3-WROOM-02-N4</field>
+        <field name="Manufacturer">Espressif Systems</field>
+      </fields>
+      <pins>
+        <pin num="1" name="3V3" type="power_in"/>
+        <pin num="2" name="EN" type="input"/>
+        <pin num="3" name="IO4" type="bidirectional"/>
+        <pin num="4" name="IO5" type="bidirectional"/>
+        <pin num="5" name="IO6" type="bidirectional"/>
+        <pin num="6" name="IO7" type="bidirectional"/>
+        <pin num="7" name="IO8" type="bidirectional"/>
+        <pin num="8" name="IO9" type="bidirectional"/>
+        <pin num="9" name="GND" type="power_in"/>
+        <pin num="10" name="IO10" type="bidirectional"/>
+        <pin num="11" name="IO20/RXD" type="bidirectional"/>
+        <pin num="12" name="IO21/TXD" type="bidirectional"/>
+        <pin num="13" name="IO18" type="bidirectional"/>
+        <pin num="14" name="IO19" type="bidirectional"/>
+        <pin num="15" name="IO3" type="bidirectional"/>
+        <pin num="16" name="IO2" type="bidirectional"/>
+        <pin num="17" name="IO1" type="bidirectional"/>
+        <pin num="18" name="IO0" type="bidirectional"/>
+        <pin num="19" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Nucula_Project" part="SY8089AAAC">
+      <description>High Efficiency 5.5V, 2A continuous, 3A peak, 1MHz Synchronous Step Down Regulator</description>
+      <docs>https://www.olimex.com/Products/Components/IC/SY8009A/resources/SY8089AAAC.pdf</docs>
+      <footprints>
+        <fp>SOT?23?5*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SY8089AAAC</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">https://www.olimex.com/Products/Components/IC/SY8009A/resources/SY8089AAAC.pdf</field>
+        <field name="Description">High Efficiency 5.5V, 2A continuous, 3A peak, 1MHz Synchronous Step Down Regulator</field>
+        <field name="Note">PB-Free</field>
+      </fields>
+      <pins>
+        <pin num="1" name="EN" type="input"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="LX" type="power_out"/>
+        <pin num="4" name="IN" type="power_in"/>
+        <pin num="5" name="FB" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Nucula_Project" part="TLV803EA30DCKR">
+      <description>3.08 V supervisor, active-low open-drain RESET, 200 ms delay, DCK/SC70: 1 GND, 2 RESET, 3 VDD</description>
+      <docs>https://www.ti.com/lit/ds/symlink/tlv803e.pdf</docs>
+      <footprints>
+        <fp>SOT?323*</fp>
+        <fp>SC?70*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TLV803EA30DCKR</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-323_SC-70</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tlv803e.pdf</field>
+        <field name="Description">3.08 V supervisor, active-low open-drain RESET, 200 ms delay, DCK/SC70: 1 GND, 2 RESET, 3 VDD</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="~{RESET}" type="open_collector"/>
+        <pin num="3" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Nucula_Project" part="TP4054-42-SOT235">
+      <description>800mA Standalone Linear Li-Ion Battery Charger with Thermal Regulation in SOT23-5/TSOT23-5</description>
+      <docs>https://www.toppwr.com/uploadfile/file/20240913/66e3d01d4c944.pdf</docs>
+      <footprints>
+        <fp>SOT?23?5*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TP4054-42-SOT235</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">https://www.toppwr.com/uploadfile/file/20240913/66e3d01d4c944.pdf</field>
+        <field name="Description">800mA Standalone Linear Li-Ion Battery Charger with Thermal Regulation in SOT23-5/TSOT23-5</field>
+        <field name="Note">PB-Free</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~{CHRG}" type="open_collector"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="BAT" type="power_out"/>
+        <pin num="4" name="VCC" type="power_in"/>
+        <pin num="5" name="PROG" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Power_Protection" part="USBLC6-2SC6">
+      <description>Very low capacitance ESD protection diode, 2 data-line, SOT-23-6</description>
+      <docs>https://www.st.com/resource/en/datasheet/usblc6-2.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">USBLC6-2SC6</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
+        <field name="Datasheet">https://www.st.com/resource/en/datasheet/usblc6-2.pdf</field>
+        <field name="Description">Very low capacitance ESD protection diode, 2 data-line, SOT-23-6</field>
+      </fields>
+      <pins>
+        <pin num="1" name="I/O1" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="I/O2" type="passive"/>
+        <pin num="4" name="I/O2" type="passive"/>
+        <pin num="5" name="VBUS" type="passive"/>
+        <pin num="6" name="I/O1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_Push">
+      <description>Push button switch, generic, two pins</description>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Push</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Push button switch, generic, two pins</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_FET" part="BSS138">
+      <description>50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23</description>
+      <docs>https://www.onsemi.com/pub/Collateral/BSS138-D.PDF</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BSS138</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://www.onsemi.com/pub/Collateral/BSS138-D.PDF</field>
+        <field name="Description">50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_FET" part="IRLML6402">
+      <description>-3.7A Id, -20V Vds, 65mOhm Rds, P-Channel HEXFET Power MOSFET, SOT-23</description>
+      <docs>https://www.infineon.com/dgdl/irlml6402pbf.pdf?fileId=5546d462533600a401535668d5c2263c</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">IRLML6402</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://www.infineon.com/dgdl/irlml6402pbf.pdf?fileId=5546d462533600a401535668d5c2263c</field>
+        <field name="Description">-3.7A Id, -20V Vds, 65mOhm Rds, P-Channel HEXFET Power MOSFET, SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>${KICAD10_SYMBOL_DIR}/Connector.kicad_sym</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>${KICAD10_SYMBOL_DIR}/Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>${KICAD10_SYMBOL_DIR}/Device.kicad_sym</uri>
+    </library>
+    <library logical="Nucula_Project">
+      <uri>${KIPRJMOD}/libraries/Nucula_Project.kicad_sym</uri>
+    </library>
+    <library logical="Power_Protection">
+      <uri>${KICAD10_SYMBOL_DIR}/Power_Protection.kicad_sym</uri>
+    </library>
+    <library logical="Switch">
+      <uri>${KICAD10_SYMBOL_DIR}/Switch.kicad_sym</uri>
+    </library>
+    <library logical="Transistor_FET">
+      <uri>${KICAD10_SYMBOL_DIR}/Transistor_FET.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/+3V3" class="Default">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="L1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="R17" pin="1" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="U3" pin="1" pinfunction="3V3_1" pintype="power_in"/>
+      <node ref="U5" pin="3" pinfunction="VDD_3" pintype="power_in"/>
+    </net>
+    <net code="2" name="/BOOT_N" class="Default">
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="R14" pin="1" pintype="passive"/>
+      <node ref="U3" pin="8" pinfunction="IO9_8" pintype="bidirectional"/>
+    </net>
+    <net code="3" name="/BUCK_FB" class="Default">
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="U2" pin="5" pinfunction="FB_5" pintype="input"/>
+    </net>
+    <net code="4" name="/ESP_EN" class="Default">
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="SW1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U3" pin="2" pinfunction="EN_2" pintype="input"/>
+      <node ref="U5" pin="2" pinfunction="~{RESET}_2" pintype="open_collector"/>
+    </net>
+    <net code="5" name="/STRAP_GPIO2" class="Default">
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="U3" pin="16" pinfunction="IO2_16" pintype="bidirectional"/>
+    </net>
+    <net code="6" name="/STRAP_GPIO8" class="Default">
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="U3" pin="7" pinfunction="IO8_7" pintype="bidirectional"/>
+    </net>
+    <net code="7" name="/USB_5V" class="Default">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D2" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D3" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="Q1" pin="1" pinfunction="G_1" pintype="input"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="VCC_4" pintype="power_in"/>
+    </net>
+    <net code="8" name="/USB_D+" class="Default">
+      <node ref="J1" pin="A6" pinfunction="D+_A6" pintype="bidirectional"/>
+      <node ref="J1" pin="B6" pinfunction="D+_B6" pintype="bidirectional"/>
+      <node ref="U4" pin="3" pinfunction="I/O2_3" pintype="passive"/>
+    </net>
+    <net code="9" name="/USB_D-" class="Default">
+      <node ref="J1" pin="A7" pinfunction="D-_A7" pintype="bidirectional"/>
+      <node ref="J1" pin="B7" pinfunction="D-_B7" pintype="bidirectional"/>
+      <node ref="U4" pin="1" pinfunction="I/O1_1" pintype="passive"/>
+    </net>
+    <net code="10" name="/USB_ESD_D+" class="Default">
+      <node ref="R13" pin="1" pintype="passive"/>
+      <node ref="U4" pin="4" pinfunction="I/O2_4" pintype="passive"/>
+    </net>
+    <net code="11" name="/USB_ESD_D-" class="Default">
+      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="U4" pin="6" pinfunction="I/O1_6" pintype="passive"/>
+    </net>
+    <net code="12" name="/USB_PRESENT_N" class="Default">
+      <node ref="Q2" pin="3" pinfunction="D_3" pintype="passive"/>
+      <node ref="R17" pin="2" pintype="passive"/>
+      <node ref="U3" pin="17" pinfunction="IO1_17" pintype="bidirectional"/>
+    </net>
+    <net code="13" name="/VBAT" class="Default">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="Q1" pin="3" pinfunction="D_3" pintype="passive"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="BAT_3" pintype="power_out"/>
+    </net>
+    <net code="14" name="/VBAT_ADC" class="Default">
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="R15" pin="2" pintype="passive"/>
+      <node ref="R16" pin="1" pintype="passive"/>
+      <node ref="U3" pin="18" pinfunction="IO0_18" pintype="bidirectional"/>
+    </net>
+    <net code="15" name="/VBUS" class="Default">
+      <node ref="C14" pin="1" pintype="passive"/>
+      <node ref="D1" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="J1" pin="A4" pinfunction="VBUS_A4" pintype="passive"/>
+      <node ref="J1" pin="A9" pinfunction="VBUS_A9" pintype="passive"/>
+      <node ref="J1" pin="B4" pinfunction="VBUS_B4" pintype="passive"/>
+      <node ref="J1" pin="B9" pinfunction="VBUS_B9" pintype="passive"/>
+      <node ref="Q2" pin="1" pinfunction="G_1" pintype="input"/>
+      <node ref="R18" pin="1" pintype="passive"/>
+      <node ref="U4" pin="5" pinfunction="VBUS_5" pintype="passive"/>
+    </net>
+    <net code="16" name="/VSYS" class="Default">
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="D2" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="Q1" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="U2" pin="1" pinfunction="EN_1" pintype="input"/>
+      <node ref="U2" pin="4" pinfunction="IN_4" pintype="power_in"/>
+    </net>
+    <net code="17" name="GND" class="Default">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="C13" pin="2" pintype="passive"/>
+      <node ref="C14" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="J1" pin="A1" pinfunction="GND_A1" pintype="passive"/>
+      <node ref="J1" pin="A12" pinfunction="GND_A12" pintype="passive"/>
+      <node ref="J1" pin="B1" pinfunction="GND_B1" pintype="passive"/>
+      <node ref="J1" pin="B12" pinfunction="GND_B12" pintype="passive"/>
+      <node ref="J1" pin="SH" pinfunction="SHIELD_SH" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="Q2" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R16" pin="2" pintype="passive"/>
+      <node ref="R18" pin="2" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="SW1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="SW2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U2" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U3" pin="19" pinfunction="GND_19" pintype="passive"/>
+      <node ref="U3" pin="9" pinfunction="GND_9" pintype="power_in"/>
+      <node ref="U4" pin="2" pinfunction="GND_2" pintype="passive"/>
+      <node ref="U5" pin="1" pinfunction="GND_1" pintype="power_in"/>
+    </net>
+    <net code="18" name="Net-(D3-K)" class="Default">
+      <node ref="D3" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+    </net>
+    <net code="19" name="Net-(J1-CC1)" class="Default">
+      <node ref="J1" pin="A5" pinfunction="CC1_A5" pintype="bidirectional"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+    </net>
+    <net code="20" name="Net-(J1-CC2)" class="Default">
+      <node ref="J1" pin="B5" pinfunction="CC2_B5" pintype="bidirectional"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+    </net>
+    <net code="21" name="Net-(R14-Pad2)" class="Default">
+      <node ref="R14" pin="2" pintype="passive"/>
+      <node ref="SW2" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="22" name="Net-(U1-PROG)" class="Default">
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="PROG_5" pintype="passive"/>
+    </net>
+    <net code="23" name="Net-(U1-~{CHRG})" class="Default">
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="~{CHRG}_1" pintype="open_collector"/>
+    </net>
+    <net code="24" name="Net-(U2-LX)" class="Default">
+      <node ref="L1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="LX_3" pintype="power_out"/>
+    </net>
+    <net code="25" name="Net-(U3-IO18)" class="Default">
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="U3" pin="13" pinfunction="IO18_13" pintype="bidirectional"/>
+    </net>
+    <net code="26" name="Net-(U3-IO19)" class="Default">
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="U3" pin="14" pinfunction="IO19_14" pintype="bidirectional"/>
+    </net>
+    <net code="27" name="unconnected-(J1-SBU1-PadA8)" class="Default">
+      <node ref="J1" pin="A8" pinfunction="SBU1_A8" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="28" name="unconnected-(J1-SBU2-PadB8)" class="Default">
+      <node ref="J1" pin="B8" pinfunction="SBU2_B8" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="29" name="unconnected-(U3-IO3-Pad15)" class="Default">
+      <node ref="U3" pin="15" pinfunction="IO3_15" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="30" name="unconnected-(U3-IO4-Pad3)" class="Default">
+      <node ref="U3" pin="3" pinfunction="IO4_3" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="31" name="unconnected-(U3-IO5-Pad4)" class="Default">
+      <node ref="U3" pin="4" pinfunction="IO5_4" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="32" name="unconnected-(U3-IO6-Pad5)" class="Default">
+      <node ref="U3" pin="5" pinfunction="IO6_5" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="33" name="unconnected-(U3-IO7-Pad6)" class="Default">
+      <node ref="U3" pin="6" pinfunction="IO7_6" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="34" name="unconnected-(U3-IO10-Pad10)" class="Default">
+      <node ref="U3" pin="10" pinfunction="IO10_10" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="35" name="unconnected-(U3-IO20/RXD-Pad11)" class="Default">
+      <node ref="U3" pin="11" pinfunction="IO20/RXD_11" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="36" name="unconnected-(U3-IO21/TXD-Pad12)" class="Default">
+      <node ref="U3" pin="12" pinfunction="IO21/TXD_12" pintype="bidirectional+no_connect"/>
+    </net>
+  </nets>
+</export>

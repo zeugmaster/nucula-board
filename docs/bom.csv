@@ -1,0 +1,48 @@
+Reference,Value,Footprint,Manufacturer,MPN,Tolerance,Voltage,Dielectric,DNP,Datasheet
+C1,22uF,Capacitor_SMD:C_0805_2012Metric,,,20%,10 V,X5R,no,
+C2,22uF,Capacitor_SMD:C_0805_2012Metric,,,20%,10 V,X5R,no,
+C3,22pF,Capacitor_SMD:C_0603_1608Metric,,,10%,16 V,C0G,no,
+C4,22uF,Capacitor_SMD:C_0805_2012Metric,,,20%,10 V,X5R,no,
+C5,22uF,Capacitor_SMD:C_0805_2012Metric,,,20%,10 V,X5R,no,
+C6,22uF,Capacitor_SMD:C_0805_2012Metric,,,20%,10 V,X5R,no,
+C7,DNP / USB tune,Capacitor_SMD:C_0603_1608Metric,,,10%,16 V,X7R,yes,
+C8,DNP / USB tune,Capacitor_SMD:C_0603_1608Metric,,,10%,16 V,X7R,yes,
+C9,22uF,Capacitor_SMD:C_0805_2012Metric,,,20%,10 V,X5R,no,
+C10,100nF,Capacitor_SMD:C_0603_1608Metric,,,10%,16 V,X7R,no,
+C11,100nF,Capacitor_SMD:C_0603_1608Metric,,,10%,16 V,X7R,no,
+C12,1uF,Capacitor_SMD:C_0603_1608Metric,,,10%,16 V,X7R,no,
+C13,100nF,Capacitor_SMD:C_0603_1608Metric,,,10%,16 V,X7R,no,
+C14,100nF,Capacitor_SMD:C_0603_1608Metric,,,10%,16 V,X7R,no,
+D1,SS14,Diode_SMD:D_SMA,Vishay,SS14-E3/61T,,,,no,https://www.vishay.com/docs/88746/ss12.pdf
+D2,SS14,Diode_SMD:D_SMA,Vishay,SS14-E3/61T,,,,no,https://www.vishay.com/docs/88746/ss12.pdf
+D3,CHARGE (red),LED_SMD:LED_0603_1608Metric,,,,,,no,
+J1,USB4105-GF-A,Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal,GCT,USB4105-GF-A,,,,no,https://gct.co/files/drawings/usb4105.pdf
+J2,JST-PH / 1S Li-ion,Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical,JST,B2B-PH-K-S(LF)(SN),,,,no,https://www.jst-mfg.com/product/pdf/eng/ePH.pdf
+L1,2.2uH,Nucula_Project:L_Taiyo-Yuden_NR-30xx,Taiyo Yuden,LSXND3030QKT2R2MNG,,,,no,https://ds.yuden.co.jp/TYCOMPAS/eu/detail?pn=LSXND3030QKT2R2MNG&u=M
+Q1,IRLML6402,Package_TO_SOT_SMD:SOT-23,Infineon,IRLML6402TRPBF,,,,no,https://www.infineon.com/assets/row/public/documents/24/49/infineon-irlml6402-datasheet-en.pdf
+Q2,BSS138,Package_TO_SOT_SMD:SOT-23,onsemi,BSS138,,,,no,https://www.onsemi.com/pub/Collateral/BSS138-D.PDF
+R1,5.1k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,
+R2,5.1k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,
+R3,10k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,
+R4,2.2k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,
+R5,10k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,
+R6,220k,Resistor_SMD:R_0603_1608Metric,,,0.1%,,,no,
+R7,48.7k,Resistor_SMD:R_0603_1608Metric,,,0.1%,,,no,
+R8,10k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,
+R9,10k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,
+R10,10k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,
+R11,10k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,
+R12,22R,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,
+R13,22R,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,
+R14,100R,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,
+R15,470k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,
+R16,470k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,
+R17,100k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,
+R18,100k,Resistor_SMD:R_0603_1608Metric,,,1%,,,no,
+SW1,RESET,Button_Switch_SMD:SW_SPST_B3U-1000P,Omron,B3U-1000P,,,,no,
+SW2,BOOT,Button_Switch_SMD:SW_SPST_B3U-1000P,Omron,B3U-1000P,,,,no,
+U1,TP4054-42-SOT235,Package_TO_SOT_SMD:SOT-23-5,Top Power ASIC,TP4054-42-SOT235,,,,no,https://www.toppwr.com/uploadfile/file/20240913/66e3d01d4c944.pdf
+U2,SY8089AAAC,Package_TO_SOT_SMD:SOT-23-5,Silergy,SY8089AAAC,,,,no,https://www.olimex.com/Products/Components/IC/SY8009A/resources/SY8089AAAC.pdf
+U3,ESP32-C3-WROOM-02-N4,Nucula_Project:ESP32-C3-WROOM-02-N4,Espressif,ESP32-C3-WROOM-02-N4,,,,no,https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf
+U4,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,STMicroelectronics,USBLC6-2SC6,,,,no,https://www.st.com/resource/en/datasheet/usblc6-2.pdf
+U5,TLV803EA30DCKR,Package_TO_SOT_SMD:SOT-323_SC-70,Texas Instruments,TLV803EA30DCKR,,,,no,https://www.ti.com/lit/ds/symlink/tlv803e.pdf

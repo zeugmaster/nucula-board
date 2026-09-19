@@ -16,3 +16,7 @@ _autosave-*
 
 # KiCad-managed history is separate from this repository
 /.history/
+
+# Python verification-tool cache
+__pycache__/
+*.pyc

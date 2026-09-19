@@ -1,0 +1,44 @@
+{
+  "schematic_sha256": "50cb3b749b73aa3e356a73a6a4d3d8d47b3c51e5252fe82f740446d07f66f695",
+  "kicad_version": "10.0.6",
+  "erc_violations": 0,
+  "components": 47,
+  "net_count": 36,
+  "checked_named_nets": 16,
+  "unique_footprints": 14,
+  "resolved_models": 13,
+  "components_without_3D": [
+    "L1"
+  ],
+  "calculations": {
+    "charge_nominal_mA": 100.0,
+    "vout_nominal_V": 3.31047227926078,
+    "vout_static_min_V": 3.2279446152266624,
+    "vout_static_max_V": 3.393227623194035,
+    "reset_falling_min_V": 3.0184,
+    "reset_release_max_V": 3.1887239999999997,
+    "VBAT_ADC_max_V": 2.14221,
+    "inductor_peak_estimate_A_at_500mA_load": 0.9615675506689148
+  },
+  "limits": [
+    "Static checks only; no board or bench measurements.",
+    "No USB input current/inrush/suspend controller; host-power compliance unresolved.",
+    "Full-charge headroom depends on VBUS at connector and D1 forward drop.",
+    "Battery model/polarity and capacitor MPN/DC-bias curves require selection before PCB."
+  ],
+  "models": [
+    "${KICAD_SHARE}/3dmodels/Button_Switch_SMD.3dshapes/SW_SPST_B3U-1000P.step",
+    "${KICAD_SHARE}/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+    "${KICAD_SHARE}/3dmodels/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+    "${KICAD_SHARE}/3dmodels/Connector_JST.3dshapes/JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical.step",
+    "${KICAD_SHARE}/3dmodels/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step",
+    "${KICAD_SHARE}/3dmodels/Diode_SMD.3dshapes/D_SMA.step",
+    "${KICAD_SHARE}/3dmodels/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+    "${KICAD_SHARE}/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+    "${KICAD_SHARE}/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+    "${KICAD_SHARE}/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+    "${KICAD_SHARE}/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-323_SC-70.step",
+    "${KICAD_SHARE}/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+    "${KIPRJMOD}/libraries/Nucula_Project.3dshapes/ESP32-C3-WROOM-02-N4.step"
+  ]
+}
