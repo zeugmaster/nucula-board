@@ -1,0 +1,18 @@
+# macOS metadata
+.DS_Store
+._*
+
+# KiCad local editor state, caches, and locks
+*.kicad_prl
+*.lck
+fp-info-cache
+
+# KiCad automatic saves and backups
+_autosave-*
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.kicad_pro-bak
+*-backups/
+
+# KiCad-managed history is separate from this repository
+/.history/
