@@ -1,6 +1,6 @@
 # USB-C, battery power and ESP32-C3 draft
 
-Revision A-draft, 2026-09-19. Open `nucula-v2.kicad_pro` in KiCad 10.
+Revision A-draft, updated 2026-09-20. Open `nucula-v2.kicad_pro` in KiCad 10.
 The schematic is complete for this draft; the PCB remains the original blank board.
 [PDF drawing](schematic.pdf), [BOM](bom.csv), [verification results](verification.json).
 
@@ -31,12 +31,21 @@ are outside this draft.
 - USB can run the circuit without a battery. Battery-only operation is supported.
   Hot-plug/load-step performance still requires measurements on a laid-out board.
 
-Assumed battery: **protected, single-cell 4.2 V Li-ion/LiPo**, with pack protection
-against overdischarge, short circuit and overcurrent. J2 is JST-PH, 2 mm pitch,
+Battery target: **approximately 400 mAh, protected single-cell Li-ion/LiPo,
+3.7 V nominal / 4.2 V full**, with pack protection against overdischarge,
+short circuit and overcurrent. J2 is **2-pin JST-PH, 2.0 mm pitch**,
 vertical: **pin 1 positive, pin 2 ground**. Purchased packs do not have universal
-connector polarity. The battery model, capacity, polarity and permitted charge
-conditions must be selected before assembly. There is no battery protection IC,
+connector polarity. The exact pack, polarity, charge limits and discharge-current
+rating must be checked before assembly. There is no battery protection IC,
 cell-temperature sensor, or physical off switch in this draft.
+
+JST-PH is used on small packs such as the
+[Adafruit 400 mAh pack](https://www.adafruit.com/product/3898) and
+[SparkFun 400 mAh pack](https://www.sparkfun.com/lithium-ion-battery-400mah.html).
+These establish the connector choice; no battery model has been selected yet.
+Keep the existing **100 mA charge setting**, equivalent to **0.25C at 400 mAh**.
+Adafruit's example permits up to 400 mA charging and recommends its 100 mA
+charger setting. The final pack's own limits still apply.
 
 U1 is the Top Power **TP4054-42-SOT235**, not the BL4054 symbol name carried by
 the reference. R3 = 10 kΩ sets 100 mA nominal; the data sheet specifies

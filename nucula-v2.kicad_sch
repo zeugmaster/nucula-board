@@ -6,7 +6,7 @@
   (paper "A3")
   (title_block
     (title "Nucula v2 - USB-C, battery power and ESP32-C3")
-    (date "2026-09-19")
+    (date "2026-09-20")
     (rev "A-draft")
     (comment 1 "Adapted from Olimex ESP32-C3-DevKit-Lipo Rev C; CERN-OHL-S-2.0")
     (comment 2 "Schematic only / protected 4.2 V single-cell Li-ion / 100 mA charge")
@@ -6504,7 +6504,7 @@
     )
     (uuid 48d0190f-06ec-5b2b-8465-523f21cde7c2)
   )
-  (text "Protected 1S Li-ion/LiPo only (4.2 V full).\nJ2 pin 1 = BAT+; pin 2 = GND. Check pack polarity!\n100 mA nominal; termination ~10 mA.\nNo cell-temperature input. Confirm battery rating."
+  (text "Protected 1S LiPo, ~400mAh (3.7V nom / 4.2V full).\nJ2: JST-PH 2.0mm; pin 1 = BAT+; pin 2 = GND.\n100mA charge = 0.25C at 400mAh; ~10mA termination.\nConfirm pack polarity and ratings; no cell-temp input."
     (at 144.78 91.44 0)
     (effects
       (font

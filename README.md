@@ -12,8 +12,10 @@ from Olimex ESP32-C3-DevKit-Lipo **revision C**. The PCB is still blank.
 - [BOM](docs/bom.csv) and [verification results](docs/verification.json)
 - [Project library sources and licenses](libraries/README.md)
 
-Battery assumption: protected 4.2 V single-cell Li-ion/LiPo; JST-PH pin 1 positive,
-pin 2 ground. Confirm the actual battery before assembly. This draft retains the
+Battery target: approximately 400 mAh, protected single-cell Li-ion/LiPo,
+3.7 V nominal / 4.2 V full; 2-pin JST-PH at 2.0 mm pitch, pin 1 positive,
+pin 2 ground. Charging remains 100 mA (0.25C at 400 mAh).
+Confirm the actual battery before assembly. This draft retains the
 reference's simple USB power input; USB current/inrush/suspend management needs
 further design before product-level use with arbitrary hosts.
 

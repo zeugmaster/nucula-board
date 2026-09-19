@@ -2,14 +2,14 @@
 <export version="E">
   <design>
     <source>nucula-v2.kicad_sch</source>
-    <date>2026-09-19T16:26:36</date>
+    <date>2026-09-20T00:24:19</date>
     <tool>Eeschema 10.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>Nucula v2 - USB-C, battery power and ESP32-C3</title>
         <company/>
         <rev>A-draft</rev>
-        <date>2026-09-19</date>
+        <date>2026-09-20</date>
         <source>nucula-v2.kicad_sch</source>
         <comment number="1" value="Adapted from Olimex ESP32-C3-DevKit-Lipo Rev C; CERN-OHL-S-2.0"/>
         <comment number="2" value="Schematic only / protected 4.2 V single-cell Li-ion / 100 mA charge"/>
