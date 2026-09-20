@@ -1,0 +1,429 @@
+{
+  "date": "2026-09-20",
+  "current_revision": "162260c",
+  "scope": "Read-only electrical audit; no schematic or PCB modifications",
+  "input_sha256": {
+    "legacy-design/nucula-board.kicad_sch": "4f50e5bec5e20569cbce1ee7190dadf68caa9c6c3631bdb1fd25c98b88183091",
+    "legacy-design/nucula-board.kicad_pcb": "5c78e858f609db63538f209e3830953df26265a0fc829e24f802bc6bc06a05fb",
+    "legacy-design/production/netlist.ipc": "5f8bae3c50efd16b7fa55d4a5317a95008fe579e5c67482418deadc0627e0d1f",
+    "nfc.kicad_sch": "6d9060fb0a8ce42713fc172964478e890bb5d75a2dd2457c9e5b6048a05bfaae",
+    "power-mcu.kicad_sch": "6c09a1e016c0f4c303d8cf048ea503680da06cdc564ffc0ca6f6317606827156",
+    "docs/netlist.xml": "ab68ef6678be1bc1926b6bac7eddccdd2fcb0e91079c67f49a8482c02efd114c",
+    "parts documentation/PN7160_schematic-3.pdf": "81ac77576ec3db2d5a1e45cd80b1f5a089041f5e380ca99bb6a5b3710cbd5f29",
+    "parts documentation/PN7160_PN7161-rev4.2.pdf": "8c662109d7f0d186a9bc5e9844b5cc88c3ef292aede23ad45aaa150029c648fc",
+    "parts documentation/AN12988.pdf": "2e4388c8ec35fad4e05c2b1d528a6b445603e05c68ea04c63a09ef8fb30e2816"
+  },
+  "early_breakout_header": {
+    "J3.1": {
+      "net": "DWL",
+      "pin_function": "Pin_1_1"
+    },
+    "J3.2": {
+      "net": "SDA",
+      "pin_function": "Pin_2_2"
+    },
+    "J3.3": {
+      "net": "SCL",
+      "pin_function": "Pin_3_3"
+    },
+    "J3.4": {
+      "net": "IRQ",
+      "pin_function": "Pin_4_4"
+    },
+    "J3.5": {
+      "net": "VEN",
+      "pin_function": "Pin_5_5"
+    },
+    "J3.6": {
+      "net": "+3V3",
+      "pin_function": "Pin_6_6"
+    },
+    "J3.7": {
+      "net": "GND",
+      "pin_function": "Pin_7_7"
+    },
+    "J3.8": {
+      "net": "VBUS",
+      "pin_function": "Pin_8_8"
+    }
+  },
+  "early_relevant_nets": {
+    "VEN": [
+      "J3.5",
+      "U1.1"
+    ],
+    "IRQ": [
+      "J3.4",
+      "U1.2"
+    ],
+    "SDA": [
+      "J1.4",
+      "J3.2",
+      "R2.1",
+      "U1.5",
+      "U2.15"
+    ],
+    "SCL": [
+      "J1.3",
+      "J3.3",
+      "U1.6"
+    ],
+    "SDL": [
+      "R1.1",
+      "U2.14"
+    ],
+    "DWL": [
+      "J3.1"
+    ],
+    "+3V3": [
+      "J1.2",
+      "J3.6",
+      "R1.2",
+      "R2.2",
+      "U1.12",
+      "U2.16"
+    ],
+    "VBUS": [
+      "J3.8",
+      "U1.14"
+    ],
+    "GND": [
+      "J1.1",
+      "J3.7",
+      "U1.13",
+      "U2.1",
+      "U2.2",
+      "U2.3",
+      "U2.8"
+    ]
+  },
+  "early_board_pad_nets": {
+    "U2.1": [
+      "GND"
+    ],
+    "U2.2": [
+      "GND"
+    ],
+    "U2.3": [
+      "GND"
+    ],
+    "U2.4": [
+      "Net-(J2-Pin_1)"
+    ],
+    "U2.5": [
+      "Net-(J2-Pin_2)"
+    ],
+    "U2.6": [
+      "Net-(J2-Pin_3)"
+    ],
+    "U2.7": [
+      "Net-(J2-Pin_4)"
+    ],
+    "U2.8": [
+      "GND"
+    ],
+    "U2.9": [
+      "Net-(J2-Pin_5)"
+    ],
+    "U2.10": [
+      "Net-(J2-Pin_6)"
+    ],
+    "U2.11": [
+      "Net-(J2-Pin_7)"
+    ],
+    "U2.12": [
+      "unconnected-(U2-P7-Pad12)"
+    ],
+    "U2.13": [
+      "unconnected-(U2-~{INT}-Pad13)"
+    ],
+    "U2.14": [
+      "SDL"
+    ],
+    "U2.15": [
+      "SDA"
+    ],
+    "U2.16": [
+      "+3V3"
+    ],
+    "R1.1": [
+      "SDL"
+    ],
+    "R1.2": [
+      "+3V3"
+    ],
+    "J3.1": [
+      "DWL"
+    ],
+    "J3.2": [
+      "SDA"
+    ],
+    "J3.3": [
+      "SCL"
+    ],
+    "J3.4": [
+      "IRQ"
+    ],
+    "J3.5": [
+      "VEN"
+    ],
+    "J3.6": [
+      "+3V3"
+    ],
+    "J3.7": [
+      "GND"
+    ],
+    "J3.8": [
+      "VBUS"
+    ],
+    "R2.1": [
+      "SDA"
+    ],
+    "R2.2": [
+      "+3V3"
+    ],
+    "U1.1": [
+      "VEN",
+      "VEN"
+    ],
+    "U1.2": [
+      "IRQ",
+      "IRQ"
+    ],
+    "U1.3": [
+      "unconnected-(U1-GPIO2_A2_D2-Pad3)",
+      "unconnected-(U1-GPIO2_A2_D2-Pad3)_1"
+    ],
+    "U1.4": [
+      "unconnected-(U1-GPIO21_D3-Pad4)_1",
+      "unconnected-(U1-GPIO21_D3-Pad4)"
+    ],
+    "U1.5": [
+      "SDA",
+      "SDA"
+    ],
+    "U1.6": [
+      "SCL",
+      "SCL"
+    ],
+    "U1.7": [
+      "unconnected-(U1-GPIO16_D6_TX-Pad7)_1",
+      "unconnected-(U1-GPIO16_D6_TX-Pad7)"
+    ],
+    "U1.8": [
+      "unconnected-(U1-GPIO17_D7_RX-Pad8)_1",
+      "unconnected-(U1-GPIO17_D7_RX-Pad8)"
+    ],
+    "U1.9": [
+      "unconnected-(U1-GPIO19_D8_SCK-Pad9)",
+      "unconnected-(U1-GPIO19_D8_SCK-Pad9)_1"
+    ],
+    "U1.10": [
+      "unconnected-(U1-GPIO20_D9_MISO-Pad10)",
+      "unconnected-(U1-GPIO20_D9_MISO-Pad10)_1"
+    ],
+    "U1.11": [
+      "unconnected-(U1-GPIO18_D10_MOSI-Pad11)",
+      "unconnected-(U1-GPIO18_D10_MOSI-Pad11)_1"
+    ],
+    "U1.12": [
+      "+3V3",
+      "+3V3"
+    ],
+    "U1.13": [
+      "GND",
+      "GND"
+    ],
+    "U1.14": [
+      "VBUS",
+      "VBUS"
+    ]
+  },
+  "current_chip_pins": {
+    "U6.1": {
+      "net": "NFC_ADR0",
+      "pin_function": "I2C_ADR0_1"
+    },
+    "U6.2": {
+      "net": "NFC_DWL_REQ",
+      "pin_function": "DWL_REQ_2"
+    },
+    "U6.3": {
+      "net": "NFC_ADR1",
+      "pin_function": "I2C_ADR1_3"
+    },
+    "U6.4": {
+      "net": "GND",
+      "pin_function": "VSS(PAD)_4"
+    },
+    "U6.5": {
+      "net": "I2C_SDA",
+      "pin_function": "I2C_SDA_5"
+    },
+    "U6.6": {
+      "net": "+3V3",
+      "pin_function": "VDD(PAD)_6"
+    },
+    "U6.7": {
+      "net": "I2C_SCL",
+      "pin_function": "I2C_SCL_7"
+    },
+    "U6.8": {
+      "net": "NFC_IRQ",
+      "pin_function": "IRQ_8"
+    },
+    "U6.9": {
+      "net": "GND",
+      "pin_function": "VSS(A)_9"
+    },
+    "U6.10": {
+      "net": "NFC_VEN",
+      "pin_function": "VEN_10"
+    },
+    "U6.11": {
+      "net": "unconnected-(U6-I.C._1-Pad11)",
+      "pin_function": "I.C._1_11"
+    },
+    "U6.12": {
+      "net": "VSYS",
+      "pin_function": "VBAT2_12"
+    },
+    "U6.13": {
+      "net": "NFC_VDDUP",
+      "pin_function": "VDD(UP)_13"
+    },
+    "U6.14": {
+      "net": "NFC_TVDD",
+      "pin_function": "VDD(TX)_14"
+    },
+    "U6.15": {
+      "net": "NFC_RXN",
+      "pin_function": "RXN_15"
+    },
+    "U6.16": {
+      "net": "NFC_RXP",
+      "pin_function": "RXP_16"
+    },
+    "U6.17": {
+      "net": "NFC_VMID",
+      "pin_function": "VDD(VMID)_17"
+    },
+    "U6.18": {
+      "net": "NFC_TVDD",
+      "pin_function": "TVDD_IN_18"
+    },
+    "U6.19": {
+      "net": "NFC_TX2",
+      "pin_function": "TX2_19"
+    },
+    "U6.20": {
+      "net": "GND",
+      "pin_function": "VSS(TX)_20"
+    },
+    "U6.21": {
+      "net": "NFC_TX1",
+      "pin_function": "TX1_21"
+    },
+    "U6.22": {
+      "net": "NFC_TVDD",
+      "pin_function": "TVDD_IN2_22"
+    },
+    "U6.23": {
+      "net": "unconnected-(U6-ANT1-Pad23)",
+      "pin_function": "ANT1_23"
+    },
+    "U6.24": {
+      "net": "unconnected-(U6-ANT2-Pad24)",
+      "pin_function": "ANT2_24"
+    },
+    "U6.25": {
+      "net": "unconnected-(U6-VDD(HF)-Pad25)",
+      "pin_function": "VDD(HF)_25"
+    },
+    "U6.26": {
+      "net": "NFC_VDD18",
+      "pin_function": "VDD(A)_26"
+    },
+    "U6.27": {
+      "net": "NFC_VDD18",
+      "pin_function": "VDD_27"
+    },
+    "U6.28": {
+      "net": "VSYS",
+      "pin_function": "VBAT_28"
+    },
+    "U6.29": {
+      "net": "NFC_XTAL2",
+      "pin_function": "XTAL2_29"
+    },
+    "U6.30": {
+      "net": "NFC_XTAL1",
+      "pin_function": "NFC_CLK_XTAL1_30"
+    },
+    "U6.31": {
+      "net": "NFC_VDD18",
+      "pin_function": "VDD(D)_31"
+    },
+    "U6.32": {
+      "net": "unconnected-(U6-N.C._1-Pad32)",
+      "pin_function": "N.C._1_32"
+    },
+    "U6.33": {
+      "net": "unconnected-(U6-N.C._2-Pad33)",
+      "pin_function": "N.C._2_33"
+    },
+    "U6.34": {
+      "net": "unconnected-(U6-N.C._3-Pad34)",
+      "pin_function": "N.C._3_34"
+    },
+    "U6.35": {
+      "net": "unconnected-(U6-N.C._4-Pad35)",
+      "pin_function": "N.C._4_35"
+    },
+    "U6.36": {
+      "net": "unconnected-(U6-N.C._5-Pad36)",
+      "pin_function": "N.C._5_36"
+    },
+    "U6.37": {
+      "net": "unconnected-(U6-DCDC_EN-Pad37)",
+      "pin_function": "DCDC_EN_37"
+    },
+    "U6.38": {
+      "net": "unconnected-(U6-I.C._2-Pad38)",
+      "pin_function": "I.C._2_38"
+    },
+    "U6.39": {
+      "net": "GND",
+      "pin_function": "WKUP_REQ_39"
+    },
+    "U6.40": {
+      "net": "unconnected-(U6-CLK_REQ-Pad40)",
+      "pin_function": "CLK_REQ_40"
+    },
+    "U6.41": {
+      "net": "GND",
+      "pin_function": "VSS_41"
+    }
+  },
+  "ven_irq_swapped": false,
+  "fresh_current_netlist_matches_archived": true,
+  "address_strap_analysis": {
+    "external_pulldown_ohm": 100000,
+    "datasheet_internal_pullup_ohm": [
+      55000,
+      120000
+    ],
+    "pin_fraction_of_VDDPAD": [
+      0.45454545454545453,
+      0.6451612903225806
+    ],
+    "datasheet_max_low_fraction": 0.35,
+    "guaranteed_low_with_pullup_enabled": false,
+    "recommendation": "Populate R23/R24 with 0 ohm for a fixed 0x28 address; 10 kohm also provides low-level margin if re-strapping is wanted."
+  },
+  "limits": [
+    "No firmware/configuration dump or physical jumper continuity measurement supplied.",
+    "PCB pad/net assignments and production IPC netlist checked; this is not a new full routing/DRC audit.",
+    "100 kohm address issue is a datasheet margin finding, not an observed failure of the old breakout."
+  ]
+}
