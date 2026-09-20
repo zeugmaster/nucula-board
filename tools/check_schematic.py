@@ -199,8 +199,9 @@ for ref in ['C1','C2','C4']:
 for ref in ['C5','C6','C9']:
     assert fields[ref]['MPN'] == 'CL31A226KAHNNNE'
     assert '1206' in components[ref].findtext('footprint')
-assert fields['J2']['MPN'] == 'B2B-PH-K-S(LF)(SN)'
-assert 'P2.00mm' in components['J2'].findtext('footprint')
+assert fields['J2']['MPN'] == 'B2B-PH-SM4-TB(LF)(SN)'
+assert fields['J2']['LCSC'] == 'C160352'
+assert components['J2'].findtext('footprint') == 'Nucula_Project:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical'
 assert child(instances['A1'], 'in_bom')[1] == 'no', 'Etched coil is not a purchased component'
 assert 'A1.3' not in net_of, 'PCB loop has exactly two terminals, no ground tap'
 for ref in ['C28','C29','C30','C31','C32','C33','C34','C35','C36','C37','C38','C39','C53','C54']:

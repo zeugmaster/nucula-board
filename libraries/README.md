@@ -8,6 +8,17 @@ The global `Nucula` library remains available separately, including PN7160.
   metadata. Footprint pad geometry and antenna keepout are preserved.
 - TLV803EA30DBZR: adapted from KiCad's TPS3839DBZ drawing. Corrected to the
   TLV803E open-drain output, SOT-23 footprint, ordering code and documentation.
+- JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical: KiCad's unmodified SMT
+  land pattern for J2 / JST B2B-PH-SM4-TB(LF)(SN), JLCPCB C160352. Two
+  electrical pads and two unconnected solder hold-down tabs, all with paste.
+  Checked against the [JST drawing](../parts%20documentation/JST-PH-SMT-datasheet.pdf),
+  pages 2 and 4. Only the unresolved optional KiCad 3D-model reference was removed;
+  no substitute model is claimed. JST offers CAD through its email request form.
+- MouseBite_2Rows7_D0.60_P1.00_Inset_Gap2.00: project mechanical footprint
+  for MB1/MB2, with two rows of seven 0.60 mm NPTH holes on 1.00 mm centers.
+  The adjoining slots are defined by the PCB's Edge.Cuts geometry. This is a
+  board-only drilling feature, excluded from BOM/POS output, with no 3D model.
+  See the [keyboard breakaway guide](../docs/keyboard-breakaway.md).
 - TP4054-42-SOT25R and SY8089AAAC: adapted from the embedded Olimex Rev C
   symbols. Corrected part names, pin electrical types, datasheets and footprint
   filters; replaced internal artwork with clean outlines and removed the old
@@ -59,7 +70,7 @@ The global `Nucula` library remains available separately, including PN7160.
 
 PCF8574T, its SOIC-16W_7.5x10.3mm_P1.27mm footprint and package model use the
 standard KiCad libraries. All assigned model paths resolve in the checked
-installation. The verification report lists A1 and L1–L4 as having no model.
+installation. The verification report lists A1, J2 and L1–L4 as having no model.
 
 The two user-supplied reference schematics remain under `parts documentation/`.
 Their respective authors retain ownership; no broader redistribution license

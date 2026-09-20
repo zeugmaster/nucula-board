@@ -24,7 +24,7 @@ D1,Assemble,B340A-13-F,Diode_SMD:D_SMA,f7cba3b52ed8b34dce89170722de58324eac04e9e
 D2,Assemble,B340A-13-F,Diode_SMD:D_SMA,f7cba3b52ed8b34dce89170722de58324eac04e9e61a095e0eab37b9ca93cb7f,${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMA.step,Available
 D3,Assemble,KT-0603R,LED_SMD:LED_0603_1608Metric,7931ed1efba34cb13c8d74a60eb1dca4b0be57d950c38e08c3e7f007db500a1c,${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step,Available
 J1,Assemble,USB4105-GF-A-120,Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal,3b8d7da3cae5114ec83022a759a78925113bc2eeec100ea447594f6d8687e4b8,${KICAD10_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step,Available
-J2,Assemble,B2B-PH-K-S(LF)(SN),Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical,dd59286748b9a6fa9174237072608f811cf3169dddf00eab54a5c196fcb6f7e8,${KICAD10_3DMODEL_DIR}/Connector_JST.3dshapes/JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical.step,Available
+J2,Assemble,B2B-PH-SM4-TB(LF)(SN),Nucula_Project:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical,e65a6723199bdd38537157202af12b59195c490395d4b19d0b658eda24e076c8,,No model assigned
 L1,Assemble,LSXND3030QKT2R2MNG,Nucula_Project:L_Taiyo-Yuden_NR-30xx,36868d6592ff7013fcb4cc56cefbe9a12344213123aaa432c00cfd760b7f7e1f,,No model assigned
 Q1,Assemble,IRLML6402TRPBF,Package_TO_SOT_SMD:SOT-23,0d88c86c1b6d8c1aae4aa8c09386264c089d4451a128b6ccd63ed253f4300b15,${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step,Available
 Q2,Assemble,BSS138,Package_TO_SOT_SMD:SOT-23,0d88c86c1b6d8c1aae4aa8c09386264c089d4451a128b6ccd63ed253f4300b15,${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step,Available

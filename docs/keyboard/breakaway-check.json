@@ -1,0 +1,212 @@
+{
+  "status": "pass",
+  "board_sha256": "51537733efd165fb1ccc9a2f00eda060a437f7bb6f6d8096ab87d4d393dbcd27",
+  "before_board_sha256": "2d8949051a015648e07468e52fce4fa452118031be8d2d9d3951630bc1c9a7dc",
+  "board_size_mm": [
+    60,
+    110
+  ],
+  "main_body_height_mm": 73,
+  "slot_y_mm": [
+    123,
+    125
+  ],
+  "slot_width_mm": 2,
+  "keyboard_body_height_mm": 35,
+  "mechanical_tabs": {
+    "references": [
+      "MB1",
+      "MB2"
+    ],
+    "centers_x_mm": [
+      62,
+      98
+    ],
+    "waist_width_mm": 4.5,
+    "rows_per_tab": 2,
+    "holes_per_row": 7,
+    "hole_diameter_mm": 0.6,
+    "hole_pitch_mm": 1,
+    "npth_holes": 28,
+    "non_plated_drill_export_verified": true,
+    "library_matches": true
+  },
+  "electrical_bridge": {
+    "center_x_mm": 80,
+    "waist_width_mm": 3.5,
+    "cut_y_mm": 124,
+    "cut_before_snapping_tabs": true,
+    "connections": [
+      {
+        "pin": 1,
+        "net": "/+3V3",
+        "connected_J4_to_J5": true,
+        "layer": "F.Cu",
+        "width_mm": 0.2
+      },
+      {
+        "pin": 2,
+        "net": "GND",
+        "connected_J4_to_J5": true,
+        "layer": "F.Cu",
+        "width_mm": 0.2
+      },
+      {
+        "pin": 3,
+        "net": "/I2C_SDA",
+        "connected_J4_to_J5": true,
+        "layer": "F.Cu",
+        "width_mm": 0.2
+      },
+      {
+        "pin": 4,
+        "net": "/I2C_SCL",
+        "connected_J4_to_J5": true,
+        "layer": "F.Cu",
+        "width_mm": 0.2
+      },
+      {
+        "pin": 5,
+        "net": "/KEY_INT_N",
+        "connected_J4_to_J5": true,
+        "layer": "F.Cu",
+        "width_mm": 0.2
+      }
+    ]
+  },
+  "all_four_layers_plane_and_via_keepout": true,
+  "inner_and_back_layer_tracks_excluded_from_fracture_band": true,
+  "outline_valid": true,
+  "connected_board_outlines": 1,
+  "closed_internal_slots": 2,
+  "keyboard_placement": {
+    "U8": {
+      "origin_mm": [
+        60.15,
+        148.095
+      ],
+      "rotation_degrees": 0.0,
+      "bounds_mm": [
+        54.195,
+        142.555,
+        66.105,
+        153.52
+      ]
+    },
+    "J3": {
+      "origin_mm": [
+        69.84,
+        157.5
+      ],
+      "rotation_degrees": 90.0,
+      "bounds_mm": [
+        68.045,
+        155.705,
+        91.955,
+        159.295
+      ]
+    },
+    "J5": {
+      "origin_mm": [
+        74.92,
+        130.0
+      ],
+      "rotation_degrees": 90.0,
+      "bounds_mm": [
+        73.125,
+        128.205001,
+        86.875,
+        131.795
+      ]
+    },
+    "C51": {
+      "origin_mm": [
+        66.9,
+        141.5
+      ],
+      "rotation_degrees": 0.0,
+      "bounds_mm": [
+        65.395,
+        140.745,
+        68.405,
+        142.255
+      ]
+    },
+    "C52": {
+      "origin_mm": [
+        66.9,
+        138.5
+      ],
+      "rotation_degrees": 0.0,
+      "bounds_mm": [
+        65.175,
+        137.495,
+        68.625,
+        139.505
+      ]
+    },
+    "R37": {
+      "origin_mm": [
+        68.5,
+        149.5
+      ],
+      "rotation_degrees": 0.0,
+      "bounds_mm": [
+        66.995,
+        148.745,
+        70.005,
+        150.255
+      ]
+    },
+    "R38": {
+      "origin_mm": [
+        68.5,
+        144.5
+      ],
+      "rotation_degrees": 0.0,
+      "bounds_mm": [
+        66.995,
+        143.745,
+        70.005,
+        145.255
+      ]
+    },
+    "R39": {
+      "origin_mm": [
+        68.5,
+        147.0
+      ],
+      "rotation_degrees": 0.0,
+      "bounds_mm": [
+        66.995,
+        146.245,
+        70.005,
+        147.755
+      ]
+    },
+    "J4": {
+      "origin_mm": [
+        74.92,
+        119.0
+      ],
+      "rotation_degrees": 90.0,
+      "bounds_mm": [
+        73.125,
+        117.205001,
+        86.875,
+        120.795
+      ]
+    }
+  },
+  "existing_footprints_unchanged": 121,
+  "existing_footprint_uuids_schematic_paths_and_pad_nets_preserved": true,
+  "U8_J3_DS1_J2_and_NFC_placement_preserved": true,
+  "board_settings_preserved": true,
+  "drc": {
+    "new_violations": 0,
+    "preexisting_violations": 18,
+    "unconnected_items": 303
+  },
+  "routing_scope": "Only the five J4-to-J5 bridge connections are routed; the rest of the preliminary PCB still needs routing.",
+  "ipc_note": "KiCad IPC may omit optional schematic unit-group metadata for moved footprints; pin nets and schematic paths are preserved."
+}

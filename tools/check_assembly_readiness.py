@@ -56,6 +56,7 @@ def main():
     assert selected == {r for p in parts.values() for r in p['references']}
     byref = {r['Reference']: r for r in bom}
     expected = {
+        'J2': ('C160352', 'Nucula_Project:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical'),
         'U5': ('C5218924', 'Package_TO_SOT_SMD:SOT-23'),
         'R30': ('C2088132', 'Resistor_SMD:R_0805_2012Metric'),
         'J1': ('C5184243', 'Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal'),
@@ -79,6 +80,12 @@ def main():
                 else SHARE / 'footprints' / (lib + '.pretty')) / (name + '.kicad_mod')
         assert path.is_file(), f'{ref}: missing footprint'
         tree = parse(path.read_text())
+        if ref == 'J2':
+            pads = children(tree, 'pad')
+            assert child(tree, 'attr')[1] == 'smd'
+            assert len(pads) == 4 and all(p[2] == 'smd' for p in pads)
+            assert sorted(uq(p[1]) for p in pads) == ['1', '2', 'MP', 'MP']
+            assert parts[byref['J2']['LCSC']]['assemblyMode'] == 'smtWeld'
         model_paths = []
         for m in children(tree, 'model'):
             model = uq(m[1])
@@ -129,8 +136,9 @@ def main():
                   with_3d=sum(bool(r['Models']) for r in audit),
                   tight_stock=[r for r in purchasing if r['Stock_status'] == 'TIGHT'],
                   shortages=[r for r in purchasing if r['Stock_status'] == 'SHORTAGE'],
-                  through_hole_assembly=['J2'],
-                  scope='Component and footprint readiness for placement; no placed PCB or CPL yet',
+                  through_hole_assembly=sorted(r['Reference'] for r in populated
+                                              if parts[r['LCSC']]['assemblyMode'] == 'manualWeld'),
+                  scope='Component and footprint readiness; preliminary PCB placement exists, final routing and CPL pending',
                   stock_reserved=False,
                   quantity_method='Planning only: max(placements, public minimum placement) + public loss allowance. Final JLCPCB BOM matching controls quantities.',
                   inputs_sha256={str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest()

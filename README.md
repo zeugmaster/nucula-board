@@ -12,6 +12,7 @@ and a detachable PCF8574T keyboard section. The PCB is still blank.
 - [Schematic PDF](docs/schematic.pdf)
 - [Design choices, datasheets and outstanding hardware limits](docs/power-design.md)
 - [NFC, OLED, I²C pin map and breakaway keyboard design](docs/peripherals-design.md)
+- [35 mm keyboard breakaway geometry and separation instructions](docs/keyboard-breakaway.md)
 - [40 mm NFC coil, calculated matching values and prototype tuning guide](docs/nfc-antenna.md)
 - [Selected crystal, capacitor calculations and confirmed prototype interfaces](docs/component-refinements.md)
 - [10-board assembly audit, exact JLCPCB BOM and stock risks](docs/assembly-readiness.md)
@@ -22,7 +23,8 @@ Battery target: approximately 400 mAh, protected single-cell Li-ion/LiPo,
 3.7 V nominal / 4.2 V full; 2-pin JST-PH at 2.0 mm pitch, pin 1 positive,
 pin 2 ground. Charging remains 100 mA (0.25C at 400 mAh).
 Battery operation is optional for this prototype; runtime/discharge capability
-and improved low-battery behavior are deferred. J2 remains JST-PH 2.00 mm.
+and improved low-battery behavior are deferred. J2 uses a vertical SMT JST-PH
+2.00 mm connector, B2B-PH-SM4-TB(LF)(SN), JLCPCB C160352.
 The user-confirmed USB source is a dedicated **5 V / at least 1.5 A** supply; the
 steady-state planning budget is about 1.10 A including charging. Startup/inrush
 must be tested; operation from arbitrary computer hosts is not qualified.

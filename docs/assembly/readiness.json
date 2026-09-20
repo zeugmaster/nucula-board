@@ -18,13 +18,14 @@
   ],
   "footprint_status": "All resolved; pin/pad correspondence checked by check_schematic.py",
   "without_3d": [
+    "J2",
     "L1",
     "A1",
     "L2",
     "L3",
     "L4"
   ],
-  "with_3d": 123,
+  "with_3d": 122,
   "tight_stock": [
     {
       "References": "C36, C37",
@@ -66,14 +67,12 @@
     }
   ],
   "shortages": [],
-  "through_hole_assembly": [
-    "J2"
-  ],
-  "scope": "Component and footprint readiness for placement; no placed PCB or CPL yet",
+  "through_hole_assembly": [],
+  "scope": "Component and footprint readiness; preliminary PCB placement exists, final routing and CPL pending",
   "stock_reserved": false,
   "quantity_method": "Planning only: max(placements, public minimum placement) + public loss allowance. Final JLCPCB BOM matching controls quantities.",
   "inputs_sha256": {
-    "docs/bom.csv": "8643996e707db215a8ba6d797b798cdef16c55f98721ff91abcee20e68670998",
-    "docs/assembly/jlc-stock-snapshot.json": "98ca3d317c203a595474b71b4d4b31e2275542e05e8320697b3d4eb0a5643c1e"
+    "docs/bom.csv": "e96ff29443c5e8ad01bd10d369012c651c6e7fcef6059bac0e2235ee5a360b1c",
+    "docs/assembly/jlc-stock-snapshot.json": "6103f0c61715cc6c473d5d80c79979b564ec430cb13b334808a51f5302addd73"
   }
 }

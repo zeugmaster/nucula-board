@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>nucula-v2.kicad_sch</source>
-    <date>2026-09-20T23:56:21</date>
+    <date>2026-09-21T00:22:41</date>
     <tool>Eeschema 10.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -1007,22 +1007,22 @@
     </comp>
     <comp ref="J2">
       <value>JST-PH / 1S Li-ion</value>
-      <footprint>Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</footprint>
+      <footprint>Nucula_Project:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical</footprint>
       <datasheet>https://www.jst-mfg.com/product/pdf/eng/ePH.pdf</datasheet>
       <fields>
-        <field name="MPN">B2B-PH-K-S(LF)(SN)</field>
+        <field name="MPN">B2B-PH-SM4-TB(LF)(SN)</field>
         <field name="Manufacturer">JST</field>
-        <field name="Status">OPTIONAL BATTERY TEST: JST-PH 2.00 mm; pin 1 BAT+, pin 2 GND; USB operation does not require a battery</field>
-        <field name="LCSC">C131337</field>
-        <field name="Footprint">Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</field>
+        <field name="Status">OPTIONAL BATTERY TEST: SMT top-entry JST-PH 2.00 mm; pin 1 BAT+, pin 2 GND; mounting tabs unconnected; USB operation does not require a battery</field>
+        <field name="LCSC">C160352</field>
+        <field name="Footprint">Nucula_Project:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical</field>
         <field name="Datasheet">https://www.jst-mfg.com/product/pdf/eng/ePH.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="MPN" value="B2B-PH-K-S(LF)(SN)"/>
+      <property name="MPN" value="B2B-PH-SM4-TB(LF)(SN)"/>
       <property name="Manufacturer" value="JST"/>
-      <property name="Status" value="OPTIONAL BATTERY TEST: JST-PH 2.00 mm; pin 1 BAT+, pin 2 GND; USB operation does not require a battery"/>
-      <property name="LCSC" value="C131337"/>
+      <property name="Status" value="OPTIONAL BATTERY TEST: SMT top-entry JST-PH 2.00 mm; pin 1 BAT+, pin 2 GND; mounting tabs unconnected; USB operation does not require a battery"/>
+      <property name="LCSC" value="C160352"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="connector"/>

@@ -3,8 +3,10 @@
 Revision B-draft, 2026-09-20. The project now has five schematic sheets:
 system interconnect, power/ESP32, NFC, OLED, and keyboard.
 [Combined drawing](schematic.pdf), [BOM](bom.csv), [verification](verification.json).
-The main PCB layout and firmware have not been started. A separate NFC coil
-measurement coupon and the reusable coil footprint are now available.
+The main PCB has a preliminary layout and a 35 mm detachable keyboard section;
+the five breakaway interconnects are routed. Other routing and firmware remain
+to be completed. A separate NFC coil measurement coupon and reusable coil
+footprint are available.
 
 ## Shared I²C and MCU connections
 
@@ -162,7 +164,7 @@ Write 1 to release a PCF pin for input and drive one scan column low at a time.
 See [researched pinout, orientation and scanning notes](keyboard-interface.md).
 
 Every physical part on `keyboard.kicad_sch` carries
-`PCB Region = BREAKAWAY_KEYBOARD`. Only five nets cross the future break line:
+`PCB Region = BREAKAWAY_KEYBOARD`. Only five nets cross the break line:
 +3V3, GND, SDA, SCL and INT_N. J4 on the main board and J5 on the detachable
 section are DNP 1×5, 2.54 mm headers with matching pin order:
 
@@ -174,7 +176,9 @@ section are DNP 1×5, 2.54 mm headers with matching pin order:
 | 4 | SCL |
 | 5 | INT_N |
 
-While attached, PCB traces provide these connections. After separation,
+The [implemented 35 mm breakaway](keyboard-breakaway.md) uses two perforated
+support tabs and a separate central electrical bridge. Cut that bridge before
+snapping the support tabs. While attached, PCB traces provide these connections. After separation,
 populate J4/J5 and reconnect straight through. R37 provides the module INT
 pull-up; R40 keeps the MCU input defined when the module is absent. R38/R39
 are DNP optional bus pull-ups for standalone use; leave them unpopulated when

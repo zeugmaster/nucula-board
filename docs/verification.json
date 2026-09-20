@@ -1,7 +1,7 @@
 {
   "schematic_sha256": {
     "nucula-v2.kicad_sch": "4438052cb3ed03d7555772a1ca6d5177c5d74cef2f3e5ba6155279f69393aef3",
-    "power-mcu.kicad_sch": "4cc9b4b2bfdfe6eb3ab4cbc857a9dae2b22aba7548f7a971019b003d074fbfb7",
+    "power-mcu.kicad_sch": "87cdb59acb6c5b88d273f9ccd8cbc1848213c045ed9a5452e7b29e5f002cfa69",
     "nfc.kicad_sch": "b53c0a821f9459b59cb7290baf316fcb1a243e9a1915049caed038ef868e030e",
     "oled.kicad_sch": "0848cb10d9b3f22e53e663d9c6202f6cf5e52ce8735ab09e96bf8f6ddca321cf",
     "keyboard.kicad_sch": "9489d40c8a70b60037e6dd5a4849a09903941db6114d3cf6ed89d5500f043259"
@@ -13,8 +13,9 @@
   "net_count": 91,
   "checked_named_nets": 58,
   "unique_footprints": 29,
-  "resolved_models": 22,
+  "resolved_models": 21,
   "components_without_3D": [
+    "J2",
     "L1",
     "A1",
     "L2",
@@ -193,7 +194,6 @@
     "${KICAD_SHARE}/3dmodels/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
     "${KICAD_SHARE}/3dmodels/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
     "${KICAD_SHARE}/3dmodels/Connector_FFC-FPC.3dshapes/Hirose_FH12-26S-0.5SH_1x26-1MP_P0.50mm_Horizontal.step",
-    "${KICAD_SHARE}/3dmodels/Connector_JST.3dshapes/JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical.step",
     "${KICAD_SHARE}/3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.step",
     "${KICAD_SHARE}/3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x09_P2.54mm_Vertical.step",
     "${KICAD_SHARE}/3dmodels/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step",

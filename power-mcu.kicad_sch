@@ -6655,7 +6655,7 @@
         (justify left)
       )
     )
-    (property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
+    (property "Footprint" "Nucula_Project:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical"
       (at 248.92 45.72 0)
       (effects
         (font
@@ -6665,7 +6665,7 @@
         (justify left)
       )
     )
-    (property "MPN" "B2B-PH-K-S(LF)(SN)"
+    (property "MPN" "B2B-PH-SM4-TB(LF)(SN)"
       (at 248.92 45.72 0)
       (effects
         (font
@@ -6695,7 +6695,7 @@
         (justify left)
       )
     )
-    (property "Status" "OPTIONAL BATTERY TEST: JST-PH 2.00 mm; pin 1 BAT+, pin 2 GND; USB operation does not require a battery"
+    (property "Status" "OPTIONAL BATTERY TEST: SMT top-entry JST-PH 2.00 mm; pin 1 BAT+, pin 2 GND; mounting tabs unconnected; USB operation does not require a battery"
       (at 248.92 45.72 0)
       (effects
         (font
@@ -6718,7 +6718,7 @@
         )
       )
     )
-    (property "LCSC" "C131337"
+    (property "LCSC" "C160352"
       (at 248.92 45.72 0)
       (effects
         (font

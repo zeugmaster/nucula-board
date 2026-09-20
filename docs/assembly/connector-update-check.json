@@ -1,0 +1,63 @@
+{
+  "status": "pass",
+  "board_sha256": "2d8949051a015648e07468e52fce4fa452118031be8d2d9d3951630bc1c9a7dc",
+  "footprint_count": 128,
+  "other_footprints_unchanged": 125,
+  "all_content_outside_footprints_unchanged": true,
+  "all_footprint_uuids_and_schematic_paths_preserved": true,
+  "J2": {
+    "mpn": "B2B-PH-SM4-TB(LF)(SN)",
+    "lcsc": "C160352",
+    "origin_mm": [
+      55.25,
+      100
+    ],
+    "rotation_degrees": 90,
+    "matches_library": true,
+    "smd_pads": 4,
+    "drilled_pads": 0,
+    "pin_1": "/Power + ESP32-C3/VBAT",
+    "pin_2": "GND",
+    "mounting_tabs_unconnected": true,
+    "has_3d_body_model": false
+  },
+  "centering": {
+    "J3": {
+      "old_origin_mm": [
+        71.84,
+        157.5
+      ],
+      "origin_mm": [
+        69.84,
+        157.5
+      ],
+      "center_x_mm": 80,
+      "rotation_degrees": 90.0,
+      "height_and_rotation_unchanged": true
+    },
+    "DS1": {
+      "old_origin_mm": [
+        80.5,
+        108.65
+      ],
+      "origin_mm": [
+        80.0,
+        108.65
+      ],
+      "center_x_mm": 80,
+      "rotation_degrees": 180.0,
+      "height_and_rotation_unchanged": true
+    }
+  },
+  "drc": {
+    "changed_connector_violations": 0,
+    "remaining_non_connectivity_violations": 18,
+    "remaining_by_type": {
+      "hole_clearance": 4,
+      "drill_out_of_range": 12,
+      "silk_edge_clearance": 2
+    },
+    "unconnected_items": 308
+  },
+  "ipc_note": "KiCad IPC omits optional schematic unit-group metadata on updated footprints J2, J3 and DS1. All physical pins, pad nets, symbol paths and footprint UUIDs are preserved; updating from schematic can repopulate the unit groups."
+}

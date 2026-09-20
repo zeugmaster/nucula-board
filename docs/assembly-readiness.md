@@ -1,10 +1,11 @@
 # Component and footprint readiness — 10-board prototype
 
-Checked 2026-09-20 against KiCad 10.0.6 and JLCPCB's public catalogue.
+Checked 2026-09-20 against KiCad 10.0.6 and JLCPCB's public catalogue;
+J2 changed to SMT and its stock rechecked 2026-09-21 (Berlin).
 **Ready to begin component placement. Every physical symbol has a resolving
 footprint and every populated purchased item has an exact manufacturer part
 number and JLCPCB C-code.** This is not a fabrication release: the main PCB
-is still blank, so its routing, DRC, assembly rotations and CPL remain to be done.
+has a preliminary layout; routing, final DRC, assembly rotations and CPL remain to be done.
 
 There are **128 physical symbols**: 116 populated purchased components,
 11 DNP components, and one etched PCB antenna. The populated BOM contains
@@ -27,15 +28,48 @@ The stock screen passes for ten boards, but two RF parts have limited stock.
 DS1's purchased item is the Hirose FPC **socket**, not the OLED glass. The OLED
 and keypad are user-supplied external modules. J3/J4/J5 remain DNP; J3 still has
 isolated end pins 1/9 and P0–P6 on pins 2–8. A1 is manufactured copper, excluded
-from the assembly BOM and future CPL. J2 remains the populated **JST-PH 2 mm
-through-hole battery connector**. Its catalogue assembly mode is `manualWeld`;
-include the appropriate through-hole assembly service, or explicitly arrange
-hand fitting. It is not silently omitted from the BOM.
+from the assembly BOM and future CPL. J2 is the populated **JST-PH 2 mm vertical
+surface-mount battery connector**, **B2B-PH-SM4-TB(LF)(SN) / C160352**. JLCPCB
+lists `smtWeld`, supporting Economic and Standard SMT assembly. It replaces the
+through-hole C131337 connector; there are no remaining populated components
+classified as manual/through-hole assembly in this catalogue audit. Mechanical
+anchors on other SMT connectors are still part of their respective footprints.
+
+J2 stock was checked at **2026-09-20 22:17 UTC / 2026-09-21 00:17 Berlin**:
+**35,730 in stock; 34,746 available to order**, versus 10 needed. Public minimum
+placement is 5 and loss allowance is 0, so the planning quantity remains 10.
+The listed pre-order MOQ of 42 applies to pre-orders, not this available stock.
+Stock is a dated observation, not a reservation.
+[JLCPCB C160352](https://jlcpcb.com/partdetail/JST-B2B_PH_SM4_TB_LF_SN/C160352).
+
+The project-local copy of the standard KiCad SMT footprint has two electrical lands and two mechanical
+hold-down lands, all with paste apertures and no plated holes. JST's top-entry
+land pattern and pin-1 mark were checked against the footprint. **Pin 1 remains
+VBAT and pin 2 GND**; both `MP` hold-down pads are intentionally unconnected.
+An update-from-schematic warning about `MP` having no symbol pin is mechanical,
+not a missing battery connection. The larger package is moved slightly inward
+from the left edge; its 90° rotation and electrical pin order are retained.
+[Manufacturer drawing, pages 2 and 4](../parts%20documentation/JST-PH-SMT-datasheet.pdf).
+The installed library's SMT 3D model was missing, so its unresolved reference
+was removed from the local copy. J2 has no 3D body model; fabrication geometry is
+unchanged from the verified KiCad footprint.
+
+J3 and DS1 are centered on the board's X = 80 mm centerline (edges at X = 50
+and 110 mm). J3 moved 2 mm left and DS1 moved 0.5 mm left; their Y positions
+and rotations are unchanged. The [saved-board check](assembly/connector-update-check.json)
+confirms zero DRC findings on the three changed connectors, with the other 125
+footprints and board outline unchanged. The preliminary board still has 18
+unrelated DRC findings. The subsequent [35 mm keyboard breakaway](keyboard-breakaway.md)
+adds two mechanical footprints (130 PCB footprints total), places the keyboard
+support parts, and routes the five J4-to-J5 connections. Its
+[verification](keyboard/breakaway-check.json) confirms no new DRC findings;
+303 unconnected items remain. MB1/MB2 are excluded from BOM and placement output.
 
 ## Sourcing changes applied before placement
 
 | Reference | Final selection | Why / footprint consequence |
 |---|---|---|
+| J2 | JST B2B-PH-SM4-TB(LF)(SN), **C160352** | Stocked SMT top-entry PH connector; same 2 mm mating family and battery polarity. Larger footprint with two solder hold-down tabs replaces through-hole assembly. |
 | U5 | TI TLV803EA30DBZR, **C5218924** | The DCKR variant was out of stock. Same 3.08 V threshold and nominal 200 ms delay; **SOT-23 replaces SC70**. Both selected variants use 1=GND, 2=RESET, 3=VDD. |
 | J1 | GCT USB4105-GF-A-120, **C5184243** | Unsuffixed part had zero available order quantity. Same XY land pattern; shell stakes are **1.20 mm**, suitable for the specified 1.6 mm board. |
 | R30 | TE CPF0805B1M8E, **C2088132** | Stocked 1.8 MΩ, **0.1%**, 0.1 W, 100 V; **0805 replaces 0603**. Divider voltage and precision remain unchanged. |
