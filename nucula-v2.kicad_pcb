@@ -5745,7 +5745,7 @@
 	(footprint "Nucula_Project:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical"
 		(layer "F.Cu")
 		(uuid "2e2f6337-063c-4d9b-961f-77738c586168")
-		(at 55.25 100 90)
+		(at 56.75 100.9 90)
 		(descr "JST PH series connector, B2B-PH-SM4-TB (http://www.jst-mfg.com/product/pdf/eng/ePH.pdf)")
 		(tags "connector JST PH vertical")
 		(property "Reference" "J2"
