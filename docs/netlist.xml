@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>nucula-v2.kicad_sch</source>
-    <date>2026-09-20T18:43:34</date>
+    <date>2026-09-20T23:56:21</date>
     <tool>Eeschema 10.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -2012,18 +2012,18 @@
     </comp>
     <comp ref="A1">
       <value>PCB loop 40x40 / 4T</value>
-      <footprint>Nucula_Project:NFC_PCB_Loop_40x40_4T_W0.50_S0.30</footprint>
+      <footprint>Nucula_Project:NFC_PCB_Loop_40x40_4T_W0.50_S0.30_InsideFeed</footprint>
       <description>Two-terminal etched PCB NFC coil. 40x40 mm outer copper; 4 turns, 0.50 mm trace, 0.30 mm gap. No ground or center tap.</description>
       <fields>
-        <field name="Status">PROTOTYPE: 1.56uH estimated; measure RL/C before final tuning</field>
+        <field name="Status">PROTOTYPE: inside-feed; 1.56uH unloaded estimate only; measure with in-loop circuitry/ground</field>
         <field name="Geometry">40x40 mm outer copper; 4T; W=0.50 mm; S=0.30 mm; 35um Cu</field>
         <field name="Assembly">Etched PCB copper; exclude from purchased BOM and pick/place</field>
-        <field name="Footprint">Nucula_Project:NFC_PCB_Loop_40x40_4T_W0.50_S0.30</field>
+        <field name="Footprint">Nucula_Project:NFC_PCB_Loop_40x40_4T_W0.50_S0.30_InsideFeed</field>
         <field name="Datasheet"/>
         <field name="Description">Two-terminal etched PCB NFC coil. 40x40 mm outer copper; 4 turns, 0.50 mm trace, 0.30 mm gap. No ground or center tap.</field>
       </fields>
       <libsource lib="Nucula_Project" part="NFC_PCB_Loop_40x40_4T" description="Two-terminal etched PCB NFC coil. 40x40 mm outer copper; 4 turns, 0.50 mm trace, 0.30 mm gap. No ground or center tap."/>
-      <property name="Status" value="PROTOTYPE: 1.56uH estimated; measure RL/C before final tuning"/>
+      <property name="Status" value="PROTOTYPE: inside-feed; 1.56uH unloaded estimate only; measure with in-loop circuitry/ground"/>
       <property name="Geometry" value="40x40 mm outer copper; 4T; W=0.50 mm; S=0.30 mm; 35um Cu"/>
       <property name="Assembly" value="Etched PCB copper; exclude from purchased BOM and pick/place"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
@@ -5091,7 +5091,7 @@
       <fields>
         <field name="Reference">A</field>
         <field name="Value">NFC_PCB_Loop_40x40_4T</field>
-        <field name="Footprint">Nucula_Project:NFC_PCB_Loop_40x40_4T_W0.50_S0.30</field>
+        <field name="Footprint">Nucula_Project:NFC_PCB_Loop_40x40_4T_W0.50_S0.30_InsideFeed</field>
         <field name="Datasheet"/>
         <field name="Description">Two-terminal etched PCB NFC coil. 40x40 mm outer copper; 4 turns, 0.50 mm trace, 0.30 mm gap. No ground or center tap.</field>
       </fields>

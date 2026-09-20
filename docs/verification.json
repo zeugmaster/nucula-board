@@ -2,7 +2,7 @@
   "schematic_sha256": {
     "nucula-v2.kicad_sch": "4438052cb3ed03d7555772a1ca6d5177c5d74cef2f3e5ba6155279f69393aef3",
     "power-mcu.kicad_sch": "4cc9b4b2bfdfe6eb3ab4cbc857a9dae2b22aba7548f7a971019b003d074fbfb7",
-    "nfc.kicad_sch": "1d8cdfca362e8ba94cdc4867a4ec71decb159f613f66060a4b60f463a8212d04",
+    "nfc.kicad_sch": "b53c0a821f9459b59cb7290baf316fcb1a243e9a1915049caed038ef868e030e",
     "oled.kicad_sch": "0848cb10d9b3f22e53e663d9c6202f6cf5e52ce8735ab09e96bf8f6ddca321cf",
     "keyboard.kicad_sch": "9489d40c8a70b60037e6dd5a4849a09903941db6114d3cf6ed89d5500f043259"
   },
@@ -83,7 +83,7 @@
   "pending_selection_or_tuning": {
     "A1": {
       "value": "PCB loop 40x40 / 4T",
-      "status": "PROTOTYPE: 1.56uH estimated; measure RL/C before final tuning"
+      "status": "PROTOTYPE: inside-feed; 1.56uH unloaded estimate only; measure with in-loop circuitry/ground"
     },
     "C26": {
       "value": "12pF",

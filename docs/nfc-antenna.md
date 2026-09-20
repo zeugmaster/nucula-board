@@ -4,62 +4,87 @@
 
 The project now has a reusable **40 × 40 mm, four-turn etched PCB antenna**
 assigned to A1 and a populated starting matching tree. The geometry uses the
-user-confirmed **0.50 mm track, 0.30 mm gap and 35 µm copper**. The coil area
-must remain clear of battery, display and other metal. No ferrite is modeled.
+user-confirmed **0.50 mm track, 0.30 mm gap and 35 µm copper**. A1 now uses an
+**inside-feed variant for the four-layer main board**: the PN7160, matching tree,
+crystal and their supporting circuitry go inside the loop. Keep battery, display
+metalwork and unrelated circuitry away from the antenna. No ferrite is modeled.
 
 The Elechouse PN7160 circuit topology is retained, including the receiver taps.
 Its supplied schematic does **not** give RF values or a dimensioned coil layout.
 This is therefore a close dimensional implementation with a calculated matching
 network, not a verified reproduction of Elechouse's antenna or read range.
 Four turns were selected with the user; the exact Elechouse turn count remains
-unverified. Component values are calculated for this geometry.
+unverified. The existing matching values are an **unloaded bare-coil starting
+model**, not a calculation of the populated inside-feed assembly.
 
-[RF schematic](nfc/schematic.pdf) · [coil drawing](nfc/coil.svg) ·
+[RF schematic](nfc/schematic.pdf) · [inside-feed drawing](nfc/inside-feed/coil.svg) ·
 [native KiCad coupon plot](nfc/coupon.svg) · [calculation results](nfc/calculations.json) ·
 [impedance sweep](nfc/impedance-sweep.svg) · [BOM](bom.csv).
 
-![Coil geometry](nfc/coil.png)
+![Inside-feed coil geometry](nfc/inside-feed/coil.png)
 
 ## Place it in KiCad
 
 Open `nucula-v2.kicad_pro`. A1 on the NFC sheet uses:
 
 - Symbol: `Nucula_Project:NFC_PCB_Loop_40x40_4T`.
-- Footprint: `Nucula_Project:NFC_PCB_Loop_40x40_4T_W0.50_S0.30`.
+- Footprint: `Nucula_Project:NFC_PCB_Loop_40x40_4T_W0.50_S0.30_InsideFeed`.
 - Pins **1 and 2 are the coil ends**. There is no ground pad, shield or center tap.
 
-Use **Tools → Update PCB from Schematic (F8)** when starting the main layout.
-The main PCB remains unplaced; this task establishes the reusable component,
-schematic and a separate measurement coupon. In another project, register the
-local `.pretty` and `.kicad_sym` libraries first. No global library changes are needed.
+The main PCB contains the preliminary layout. The schematic and library symbol
+default use the inside-feed variant so future **Tools → Update PCB from Schematic
+(F8)** updates retain it. In another project, register the local `.pretty` and
+`.kicad_sym` libraries first. No global library changes are needed.
 
 The spiral is actual connected **custom-pad copper**, not lines on a drawing
-layer. The four turns are on F.Cu. Two 0.40 mm plated holes and a B.Cu underpass
-bring the inner end to the adjacent terminal outside the coil. Moving or rotating
+layer. The four turns remain on F.Cu. Two 0.40 mm plated holes and a B.Cu underpass
+bring the **outer end inward to pad 1**; the inner end connects directly to pad 2
+on F.Cu. Both exposed 1.5 × 2 mm terminals are inside the loop, at local coordinates
+**1: (−1.5, −14.5) mm; 2: (−4.9, −14.5) mm**. Moving or rotating
 A1 carries all copper, holes and keepout together. Do not explode it or route an
 extra connection between its terminals.
 
 KiCad requires the footprint's `net_tie_pad_groups "1,2"` declaration because an
 etched inductor is DC-continuous between two schematic nets. That declaration
 represents the coil's intended copper continuity, **not permission to bypass it**.
-The inner via and its short front landing use pad 2; the remaining spiral uses
-pad 1. This also preserves native drill-clearance checking at the plated hole.
+The final inner lead uses pad 2; the winding and plated crossover use pad 1.
+There is no paste opening; the winding, underpass and outer hole remain masked.
 
-The footprint includes a **42 × 42 mm rule area on all copper layers**, covering
-the full aperture and a 1 mm perimeter margin. It prohibits other footprints,
-tracks, vias and zone fills. Pads are allowed because the antenna itself is built
-from pads; the footprint exclusion blocks unrelated component placement. The
-front/back courtyards extend to the feed lands, overall **42 × 44.5 mm**.
-Allow additional room for silkscreen and the matching tree. The 1 mm margin is a
-layout guard, not a universal electromagnetic isolation distance.
+The front and back courtyards form a **ring with an open center**. The nominal
+component window is **32.2 × 32.2 mm**, with a small notch reserving the feed pads.
+Place component courtyards entirely within that window. The copper aperture is
+34.2 mm wide; the extra 1 mm inner margin is a layout guard, not a universal
+electromagnetic isolation distance. Overall courtyard bounds are x = ±21 mm,
+y = −21.5…+21 mm, including the outer crossover hole.
 
-Use a two-layer **1.6 mm FR4** board for the first prototype, following the
-Elechouse module's published thickness; dielectric constant **4.3 is an assumption**.
-The underpass is already part of the footprint. Do not add a ground plane,
-shield, mounting screw, battery, display frame or cable loop in/behind the aperture.
-Changing stackup, copper thickness, coating, nearby conductors or feed routing
-requires measurement and retuning. Keep soldermask on the spiral; the two feed
-lands are exposed, the inner hole is tented, and the antenna has no paste openings.
+Seven rule areas protect the winding: **no pours, vias or other footprints under
+the turns on any copper layer**. Tracks are also prohibited except in the
+**6 mm B.Cu entry corridor**, local x = −3…+3 mm, y = 16.1…21 mm. Route VSYS,
++3V3, GND, SDA, SCL, VEN and IRQ across the turns approximately at right angles
+there; transition to other layers outside the protected band. No vias or pours
+are allowed even in this corridor. It rotates with A1; “bottom” here is the local
+drawing edge, not necessarily the bottom of your board. Pads are permitted in
+rule areas because the etched antenna itself uses pads; the footprint and
+courtyard restrictions protect against placing unrelated components there.
+
+Use the main board's **F.Cu / In1.Cu / In2.Cu / B.Cu** stackup. The center permits
+NFC tracks, vias and **deliberately bounded local ground** beneath the NFC circuit.
+The footprint cannot distinguish a useful local ground region from a large plane:
+**trim global plane boundaries around A1, then draw the compact local ground
+region explicitly**. Do not flood the entire aperture, wrap ground around the
+winding, or place unrelated copper beneath it. Keep PN7160 decoupling and shunt
+capacitor returns short, and provide a short ground connection through the entry.
+The 32.2 mm window is placement capacity, not a guarantee that the current larger
+hand-solder footprints will fit with good RF routing; verify during placement.
+
+Elechouse's published module demonstrates circuitry inside a perimeter antenna;
+its photos do not establish its hidden copper geometry or predict this board's
+tuning. [Elechouse datasheet](https://www.elechouse.com/wp-content/uploads/2026/07/PN716x_Datasheet.pdf),
+[layout guidance](https://www.elechouse.com/docs/pn7160/).
+Measure and retune with the **final four-layer stackup, populated NFC island,
+ground geometry and nearby enclosure parts**. The original two-layer 1.6 mm
+bare-coil coupon and calculations below are retained as reference artifacts;
+they do not include the new feed or in-loop conductor loading.
 
 ## Initial component values
 
@@ -126,6 +151,14 @@ no F.Paste aperture, so they remain convenient for manual additions after reflow
 ## What was calculated
 
 ### Coil geometry and inductance
+
+**This section and the linked calculation/SPICE outputs describe the original
+outside-feed bare coupon.** The four-turn winding is identical in the inside-feed
+variant, so its closed-form Mohan/Wheeler estimates remain useful starting points.
+Its feed path differs; the old Neumann integral, path length and resistance numbers
+must not be read as recalculated inside-feed results. The new coordinates and path
+length are recorded separately in [inside-feed geometry](nfc/inside-feed/geometry.json).
+No field extraction or RF measurement of the populated layout has been performed.
 
 The 40 mm specification is measured at the **outer copper edges**. Thus the
 outer track centerline is 39.50 mm square. Track pitch is 0.80 mm, and the clear
@@ -289,14 +322,15 @@ current, thermal limits or NFC compliance. Measure these during bring-up.
 
 ## Layout and assembly provisions
 
-Place the matching tree immediately outside the coil feed, with short, symmetric
+Place the matching tree **inside the loop, beside the inward-facing feed**, with short, symmetric
 branches. Keep each trim pad directly beside its base capacitor, without long
 test stubs. Keep at least about 1 mm of tool access around the hand-solder pads;
 adjust component centers to preserve that access and courtyard clearances.
 Even unpopulated pads contribute stray capacitance; they are present during
 the final measurement and must not be treated as electrically invisible.
-Give the shunt capacitors short returns into the local RF ground outside the
-antenna keepout. Keep that ground away from the coil aperture.
+Give the shunt capacitors short returns into the compact local NFC ground inside
+the loop. Keep that ground clear of the protected winding band. Place the PN7160,
+EMC stage, crystal, decoupling and RF branches together in this interior area.
 
 Put R41/R42 next to the TX outputs, leaving their **network-side lands accessible**
 for the measurement fixture. Use the R25/R26 lands to isolate the RX branches.
@@ -372,7 +406,8 @@ balanced fixture has its own reference transformation. **Do not tune for a
 ## Optional bare-coil fabrication coupon
 
 [`prototypes/nfc-antenna/nfc-antenna.kicad_pro`](../prototypes/nfc-antenna/nfc-antenna.kicad_pro)
-contains the same A1 footprint on a **46 × 48 mm** two-layer board. It has no
+contains the original **outside-feed** footprint (without `_InsideFeed`) on a
+**46 × 48 mm** two-layer board. It has no
 matching components or ground plane. Order 1.6 mm FR4 / 35 µm copper on both
 sides, retain mask on the windings, and use the specified plated 0.40 mm holes.
 The coupon can establish a first RL/C model before the main layout is ordered.
@@ -381,6 +416,29 @@ Gerbers and drill outputs are in its `gerbers/` directory; review that coupon's
 fabrication settings with the manufacturer. These are not main-board outputs.
 
 ## Repeat the calculations and checks
+
+For the main board's inside-feed variant:
+
+```sh
+python3 tools/nfc/generate_inside_feed.py
+MPLCONFIGDIR=/tmp/nucula-mpl /tmp/nucula-nfc-venv/bin/python tools/nfc/check_inside_feed.py
+/Applications/KiCad/KiCad.app/Contents/Frameworks/Python.framework/Versions/Current/bin/python3 \
+  tools/nfc/check_inside_feed.py --native
+python3 tools/check_schematic.py
+python3 tools/check_assembly_readiness.py
+```
+
+The independent copper check compares every winding segment with the original,
+checks spacing and continuity, and generates the drawing. Twelve temporary
+four-layer KiCad DRC fixtures check the open courtyard, interior tracks/vias,
+blocked winding crossings, B.Cu entry, and forbidden vias/components in the band.
+The clean antenna fixture has zero violations. Intentional negative probes and
+dangling test tracks are reported in [native checks](nfc/inside-feed/native-check.json).
+These checks establish geometry and rule behavior, not RF performance or final
+board placement/routing readiness. Both generators must be run when rebuilding
+all artifacts; the inside-feed generator leaves the original coupon untouched.
+
+For the original bare-coil reference calculations:
 
 ```sh
 python3 -m venv /tmp/nucula-nfc-venv

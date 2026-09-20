@@ -31,7 +31,13 @@ The global `Nucula` library remains available separately, including PN7160.
   footprint and standard package model, with NDK EXD14B-00467 recommended
   0.85 × 0.75 mm lands at 1.35 × 1.05 mm center spacing. Y1 uses the exact
   NX2016SA-27.12MHZ-EXS00A-CS06346 reference in NXP AN14518.
-- NFC_PCB_Loop_40x40_4T / NFC_PCB_Loop_40x40_4T_W0.50_S0.30: new two-terminal
+- NFC_PCB_Loop_40x40_4T / NFC_PCB_Loop_40x40_4T_W0.50_S0.30_InsideFeed: main-board
+  antenna with both terminals inside the four-turn winding, an open-center
+  courtyard, perimeter keepouts on all copper layers and a 6 mm B.Cu host-entry
+  corridor. Accommodates the PN7160 and matching circuit inside the loop;
+  ground must be confined to an intentional local region. Prototype RF values
+  require measurement with the populated four-layer layout.
+- NFC_PCB_Loop_40x40_4T_W0.50_S0.30: retained bare-coupon two-terminal
   PCB antenna replacing the three-pad placeholder. Four front copper turns,
   0.50 mm track / 0.30 mm gap, two plated return holes and a bottom underpass.
   Includes an all-copper-layer keepout and intentional net-tie declaration.

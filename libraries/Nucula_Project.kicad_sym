@@ -2363,7 +2363,7 @@
         )
       )
     )
-    (property "Footprint" "Nucula_Project:NFC_PCB_Loop_40x40_4T_W0.50_S0.30"
+    (property "Footprint" "Nucula_Project:NFC_PCB_Loop_40x40_4T_W0.50_S0.30_InsideFeed"
       (at 0 -5.08 0)
       (effects
         (font

@@ -1855,7 +1855,7 @@
           )
         )
       )
-      (property "Footprint" "Nucula_Project:NFC_PCB_Loop_40x40_4T_W0.50_S0.30"
+      (property "Footprint" "Nucula_Project:NFC_PCB_Loop_40x40_4T_W0.50_S0.30_InsideFeed"
         (at 0 -5.08 0)
         (effects
           (font
@@ -9978,7 +9978,7 @@
         )
       )
     )
-    (property "Footprint" "Nucula_Project:NFC_PCB_Loop_40x40_4T_W0.50_S0.30"
+    (property "Footprint" "Nucula_Project:NFC_PCB_Loop_40x40_4T_W0.50_S0.30_InsideFeed"
       (at 391.16 91.44 0)
       (hide yes)
       (show_name no)
@@ -10011,7 +10011,7 @@
         )
       )
     )
-    (property "Status" "PROTOTYPE: 1.56uH estimated; measure RL/C before final tuning"
+    (property "Status" "PROTOTYPE: inside-feed; 1.56uH unloaded estimate only; measure with in-loop circuitry/ground"
       (at 391.16 96.52 0)
       (effects
         (font

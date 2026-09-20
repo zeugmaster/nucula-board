@@ -33,6 +33,7 @@ erc = json.loads((DOC/'erc.json').read_text())
 assert not any(sheet['violations'] for sheet in erc['sheets'])
 xml = ET.parse(DOC/'netlist.xml').getroot()
 components = {c.attrib['ref']: c for c in xml.findall('./components/comp')}
+assert components['A1'].findtext('footprint') == 'Nucula_Project:NFC_PCB_Loop_40x40_4T_W0.50_S0.30_InsideFeed'
 net_of = {}
 net_members = {}
 for net in xml.findall('./nets/net'):

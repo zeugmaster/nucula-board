@@ -1,0 +1,16 @@
+{
+  "status": "pass",
+  "unchanged_four_turn_winding": true,
+  "outer_winding_copper_mm": [
+    40,
+    40
+  ],
+  "minimum_nonadjacent_trace_gap_mm": {
+    "F.Cu": 0.29999999999999716,
+    "B.Cu": null
+  },
+  "single_unbranched_path_between_inside_feeds": true,
+  "plated_holes": 2,
+  "winding_rule_areas": 7,
+  "rf_performance_measured": false
+}

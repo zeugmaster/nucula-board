@@ -53,7 +53,7 @@ U2,Assemble,SY8089AAAC,Package_TO_SOT_SMD:SOT-23-5,455a3f7c3e5eb5b8847eaa5df23e1
 U3,Assemble,ESP32-C3-WROOM-02-N4,Nucula_Project:ESP32-C3-WROOM-02-N4,220cd3480e84334f0006c08ddb3121ccddf2b1038a54e79c409d3329cef46b1c,${KIPRJMOD}/libraries/Nucula_Project.3dshapes/ESP32-C3-WROOM-02-N4.step,Available
 U4,Assemble,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,f341c73aac9dcb553456f68bf3fee3d26eb14acf6d8a1cae82b50418fe1d71ca,${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step,Available
 U5,Assemble,TLV803EA30DBZR,Package_TO_SOT_SMD:SOT-23,0d88c86c1b6d8c1aae4aa8c09386264c089d4451a128b6ccd63ed253f4300b15,${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step,Available
-A1,Etched PCB copper,,Nucula_Project:NFC_PCB_Loop_40x40_4T_W0.50_S0.30,4ce9b66f758314ffcf91e7eed02cb701328d7aa161099f44087bf18bfaf069c0,,No model assigned
+A1,Etched PCB copper,,Nucula_Project:NFC_PCB_Loop_40x40_4T_W0.50_S0.30_InsideFeed,bf6afdbb316f08f34774d6476692c1e4275f73c04d105eb4724d1be76385a1dc,,No model assigned
 C15,Assemble,CL21B105KBFNNNE,Capacitor_SMD:C_0805_2012Metric,62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb,${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step,Available
 C16,Assemble,CL10B104KB8NNNC,Capacitor_SMD:C_0603_1608Metric,fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405,${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step,Available
 C17,Assemble,CL31B106KAHNNNE,Capacitor_SMD:C_1206_3216Metric,b2e4a08e3aaf40bc587090190c0e3969e962d7ae962c172cce0581ae8327651c,${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step,Available

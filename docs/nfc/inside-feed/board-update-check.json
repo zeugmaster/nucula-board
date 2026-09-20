@@ -1,0 +1,21 @@
+{
+  "status": "pass",
+  "a1_position_mm": [
+    80.75,
+    71
+  ],
+  "a1_rotation_degrees": -90,
+  "other_footprints_unchanged": 127,
+  "all_board_content_outside_a1_unchanged": true,
+  "a1_uuid_path_and_nets_preserved": true,
+  "footprint_pads": 7,
+  "footprint_rule_areas": 7,
+  "live_editor_updated": true,
+  "preexisting_project_settings_preserved": true,
+  "main_board_non_connectivity_drc_violations": 19,
+  "main_board_unconnected_items": 308,
+  "main_board_a1_non_connectivity_drc_violations": 0,
+  "a1_schematic_unit_mapping_preserved": true,
+  "board_sha256": "8d3906e5ad698c771ccbe25878353ebcd65574456df62c2904e3e6182359f8cf",
+  "legacy_coupon_and_calculations_unchanged": true
+}
