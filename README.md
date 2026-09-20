@@ -43,7 +43,10 @@ notes for unavailable models.
 The shared I²C bus runs at 100 kHz: PN7160 `0x28`, SSD1309 `0x3C`, PCF8574T `0x20`.
 PCF8574T is an eight-bit I/O expander; no bus multiplexer is needed.
 Its SOIC-16W_7.5x10.3mm_P1.27mm footprint matches the earlier BOM.
-J3 is the user-fitted, DNP nine-pin keyboard header. J4/J5 are optional DNP
+J3 is the user-fitted, DNP nine-pin keyboard header: **pins 1 and 9 are NC;
+pins 2–8 connect to P0–P6**, preserving the early board's seven-line order.
+[Keypad pinout and scanning notes](docs/keyboard-interface.md).
+J4/J5 are optional DNP
 five-pin headers for reconnecting the keyboard section after separation.
 
 Y1 is now NDK NX2016SA-27.12MHZ-EXS00A-CS06346 (JLCPCB C3008209),

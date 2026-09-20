@@ -60,7 +60,7 @@ D4,SS14,Diode_SMD:D_SMA,Vishay,SS14-E3/61T,,,,,,no,MAIN,,https://www.vishay.com/
 DS1,SSD1309 OLED / 26-pin,Connector_FFC-FPC:Hirose_FH12-26S-0.5SH_1x26-1MP_P0.50mm_Horizontal,Hirose,FH12-26S-0.5SH(55),,,,,,no,MAIN,"Pinout/orientation confirmed by user; DS1 BOM part is the FPC socket, OLED glass supplied separately",https://files.waveshare.com/wiki/2.42inch-OLED-Module/SSD1309Datasheet.pdf
 J1,USB4105-GF-A,Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal,GCT,USB4105-GF-A,,,,,,no,MAIN,,https://gct.co/files/drawings/usb4105.pdf
 J2,JST-PH / 1S Li-ion,Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical,JST,B2B-PH-K-S(LF)(SN),,,,,,no,MAIN,"OPTIONAL BATTERY TEST: JST-PH 2.00 mm; pin 1 BAT+, pin 2 GND; USB operation does not require a battery",https://www.jst-mfg.com/product/pdf/eng/ePH.pdf
-J3,KEYBOARD / USER FIT,Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical,,,,,,,,yes,BREAKAWAY_KEYBOARD,,
+J3,KEYBOARD / USER FIT,Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical,,,,,,,,yes,BREAKAWAY_KEYBOARD,DNP/user-fitted 9-pin header; pins 1 and 9 isolated; 3x4 matrix on center seven,
 J4,MAIN LINK / OPTIONAL,Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical,,,,,,,,yes,MAIN,,
 J5,MODULE LINK / OPTIONAL,Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical,,,,,,,,yes,BREAKAWAY_KEYBOARD,,
 L1,2.2uH,Nucula_Project:L_Taiyo-Yuden_NR-30xx,Taiyo Yuden,LSXND3030QKT2R2MNG,,,,"Isat >=1.48 A, Irms >=1.5 A; 2.2uH +/-20%",,no,MAIN,,https://ds.yuden.co.jp/TYCOMPAS/eu/detail?pn=LSXND3030QKT2R2MNG&u=M

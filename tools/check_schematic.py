@@ -100,8 +100,8 @@ groups = {
     'OLED_SW': 'D4.2 L4.2 U7.1',
     'OLED_VCOMH': 'C47.1 DS1.22',
 }
-for i, pin in enumerate([4, 5, 6, 7, 9, 10, 11, 12]):
-    groups[f'KEY_P{i}'] = f'J3.{i+1} U8.{pin}'
+for i, pin in enumerate([4, 5, 6, 7, 9, 10, 11]):
+    groups[f'KEY_P{i}'] = f'J3.{i+2} U8.{pin}'
 for name, nodes in groups.items():
     assert net_members[name] == set(nodes.split()), f'{name}: {net_members[name]} != {nodes}'
 for nodes in ['U2.3 L1.1', 'U1.5 R3.1', 'U1.1 R4.1', 'R4.2 D3.1',
@@ -118,11 +118,14 @@ for pin in ('J1.A1 J1.A12 J1.B1 J1.B12 J1.SH J2.2 U1.2 U2.2 U3.9 U3.19 U4.2 U5.1
             'U7.2 Q4.2 Q5.2 R31.2 R32.2 R34.2 R36.2 C40.2 C42.2 C43.2 C44.2 '
             'C45.2 C46.2 C47.2 C48.2 DS1.1 DS1.2 DS1.3 DS1.7 DS1.8 DS1.10 '
             'DS1.11 DS1.12 DS1.16 DS1.17 DS1.18 DS1.19 DS1.20 DS1.24 DS1.25 DS1.26 '
-            'U8.1 U8.2 U8.3 U8.8 J3.9 J4.2 J5.2 C49.2 C50.2 C51.2 C52.2 U9.1').split():
+            'U8.1 U8.2 U8.3 U8.8 J4.2 J5.2 C49.2 C50.2 C51.2 C52.2 U9.1').split():
     assert net_of[pin] == 'GND', pin
 for pin in ('J1.A8 J1.B8 U3.12 DS1.4 U6.11 U6.23 U6.24 U6.25 '
-            'U6.32 U6.33 U6.34 U6.35 U6.36 U6.37 U6.38 U6.40').split():
+            'U6.32 U6.33 U6.34 U6.35 U6.36 U6.37 U6.38 U6.40 J3.1 J3.9 U8.12').split():
     assert net_of[pin].startswith('unconnected-'), pin
+for pin in ['J3.1','J3.9','U8.12']:
+    assert net_members[net_of[pin]] == {pin}, f'{pin} must remain isolated'
+assert 'KEY_P7' not in net_members, 'Only seven matrix lines connect to the keypad'
 
 values = {r: c.findtext('value') for r, c in components.items()}
 for ref, value in {'U1':'TP4054-42-SOT235', 'U2':'SY8089AAAC', 'U3':'ESP32-C3-WROOM-02-N4',
@@ -164,6 +167,8 @@ for ref in ['D1','D2']:
     assert properties(instances[ref])['Datasheet'] == 'https://www.diodes.com/datasheet/download/B340A.pdf'
 for ref in ['C7','C8','J3','J4','J5','C34','C35','C38','C39','C53','C54','R38','R39']:
     assert child(instances[ref],'dnp')[1] == 'yes', f'{ref} must remain DNP'
+assert fields['J3']['Pinout'] == '1=NC; 2..8=P0..P6; 9=NC'
+assert components['J3'].findtext('footprint') == 'Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical'
 keyboard = schematics[ROOT / 'keyboard.kicad_sch']
 assert {uq(p[1]) for p in children(keyboard, 'hierarchical_label')} == {
     '+3V3', 'GND', 'I2C_SDA', 'I2C_SCL', 'KEY_INT_N'}
@@ -281,6 +286,11 @@ report={
                  'I2C_high_required_V':bus_high_required,'I2C_pullup_current_mA_at_VOL_0V4':pullup_sink_mA,
                  'I2C_rise_ns_at_400pF':rise_ns,'OLED_boost_peak_estimate_A_at_30mA_output':boost_peak_A},
  'i2c':{'speed_Hz':100000,'pullup_V':3.0,'addresses':{'PN7160':'0x28','SSD1309':'0x3C','PCF8574T':'0x20'}},
+ 'keypad':{'header':'J3','dnp':True,'isolated_header_pins':[1,9],
+           'header_to_port':{str(i+2):f'P{i}' for i in range(7)},'unused_port':'P7',
+           'legacy_mapping':'Old J2 pins 1..7 -> new J3 pins 2..8, same P0..P6 order',
+           'reference_variant':'Adafruit 3845 / interleaved 3x4 matrix',
+           'reference_rows_P':[1,6,5,3],'reference_columns_P':[2,0,4]},
  'pending_selection_or_tuning':pending,
  'ready_to_begin_pcb_layout':True,
  'fabrication_release_ready':False,

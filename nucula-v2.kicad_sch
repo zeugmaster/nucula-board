@@ -3025,7 +3025,7 @@
     )
     (uuid 68432bfc-99bc-5588-b06a-5f11c64b0f7d)
   )
-  (text "Break line carries five nets only.\nReconnect J4 <-> J5 after separation.\nJ3 9-pin keyboard header remains DNP.\nMechanical break line is deferred to PCB layout."
+  (text "Break line carries five nets only.\nReconnect J4 <-> J5 after separation.\nJ3 9-pin header: DNP; pins 1 / 9 NC, center 7 active.\nMechanical break line is deferred to PCB layout."
     (at 304.8 210.82 0)
     (effects
       (font

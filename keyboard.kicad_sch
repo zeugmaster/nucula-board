@@ -2051,27 +2051,6 @@
     )
     (uuid e3aefce6-c57c-5ea5-9329-1ab7835cdd31)
   )
-  (wire
-    (pts
-      (xy 124.46 86.36)
-      (xy 132.08 86.36)
-    )
-    (stroke
-      (width 0)
-      (type default)
-    )
-    (uuid 5b7e8826-8283-5294-8f54-cd82ff18d73c)
-  )
-  (label "KEY_P7"
-    (at 132.08 86.36 0)
-    (effects
-      (font
-        (size 1.05 1.05)
-      )
-      (justify left)
-    )
-    (uuid 4b495557-93d6-5444-b385-f1ce197e89f2)
-  )
   (symbol
     (lib_id "Connector_Generic:Conn_01x09")
     (at 198.12 78.74 0)
@@ -2138,7 +2117,7 @@
         (justify left)
       )
     )
-    (property "Pinout" "1..8=P0..P7; 9=GND"
+    (property "Pinout" "1=NC; 2..8=P0..P6; 9=NC"
       (at 198.12 78.74 0)
       (effects
         (font
@@ -2146,6 +2125,33 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Compatibility" "Center seven retain old nucula-board J2.1..7 -> PCF8574 P0..P6 order"
+      (at 198.12 78.74 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Keypad Reference" "https://learn.adafruit.com/matrix-keypad/pinouts"
+      (at 198.12 78.74 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Status" "DNP/user-fitted 9-pin header; pins 1 and 9 isolated; 3x4 matrix on center seven"
+      (at 198.12 78.74 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -2186,27 +2192,6 @@
   )
   (wire
     (pts
-      (xy 193.04 68.58)
-      (xy 180.34 68.58)
-    )
-    (stroke
-      (width 0)
-      (type default)
-    )
-    (uuid f678d072-5f47-5e14-b374-a6f78a944715)
-  )
-  (label "KEY_P0"
-    (at 180.34 68.58 180)
-    (effects
-      (font
-        (size 1.05 1.05)
-      )
-      (justify right)
-    )
-    (uuid 15ce7be0-7fda-57db-be8c-6e48b81e232a)
-  )
-  (wire
-    (pts
       (xy 193.04 71.12)
       (xy 180.34 71.12)
     )
@@ -2216,7 +2201,7 @@
     )
     (uuid bf635b4a-902d-5cb7-95d2-be2ebe8a29e2)
   )
-  (label "KEY_P1"
+  (label "KEY_P0"
     (at 180.34 71.12 180)
     (effects
       (font
@@ -2237,7 +2222,7 @@
     )
     (uuid b67fa600-fc89-59a8-af2c-3aaadd407e0b)
   )
-  (label "KEY_P2"
+  (label "KEY_P1"
     (at 180.34 73.66 180)
     (effects
       (font
@@ -2258,7 +2243,7 @@
     )
     (uuid 9feaba19-74d4-5519-b6d9-94d246d76ab5)
   )
-  (label "KEY_P3"
+  (label "KEY_P2"
     (at 180.34 76.2 180)
     (effects
       (font
@@ -2279,7 +2264,7 @@
     )
     (uuid 0e15bb48-e252-51f4-ab02-b852a9a3dfe3)
   )
-  (label "KEY_P4"
+  (label "KEY_P3"
     (at 180.34 78.74 180)
     (effects
       (font
@@ -2300,7 +2285,7 @@
     )
     (uuid 029d68d6-4745-5591-86d2-daff9ae74658)
   )
-  (label "KEY_P5"
+  (label "KEY_P4"
     (at 180.34 81.28 180)
     (effects
       (font
@@ -2321,7 +2306,7 @@
     )
     (uuid 857de68a-d46f-53d9-bf0c-cb16780b7acd)
   )
-  (label "KEY_P6"
+  (label "KEY_P5"
     (at 180.34 83.82 180)
     (effects
       (font
@@ -2342,7 +2327,7 @@
     )
     (uuid 45320bdb-96ec-593a-b82d-078917562577)
   )
-  (label "KEY_P7"
+  (label "KEY_P6"
     (at 180.34 86.36 180)
     (effects
       (font
@@ -2351,27 +2336,6 @@
       (justify right)
     )
     (uuid 6dc8543c-403b-539b-9d6c-c15e0a56f9dd)
-  )
-  (wire
-    (pts
-      (xy 193.04 88.9)
-      (xy 180.34 88.9)
-    )
-    (stroke
-      (width 0)
-      (type default)
-    )
-    (uuid b0ae8ed3-5070-53cd-be92-64c40d5b6a91)
-  )
-  (label "GND"
-    (at 180.34 88.9 180)
-    (effects
-      (font
-        (size 1.05 1.05)
-      )
-      (justify right)
-    )
-    (uuid 417fd0ec-4a98-569d-b914-a96315661798)
   )
   (symbol
     (lib_id "Connector_Generic:Conn_01x05")
@@ -3355,7 +3319,7 @@
     )
     (uuid 38ac153b-5ff6-5ebe-a014-08c99eca29a5)
   )
-  (text "100 kHz maximum. A2:A0 = 000, address 0x20 (PCF8574T, not 8574A).\nP0..P7 are quasi-bidirectional; write 1 to use a pin as an input.\nHeader supports eight switch lines + common GND, or eight matrix lines.\nMatrix mapping and debounce belong in firmware; pin 9 is ground.\nR38/R39 optional pull-ups: leave DNP on the shared main-board bus.\nDetached use: provide 3.3 V, ground and one suitable set of bus pull-ups."
+  (text "100 kHz maximum. A2:A0 = 000, address 0x20 (PCF8574T).\nJ3: pins 1 / 9 NC; pins 2..8 = P0..P6. U8 P7 unused.\nCenter seven preserve old board J2.1..7 -> P0..P6 order.\nCommon 9-position keypad: rows P1/P6/P5/P3; columns P2/P0/P4.\nWrite 1 to release inputs; scan one column low, debounce in firmware.\nR38/R39 stay DNP on shared bus; see docs/keyboard-interface.md."
     (at 20.32 189.23 0)
     (effects
       (font
@@ -3366,4 +3330,16 @@
     (uuid 6beba78b-7d58-5251-8d19-da0e1b3c3d34)
   )
   (embedded_fonts no)
+  (no_connect
+    (at 193.04 68.58)
+    (uuid 82452387-e55d-4f68-95b5-ac1db92d8d4d)
+  )
+  (no_connect
+    (at 193.04 88.9)
+    (uuid be800443-cbee-44f3-8da6-348ce8bf5cf0)
+  )
+  (no_connect
+    (at 124.46 86.36)
+    (uuid 2cf29169-e9dc-462e-b783-0d6cd72d96ce)
+  )
 )

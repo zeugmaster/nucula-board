@@ -152,10 +152,14 @@ The user-confirmed pinout/orientation closes the electrical interface question.
 
 U8 is **PCF8574T**, an eight-bit quasi-bidirectional I/O expander, in the same
 wide SOIC-16 footprint as the earlier BOM. J3 is a **DNP/user-fitted 1×9,
-2.54 mm header**: pins 1–8 are P0–P7; pin 9 is ground. This supports eight
-switch lines plus common ground, or eight lines of a keyboard matrix. Final
-matrix mapping and debounce are firmware decisions. Write 1 to PCF pins before
-using them as inputs; service its active-low interrupt by reading the port.
+2.54 mm header**: **pins 1 and 9 are unconnected**, and **pins 2–8 connect
+to P0–P6**. U8 P7/pin 12 is also unused and marked NC. This preserves the old
+board's J2.1–7 → P0–P6 order, shifted into the center seven positions.
+All seven are matrix signals; the keypad header has no fixed ground or power
+pin. For the common Adafruit 3845 arrangement, rows are P1/P6/P5/P3 and
+columns are P2/P0/P4. Other keypad families can use another firmware map.
+Write 1 to release a PCF pin for input and drive one scan column low at a time.
+See [researched pinout, orientation and scanning notes](keyboard-interface.md).
 
 Every physical part on `keyboard.kicad_sch` carries
 `PCB Region = BREAKAWAY_KEYBOARD`. Only five nets cross the future break line:
@@ -207,7 +211,7 @@ Ordinary USB-host current/suspend behavior and inrush are not qualified.
 ## Verification and remaining selections
 
 `python3 tools/check_schematic.py` passes native ERC on all five sheets:
-**128 components, 89 nets, zero errors/warnings**. It checks 59 named net groups,
+**128 components, 91 nets, zero errors/warnings**. It checks 58 named net groups,
 additional internal connections and ground/NC pads, all physical symbol-to-pad
 mappings, DNP/region/address fields, available model paths and static voltage
 calculations. The five-page PDF was rendered and visually inspected.

@@ -1,17 +1,17 @@
 {
   "schematic_sha256": {
-    "nucula-v2.kicad_sch": "16b54ab54630b504598d63fa4d7518fe99d8caefeb215367153f1cb008b02894",
+    "nucula-v2.kicad_sch": "4ccbf0355435c7302f567d174aeb4c202b7a5dfbca23e19bafc1bca036d06db9",
     "power-mcu.kicad_sch": "6c09a1e016c0f4c303d8cf048ea503680da06cdc564ffc0ca6f6317606827156",
     "nfc.kicad_sch": "6d9060fb0a8ce42713fc172964478e890bb5d75a2dd2457c9e5b6048a05bfaae",
     "oled.kicad_sch": "014d1eca2230fbe604d2424530a7c2663359f4cae6a79fddfb3efe019bf50c0f",
-    "keyboard.kicad_sch": "9655c82050767b6eaa6cf416bef472af45ec4f1b38c2e63214400707c0d56eec"
+    "keyboard.kicad_sch": "74dc29fb926af7e6a80474b9e07416e4d68b8fd4a66081c17aa7dacd0faf1ba0"
   },
   "kicad_version": "10.0.6",
   "erc_violations": 0,
   "sheets": 5,
   "components": 128,
-  "net_count": 89,
-  "checked_named_nets": 59,
+  "net_count": 91,
+  "checked_named_nets": 58,
   "unique_footprints": 29,
   "resolved_models": 23,
   "components_without_3D": [
@@ -48,6 +48,37 @@
       "SSD1309": "0x3C",
       "PCF8574T": "0x20"
     }
+  },
+  "keypad": {
+    "header": "J3",
+    "dnp": true,
+    "isolated_header_pins": [
+      1,
+      9
+    ],
+    "header_to_port": {
+      "2": "P0",
+      "3": "P1",
+      "4": "P2",
+      "5": "P3",
+      "6": "P4",
+      "7": "P5",
+      "8": "P6"
+    },
+    "unused_port": "P7",
+    "legacy_mapping": "Old J2 pins 1..7 -> new J3 pins 2..8, same P0..P6 order",
+    "reference_variant": "Adafruit 3845 / interleaved 3x4 matrix",
+    "reference_rows_P": [
+      1,
+      6,
+      5,
+      3
+    ],
+    "reference_columns_P": [
+      2,
+      0,
+      4
+    ]
   },
   "pending_selection_or_tuning": {
     "A1": {
