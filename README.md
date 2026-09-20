@@ -14,6 +14,7 @@ and a detachable PCF8574T keyboard section. The PCB is still blank.
 - [NFC, OLED, I²C pin map and breakaway keyboard design](docs/peripherals-design.md)
 - [40 mm NFC coil, calculated matching values and prototype tuning guide](docs/nfc-antenna.md)
 - [Selected crystal, capacitor calculations and confirmed prototype interfaces](docs/component-refinements.md)
+- [10-board assembly audit, exact JLCPCB BOM and stock risks](docs/assembly-readiness.md)
 - [BOM](docs/bom.csv) and [verification results](docs/verification.json)
 - [Project library sources and licenses](libraries/README.md)
 

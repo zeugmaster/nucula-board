@@ -1,10 +1,10 @@
 {
   "schematic_sha256": {
-    "nucula-v2.kicad_sch": "4ccbf0355435c7302f567d174aeb4c202b7a5dfbca23e19bafc1bca036d06db9",
-    "power-mcu.kicad_sch": "6c09a1e016c0f4c303d8cf048ea503680da06cdc564ffc0ca6f6317606827156",
-    "nfc.kicad_sch": "6d9060fb0a8ce42713fc172964478e890bb5d75a2dd2457c9e5b6048a05bfaae",
-    "oled.kicad_sch": "014d1eca2230fbe604d2424530a7c2663359f4cae6a79fddfb3efe019bf50c0f",
-    "keyboard.kicad_sch": "74dc29fb926af7e6a80474b9e07416e4d68b8fd4a66081c17aa7dacd0faf1ba0"
+    "nucula-v2.kicad_sch": "4438052cb3ed03d7555772a1ca6d5177c5d74cef2f3e5ba6155279f69393aef3",
+    "power-mcu.kicad_sch": "4cc9b4b2bfdfe6eb3ab4cbc857a9dae2b22aba7548f7a971019b003d074fbfb7",
+    "nfc.kicad_sch": "1d8cdfca362e8ba94cdc4867a4ec71decb159f613f66060a4b60f463a8212d04",
+    "oled.kicad_sch": "0848cb10d9b3f22e53e663d9c6202f6cf5e52ce8735ab09e96bf8f6ddca321cf",
+    "keyboard.kicad_sch": "9489d40c8a70b60037e6dd5a4849a09903941db6114d3cf6ed89d5500f043259"
   },
   "kicad_version": "10.0.6",
   "erc_violations": 0,
@@ -13,7 +13,7 @@
   "net_count": 91,
   "checked_named_nets": 58,
   "unique_footprints": 29,
-  "resolved_models": 23,
+  "resolved_models": 22,
   "components_without_3D": [
     "L1",
     "A1",
@@ -102,12 +102,12 @@
       "status": "PROTOTYPE START: validate with VNA / AGC / RF stress measurements"
     },
     "C30": {
-      "value": "360pF",
-      "status": "PROTOTYPE START: validate with VNA / AGC / RF stress measurements"
+      "value": "330pF",
+      "status": "PROTOTYPE: 330pF 1% + 33pF 5% in parallel = 363pF +/-1.364%; fit symmetrically; measure and retune"
     },
     "C31": {
-      "value": "360pF",
-      "status": "PROTOTYPE START: validate with VNA / AGC / RF stress measurements"
+      "value": "330pF",
+      "status": "PROTOTYPE: 330pF 1% + 33pF 5% in parallel = 363pF +/-1.364%; fit symmetrically; measure and retune"
     },
     "C32": {
       "value": "68pF",
@@ -124,6 +124,14 @@
     "C37": {
       "value": "100pF",
       "status": "PROTOTYPE START: validate with VNA / AGC / RF stress measurements"
+    },
+    "C53": {
+      "value": "33pF",
+      "status": "PROTOTYPE: 330pF 1% + 33pF 5% in parallel = 363pF +/-1.364%; fit symmetrically; measure and retune"
+    },
+    "C54": {
+      "value": "33pF",
+      "status": "PROTOTYPE: 330pF 1% + 33pF 5% in parallel = 363pF +/-1.364%; fit symmetrically; measure and retune"
     },
     "L2": {
       "value": "150nH",
@@ -196,7 +204,6 @@
     "${KICAD_SHARE}/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
     "${KICAD_SHARE}/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
     "${KICAD_SHARE}/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
-    "${KICAD_SHARE}/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-323_SC-70.step",
     "${KICAD_SHARE}/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
     "${KICAD_SHARE}/3dmodels/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
     "${KICAD_SHARE}/3dmodels/Resistor_SMD.3dshapes/R_1206_3216Metric.step",

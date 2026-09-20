@@ -42,12 +42,13 @@ entire extended temperature range: initial, temperature, aging and PCB
 loading errors must all be budgeted. Room-temperature tuning and cold/hot
 start tests are still necessary.
 
-The JLCPCB page was retrieved directly on 2026-09-20. Its public sourcing
-data reported `overseasStockCount = 8896`, `canPresaleNumber = 8533`, and
-`preMinPurchaseNum = 24`. This establishes available supplier stock through
-JLCPCB, **not a reservation or confirmation of immediate assembly-factory
-stock**. Check the assembly order's quantity/lead time before paying.
-The machine-readable observation is [crystal-jlc-stock.json](components/crystal-jlc-stock.json).
+The refreshed public JLCPCB page shows **8,538 available to order**, sufficient
+for ten boards. The raw field `overseasStockCount` is displayed by the site as
+“In Stock”; its name alone does not establish a separate overseas sourcing route.
+`preMinPurchaseNum = 24` applies to a pre-order beyond available stock, not to
+this in-stock assembly quantity. Stock is not reserved. The original cautious
+interpretation is superseded by the [assembly stock audit](assembly-readiness.md)
+and refreshed [crystal observation](components/crystal-jlc-stock.json).
 
 Sources: [NXP oscillator guide](https://www.nxp.com/docs/en/application-note/AN14518.pdf),
 [PN7160 datasheet rev. 4.2](https://www.nxp.com/docs/en/data-sheet/PN7160_PN7161.pdf),
@@ -57,10 +58,10 @@ Copies of the NXP and NDK PDFs are in `parts documentation/`.
 
 ## Crystal load calculation and adjustment
 
-C26 = **12 pF**, Samsung CL10C120JB8NNNC, and C27 = **15 pF**,
+C26 = **12 pF**, Samsung CL10C120JB8NNNC (C38523), and C27 = **15 pF**,
 Samsung CL10C150JB8NNNC (C1644). Both are **0603, 50 V, C0G, ±5%**.
-The 12 pF part has a manufacturer ordering code; no unverified JLCPCB code is
-attached to it. These are starting values, not a claim of final frequency.
+Both exact JLCPCB codes are now verified. These are starting values, not a claim
+of final frequency.
 
 We used NXP AN14518 rev. 6.0 Figure 5's explicitly stated model:
 

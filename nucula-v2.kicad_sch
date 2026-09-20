@@ -1946,7 +1946,7 @@
         (justify left)
       )
     )
-    (property "Manufacturer" "Microchip"
+    (property "Manufacturer" "Microchip Tech"
       (at 66.04 139.7 0)
       (effects
         (font
@@ -1971,6 +1971,15 @@
           (reference "U9")
           (unit 1)
         )
+      )
+    )
+    (property "LCSC" "C62244"
+      (at 66.04 139.7 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
       )
     )
   )
@@ -2119,7 +2128,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL21B105KBFNNNE_C28323.pdf"
       (at 35.56 160.02 0)
       (effects
         (font
@@ -2129,7 +2138,7 @@
         (justify left)
       )
     )
-    (property "Voltage" "10 V"
+    (property "Voltage" "50 V"
       (at 35.56 160.02 0)
       (effects
         (font
@@ -2149,7 +2158,7 @@
         (justify left)
       )
     )
-    (property "Tolerance" "20%"
+    (property "Tolerance" "10%"
       (at 35.56 160.02 0)
       (effects
         (font
@@ -2171,6 +2180,33 @@
           (reference "C49")
           (unit 1)
         )
+      )
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 35.56 160.02 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "CL21B105KBFNNNE"
+      (at 35.56 160.02 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C28323"
+      (at 35.56 160.02 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
       )
     )
   )
@@ -2298,7 +2334,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL21B225KAFNNNE_C19110.pdf"
       (at 96.52 160.02 0)
       (effects
         (font
@@ -2308,7 +2344,7 @@
         (justify left)
       )
     )
-    (property "Voltage" "10 V"
+    (property "Voltage" "25 V"
       (at 96.52 160.02 0)
       (effects
         (font
@@ -2328,7 +2364,7 @@
         (justify left)
       )
     )
-    (property "Tolerance" "20%"
+    (property "Tolerance" "10%"
       (at 96.52 160.02 0)
       (effects
         (font
@@ -2350,6 +2386,33 @@
           (reference "C50")
           (unit 1)
         )
+      )
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 96.52 160.02 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "CL21B225KAFNNNE"
+      (at 96.52 160.02 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C19110"
+      (at 96.52 160.02 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
       )
     )
   )
@@ -2477,7 +2540,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010230_UNI-ROYAL-Uniroyal-Elec-0603WAF2201T5E_C4190.pdf"
       (at 142.24 138.43 0)
       (effects
         (font
@@ -2519,6 +2582,33 @@
           (reference "R19")
           (unit 1)
         )
+      )
+    )
+    (property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+      (at 142.24 138.43 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "0603WAF2201T5E"
+      (at 142.24 138.43 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C4190"
+      (at 142.24 138.43 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
       )
     )
   )
@@ -2600,7 +2690,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010230_UNI-ROYAL-Uniroyal-Elec-0603WAF2201T5E_C4190.pdf"
       (at 175.26 138.43 0)
       (effects
         (font
@@ -2642,6 +2732,33 @@
           (reference "R20")
           (unit 1)
         )
+      )
+    )
+    (property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+      (at 175.26 138.43 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "0603WAF2201T5E"
+      (at 175.26 138.43 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C4190"
+      (at 175.26 138.43 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
       )
     )
   )
@@ -2723,7 +2840,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1003T5E_C25803.pdf"
       (at 175.26 172.72 0)
       (effects
         (font
@@ -2765,6 +2882,33 @@
           (reference "R40")
           (unit 1)
         )
+      )
+    )
+    (property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+      (at 175.26 172.72 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "0603WAF1003T5E"
+      (at 175.26 172.72 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C25803"
+      (at 175.26 172.72 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
       )
     )
   )

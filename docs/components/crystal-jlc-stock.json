@@ -1,16 +1,31 @@
 {
+  "componentCode": "C3008209",
+  "componentModelEn": "NX2016SA-27.12MHZ-EXS00A-CS06346",
+  "componentBrandEn": "NDK",
+  "componentSpecificationEn": "SMD2016-4P",
+  "describe": "-40\u2103~+125\u2103 10pF 27.12MHz 60\u03a9 Crystal Oscillator SMD2016-4P Crystals ROHS",
+  "componentLibraryType": "expand",
+  "assemblyMode": "smtWeld",
+  "assemblyComponentFlag": false,
+  "componentProductType": 0,
+  "needAuditFlag": false,
+  "xrayFlag": false,
+  "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206291701_NDK-NX2016SA-27-12MHZ-EXS00A-CS06346_C3008209.pdf",
+  "dataManualOfficialLink": "",
+  "orderInstructionEnglish": "",
+  "preMinPurchaseNum": 24,
+  "overseasStockCount": 8901,
+  "canPresaleNumber": 8538,
+  "leastPatchNumber": 5,
+  "lossNumber": 0,
+  "isBuyComponent": "1",
+  "allowPostFlag": true,
+  "initialPrice": 0.3803,
   "source": "https://jlcpcb.com/partdetail/C3008209",
-  "retrieved": "2026-09-20",
-  "fields": {
-    "componentCode": "C3008209",
-    "componentModelEn": "NX2016SA-27.12MHZ-EXS00A-CS06346",
-    "componentBrandEn": "NDK",
-    "componentSpecificationEn": "SMD2016-4P",
-    "preMinPurchaseNum": 24,
-    "canPresaleNumber": 8533,
-    "overseasStockCount": 8896,
-    "leastPatchNumber": 5,
-    "isBuyComponent": "1"
-  },
-  "interpretation": "Public JLCPCB sourcing fields show overseas supply and purchasable quantity. Not a reservation or proof of stock at the assembly factory."
+  "retrieved_at": "2026-09-20T16:23:16.409146+00:00",
+  "page_sha256": "d5aa4f98931ccd538e16ad17e597f2e944a9ec48660352016ac9fc6dce7a8053",
+  "references": [
+    "Y1"
+  ],
+  "interpretation": "Public JLCPCB In Stock and Available Order Qty fields; stock sufficient for 10-board planning, not reserved. Preorder MOQ does not apply to in-stock assembly quantity."
 }

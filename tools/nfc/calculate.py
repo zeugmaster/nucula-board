@@ -86,8 +86,9 @@ def coil_z(f, la, ra, ca):
     return 1 / (1 / (ra + 1j * 2 * np.pi * f * la) + 1j * 2 * np.pi * f * ca)
 
 
-def network(f, la, ra, ca, rq, c1, c2, c0=360e-12, lscale=1., rx=True):
+def network(f, la, ra, ca, rq, c1, c2, c0=330e-12, lscale=1., rx=True, c0_trim=33e-12):
     """Odd-mode half circuit. C0/C1/C2 are EACH physical branch value.
+    C0 is the main EMC capacitor; c0_trim is its physical parallel capacitor.
     Returns DIFFERENTIAL input impedance and half-circuit node voltage ratios.
     Capacitor ESR 0.03 ohm/part is an assumption, included in solve and sweeps.
     """
@@ -100,7 +101,7 @@ def network(f, la, ra, ca, rq, c1, c2, c0=360e-12, lscale=1., rx=True):
     # RX input impedance is AGC dependent. Representative 2.2k internal
     # shunt is an assumption; the 2.2k external + 1nF are NXP start values.
     zrx = 2200. + 2200. + cap(1e-9)
-    z0 = 1 / (1 / cap(c0) + 1 / zs + (1 / zrx if rx else 0.))
+    z0 = 1 / (1 / cap(c0) + 1 / cap(c0_trim) + 1 / zs + (1 / zrx if rx else 0.))
     zl = inductor_z(f, lscale)
     zh = zl + z0
     vemc = z0 / zh
@@ -109,7 +110,7 @@ def network(f, la, ra, ca, rq, c1, c2, c0=360e-12, lscale=1., rx=True):
     return 2 * zh, (vemc, vmatch, vant)
 
 
-def solve(la, ra, ca, target, q=20., c0=360e-12):
+def solve(la, ra, ca, target, q=20., c0=330e-12):
     za = coil_z(F0, la, ra, ca)
     rq = max(0., (za.imag / q - za.real) / 2)
     def residual(logc):
@@ -168,7 +169,7 @@ def main():
         tz, _ = network(F0, la, ra, ca, rq,
                         c1 + (delta if name == 'C1' else 0),
                         c2 + (delta if name == 'C2' else 0),
-                        360e-12 + (delta if name == 'C0' else 0))
+                        330e-12 + (delta if name == 'C0' else 0))
         trims.append(dict(change=name, added_each_leg_pF=delta*1e12,
                           z_diff_real_ohm=tz.real, z_diff_imag_ohm=tz.imag))
     za = coil_z(F0, la, ra, ca)
@@ -183,8 +184,9 @@ def main():
     rmc = rng.uniform(1., 2.5, size)
     camc = rng.uniform(1e-12, 5e-12, size)
     zmc, _ = network(F0, lmc, rmc, camc, rq * rng.uniform(.99, 1.01, size),
-                      c1 * rng.uniform(.98, 1.02, size), c2 * rng.uniform(.98, 1.02, size),
-                      360e-12 * rng.uniform(.98, 1.02, size), rng.uniform(.98, 1.02, size))
+                      c1 * rng.uniform(.99, 1.01, size), c2 * rng.uniform(.98, 1.02, size),
+                      330e-12 * rng.uniform(.99, 1.01, size), rng.uniform(.98, 1.02, size),
+                      c0_trim=33e-12 * rng.uniform(.95, 1.05, size))
     # Fundamental estimate for ideal differential square drive: V1rms=2sqrt(2)VTVDD/pi.
     stress = []
     for tvdd in [2.7, 3.3, 5.]:
@@ -209,10 +211,12 @@ def main():
                   alternate_13ohm_solve=solve(la, ra, ca, 13.),
                   isolated_rx_removed_Z_ohm=[isolated_z.real, isolated_z.imag],
                   paired_trim_examples=trims,
-                  assembly=dict(c0_pF=360., c1_pF=68., c2_pF=100., rq_each_ohm=rq,
+                  assembly=dict(c0_pF=363., c0_main_pF=330., c0_parallel_pF=33.,
+                      c0_worst_case_range_pF=[358.05,367.95], c0_tolerance_percent=100*4.95/363,
+                      c1_pF=68., c2_pF=100., rq_each_ohm=rq,
                       z_diff_real_ohm=z.real, z_diff_imag_ohm=z.imag,
                       coil_damped_q=za.imag/(za.real+2*rq),
-                      emc_nominal_resonance_MHz=1/(2*np.pi*np.sqrt(150e-9*360e-12))/1e6,
+                      emc_nominal_resonance_MHz=1/(2*np.pi*np.sqrt(150e-9*363e-12))/1e6,
                       modeled_inductor_z_real_ohm=inductor_z(F0).real,
                       modeled_inductor_z_imag_ohm=inductor_z(F0).imag,
                       return_loss_to_target_dB=-20*math.log10(abs((z-args.target_ohm)/(z+args.target_ohm))),
@@ -229,7 +233,7 @@ def main():
     out=args.out;out.mkdir(parents=True,exist_ok=True)
     (out/'calculations.json').write_text(json.dumps(report,indent=2)+'\n')
     with (out/'impedance-sweep.csv').open('w',newline='') as fp:
-        w=csv.writer(fp);w.writerow(['frequency_Hz','Zdiff_real_ohm','Zdiff_imag_ohm','return_loss_target_dB','coil_voltage_gain'])
+        w=csv.writer(fp,lineterminator='\n');w.writerow(['frequency_Hz','Zdiff_real_ohm','Zdiff_imag_ohm','return_loss_target_dB','coil_voltage_gain'])
         w.writerows(zip(f,zin.real,zin.imag,-20*np.log10(abs(gamma)),abs(vs[2])))
     fig, axes = plt.subplots(2,1,figsize=(8,7),sharex=True,layout='constrained')
     axes[0].plot(f/1e6,zin.real,label='Resistance');axes[0].plot(f/1e6,zin.imag,label='Reactance')
@@ -242,6 +246,8 @@ def main():
     for ax in axes:ax.axvline(13.56,color='#aa4433',ls='--')
     fig.suptitle('NFC prototype: assumed antenna + typical RF component models\n68 pF series / 100 pF shunt / 2.7 ohm each leg')
     fig.savefig(out/'impedance-sweep.svg');plt.close(fig)
+    svg=out/'impedance-sweep.svg'
+    svg.write_text('\n'.join(line.rstrip() for line in svg.read_text().splitlines())+'\n')
     print(json.dumps({k:v for k,v in report.items() if k not in ['retuning_scenarios','limitations']},indent=2))
 
 

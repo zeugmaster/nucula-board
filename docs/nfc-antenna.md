@@ -69,9 +69,9 @@ values on both sides. Tight pair matching matters as well as absolute tolerance.
 | Project references | Function | Initial assembly | Package / requirements |
 |---|---|---|---|
 | L2, L3 | EMC series inductors | **150 nH** | Coilcraft **0805HP-151XGRC**, 2%; manufacturer land pattern |
-| C30, C31 | EMC shunt C0 | **360 pF** | 0805 hand-solder, C0G/NP0, 100 V, 2% |
-| C53, C54 | Parallel EMC trim | **DNP** | 0805 hand-solder, no paste |
-| C32, C33 | Series matching C1 | **68 pF** | 0805 hand-solder, C0G/NP0, 100 V, 2% |
+| C30, C31 | EMC main capacitor | **330 pF** | 0805 hand-solder, C0G/NP0, 100 V, 1% |
+| C53, C54 | Populated parallel EMC capacitor | **33 pF** | 0805 hand-solder, C0G/NP0, 100 V, 5% |
+| C32, C33 | Series matching C1 | **68 pF** | 0805 hand-solder, C0G/NP0, 100 V, 1% |
 | C34, C35 | Parallel series-cap trim | **DNP** | 0805 hand-solder, no paste |
 | C36, C37 | Antenna-side shunt C2 | **100 pF** | 0805 hand-solder, C0G/NP0, 100 V, 2% |
 | C38, C39 | Parallel shunt trim | **DNP** | 0805 hand-solder, no paste |
@@ -81,7 +81,24 @@ values on both sides. Tight pair matching matters as well as absolute tolerance.
 | R41, R42 | Removable TX isolation links | **0 Ω, fitted** | 0805 hand-solder, ≥0.5 A jumper rating |
 | A1 | Etched PCB loop | Manufactured copper | Excluded from purchased BOM and pick/place |
 
-The 150 nH / 360 pF EMC pair gives a nominal **21.66 MHz** LC resonance. It is
+The 10-board sourcing review replaces the difficult-to-source 360 pF ±2%
+part with **330 pF ±1% + 33 pF ±5% in parallel on each leg**, using the existing
+C53/C54 pads. Both parts remain 100 V C0G/NP0 in hand-solderable 0805.
+The sum is 363 pF with worst-case tolerance ±(3.30 + 1.65) = **±4.95 pF
+(±1.364%)**, range 358.05–367.95 pF. Nominal capacitance increases 0.833%;
+this is a recalculated starting value, not an identical 360 pF replacement.
+The Python and full differential SPICE models include both capacitors with
+separate assumed 0.03 Ω ESRs. The uncertainty sweep uses their individual
+1%/5% tolerances and the selected 68 pF part's 1% tolerance.
+
+C34/C35 and C38/C39 remain **four free, no-paste manual tuning pads**.
+C53/C54 are now populated and have normal paste apertures; change these
+small parallel values in matched pairs when adjusting the EMC stage.
+Exact JLCPCB codes, stock constraints and the 10-board BOM are in the
+[assembly audit](assembly-readiness.md). Do not substitute arbitrary 150 nH
+inductors or ordinary low-power 2.7 Ω resistors without rechecking the RF model.
+
+The 150 nH / 363 pF EMC pair gives a nominal **21.57 MHz** LC resonance. It is
 close to NXP's 160 nH / 330 pF example; the selected Coilcraft part has an
 accessible frequency-dependent model and an 0805 package. Both values were
 recalculated together. The old `0805HQ` land pattern is not reused for the
@@ -188,6 +205,7 @@ Za = [(Ra + jωLa)^-1 + jωCa]^-1
 Zd = Rq + Za/2
 Zp = Zd || ZC2
 Zs = ZC1 + Zp
+ZC0 = ZC330 || ZC33
 Z0 = ZC0 || Zs || Zrx
 Zdiff = 2 * (ZL0 + Z0)
 Rq = [Im(Za)/Qtarget - Re(Za)] / 2
@@ -207,21 +225,21 @@ Solving `Re(Zdiff)=20 Ω`, `Im(Zdiff)=0`, `Qtarget=20` gives:
 
 | Quantity | Continuous solution | Initial standard part |
 |---|---:|---:|
-| Series C1, each leg | 66.60 pF | 68 pF |
-| Shunt C2, each leg | 102.07 pF | 100 pF |
+| Series C1, each leg | 66.45 pF | 68 pF |
+| Shunt C2, each leg | 102.28 pF | 100 pF |
 | Damping Rq, each leg | 2.612 Ω | 2.7 Ω |
 
-The standard-part result is **18.950 − j0.184 Ω** at 13.56 MHz, with damped
+The standard-part result is **18.838 − j0.140 Ω** at 13.56 MHz, with damped
 coil Q ≈ **19.50**. Q here describes the damped antenna branch at the operating
 frequency; it is not the loaded Q or bandwidth of the entire higher-order network.
 With the RX branches removed for passive testing, the same nominal model gives
-**18.910 − j0.284 Ω**. As a local sensitivity example, adding 1 pF to each C1
-changes the assembled result to **20.64 + j1.35 Ω**; adding 1 pF to each C2 instead
-gives **20.75 + j0.76 Ω**. These are separate changes from the baseline and show
+**18.797 − j0.240 Ω**. As a local sensitivity example, adding 1 pF to each C1
+changes the assembled result to **20.53 + j1.38 Ω**; adding 1 pF to each C2 instead
+gives **20.63 + j0.79 Ω**. These are separate changes from the baseline and show
 why both capacitor adjustments must be iterated rather than treated independently.
 
 The full differential network was independently evaluated by **ngspice 45.2**
-bundled with KiCad, agreeing to a relative difference of **2.82e-12**. That
+bundled with KiCad, agreeing to a relative difference of **3.01e-12**. That
 checks the math and factor-of-two conventions, not physical accuracy. The
 standalone [SPICE circuit](nfc/matching.cir) freezes Coilcraft's frequency-dependent
 loss at 13.56 MHz for its single-frequency check; the Python sweep evaluates
@@ -241,13 +259,13 @@ lower TX-LDO setting when battery headroom requires it. VSYS is not a fixed
 5 V transmitter rail. Firmware and dropout behavior still need validation.
 
 NXP's higher-field low-voltage target is 13 Ω at TVDD ≤3.3 V. Re-solving this
-model for 13 Ω gives **76.31 pF C1 / 87.44 pF C2** with the same calculated
+model for 13 Ω gives **76.01 pF C1 / 87.81 pF C2** with the same calculated
 damping. That is an alternative requiring retuning and current checks; **do not
 use a 13 Ω match with a 5 V TX preset**. The populated design remains 20 Ω.
 See AN13219 sections 4.1.3.4–4.1.3.7 for the target/Q/filter guidance.
 
 Sensitivity scenarios use L ±10%, Ra 1–2.5 Ω and Ca 1–5 pF. Their required
-C1 range is **62.39–70.45 pF**, C2 **84.66–119.43 pF**, and Rq **1.74–3.33 Ω**.
+C1 range is **62.25–70.29 pF**, C2 **84.85–119.65 pF**, and Rq **1.74–3.33 Ω**.
 This explains why spare pads alone are insufficient: **parallel trims can only
 increase capacitance**, so replacing the base part must remain easy. A seeded
 10,000-case balanced uncertainty sweep also produces large impedance excursions;
@@ -259,9 +277,9 @@ An ideal square differential drive has fundamental RMS voltage
 
 | TVDD | Coil RMS current | Each 2.7 Ω resistor | Coil differential peak voltage |
 |---|---:|---:|---:|
-| 2.7 V | 0.201 A | 0.109 W | 38.5 V |
-| 3.3 V | 0.245 A | 0.162 W | 47.1 V |
-| 5.0 V, stress scenario only | 0.371 A | 0.372 W | 71.4 V |
+| 2.7 V | 0.201 A | 0.109 W | 38.6 V |
+| 3.3 V | 0.246 A | 0.163 W | 47.2 V |
+| 5.0 V, stress scenario only | 0.372 A | 0.374 W | 71.6 V |
 
 These estimates motivate 100 V capacitors and larger damping resistors. Coil
 circulating current is **not the TX-LDO supply current**. The calculation omits

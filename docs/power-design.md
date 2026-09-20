@@ -52,12 +52,15 @@ Keep the existing **100 mA charge setting**, equivalent to **0.25C at 400 mAh**.
 Adafruit's example permits up to 400 mA charging and recommends its 100 mA
 charger setting. The final pack's own limits still apply.
 
-U1 is the Top Power **TP4054-42-SOT235**, not the BL4054 symbol name carried by
+U1 is the Top Power **TP4054-42-SOT25R**, not the BL4054 symbol name carried by
 the reference. R3 = 10 kΩ sets 100 mA nominal; the data sheet specifies
-85–115 mA at its stated conditions. Termination is approximately 10 mA.
+90–110 mA at its stated conditions; the existing 115 mA power-budget allowance
+remains conservative. Termination is approximately 10 mA.
 C1 and C2 provide input/battery bypassing. D3 indicates charging.
 The charger has internal thermal regulation, which does not measure cell temperature.
-[TP4054 Rev 2.1 datasheet](https://www.toppwr.com/uploadfile/file/20240913/66e3d01d4c944.pdf).
+[Selected C32574 manufacturer datasheet](../parts%20documentation/TP4054-42-SOT25R-C32574-datasheet.pdf).
+The catalogue ordering suffix replaces the former SOT235 entry; pins 1–5
+remain CHRG, GND, BAT, VCC, PROG and the 10 kΩ setting remains 100 mA.
 
 D1/D2 now use **B340A-13-F**, 3 A / 40 V in SMA, for additional current margin
 with NFC and OLED loads. The footprint and topology are unchanged. This rating
@@ -89,13 +92,15 @@ Silergy's preferred 50 mΩ target; verify loss and temperature in layout.
 [Manufacturer specifications and name change](https://ds.yuden.co.jp/TYCOMPAS/eu/detail?pn=LSXND3030QKT2R2MNG&u=M).
 
 The buck cannot maintain 3.3 V over the entire battery discharge curve.
-U5, **TLV803EA30DCKR**, monitors the rail and pulls ESP_EN low around 3.08 V.
+U5, **TLV803EA30DBZR**, monitors the rail and pulls ESP_EN low around 3.08 V.
 Its minimum static falling threshold is 3.018 V; maximum release threshold,
 including hysteresis, is about 3.189 V, below the calculated minimum regulated
 rail. Reset release is delayed about 200 ms. Fast dips still require transient
 verification; the supervisor has propagation/glitch delays and EN has capacitance.
 It does not disconnect the cell, so a protected battery remains necessary.
-The **DCK/SC70 pinout is 1 GND, 2 RESET, 3 VDD**.
+The stocked **DBZ/SOT-23 variant has pins 1 GND, 2 RESET, 3 VDD**.
+It replaces the out-of-stock DCK/SC70 package; threshold, delay and wiring remain
+the same. Use the new SOT-23 footprint, not the old SC70 land pattern.
 [TI datasheet](https://www.ti.com/lit/ds/symlink/tlv803e.pdf).
 
 ## USB, boot and sensing

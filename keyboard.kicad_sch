@@ -1649,7 +1649,7 @@
         (justify left)
       )
     )
-    (property "Manufacturer" "NXP"
+    (property "Manufacturer" "NXP Semicon"
       (at 114.3 78.74 0)
       (effects
         (font
@@ -1733,6 +1733,15 @@
           (reference "U8")
           (unit 1)
         )
+      )
+    )
+    (property "LCSC" "C7605"
+      (at 114.3 78.74 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
       )
     )
   )
@@ -2586,7 +2595,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf"
       (at 40.64 114.3 0)
       (effects
         (font
@@ -2596,7 +2605,7 @@
         (justify left)
       )
     )
-    (property "Voltage" "10 V"
+    (property "Voltage" "50 V"
       (at 40.64 114.3 0)
       (effects
         (font
@@ -2638,6 +2647,33 @@
           (reference "C51")
           (unit 1)
         )
+      )
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 40.64 114.3 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "CL10B104KB8NNNC"
+      (at 40.64 114.3 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C1591"
+      (at 40.64 114.3 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
       )
     )
   )
@@ -2773,7 +2809,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL21B105KBFNNNE_C28323.pdf"
       (at 63.5 114.3 0)
       (effects
         (font
@@ -2783,7 +2819,7 @@
         (justify left)
       )
     )
-    (property "Voltage" "10 V"
+    (property "Voltage" "50 V"
       (at 63.5 114.3 0)
       (effects
         (font
@@ -2803,7 +2839,7 @@
         (justify left)
       )
     )
-    (property "Tolerance" "20%"
+    (property "Tolerance" "10%"
       (at 63.5 114.3 0)
       (effects
         (font
@@ -2825,6 +2861,33 @@
           (reference "C52")
           (unit 1)
         )
+      )
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 63.5 114.3 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "CL21B105KBFNNNE"
+      (at 63.5 114.3 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C28323"
+      (at 63.5 114.3 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
       )
     )
   )
@@ -2960,7 +3023,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf"
       (at 101.6 121.92 0)
       (effects
         (font
@@ -3002,6 +3065,33 @@
           (reference "R37")
           (unit 1)
         )
+      )
+    )
+    (property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+      (at 101.6 121.92 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "0603WAF1002T5E"
+      (at 101.6 121.92 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C25804"
+      (at 101.6 121.92 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
       )
     )
   )

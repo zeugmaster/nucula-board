@@ -13,9 +13,13 @@ Rpar z b 10
 XLP txp ep emc
 XLN txn en emc
 Rcp0 ep ep0 .03
-Cp0 ep0 0 360p
+Cp0 ep0 0 330p
 Rcn0 en en0 .03
-Cn0 en0 0 360p
+Cn0 en0 0 330p
+Rcpt ep ept .03
+Cpt ept 0 33p
+Rcnt en ent .03
+Cnt ent 0 33p
 Rcp1 ep sp .03
 Cp1 sp mp 68p
 Rcn1 en sn .03

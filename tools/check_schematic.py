@@ -128,8 +128,8 @@ for pin in ['J3.1','J3.9','U8.12']:
 assert 'KEY_P7' not in net_members, 'Only seven matrix lines connect to the keypad'
 
 values = {r: c.findtext('value') for r, c in components.items()}
-for ref, value in {'U1':'TP4054-42-SOT235', 'U2':'SY8089AAAC', 'U3':'ESP32-C3-WROOM-02-N4',
-                   'U5':'TLV803EA30DCKR', 'R1':'5.1k', 'R2':'5.1k', 'R3':'10k',
+for ref, value in {'U1':'TP4054-42-SOT25R', 'U2':'SY8089AAAC', 'U3':'ESP32-C3-WROOM-02-N4',
+                   'U5':'TLV803EA30DBZR', 'R1':'5.1k', 'R2':'5.1k', 'R3':'10k',
                    'R6':'220k', 'R7':'48.7k', 'R12':'22R', 'R13':'22R',
                    'R15':'470k', 'R16':'470k', 'L1':'2.2uH', 'D1':'B340A','D2':'B340A',
                    'U6':'PN7160A1HN/C100E','U7':'AP3012KTR-E1','U8':'PCF8574T',
@@ -137,7 +137,7 @@ for ref, value in {'U1':'TP4054-42-SOT235', 'U2':'SY8089AAAC', 'U3':'ESP32-C3-WR
                    'R22':'100k','R23':'100k','R24':'100k','R29':'0R','R30':'1.8M',
                    'R31':'200k','R32':'910k','L4':'10uH','D4':'SS14',
                    'L2':'150nH','L3':'150nH','C28':'1nF','C29':'1nF',
-                   'C30':'360pF','C31':'360pF','C32':'68pF','C33':'68pF',
+                   'C30':'330pF','C31':'330pF','C53':'33pF','C54':'33pF','C32':'68pF','C33':'68pF',
                    'C36':'100pF','C37':'100pF','R25':'2.2k','R26':'2.2k',
                    'R27':'2.7R','R28':'2.7R','R41':'0R','R42':'0R'}.items():
     assert values[ref] == value, (ref, values[ref])
@@ -165,7 +165,7 @@ read_hierarchy(SCH)
 assert len(schematics) == 5
 for ref in ['D1','D2']:
     assert properties(instances[ref])['Datasheet'] == 'https://www.diodes.com/datasheet/download/B340A.pdf'
-for ref in ['C7','C8','J3','J4','J5','C34','C35','C38','C39','C53','C54','R38','R39']:
+for ref in ['C7','C8','J3','J4','J5','C34','C35','C38','C39','R38','R39']:
     assert child(instances[ref],'dnp')[1] == 'yes', f'{ref} must remain DNP'
 assert fields['J3']['Pinout'] == '1=NC; 2..8=P0..P6; 9=NC'
 assert components['J3'].findtext('footprint') == 'Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical'

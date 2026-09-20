@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>nucula-v2.kicad_sch</source>
-    <date>2026-09-20T18:07:23</date>
+    <date>2026-09-20T18:43:34</date>
     <tool>Eeschema 10.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -99,18 +99,25 @@
     <comp ref="C49">
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL21B105KBFNNNE_C28323.pdf</datasheet>
       <fields>
-        <field name="Voltage">10 V</field>
+        <field name="Voltage">50 V</field>
         <field name="Dielectric">X7R</field>
-        <field name="Tolerance">20%</field>
+        <field name="Tolerance">10%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL21B105KBFNNNE</field>
+        <field name="LCSC">C28323</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL21B105KBFNNNE_C28323.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="10 V"/>
+      <property name="Voltage" value="50 V"/>
       <property name="Dielectric" value="X7R"/>
-      <property name="Tolerance" value="20%"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL21B105KBFNNNE"/>
+      <property name="LCSC" value="C28323"/>
       <property name="Sheetname" value="nucula-v2"/>
       <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -129,18 +136,25 @@
     <comp ref="C50">
       <value>2.2uF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL21B225KAFNNNE_C19110.pdf</datasheet>
       <fields>
-        <field name="Voltage">10 V</field>
+        <field name="Voltage">25 V</field>
         <field name="Dielectric">X7R</field>
-        <field name="Tolerance">20%</field>
+        <field name="Tolerance">10%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL21B225KAFNNNE</field>
+        <field name="LCSC">C19110</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL21B225KAFNNNE_C19110.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="10 V"/>
+      <property name="Voltage" value="25 V"/>
       <property name="Dielectric" value="X7R"/>
-      <property name="Tolerance" value="20%"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL21B225KAFNNNE"/>
+      <property name="LCSC" value="C19110"/>
       <property name="Sheetname" value="nucula-v2"/>
       <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -193,16 +207,23 @@
     <comp ref="R19">
       <value>2.2k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2206010230_UNI-ROYAL-Uniroyal-Elec-0603WAF2201T5E_C4190.pdf</datasheet>
       <fields>
         <field name="Tolerance">1%</field>
         <field name="Rating">0.1 W</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="MPN">0603WAF2201T5E</field>
+        <field name="LCSC">C4190</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2206010230_UNI-ROYAL-Uniroyal-Elec-0603WAF2201T5E_C4190.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="MPN" value="0603WAF2201T5E"/>
+      <property name="LCSC" value="C4190"/>
       <property name="Sheetname" value="nucula-v2"/>
       <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -221,16 +242,23 @@
     <comp ref="R20">
       <value>2.2k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2206010230_UNI-ROYAL-Uniroyal-Elec-0603WAF2201T5E_C4190.pdf</datasheet>
       <fields>
         <field name="Tolerance">1%</field>
         <field name="Rating">0.1 W</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="MPN">0603WAF2201T5E</field>
+        <field name="LCSC">C4190</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2206010230_UNI-ROYAL-Uniroyal-Elec-0603WAF2201T5E_C4190.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="MPN" value="0603WAF2201T5E"/>
+      <property name="LCSC" value="C4190"/>
       <property name="Sheetname" value="nucula-v2"/>
       <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -249,16 +277,23 @@
     <comp ref="R40">
       <value>100k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1003T5E_C25803.pdf</datasheet>
       <fields>
         <field name="Tolerance">1%</field>
         <field name="Rating">0.1 W</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="MPN">0603WAF1003T5E</field>
+        <field name="LCSC">C25803</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1003T5E_C25803.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="MPN" value="0603WAF1003T5E"/>
+      <property name="LCSC" value="C25803"/>
       <property name="Sheetname" value="nucula-v2"/>
       <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -280,14 +315,16 @@
       <datasheet>https://ww1.microchip.com/downloads/en/DeviceDoc/MCP1700-Data-Sheet-20001826F.pdf</datasheet>
       <fields>
         <field name="MPN">MCP1700T-3002E/TT</field>
-        <field name="Manufacturer">Microchip</field>
+        <field name="Manufacturer">Microchip Tech</field>
+        <field name="LCSC">C62244</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
         <field name="Datasheet">https://ww1.microchip.com/downloads/en/DeviceDoc/MCP1700-Data-Sheet-20001826F.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Regulator_Linear" part="MCP1700x-300xxTT" description="250mA Low Quiscent Current LDO, 3.0V output, SOT-23"/>
       <property name="MPN" value="MCP1700T-3002E/TT"/>
-      <property name="Manufacturer" value="Microchip"/>
+      <property name="Manufacturer" value="Microchip Tech"/>
+      <property name="LCSC" value="C62244"/>
       <property name="Sheetname" value="nucula-v2"/>
       <property name="Sheetfile" value="nucula-v2.kicad_sch"/>
       <property name="ki_keywords" value="regulator linear ldo"/>
@@ -385,18 +422,25 @@
     <comp ref="C3">
       <value>22pF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10C220JB8NNNC_C1653.pdf</datasheet>
       <fields>
-        <field name="Voltage">16 V</field>
+        <field name="Voltage">50 V</field>
         <field name="Dielectric">C0G</field>
-        <field name="Tolerance">10%</field>
+        <field name="Tolerance">5%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL10C220JB8NNNC</field>
+        <field name="LCSC">C1653</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10C220JB8NNNC_C1653.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="16 V"/>
+      <property name="Voltage" value="50 V"/>
       <property name="Dielectric" value="C0G"/>
-      <property name="Tolerance" value="10%"/>
+      <property name="Tolerance" value="5%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL10C220JB8NNNC"/>
+      <property name="LCSC" value="C1653"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -633,18 +677,25 @@
     <comp ref="C10">
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf</datasheet>
       <fields>
-        <field name="Voltage">16 V</field>
+        <field name="Voltage">50 V</field>
         <field name="Dielectric">X7R</field>
         <field name="Tolerance">10%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL10B104KB8NNNC</field>
+        <field name="LCSC">C1591</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="16 V"/>
+      <property name="Voltage" value="50 V"/>
       <property name="Dielectric" value="X7R"/>
       <property name="Tolerance" value="10%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL10B104KB8NNNC"/>
+      <property name="LCSC" value="C1591"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -663,18 +714,25 @@
     <comp ref="C11">
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf</datasheet>
       <fields>
-        <field name="Voltage">16 V</field>
+        <field name="Voltage">50 V</field>
         <field name="Dielectric">X7R</field>
         <field name="Tolerance">10%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL10B104KB8NNNC</field>
+        <field name="LCSC">C1591</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="16 V"/>
+      <property name="Voltage" value="50 V"/>
       <property name="Dielectric" value="X7R"/>
       <property name="Tolerance" value="10%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL10B104KB8NNNC"/>
+      <property name="LCSC" value="C1591"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -693,18 +751,25 @@
     <comp ref="C12">
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B105KA8NNNC_C29936.pdf</datasheet>
       <fields>
-        <field name="Voltage">16 V</field>
+        <field name="Voltage">25 V</field>
         <field name="Dielectric">X7R</field>
         <field name="Tolerance">10%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL10B105KA8NNNC</field>
+        <field name="LCSC">C29936</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B105KA8NNNC_C29936.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="16 V"/>
+      <property name="Voltage" value="25 V"/>
       <property name="Dielectric" value="X7R"/>
       <property name="Tolerance" value="10%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL10B105KA8NNNC"/>
+      <property name="LCSC" value="C29936"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -723,18 +788,25 @@
     <comp ref="C13">
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf</datasheet>
       <fields>
-        <field name="Voltage">16 V</field>
+        <field name="Voltage">50 V</field>
         <field name="Dielectric">X7R</field>
         <field name="Tolerance">10%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL10B104KB8NNNC</field>
+        <field name="LCSC">C1591</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="16 V"/>
+      <property name="Voltage" value="50 V"/>
       <property name="Dielectric" value="X7R"/>
       <property name="Tolerance" value="10%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL10B104KB8NNNC"/>
+      <property name="LCSC" value="C1591"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -753,18 +825,25 @@
     <comp ref="C14">
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf</datasheet>
       <fields>
-        <field name="Voltage">16 V</field>
+        <field name="Voltage">50 V</field>
         <field name="Dielectric">X7R</field>
         <field name="Tolerance">10%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL10B104KB8NNNC</field>
+        <field name="LCSC">C1591</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="16 V"/>
+      <property name="Voltage" value="50 V"/>
       <property name="Dielectric" value="X7R"/>
       <property name="Tolerance" value="10%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL10B104KB8NNNC"/>
+      <property name="LCSC" value="C1591"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -788,6 +867,7 @@
         <field name="MPN">B340A-13-F</field>
         <field name="Manufacturer">Diodes Incorporated</field>
         <field name="Rating">3 A / 40 V; SMA; layout thermal derating required</field>
+        <field name="LCSC">C85098</field>
         <field name="Footprint">Diode_SMD:D_SMA</field>
         <field name="Datasheet">https://www.diodes.com/datasheet/download/B340A.pdf</field>
         <field name="Description"/>
@@ -796,6 +876,7 @@
       <property name="MPN" value="B340A-13-F"/>
       <property name="Manufacturer" value="Diodes Incorporated"/>
       <property name="Rating" value="3 A / 40 V; SMA; layout thermal derating required"/>
+      <property name="LCSC" value="C85098"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="diode Schottky"/>
@@ -819,6 +900,7 @@
         <field name="MPN">B340A-13-F</field>
         <field name="Manufacturer">Diodes Incorporated</field>
         <field name="Rating">3 A / 40 V; SMA; layout thermal derating required</field>
+        <field name="LCSC">C85098</field>
         <field name="Footprint">Diode_SMD:D_SMA</field>
         <field name="Datasheet">https://www.diodes.com/datasheet/download/B340A.pdf</field>
         <field name="Description"/>
@@ -827,6 +909,7 @@
       <property name="MPN" value="B340A-13-F"/>
       <property name="Manufacturer" value="Diodes Incorporated"/>
       <property name="Rating" value="3 A / 40 V; SMA; layout thermal derating required"/>
+      <property name="LCSC" value="C85098"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="diode Schottky"/>
@@ -845,13 +928,20 @@
     <comp ref="D3">
       <value>CHARGE (red)</value>
       <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_1810231112_Hubei-KENTO-Elec-KT-0603R_C2286.pdf</datasheet>
       <description>Red indicator, populated; approximately 1 mA</description>
       <fields>
+        <field name="Manufacturer">Hubei KENTO Elec</field>
+        <field name="MPN">KT-0603R</field>
+        <field name="LCSC">C2286</field>
         <field name="Footprint">LED_SMD:LED_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_1810231112_Hubei-KENTO-Elec-KT-0603R_C2286.pdf</field>
         <field name="Description">Red indicator, populated; approximately 1 mA</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer" value="Hubei KENTO Elec"/>
+      <property name="MPN" value="KT-0603R"/>
+      <property name="LCSC" value="C2286"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -868,19 +958,23 @@
       </units>
     </comp>
     <comp ref="J1">
-      <value>USB4105-GF-A</value>
+      <value>USB4105-GF-A-120</value>
       <footprint>Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal</footprint>
       <datasheet>https://gct.co/files/drawings/usb4105.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">GCT</field>
-        <field name="MPN">USB4105-GF-A</field>
+        <field name="Manufacturer">Global Connector Technology</field>
+        <field name="MPN">USB4105-GF-A-120</field>
+        <field name="Mechanical Note">1.20 mm shell stakes; common USB4105 XY PCB pattern; 1.6 mm prototype PCB</field>
+        <field name="LCSC">C5184243</field>
         <field name="Footprint">Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal</field>
         <field name="Datasheet">https://gct.co/files/drawings/usb4105.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Connector" part="USB_C_Receptacle_USB2.0_16P" description="USB 2.0-only 16P Type-C Receptacle connector"/>
-      <property name="Manufacturer" value="GCT"/>
-      <property name="MPN" value="USB4105-GF-A"/>
+      <property name="Manufacturer" value="Global Connector Technology"/>
+      <property name="MPN" value="USB4105-GF-A-120"/>
+      <property name="Mechanical Note" value="1.20 mm shell stakes; common USB4105 XY PCB pattern; 1.6 mm prototype PCB"/>
+      <property name="LCSC" value="C5184243"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="usb universal serial bus type-C USB2.0"/>
@@ -919,6 +1013,7 @@
         <field name="MPN">B2B-PH-K-S(LF)(SN)</field>
         <field name="Manufacturer">JST</field>
         <field name="Status">OPTIONAL BATTERY TEST: JST-PH 2.00 mm; pin 1 BAT+, pin 2 GND; USB operation does not require a battery</field>
+        <field name="LCSC">C131337</field>
         <field name="Footprint">Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</field>
         <field name="Datasheet">https://www.jst-mfg.com/product/pdf/eng/ePH.pdf</field>
         <field name="Description"/>
@@ -927,6 +1022,7 @@
       <property name="MPN" value="B2B-PH-K-S(LF)(SN)"/>
       <property name="Manufacturer" value="JST"/>
       <property name="Status" value="OPTIONAL BATTERY TEST: JST-PH 2.00 mm; pin 1 BAT+, pin 2 GND; USB operation does not require a battery"/>
+      <property name="LCSC" value="C131337"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="connector"/>
@@ -951,6 +1047,7 @@
         <field name="Previous MPN">NRS3015T2R2MNGH</field>
         <field name="Manufacturer">Taiyo Yuden</field>
         <field name="Rating">Isat &gt;=1.48 A, Irms &gt;=1.5 A; 2.2uH +/-20%</field>
+        <field name="LCSC">C6980123</field>
         <field name="Footprint">Nucula_Project:L_Taiyo-Yuden_NR-30xx</field>
         <field name="Datasheet">https://ds.yuden.co.jp/TYCOMPAS/eu/detail?pn=LSXND3030QKT2R2MNG&amp;u=M</field>
         <field name="Description"/>
@@ -960,6 +1057,7 @@
       <property name="Previous MPN" value="NRS3015T2R2MNGH"/>
       <property name="Manufacturer" value="Taiyo Yuden"/>
       <property name="Rating" value="Isat &gt;=1.48 A, Irms &gt;=1.5 A; 2.2uH +/-20%"/>
+      <property name="LCSC" value="C6980123"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
@@ -981,14 +1079,16 @@
       <datasheet>https://www.infineon.com/assets/row/public/documents/24/49/infineon-irlml6402-datasheet-en.pdf</datasheet>
       <fields>
         <field name="MPN">IRLML6402TRPBF</field>
-        <field name="Manufacturer">Infineon</field>
+        <field name="Manufacturer">Infineon Technologies</field>
+        <field name="LCSC">C2593</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
         <field name="Datasheet">https://www.infineon.com/assets/row/public/documents/24/49/infineon-irlml6402-datasheet-en.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Transistor_FET" part="IRLML6402" description="-3.7A Id, -20V Vds, 65mOhm Rds, P-Channel HEXFET Power MOSFET, SOT-23"/>
       <property name="MPN" value="IRLML6402TRPBF"/>
-      <property name="Manufacturer" value="Infineon"/>
+      <property name="Manufacturer" value="Infineon Technologies"/>
+      <property name="LCSC" value="C2593"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="P-Channel HEXFET MOSFET"/>
@@ -1013,6 +1113,7 @@
       <fields>
         <field name="Manufacturer">onsemi</field>
         <field name="MPN">BSS138</field>
+        <field name="LCSC">C52895</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
         <field name="Datasheet">https://www.onsemi.com/pub/Collateral/BSS138-D.PDF</field>
         <field name="Description">Inverting VBUS detector; avoids GPIO injection when MCU is unpowered</field>
@@ -1020,6 +1121,7 @@
       <libsource lib="Transistor_FET" part="BSS138" description="50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23"/>
       <property name="Manufacturer" value="onsemi"/>
       <property name="MPN" value="BSS138"/>
+      <property name="LCSC" value="C52895"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="N-Channel MOSFET"/>
@@ -1039,16 +1141,23 @@
     <comp ref="R1">
       <value>5.1k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF5101T5E_C23186.pdf</datasheet>
       <fields>
         <field name="Tolerance">1%</field>
         <field name="Rating">0.1 W</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="MPN">0603WAF5101T5E</field>
+        <field name="LCSC">C23186</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF5101T5E_C23186.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="MPN" value="0603WAF5101T5E"/>
+      <property name="LCSC" value="C23186"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1067,16 +1176,23 @@
     <comp ref="R2">
       <value>5.1k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF5101T5E_C23186.pdf</datasheet>
       <fields>
         <field name="Tolerance">1%</field>
         <field name="Rating">0.1 W</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="MPN">0603WAF5101T5E</field>
+        <field name="LCSC">C23186</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF5101T5E_C23186.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="MPN" value="0603WAF5101T5E"/>
+      <property name="LCSC" value="C23186"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1095,16 +1211,23 @@
     <comp ref="R3">
       <value>10k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</datasheet>
       <fields>
         <field name="Tolerance">1%</field>
         <field name="Rating">0.1 W</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="MPN">0603WAF1002T5E</field>
+        <field name="LCSC">C25804</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="MPN" value="0603WAF1002T5E"/>
+      <property name="LCSC" value="C25804"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1123,16 +1246,23 @@
     <comp ref="R4">
       <value>2.2k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2206010230_UNI-ROYAL-Uniroyal-Elec-0603WAF2201T5E_C4190.pdf</datasheet>
       <fields>
         <field name="Tolerance">1%</field>
         <field name="Rating">0.1 W</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="MPN">0603WAF2201T5E</field>
+        <field name="LCSC">C4190</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2206010230_UNI-ROYAL-Uniroyal-Elec-0603WAF2201T5E_C4190.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="MPN" value="0603WAF2201T5E"/>
+      <property name="LCSC" value="C4190"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1151,16 +1281,23 @@
     <comp ref="R5">
       <value>10k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</datasheet>
       <fields>
         <field name="Tolerance">1%</field>
         <field name="Rating">0.1 W</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="MPN">0603WAF1002T5E</field>
+        <field name="LCSC">C25804</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="MPN" value="0603WAF1002T5E"/>
+      <property name="LCSC" value="C25804"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1179,16 +1316,23 @@
     <comp ref="R6">
       <value>220k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2210190000_YAGEO-RT0603BRD07220KL_C861231.pdf</datasheet>
       <fields>
         <field name="Tolerance">0.1%</field>
         <field name="Rating">0.1 W</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RT0603BRD07220KL</field>
+        <field name="LCSC">C861231</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2210190000_YAGEO-RT0603BRD07220KL_C861231.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="0.1%"/>
       <property name="Rating" value="0.1 W"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RT0603BRD07220KL"/>
+      <property name="LCSC" value="C861231"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1207,16 +1351,23 @@
     <comp ref="R7">
       <value>48.7k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2210190000_YAGEO-RT0603BRD0748K7L_C861429.pdf</datasheet>
       <fields>
         <field name="Tolerance">0.1%</field>
         <field name="Rating">0.1 W</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RT0603BRD0748K7L</field>
+        <field name="LCSC">C861429</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2210190000_YAGEO-RT0603BRD0748K7L_C861429.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="0.1%"/>
       <property name="Rating" value="0.1 W"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RT0603BRD0748K7L"/>
+      <property name="LCSC" value="C861429"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1235,16 +1386,23 @@
     <comp ref="R8">
       <value>10k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</datasheet>
       <fields>
         <field name="Tolerance">1%</field>
         <field name="Rating">0.1 W</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="MPN">0603WAF1002T5E</field>
+        <field name="LCSC">C25804</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="MPN" value="0603WAF1002T5E"/>
+      <property name="LCSC" value="C25804"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1263,16 +1421,23 @@
     <comp ref="R9">
       <value>10k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</datasheet>
       <fields>
         <field name="Tolerance">1%</field>
         <field name="Rating">0.1 W</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="MPN">0603WAF1002T5E</field>
+        <field name="LCSC">C25804</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="MPN" value="0603WAF1002T5E"/>
+      <property name="LCSC" value="C25804"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1291,16 +1456,23 @@
     <comp ref="R10">
       <value>10k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</datasheet>
       <fields>
         <field name="Tolerance">1%</field>
         <field name="Rating">0.1 W</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="MPN">0603WAF1002T5E</field>
+        <field name="LCSC">C25804</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="MPN" value="0603WAF1002T5E"/>
+      <property name="LCSC" value="C25804"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1319,16 +1491,23 @@
     <comp ref="R11">
       <value>10k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</datasheet>
       <fields>
         <field name="Tolerance">1%</field>
         <field name="Rating">0.1 W</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="MPN">0603WAF1002T5E</field>
+        <field name="LCSC">C25804</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="MPN" value="0603WAF1002T5E"/>
+      <property name="LCSC" value="C25804"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1347,16 +1526,23 @@
     <comp ref="R12">
       <value>22R</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2206010100_UNI-ROYAL-Uniroyal-Elec-0603WAF220JT5E_C23345.pdf</datasheet>
       <fields>
         <field name="Tolerance">1%</field>
         <field name="Rating">0.1 W</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="MPN">0603WAF220JT5E</field>
+        <field name="LCSC">C23345</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2206010100_UNI-ROYAL-Uniroyal-Elec-0603WAF220JT5E_C23345.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="MPN" value="0603WAF220JT5E"/>
+      <property name="LCSC" value="C23345"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1375,16 +1561,23 @@
     <comp ref="R13">
       <value>22R</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2206010100_UNI-ROYAL-Uniroyal-Elec-0603WAF220JT5E_C23345.pdf</datasheet>
       <fields>
         <field name="Tolerance">1%</field>
         <field name="Rating">0.1 W</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="MPN">0603WAF220JT5E</field>
+        <field name="LCSC">C23345</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2206010100_UNI-ROYAL-Uniroyal-Elec-0603WAF220JT5E_C23345.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="MPN" value="0603WAF220JT5E"/>
+      <property name="LCSC" value="C23345"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1403,16 +1596,23 @@
     <comp ref="R14">
       <value>100R</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0603WAF1000T5E_C22775.pdf</datasheet>
       <fields>
         <field name="Tolerance">1%</field>
         <field name="Rating">0.1 W</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="MPN">0603WAF1000T5E</field>
+        <field name="LCSC">C22775</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0603WAF1000T5E_C22775.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="MPN" value="0603WAF1000T5E"/>
+      <property name="LCSC" value="C22775"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1431,16 +1631,23 @@
     <comp ref="R15">
       <value>470k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF4703T5E_C23178.pdf</datasheet>
       <fields>
         <field name="Tolerance">1%</field>
         <field name="Rating">0.1 W</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="MPN">0603WAF4703T5E</field>
+        <field name="LCSC">C23178</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF4703T5E_C23178.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="MPN" value="0603WAF4703T5E"/>
+      <property name="LCSC" value="C23178"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1459,16 +1666,23 @@
     <comp ref="R16">
       <value>470k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF4703T5E_C23178.pdf</datasheet>
       <fields>
         <field name="Tolerance">1%</field>
         <field name="Rating">0.1 W</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="MPN">0603WAF4703T5E</field>
+        <field name="LCSC">C23178</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF4703T5E_C23178.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="MPN" value="0603WAF4703T5E"/>
+      <property name="LCSC" value="C23178"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1487,16 +1701,23 @@
     <comp ref="R17">
       <value>100k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1003T5E_C25803.pdf</datasheet>
       <fields>
         <field name="Tolerance">1%</field>
         <field name="Rating">0.1 W</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="MPN">0603WAF1003T5E</field>
+        <field name="LCSC">C25803</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1003T5E_C25803.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="MPN" value="0603WAF1003T5E"/>
+      <property name="LCSC" value="C25803"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1515,16 +1736,23 @@
     <comp ref="R18">
       <value>100k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1003T5E_C25803.pdf</datasheet>
       <fields>
         <field name="Tolerance">1%</field>
         <field name="Rating">0.1 W</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="MPN">0603WAF1003T5E</field>
+        <field name="LCSC">C25803</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1003T5E_C25803.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="MPN" value="0603WAF1003T5E"/>
+      <property name="LCSC" value="C25803"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1545,14 +1773,16 @@
       <footprint>Button_Switch_SMD:SW_SPST_B3U-1000P</footprint>
       <fields>
         <field name="MPN">B3U-1000P</field>
-        <field name="Manufacturer">Omron</field>
+        <field name="Manufacturer">Omron Electronics</field>
+        <field name="LCSC">C231329</field>
         <field name="Footprint">Button_Switch_SMD:SW_SPST_B3U-1000P</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
       <property name="MPN" value="B3U-1000P"/>
-      <property name="Manufacturer" value="Omron"/>
+      <property name="Manufacturer" value="Omron Electronics"/>
+      <property name="LCSC" value="C231329"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
@@ -1572,14 +1802,16 @@
       <footprint>Button_Switch_SMD:SW_SPST_B3U-1000P</footprint>
       <fields>
         <field name="MPN">B3U-1000P</field>
-        <field name="Manufacturer">Omron</field>
+        <field name="Manufacturer">Omron Electronics</field>
+        <field name="LCSC">C231329</field>
         <field name="Footprint">Button_Switch_SMD:SW_SPST_B3U-1000P</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
       <property name="MPN" value="B3U-1000P"/>
-      <property name="Manufacturer" value="Omron"/>
+      <property name="Manufacturer" value="Omron Electronics"/>
+      <property name="LCSC" value="C231329"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
@@ -1595,19 +1827,21 @@
       </units>
     </comp>
     <comp ref="U1">
-      <value>TP4054-42-SOT235</value>
+      <value>TP4054-42-SOT25R</value>
       <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
-      <datasheet>https://www.toppwr.com/uploadfile/file/20240913/66e3d01d4c944.pdf</datasheet>
+      <datasheet>https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1809261814_TOP-POWER-ASIC-TP4054-42-SOT25R_C32574.pdf</datasheet>
       <fields>
-        <field name="MPN">TP4054-42-SOT235</field>
-        <field name="Manufacturer">Top Power ASIC</field>
+        <field name="MPN">TP4054-42-SOT25R</field>
+        <field name="Manufacturer">TOPPOWER(Nanjing Extension Microelectronics)</field>
+        <field name="LCSC">C32574</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
-        <field name="Datasheet">https://www.toppwr.com/uploadfile/file/20240913/66e3d01d4c944.pdf</field>
+        <field name="Datasheet">https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1809261814_TOP-POWER-ASIC-TP4054-42-SOT25R_C32574.pdf</field>
         <field name="Description"/>
       </fields>
-      <libsource lib="Nucula_Project" part="TP4054-42-SOT235" description="800mA Standalone Linear Li-Ion Battery Charger with Thermal Regulation in SOT23-5/TSOT23-5"/>
-      <property name="MPN" value="TP4054-42-SOT235"/>
-      <property name="Manufacturer" value="Top Power ASIC"/>
+      <libsource lib="Nucula_Project" part="TP4054-42-SOT25R" description="800mA Standalone Linear Li-Ion Battery Charger with Thermal Regulation in SOT23-5/TSOT23-5"/>
+      <property name="MPN" value="TP4054-42-SOT25R"/>
+      <property name="Manufacturer" value="TOPPOWER(Nanjing Extension Microelectronics)"/>
+      <property name="LCSC" value="C32574"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="Battery Charger"/>
@@ -1632,14 +1866,16 @@
       <datasheet>https://www.olimex.com/Products/Components/IC/SY8009A/resources/SY8089AAAC.pdf</datasheet>
       <fields>
         <field name="MPN">SY8089AAAC</field>
-        <field name="Manufacturer">Silergy</field>
+        <field name="Manufacturer">Silergy Corp</field>
+        <field name="LCSC">C78988</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
         <field name="Datasheet">https://www.olimex.com/Products/Components/IC/SY8009A/resources/SY8089AAAC.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Nucula_Project" part="SY8089AAAC" description="High Efficiency 5.5V, 2A continuous, 3A peak, 1MHz Synchronous Step Down Regulator"/>
       <property name="MPN" value="SY8089AAAC"/>
-      <property name="Manufacturer" value="Silergy"/>
+      <property name="Manufacturer" value="Silergy Corp"/>
+      <property name="LCSC" value="C78988"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="DCDC"/>
@@ -1665,14 +1901,16 @@
       <description>4 MB flash, onboard antenna; native USB Serial/JTAG</description>
       <fields>
         <field name="MPN">ESP32-C3-WROOM-02-N4</field>
-        <field name="Manufacturer">Espressif</field>
+        <field name="Manufacturer">Espressif Systems</field>
+        <field name="LCSC">C2934560</field>
         <field name="Footprint">Nucula_Project:ESP32-C3-WROOM-02-N4</field>
         <field name="Datasheet">https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf</field>
         <field name="Description">4 MB flash, onboard antenna; native USB Serial/JTAG</field>
       </fields>
       <libsource lib="Nucula_Project" part="ESP32-C3-WROOM-02-N4" description="ESP32-C3 Wi-Fi and Bluetooth LE module, 4 MB flash, PCB antenna, -40 to +85 C"/>
       <property name="MPN" value="ESP32-C3-WROOM-02-N4"/>
-      <property name="Manufacturer" value="Espressif"/>
+      <property name="Manufacturer" value="Espressif Systems"/>
+      <property name="LCSC" value="C2934560"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="esp32 espressif WiFi Bluetooth LE"/>
@@ -1712,6 +1950,7 @@
       <fields>
         <field name="MPN">USBLC6-2SC6</field>
         <field name="Manufacturer">STMicroelectronics</field>
+        <field name="LCSC">C7519</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
         <field name="Datasheet">https://www.st.com/resource/en/datasheet/usblc6-2.pdf</field>
         <field name="Description"/>
@@ -1719,6 +1958,7 @@
       <libsource lib="Power_Protection" part="USBLC6-2SC6" description="Very low capacitance ESD protection diode, 2 data-line, SOT-23-6"/>
       <property name="MPN" value="USBLC6-2SC6"/>
       <property name="Manufacturer" value="STMicroelectronics"/>
+      <property name="LCSC" value="C7519"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="usb ethernet video"/>
@@ -1739,23 +1979,25 @@
       </units>
     </comp>
     <comp ref="U5">
-      <value>TLV803EA30DCKR</value>
-      <footprint>Package_TO_SOT_SMD:SOT-323_SC-70</footprint>
+      <value>TLV803EA30DBZR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
       <datasheet>https://www.ti.com/lit/ds/symlink/tlv803e.pdf</datasheet>
       <fields>
-        <field name="MPN">TLV803EA30DCKR</field>
+        <field name="MPN">TLV803EA30DBZR</field>
         <field name="Manufacturer">Texas Instruments</field>
-        <field name="Footprint">Package_TO_SOT_SMD:SOT-323_SC-70</field>
+        <field name="LCSC">C5218924</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
         <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tlv803e.pdf</field>
         <field name="Description"/>
       </fields>
-      <libsource lib="Nucula_Project" part="TLV803EA30DCKR" description="3.08 V supervisor, active-low open-drain RESET, 200 ms delay, DCK/SC70: 1 GND, 2 RESET, 3 VDD"/>
-      <property name="MPN" value="TLV803EA30DCKR"/>
+      <libsource lib="Nucula_Project" part="TLV803EA30DBZR" description="3.08 V supervisor, active-low open-drain RESET, 200 ms delay, DCK/SC70: 1 GND, 2 RESET, 3 VDD"/>
+      <property name="MPN" value="TLV803EA30DBZR"/>
       <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="LCSC" value="C5218924"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="supply voltage supervisor"/>
-      <property name="ki_fp_filters" value="SOT?323* SC?70*"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
       <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>bafd9da2-9e3f-5112-80f9-a27c935447af</tstamps>
       <units>
@@ -2238,6 +2480,7 @@
         <field name="Manufacturer">Samsung Electro-Mechanics</field>
         <field name="MPN">CL10C120JB8NNNC</field>
         <field name="Status">PROTOTYPE START: 12pF/15pF pair; tune carrier to -5..0ppm per AN14518</field>
+        <field name="LCSC">C38523</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet">https://product.samsungsem.com/mlcc/CL10C120JB8NNN.do</field>
         <field name="Description"/>
@@ -2249,6 +2492,7 @@
       <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
       <property name="MPN" value="CL10C120JB8NNNC"/>
       <property name="Status" value="PROTOTYPE START: 12pF/15pF pair; tune carrier to -5..0ppm per AN14518"/>
+      <property name="LCSC" value="C38523"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2306,13 +2550,17 @@
     <comp ref="C28">
       <value>1nF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM2165C2A102JA01D_C162289.pdf</datasheet>
       <fields>
         <field name="Voltage">100 V</field>
         <field name="Dielectric">C0G/NP0</field>
         <field name="Tolerance">5%</field>
         <field name="Status">PROTOTYPE START: validate with VNA / AGC / RF stress measurements</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="MPN">GRM2165C2A102JA01D</field>
+        <field name="LCSC">C162289</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM2165C2A102JA01D_C162289.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -2320,6 +2568,9 @@
       <property name="Dielectric" value="C0G/NP0"/>
       <property name="Tolerance" value="5%"/>
       <property name="Status" value="PROTOTYPE START: validate with VNA / AGC / RF stress measurements"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="MPN" value="GRM2165C2A102JA01D"/>
+      <property name="LCSC" value="C162289"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2338,13 +2589,17 @@
     <comp ref="C29">
       <value>1nF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM2165C2A102JA01D_C162289.pdf</datasheet>
       <fields>
         <field name="Voltage">100 V</field>
         <field name="Dielectric">C0G/NP0</field>
         <field name="Tolerance">5%</field>
         <field name="Status">PROTOTYPE START: validate with VNA / AGC / RF stress measurements</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="MPN">GRM2165C2A102JA01D</field>
+        <field name="LCSC">C162289</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM2165C2A102JA01D_C162289.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -2352,6 +2607,9 @@
       <property name="Dielectric" value="C0G/NP0"/>
       <property name="Tolerance" value="5%"/>
       <property name="Status" value="PROTOTYPE START: validate with VNA / AGC / RF stress measurements"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="MPN" value="GRM2165C2A102JA01D"/>
+      <property name="LCSC" value="C162289"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2368,22 +2626,29 @@
       </units>
     </comp>
     <comp ref="C30">
-      <value>360pF</value>
+      <value>330pF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2005261832_YAGEO-CC0805FRNPO0BN331_C527075.pdf</datasheet>
       <fields>
         <field name="Voltage">100 V</field>
         <field name="Dielectric">C0G/NP0</field>
-        <field name="Tolerance">2%</field>
-        <field name="Status">PROTOTYPE START: validate with VNA / AGC / RF stress measurements</field>
+        <field name="Tolerance">1%</field>
+        <field name="Status">PROTOTYPE: 330pF 1% + 33pF 5% in parallel = 363pF +/-1.364%; fit symmetrically; measure and retune</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">CC0805FRNPO0BN331</field>
+        <field name="LCSC">C527075</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2005261832_YAGEO-CC0805FRNPO0BN331_C527075.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Voltage" value="100 V"/>
       <property name="Dielectric" value="C0G/NP0"/>
-      <property name="Tolerance" value="2%"/>
-      <property name="Status" value="PROTOTYPE START: validate with VNA / AGC / RF stress measurements"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Status" value="PROTOTYPE: 330pF 1% + 33pF 5% in parallel = 363pF +/-1.364%; fit symmetrically; measure and retune"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="CC0805FRNPO0BN331"/>
+      <property name="LCSC" value="C527075"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2400,22 +2665,29 @@
       </units>
     </comp>
     <comp ref="C31">
-      <value>360pF</value>
+      <value>330pF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2005261832_YAGEO-CC0805FRNPO0BN331_C527075.pdf</datasheet>
       <fields>
         <field name="Voltage">100 V</field>
         <field name="Dielectric">C0G/NP0</field>
-        <field name="Tolerance">2%</field>
-        <field name="Status">PROTOTYPE START: validate with VNA / AGC / RF stress measurements</field>
+        <field name="Tolerance">1%</field>
+        <field name="Status">PROTOTYPE: 330pF 1% + 33pF 5% in parallel = 363pF +/-1.364%; fit symmetrically; measure and retune</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">CC0805FRNPO0BN331</field>
+        <field name="LCSC">C527075</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2005261832_YAGEO-CC0805FRNPO0BN331_C527075.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Voltage" value="100 V"/>
       <property name="Dielectric" value="C0G/NP0"/>
-      <property name="Tolerance" value="2%"/>
-      <property name="Status" value="PROTOTYPE START: validate with VNA / AGC / RF stress measurements"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Status" value="PROTOTYPE: 330pF 1% + 33pF 5% in parallel = 363pF +/-1.364%; fit symmetrically; measure and retune"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="CC0805FRNPO0BN331"/>
+      <property name="LCSC" value="C527075"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2434,20 +2706,27 @@
     <comp ref="C32">
       <value>68pF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2212091030_YAGEO-CC0805FRNPO0BN680_C576904.pdf</datasheet>
       <fields>
         <field name="Voltage">100 V</field>
         <field name="Dielectric">C0G/NP0</field>
-        <field name="Tolerance">2%</field>
+        <field name="Tolerance">1%</field>
         <field name="Status">PROTOTYPE START: validate with VNA / AGC / RF stress measurements</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">CC0805FRNPO0BN680</field>
+        <field name="LCSC">C576904</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2212091030_YAGEO-CC0805FRNPO0BN680_C576904.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Voltage" value="100 V"/>
       <property name="Dielectric" value="C0G/NP0"/>
-      <property name="Tolerance" value="2%"/>
+      <property name="Tolerance" value="1%"/>
       <property name="Status" value="PROTOTYPE START: validate with VNA / AGC / RF stress measurements"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="CC0805FRNPO0BN680"/>
+      <property name="LCSC" value="C576904"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2466,20 +2745,27 @@
     <comp ref="C33">
       <value>68pF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2212091030_YAGEO-CC0805FRNPO0BN680_C576904.pdf</datasheet>
       <fields>
         <field name="Voltage">100 V</field>
         <field name="Dielectric">C0G/NP0</field>
-        <field name="Tolerance">2%</field>
+        <field name="Tolerance">1%</field>
         <field name="Status">PROTOTYPE START: validate with VNA / AGC / RF stress measurements</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">CC0805FRNPO0BN680</field>
+        <field name="LCSC">C576904</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2212091030_YAGEO-CC0805FRNPO0BN680_C576904.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Voltage" value="100 V"/>
       <property name="Dielectric" value="C0G/NP0"/>
-      <property name="Tolerance" value="2%"/>
+      <property name="Tolerance" value="1%"/>
       <property name="Status" value="PROTOTYPE START: validate with VNA / AGC / RF stress measurements"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="CC0805FRNPO0BN680"/>
+      <property name="LCSC" value="C576904"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2564,13 +2850,17 @@
     <comp ref="C36">
       <value>100pF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2005222139_YAGEO-CC0805GRNPO0BN101_C527192.pdf</datasheet>
       <fields>
         <field name="Voltage">100 V</field>
         <field name="Dielectric">C0G/NP0</field>
         <field name="Tolerance">2%</field>
         <field name="Status">PROTOTYPE START: validate with VNA / AGC / RF stress measurements</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">CC0805GRNPO0BN101</field>
+        <field name="LCSC">C527192</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2005222139_YAGEO-CC0805GRNPO0BN101_C527192.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -2578,6 +2868,9 @@
       <property name="Dielectric" value="C0G/NP0"/>
       <property name="Tolerance" value="2%"/>
       <property name="Status" value="PROTOTYPE START: validate with VNA / AGC / RF stress measurements"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="CC0805GRNPO0BN101"/>
+      <property name="LCSC" value="C527192"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2596,13 +2889,17 @@
     <comp ref="C37">
       <value>100pF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2005222139_YAGEO-CC0805GRNPO0BN101_C527192.pdf</datasheet>
       <fields>
         <field name="Voltage">100 V</field>
         <field name="Dielectric">C0G/NP0</field>
         <field name="Tolerance">2%</field>
         <field name="Status">PROTOTYPE START: validate with VNA / AGC / RF stress measurements</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">CC0805GRNPO0BN101</field>
+        <field name="LCSC">C527192</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2005222139_YAGEO-CC0805GRNPO0BN101_C527192.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -2610,6 +2907,9 @@
       <property name="Dielectric" value="C0G/NP0"/>
       <property name="Tolerance" value="2%"/>
       <property name="Status" value="PROTOTYPE START: validate with VNA / AGC / RF stress measurements"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="CC0805GRNPO0BN101"/>
+      <property name="LCSC" value="C527192"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2692,26 +2992,32 @@
       </units>
     </comp>
     <comp ref="C53">
-      <value>TRIM</value>
-      <footprint>Nucula_Project:C_0805_HandSolder_NoPaste</footprint>
+      <value>33pF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YAGEO-CC0805JRNPO0BN330_C309485.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="Voltage">100 V</field>
         <field name="Dielectric">C0G/NP0</field>
-        <field name="Tolerance">&lt;=2% or +/-0.1pF for small trims</field>
-        <field name="Status">DNP: EMC parallel trim; fit paired; replacing 360pF may be necessary</field>
-        <field name="Footprint">Nucula_Project:C_0805_HandSolder_NoPaste</field>
-        <field name="Datasheet"/>
+        <field name="Tolerance">5%</field>
+        <field name="Status">PROTOTYPE: 330pF 1% + 33pF 5% in parallel = 363pF +/-1.364%; fit symmetrically; measure and retune</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">CC0805JRNPO0BN330</field>
+        <field name="LCSC">C309485</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</field>
+        <field name="Datasheet">https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YAGEO-CC0805JRNPO0BN330_C309485.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Voltage" value="100 V"/>
       <property name="Dielectric" value="C0G/NP0"/>
-      <property name="Tolerance" value="&lt;=2% or +/-0.1pF for small trims"/>
-      <property name="Status" value="DNP: EMC parallel trim; fit paired; replacing 360pF may be necessary"/>
+      <property name="Tolerance" value="5%"/>
+      <property name="Status" value="PROTOTYPE: 330pF 1% + 33pF 5% in parallel = 363pF +/-1.364%; fit symmetrically; measure and retune"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="CC0805JRNPO0BN330"/>
+      <property name="LCSC" value="C309485"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
-      <property name="dnp"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
       <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
@@ -2726,26 +3032,32 @@
       </units>
     </comp>
     <comp ref="C54">
-      <value>TRIM</value>
-      <footprint>Nucula_Project:C_0805_HandSolder_NoPaste</footprint>
+      <value>33pF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YAGEO-CC0805JRNPO0BN330_C309485.pdf</datasheet>
       <description>Unpolarized capacitor</description>
       <fields>
         <field name="Voltage">100 V</field>
         <field name="Dielectric">C0G/NP0</field>
-        <field name="Tolerance">&lt;=2% or +/-0.1pF for small trims</field>
-        <field name="Status">DNP: EMC parallel trim; fit paired; replacing 360pF may be necessary</field>
-        <field name="Footprint">Nucula_Project:C_0805_HandSolder_NoPaste</field>
-        <field name="Datasheet"/>
+        <field name="Tolerance">5%</field>
+        <field name="Status">PROTOTYPE: 330pF 1% + 33pF 5% in parallel = 363pF +/-1.364%; fit symmetrically; measure and retune</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">CC0805JRNPO0BN330</field>
+        <field name="LCSC">C309485</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</field>
+        <field name="Datasheet">https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YAGEO-CC0805JRNPO0BN330_C309485.pdf</field>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Voltage" value="100 V"/>
       <property name="Dielectric" value="C0G/NP0"/>
-      <property name="Tolerance" value="&lt;=2% or +/-0.1pF for small trims"/>
-      <property name="Status" value="DNP: EMC parallel trim; fit paired; replacing 360pF may be necessary"/>
+      <property name="Tolerance" value="5%"/>
+      <property name="Status" value="PROTOTYPE: 330pF 1% + 33pF 5% in parallel = 363pF +/-1.364%; fit symmetrically; measure and retune"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="CC0805JRNPO0BN330"/>
+      <property name="LCSC" value="C309485"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
-      <property name="dnp"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
       <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
@@ -2769,6 +3081,8 @@
         <field name="Manufacturer">Coilcraft</field>
         <field name="MPN">0805HP-151XGRC</field>
         <field name="Tolerance">2%</field>
+        <field name="LCSC">C20417049</field>
+        <field name="Supply Status">2026-09-20: JLCPCB C20417049 orderable 21; 10 boards require 20; secure stock before assembly</field>
         <field name="Footprint">Nucula_Project:L_Coilcraft_0805HP</field>
         <field name="Datasheet">https://www.coilcraft.com/en-us/products/rf/ceramic-core-chip-inductors/0805-(2012)/0805hp/0805hp-151/</field>
         <field name="Description"/>
@@ -2779,6 +3093,8 @@
       <property name="Manufacturer" value="Coilcraft"/>
       <property name="MPN" value="0805HP-151XGRC"/>
       <property name="Tolerance" value="2%"/>
+      <property name="LCSC" value="C20417049"/>
+      <property name="Supply Status" value="2026-09-20: JLCPCB C20417049 orderable 21; 10 boards require 20; secure stock before assembly"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
@@ -2804,6 +3120,8 @@
         <field name="Manufacturer">Coilcraft</field>
         <field name="MPN">0805HP-151XGRC</field>
         <field name="Tolerance">2%</field>
+        <field name="LCSC">C20417049</field>
+        <field name="Supply Status">2026-09-20: JLCPCB C20417049 orderable 21; 10 boards require 20; secure stock before assembly</field>
         <field name="Footprint">Nucula_Project:L_Coilcraft_0805HP</field>
         <field name="Datasheet">https://www.coilcraft.com/en-us/products/rf/ceramic-core-chip-inductors/0805-(2012)/0805hp/0805hp-151/</field>
         <field name="Description"/>
@@ -2814,6 +3132,8 @@
       <property name="Manufacturer" value="Coilcraft"/>
       <property name="MPN" value="0805HP-151XGRC"/>
       <property name="Tolerance" value="2%"/>
+      <property name="LCSC" value="C20417049"/>
+      <property name="Supply Status" value="2026-09-20: JLCPCB C20417049 orderable 21; 10 boards require 20; secure stock before assembly"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
@@ -2832,16 +3152,23 @@
     <comp ref="R21">
       <value>10k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</datasheet>
       <fields>
         <field name="Tolerance">1%</field>
         <field name="Rating">0.1 W</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="MPN">0603WAF1002T5E</field>
+        <field name="LCSC">C25804</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="MPN" value="0603WAF1002T5E"/>
+      <property name="LCSC" value="C25804"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2860,16 +3187,23 @@
     <comp ref="R22">
       <value>100k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1003T5E_C25803.pdf</datasheet>
       <fields>
         <field name="Tolerance">1%</field>
         <field name="Rating">0.1 W</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="MPN">0603WAF1003T5E</field>
+        <field name="LCSC">C25803</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1003T5E_C25803.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="MPN" value="0603WAF1003T5E"/>
+      <property name="LCSC" value="C25803"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2888,16 +3222,23 @@
     <comp ref="R23">
       <value>100k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1003T5E_C25803.pdf</datasheet>
       <fields>
         <field name="Tolerance">1%</field>
         <field name="Rating">0.1 W</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="MPN">0603WAF1003T5E</field>
+        <field name="LCSC">C25803</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1003T5E_C25803.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="MPN" value="0603WAF1003T5E"/>
+      <property name="LCSC" value="C25803"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2916,16 +3257,23 @@
     <comp ref="R24">
       <value>100k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1003T5E_C25803.pdf</datasheet>
       <fields>
         <field name="Tolerance">1%</field>
         <field name="Rating">0.1 W</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="MPN">0603WAF1003T5E</field>
+        <field name="LCSC">C25803</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1003T5E_C25803.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="MPN" value="0603WAF1003T5E"/>
+      <property name="LCSC" value="C25803"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2944,18 +3292,25 @@
     <comp ref="R25">
       <value>2.2k</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2206010200_UNI-ROYAL-Uniroyal-Elec-0805W8F2201T5E_C17520.pdf</datasheet>
       <fields>
         <field name="Tolerance">1%</field>
         <field name="Rating">0.125 W</field>
         <field name="Status">PROTOTYPE: tune equal RX resistors for AGC 500-800 decimal</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="MPN">0805W8F2201T5E</field>
+        <field name="LCSC">C17520</field>
         <field name="Footprint">Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2206010200_UNI-ROYAL-Uniroyal-Elec-0805W8F2201T5E_C17520.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.125 W"/>
       <property name="Status" value="PROTOTYPE: tune equal RX resistors for AGC 500-800 decimal"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="MPN" value="0805W8F2201T5E"/>
+      <property name="LCSC" value="C17520"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2974,18 +3329,25 @@
     <comp ref="R26">
       <value>2.2k</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2206010200_UNI-ROYAL-Uniroyal-Elec-0805W8F2201T5E_C17520.pdf</datasheet>
       <fields>
         <field name="Tolerance">1%</field>
         <field name="Rating">0.125 W</field>
         <field name="Status">PROTOTYPE: tune equal RX resistors for AGC 500-800 decimal</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="MPN">0805W8F2201T5E</field>
+        <field name="LCSC">C17520</field>
         <field name="Footprint">Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2206010200_UNI-ROYAL-Uniroyal-Elec-0805W8F2201T5E_C17520.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.125 W"/>
       <property name="Status" value="PROTOTYPE: tune equal RX resistors for AGC 500-800 decimal"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="MPN" value="0805W8F2201T5E"/>
+      <property name="LCSC" value="C17520"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -3009,8 +3371,9 @@
         <field name="Tolerance">1%</field>
         <field name="Rating">0.75 W P70 only with Rth &lt;=110 K/W; limit to 0.5W pending thermal validation</field>
         <field name="Status">PROTOTYPE: Q about 20; also lift to measure bare antenna</field>
-        <field name="Manufacturer">Vishay</field>
+        <field name="Manufacturer">Vishay Intertech</field>
         <field name="MPN">CRCW12062R70FKEAHP</field>
+        <field name="LCSC">C2079511</field>
         <field name="Footprint">Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder</field>
         <field name="Datasheet">https://www.vishay.com/docs/20043/crcwhpe3.pdf</field>
         <field name="Description"/>
@@ -3019,8 +3382,9 @@
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.75 W P70 only with Rth &lt;=110 K/W; limit to 0.5W pending thermal validation"/>
       <property name="Status" value="PROTOTYPE: Q about 20; also lift to measure bare antenna"/>
-      <property name="Manufacturer" value="Vishay"/>
+      <property name="Manufacturer" value="Vishay Intertech"/>
       <property name="MPN" value="CRCW12062R70FKEAHP"/>
+      <property name="LCSC" value="C2079511"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -3044,8 +3408,9 @@
         <field name="Tolerance">1%</field>
         <field name="Rating">0.75 W P70 only with Rth &lt;=110 K/W; limit to 0.5W pending thermal validation</field>
         <field name="Status">PROTOTYPE: Q about 20; also lift to measure bare antenna</field>
-        <field name="Manufacturer">Vishay</field>
+        <field name="Manufacturer">Vishay Intertech</field>
         <field name="MPN">CRCW12062R70FKEAHP</field>
+        <field name="LCSC">C2079511</field>
         <field name="Footprint">Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder</field>
         <field name="Datasheet">https://www.vishay.com/docs/20043/crcwhpe3.pdf</field>
         <field name="Description"/>
@@ -3054,8 +3419,9 @@
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.75 W P70 only with Rth &lt;=110 K/W; limit to 0.5W pending thermal validation"/>
       <property name="Status" value="PROTOTYPE: Q about 20; also lift to measure bare antenna"/>
-      <property name="Manufacturer" value="Vishay"/>
+      <property name="Manufacturer" value="Vishay Intertech"/>
       <property name="MPN" value="CRCW12062R70FKEAHP"/>
+      <property name="LCSC" value="C2079511"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -3074,16 +3440,23 @@
     <comp ref="R29">
       <value>0R</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0603WAF0000T5E_C21189.pdf</datasheet>
       <fields>
         <field name="Tolerance">1%</field>
         <field name="Rating">0.1 W</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="MPN">0603WAF0000T5E</field>
+        <field name="LCSC">C21189</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0603WAF0000T5E_C21189.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="MPN" value="0603WAF0000T5E"/>
+      <property name="LCSC" value="C21189"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -3102,17 +3475,26 @@
     <comp ref="R41">
       <value>0R</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0805JR-070RL_C96345.pdf</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Rating">0.25 W; &gt;=0.5A jumper current rating</field>
+        <field name="Rating">Jumper: 2 A rated; initial R &lt;50 mOhm; 0.125 W package</field>
         <field name="Status">FIT: remove along with R42/R25/R26 for isolated full RF-tree VNA measurement</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC0805JR-070RL</field>
+        <field name="LCSC">C96345</field>
+        <field name="Tolerance">Jumper</field>
         <field name="Footprint">Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0805JR-070RL_C96345.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Rating" value="0.25 W; &gt;=0.5A jumper current rating"/>
+      <property name="Rating" value="Jumper: 2 A rated; initial R &lt;50 mOhm; 0.125 W package"/>
       <property name="Status" value="FIT: remove along with R42/R25/R26 for isolated full RF-tree VNA measurement"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC0805JR-070RL"/>
+      <property name="LCSC" value="C96345"/>
+      <property name="Tolerance" value="Jumper"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -3131,17 +3513,26 @@
     <comp ref="R42">
       <value>0R</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0805JR-070RL_C96345.pdf</datasheet>
       <description>Resistor</description>
       <fields>
-        <field name="Rating">0.25 W; &gt;=0.5A jumper current rating</field>
+        <field name="Rating">Jumper: 2 A rated; initial R &lt;50 mOhm; 0.125 W package</field>
         <field name="Status">FIT: remove along with R41/R25/R26 for isolated full RF-tree VNA measurement</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RC0805JR-070RL</field>
+        <field name="LCSC">C96345</field>
+        <field name="Tolerance">Jumper</field>
         <field name="Footprint">Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_YAGEO-RC0805JR-070RL_C96345.pdf</field>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Rating" value="0.25 W; &gt;=0.5A jumper current rating"/>
+      <property name="Rating" value="Jumper: 2 A rated; initial R &lt;50 mOhm; 0.125 W package"/>
       <property name="Status" value="FIT: remove along with R41/R25/R26 for isolated full RF-tree VNA measurement"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RC0805JR-070RL"/>
+      <property name="LCSC" value="C96345"/>
+      <property name="Tolerance" value="Jumper"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -3162,17 +3553,19 @@
       <footprint>Nucula_Project:PN7160A1HN_C100E</footprint>
       <datasheet>https://www.nxp.com/docs/en/data-sheet/PN7160_PN7161.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">NXP</field>
+        <field name="Manufacturer">NXP Semicon</field>
         <field name="MPN">PN7160A1HN/C100E</field>
         <field name="I2C Address">0x28</field>
+        <field name="LCSC">C3303788</field>
         <field name="Footprint">Nucula_Project:PN7160A1HN_C100E</field>
         <field name="Datasheet">https://www.nxp.com/docs/en/data-sheet/PN7160_PN7161.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Nucula_Project" part="PN7160A1HN_C100E" description="NXP PN7160 I2C NFC controller, HVQFN40 plus EP; pin 22 TVDD_IN2"/>
-      <property name="Manufacturer" value="NXP"/>
+      <property name="Manufacturer" value="NXP Semicon"/>
       <property name="MPN" value="PN7160A1HN/C100E"/>
       <property name="I2C Address" value="0x28"/>
+      <property name="LCSC" value="C3303788"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
@@ -3237,7 +3630,7 @@
         <field name="Load Capacitance">10 pF</field>
         <field name="ESR">100 ohm max, 25 ohm typical (NDK specification)</field>
         <field name="Drive Level">100 uW maximum; 10 uW typical</field>
-        <field name="Supply Status">JLCPCB C3008209: overseasStockCount 8896, purchasable 8533 on 2026-09-20; check assembly availability</field>
+        <field name="Supply Status">2026-09-20: JLCPCB C3008209 orderable 8538; in-stock assembly quantity sufficient for 10 boards; not reserved</field>
         <field name="Footprint">Nucula_Project:Crystal_NDK_NX2016SA_2.0x1.6mm</field>
         <field name="Datasheet">https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6749/CS06346-27.12M.pdf</field>
         <field name="Description"/>
@@ -3250,7 +3643,7 @@
       <property name="Load Capacitance" value="10 pF"/>
       <property name="ESR" value="100 ohm max, 25 ohm typical (NDK specification)"/>
       <property name="Drive Level" value="100 uW maximum; 10 uW typical"/>
-      <property name="Supply Status" value="JLCPCB C3008209: overseasStockCount 8896, purchasable 8533 on 2026-09-20; check assembly availability"/>
+      <property name="Supply Status" value="2026-09-20: JLCPCB C3008209 orderable 8538; in-stock assembly quantity sufficient for 10 boards; not reserved"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="quartz ceramic resonator oscillator"/>
@@ -3308,18 +3701,25 @@
     <comp ref="C41">
       <value>22pF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10C220JB8NNNC_C1653.pdf</datasheet>
       <fields>
         <field name="Voltage">50 V</field>
         <field name="Dielectric">C0G</field>
-        <field name="Tolerance">10%</field>
+        <field name="Tolerance">5%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL10C220JB8NNNC</field>
+        <field name="LCSC">C1653</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10C220JB8NNNC_C1653.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Voltage" value="50 V"/>
       <property name="Dielectric" value="C0G"/>
-      <property name="Tolerance" value="10%"/>
+      <property name="Tolerance" value="5%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL10C220JB8NNNC"/>
+      <property name="LCSC" value="C1653"/>
       <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
       <property name="Sheetfile" value="oled.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3375,18 +3775,25 @@
     <comp ref="C43">
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf</datasheet>
       <fields>
-        <field name="Voltage">10 V</field>
+        <field name="Voltage">50 V</field>
         <field name="Dielectric">X7R</field>
         <field name="Tolerance">10%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL10B104KB8NNNC</field>
+        <field name="LCSC">C1591</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="10 V"/>
+      <property name="Voltage" value="50 V"/>
       <property name="Dielectric" value="X7R"/>
       <property name="Tolerance" value="10%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL10B104KB8NNNC"/>
+      <property name="LCSC" value="C1591"/>
       <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
       <property name="Sheetfile" value="oled.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3442,18 +3849,25 @@
     <comp ref="C45">
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf</datasheet>
       <fields>
-        <field name="Voltage">25 V</field>
+        <field name="Voltage">50 V</field>
         <field name="Dielectric">X7R</field>
         <field name="Tolerance">10%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL10B104KB8NNNC</field>
+        <field name="LCSC">C1591</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="25 V"/>
+      <property name="Voltage" value="50 V"/>
       <property name="Dielectric" value="X7R"/>
       <property name="Tolerance" value="10%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL10B104KB8NNNC"/>
+      <property name="LCSC" value="C1591"/>
       <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
       <property name="Sheetfile" value="oled.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3546,18 +3960,25 @@
     <comp ref="C48">
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf</datasheet>
       <fields>
-        <field name="Voltage">10 V</field>
+        <field name="Voltage">50 V</field>
         <field name="Dielectric">X7R</field>
         <field name="Tolerance">10%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL10B104KB8NNNC</field>
+        <field name="LCSC">C1591</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="10 V"/>
+      <property name="Voltage" value="50 V"/>
       <property name="Dielectric" value="X7R"/>
       <property name="Tolerance" value="10%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL10B104KB8NNNC"/>
+      <property name="LCSC" value="C1591"/>
       <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
       <property name="Sheetfile" value="oled.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3579,14 +4000,16 @@
       <datasheet>https://www.vishay.com/docs/88746/ss12.pdf</datasheet>
       <fields>
         <field name="MPN">SS14-E3/61T</field>
-        <field name="Manufacturer">Vishay</field>
+        <field name="Manufacturer">Vishay Intertech</field>
+        <field name="LCSC">C47460</field>
         <field name="Footprint">Diode_SMD:D_SMA</field>
         <field name="Datasheet">https://www.vishay.com/docs/88746/ss12.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
       <property name="MPN" value="SS14-E3/61T"/>
-      <property name="Manufacturer" value="Vishay"/>
+      <property name="Manufacturer" value="Vishay Intertech"/>
+      <property name="LCSC" value="C47460"/>
       <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
       <property name="Sheetfile" value="oled.kicad_sch"/>
       <property name="ki_keywords" value="diode Schottky"/>
@@ -3605,18 +4028,20 @@
     <comp ref="DS1">
       <value>SSD1309 OLED / 26-pin</value>
       <footprint>Connector_FFC-FPC:Hirose_FH12-26S-0.5SH_1x26-1MP_P0.50mm_Horizontal</footprint>
-      <datasheet>https://files.waveshare.com/wiki/2.42inch-OLED-Module/SSD1309Datasheet.pdf</datasheet>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2410010332_HRS-Hirose-FH12-26S-0-5SH-55_C202113.pdf</datasheet>
       <fields>
         <field name="MPN">FH12-26S-0.5SH(55)</field>
         <field name="Footprint Status">SELECTED: 26-way 0.50 mm; user confirms Waveshare pin order/orientation, including outer ground contacts</field>
         <field name="I2C Address">0x3C</field>
         <field name="Actual Flex">26 contacts total: 24 counted plus two outer GND contacts; 0.50 mm pitch; copper on emitting side (user confirmed)</field>
         <field name="Status">Pinout/orientation confirmed by user; DS1 BOM part is the FPC socket, OLED glass supplied separately</field>
-        <field name="Manufacturer">Hirose</field>
+        <field name="Manufacturer">HRS(Hirose)</field>
         <field name="Connector Mechanics">FH12 bottom-contact, 0.30 mm flex thickness; check insertion/fold and physical fit during PCB placement</field>
         <field name="Connector Datasheet">https://www.hirose.com/product/p/CL0586-0576-2-55</field>
+        <field name="LCSC">C202113</field>
+        <field name="Panel Datasheet">https://files.waveshare.com/wiki/2.42inch-OLED-Module/SSD1309Datasheet.pdf</field>
         <field name="Footprint">Connector_FFC-FPC:Hirose_FH12-26S-0.5SH_1x26-1MP_P0.50mm_Horizontal</field>
-        <field name="Datasheet">https://files.waveshare.com/wiki/2.42inch-OLED-Module/SSD1309Datasheet.pdf</field>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2410010332_HRS-Hirose-FH12-26S-0-5SH-55_C202113.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Nucula_Project" part="SSD1309_COG_26" description="26-contact OLED glass interface; Waveshare pin order/orientation confirmed by user"/>
@@ -3625,9 +4050,11 @@
       <property name="I2C Address" value="0x3C"/>
       <property name="Actual Flex" value="26 contacts total: 24 counted plus two outer GND contacts; 0.50 mm pitch; copper on emitting side (user confirmed)"/>
       <property name="Status" value="Pinout/orientation confirmed by user; DS1 BOM part is the FPC socket, OLED glass supplied separately"/>
-      <property name="Manufacturer" value="Hirose"/>
+      <property name="Manufacturer" value="HRS(Hirose)"/>
       <property name="Connector Mechanics" value="FH12 bottom-contact, 0.30 mm flex thickness; check insertion/fold and physical fit during PCB placement"/>
       <property name="Connector Datasheet" value="https://www.hirose.com/product/p/CL0586-0576-2-55"/>
+      <property name="LCSC" value="C202113"/>
+      <property name="Panel Datasheet" value="https://files.waveshare.com/wiki/2.42inch-OLED-Module/SSD1309Datasheet.pdf"/>
       <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
       <property name="Sheetfile" value="oled.kicad_sch"/>
       <sheetpath names="/OLED / SSD1309 / 0x3C/" tstamps="/5acfde84-8974-5dc1-b34a-03f7d512478f/"/>
@@ -3673,6 +4100,7 @@
         <field name="Manufacturer">Coilcraft</field>
         <field name="MPN">LPS4018-103MRC</field>
         <field name="Rating">Isat 1.1 A at 10% drop; Irms 0.9 A at 20 C rise</field>
+        <field name="LCSC">C6127589</field>
         <field name="Footprint">Nucula_Project:L_Coilcraft_LPS4018</field>
         <field name="Datasheet">https://www.coilcraft.com/en-us/products/power/shielded-inductors/ferrite-drum/lps/lps4018/lps4018-103/</field>
         <field name="Description"/>
@@ -3681,6 +4109,7 @@
       <property name="Manufacturer" value="Coilcraft"/>
       <property name="MPN" value="LPS4018-103MRC"/>
       <property name="Rating" value="Isat 1.1 A at 10% drop; Irms 0.9 A at 20 C rise"/>
+      <property name="LCSC" value="C6127589"/>
       <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
       <property name="Sheetfile" value="oled.kicad_sch"/>
       <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
@@ -3703,6 +4132,8 @@
       <fields>
         <field name="MPN">IRLML6402TRPBF</field>
         <field name="Role">OLED boost input disconnect</field>
+        <field name="Manufacturer">Infineon Technologies</field>
+        <field name="LCSC">C2593</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
         <field name="Datasheet">https://www.infineon.com/dgdl/irlml6402pbf.pdf?fileId=5546d462533600a401535668d5c2263c</field>
         <field name="Description"/>
@@ -3710,6 +4141,8 @@
       <libsource lib="Transistor_FET" part="IRLML6402" description="-3.7A Id, -20V Vds, 65mOhm Rds, P-Channel HEXFET Power MOSFET, SOT-23"/>
       <property name="MPN" value="IRLML6402TRPBF"/>
       <property name="Role" value="OLED boost input disconnect"/>
+      <property name="Manufacturer" value="Infineon Technologies"/>
+      <property name="LCSC" value="C2593"/>
       <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
       <property name="Sheetfile" value="oled.kicad_sch"/>
       <property name="ki_keywords" value="P-Channel HEXFET MOSFET"/>
@@ -3733,6 +4166,7 @@
       <fields>
         <field name="MPN">BSS138</field>
         <field name="Manufacturer">onsemi</field>
+        <field name="LCSC">C52895</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
         <field name="Datasheet">https://www.onsemi.com/pub/Collateral/BSS138-D.PDF</field>
         <field name="Description"/>
@@ -3740,6 +4174,7 @@
       <libsource lib="Transistor_FET" part="BSS138" description="50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23"/>
       <property name="MPN" value="BSS138"/>
       <property name="Manufacturer" value="onsemi"/>
+      <property name="LCSC" value="C52895"/>
       <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
       <property name="Sheetfile" value="oled.kicad_sch"/>
       <property name="ki_keywords" value="N-Channel MOSFET"/>
@@ -3763,6 +4198,7 @@
       <fields>
         <field name="MPN">BSS138</field>
         <field name="Manufacturer">onsemi</field>
+        <field name="LCSC">C52895</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
         <field name="Datasheet">https://www.onsemi.com/pub/Collateral/BSS138-D.PDF</field>
         <field name="Description"/>
@@ -3770,6 +4206,7 @@
       <libsource lib="Transistor_FET" part="BSS138" description="50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23"/>
       <property name="MPN" value="BSS138"/>
       <property name="Manufacturer" value="onsemi"/>
+      <property name="LCSC" value="C52895"/>
       <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
       <property name="Sheetfile" value="oled.kicad_sch"/>
       <property name="ki_keywords" value="N-Channel MOSFET"/>
@@ -3788,17 +4225,24 @@
     </comp>
     <comp ref="R30">
       <value>1.8M</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_TE-Connectivity-CPF0805B1M8E_C2088132.pdf</datasheet>
       <fields>
         <field name="Tolerance">0.1%</field>
-        <field name="Rating">0.1 W</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Rating">0.1 W; 100 V; 25 ppm/K</field>
+        <field name="Manufacturer">TE Connectivity</field>
+        <field name="MPN">CPF0805B1M8E</field>
+        <field name="LCSC">C2088132</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_TE-Connectivity-CPF0805B1M8E_C2088132.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="0.1%"/>
-      <property name="Rating" value="0.1 W"/>
+      <property name="Rating" value="0.1 W; 100 V; 25 ppm/K"/>
+      <property name="Manufacturer" value="TE Connectivity"/>
+      <property name="MPN" value="CPF0805B1M8E"/>
+      <property name="LCSC" value="C2088132"/>
       <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
       <property name="Sheetfile" value="oled.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -3817,16 +4261,23 @@
     <comp ref="R31">
       <value>200k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YAGEO-RT0603BRD07200KL_C728585.pdf</datasheet>
       <fields>
         <field name="Tolerance">0.1%</field>
         <field name="Rating">0.1 W</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">RT0603BRD07200KL</field>
+        <field name="LCSC">C728585</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YAGEO-RT0603BRD07200KL_C728585.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="0.1%"/>
       <property name="Rating" value="0.1 W"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="RT0603BRD07200KL"/>
+      <property name="LCSC" value="C728585"/>
       <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
       <property name="Sheetfile" value="oled.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -3845,16 +4296,23 @@
     <comp ref="R32">
       <value>910k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2206010100_UNI-ROYAL-Uniroyal-Elec-0603WAF9103T5E_C23263.pdf</datasheet>
       <fields>
         <field name="Tolerance">1%</field>
         <field name="Rating">0.1 W</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="MPN">0603WAF9103T5E</field>
+        <field name="LCSC">C23263</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2206010100_UNI-ROYAL-Uniroyal-Elec-0603WAF9103T5E_C23263.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="MPN" value="0603WAF9103T5E"/>
+      <property name="LCSC" value="C23263"/>
       <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
       <property name="Sheetfile" value="oled.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -3873,16 +4331,23 @@
     <comp ref="R33">
       <value>100k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1003T5E_C25803.pdf</datasheet>
       <fields>
         <field name="Tolerance">1%</field>
         <field name="Rating">0.1 W</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="MPN">0603WAF1003T5E</field>
+        <field name="LCSC">C25803</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1003T5E_C25803.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="MPN" value="0603WAF1003T5E"/>
+      <property name="LCSC" value="C25803"/>
       <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
       <property name="Sheetfile" value="oled.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -3901,16 +4366,23 @@
     <comp ref="R34">
       <value>100k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1003T5E_C25803.pdf</datasheet>
       <fields>
         <field name="Tolerance">1%</field>
         <field name="Rating">0.1 W</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="MPN">0603WAF1003T5E</field>
+        <field name="LCSC">C25803</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1003T5E_C25803.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="MPN" value="0603WAF1003T5E"/>
+      <property name="LCSC" value="C25803"/>
       <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
       <property name="Sheetfile" value="oled.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -3929,16 +4401,23 @@
     <comp ref="R35">
       <value>10k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</datasheet>
       <fields>
         <field name="Tolerance">1%</field>
         <field name="Rating">0.1 W</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="MPN">0603WAF1002T5E</field>
+        <field name="LCSC">C25804</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="MPN" value="0603WAF1002T5E"/>
+      <property name="LCSC" value="C25804"/>
       <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
       <property name="Sheetfile" value="oled.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -3957,16 +4436,23 @@
     <comp ref="R36">
       <value>100k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1003T5E_C25803.pdf</datasheet>
       <fields>
         <field name="Tolerance">1%</field>
         <field name="Rating">0.1 W</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="MPN">0603WAF1003T5E</field>
+        <field name="LCSC">C25803</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1003T5E_C25803.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="MPN" value="0603WAF1003T5E"/>
+      <property name="LCSC" value="C25803"/>
       <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
       <property name="Sheetfile" value="oled.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -3989,6 +4475,7 @@
       <fields>
         <field name="MPN">AP3012KTR-E1</field>
         <field name="Manufacturer">Diodes Incorporated</field>
+        <field name="LCSC">C460356</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
         <field name="Datasheet">https://www.diodes.com/datasheet/download/AP3012.pdf</field>
         <field name="Description"/>
@@ -3996,6 +4483,7 @@
       <libsource lib="Regulator_Switching" part="AP3012" description="500mA, Adjustable Step-Up Voltage Regulator, 1.5MHz Frequency, SOT-23-5"/>
       <property name="MPN" value="AP3012KTR-E1"/>
       <property name="Manufacturer" value="Diodes Incorporated"/>
+      <property name="LCSC" value="C460356"/>
       <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
       <property name="Sheetfile" value="oled.kicad_sch"/>
       <property name="ki_keywords" value="Step-Up Boost Voltage Regulator"/>
@@ -4017,20 +4505,27 @@
     <comp ref="C51">
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf</datasheet>
       <fields>
         <field name="PCB Region">BREAKAWAY_KEYBOARD</field>
-        <field name="Voltage">10 V</field>
+        <field name="Voltage">50 V</field>
         <field name="Dielectric">X7R</field>
         <field name="Tolerance">10%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL10B104KB8NNNC</field>
+        <field name="LCSC">C1591</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="PCB Region" value="BREAKAWAY_KEYBOARD"/>
-      <property name="Voltage" value="10 V"/>
+      <property name="Voltage" value="50 V"/>
       <property name="Dielectric" value="X7R"/>
       <property name="Tolerance" value="10%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL10B104KB8NNNC"/>
+      <property name="LCSC" value="C1591"/>
       <property name="Sheetname" value="Keyboard / breakaway / 0x20"/>
       <property name="Sheetfile" value="keyboard.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -4049,20 +4544,27 @@
     <comp ref="C52">
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL21B105KBFNNNE_C28323.pdf</datasheet>
       <fields>
         <field name="PCB Region">BREAKAWAY_KEYBOARD</field>
-        <field name="Voltage">10 V</field>
+        <field name="Voltage">50 V</field>
         <field name="Dielectric">X7R</field>
-        <field name="Tolerance">20%</field>
+        <field name="Tolerance">10%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL21B105KBFNNNE</field>
+        <field name="LCSC">C28323</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL21B105KBFNNNE_C28323.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="PCB Region" value="BREAKAWAY_KEYBOARD"/>
-      <property name="Voltage" value="10 V"/>
+      <property name="Voltage" value="50 V"/>
       <property name="Dielectric" value="X7R"/>
-      <property name="Tolerance" value="20%"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL21B105KBFNNNE"/>
+      <property name="LCSC" value="C28323"/>
       <property name="Sheetname" value="Keyboard / breakaway / 0x20"/>
       <property name="Sheetfile" value="keyboard.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -4159,18 +4661,25 @@
     <comp ref="R37">
       <value>10k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</datasheet>
       <fields>
         <field name="PCB Region">BREAKAWAY_KEYBOARD</field>
         <field name="Tolerance">1%</field>
         <field name="Rating">0.1 W</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="MPN">0603WAF1002T5E</field>
+        <field name="LCSC">C25804</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="PCB Region" value="BREAKAWAY_KEYBOARD"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="MPN" value="0603WAF1002T5E"/>
+      <property name="LCSC" value="C25804"/>
       <property name="Sheetname" value="Keyboard / breakaway / 0x20"/>
       <property name="Sheetfile" value="keyboard.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4254,18 +4763,20 @@
       <datasheet>https://www.nxp.com/docs/en/data-sheet/PCF8574_PCF8574A.pdf</datasheet>
       <fields>
         <field name="MPN">PCF8574T/3,518</field>
-        <field name="Manufacturer">NXP</field>
+        <field name="Manufacturer">NXP Semicon</field>
         <field name="I2C Address">0x20</field>
         <field name="PCB Region">BREAKAWAY_KEYBOARD</field>
+        <field name="LCSC">C7605</field>
         <field name="Footprint">Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm</field>
         <field name="Datasheet">https://www.nxp.com/docs/en/data-sheet/PCF8574_PCF8574A.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Interface_Expansion" part="PCF8574T" description="8-bit I/O Expander, I2C interface, interrupt output, fixed address bits 0b0100xxx, SOIC-16"/>
       <property name="MPN" value="PCF8574T/3,518"/>
-      <property name="Manufacturer" value="NXP"/>
+      <property name="Manufacturer" value="NXP Semicon"/>
       <property name="I2C Address" value="0x20"/>
       <property name="PCB Region" value="BREAKAWAY_KEYBOARD"/>
+      <property name="LCSC" value="C7605"/>
       <property name="Sheetname" value="Keyboard / breakaway / 0x20"/>
       <property name="Sheetfile" value="keyboard.kicad_sch"/>
       <property name="ki_keywords" value="NXP Port-Expander"/>
@@ -4707,17 +5218,16 @@
         <pin num="5" name="FB" type="input"/>
       </pins>
     </libpart>
-    <libpart lib="Nucula_Project" part="TLV803EA30DCKR">
+    <libpart lib="Nucula_Project" part="TLV803EA30DBZR">
       <description>3.08 V supervisor, active-low open-drain RESET, 200 ms delay, DCK/SC70: 1 GND, 2 RESET, 3 VDD</description>
       <docs>https://www.ti.com/lit/ds/symlink/tlv803e.pdf</docs>
       <footprints>
-        <fp>SOT?323*</fp>
-        <fp>SC?70*</fp>
+        <fp>SOT?23*</fp>
       </footprints>
       <fields>
         <field name="Reference">U</field>
-        <field name="Value">TLV803EA30DCKR</field>
-        <field name="Footprint">Package_TO_SOT_SMD:SOT-323_SC-70</field>
+        <field name="Value">TLV803EA30DBZR</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
         <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tlv803e.pdf</field>
         <field name="Description">3.08 V supervisor, active-low open-drain RESET, 200 ms delay, DCK/SC70: 1 GND, 2 RESET, 3 VDD</field>
       </fields>
@@ -4727,17 +5237,17 @@
         <pin num="3" name="VDD" type="power_in"/>
       </pins>
     </libpart>
-    <libpart lib="Nucula_Project" part="TP4054-42-SOT235">
+    <libpart lib="Nucula_Project" part="TP4054-42-SOT25R">
       <description>800mA Standalone Linear Li-Ion Battery Charger with Thermal Regulation in SOT23-5/TSOT23-5</description>
-      <docs>https://www.toppwr.com/uploadfile/file/20240913/66e3d01d4c944.pdf</docs>
+      <docs>https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1809261814_TOP-POWER-ASIC-TP4054-42-SOT25R_C32574.pdf</docs>
       <footprints>
         <fp>SOT?23?5*</fp>
       </footprints>
       <fields>
         <field name="Reference">U</field>
-        <field name="Value">TP4054-42-SOT235</field>
+        <field name="Value">TP4054-42-SOT25R</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
-        <field name="Datasheet">https://www.toppwr.com/uploadfile/file/20240913/66e3d01d4c944.pdf</field>
+        <field name="Datasheet">https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1809261814_TOP-POWER-ASIC-TP4054-42-SOT25R_C32574.pdf</field>
         <field name="Description">800mA Standalone Linear Li-Ion Battery Charger with Thermal Regulation in SOT23-5/TSOT23-5</field>
         <field name="Note">PB-Free</field>
       </fields>

@@ -2628,6 +2628,24 @@
         )
       )
     )
+    (property "Manufacturer" "Infineon Technologies"
+      (at 111.76 53.34 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C2593"
+      (at 111.76 53.34 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
   )
   (wire
     (pts
@@ -2728,7 +2746,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1003T5E_C25803.pdf"
       (at 147.32 52.07 0)
       (effects
         (font
@@ -2770,6 +2788,33 @@
           (reference "R33")
           (unit 1)
         )
+      )
+    )
+    (property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+      (at 147.32 52.07 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "0603WAF1003T5E"
+      (at 147.32 52.07 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C25803"
+      (at 147.32 52.07 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
       )
     )
   )
@@ -2896,6 +2941,15 @@
           (reference "Q4")
           (unit 1)
         )
+      )
+    )
+    (property "LCSC" "C52895"
+      (at 111.76 91.44 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
       )
     )
   )
@@ -3044,7 +3098,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1003T5E_C25803.pdf"
       (at 83.82 109.22 0)
       (effects
         (font
@@ -3086,6 +3140,33 @@
           (reference "R34")
           (unit 1)
         )
+      )
+    )
+    (property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+      (at 83.82 109.22 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "0603WAF1003T5E"
+      (at 83.82 109.22 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C25803"
+      (at 83.82 109.22 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
       )
     )
   )
@@ -3264,6 +3345,15 @@
           (reference "U7")
           (unit 1)
         )
+      )
+    )
+    (property "LCSC" "C460356"
+      (at 190.5 66.04 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
       )
     )
   )
@@ -3462,6 +3552,15 @@
         )
       )
     )
+    (property "LCSC" "C6127589"
+      (at 187.96 38.1 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
   )
   (wire
     (pts
@@ -3561,7 +3660,7 @@
         (justify left)
       )
     )
-    (property "Manufacturer" "Vishay"
+    (property "Manufacturer" "Vishay Intertech"
       (at 231.14 38.1 0)
       (effects
         (font
@@ -3583,6 +3682,15 @@
           (reference "D4")
           (unit 1)
         )
+      )
+    )
+    (property "LCSC" "C47460"
+      (at 231.14 38.1 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
       )
     )
   )
@@ -3654,7 +3762,7 @@
         (justify left)
       )
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
       (at 241.3 63.5 0)
       (effects
         (font
@@ -3664,7 +3772,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_TE-Connectivity-CPF0805B1M8E_C2088132.pdf"
       (at 241.3 63.5 0)
       (effects
         (font
@@ -3684,7 +3792,7 @@
         (justify left)
       )
     )
-    (property "Rating" "0.1 W"
+    (property "Rating" "0.1 W; 100 V; 25 ppm/K"
       (at 241.3 63.5 0)
       (effects
         (font
@@ -3706,6 +3814,33 @@
           (reference "R30")
           (unit 1)
         )
+      )
+    )
+    (property "Manufacturer" "TE Connectivity"
+      (at 241.3 63.5 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "CPF0805B1M8E"
+      (at 241.3 63.5 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C2088132"
+      (at 241.3 63.5 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
       )
     )
   )
@@ -3787,7 +3922,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YAGEO-RT0603BRD07200KL_C728585.pdf"
       (at 241.3 91.44 0)
       (effects
         (font
@@ -3829,6 +3964,33 @@
           (reference "R31")
           (unit 1)
         )
+      )
+    )
+    (property "Manufacturer" "YAGEO"
+      (at 241.3 91.44 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "RT0603BRD07200KL"
+      (at 241.3 91.44 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C728585"
+      (at 241.3 91.44 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
       )
     )
   )
@@ -3956,7 +4118,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10C220JB8NNNC_C1653.pdf"
       (at 266.7 63.5 0)
       (effects
         (font
@@ -3986,7 +4148,7 @@
         (justify left)
       )
     )
-    (property "Tolerance" "10%"
+    (property "Tolerance" "5%"
       (at 266.7 63.5 0)
       (effects
         (font
@@ -4008,6 +4170,33 @@
           (reference "C41")
           (unit 1)
         )
+      )
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 266.7 63.5 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "CL10C220JB8NNNC"
+      (at 266.7 63.5 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C1653"
+      (at 266.7 63.5 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
       )
     )
   )
@@ -4655,7 +4844,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" "https://files.waveshare.com/wiki/2.42inch-OLED-Module/SSD1309Datasheet.pdf"
+    (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410010332_HRS-Hirose-FH12-26S-0-5SH-55_C202113.pdf"
       (at 345.44 88.9 0)
       (effects
         (font
@@ -4713,7 +4902,7 @@
         (hide yes)
       )
     )
-    (property "Manufacturer" "Hirose"
+    (property "Manufacturer" "HRS(Hirose)"
       (at 345.44 88.9 0)
       (effects
         (font
@@ -4824,6 +5013,24 @@
           (reference "DS1")
           (unit 1)
         )
+      )
+    )
+    (property "LCSC" "C202113"
+      (at 345.44 88.9 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "Panel Datasheet" "https://files.waveshare.com/wiki/2.42inch-OLED-Module/SSD1309Datasheet.pdf"
+      (at 345.44 88.9 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
       )
     )
   )
@@ -5392,7 +5599,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf"
       (at 312.42 157.48 0)
       (effects
         (font
@@ -5402,7 +5609,7 @@
         (justify left)
       )
     )
-    (property "Voltage" "10 V"
+    (property "Voltage" "50 V"
       (at 312.42 157.48 0)
       (effects
         (font
@@ -5444,6 +5651,33 @@
           (reference "C43")
           (unit 1)
         )
+      )
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 312.42 157.48 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "CL10B104KB8NNNC"
+      (at 312.42 157.48 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C1591"
+      (at 312.42 157.48 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
       )
     )
   )
@@ -5777,7 +6011,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf"
       (at 353.06 157.48 0)
       (effects
         (font
@@ -5787,7 +6021,7 @@
         (justify left)
       )
     )
-    (property "Voltage" "25 V"
+    (property "Voltage" "50 V"
       (at 353.06 157.48 0)
       (effects
         (font
@@ -5829,6 +6063,33 @@
           (reference "C45")
           (unit 1)
         )
+      )
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 353.06 157.48 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "CL10B104KB8NNNC"
+      (at 353.06 157.48 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C1591"
+      (at 353.06 157.48 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
       )
     )
   )
@@ -6368,7 +6629,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010100_UNI-ROYAL-Uniroyal-Elec-0603WAF9103T5E_C23263.pdf"
       (at 345.44 195.58 0)
       (effects
         (font
@@ -6410,6 +6671,33 @@
           (reference "R32")
           (unit 1)
         )
+      )
+    )
+    (property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+      (at 345.44 195.58 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "0603WAF9103T5E"
+      (at 345.44 195.58 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C23263"
+      (at 345.44 195.58 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
       )
     )
   )
@@ -6594,6 +6882,15 @@
         )
       )
     )
+    (property "LCSC" "C52895"
+      (at 86.36 190.5 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
   )
   (wire
     (pts
@@ -6740,7 +7037,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf"
       (at 111.76 170.18 0)
       (effects
         (font
@@ -6782,6 +7079,33 @@
           (reference "R35")
           (unit 1)
         )
+      )
+    )
+    (property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+      (at 111.76 170.18 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "0603WAF1002T5E"
+      (at 111.76 170.18 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C25804"
+      (at 111.76 170.18 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
       )
     )
   )
@@ -6863,7 +7187,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1003T5E_C25803.pdf"
       (at 53.34 203.2 0)
       (effects
         (font
@@ -6905,6 +7229,33 @@
           (reference "R36")
           (unit 1)
         )
+      )
+    )
+    (property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+      (at 53.34 203.2 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "0603WAF1003T5E"
+      (at 53.34 203.2 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C25803"
+      (at 53.34 203.2 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
       )
     )
   )
@@ -7032,7 +7383,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf"
       (at 116.84 198.12 0)
       (effects
         (font
@@ -7042,7 +7393,7 @@
         (justify left)
       )
     )
-    (property "Voltage" "10 V"
+    (property "Voltage" "50 V"
       (at 116.84 198.12 0)
       (effects
         (font
@@ -7084,6 +7435,33 @@
           (reference "C48")
           (unit 1)
         )
+      )
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 116.84 198.12 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "CL10B104KB8NNNC"
+      (at 116.84 198.12 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C1591"
+      (at 116.84 198.12 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
       )
     )
   )

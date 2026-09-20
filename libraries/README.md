@@ -6,9 +6,9 @@ The global `Nucula` library remains available separately, including PN7160.
 - ESP32-C3-WROOM-02-N4 symbol, footprint and STEP: KiCad Library Team's
   ESP32-C3-WROOM-02 assets from installed KiCad 10.0.6, specialized with N4/4 MB
   metadata. Footprint pad geometry and antenna keepout are preserved.
-- TLV803EA30DCKR: adapted from KiCad's TPS3839DBZ drawing. Corrected to the
-  TLV803E open-drain output, SC70 footprint, ordering code and documentation.
-- TP4054-42-SOT235 and SY8089AAAC: adapted from the embedded Olimex Rev C
+- TLV803EA30DBZR: adapted from KiCad's TPS3839DBZ drawing. Corrected to the
+  TLV803E open-drain output, SOT-23 footprint, ordering code and documentation.
+- TP4054-42-SOT25R and SY8089AAAC: adapted from the embedded Olimex Rev C
   symbols. Corrected part names, pin electrical types, datasheets and footprint
   filters; replaced internal artwork with clean outlines and removed the old
   component-specific annotations.
@@ -38,7 +38,8 @@ The global `Nucula` library remains available separately, including PN7160.
   No ground/shield pad, no discrete-part 3D model, excluded from purchased BOM
   and placement outputs. [Design and calculations](../docs/nfc-antenna.md).
 - C_0805_HandSolder_NoPaste: KiCad's C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
-  geometry and standard model, with F.Paste removed for six optional RF trim pads.
+  geometry and standard model, with F.Paste removed for four optional RF trim pads.
+  C53/C54 now use the standard footprint with paste and populated 33 pF parts.
 - L_Coilcraft_0805HP: newly drawn from the manufacturer's 0805HP land pattern:
   1.02 × 1.98 mm pads with 1.12 mm gap, for L2/L3 = 0805HP-151XGRC (150 nH).
   No package model is claimed. RF electrical model is included in the calculations.

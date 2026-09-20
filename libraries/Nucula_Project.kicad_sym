@@ -462,7 +462,7 @@
     )
     (embedded_fonts no)
   )
-  (symbol "TP4054-42-SOT235"
+  (symbol "TP4054-42-SOT25R"
     (property "ki_fp_filters" "SOT?23?5*"
       (at 0 0 0)
       (effects
@@ -492,7 +492,7 @@
         )
       )
     )
-    (property "Value" "TP4054-42-SOT235"
+    (property "Value" "TP4054-42-SOT25R"
       (at 0 -8.89 0)
       (effects
         (font
@@ -508,7 +508,7 @@
         ) hide
       )
     )
-    (property "Datasheet" "https://www.toppwr.com/uploadfile/file/20240913/66e3d01d4c944.pdf"
+    (property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1809261814_TOP-POWER-ASIC-TP4054-42-SOT25R_C32574.pdf"
       (at 0 -13.97 0)
       (effects
         (font
@@ -540,7 +540,7 @@
         ) hide
       )
     )
-    (symbol "TP4054-42-SOT235_0_1"
+    (symbol "TP4054-42-SOT25R_0_1"
       (rectangle
         (start -5.715 6.35)
         (end 5.715 -6.35)
@@ -553,7 +553,7 @@
         )
       )
     )
-    (symbol "TP4054-42-SOT235_1_1"
+    (symbol "TP4054-42-SOT25R_1_1"
       (pin open_collector line
         (at 10.16 0 180)
         (length 4.4958)
@@ -832,7 +832,7 @@
       )
     )
   )
-  (symbol "TLV803EA30DCKR"
+  (symbol "TLV803EA30DBZR"
     (pin_names
       (offset 0.254)
     )
@@ -852,7 +852,7 @@
         (justify left)
       )
     )
-    (property "Value" "TLV803EA30DCKR"
+    (property "Value" "TLV803EA30DBZR"
       (at 2.54 6.35 0)
       (show_name no)
       (do_not_autoplace no)
@@ -863,7 +863,7 @@
         (justify left)
       )
     )
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-323_SC-70"
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23"
       (at 0 0 0)
       (show_name no)
       (do_not_autoplace no)
@@ -907,7 +907,7 @@
         )
       )
     )
-    (property "ki_fp_filters" "SOT?323* SC?70*"
+    (property "ki_fp_filters" "SOT?23*"
       (at 0 0 0)
       (show_name no)
       (do_not_autoplace no)
@@ -918,7 +918,7 @@
         )
       )
     )
-    (symbol "TLV803EA30DCKR_0_1"
+    (symbol "TLV803EA30DBZR_0_1"
       (rectangle
         (start -2.54 5.08)
         (end 7.62 -5.08)
@@ -931,7 +931,7 @@
         )
       )
     )
-    (symbol "TLV803EA30DCKR_1_1"
+    (symbol "TLV803EA30DBZR_1_1"
       (pin power_in line
         (at 0 -7.62 90)
         (length 2.54)

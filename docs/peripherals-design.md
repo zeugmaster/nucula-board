@@ -81,10 +81,10 @@ configuration. I²C address selection is documented in
 The [NFC antenna design and tuning guide](nfc-antenna.md) supersedes the former
 RF placeholders. A1 is now a 40 × 40 mm four-turn loop, 0.50 mm tracks, 0.30 mm
 gaps and 35 µm copper, with an estimated 1.56 µH inductance. The complete
-starting tree uses 150 nH / 360 pF EMC filtering, 68 pF series / 100 pF shunt
+starting tree uses 150 nH / (330 + 33) pF EMC filtering, 68 pF series / 100 pF shunt
 matching, 2.7 Ω damping and 2.2 kΩ / 1 nF RX taps. RF capacitors use hand-solder
 0805 footprints and 100 V C0G. Damping resistors use high-power 1206 parts.
-C53/C54 add DNP EMC trim pads; R41/R42 add removable TX isolation links.
+C53/C54 are populated 33 pF parallel EMC capacitors; R41/R42 add removable TX isolation links.
 The selected target is 20 Ω differential; start at TVDD ≤3.3 V. Values remain
 prototype starts requiring VNA, receive-level and current/thermal validation.
 

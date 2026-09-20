@@ -1,0 +1,44 @@
+[
+  {
+    "file": "parts documentation/LSXND3030QKT2R2MNG-datasheet.pdf",
+    "source": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6025/LSXND3030QKT2R2MNG_SS.pdf",
+    "sha256": "5f593048c9c92b3d242c7feb08806f1780ffd4288e5eaa7a034046511e13d771",
+    "checked_date": "2026-09-20",
+    "use": "Taiyo Yuden exact L1 datasheet; page 1 land pattern 0.8 x 2.7 mm, 2.2 mm centers and old/new PN equivalence."
+  },
+  {
+    "file": "parts documentation/TP4054-42-SOT25R-C32574-datasheet.pdf",
+    "source": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1809261814_TOP-POWER-ASIC-TP4054-42-SOT25R_C32574.pdf",
+    "sha256": "89bb8e97428a70bc38908bdc1d761ab90c92fdbef8072b96556a6f77ebc1692a",
+    "checked_date": "2026-09-20",
+    "use": "Catalogue-linked manufacturer datasheet; pages 3, 6, 7: TP4054-42-SOT25-R ordering, pins 1 CHRG / 2 GND / 3 BAT / 4 VCC / 5 PROG, 10k sets 100mA."
+  },
+  {
+    "file": "parts documentation/TLV803E-datasheet.pdf",
+    "source": "https://www.ti.com/lit/ds/symlink/tlv803e.pdf",
+    "sha256": "8c0e1447e9f5edfc933912d7f30d3a11867d052b43b3ff75e45309aa461a651b",
+    "checked_date": "2026-09-20",
+    "use": "TI pin configuration: selected plain DBZ SOT-23 shares 1 GND / 2 RESET / 3 VDD with DCK; do not confuse DBZ R/V remapped variants."
+  },
+  {
+    "file": "parts documentation/USB4105-drawing.pdf",
+    "source": "https://gct.co/files/drawings/usb4105.pdf",
+    "sha256": "fb331fbabee8392ed2937ed757c1610cb0f174b84625147c0b580a18eea8c0e5",
+    "checked_date": "2026-09-20",
+    "use": "GCT page 1: 120 suffix changes shell stake length to 1.20 mm, XY land unchanged."
+  },
+  {
+    "file": "parts documentation/Coilcraft-0805HP-land-pattern.png",
+    "source": "https://www.coilcraft.com/en-us/products/rf/ceramic-core-chip-inductors/0805-%282012%29/0805hp/0805hp-151/",
+    "sha256": "7745be002eeca760040e16d1ca1124dbc626a53a6f15bb5d50d505c7abd39546",
+    "checked_date": "2026-09-20",
+    "use": "Existing manufacturer-derived RF inductor footprint retained; not standard 0805 resistor/capacitor geometry."
+  },
+  {
+    "file": "parts documentation/Vishay-CRCW-HP-e3.pdf",
+    "source": "https://www.vishay.com/docs/20043/crcwhpe3.pdf",
+    "sha256": "38f96c0033a826fefb626ce4b77894b1eed94c3226228eee8fab1103338c1e0b",
+    "checked_date": "2026-09-20",
+    "use": "Retain high-power CRCW-HP damping resistor with documented board thermal conditions."
+  }
+]
