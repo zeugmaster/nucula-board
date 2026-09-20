@@ -1,0 +1,41 @@
+Nucula NFC full differential passive model / 13.56MHz
+* Assumed bare-coil model; no nonlinear PN7160 or tag coupling.
+* Coilcraft 0805HP-151 doc 158-1/158-27; Rvar frozen at f0.
+VP txp 0 DC 0 AC 0.5 0
+VN txn 0 DC 0 AC 0.5 180
+.subckt emc a b
+Rd a x .288
+Rskin x y 0.572243488036343
+Lcore y b 148.8n
+Cpar x z .135p
+Rpar z b 10
+.ends emc
+XLP txp ep emc
+XLN txn en emc
+Rcp0 ep ep0 .03
+Cp0 ep0 0 360p
+Rcn0 en en0 .03
+Cn0 en0 0 360p
+Rcp1 ep sp .03
+Cp1 sp mp 68p
+Rcn1 en sn .03
+Cn1 sn mn 68p
+Rcp2 mp mp0 .03
+Cp2 mp0 0 100p
+Rcn2 mn mn0 .03
+Cn2 mn0 0 100p
+Rqp mp ap 2.7
+Rqn mn an 2.7
+Ra ap ai 1.5
+La ai an 1.55900493254921e-06
+Ca ap an 2e-12
+Rrxp ep rp 2200
+Rcxp rp rp1 .03
+Crxp rp1 rxp 1n
+Rinp rxp 0 2200
+Rrxn en rn 2200
+Rcxn rn rn1 .03
+Crxn rn1 rxn 1n
+Rinn rxn 0 2200
+.ac lin 1 13.56Meg 13.56Meg
+.end

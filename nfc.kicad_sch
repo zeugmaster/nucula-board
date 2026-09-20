@@ -1835,53 +1835,54 @@
       )
       (embedded_fonts no)
     )
-    (symbol "Nucula_Project:NFC_Loop_TBD"
-      (property "Description" "Two-terminal 13.56 MHz coil plus reference/shield ground; geometry and tuning TBD"
-        (at 0 0 0)
-        (effects
-          (font
-            (size 1.27 1.27)
-          ) hide
-        )
-      )
-      (property "Datasheet" ""
-        (at 0 0 0)
-        (effects
-          (font
-            (size 1.27 1.27)
-          ) hide
-        )
-      )
-      (property "Footprint" "Nucula_Project:NFC_Antenna_Interface_TBD"
-        (at 0 0 0)
-        (effects
-          (font
-            (size 1.27 1.27)
-          ) hide
-        )
-      )
-      (property "Value" "NFC_Loop_TBD"
-        (at 0 0 0)
-        (effects
-          (font
-            (size 1.27 1.27)
-          ) hide
-        )
-      )
-      (property "Reference" "A"
-        (at 0 0 0)
-        (effects
-          (font
-            (size 1.27 1.27)
-          ) hide
-        )
-      )
-      (pin_names
-        (offset 0.508)
-      )
-      (in_bom yes)
+    (symbol "Nucula_Project:NFC_PCB_Loop_40x40_4T"
+      (exclude_from_sim no)
+      (in_bom no)
       (on_board yes)
-      (symbol "NFC_Loop_TBD_0_1"
+      (property "Reference" "A"
+        (at 2.54 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Value" "NFC_PCB_Loop_40x40_4T"
+        (at 0 -2.54 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Footprint" "Nucula_Project:NFC_PCB_Loop_40x40_4T_W0.50_S0.30"
+        (at 0 -5.08 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+        (hide yes)
+      )
+      (property "Datasheet" "~"
+        (at 0 -7.62 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+        (hide yes)
+      )
+      (property "Description" "Two-terminal etched PCB NFC coil. 40x40 mm outer copper; 4 turns, 0.50 mm trace, 0.30 mm gap. No ground or center tap."
+        (at 0 -10.16 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+        (hide yes)
+      )
+      (symbol "NFC_PCB_Loop_40x40_4T_0_1"
         (rectangle
           (start -10.16 12.7)
           (end 10.16 -12.7)
@@ -1893,22 +1894,45 @@
             (type background)
           )
         )
+        (polyline
+          (pts
+            (xy -7 7)
+            (xy 7 7)
+            (xy 7 -7)
+            (xy -7 -7)
+            (xy -7 4.5)
+            (xy 4.5 4.5)
+            (xy 4.5 -4.5)
+            (xy -4.5 -4.5)
+            (xy -4.5 2)
+            (xy 2 2)
+            (xy 2 -2)
+            (xy -2 -2)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
       )
-      (symbol "NFC_Loop_TBD_1_1"
+      (symbol "NFC_PCB_Loop_40x40_4T_1_1"
         (pin passive line
           (at -15.24 7.62 0)
           (length 5.08)
           (name "LOOP_A"
             (effects
               (font
-                (size 1.016 1.016)
+                (size 1.27 1.27)
               )
             )
           )
           (number "1"
             (effects
               (font
-                (size 1.016 1.016)
+                (size 1.27 1.27)
               )
             )
           )
@@ -1919,32 +1943,14 @@
           (name "LOOP_B"
             (effects
               (font
-                (size 1.016 1.016)
+                (size 1.27 1.27)
               )
             )
           )
           (number "2"
             (effects
               (font
-                (size 1.016 1.016)
-              )
-            )
-          )
-        )
-        (pin passive line
-          (at -15.24 0 0)
-          (length 5.08)
-          (name "REF_GND"
-            (effects
-              (font
-                (size 1.016 1.016)
-              )
-            )
-          )
-          (number "3"
-            (effects
-              (font
-                (size 1.016 1.016)
+                (size 1.27 1.27)
               )
             )
           )
@@ -3744,7 +3750,7 @@
         (justify left)
       )
     )
-    (property "Value" "27.12MHz / CL TBD"
+    (property "Value" "27.12MHz / CL 10pF"
       (at 38.1 132.08 0)
       (effects
         (font
@@ -3753,7 +3759,7 @@
         (justify left)
       )
     )
-    (property "Footprint" "Crystal:Crystal_SMD_SeikoEpson_TSX3225-4Pin_3.2x2.5mm"
+    (property "Footprint" "Nucula_Project:Crystal_NDK_NX2016SA_2.0x1.6mm"
       (at 55.88 142.24 0)
       (effects
         (font
@@ -3763,7 +3769,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6749/CS06346-27.12M.pdf"
       (at 55.88 142.24 0)
       (effects
         (font
@@ -3773,7 +3779,7 @@
         (justify left)
       )
     )
-    (property "Manufacturer" "Epson"
+    (property "Manufacturer" "NDK"
       (at 55.88 142.24 0)
       (effects
         (font
@@ -3783,7 +3789,7 @@
         (justify left)
       )
     )
-    (property "Candidate Family" "TSX-3225 27.1200MHz"
+    (property "MPN" "NX2016SA-27.12MHZ-EXS00A-CS06346"
       (at 55.88 142.24 0)
       (effects
         (font
@@ -3793,7 +3799,7 @@
         (justify left)
       )
     )
-    (property "MPN" "TBD load capacitance / ESR / drive grade"
+    (property "Status" "SELECTED: NXP AN14518 reference; measure frequency/startup/drive on prototype"
       (at 55.88 142.24 0)
       (effects
         (font
@@ -3803,14 +3809,49 @@
         (justify left)
       )
     )
-    (property "Status" "27.12 MHz fixed; load capacitors require crystal selection"
+    (property "LCSC" "C3008209"
       (at 55.88 142.24 0)
       (effects
         (font
-          (size 1.0 1.0)
+          (size 1.27 1.27)
         )
         (hide yes)
-        (justify left)
+      )
+    )
+    (property "Load Capacitance" "10 pF"
+      (at 55.88 142.24 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "ESR" "100 ohm max, 25 ohm typical (NDK specification)"
+      (at 55.88 142.24 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Drive Level" "100 uW maximum; 10 uW typical"
+      (at 55.88 142.24 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Supply Status" "JLCPCB C3008209: overseasStockCount 8896, purchasable 8533 on 2026-09-20; check assembly availability"
+      (at 55.88 142.24 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -3960,7 +4001,7 @@
         (justify left)
       )
     )
-    (property "Value" "10pF START"
+    (property "Value" "12pF"
       (at 35.56 161.29 0)
       (effects
         (font
@@ -3979,7 +4020,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL10C120JB8NNN.do"
       (at 33.02 160.02 0)
       (effects
         (font
@@ -4009,7 +4050,7 @@
         (justify left)
       )
     )
-    (property "Tolerance" "10%"
+    (property "Tolerance" "5%"
       (at 33.02 160.02 0)
       (effects
         (font
@@ -4017,6 +4058,33 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 33.02 160.02 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "CL10C120JB8NNNC"
+      (at 33.02 160.02 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Status" "PROTOTYPE START: 12pF/15pF pair; tune carrier to -5..0ppm per AN14518"
+      (at 33.02 160.02 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -4139,7 +4207,7 @@
         (justify left)
       )
     )
-    (property "Value" "10pF START"
+    (property "Value" "15pF"
       (at 78.74 161.29 0)
       (effects
         (font
@@ -4158,7 +4226,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL10C150JB8NNN.do"
       (at 76.2 160.02 0)
       (effects
         (font
@@ -4188,7 +4256,7 @@
         (justify left)
       )
     )
-    (property "Tolerance" "10%"
+    (property "Tolerance" "5%"
       (at 76.2 160.02 0)
       (effects
         (font
@@ -4196,6 +4264,42 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 76.2 160.02 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "CL10C150JB8NNNC"
+      (at 76.2 160.02 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C1644"
+      (at 76.2 160.02 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Status" "PROTOTYPE START: 12pF/15pF pair; tune carrier to -5..0ppm per AN14518"
+      (at 76.2 160.02 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -4337,7 +4441,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL21B105KBFNNN.do"
       (at 25.4 207.01 0)
       (effects
         (font
@@ -4347,7 +4451,7 @@
         (justify left)
       )
     )
-    (property "Voltage" "10 V"
+    (property "Voltage" "50 V"
       (at 25.4 207.01 0)
       (effects
         (font
@@ -4367,7 +4471,7 @@
         (justify left)
       )
     )
-    (property "Tolerance" "20%"
+    (property "Tolerance" "10%"
       (at 25.4 207.01 0)
       (effects
         (font
@@ -4375,6 +4479,42 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 25.4 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "CL21B105KBFNNNE"
+      (at 25.4 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C28323"
+      (at 25.4 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Placement" "At U6.6 VDD_PAD"
+      (at 25.4 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -4516,7 +4656,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL10B104KB8NNN.do"
       (at 43.18 207.01 0)
       (effects
         (font
@@ -4526,7 +4666,7 @@
         (justify left)
       )
     )
-    (property "Voltage" "10 V"
+    (property "Voltage" "50 V"
       (at 43.18 207.01 0)
       (effects
         (font
@@ -4554,6 +4694,33 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 43.18 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "CL10B104KB8NNNC"
+      (at 43.18 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C1591"
+      (at 43.18 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -4685,7 +4852,7 @@
         (justify left)
       )
     )
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
       (at 71.12 207.01 0)
       (effects
         (font
@@ -4695,7 +4862,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL31B106KAHNNN.do"
       (at 71.12 207.01 0)
       (effects
         (font
@@ -4705,7 +4872,7 @@
         (justify left)
       )
     )
-    (property "Voltage" "10 V"
+    (property "Voltage" "25 V"
       (at 71.12 207.01 0)
       (effects
         (font
@@ -4725,7 +4892,7 @@
         (justify left)
       )
     )
-    (property "Tolerance" "20%"
+    (property "Tolerance" "10%"
       (at 71.12 207.01 0)
       (effects
         (font
@@ -4733,6 +4900,42 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 71.12 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "CL31B106KAHNNNE"
+      (at 71.12 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C14860"
+      (at 71.12 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Placement" "At U6.12/28 VBAT"
+      (at 71.12 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -4874,7 +5077,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL10B104KB8NNN.do"
       (at 88.9 207.01 0)
       (effects
         (font
@@ -4884,7 +5087,7 @@
         (justify left)
       )
     )
-    (property "Voltage" "10 V"
+    (property "Voltage" "50 V"
       (at 88.9 207.01 0)
       (effects
         (font
@@ -4912,6 +5115,33 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 88.9 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "CL10B104KB8NNNC"
+      (at 88.9 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C1591"
+      (at 88.9 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -5043,7 +5273,7 @@
         (justify left)
       )
     )
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
       (at 116.84 207.01 0)
       (effects
         (font
@@ -5053,7 +5283,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL31B106KAHNNN.do"
       (at 116.84 207.01 0)
       (effects
         (font
@@ -5063,7 +5293,7 @@
         (justify left)
       )
     )
-    (property "Voltage" "10 V"
+    (property "Voltage" "25 V"
       (at 116.84 207.01 0)
       (effects
         (font
@@ -5083,7 +5313,7 @@
         (justify left)
       )
     )
-    (property "Tolerance" "20%"
+    (property "Tolerance" "10%"
       (at 116.84 207.01 0)
       (effects
         (font
@@ -5091,6 +5321,42 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 116.84 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "CL31B106KAHNNNE"
+      (at 116.84 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C14860"
+      (at 116.84 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Placement" "At U6.13 VDD_UP"
+      (at 116.84 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -5232,7 +5498,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL10B104KB8NNN.do"
       (at 134.62 207.01 0)
       (effects
         (font
@@ -5242,7 +5508,7 @@
         (justify left)
       )
     )
-    (property "Voltage" "10 V"
+    (property "Voltage" "50 V"
       (at 134.62 207.01 0)
       (effects
         (font
@@ -5270,6 +5536,33 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 134.62 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "CL10B104KB8NNNC"
+      (at 134.62 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C1591"
+      (at 134.62 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -5392,7 +5685,7 @@
         (justify left)
       )
     )
-    (property "Value" "10uF"
+    (property "Value" "2.2uF"
       (at 165.1 208.28 0)
       (effects
         (font
@@ -5411,7 +5704,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL21B225KAFNNN.do"
       (at 162.56 207.01 0)
       (effects
         (font
@@ -5421,7 +5714,7 @@
         (justify left)
       )
     )
-    (property "Voltage" "10 V"
+    (property "Voltage" "25 V"
       (at 162.56 207.01 0)
       (effects
         (font
@@ -5441,7 +5734,7 @@
         (justify left)
       )
     )
-    (property "Tolerance" "20%"
+    (property "Tolerance" "10%"
       (at 162.56 207.01 0)
       (effects
         (font
@@ -5449,6 +5742,51 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 162.56 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "CL21B225KAFNNNE"
+      (at 162.56 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C19110"
+      (at 162.56 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Placement" "Local capacitor at U6.26 VDDA"
+      (at 162.56 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Status" "PN7160 AN12988 local decoupling; selected stocked prototype part is NRND; do not substitute without checking bias"
+      (at 162.56 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -5571,7 +5909,7 @@
         (justify left)
       )
     )
-    (property "Value" "100nF"
+    (property "Value" "2.2uF"
       (at 182.88 208.28 0)
       (effects
         (font
@@ -5580,7 +5918,7 @@
         (justify left)
       )
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
       (at 180.34 207.01 0)
       (effects
         (font
@@ -5590,7 +5928,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL21B225KAFNNN.do"
       (at 180.34 207.01 0)
       (effects
         (font
@@ -5600,7 +5938,7 @@
         (justify left)
       )
     )
-    (property "Voltage" "10 V"
+    (property "Voltage" "25 V"
       (at 180.34 207.01 0)
       (effects
         (font
@@ -5628,6 +5966,51 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 180.34 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "CL21B225KAFNNNE"
+      (at 180.34 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C19110"
+      (at 180.34 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Placement" "Local capacitor at U6.27 VDD"
+      (at 180.34 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Status" "PN7160 AN12988 local decoupling; selected stocked prototype part is NRND; do not substitute without checking bias"
+      (at 180.34 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -5750,7 +6133,7 @@
         (justify left)
       )
     )
-    (property "Value" "10uF"
+    (property "Value" "2.2uF"
       (at 210.82 208.28 0)
       (effects
         (font
@@ -5769,7 +6152,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL21B225KAFNNN.do"
       (at 208.28 207.01 0)
       (effects
         (font
@@ -5779,7 +6162,7 @@
         (justify left)
       )
     )
-    (property "Voltage" "10 V"
+    (property "Voltage" "25 V"
       (at 208.28 207.01 0)
       (effects
         (font
@@ -5799,7 +6182,7 @@
         (justify left)
       )
     )
-    (property "Tolerance" "20%"
+    (property "Tolerance" "10%"
       (at 208.28 207.01 0)
       (effects
         (font
@@ -5807,6 +6190,51 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 208.28 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "CL21B225KAFNNNE"
+      (at 208.28 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C19110"
+      (at 208.28 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Placement" "Local capacitor at U6.18 TVDD_IN"
+      (at 208.28 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Status" "PN7160 AN12988 local decoupling; selected stocked prototype part is NRND; do not substitute without checking bias"
+      (at 208.28 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -5929,7 +6357,7 @@
         (justify left)
       )
     )
-    (property "Value" "100nF"
+    (property "Value" "2.2uF"
       (at 228.6 208.28 0)
       (effects
         (font
@@ -5938,7 +6366,7 @@
         (justify left)
       )
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
       (at 226.06 207.01 0)
       (effects
         (font
@@ -5948,7 +6376,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL21B225KAFNNN.do"
       (at 226.06 207.01 0)
       (effects
         (font
@@ -5958,7 +6386,7 @@
         (justify left)
       )
     )
-    (property "Voltage" "10 V"
+    (property "Voltage" "25 V"
       (at 226.06 207.01 0)
       (effects
         (font
@@ -5986,6 +6414,51 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 226.06 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "CL21B225KAFNNNE"
+      (at 226.06 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C19110"
+      (at 226.06 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Placement" "Local capacitor at U6.22 TVDD"
+      (at 226.06 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Status" "PN7160 AN12988 local decoupling; selected stocked prototype part is NRND; do not substitute without checking bias"
+      (at 226.06 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -6127,7 +6600,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL10B104KB8NNN.do"
       (at 254 207.01 0)
       (effects
         (font
@@ -6137,7 +6610,7 @@
         (justify left)
       )
     )
-    (property "Voltage" "10 V"
+    (property "Voltage" "50 V"
       (at 254 207.01 0)
       (effects
         (font
@@ -6165,6 +6638,33 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 254.0 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "CL10B104KB8NNNC"
+      (at 254.0 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C1591"
+      (at 254.0 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -6470,7 +6970,7 @@
     )
     (uuid ceb19361-37e0-5689-b19f-798de0cc2734)
   )
-  (text "RF values TBD: tune with the actual coil + final stackup"
+  (text "RF PROTOTYPE: 20 ohm differential target / measure before final tuning"
     (at 205.74 30.48 0)
     (effects
       (font
@@ -6497,7 +6997,7 @@
         (justify left)
       )
     )
-    (property "Value" "TBD L_EMC"
+    (property "Value" "150nH"
       (at 223.52 55.88 90)
       (effects
         (font
@@ -6506,7 +7006,7 @@
         (justify left)
       )
     )
-    (property "Footprint" "Nucula_Project:L_Coilcraft_0805HQ_2012Metric"
+    (property "Footprint" "Nucula_Project:L_Coilcraft_0805HP"
       (at 228.6 60.96 90)
       (effects
         (font
@@ -6516,7 +7016,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.coilcraft.com/en-us/products/rf/ceramic-core-chip-inductors/0805-(2012)/0805hp/0805hp-151/"
       (at 228.6 60.96 90)
       (effects
         (font
@@ -6526,7 +7026,7 @@
         (justify left)
       )
     )
-    (property "Status" "TUNE: high-Q RF inductor, >=0.5 A; self-resonance above operating band"
+    (property "Status" "PROTOTYPE: RF model included; 0.60A thermal reference, verify actual RF heating"
       (at 228.6 60.96 90)
       (effects
         (font
@@ -6544,6 +7044,33 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Manufacturer" "Coilcraft"
+      (at 228.6 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "0805HP-151XGRC"
+      (at 228.6 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Tolerance" "2%"
+      (at 228.6 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -6571,16 +7098,6 @@
       (type default)
     )
     (uuid 258c26f3-04c1-5888-aed6-72fba6c7350e)
-  )
-  (label "NFC_TX1"
-    (at 217.17 60.96 180)
-    (effects
-      (font
-        (size 1.05 1.05)
-      )
-      (justify right)
-    )
-    (uuid f99ed0ff-6a5a-5756-b0b8-597c1189b2bb)
   )
   (wire
     (pts
@@ -6620,7 +7137,7 @@
         (justify left)
       )
     )
-    (property "Value" "TBD L_EMC"
+    (property "Value" "150nH"
       (at 223.52 127.0 90)
       (effects
         (font
@@ -6629,7 +7146,7 @@
         (justify left)
       )
     )
-    (property "Footprint" "Nucula_Project:L_Coilcraft_0805HQ_2012Metric"
+    (property "Footprint" "Nucula_Project:L_Coilcraft_0805HP"
       (at 228.6 132.08 90)
       (effects
         (font
@@ -6639,7 +7156,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.coilcraft.com/en-us/products/rf/ceramic-core-chip-inductors/0805-(2012)/0805hp/0805hp-151/"
       (at 228.6 132.08 90)
       (effects
         (font
@@ -6649,7 +7166,7 @@
         (justify left)
       )
     )
-    (property "Status" "TUNE: high-Q RF inductor, >=0.5 A; self-resonance above operating band"
+    (property "Status" "PROTOTYPE: RF model included; 0.60A thermal reference, verify actual RF heating"
       (at 228.6 132.08 90)
       (effects
         (font
@@ -6667,6 +7184,33 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Manufacturer" "Coilcraft"
+      (at 228.6 132.08 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "0805HP-151XGRC"
+      (at 228.6 132.08 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Tolerance" "2%"
+      (at 228.6 132.08 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -6694,16 +7238,6 @@
       (type default)
     )
     (uuid b3a8e879-f8f1-5b96-a245-bd907509142c)
-  )
-  (label "NFC_TX2"
-    (at 217.17 132.08 180)
-    (effects
-      (font
-        (size 1.05 1.05)
-      )
-      (justify right)
-    )
-    (uuid ca91cdf1-c5c9-5aed-b388-bd1797e2c357)
   )
   (wire
     (pts
@@ -6743,7 +7277,7 @@
         (justify left)
       )
     )
-    (property "Value" "TBD C_EMC"
+    (property "Value" "360pF"
       (at 256.54 80.01 0)
       (effects
         (font
@@ -6752,7 +7286,7 @@
         (justify left)
       )
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
       (at 254 78.74 0)
       (effects
         (font
@@ -6772,7 +7306,7 @@
         (justify left)
       )
     )
-    (property "Voltage" "50 V"
+    (property "Voltage" "100 V"
       (at 254 78.74 0)
       (effects
         (font
@@ -6782,7 +7316,7 @@
         (justify left)
       )
     )
-    (property "Dielectric" "C0G"
+    (property "Dielectric" "C0G/NP0"
       (at 254 78.74 0)
       (effects
         (font
@@ -6792,7 +7326,7 @@
         (justify left)
       )
     )
-    (property "Tolerance" "10%"
+    (property "Tolerance" "2%"
       (at 254 78.74 0)
       (effects
         (font
@@ -6800,6 +7334,15 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Status" "PROTOTYPE START: validate with VNA / AGC / RF stress measurements"
+      (at 254.0 78.74 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -6856,7 +7399,7 @@
         (justify left)
       )
     )
-    (property "Value" "TBD C_EMC"
+    (property "Value" "360pF"
       (at 256.54 115.57 0)
       (effects
         (font
@@ -6865,7 +7408,7 @@
         (justify left)
       )
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
       (at 254 114.3 0)
       (effects
         (font
@@ -6885,7 +7428,7 @@
         (justify left)
       )
     )
-    (property "Voltage" "50 V"
+    (property "Voltage" "100 V"
       (at 254 114.3 0)
       (effects
         (font
@@ -6895,7 +7438,7 @@
         (justify left)
       )
     )
-    (property "Dielectric" "C0G"
+    (property "Dielectric" "C0G/NP0"
       (at 254 114.3 0)
       (effects
         (font
@@ -6905,7 +7448,7 @@
         (justify left)
       )
     )
-    (property "Tolerance" "10%"
+    (property "Tolerance" "2%"
       (at 254 114.3 0)
       (effects
         (font
@@ -6913,6 +7456,15 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Status" "PROTOTYPE START: validate with VNA / AGC / RF stress measurements"
+      (at 254.0 114.3 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -7031,7 +7583,7 @@
         (justify left)
       )
     )
-    (property "Value" "TBD C_SER"
+    (property "Value" "68pF"
       (at 276.86 55.88 90)
       (effects
         (font
@@ -7040,7 +7592,7 @@
         (justify left)
       )
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
       (at 281.94 60.96 90)
       (effects
         (font
@@ -7060,7 +7612,7 @@
         (justify left)
       )
     )
-    (property "Voltage" "50 V"
+    (property "Voltage" "100 V"
       (at 281.94 60.96 90)
       (effects
         (font
@@ -7070,7 +7622,7 @@
         (justify left)
       )
     )
-    (property "Dielectric" "C0G"
+    (property "Dielectric" "C0G/NP0"
       (at 281.94 60.96 90)
       (effects
         (font
@@ -7080,7 +7632,7 @@
         (justify left)
       )
     )
-    (property "Tolerance" "10%"
+    (property "Tolerance" "2%"
       (at 281.94 60.96 90)
       (effects
         (font
@@ -7088,6 +7640,15 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Status" "PROTOTYPE START: validate with VNA / AGC / RF stress measurements"
+      (at 281.94 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -7144,7 +7705,7 @@
         (justify left)
       )
     )
-    (property "Value" "TBD C_TRIM"
+    (property "Value" "DNP / TRIM"
       (at 276.86 40.64 90)
       (effects
         (font
@@ -7153,7 +7714,7 @@
         (justify left)
       )
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+    (property "Footprint" "Nucula_Project:C_0805_HandSolder_NoPaste"
       (at 281.94 45.72 90)
       (effects
         (font
@@ -7173,7 +7734,7 @@
         (justify left)
       )
     )
-    (property "Voltage" "50 V"
+    (property "Voltage" "100 V"
       (at 281.94 45.72 90)
       (effects
         (font
@@ -7183,7 +7744,7 @@
         (justify left)
       )
     )
-    (property "Dielectric" "C0G"
+    (property "Dielectric" "C0G/NP0"
       (at 281.94 45.72 90)
       (effects
         (font
@@ -7193,7 +7754,7 @@
         (justify left)
       )
     )
-    (property "Tolerance" "10%"
+    (property "Tolerance" "<=2% or +/-0.1pF for small trims"
       (at 281.94 45.72 90)
       (effects
         (font
@@ -7201,6 +7762,15 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Status" "DNP: fit equal pairs; 0.5-22pF typical fine trim"
+      (at 281.94 45.72 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -7257,7 +7827,7 @@
         (justify left)
       )
     )
-    (property "Value" "TBD C_SER"
+    (property "Value" "68pF"
       (at 276.86 127.0 90)
       (effects
         (font
@@ -7266,7 +7836,7 @@
         (justify left)
       )
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
       (at 281.94 132.08 90)
       (effects
         (font
@@ -7286,7 +7856,7 @@
         (justify left)
       )
     )
-    (property "Voltage" "50 V"
+    (property "Voltage" "100 V"
       (at 281.94 132.08 90)
       (effects
         (font
@@ -7296,7 +7866,7 @@
         (justify left)
       )
     )
-    (property "Dielectric" "C0G"
+    (property "Dielectric" "C0G/NP0"
       (at 281.94 132.08 90)
       (effects
         (font
@@ -7306,7 +7876,7 @@
         (justify left)
       )
     )
-    (property "Tolerance" "10%"
+    (property "Tolerance" "2%"
       (at 281.94 132.08 90)
       (effects
         (font
@@ -7314,6 +7884,15 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Status" "PROTOTYPE START: validate with VNA / AGC / RF stress measurements"
+      (at 281.94 132.08 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -7370,7 +7949,7 @@
         (justify left)
       )
     )
-    (property "Value" "TBD C_TRIM"
+    (property "Value" "DNP / TRIM"
       (at 276.86 142.24 90)
       (effects
         (font
@@ -7379,7 +7958,7 @@
         (justify left)
       )
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+    (property "Footprint" "Nucula_Project:C_0805_HandSolder_NoPaste"
       (at 281.94 147.32 90)
       (effects
         (font
@@ -7399,7 +7978,7 @@
         (justify left)
       )
     )
-    (property "Voltage" "50 V"
+    (property "Voltage" "100 V"
       (at 281.94 147.32 90)
       (effects
         (font
@@ -7409,7 +7988,7 @@
         (justify left)
       )
     )
-    (property "Dielectric" "C0G"
+    (property "Dielectric" "C0G/NP0"
       (at 281.94 147.32 90)
       (effects
         (font
@@ -7419,7 +7998,7 @@
         (justify left)
       )
     )
-    (property "Tolerance" "10%"
+    (property "Tolerance" "<=2% or +/-0.1pF for small trims"
       (at 281.94 147.32 90)
       (effects
         (font
@@ -7427,6 +8006,15 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Status" "DNP: fit equal pairs; 0.5-22pF typical fine trim"
+      (at 281.94 147.32 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -7539,7 +8127,7 @@
         (justify left)
       )
     )
-    (property "Value" "TBD C_SHUNT"
+    (property "Value" "100pF"
       (at 309.88 80.01 0)
       (effects
         (font
@@ -7548,7 +8136,7 @@
         (justify left)
       )
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
       (at 307.34 78.74 0)
       (effects
         (font
@@ -7568,7 +8156,7 @@
         (justify left)
       )
     )
-    (property "Voltage" "50 V"
+    (property "Voltage" "100 V"
       (at 307.34 78.74 0)
       (effects
         (font
@@ -7578,7 +8166,7 @@
         (justify left)
       )
     )
-    (property "Dielectric" "C0G"
+    (property "Dielectric" "C0G/NP0"
       (at 307.34 78.74 0)
       (effects
         (font
@@ -7588,7 +8176,7 @@
         (justify left)
       )
     )
-    (property "Tolerance" "10%"
+    (property "Tolerance" "2%"
       (at 307.34 78.74 0)
       (effects
         (font
@@ -7596,6 +8184,15 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Status" "PROTOTYPE START: validate with VNA / AGC / RF stress measurements"
+      (at 307.34 78.74 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -7652,7 +8249,7 @@
         (justify left)
       )
     )
-    (property "Value" "TBD C_TRIM"
+    (property "Value" "DNP / TRIM"
       (at 327.66 80.01 0)
       (effects
         (font
@@ -7661,7 +8258,7 @@
         (justify left)
       )
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+    (property "Footprint" "Nucula_Project:C_0805_HandSolder_NoPaste"
       (at 325.12 78.74 0)
       (effects
         (font
@@ -7681,7 +8278,7 @@
         (justify left)
       )
     )
-    (property "Voltage" "50 V"
+    (property "Voltage" "100 V"
       (at 325.12 78.74 0)
       (effects
         (font
@@ -7691,7 +8288,7 @@
         (justify left)
       )
     )
-    (property "Dielectric" "C0G"
+    (property "Dielectric" "C0G/NP0"
       (at 325.12 78.74 0)
       (effects
         (font
@@ -7701,7 +8298,7 @@
         (justify left)
       )
     )
-    (property "Tolerance" "10%"
+    (property "Tolerance" "<=2% or +/-0.1pF for small trims"
       (at 325.12 78.74 0)
       (effects
         (font
@@ -7709,6 +8306,15 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Status" "DNP: fit equal pairs; 0.5-22pF typical fine trim"
+      (at 325.12 78.74 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -7765,7 +8371,7 @@
         (justify left)
       )
     )
-    (property "Value" "TBD C_SHUNT"
+    (property "Value" "100pF"
       (at 309.88 115.57 0)
       (effects
         (font
@@ -7774,7 +8380,7 @@
         (justify left)
       )
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
       (at 307.34 114.3 0)
       (effects
         (font
@@ -7794,7 +8400,7 @@
         (justify left)
       )
     )
-    (property "Voltage" "50 V"
+    (property "Voltage" "100 V"
       (at 307.34 114.3 0)
       (effects
         (font
@@ -7804,7 +8410,7 @@
         (justify left)
       )
     )
-    (property "Dielectric" "C0G"
+    (property "Dielectric" "C0G/NP0"
       (at 307.34 114.3 0)
       (effects
         (font
@@ -7814,7 +8420,7 @@
         (justify left)
       )
     )
-    (property "Tolerance" "10%"
+    (property "Tolerance" "2%"
       (at 307.34 114.3 0)
       (effects
         (font
@@ -7822,6 +8428,15 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Status" "PROTOTYPE START: validate with VNA / AGC / RF stress measurements"
+      (at 307.34 114.3 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -7878,7 +8493,7 @@
         (justify left)
       )
     )
-    (property "Value" "TBD C_TRIM"
+    (property "Value" "DNP / TRIM"
       (at 327.66 115.57 0)
       (effects
         (font
@@ -7887,7 +8502,7 @@
         (justify left)
       )
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+    (property "Footprint" "Nucula_Project:C_0805_HandSolder_NoPaste"
       (at 325.12 114.3 0)
       (effects
         (font
@@ -7907,7 +8522,7 @@
         (justify left)
       )
     )
-    (property "Voltage" "50 V"
+    (property "Voltage" "100 V"
       (at 325.12 114.3 0)
       (effects
         (font
@@ -7917,7 +8532,7 @@
         (justify left)
       )
     )
-    (property "Dielectric" "C0G"
+    (property "Dielectric" "C0G/NP0"
       (at 325.12 114.3 0)
       (effects
         (font
@@ -7927,7 +8542,7 @@
         (justify left)
       )
     )
-    (property "Tolerance" "10%"
+    (property "Tolerance" "<=2% or +/-0.1pF for small trims"
       (at 325.12 114.3 0)
       (effects
         (font
@@ -7935,6 +8550,15 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Status" "DNP: fit equal pairs; 0.5-22pF typical fine trim"
+      (at 325.12 114.3 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -8074,7 +8698,7 @@
         (justify left)
       )
     )
-    (property "Value" "TBD R_DAMP"
+    (property "Value" "2.7R"
       (at 341.63 55.88 90)
       (effects
         (font
@@ -8083,7 +8707,7 @@
         (justify left)
       )
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+    (property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
       (at 349.25 60.96 90)
       (effects
         (font
@@ -8093,7 +8717,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
       (at 349.25 60.96 90)
       (effects
         (font
@@ -8113,7 +8737,7 @@
         (justify left)
       )
     )
-    (property "Rating" "0.25 W; RF loss/temperature to verify"
+    (property "Rating" "0.75 W P70 only with Rth <=110 K/W; limit to 0.5W pending thermal validation"
       (at 349.25 60.96 90)
       (effects
         (font
@@ -8121,6 +8745,33 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Status" "PROTOTYPE: Q about 20; also lift to measure bare antenna"
+      (at 349.25 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Manufacturer" "Vishay"
+      (at 349.25 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "CRCW12062R70FKEAHP"
+      (at 349.25 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -8155,7 +8806,7 @@
         (justify left)
       )
     )
-    (property "Value" "TBD R_DAMP"
+    (property "Value" "2.7R"
       (at 341.63 137.16 90)
       (effects
         (font
@@ -8164,7 +8815,7 @@
         (justify left)
       )
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+    (property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
       (at 349.25 132.08 90)
       (effects
         (font
@@ -8174,7 +8825,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
       (at 349.25 132.08 90)
       (effects
         (font
@@ -8194,7 +8845,7 @@
         (justify left)
       )
     )
-    (property "Rating" "0.25 W; RF loss/temperature to verify"
+    (property "Rating" "0.75 W P70 only with Rth <=110 K/W; limit to 0.5W pending thermal validation"
       (at 349.25 132.08 90)
       (effects
         (font
@@ -8202,6 +8853,33 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Status" "PROTOTYPE: Q about 20; also lift to measure bare antenna"
+      (at 349.25 132.08 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Manufacturer" "Vishay"
+      (at 349.25 132.08 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "CRCW12062R70FKEAHP"
+      (at 349.25 132.08 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -8214,80 +8892,6 @@
       (project "nucula-v2"
         (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
           (reference "R28")
-          (unit 1)
-        )
-      )
-    )
-  )
-  (symbol
-    (lib_id "Nucula_Project:NFC_Loop_TBD")
-    (at 391.16 96.52 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid 9a5ae9f3-ed58-5272-ac95-d1f39e2ff60d)
-    (property "Reference" "A1"
-      (at 378.46 76.2 0)
-      (effects
-        (font
-          (size 1.0 1.0)
-        )
-        (justify left)
-      )
-    )
-    (property "Value" "13.56MHz coil / TBD"
-      (at 378.46 78.74 0)
-      (effects
-        (font
-          (size 1.0 1.0)
-        )
-        (justify left)
-      )
-    )
-    (property "Footprint" "Nucula_Project:NFC_Antenna_Interface_TBD"
-      (at 391.16 96.52 0)
-      (effects
-        (font
-          (size 1.0 1.0)
-        )
-        (hide yes)
-        (justify left)
-      )
-    )
-    (property "Datasheet" ""
-      (at 391.16 96.52 0)
-      (effects
-        (font
-          (size 1.0 1.0)
-        )
-        (hide yes)
-        (justify left)
-      )
-    )
-    (property "Status" "PLACEHOLDER: no coil geometry or inductance selected"
-      (at 391.16 96.52 0)
-      (effects
-        (font
-          (size 1.0 1.0)
-        )
-        (hide yes)
-        (justify left)
-      )
-    )
-    (pin "1"
-      (uuid 7cc159cd-be1b-552e-bf59-113d96e70d7a)
-    )
-    (pin "2"
-      (uuid 7c4b2609-9ba3-5947-9487-b77f34eba6d8)
-    )
-    (pin "3"
-      (uuid bb6c91c9-6f41-53c8-a543-6353c2673406)
-    )
-    (instances
-      (project "nucula-v2"
-        (path "/204197a3-bb89-4827-bdfe-70b1be259672/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
-          (reference "A1")
           (unit 1)
         )
       )
@@ -8359,27 +8963,6 @@
     )
     (uuid 5d5d1f65-0e40-5ea5-94be-b5f4aafcea2f)
   )
-  (wire
-    (pts
-      (xy 375.92 96.52)
-      (xy 370.84 96.52)
-    )
-    (stroke
-      (width 0)
-      (type default)
-    )
-    (uuid 1c17662f-669d-53b5-86f0-aba9459b58bf)
-  )
-  (label "GND"
-    (at 370.84 96.52 180)
-    (effects
-      (font
-        (size 1.05 1.05)
-      )
-      (justify right)
-    )
-    (uuid 342b9181-a337-5fad-9ce4-66062bd165eb)
-  )
   (symbol
     (lib_id "Device:C")
     (at 220.98 40.64 90)
@@ -8397,7 +8980,7 @@
         (justify left)
       )
     )
-    (property "Value" "TBD C_RX"
+    (property "Value" "1nF"
       (at 215.9 35.56 90)
       (effects
         (font
@@ -8406,7 +8989,7 @@
         (justify left)
       )
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
       (at 220.98 40.64 90)
       (effects
         (font
@@ -8426,7 +9009,7 @@
         (justify left)
       )
     )
-    (property "Voltage" "50 V"
+    (property "Voltage" "100 V"
       (at 220.98 40.64 90)
       (effects
         (font
@@ -8436,7 +9019,7 @@
         (justify left)
       )
     )
-    (property "Dielectric" "C0G"
+    (property "Dielectric" "C0G/NP0"
       (at 220.98 40.64 90)
       (effects
         (font
@@ -8446,7 +9029,7 @@
         (justify left)
       )
     )
-    (property "Tolerance" "10%"
+    (property "Tolerance" "5%"
       (at 220.98 40.64 90)
       (effects
         (font
@@ -8454,6 +9037,15 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Status" "PROTOTYPE START: validate with VNA / AGC / RF stress measurements"
+      (at 220.98 40.64 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -8509,7 +9101,7 @@
         (justify left)
       )
     )
-    (property "Value" "TBD R_RX"
+    (property "Value" "2.2k"
       (at 237.49 35.56 90)
       (effects
         (font
@@ -8518,7 +9110,7 @@
         (justify left)
       )
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
       (at 242.57 40.64 90)
       (effects
         (font
@@ -8548,7 +9140,7 @@
         (justify left)
       )
     )
-    (property "Rating" "0.1 W"
+    (property "Rating" "0.125 W"
       (at 242.57 40.64 90)
       (effects
         (font
@@ -8556,6 +9148,15 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Status" "PROTOTYPE: tune equal RX resistors for AGC 500-800 decimal"
+      (at 242.57 40.64 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -8622,7 +9223,7 @@
         (justify left)
       )
     )
-    (property "Value" "TBD C_RX"
+    (property "Value" "1nF"
       (at 215.9 160.02 90)
       (effects
         (font
@@ -8631,7 +9232,7 @@
         (justify left)
       )
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
       (at 220.98 165.1 90)
       (effects
         (font
@@ -8651,7 +9252,7 @@
         (justify left)
       )
     )
-    (property "Voltage" "50 V"
+    (property "Voltage" "100 V"
       (at 220.98 165.1 90)
       (effects
         (font
@@ -8661,7 +9262,7 @@
         (justify left)
       )
     )
-    (property "Dielectric" "C0G"
+    (property "Dielectric" "C0G/NP0"
       (at 220.98 165.1 90)
       (effects
         (font
@@ -8671,7 +9272,7 @@
         (justify left)
       )
     )
-    (property "Tolerance" "10%"
+    (property "Tolerance" "5%"
       (at 220.98 165.1 90)
       (effects
         (font
@@ -8679,6 +9280,15 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Status" "PROTOTYPE START: validate with VNA / AGC / RF stress measurements"
+      (at 220.98 165.1 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -8734,7 +9344,7 @@
         (justify left)
       )
     )
-    (property "Value" "TBD R_RX"
+    (property "Value" "2.2k"
       (at 237.49 160.02 90)
       (effects
         (font
@@ -8743,7 +9353,7 @@
         (justify left)
       )
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
       (at 242.57 165.1 90)
       (effects
         (font
@@ -8773,7 +9383,7 @@
         (justify left)
       )
     )
-    (property "Rating" "0.1 W"
+    (property "Rating" "0.125 W"
       (at 242.57 165.1 90)
       (effects
         (font
@@ -8781,6 +9391,15 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Status" "PROTOTYPE: tune equal RX resistors for AGC 500-800 decimal"
+      (at 242.57 165.1 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -8830,7 +9449,7 @@
     )
     (uuid 80b6a559-3b98-5adf-874b-0370b2767022)
   )
-  (text "Pin 14 -> 18 + 22: internal TX-LDO output, not an external supply.\nPin 31 -> 26 + 27: internal 1.8 V rail; decouple only.\nVSYS powers VBAT/VBAT2 and VDD_UP; VDD_PAD uses +3V3.\nADR1:0 = 00 => 0x28. WKUP_REQ low; wake over I2C.\nVEN defaults low. DWL_REQ test access via its labelled net.\nANT1/ANT2/VDHF unused: configure normal RF detection.\n27.12 MHz crystal; confirm ESR, drive and load before ordering."
+  (text "Pin 14 -> 18 + 22: internal TX-LDO output, not an external supply.\nPin 31 -> 26 + 27: internal 1.8 V rail; decouple only.\nVSYS powers VBAT/VBAT2 and VDD_UP; VDD_PAD uses +3V3.\nADR1:0 = 00 => 0x28. WKUP_REQ low; wake over I2C.\nVEN defaults low. DWL_REQ test access via its labelled net.\nANT1/ANT2/VDHF unused: configure normal RF detection.\nY1: NDK CS06346 27.12 MHz, CL 10pF; C26=12pF / C27=15pF.\nC21 at pin 26, C22 at 27; C23 at 18, C24 at 22: 2.2uF each."
     (at 20.32 243.84 0)
     (effects
       (font
@@ -8840,7 +9459,7 @@
     )
     (uuid 51b514d7-bca7-5bd7-a140-9e5da6df46ff)
   )
-  (text "A1 pads 1/2 = coil ends; pad 3 = reference/shield ground.\nNo center-tap assumption. Coil footprint is a placeholder.\nC34/C35/C38/C39 are optional parallel tuning pads (DNP).\nAll other RF values are unselected; do not fabricate yet.\nSource: parts documentation/PN7160_schematic-3.pdf"
+  (text "A1: 40x40 mm, 4T, 0.50/0.30 mm; estimated 1.56 uH. No GND tap.\nC34/C35, C38/C39, C53/C54: paired 0805 C0G tuning pads, DNP.\nLift R41/R42 and R25/R26 to isolate RF tree for passive VNA tests.\nLift R27/R28 for bare-coil measurement. NEVER power a connected VNA.\nStart TVDD <= 3.3 V; 20 ohm target trades field strength for current margin.\nSee docs/nfc-antenna.md for calculations, layout rules and tuning sequence."
     (at 205.74 239.0 0)
     (effects
       (font
@@ -8851,4 +9470,695 @@
     (uuid 6e601fa0-bd34-53f8-8bd8-669e9ac45e6a)
   )
   (embedded_fonts no)
+  (symbol
+    (lib_id "Nucula_Project:NFC_PCB_Loop_40x40_4T")
+    (at 391.16 96.52 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom no)
+    (on_board yes)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "b66fd0f3-0cae-4f16-945d-dba34bcc4997")
+    (property "Reference" "A1"
+      (at 391.16 77.47 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "PCB loop 40x40 / 4T"
+      (at 391.16 80.01 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Footprint" "Nucula_Project:NFC_PCB_Loop_40x40_4T_W0.50_S0.30"
+      (at 391.16 91.44 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 391.16 88.9 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Description" "Two-terminal etched PCB NFC coil. 40x40 mm outer copper; 4 turns, 0.50 mm trace, 0.30 mm gap. No ground or center tap."
+      (at 391.16 86.36 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Status" "PROTOTYPE: 1.56uH estimated; measure RL/C before final tuning"
+      (at 391.16 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Geometry" "40x40 mm outer copper; 4T; W=0.50 mm; S=0.30 mm; 35um Cu"
+      (at 391.16 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Assembly" "Etched PCB copper; exclude from purchased BOM and pick/place"
+      (at 391.16 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid "c60d7c4e-0b8d-4151-a1d2-fc00652aed1e")
+    )
+    (pin "2"
+      (uuid "600f9ab8-0b66-473d-8de4-730c2b6d8347")
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "A1")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 241.3 78.74 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (dnp yes)
+    (uuid "d4cde524-2495-4604-a9d0-8961b8f886ff")
+    (property "Reference" "C53"
+      (at 243.84 76.19999999999999 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "TRIM"
+      (at 243.84 78.74 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Nucula_Project:C_0805_HandSolder_NoPaste"
+      (at 229.565 74.93 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 228.6 78.74 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Description" "Unpolarized capacitor"
+      (at 228.6 78.74 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Voltage" "100 V"
+      (at 228.6 78.74 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Dielectric" "C0G/NP0"
+      (at 228.6 78.74 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Tolerance" "<=2% or +/-0.1pF for small trims"
+      (at 228.6 78.74 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Status" "DNP: EMC parallel trim; fit paired; replacing 360pF may be necessary"
+      (at 228.6 78.74 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid "cca73c2a-30cc-45e1-a786-555dfc2b7a3f")
+    )
+    (pin "2"
+      (uuid "e9ed5a24-f9a9-48c7-9a68-54158a0e3095")
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "C53")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 241.3 114.3 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (dnp yes)
+    (uuid "12be869a-fcae-4646-b752-bf4161daff1f")
+    (property "Reference" "C54"
+      (at 243.84 111.75999999999999 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "TRIM"
+      (at 243.84 114.3 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "Nucula_Project:C_0805_HandSolder_NoPaste"
+      (at 229.565 110.49 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 228.6 114.3 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Description" "Unpolarized capacitor"
+      (at 228.6 114.3 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Voltage" "100 V"
+      (at 228.6 114.3 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Dielectric" "C0G/NP0"
+      (at 228.6 114.3 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Tolerance" "<=2% or +/-0.1pF for small trims"
+      (at 228.6 114.3 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Status" "DNP: EMC parallel trim; fit paired; replacing 360pF may be necessary"
+      (at 228.6 114.3 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid "44b53908-a421-4007-bd54-b59df7ddc525")
+    )
+    (pin "2"
+      (uuid "14493acf-32ce-41bf-ab3a-e4e7e134e084")
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "C54")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:R")
+    (at 190.5 60.96 90)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "09c55e8e-c0b1-411c-b7ce-f6ef2bf5349d")
+    (property "Reference" "R41"
+      (at 190.5 54.61 90)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+      )
+    )
+    (property "Value" "0R"
+      (at 190.5 57.15 90)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+      )
+    )
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+      (at 190.5 62.738 90)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 190.5 60.96 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Description" "Resistor"
+      (at 190.5 60.96 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Rating" "0.25 W; >=0.5A jumper current rating"
+      (at 190.5 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Status" "FIT: remove along with R42/R25/R26 for isolated full RF-tree VNA measurement"
+      (at 190.5 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid "2e51d269-c695-47f0-8d74-7f3a18ae0f24")
+    )
+    (pin "2"
+      (uuid "d4cc061b-e330-4afa-a687-655f310c5ab3")
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "R41")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:R")
+    (at 190.5 132.08 90)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "c1f11d8f-394b-40a4-a273-96f317bb2bbf")
+    (property "Reference" "R42"
+      (at 190.5 125.73 90)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+      )
+    )
+    (property "Value" "0R"
+      (at 190.5 128.27 90)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+      )
+    )
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+      (at 190.5 133.858 90)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 190.5 132.08 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Description" "Resistor"
+      (at 190.5 132.08 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Rating" "0.25 W; >=0.5A jumper current rating"
+      (at 190.5 132.08 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Status" "FIT: remove along with R41/R25/R26 for isolated full RF-tree VNA measurement"
+      (at 190.5 132.08 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid "ab722180-36dc-4fa2-a0b1-1bb870e4a66c")
+    )
+    (pin "2"
+      (uuid "852c6f0b-0c1e-4a01-8621-77b01b26db0d")
+    )
+    (instances
+      (project "nucula-v2"
+        (path "/3dde2d8e-4349-599d-9fca-8a826b6dfad5"
+          (reference "R42")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 181.61 60.96)
+      (xy 186.69 60.96)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 0a04daad-8cd3-4eff-8bd6-5ddc8126e47e)
+  )
+  (wire
+    (pts
+      (xy 194.31 60.96)
+      (xy 217.17 60.96)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid a73a6627-e226-486e-8072-139247ae86ed)
+  )
+  (label "NFC_TX1"
+    (at 181.61 60.96 180)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify right)
+    )
+    (uuid 395f55e8-8622-4ac1-97c3-56607cb19605)
+  )
+  (wire
+    (pts
+      (xy 181.61 132.08)
+      (xy 186.69 132.08)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 9896703e-2281-4c91-9816-4c0842850b2b)
+  )
+  (wire
+    (pts
+      (xy 194.31 132.08)
+      (xy 217.17 132.08)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 0c52d0cf-6bea-4886-876b-eb883b9fc328)
+  )
+  (label "NFC_TX2"
+    (at 181.61 132.08 180)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify right)
+    )
+    (uuid 47aa71e3-3059-4926-a957-25b4601bd976)
+  )
+  (wire
+    (pts
+      (xy 241.3 60.96)
+      (xy 241.3 74.93)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 6cee10d2-3c3f-4b15-aafe-82d4cc9ec360)
+  )
+  (wire
+    (pts
+      (xy 241.3 82.55)
+      (xy 241.3 96.52)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 1c0bf059-f472-49b0-bc5a-7a8939082fba)
+  )
+  (wire
+    (pts
+      (xy 241.3 96.52)
+      (xy 241.3 110.49)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid adc3d6cc-6305-4219-a9d7-6a838426b3c7)
+  )
+  (wire
+    (pts
+      (xy 241.3 118.11)
+      (xy 241.3 132.08)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid b0404601-295a-4294-a4be-564373b7b199)
+  )
+  (wire
+    (pts
+      (xy 241.3 96.52)
+      (xy 254 96.52)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 1f726a00-3c91-42b5-a9bc-2d84895b5b51)
+  )
+  (junction
+    (at 241.3 60.96)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid b9590945-0cbc-4476-8278-96260d949a41)
+  )
+  (junction
+    (at 241.3 96.52)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid 1f4d1427-bfb6-4503-b274-d0cc05c1300a)
+  )
+  (junction
+    (at 241.3 132.08)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid 8f66786e-ad2f-4eb5-9129-4875069e0b0a)
+  )
+  (label "RF_DRV_P"
+    (at 217.17 60.96 180)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify right)
+    )
+    (uuid 187cf394-17aa-46c8-a195-4bd7f2d37f91)
+  )
+  (label "RF_DRV_N"
+    (at 217.17 132.08 180)
+    (effects
+      (font
+        (size 1.05 1.05)
+      )
+      (justify right)
+    )
+    (uuid 78f89b8b-2f1b-4ee3-9ad0-f13621eaf8be)
+  )
 )

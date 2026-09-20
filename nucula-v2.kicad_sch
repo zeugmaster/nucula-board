@@ -3035,7 +3035,7 @@
     )
     (uuid 8ef9cb69-9ae5-581c-a96a-44fbd114d48d)
   )
-  (text "NFC / OLED power comes from VSYS; digital logic from regulated rails.\nConcurrent Wi-Fi + NFC + OLED can exceed a small 400 mAh pack's rating.\nConfirm peak battery current and USB input power before PCB release.\nRF matching/coil and exact OLED flex remain intentionally provisional."
+  (text "NFC / OLED power comes from VSYS; digital logic from regulated rails.\nUSB prototype: user-confirmed 5 V / >=1.5 A supply; ~1.10 A estimate.\nBattery performance / low-battery improvements deferred this iteration.\nOLED: 26-contact Waveshare pin order and orientation user-confirmed.\nRF matching and crystal load selected; final tuning needs measurement."
     (at 20.32 270.51 0)
     (effects
       (font

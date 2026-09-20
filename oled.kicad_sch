@@ -1771,7 +1771,7 @@
           ) hide
         )
       )
-      (property "Description" "26-contact OLED glass interface from Waveshare reference; FPC mechanics provisional"
+      (property "Description" "26-contact OLED glass interface; Waveshare pin order/orientation confirmed by user"
         (at 0 0 0)
         (effects
           (font
@@ -2301,7 +2301,7 @@
       )
     )
   )
-  (text "2.42-inch OLED glass / SSD1309 / I2C"
+  (text "OLED / confirmed 26-contact Waveshare interface"
     (at 15.24 17.78 0)
     (effects
       (font
@@ -4079,7 +4079,7 @@
         (justify left)
       )
     )
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
       (at 157.48 96.52 0)
       (effects
         (font
@@ -4089,7 +4089,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL31B106KAHNNN.do"
       (at 157.48 96.52 0)
       (effects
         (font
@@ -4099,7 +4099,7 @@
         (justify left)
       )
     )
-    (property "Voltage" "10 V"
+    (property "Voltage" "25 V"
       (at 157.48 96.52 0)
       (effects
         (font
@@ -4119,7 +4119,7 @@
         (justify left)
       )
     )
-    (property "Tolerance" "20%"
+    (property "Tolerance" "10%"
       (at 157.48 96.52 0)
       (effects
         (font
@@ -4127,6 +4127,33 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 157.48 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "CL31B106KAHNNNE"
+      (at 157.48 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C14860"
+      (at 157.48 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -4268,7 +4295,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL21B105KBFNNN.do"
       (at 271.78 96.52 0)
       (effects
         (font
@@ -4278,7 +4305,7 @@
         (justify left)
       )
     )
-    (property "Voltage" "25 V"
+    (property "Voltage" "50 V"
       (at 271.78 96.52 0)
       (effects
         (font
@@ -4298,7 +4325,7 @@
         (justify left)
       )
     )
-    (property "Tolerance" "20%"
+    (property "Tolerance" "10%"
       (at 271.78 96.52 0)
       (effects
         (font
@@ -4306,6 +4333,33 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 271.78 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "CL21B105KBFNNNE"
+      (at 271.78 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C28323"
+      (at 271.78 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -4582,7 +4636,7 @@
         (justify left)
       )
     )
-    (property "Value" "SSD1309 / 26-pad glass"
+    (property "Value" "SSD1309 OLED / 26-pin"
       (at 321.31 50.8 0)
       (effects
         (font
@@ -4611,7 +4665,7 @@
         (justify left)
       )
     )
-    (property "MPN" "TBD exact OLED glass"
+    (property "MPN" "FH12-26S-0.5SH(55)"
       (at 345.44 88.9 0)
       (effects
         (font
@@ -4621,7 +4675,7 @@
         (justify left)
       )
     )
-    (property "Footprint Status" "PROVISIONAL: confirm 26-pin 0.5 mm flex/contact side; may require solder pads instead"
+    (property "Footprint Status" "SELECTED: 26-way 0.50 mm; user confirms Waveshare pin order/orientation, including outer ground contacts"
       (at 345.44 88.9 0)
       (effects
         (font
@@ -4639,6 +4693,51 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Actual Flex" "26 contacts total: 24 counted plus two outer GND contacts; 0.50 mm pitch; copper on emitting side (user confirmed)"
+      (at 345.44 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Status" "Pinout/orientation confirmed by user; DS1 BOM part is the FPC socket, OLED glass supplied separately"
+      (at 345.44 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Manufacturer" "Hirose"
+      (at 345.44 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Connector Mechanics" "FH12 bottom-contact, 0.30 mm flex thickness; check insertion/fold and physical fit during PCB placement"
+      (at 345.44 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Connector Datasheet" "https://www.hirose.com/product/p/CL0586-0576-2-55"
+      (at 345.44 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "6"
@@ -5472,7 +5571,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL21B475KAFNNN.do"
       (at 330.2 157.48 0)
       (effects
         (font
@@ -5482,7 +5581,7 @@
         (justify left)
       )
     )
-    (property "Voltage" "10 V"
+    (property "Voltage" "25 V"
       (at 330.2 157.48 0)
       (effects
         (font
@@ -5502,7 +5601,7 @@
         (justify left)
       )
     )
-    (property "Tolerance" "20%"
+    (property "Tolerance" "10%"
       (at 330.2 157.48 0)
       (effects
         (font
@@ -5510,6 +5609,33 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 330.2 157.48 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "CL21B475KAFNNNE"
+      (at 330.2 157.48 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C98195"
+      (at 330.2 157.48 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -5820,7 +5946,7 @@
         (justify left)
       )
     )
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
       (at 370.84 157.48 0)
       (effects
         (font
@@ -5830,7 +5956,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL31B475KBHNNN.do"
       (at 370.84 157.48 0)
       (effects
         (font
@@ -5840,7 +5966,7 @@
         (justify left)
       )
     )
-    (property "Voltage" "25 V"
+    (property "Voltage" "50 V"
       (at 370.84 157.48 0)
       (effects
         (font
@@ -5860,7 +5986,7 @@
         (justify left)
       )
     )
-    (property "Tolerance" "20%"
+    (property "Tolerance" "10%"
       (at 370.84 157.48 0)
       (effects
         (font
@@ -5868,6 +5994,33 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 370.84 157.48 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "CL31B475KBHNNNE"
+      (at 370.84 157.48 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C51205"
+      (at 370.84 157.48 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -6009,7 +6162,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL21B225KAFNNN.do"
       (at 391.16 157.48 0)
       (effects
         (font
@@ -6039,7 +6192,7 @@
         (justify left)
       )
     )
-    (property "Tolerance" "20%"
+    (property "Tolerance" "10%"
       (at 391.16 157.48 0)
       (effects
         (font
@@ -6047,6 +6200,33 @@
         )
         (hide yes)
         (justify left)
+      )
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 391.16 157.48 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "CL21B225KAFNNNE"
+      (at 391.16 157.48 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C19110"
+      (at 391.16 157.48 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
       )
     )
     (pin "1"
@@ -6995,7 +7175,7 @@
       )
     )
   )
-  (text "GPIO10 HIGH asserts OLED reset; LOW releases it.\nBS1 high; BS2 low; CS# low; SA0 low => I2C 0x3C.\nD1 + D2 both connect to SDA (input + ACK output).\nThe SSD1309 is on the glass; DS1 is its 26-pad interface.\nNo RT9193-33 or TXB0108: shared I2C pull-ups are 3.0 V.\nExact panel/flex mechanics remain to be confirmed."
+  (text "26 contacts total; 0.50mm pitch (user confirmed).\n24 counted contacts + two outer GND contacts.\nWaveshare pin order / orientation confirmed.\nDS1: FH12 socket; glass supplied separately.\nCheck 0.30mm flex fit / fold during PCB placement.\nSSD1309 I2C 0x3C, shared pull-ups 3.0V."
     (at 20.32 246.38 0)
     (effects
       (font

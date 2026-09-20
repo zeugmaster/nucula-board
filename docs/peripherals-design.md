@@ -3,7 +3,8 @@
 Revision B-draft, 2026-09-20. The project now has five schematic sheets:
 system interconnect, power/ESP32, NFC, OLED, and keyboard.
 [Combined drawing](schematic.pdf), [BOM](bom.csv), [verification](verification.json).
-PCB layout and firmware have not been started.
+The main PCB layout and firmware have not been started. A separate NFC coil
+measurement coupon and the reusable coil footprint are now available.
 
 ## Shared I²C and MCU connections
 
@@ -75,24 +76,36 @@ configuration. I²C address selection is documented in
 | R13 / R14 | R27 / R28 | Series damping |
 | C59 + R11 | C28 + R25 | RXN tap from the TX1 post-inductor node |
 | C58 + R12 | C29 + R26 | RXP tap from the TX2 post-inductor node |
-| A1 | A1 | Coil ends on pads 1/2, reference/shield ground on pad 3 |
+| A1 | A1 | New etched loop: pads 1/2 only, no ground or center tap |
 
-RF values are deliberately **TBD**, including damping and receiver branches.
-Use C0G capacitors, initially 50 V rated, and high-Q RF inductors with adequate
-current and self-resonance. Final voltage/current stress must be measured after
-tuning. The antenna footprint is a labelled interface placeholder, with no coil
-geometry or center-tap assumption. It must be replaced before PCB fabrication.
+The [NFC antenna design and tuning guide](nfc-antenna.md) supersedes the former
+RF placeholders. A1 is now a 40 × 40 mm four-turn loop, 0.50 mm tracks, 0.30 mm
+gaps and 35 µm copper, with an estimated 1.56 µH inductance. The complete
+starting tree uses 150 nH / 360 pF EMC filtering, 68 pF series / 100 pF shunt
+matching, 2.7 Ω damping and 2.2 kΩ / 1 nF RX taps. RF capacitors use hand-solder
+0805 footprints and 100 V C0G. Damping resistors use high-power 1206 parts.
+C53/C54 add DNP EMC trim pads; R41/R42 add removable TX isolation links.
+The selected target is 20 Ω differential; start at TVDD ≤3.3 V. Values remain
+prototype starts requiring VNA, receive-level and current/thermal validation.
 
-Y1 is a 27.12 MHz Epson TSX-3225-family candidate. C26/C27 = 10 pF are the
-reference's starting values only. Select the exact crystal load capacitance,
-ESR and drive grade before ordering, then account for PCB and pin capacitance.
+Y1 is NDK **NX2016SA-27.12MHZ-EXS00A-CS06346**, 27.12 MHz, 10 pF load,
+2.0 × 1.6 mm, an explicit AN14518 reference (JLCPCB C3008209).
+C26 = 12 pF and C27 = 15 pF are calculated prototype starts, 0603 C0G.
+C21/C22 and C23/C24 are now separate 2.2 µF 0805 capacitors for the local
+logic and TX supply pins, per AN12988. Selected ordering codes, oscillator
+assumptions and power-capacitor bias calculations are in
+[component refinements](component-refinements.md). Frequency/startup/drive
+and power transients still need measurement after layout.
 
 ## OLED glass and boost supply
 
 The supplied
 [Waveshare 2.42-inch OLED schematic](../parts%20documentation/2.42inch-OLED-Module-Schematic.pdf)
-defines a **26-contact SSD1309 glass interface**. DS1 represents that interface;
-the controller is already on the glass. Pin 6/BS1 is high, BS2 and CS are low,
+defines a **26-contact SSD1309 glass interface**. The user confirms its pin
+order and orientation: the earlier count of 24 excluded two outer ground
+contacts. The ribbon pitch is 0.5 mm, with exposed contacts on the emitting
+side. DS1 represents this interface and the controller is already on the
+glass. Pin 6/BS1 is high, BS2 and CS are low,
 and pin 10/SA0 is low. D0 is SCL; **D1 and D2 both connect to SDA** for data and
 acknowledgement. Unused parallel inputs are grounded; pin 4 is NC.
 
@@ -129,10 +142,11 @@ inductor current. The AP3012's 500 mA switch limit is **typical**, not a
 guaranteed display-output rating. Full-white current, efficiency and overshoot
 must be measured before fixing brightness limits.
 
-The assigned **Hirose FH12 26-way 0.5 mm footprint is provisional**. The
-reference PDF does not establish flex pitch, contact side or whether the glass
-requires direct soldering. Exact glass ordering code and mechanical drawing
-are required before layout; the connector model does not represent the glass.
+DS1's assigned **Hirose FH12-26S-0.5SH(55)** 26-way footprint is retained,
+with the socket ordering code now in the BOM; the panel is supplied separately.
+Pins 1 and 26 connect to ground. Check its 0.30 mm flex thickness requirement,
+bottom-contact insertion and the intended fold during PCB placement.
+The user-confirmed pinout/orientation closes the electrical interface question.
 
 ## Breakaway keyboard
 
@@ -184,21 +198,23 @@ packs cannot supply it. Select a suitable protected cell or constrain concurrent
 RF/Wi-Fi/display use and brightness. D1/D2 are upgraded to B340A for current
 margin, but voltage drop, temperature and copper still need verification.
 
-Charging remains 100 mA. The previously documented USB input-current,
-enumeration/suspend and inrush limitations remain open; USB current capability
-cannot be inferred from the CC pulldowns alone. Resolve the input budget and
-actual battery discharge rating before PCB release.
+Battery performance is now deferred by user instruction. Charging remains
+100 mA. For this USB-powered prototype, use the user-confirmed source of
+5 V / at least 1.5 A; the updated steady-state estimate is 1.10 A including
+charging. See [USB calculation and limits](component-refinements.md#usb-operation-and-deferred-battery-work).
+Ordinary USB-host current/suspend behavior and inrush are not qualified.
 
 ## Verification and remaining selections
 
 `python3 tools/check_schematic.py` passes native ERC on all five sheets:
-**124 components, 87 nets, zero errors/warnings**. It checks 57 named net groups,
+**128 components, 89 nets, zero errors/warnings**. It checks 59 named net groups,
 additional internal connections and ground/NC pads, all physical symbol-to-pad
 mappings, DNP/region/address fields, available model paths and static voltage
 calculations. The five-page PDF was rendered and visually inspected.
 
-Remaining decisions are RF tuning/coil geometry, crystal grade/load, exact OLED
-glass/flex and full-white current, the battery/input power budget, and final
-MLCC ordering codes with effective capacitance under bias. These require the
-eventual mechanical parts or hardware measurements; they are explicitly marked
-in the schematic/BOM rather than hidden behind guessed ordering codes.
+Crystal and critical supply MLCC ordering codes are now selected; see
+[component refinements](component-refinements.md). The user has confirmed the
+26-contact OLED pinout/orientation and 5 V / at least 1.5 A USB-C supply.
+The schematic is ready to begin PCB layout. RF/oscillator tuning, display sequencing/current and USB power
+transients require prototype measurements. Battery runtime and improved
+low-battery behavior are deferred, as accepted by the user.

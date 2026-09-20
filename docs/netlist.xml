@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>nucula-v2.kicad_sch</source>
-    <date>2026-09-20T01:16:34</date>
+    <date>2026-09-20T16:32:50</date>
     <tool>Eeschema 10.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -306,19 +306,28 @@
     </comp>
     <comp ref="C1">
       <value>22uF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL32B226KAJNNN.do</datasheet>
       <fields>
-        <field name="Voltage">10 V</field>
-        <field name="Dielectric">X5R</field>
-        <field name="Tolerance">20%</field>
-        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Voltage">25 V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Tolerance">10%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL32B226KAJNNNE</field>
+        <field name="LCSC">C309062</field>
+        <field name="Status">SELECTED: manufacturer DC-bias curve checked; retain exact part or re-evaluate</field>
+        <field name="Footprint">Capacitor_SMD:C_1210_3225Metric</field>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL32B226KAJNNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="10 V"/>
-      <property name="Dielectric" value="X5R"/>
-      <property name="Tolerance" value="20%"/>
+      <property name="Voltage" value="25 V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL32B226KAJNNNE"/>
+      <property name="LCSC" value="C309062"/>
+      <property name="Status" value="SELECTED: manufacturer DC-bias curve checked; retain exact part or re-evaluate"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -336,19 +345,28 @@
     </comp>
     <comp ref="C2">
       <value>22uF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL32B226KAJNNN.do</datasheet>
       <fields>
-        <field name="Voltage">10 V</field>
-        <field name="Dielectric">X5R</field>
-        <field name="Tolerance">20%</field>
-        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Voltage">25 V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Tolerance">10%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL32B226KAJNNNE</field>
+        <field name="LCSC">C309062</field>
+        <field name="Status">SELECTED: manufacturer DC-bias curve checked; retain exact part or re-evaluate</field>
+        <field name="Footprint">Capacitor_SMD:C_1210_3225Metric</field>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL32B226KAJNNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="10 V"/>
-      <property name="Dielectric" value="X5R"/>
-      <property name="Tolerance" value="20%"/>
+      <property name="Voltage" value="25 V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL32B226KAJNNNE"/>
+      <property name="LCSC" value="C309062"/>
+      <property name="Status" value="SELECTED: manufacturer DC-bias curve checked; retain exact part or re-evaluate"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -396,19 +414,28 @@
     </comp>
     <comp ref="C4">
       <value>22uF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL32B226KAJNNN.do</datasheet>
       <fields>
-        <field name="Voltage">10 V</field>
-        <field name="Dielectric">X5R</field>
-        <field name="Tolerance">20%</field>
-        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Voltage">25 V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Tolerance">10%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL32B226KAJNNNE</field>
+        <field name="LCSC">C309062</field>
+        <field name="Status">SELECTED: manufacturer DC-bias curve checked; retain exact part or re-evaluate</field>
+        <field name="Footprint">Capacitor_SMD:C_1210_3225Metric</field>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL32B226KAJNNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="10 V"/>
-      <property name="Dielectric" value="X5R"/>
-      <property name="Tolerance" value="20%"/>
+      <property name="Voltage" value="25 V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL32B226KAJNNNE"/>
+      <property name="LCSC" value="C309062"/>
+      <property name="Status" value="SELECTED: manufacturer DC-bias curve checked; retain exact part or re-evaluate"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -426,19 +453,28 @@
     </comp>
     <comp ref="C5">
       <value>22uF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL31A226KAHNNN.do</datasheet>
       <fields>
-        <field name="Voltage">10 V</field>
+        <field name="Voltage">25 V</field>
         <field name="Dielectric">X5R</field>
-        <field name="Tolerance">20%</field>
-        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Tolerance">10%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL31A226KAHNNNE</field>
+        <field name="LCSC">C12891</field>
+        <field name="Status">SELECTED: manufacturer DC-bias curve checked</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL31A226KAHNNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="10 V"/>
+      <property name="Voltage" value="25 V"/>
       <property name="Dielectric" value="X5R"/>
-      <property name="Tolerance" value="20%"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL31A226KAHNNNE"/>
+      <property name="LCSC" value="C12891"/>
+      <property name="Status" value="SELECTED: manufacturer DC-bias curve checked"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -456,19 +492,28 @@
     </comp>
     <comp ref="C6">
       <value>22uF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL31A226KAHNNN.do</datasheet>
       <fields>
-        <field name="Voltage">10 V</field>
+        <field name="Voltage">25 V</field>
         <field name="Dielectric">X5R</field>
-        <field name="Tolerance">20%</field>
-        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Tolerance">10%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL31A226KAHNNNE</field>
+        <field name="LCSC">C12891</field>
+        <field name="Status">SELECTED: manufacturer DC-bias curve checked</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL31A226KAHNNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="10 V"/>
+      <property name="Voltage" value="25 V"/>
       <property name="Dielectric" value="X5R"/>
-      <property name="Tolerance" value="20%"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL31A226KAHNNNE"/>
+      <property name="LCSC" value="C12891"/>
+      <property name="Status" value="SELECTED: manufacturer DC-bias curve checked"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -548,19 +593,28 @@
     </comp>
     <comp ref="C9">
       <value>22uF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL31A226KAHNNN.do</datasheet>
       <fields>
-        <field name="Voltage">10 V</field>
+        <field name="Voltage">25 V</field>
         <field name="Dielectric">X5R</field>
-        <field name="Tolerance">20%</field>
-        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Tolerance">10%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL31A226KAHNNNE</field>
+        <field name="LCSC">C12891</field>
+        <field name="Status">SELECTED: manufacturer DC-bias curve checked</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL31A226KAHNNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="10 V"/>
+      <property name="Voltage" value="25 V"/>
       <property name="Dielectric" value="X5R"/>
-      <property name="Tolerance" value="20%"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL31A226KAHNNNE"/>
+      <property name="LCSC" value="C12891"/>
+      <property name="Status" value="SELECTED: manufacturer DC-bias curve checked"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -864,6 +918,7 @@
       <fields>
         <field name="MPN">B2B-PH-K-S(LF)(SN)</field>
         <field name="Manufacturer">JST</field>
+        <field name="Status">OPTIONAL BATTERY TEST: JST-PH 2.00 mm; pin 1 BAT+, pin 2 GND; USB operation does not require a battery</field>
         <field name="Footprint">Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</field>
         <field name="Datasheet">https://www.jst-mfg.com/product/pdf/eng/ePH.pdf</field>
         <field name="Description"/>
@@ -871,6 +926,7 @@
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="MPN" value="B2B-PH-K-S(LF)(SN)"/>
       <property name="Manufacturer" value="JST"/>
+      <property name="Status" value="OPTIONAL BATTERY TEST: JST-PH 2.00 mm; pin 1 BAT+, pin 2 GND; USB operation does not require a battery"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="connector"/>
@@ -1713,25 +1769,30 @@
       </units>
     </comp>
     <comp ref="A1">
-      <value>13.56MHz coil / TBD</value>
-      <footprint>Nucula_Project:NFC_Antenna_Interface_TBD</footprint>
+      <value>PCB loop 40x40 / 4T</value>
+      <footprint>Nucula_Project:NFC_PCB_Loop_40x40_4T_W0.50_S0.30</footprint>
+      <description>Two-terminal etched PCB NFC coil. 40x40 mm outer copper; 4 turns, 0.50 mm trace, 0.30 mm gap. No ground or center tap.</description>
       <fields>
-        <field name="Status">PLACEHOLDER: no coil geometry or inductance selected</field>
-        <field name="Footprint">Nucula_Project:NFC_Antenna_Interface_TBD</field>
+        <field name="Status">PROTOTYPE: 1.56uH estimated; measure RL/C before final tuning</field>
+        <field name="Geometry">40x40 mm outer copper; 4T; W=0.50 mm; S=0.30 mm; 35um Cu</field>
+        <field name="Assembly">Etched PCB copper; exclude from purchased BOM and pick/place</field>
+        <field name="Footprint">Nucula_Project:NFC_PCB_Loop_40x40_4T_W0.50_S0.30</field>
         <field name="Datasheet"/>
-        <field name="Description"/>
+        <field name="Description">Two-terminal etched PCB NFC coil. 40x40 mm outer copper; 4 turns, 0.50 mm trace, 0.30 mm gap. No ground or center tap.</field>
       </fields>
-      <libsource lib="Nucula_Project" part="NFC_Loop_TBD" description="Two-terminal 13.56 MHz coil plus reference/shield ground; geometry and tuning TBD"/>
-      <property name="Status" value="PLACEHOLDER: no coil geometry or inductance selected"/>
+      <libsource lib="Nucula_Project" part="NFC_PCB_Loop_40x40_4T" description="Two-terminal etched PCB NFC coil. 40x40 mm outer copper; 4 turns, 0.50 mm trace, 0.30 mm gap. No ground or center tap."/>
+      <property name="Status" value="PROTOTYPE: 1.56uH estimated; measure RL/C before final tuning"/>
+      <property name="Geometry" value="40x40 mm outer copper; 4T; W=0.50 mm; S=0.30 mm; 35um Cu"/>
+      <property name="Assembly" value="Etched PCB copper; exclude from purchased BOM and pick/place"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="exclude_from_bom"/>
       <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
-      <tstamps>9a5ae9f3-ed58-5272-ac95-d1f39e2ff60d</tstamps>
+      <tstamps>b66fd0f3-0cae-4f16-945d-dba34bcc4997</tstamps>
       <units>
         <unit name="A">
           <pins>
             <pin num="1"/>
-            <pin num="3"/>
             <pin num="2"/>
           </pins>
         </unit>
@@ -1740,18 +1801,27 @@
     <comp ref="C15">
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL21B105KBFNNN.do</datasheet>
       <fields>
-        <field name="Voltage">10 V</field>
+        <field name="Voltage">50 V</field>
         <field name="Dielectric">X7R</field>
-        <field name="Tolerance">20%</field>
+        <field name="Tolerance">10%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL21B105KBFNNNE</field>
+        <field name="LCSC">C28323</field>
+        <field name="Placement">At U6.6 VDD_PAD</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL21B105KBFNNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="10 V"/>
+      <property name="Voltage" value="50 V"/>
       <property name="Dielectric" value="X7R"/>
-      <property name="Tolerance" value="20%"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL21B105KBFNNNE"/>
+      <property name="LCSC" value="C28323"/>
+      <property name="Placement" value="At U6.6 VDD_PAD"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1770,18 +1840,25 @@
     <comp ref="C16">
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL10B104KB8NNN.do</datasheet>
       <fields>
-        <field name="Voltage">10 V</field>
+        <field name="Voltage">50 V</field>
         <field name="Dielectric">X7R</field>
         <field name="Tolerance">10%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL10B104KB8NNNC</field>
+        <field name="LCSC">C1591</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL10B104KB8NNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="10 V"/>
+      <property name="Voltage" value="50 V"/>
       <property name="Dielectric" value="X7R"/>
       <property name="Tolerance" value="10%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL10B104KB8NNNC"/>
+      <property name="LCSC" value="C1591"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1799,19 +1876,28 @@
     </comp>
     <comp ref="C17">
       <value>10uF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL31B106KAHNNN.do</datasheet>
       <fields>
-        <field name="Voltage">10 V</field>
+        <field name="Voltage">25 V</field>
         <field name="Dielectric">X7R</field>
-        <field name="Tolerance">20%</field>
-        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Tolerance">10%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL31B106KAHNNNE</field>
+        <field name="LCSC">C14860</field>
+        <field name="Placement">At U6.12/28 VBAT</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL31B106KAHNNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="10 V"/>
+      <property name="Voltage" value="25 V"/>
       <property name="Dielectric" value="X7R"/>
-      <property name="Tolerance" value="20%"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL31B106KAHNNNE"/>
+      <property name="LCSC" value="C14860"/>
+      <property name="Placement" value="At U6.12/28 VBAT"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1830,18 +1916,25 @@
     <comp ref="C18">
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL10B104KB8NNN.do</datasheet>
       <fields>
-        <field name="Voltage">10 V</field>
+        <field name="Voltage">50 V</field>
         <field name="Dielectric">X7R</field>
         <field name="Tolerance">10%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL10B104KB8NNNC</field>
+        <field name="LCSC">C1591</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL10B104KB8NNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="10 V"/>
+      <property name="Voltage" value="50 V"/>
       <property name="Dielectric" value="X7R"/>
       <property name="Tolerance" value="10%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL10B104KB8NNNC"/>
+      <property name="LCSC" value="C1591"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1859,19 +1952,28 @@
     </comp>
     <comp ref="C19">
       <value>10uF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL31B106KAHNNN.do</datasheet>
       <fields>
-        <field name="Voltage">10 V</field>
+        <field name="Voltage">25 V</field>
         <field name="Dielectric">X7R</field>
-        <field name="Tolerance">20%</field>
-        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Tolerance">10%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL31B106KAHNNNE</field>
+        <field name="LCSC">C14860</field>
+        <field name="Placement">At U6.13 VDD_UP</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL31B106KAHNNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="10 V"/>
+      <property name="Voltage" value="25 V"/>
       <property name="Dielectric" value="X7R"/>
-      <property name="Tolerance" value="20%"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL31B106KAHNNNE"/>
+      <property name="LCSC" value="C14860"/>
+      <property name="Placement" value="At U6.13 VDD_UP"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1890,18 +1992,25 @@
     <comp ref="C20">
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL10B104KB8NNN.do</datasheet>
       <fields>
-        <field name="Voltage">10 V</field>
+        <field name="Voltage">50 V</field>
         <field name="Dielectric">X7R</field>
         <field name="Tolerance">10%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL10B104KB8NNNC</field>
+        <field name="LCSC">C1591</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL10B104KB8NNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="10 V"/>
+      <property name="Voltage" value="50 V"/>
       <property name="Dielectric" value="X7R"/>
       <property name="Tolerance" value="10%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL10B104KB8NNNC"/>
+      <property name="LCSC" value="C1591"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1918,20 +2027,31 @@
       </units>
     </comp>
     <comp ref="C21">
-      <value>10uF</value>
+      <value>2.2uF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL21B225KAFNNN.do</datasheet>
       <fields>
-        <field name="Voltage">10 V</field>
+        <field name="Voltage">25 V</field>
         <field name="Dielectric">X7R</field>
-        <field name="Tolerance">20%</field>
+        <field name="Tolerance">10%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL21B225KAFNNNE</field>
+        <field name="LCSC">C19110</field>
+        <field name="Placement">Local capacitor at U6.26 VDDA</field>
+        <field name="Status">PN7160 AN12988 local decoupling; selected stocked prototype part is NRND; do not substitute without checking bias</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL21B225KAFNNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="10 V"/>
+      <property name="Voltage" value="25 V"/>
       <property name="Dielectric" value="X7R"/>
-      <property name="Tolerance" value="20%"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL21B225KAFNNNE"/>
+      <property name="LCSC" value="C19110"/>
+      <property name="Placement" value="Local capacitor at U6.26 VDDA"/>
+      <property name="Status" value="PN7160 AN12988 local decoupling; selected stocked prototype part is NRND; do not substitute without checking bias"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1948,20 +2068,31 @@
       </units>
     </comp>
     <comp ref="C22">
-      <value>100nF</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <value>2.2uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL21B225KAFNNN.do</datasheet>
       <fields>
-        <field name="Voltage">10 V</field>
+        <field name="Voltage">25 V</field>
         <field name="Dielectric">X7R</field>
         <field name="Tolerance">10%</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL21B225KAFNNNE</field>
+        <field name="LCSC">C19110</field>
+        <field name="Placement">Local capacitor at U6.27 VDD</field>
+        <field name="Status">PN7160 AN12988 local decoupling; selected stocked prototype part is NRND; do not substitute without checking bias</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL21B225KAFNNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="10 V"/>
+      <property name="Voltage" value="25 V"/>
       <property name="Dielectric" value="X7R"/>
       <property name="Tolerance" value="10%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL21B225KAFNNNE"/>
+      <property name="LCSC" value="C19110"/>
+      <property name="Placement" value="Local capacitor at U6.27 VDD"/>
+      <property name="Status" value="PN7160 AN12988 local decoupling; selected stocked prototype part is NRND; do not substitute without checking bias"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1978,20 +2109,31 @@
       </units>
     </comp>
     <comp ref="C23">
-      <value>10uF</value>
+      <value>2.2uF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL21B225KAFNNN.do</datasheet>
       <fields>
-        <field name="Voltage">10 V</field>
+        <field name="Voltage">25 V</field>
         <field name="Dielectric">X7R</field>
-        <field name="Tolerance">20%</field>
+        <field name="Tolerance">10%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL21B225KAFNNNE</field>
+        <field name="LCSC">C19110</field>
+        <field name="Placement">Local capacitor at U6.18 TVDD_IN</field>
+        <field name="Status">PN7160 AN12988 local decoupling; selected stocked prototype part is NRND; do not substitute without checking bias</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL21B225KAFNNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="10 V"/>
+      <property name="Voltage" value="25 V"/>
       <property name="Dielectric" value="X7R"/>
-      <property name="Tolerance" value="20%"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL21B225KAFNNNE"/>
+      <property name="LCSC" value="C19110"/>
+      <property name="Placement" value="Local capacitor at U6.18 TVDD_IN"/>
+      <property name="Status" value="PN7160 AN12988 local decoupling; selected stocked prototype part is NRND; do not substitute without checking bias"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2008,20 +2150,31 @@
       </units>
     </comp>
     <comp ref="C24">
-      <value>100nF</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <value>2.2uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL21B225KAFNNN.do</datasheet>
       <fields>
-        <field name="Voltage">10 V</field>
+        <field name="Voltage">25 V</field>
         <field name="Dielectric">X7R</field>
         <field name="Tolerance">10%</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL21B225KAFNNNE</field>
+        <field name="LCSC">C19110</field>
+        <field name="Placement">Local capacitor at U6.22 TVDD</field>
+        <field name="Status">PN7160 AN12988 local decoupling; selected stocked prototype part is NRND; do not substitute without checking bias</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL21B225KAFNNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="10 V"/>
+      <property name="Voltage" value="25 V"/>
       <property name="Dielectric" value="X7R"/>
       <property name="Tolerance" value="10%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL21B225KAFNNNE"/>
+      <property name="LCSC" value="C19110"/>
+      <property name="Placement" value="Local capacitor at U6.22 TVDD"/>
+      <property name="Status" value="PN7160 AN12988 local decoupling; selected stocked prototype part is NRND; do not substitute without checking bias"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2040,18 +2193,25 @@
     <comp ref="C25">
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL10B104KB8NNN.do</datasheet>
       <fields>
-        <field name="Voltage">10 V</field>
+        <field name="Voltage">50 V</field>
         <field name="Dielectric">X7R</field>
         <field name="Tolerance">10%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL10B104KB8NNNC</field>
+        <field name="LCSC">C1591</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL10B104KB8NNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="10 V"/>
+      <property name="Voltage" value="50 V"/>
       <property name="Dielectric" value="X7R"/>
       <property name="Tolerance" value="10%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL10B104KB8NNNC"/>
+      <property name="LCSC" value="C1591"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2068,20 +2228,27 @@
       </units>
     </comp>
     <comp ref="C26">
-      <value>10pF START</value>
+      <value>12pF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL10C120JB8NNN.do</datasheet>
       <fields>
         <field name="Voltage">50 V</field>
         <field name="Dielectric">C0G</field>
-        <field name="Tolerance">10%</field>
+        <field name="Tolerance">5%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL10C120JB8NNNC</field>
+        <field name="Status">PROTOTYPE START: 12pF/15pF pair; tune carrier to -5..0ppm per AN14518</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL10C120JB8NNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Voltage" value="50 V"/>
       <property name="Dielectric" value="C0G"/>
-      <property name="Tolerance" value="10%"/>
+      <property name="Tolerance" value="5%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL10C120JB8NNNC"/>
+      <property name="Status" value="PROTOTYPE START: 12pF/15pF pair; tune carrier to -5..0ppm per AN14518"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2098,20 +2265,29 @@
       </units>
     </comp>
     <comp ref="C27">
-      <value>10pF START</value>
+      <value>15pF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL10C150JB8NNN.do</datasheet>
       <fields>
         <field name="Voltage">50 V</field>
         <field name="Dielectric">C0G</field>
-        <field name="Tolerance">10%</field>
+        <field name="Tolerance">5%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL10C150JB8NNNC</field>
+        <field name="LCSC">C1644</field>
+        <field name="Status">PROTOTYPE START: 12pF/15pF pair; tune carrier to -5..0ppm per AN14518</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL10C150JB8NNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Voltage" value="50 V"/>
       <property name="Dielectric" value="C0G"/>
-      <property name="Tolerance" value="10%"/>
+      <property name="Tolerance" value="5%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL10C150JB8NNNC"/>
+      <property name="LCSC" value="C1644"/>
+      <property name="Status" value="PROTOTYPE START: 12pF/15pF pair; tune carrier to -5..0ppm per AN14518"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2128,20 +2304,22 @@
       </units>
     </comp>
     <comp ref="C28">
-      <value>TBD C_RX</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <value>1nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
       <fields>
-        <field name="Voltage">50 V</field>
-        <field name="Dielectric">C0G</field>
-        <field name="Tolerance">10%</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Voltage">100 V</field>
+        <field name="Dielectric">C0G/NP0</field>
+        <field name="Tolerance">5%</field>
+        <field name="Status">PROTOTYPE START: validate with VNA / AGC / RF stress measurements</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="50 V"/>
-      <property name="Dielectric" value="C0G"/>
-      <property name="Tolerance" value="10%"/>
+      <property name="Voltage" value="100 V"/>
+      <property name="Dielectric" value="C0G/NP0"/>
+      <property name="Tolerance" value="5%"/>
+      <property name="Status" value="PROTOTYPE START: validate with VNA / AGC / RF stress measurements"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2158,20 +2336,22 @@
       </units>
     </comp>
     <comp ref="C29">
-      <value>TBD C_RX</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <value>1nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
       <fields>
-        <field name="Voltage">50 V</field>
-        <field name="Dielectric">C0G</field>
-        <field name="Tolerance">10%</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Voltage">100 V</field>
+        <field name="Dielectric">C0G/NP0</field>
+        <field name="Tolerance">5%</field>
+        <field name="Status">PROTOTYPE START: validate with VNA / AGC / RF stress measurements</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="50 V"/>
-      <property name="Dielectric" value="C0G"/>
-      <property name="Tolerance" value="10%"/>
+      <property name="Voltage" value="100 V"/>
+      <property name="Dielectric" value="C0G/NP0"/>
+      <property name="Tolerance" value="5%"/>
+      <property name="Status" value="PROTOTYPE START: validate with VNA / AGC / RF stress measurements"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2188,20 +2368,22 @@
       </units>
     </comp>
     <comp ref="C30">
-      <value>TBD C_EMC</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <value>360pF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
       <fields>
-        <field name="Voltage">50 V</field>
-        <field name="Dielectric">C0G</field>
-        <field name="Tolerance">10%</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Voltage">100 V</field>
+        <field name="Dielectric">C0G/NP0</field>
+        <field name="Tolerance">2%</field>
+        <field name="Status">PROTOTYPE START: validate with VNA / AGC / RF stress measurements</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="50 V"/>
-      <property name="Dielectric" value="C0G"/>
-      <property name="Tolerance" value="10%"/>
+      <property name="Voltage" value="100 V"/>
+      <property name="Dielectric" value="C0G/NP0"/>
+      <property name="Tolerance" value="2%"/>
+      <property name="Status" value="PROTOTYPE START: validate with VNA / AGC / RF stress measurements"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2218,20 +2400,22 @@
       </units>
     </comp>
     <comp ref="C31">
-      <value>TBD C_EMC</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <value>360pF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
       <fields>
-        <field name="Voltage">50 V</field>
-        <field name="Dielectric">C0G</field>
-        <field name="Tolerance">10%</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Voltage">100 V</field>
+        <field name="Dielectric">C0G/NP0</field>
+        <field name="Tolerance">2%</field>
+        <field name="Status">PROTOTYPE START: validate with VNA / AGC / RF stress measurements</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="50 V"/>
-      <property name="Dielectric" value="C0G"/>
-      <property name="Tolerance" value="10%"/>
+      <property name="Voltage" value="100 V"/>
+      <property name="Dielectric" value="C0G/NP0"/>
+      <property name="Tolerance" value="2%"/>
+      <property name="Status" value="PROTOTYPE START: validate with VNA / AGC / RF stress measurements"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2248,20 +2432,22 @@
       </units>
     </comp>
     <comp ref="C32">
-      <value>TBD C_SER</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <value>68pF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
       <fields>
-        <field name="Voltage">50 V</field>
-        <field name="Dielectric">C0G</field>
-        <field name="Tolerance">10%</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Voltage">100 V</field>
+        <field name="Dielectric">C0G/NP0</field>
+        <field name="Tolerance">2%</field>
+        <field name="Status">PROTOTYPE START: validate with VNA / AGC / RF stress measurements</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="50 V"/>
-      <property name="Dielectric" value="C0G"/>
-      <property name="Tolerance" value="10%"/>
+      <property name="Voltage" value="100 V"/>
+      <property name="Dielectric" value="C0G/NP0"/>
+      <property name="Tolerance" value="2%"/>
+      <property name="Status" value="PROTOTYPE START: validate with VNA / AGC / RF stress measurements"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2278,20 +2464,22 @@
       </units>
     </comp>
     <comp ref="C33">
-      <value>TBD C_SER</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <value>68pF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
       <fields>
-        <field name="Voltage">50 V</field>
-        <field name="Dielectric">C0G</field>
-        <field name="Tolerance">10%</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Voltage">100 V</field>
+        <field name="Dielectric">C0G/NP0</field>
+        <field name="Tolerance">2%</field>
+        <field name="Status">PROTOTYPE START: validate with VNA / AGC / RF stress measurements</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="50 V"/>
-      <property name="Dielectric" value="C0G"/>
-      <property name="Tolerance" value="10%"/>
+      <property name="Voltage" value="100 V"/>
+      <property name="Dielectric" value="C0G/NP0"/>
+      <property name="Tolerance" value="2%"/>
+      <property name="Status" value="PROTOTYPE START: validate with VNA / AGC / RF stress measurements"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2308,20 +2496,22 @@
       </units>
     </comp>
     <comp ref="C34">
-      <value>TBD C_TRIM</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <value>DNP / TRIM</value>
+      <footprint>Nucula_Project:C_0805_HandSolder_NoPaste</footprint>
       <fields>
-        <field name="Voltage">50 V</field>
-        <field name="Dielectric">C0G</field>
-        <field name="Tolerance">10%</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Voltage">100 V</field>
+        <field name="Dielectric">C0G/NP0</field>
+        <field name="Tolerance">&lt;=2% or +/-0.1pF for small trims</field>
+        <field name="Status">DNP: fit equal pairs; 0.5-22pF typical fine trim</field>
+        <field name="Footprint">Nucula_Project:C_0805_HandSolder_NoPaste</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="50 V"/>
-      <property name="Dielectric" value="C0G"/>
-      <property name="Tolerance" value="10%"/>
+      <property name="Voltage" value="100 V"/>
+      <property name="Dielectric" value="C0G/NP0"/>
+      <property name="Tolerance" value="&lt;=2% or +/-0.1pF for small trims"/>
+      <property name="Status" value="DNP: fit equal pairs; 0.5-22pF typical fine trim"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="dnp"/>
@@ -2339,20 +2529,22 @@
       </units>
     </comp>
     <comp ref="C35">
-      <value>TBD C_TRIM</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <value>DNP / TRIM</value>
+      <footprint>Nucula_Project:C_0805_HandSolder_NoPaste</footprint>
       <fields>
-        <field name="Voltage">50 V</field>
-        <field name="Dielectric">C0G</field>
-        <field name="Tolerance">10%</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Voltage">100 V</field>
+        <field name="Dielectric">C0G/NP0</field>
+        <field name="Tolerance">&lt;=2% or +/-0.1pF for small trims</field>
+        <field name="Status">DNP: fit equal pairs; 0.5-22pF typical fine trim</field>
+        <field name="Footprint">Nucula_Project:C_0805_HandSolder_NoPaste</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="50 V"/>
-      <property name="Dielectric" value="C0G"/>
-      <property name="Tolerance" value="10%"/>
+      <property name="Voltage" value="100 V"/>
+      <property name="Dielectric" value="C0G/NP0"/>
+      <property name="Tolerance" value="&lt;=2% or +/-0.1pF for small trims"/>
+      <property name="Status" value="DNP: fit equal pairs; 0.5-22pF typical fine trim"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="dnp"/>
@@ -2370,20 +2562,22 @@
       </units>
     </comp>
     <comp ref="C36">
-      <value>TBD C_SHUNT</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <value>100pF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
       <fields>
-        <field name="Voltage">50 V</field>
-        <field name="Dielectric">C0G</field>
-        <field name="Tolerance">10%</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Voltage">100 V</field>
+        <field name="Dielectric">C0G/NP0</field>
+        <field name="Tolerance">2%</field>
+        <field name="Status">PROTOTYPE START: validate with VNA / AGC / RF stress measurements</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="50 V"/>
-      <property name="Dielectric" value="C0G"/>
-      <property name="Tolerance" value="10%"/>
+      <property name="Voltage" value="100 V"/>
+      <property name="Dielectric" value="C0G/NP0"/>
+      <property name="Tolerance" value="2%"/>
+      <property name="Status" value="PROTOTYPE START: validate with VNA / AGC / RF stress measurements"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2400,20 +2594,22 @@
       </units>
     </comp>
     <comp ref="C37">
-      <value>TBD C_SHUNT</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <value>100pF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
       <fields>
-        <field name="Voltage">50 V</field>
-        <field name="Dielectric">C0G</field>
-        <field name="Tolerance">10%</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Voltage">100 V</field>
+        <field name="Dielectric">C0G/NP0</field>
+        <field name="Tolerance">2%</field>
+        <field name="Status">PROTOTYPE START: validate with VNA / AGC / RF stress measurements</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="50 V"/>
-      <property name="Dielectric" value="C0G"/>
-      <property name="Tolerance" value="10%"/>
+      <property name="Voltage" value="100 V"/>
+      <property name="Dielectric" value="C0G/NP0"/>
+      <property name="Tolerance" value="2%"/>
+      <property name="Status" value="PROTOTYPE START: validate with VNA / AGC / RF stress measurements"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2430,20 +2626,22 @@
       </units>
     </comp>
     <comp ref="C38">
-      <value>TBD C_TRIM</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <value>DNP / TRIM</value>
+      <footprint>Nucula_Project:C_0805_HandSolder_NoPaste</footprint>
       <fields>
-        <field name="Voltage">50 V</field>
-        <field name="Dielectric">C0G</field>
-        <field name="Tolerance">10%</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Voltage">100 V</field>
+        <field name="Dielectric">C0G/NP0</field>
+        <field name="Tolerance">&lt;=2% or +/-0.1pF for small trims</field>
+        <field name="Status">DNP: fit equal pairs; 0.5-22pF typical fine trim</field>
+        <field name="Footprint">Nucula_Project:C_0805_HandSolder_NoPaste</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="50 V"/>
-      <property name="Dielectric" value="C0G"/>
-      <property name="Tolerance" value="10%"/>
+      <property name="Voltage" value="100 V"/>
+      <property name="Dielectric" value="C0G/NP0"/>
+      <property name="Tolerance" value="&lt;=2% or +/-0.1pF for small trims"/>
+      <property name="Status" value="DNP: fit equal pairs; 0.5-22pF typical fine trim"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="dnp"/>
@@ -2461,20 +2659,22 @@
       </units>
     </comp>
     <comp ref="C39">
-      <value>TBD C_TRIM</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <value>DNP / TRIM</value>
+      <footprint>Nucula_Project:C_0805_HandSolder_NoPaste</footprint>
       <fields>
-        <field name="Voltage">50 V</field>
-        <field name="Dielectric">C0G</field>
-        <field name="Tolerance">10%</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Voltage">100 V</field>
+        <field name="Dielectric">C0G/NP0</field>
+        <field name="Tolerance">&lt;=2% or +/-0.1pF for small trims</field>
+        <field name="Status">DNP: fit equal pairs; 0.5-22pF typical fine trim</field>
+        <field name="Footprint">Nucula_Project:C_0805_HandSolder_NoPaste</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="50 V"/>
-      <property name="Dielectric" value="C0G"/>
-      <property name="Tolerance" value="10%"/>
+      <property name="Voltage" value="100 V"/>
+      <property name="Dielectric" value="C0G/NP0"/>
+      <property name="Tolerance" value="&lt;=2% or +/-0.1pF for small trims"/>
+      <property name="Status" value="DNP: fit equal pairs; 0.5-22pF typical fine trim"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="dnp"/>
@@ -2491,19 +2691,94 @@
         </unit>
       </units>
     </comp>
-    <comp ref="L2">
-      <value>TBD L_EMC</value>
-      <footprint>Nucula_Project:L_Coilcraft_0805HQ_2012Metric</footprint>
+    <comp ref="C53">
+      <value>TRIM</value>
+      <footprint>Nucula_Project:C_0805_HandSolder_NoPaste</footprint>
+      <description>Unpolarized capacitor</description>
       <fields>
-        <field name="Status">TUNE: high-Q RF inductor, &gt;=0.5 A; self-resonance above operating band</field>
-        <field name="Reference Role">L1</field>
-        <field name="Footprint">Nucula_Project:L_Coilcraft_0805HQ_2012Metric</field>
+        <field name="Voltage">100 V</field>
+        <field name="Dielectric">C0G/NP0</field>
+        <field name="Tolerance">&lt;=2% or +/-0.1pF for small trims</field>
+        <field name="Status">DNP: EMC parallel trim; fit paired; replacing 360pF may be necessary</field>
+        <field name="Footprint">Nucula_Project:C_0805_HandSolder_NoPaste</field>
         <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="100 V"/>
+      <property name="Dielectric" value="C0G/NP0"/>
+      <property name="Tolerance" value="&lt;=2% or +/-0.1pF for small trims"/>
+      <property name="Status" value="DNP: EMC parallel trim; fit paired; replacing 360pF may be necessary"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>d4cde524-2495-4604-a9d0-8961b8f886ff</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C54">
+      <value>TRIM</value>
+      <footprint>Nucula_Project:C_0805_HandSolder_NoPaste</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Voltage">100 V</field>
+        <field name="Dielectric">C0G/NP0</field>
+        <field name="Tolerance">&lt;=2% or +/-0.1pF for small trims</field>
+        <field name="Status">DNP: EMC parallel trim; fit paired; replacing 360pF may be necessary</field>
+        <field name="Footprint">Nucula_Project:C_0805_HandSolder_NoPaste</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="100 V"/>
+      <property name="Dielectric" value="C0G/NP0"/>
+      <property name="Tolerance" value="&lt;=2% or +/-0.1pF for small trims"/>
+      <property name="Status" value="DNP: EMC parallel trim; fit paired; replacing 360pF may be necessary"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>12be869a-fcae-4646-b752-bf4161daff1f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L2">
+      <value>150nH</value>
+      <footprint>Nucula_Project:L_Coilcraft_0805HP</footprint>
+      <datasheet>https://www.coilcraft.com/en-us/products/rf/ceramic-core-chip-inductors/0805-(2012)/0805hp/0805hp-151/</datasheet>
+      <fields>
+        <field name="Status">PROTOTYPE: RF model included; 0.60A thermal reference, verify actual RF heating</field>
+        <field name="Reference Role">L1</field>
+        <field name="Manufacturer">Coilcraft</field>
+        <field name="MPN">0805HP-151XGRC</field>
+        <field name="Tolerance">2%</field>
+        <field name="Footprint">Nucula_Project:L_Coilcraft_0805HP</field>
+        <field name="Datasheet">https://www.coilcraft.com/en-us/products/rf/ceramic-core-chip-inductors/0805-(2012)/0805hp/0805hp-151/</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="L" description="Inductor"/>
-      <property name="Status" value="TUNE: high-Q RF inductor, &gt;=0.5 A; self-resonance above operating band"/>
+      <property name="Status" value="PROTOTYPE: RF model included; 0.60A thermal reference, verify actual RF heating"/>
       <property name="Reference Role" value="L1"/>
+      <property name="Manufacturer" value="Coilcraft"/>
+      <property name="MPN" value="0805HP-151XGRC"/>
+      <property name="Tolerance" value="2%"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
@@ -2520,18 +2795,25 @@
       </units>
     </comp>
     <comp ref="L3">
-      <value>TBD L_EMC</value>
-      <footprint>Nucula_Project:L_Coilcraft_0805HQ_2012Metric</footprint>
+      <value>150nH</value>
+      <footprint>Nucula_Project:L_Coilcraft_0805HP</footprint>
+      <datasheet>https://www.coilcraft.com/en-us/products/rf/ceramic-core-chip-inductors/0805-(2012)/0805hp/0805hp-151/</datasheet>
       <fields>
-        <field name="Status">TUNE: high-Q RF inductor, &gt;=0.5 A; self-resonance above operating band</field>
+        <field name="Status">PROTOTYPE: RF model included; 0.60A thermal reference, verify actual RF heating</field>
         <field name="Reference Role">L2</field>
-        <field name="Footprint">Nucula_Project:L_Coilcraft_0805HQ_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">Coilcraft</field>
+        <field name="MPN">0805HP-151XGRC</field>
+        <field name="Tolerance">2%</field>
+        <field name="Footprint">Nucula_Project:L_Coilcraft_0805HP</field>
+        <field name="Datasheet">https://www.coilcraft.com/en-us/products/rf/ceramic-core-chip-inductors/0805-(2012)/0805hp/0805hp-151/</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="L" description="Inductor"/>
-      <property name="Status" value="TUNE: high-Q RF inductor, &gt;=0.5 A; self-resonance above operating band"/>
+      <property name="Status" value="PROTOTYPE: RF model included; 0.60A thermal reference, verify actual RF heating"/>
       <property name="Reference Role" value="L2"/>
+      <property name="Manufacturer" value="Coilcraft"/>
+      <property name="MPN" value="0805HP-151XGRC"/>
+      <property name="Tolerance" value="2%"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
@@ -2660,18 +2942,20 @@
       </units>
     </comp>
     <comp ref="R25">
-      <value>TBD R_RX</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <value>2.2k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <fields>
         <field name="Tolerance">1%</field>
-        <field name="Rating">0.1 W</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Rating">0.125 W</field>
+        <field name="Status">PROTOTYPE: tune equal RX resistors for AGC 500-800 decimal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
-      <property name="Rating" value="0.1 W"/>
+      <property name="Rating" value="0.125 W"/>
+      <property name="Status" value="PROTOTYPE: tune equal RX resistors for AGC 500-800 decimal"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2688,18 +2972,20 @@
       </units>
     </comp>
     <comp ref="R26">
-      <value>TBD R_RX</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <value>2.2k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <fields>
         <field name="Tolerance">1%</field>
-        <field name="Rating">0.1 W</field>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Rating">0.125 W</field>
+        <field name="Status">PROTOTYPE: tune equal RX resistors for AGC 500-800 decimal</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
-      <property name="Rating" value="0.1 W"/>
+      <property name="Rating" value="0.125 W"/>
+      <property name="Status" value="PROTOTYPE: tune equal RX resistors for AGC 500-800 decimal"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2716,18 +3002,25 @@
       </units>
     </comp>
     <comp ref="R27">
-      <value>TBD R_DAMP</value>
-      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <value>2.7R</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder</footprint>
+      <datasheet>https://www.vishay.com/docs/20043/crcwhpe3.pdf</datasheet>
       <fields>
         <field name="Tolerance">1%</field>
-        <field name="Rating">0.25 W; RF loss/temperature to verify</field>
-        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Rating">0.75 W P70 only with Rth &lt;=110 K/W; limit to 0.5W pending thermal validation</field>
+        <field name="Status">PROTOTYPE: Q about 20; also lift to measure bare antenna</field>
+        <field name="Manufacturer">Vishay</field>
+        <field name="MPN">CRCW12062R70FKEAHP</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder</field>
+        <field name="Datasheet">https://www.vishay.com/docs/20043/crcwhpe3.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
-      <property name="Rating" value="0.25 W; RF loss/temperature to verify"/>
+      <property name="Rating" value="0.75 W P70 only with Rth &lt;=110 K/W; limit to 0.5W pending thermal validation"/>
+      <property name="Status" value="PROTOTYPE: Q about 20; also lift to measure bare antenna"/>
+      <property name="Manufacturer" value="Vishay"/>
+      <property name="MPN" value="CRCW12062R70FKEAHP"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2744,18 +3037,25 @@
       </units>
     </comp>
     <comp ref="R28">
-      <value>TBD R_DAMP</value>
-      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <value>2.7R</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder</footprint>
+      <datasheet>https://www.vishay.com/docs/20043/crcwhpe3.pdf</datasheet>
       <fields>
         <field name="Tolerance">1%</field>
-        <field name="Rating">0.25 W; RF loss/temperature to verify</field>
-        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Rating">0.75 W P70 only with Rth &lt;=110 K/W; limit to 0.5W pending thermal validation</field>
+        <field name="Status">PROTOTYPE: Q about 20; also lift to measure bare antenna</field>
+        <field name="Manufacturer">Vishay</field>
+        <field name="MPN">CRCW12062R70FKEAHP</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder</field>
+        <field name="Datasheet">https://www.vishay.com/docs/20043/crcwhpe3.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
-      <property name="Rating" value="0.25 W; RF loss/temperature to verify"/>
+      <property name="Rating" value="0.75 W P70 only with Rth &lt;=110 K/W; limit to 0.5W pending thermal validation"/>
+      <property name="Status" value="PROTOTYPE: Q about 20; also lift to measure bare antenna"/>
+      <property name="Manufacturer" value="Vishay"/>
+      <property name="MPN" value="CRCW12062R70FKEAHP"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2790,6 +3090,64 @@
       <property name="ki_fp_filters" value="R_*"/>
       <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
       <tstamps>f2188a76-0cb1-519c-b623-7d05e3ea746f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R41">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Rating">0.25 W; &gt;=0.5A jumper current rating</field>
+        <field name="Status">FIT: remove along with R42/R25/R26 for isolated full RF-tree VNA measurement</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Rating" value="0.25 W; &gt;=0.5A jumper current rating"/>
+      <property name="Status" value="FIT: remove along with R42/R25/R26 for isolated full RF-tree VNA measurement"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>09c55e8e-c0b1-411c-b7ce-f6ef2bf5349d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R42">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Rating">0.25 W; &gt;=0.5A jumper current rating</field>
+        <field name="Status">FIT: remove along with R41/R25/R26 for isolated full RF-tree VNA measurement</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Rating" value="0.25 W; &gt;=0.5A jumper current rating"/>
+      <property name="Status" value="FIT: remove along with R41/R25/R26 for isolated full RF-tree VNA measurement"/>
+      <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
+      <property name="Sheetfile" value="nfc.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/NFC / PN7160 / 0x28/" tstamps="/3dde2d8e-4349-599d-9fca-8a826b6dfad5/"/>
+      <tstamps>c1f11d8f-394b-40a4-a273-96f317bb2bbf</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -2868,22 +3226,31 @@
       </units>
     </comp>
     <comp ref="Y1">
-      <value>27.12MHz / CL TBD</value>
-      <footprint>Crystal:Crystal_SMD_SeikoEpson_TSX3225-4Pin_3.2x2.5mm</footprint>
+      <value>27.12MHz / CL 10pF</value>
+      <footprint>Nucula_Project:Crystal_NDK_NX2016SA_2.0x1.6mm</footprint>
+      <datasheet>https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6749/CS06346-27.12M.pdf</datasheet>
       <fields>
-        <field name="Manufacturer">Epson</field>
-        <field name="Candidate Family">TSX-3225 27.1200MHz</field>
-        <field name="MPN">TBD load capacitance / ESR / drive grade</field>
-        <field name="Status">27.12 MHz fixed; load capacitors require crystal selection</field>
-        <field name="Footprint">Crystal:Crystal_SMD_SeikoEpson_TSX3225-4Pin_3.2x2.5mm</field>
-        <field name="Datasheet"/>
+        <field name="Manufacturer">NDK</field>
+        <field name="MPN">NX2016SA-27.12MHZ-EXS00A-CS06346</field>
+        <field name="Status">SELECTED: NXP AN14518 reference; measure frequency/startup/drive on prototype</field>
+        <field name="LCSC">C3008209</field>
+        <field name="Load Capacitance">10 pF</field>
+        <field name="ESR">100 ohm max, 25 ohm typical (NDK specification)</field>
+        <field name="Drive Level">100 uW maximum; 10 uW typical</field>
+        <field name="Supply Status">JLCPCB C3008209: overseasStockCount 8896, purchasable 8533 on 2026-09-20; check assembly availability</field>
+        <field name="Footprint">Nucula_Project:Crystal_NDK_NX2016SA_2.0x1.6mm</field>
+        <field name="Datasheet">https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6749/CS06346-27.12M.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="Crystal_GND24" description="Four pin crystal, GND on pins 2 and 4"/>
-      <property name="Manufacturer" value="Epson"/>
-      <property name="Candidate Family" value="TSX-3225 27.1200MHz"/>
-      <property name="MPN" value="TBD load capacitance / ESR / drive grade"/>
-      <property name="Status" value="27.12 MHz fixed; load capacitors require crystal selection"/>
+      <property name="Manufacturer" value="NDK"/>
+      <property name="MPN" value="NX2016SA-27.12MHZ-EXS00A-CS06346"/>
+      <property name="Status" value="SELECTED: NXP AN14518 reference; measure frequency/startup/drive on prototype"/>
+      <property name="LCSC" value="C3008209"/>
+      <property name="Load Capacitance" value="10 pF"/>
+      <property name="ESR" value="100 ohm max, 25 ohm typical (NDK specification)"/>
+      <property name="Drive Level" value="100 uW maximum; 10 uW typical"/>
+      <property name="Supply Status" value="JLCPCB C3008209: overseasStockCount 8896, purchasable 8533 on 2026-09-20; check assembly availability"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="quartz ceramic resonator oscillator"/>
@@ -2903,19 +3270,26 @@
     </comp>
     <comp ref="C40">
       <value>10uF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL31B106KAHNNN.do</datasheet>
       <fields>
-        <field name="Voltage">10 V</field>
+        <field name="Voltage">25 V</field>
         <field name="Dielectric">X7R</field>
-        <field name="Tolerance">20%</field>
-        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Tolerance">10%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL31B106KAHNNNE</field>
+        <field name="LCSC">C14860</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL31B106KAHNNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="10 V"/>
+      <property name="Voltage" value="25 V"/>
       <property name="Dielectric" value="X7R"/>
-      <property name="Tolerance" value="20%"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL31B106KAHNNNE"/>
+      <property name="LCSC" value="C14860"/>
       <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
       <property name="Sheetfile" value="oled.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2964,18 +3338,25 @@
     <comp ref="C42">
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL21B105KBFNNN.do</datasheet>
       <fields>
-        <field name="Voltage">25 V</field>
+        <field name="Voltage">50 V</field>
         <field name="Dielectric">X7R</field>
-        <field name="Tolerance">20%</field>
+        <field name="Tolerance">10%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL21B105KBFNNNE</field>
+        <field name="LCSC">C28323</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL21B105KBFNNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="25 V"/>
+      <property name="Voltage" value="50 V"/>
       <property name="Dielectric" value="X7R"/>
-      <property name="Tolerance" value="20%"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL21B105KBFNNNE"/>
+      <property name="LCSC" value="C28323"/>
       <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
       <property name="Sheetfile" value="oled.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3024,18 +3405,25 @@
     <comp ref="C44">
       <value>4.7uF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL21B475KAFNNN.do</datasheet>
       <fields>
-        <field name="Voltage">10 V</field>
+        <field name="Voltage">25 V</field>
         <field name="Dielectric">X7R</field>
-        <field name="Tolerance">20%</field>
+        <field name="Tolerance">10%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL21B475KAFNNNE</field>
+        <field name="LCSC">C98195</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL21B475KAFNNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="10 V"/>
+      <property name="Voltage" value="25 V"/>
       <property name="Dielectric" value="X7R"/>
-      <property name="Tolerance" value="20%"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL21B475KAFNNNE"/>
+      <property name="LCSC" value="C98195"/>
       <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
       <property name="Sheetfile" value="oled.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3083,19 +3471,26 @@
     </comp>
     <comp ref="C46">
       <value>4.7uF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL31B475KBHNNN.do</datasheet>
       <fields>
-        <field name="Voltage">25 V</field>
+        <field name="Voltage">50 V</field>
         <field name="Dielectric">X7R</field>
-        <field name="Tolerance">20%</field>
-        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Tolerance">10%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL31B475KBHNNNE</field>
+        <field name="LCSC">C51205</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL31B475KBHNNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="25 V"/>
+      <property name="Voltage" value="50 V"/>
       <property name="Dielectric" value="X7R"/>
-      <property name="Tolerance" value="20%"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL31B475KBHNNNE"/>
+      <property name="LCSC" value="C51205"/>
       <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
       <property name="Sheetfile" value="oled.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3114,18 +3509,25 @@
     <comp ref="C47">
       <value>2.2uF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL21B225KAFNNN.do</datasheet>
       <fields>
         <field name="Voltage">25 V</field>
         <field name="Dielectric">X7R</field>
-        <field name="Tolerance">20%</field>
+        <field name="Tolerance">10%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL21B225KAFNNNE</field>
+        <field name="LCSC">C19110</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL21B225KAFNNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Voltage" value="25 V"/>
       <property name="Dielectric" value="X7R"/>
-      <property name="Tolerance" value="20%"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL21B225KAFNNNE"/>
+      <property name="LCSC" value="C19110"/>
       <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
       <property name="Sheetfile" value="oled.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3201,21 +3603,31 @@
       </units>
     </comp>
     <comp ref="DS1">
-      <value>SSD1309 / 26-pad glass</value>
+      <value>SSD1309 OLED / 26-pin</value>
       <footprint>Connector_FFC-FPC:Hirose_FH12-26S-0.5SH_1x26-1MP_P0.50mm_Horizontal</footprint>
       <datasheet>https://files.waveshare.com/wiki/2.42inch-OLED-Module/SSD1309Datasheet.pdf</datasheet>
       <fields>
-        <field name="MPN">TBD exact OLED glass</field>
-        <field name="Footprint Status">PROVISIONAL: confirm 26-pin 0.5 mm flex/contact side; may require solder pads instead</field>
+        <field name="MPN">FH12-26S-0.5SH(55)</field>
+        <field name="Footprint Status">SELECTED: 26-way 0.50 mm; user confirms Waveshare pin order/orientation, including outer ground contacts</field>
         <field name="I2C Address">0x3C</field>
+        <field name="Actual Flex">26 contacts total: 24 counted plus two outer GND contacts; 0.50 mm pitch; copper on emitting side (user confirmed)</field>
+        <field name="Status">Pinout/orientation confirmed by user; DS1 BOM part is the FPC socket, OLED glass supplied separately</field>
+        <field name="Manufacturer">Hirose</field>
+        <field name="Connector Mechanics">FH12 bottom-contact, 0.30 mm flex thickness; check insertion/fold and physical fit during PCB placement</field>
+        <field name="Connector Datasheet">https://www.hirose.com/product/p/CL0586-0576-2-55</field>
         <field name="Footprint">Connector_FFC-FPC:Hirose_FH12-26S-0.5SH_1x26-1MP_P0.50mm_Horizontal</field>
         <field name="Datasheet">https://files.waveshare.com/wiki/2.42inch-OLED-Module/SSD1309Datasheet.pdf</field>
         <field name="Description"/>
       </fields>
-      <libsource lib="Nucula_Project" part="SSD1309_COG_26" description="26-contact OLED glass interface from Waveshare reference; FPC mechanics provisional"/>
-      <property name="MPN" value="TBD exact OLED glass"/>
-      <property name="Footprint Status" value="PROVISIONAL: confirm 26-pin 0.5 mm flex/contact side; may require solder pads instead"/>
+      <libsource lib="Nucula_Project" part="SSD1309_COG_26" description="26-contact OLED glass interface; Waveshare pin order/orientation confirmed by user"/>
+      <property name="MPN" value="FH12-26S-0.5SH(55)"/>
+      <property name="Footprint Status" value="SELECTED: 26-way 0.50 mm; user confirms Waveshare pin order/orientation, including outer ground contacts"/>
       <property name="I2C Address" value="0x3C"/>
+      <property name="Actual Flex" value="26 contacts total: 24 counted plus two outer GND contacts; 0.50 mm pitch; copper on emitting side (user confirmed)"/>
+      <property name="Status" value="Pinout/orientation confirmed by user; DS1 BOM part is the FPC socket, OLED glass supplied separately"/>
+      <property name="Manufacturer" value="Hirose"/>
+      <property name="Connector Mechanics" value="FH12 bottom-contact, 0.30 mm flex thickness; check insertion/fold and physical fit during PCB placement"/>
+      <property name="Connector Datasheet" value="https://www.hirose.com/product/p/CL0586-0576-2-55"/>
       <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
       <property name="Sheetfile" value="oled.kicad_sch"/>
       <sheetpath names="/OLED / SSD1309 / 0x3C/" tstamps="/5acfde84-8974-5dc1-b34a-03f7d512478f/"/>
@@ -4157,19 +4569,18 @@
         <pin num="19" name="GND" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="Nucula_Project" part="NFC_Loop_TBD">
-      <description>Two-terminal 13.56 MHz coil plus reference/shield ground; geometry and tuning TBD</description>
+    <libpart lib="Nucula_Project" part="NFC_PCB_Loop_40x40_4T">
+      <description>Two-terminal etched PCB NFC coil. 40x40 mm outer copper; 4 turns, 0.50 mm trace, 0.30 mm gap. No ground or center tap.</description>
       <fields>
         <field name="Reference">A</field>
-        <field name="Value">NFC_Loop_TBD</field>
-        <field name="Footprint">Nucula_Project:NFC_Antenna_Interface_TBD</field>
+        <field name="Value">NFC_PCB_Loop_40x40_4T</field>
+        <field name="Footprint">Nucula_Project:NFC_PCB_Loop_40x40_4T_W0.50_S0.30</field>
         <field name="Datasheet"/>
-        <field name="Description">Two-terminal 13.56 MHz coil plus reference/shield ground; geometry and tuning TBD</field>
+        <field name="Description">Two-terminal etched PCB NFC coil. 40x40 mm outer copper; 4 turns, 0.50 mm trace, 0.30 mm gap. No ground or center tap.</field>
       </fields>
       <pins>
         <pin num="1" name="LOOP_A" type="passive"/>
         <pin num="2" name="LOOP_B" type="passive"/>
-        <pin num="3" name="REF_GND" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Nucula_Project" part="PN7160A1HN_C100E">
@@ -4229,14 +4640,14 @@
       </pins>
     </libpart>
     <libpart lib="Nucula_Project" part="SSD1309_COG_26">
-      <description>26-contact OLED glass interface from Waveshare reference; FPC mechanics provisional</description>
+      <description>26-contact OLED glass interface; Waveshare pin order/orientation confirmed by user</description>
       <docs>https://files.waveshare.com/wiki/2.42inch-OLED-Module/SSD1309Datasheet.pdf</docs>
       <fields>
         <field name="Reference">DS</field>
         <field name="Value">SSD1309_COG_26</field>
         <field name="Footprint">Connector_FFC-FPC:Hirose_FH12-26S-0.5SH_1x26-1MP_P0.50mm_Horizontal</field>
         <field name="Datasheet">https://files.waveshare.com/wiki/2.42inch-OLED-Module/SSD1309Datasheet.pdf</field>
-        <field name="Description">26-contact OLED glass interface from Waveshare reference; FPC mechanics provisional</field>
+        <field name="Description">26-contact OLED glass interface; Waveshare pin order/orientation confirmed by user</field>
         <field name="Footprint Status">PROVISIONAL: confirm panel flex pitch, orientation and contact side before layout</field>
       </fields>
       <pins>
@@ -4611,11 +5022,11 @@
       <node ref="U6" pin="22" pinfunction="TVDD_IN2_22" pintype="power_in"/>
     </net>
     <net code="20" name="/NFC / PN7160 / 0x28/NFC_TX1" class="Default">
-      <node ref="L2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R41" pin="1" pintype="passive"/>
       <node ref="U6" pin="21" pinfunction="TX1_21" pintype="output"/>
     </net>
     <net code="21" name="/NFC / PN7160 / 0x28/NFC_TX2" class="Default">
-      <node ref="L3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R42" pin="1" pintype="passive"/>
       <node ref="U6" pin="19" pinfunction="TX2_19" pintype="output"/>
     </net>
     <net code="22" name="/NFC / PN7160 / 0x28/NFC_VDD18" class="Default">
@@ -4645,44 +5056,54 @@
       <node ref="U6" pin="29" pinfunction="XTAL2_29" pintype="output"/>
       <node ref="Y1" pin="3" pinfunction="3_3" pintype="passive"/>
     </net>
-    <net code="27" name="/NFC / PN7160 / 0x28/RF_EMC_N" class="Default">
+    <net code="27" name="/NFC / PN7160 / 0x28/RF_DRV_N" class="Default">
+      <node ref="L3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R42" pin="2" pintype="passive"/>
+    </net>
+    <net code="28" name="/NFC / PN7160 / 0x28/RF_DRV_P" class="Default">
+      <node ref="L2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R41" pin="2" pintype="passive"/>
+    </net>
+    <net code="29" name="/NFC / PN7160 / 0x28/RF_EMC_N" class="Default">
       <node ref="C31" pin="2" pintype="passive"/>
       <node ref="C33" pin="1" pintype="passive"/>
       <node ref="C35" pin="1" pintype="passive"/>
+      <node ref="C54" pin="2" pintype="passive"/>
       <node ref="L3" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R26" pin="2" pintype="passive"/>
     </net>
-    <net code="28" name="/NFC / PN7160 / 0x28/RF_EMC_P" class="Default">
+    <net code="30" name="/NFC / PN7160 / 0x28/RF_EMC_P" class="Default">
       <node ref="C30" pin="1" pintype="passive"/>
       <node ref="C32" pin="1" pintype="passive"/>
       <node ref="C34" pin="1" pintype="passive"/>
+      <node ref="C53" pin="1" pintype="passive"/>
       <node ref="L2" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R25" pin="2" pintype="passive"/>
     </net>
-    <net code="29" name="/NFC / PN7160 / 0x28/RF_MATCH_N" class="Default">
+    <net code="31" name="/NFC / PN7160 / 0x28/RF_MATCH_N" class="Default">
       <node ref="C33" pin="2" pintype="passive"/>
       <node ref="C35" pin="2" pintype="passive"/>
       <node ref="C37" pin="2" pintype="passive"/>
       <node ref="C39" pin="2" pintype="passive"/>
       <node ref="R28" pin="1" pintype="passive"/>
     </net>
-    <net code="30" name="/NFC / PN7160 / 0x28/RF_MATCH_P" class="Default">
+    <net code="32" name="/NFC / PN7160 / 0x28/RF_MATCH_P" class="Default">
       <node ref="C32" pin="2" pintype="passive"/>
       <node ref="C34" pin="2" pintype="passive"/>
       <node ref="C36" pin="1" pintype="passive"/>
       <node ref="C38" pin="1" pintype="passive"/>
       <node ref="R27" pin="1" pintype="passive"/>
     </net>
-    <net code="31" name="/NFC_IRQ" class="Default">
+    <net code="33" name="/NFC_IRQ" class="Default">
       <node ref="U3" pin="5" pinfunction="IO6_5" pintype="bidirectional"/>
       <node ref="U6" pin="8" pinfunction="IRQ_8" pintype="output"/>
     </net>
-    <net code="32" name="/NFC_VEN" class="Default">
+    <net code="34" name="/NFC_VEN" class="Default">
       <node ref="R22" pin="1" pintype="passive"/>
       <node ref="U3" pin="6" pinfunction="IO7_6" pintype="bidirectional"/>
       <node ref="U6" pin="10" pinfunction="VEN_10" pintype="input"/>
     </net>
-    <net code="33" name="/OLED / SSD1309 / 0x3C/OLED_12V5" class="Default">
+    <net code="35" name="/OLED / SSD1309 / 0x3C/OLED_12V5" class="Default">
       <node ref="C41" pin="1" pintype="passive"/>
       <node ref="C42" pin="1" pintype="passive"/>
       <node ref="C45" pin="1" pintype="passive"/>
@@ -4691,80 +5112,80 @@
       <node ref="DS1" pin="23" pinfunction="VCC_PANEL_23" pintype="power_in"/>
       <node ref="R30" pin="1" pintype="passive"/>
     </net>
-    <net code="34" name="/OLED / SSD1309 / 0x3C/OLED_BOOST_IN" class="Default">
+    <net code="36" name="/OLED / SSD1309 / 0x3C/OLED_BOOST_IN" class="Default">
       <node ref="C40" pin="1" pintype="passive"/>
       <node ref="L4" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="Q3" pin="3" pinfunction="D_3" pintype="passive"/>
       <node ref="U7" pin="4" pinfunction="~{SHDN}_4" pintype="input"/>
       <node ref="U7" pin="5" pinfunction="IN_5" pintype="power_in"/>
     </net>
-    <net code="35" name="/OLED / SSD1309 / 0x3C/OLED_FB" class="Default">
+    <net code="37" name="/OLED / SSD1309 / 0x3C/OLED_FB" class="Default">
       <node ref="C41" pin="2" pintype="passive"/>
       <node ref="R30" pin="2" pintype="passive"/>
       <node ref="R31" pin="1" pintype="passive"/>
       <node ref="U7" pin="3" pinfunction="FB_3" pintype="input"/>
     </net>
-    <net code="36" name="/OLED / SSD1309 / 0x3C/OLED_GATE_N" class="Default">
+    <net code="38" name="/OLED / SSD1309 / 0x3C/OLED_GATE_N" class="Default">
       <node ref="Q3" pin="1" pinfunction="G_1" pintype="input"/>
       <node ref="Q4" pin="3" pinfunction="D_3" pintype="passive"/>
       <node ref="R33" pin="2" pintype="passive"/>
     </net>
-    <net code="37" name="/OLED / SSD1309 / 0x3C/OLED_IREF" class="Default">
+    <net code="39" name="/OLED / SSD1309 / 0x3C/OLED_IREF" class="Default">
       <node ref="DS1" pin="21" pinfunction="IREF_21" pintype="passive"/>
       <node ref="R32" pin="1" pintype="passive"/>
     </net>
-    <net code="38" name="/OLED / SSD1309 / 0x3C/OLED_RES_N" class="Default">
+    <net code="40" name="/OLED / SSD1309 / 0x3C/OLED_RES_N" class="Default">
       <node ref="C48" pin="1" pintype="passive"/>
       <node ref="DS1" pin="9" pinfunction="~{RES}_9" pintype="input"/>
       <node ref="Q5" pin="3" pinfunction="D_3" pintype="passive"/>
       <node ref="R35" pin="2" pintype="passive"/>
     </net>
-    <net code="39" name="/OLED / SSD1309 / 0x3C/OLED_SW" class="Default">
+    <net code="41" name="/OLED / SSD1309 / 0x3C/OLED_SW" class="Default">
       <node ref="D4" pin="2" pinfunction="A_2" pintype="passive"/>
       <node ref="L4" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="U7" pin="1" pinfunction="SW_1" pintype="passive"/>
     </net>
-    <net code="40" name="/OLED / SSD1309 / 0x3C/OLED_VCOMH" class="Default">
+    <net code="42" name="/OLED / SSD1309 / 0x3C/OLED_VCOMH" class="Default">
       <node ref="C47" pin="1" pintype="passive"/>
       <node ref="DS1" pin="22" pinfunction="VCOMH_22" pintype="passive"/>
     </net>
-    <net code="41" name="/OLED_PWR_EN" class="Default">
+    <net code="43" name="/OLED_PWR_EN" class="Default">
       <node ref="Q4" pin="1" pinfunction="G_1" pintype="input"/>
       <node ref="R34" pin="1" pintype="passive"/>
       <node ref="U3" pin="15" pinfunction="IO3_15" pintype="bidirectional"/>
     </net>
-    <net code="42" name="/OLED_RESET" class="Default">
+    <net code="44" name="/OLED_RESET" class="Default">
       <node ref="Q5" pin="1" pinfunction="G_1" pintype="input"/>
       <node ref="R36" pin="1" pintype="passive"/>
       <node ref="U3" pin="10" pinfunction="IO10_10" pintype="bidirectional"/>
     </net>
-    <net code="43" name="/Power + ESP32-C3/BOOT_N" class="Default">
+    <net code="45" name="/Power + ESP32-C3/BOOT_N" class="Default">
       <node ref="R11" pin="2" pintype="passive"/>
       <node ref="R14" pin="1" pintype="passive"/>
       <node ref="U3" pin="8" pinfunction="IO9_8" pintype="bidirectional"/>
     </net>
-    <net code="44" name="/Power + ESP32-C3/BUCK_FB" class="Default">
+    <net code="46" name="/Power + ESP32-C3/BUCK_FB" class="Default">
       <node ref="C3" pin="2" pintype="passive"/>
       <node ref="R6" pin="2" pintype="passive"/>
       <node ref="R7" pin="1" pintype="passive"/>
       <node ref="U2" pin="5" pinfunction="FB_5" pintype="input"/>
     </net>
-    <net code="45" name="/Power + ESP32-C3/ESP_EN" class="Default">
+    <net code="47" name="/Power + ESP32-C3/ESP_EN" class="Default">
       <node ref="C12" pin="1" pintype="passive"/>
       <node ref="R8" pin="2" pintype="passive"/>
       <node ref="SW1" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U3" pin="2" pinfunction="EN_2" pintype="input"/>
       <node ref="U5" pin="2" pinfunction="~{RESET}_2" pintype="open_collector"/>
     </net>
-    <net code="46" name="/Power + ESP32-C3/STRAP_GPIO2" class="Default">
+    <net code="48" name="/Power + ESP32-C3/STRAP_GPIO2" class="Default">
       <node ref="R9" pin="2" pintype="passive"/>
       <node ref="U3" pin="16" pinfunction="IO2_16" pintype="bidirectional"/>
     </net>
-    <net code="47" name="/Power + ESP32-C3/STRAP_GPIO8" class="Default">
+    <net code="49" name="/Power + ESP32-C3/STRAP_GPIO8" class="Default">
       <node ref="R10" pin="2" pintype="passive"/>
       <node ref="U3" pin="7" pinfunction="IO8_7" pintype="bidirectional"/>
     </net>
-    <net code="48" name="/Power + ESP32-C3/USB_5V" class="Default">
+    <net code="50" name="/Power + ESP32-C3/USB_5V" class="Default">
       <node ref="C1" pin="1" pintype="passive"/>
       <node ref="D1" pin="1" pinfunction="K_1" pintype="passive"/>
       <node ref="D2" pin="2" pinfunction="A_2" pintype="passive"/>
@@ -4773,43 +5194,43 @@
       <node ref="R5" pin="1" pintype="passive"/>
       <node ref="U1" pin="4" pinfunction="VCC_4" pintype="power_in"/>
     </net>
-    <net code="49" name="/Power + ESP32-C3/USB_D+" class="Default">
+    <net code="51" name="/Power + ESP32-C3/USB_D+" class="Default">
       <node ref="J1" pin="A6" pinfunction="D+_A6" pintype="bidirectional"/>
       <node ref="J1" pin="B6" pinfunction="D+_B6" pintype="bidirectional"/>
       <node ref="U4" pin="3" pinfunction="I/O2_3" pintype="passive"/>
     </net>
-    <net code="50" name="/Power + ESP32-C3/USB_D-" class="Default">
+    <net code="52" name="/Power + ESP32-C3/USB_D-" class="Default">
       <node ref="J1" pin="A7" pinfunction="D-_A7" pintype="bidirectional"/>
       <node ref="J1" pin="B7" pinfunction="D-_B7" pintype="bidirectional"/>
       <node ref="U4" pin="1" pinfunction="I/O1_1" pintype="passive"/>
     </net>
-    <net code="51" name="/Power + ESP32-C3/USB_ESD_D+" class="Default">
+    <net code="53" name="/Power + ESP32-C3/USB_ESD_D+" class="Default">
       <node ref="R13" pin="1" pintype="passive"/>
       <node ref="U4" pin="4" pinfunction="I/O2_4" pintype="passive"/>
     </net>
-    <net code="52" name="/Power + ESP32-C3/USB_ESD_D-" class="Default">
+    <net code="54" name="/Power + ESP32-C3/USB_ESD_D-" class="Default">
       <node ref="R12" pin="1" pintype="passive"/>
       <node ref="U4" pin="6" pinfunction="I/O1_6" pintype="passive"/>
     </net>
-    <net code="53" name="/Power + ESP32-C3/USB_PRESENT_N" class="Default">
+    <net code="55" name="/Power + ESP32-C3/USB_PRESENT_N" class="Default">
       <node ref="Q2" pin="3" pinfunction="D_3" pintype="passive"/>
       <node ref="R17" pin="2" pintype="passive"/>
       <node ref="U3" pin="17" pinfunction="IO1_17" pintype="bidirectional"/>
     </net>
-    <net code="54" name="/Power + ESP32-C3/VBAT" class="Default">
+    <net code="56" name="/Power + ESP32-C3/VBAT" class="Default">
       <node ref="C2" pin="1" pintype="passive"/>
       <node ref="J2" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
       <node ref="Q1" pin="3" pinfunction="D_3" pintype="passive"/>
       <node ref="R15" pin="1" pintype="passive"/>
       <node ref="U1" pin="3" pinfunction="BAT_3" pintype="power_out"/>
     </net>
-    <net code="55" name="/Power + ESP32-C3/VBAT_ADC" class="Default">
+    <net code="57" name="/Power + ESP32-C3/VBAT_ADC" class="Default">
       <node ref="C13" pin="1" pintype="passive"/>
       <node ref="R15" pin="2" pintype="passive"/>
       <node ref="R16" pin="1" pintype="passive"/>
       <node ref="U3" pin="18" pinfunction="IO0_18" pintype="bidirectional"/>
     </net>
-    <net code="56" name="/Power + ESP32-C3/VBUS" class="Default">
+    <net code="58" name="/Power + ESP32-C3/VBUS" class="Default">
       <node ref="C14" pin="1" pintype="passive"/>
       <node ref="D1" pin="2" pinfunction="A_2" pintype="passive"/>
       <node ref="J1" pin="A4" pinfunction="VBUS_A4" pintype="passive"/>
@@ -4820,7 +5241,7 @@
       <node ref="R18" pin="1" pintype="passive"/>
       <node ref="U4" pin="5" pinfunction="VBUS_5" pintype="passive"/>
     </net>
-    <net code="57" name="/VSYS" class="Default">
+    <net code="59" name="/VSYS" class="Default">
       <node ref="C17" pin="1" pintype="passive"/>
       <node ref="C18" pin="1" pintype="passive"/>
       <node ref="C4" pin="1" pintype="passive"/>
@@ -4834,8 +5255,7 @@
       <node ref="U6" pin="12" pinfunction="VBAT2_12" pintype="power_in"/>
       <node ref="U6" pin="28" pinfunction="VBAT_28" pintype="power_in"/>
     </net>
-    <net code="58" name="GND" class="Default">
-      <node ref="A1" pin="3" pinfunction="REF_GND_3" pintype="passive"/>
+    <net code="60" name="GND" class="Default">
       <node ref="C1" pin="2" pintype="passive"/>
       <node ref="C10" pin="2" pintype="passive"/>
       <node ref="C11" pin="2" pintype="passive"/>
@@ -4876,6 +5296,8 @@
       <node ref="C50" pin="2" pintype="passive"/>
       <node ref="C51" pin="2" pintype="passive"/>
       <node ref="C52" pin="2" pintype="passive"/>
+      <node ref="C53" pin="2" pintype="passive"/>
+      <node ref="C54" pin="1" pintype="passive"/>
       <node ref="C6" pin="2" pintype="passive"/>
       <node ref="C7" pin="2" pintype="passive"/>
       <node ref="C8" pin="2" pintype="passive"/>
@@ -4945,106 +5367,106 @@
       <node ref="Y1" pin="2" pinfunction="G_2" pintype="passive"/>
       <node ref="Y1" pin="4" pinfunction="G_4" pintype="passive"/>
     </net>
-    <net code="59" name="Net-(A1-LOOP_A)" class="Default">
+    <net code="61" name="Net-(A1-LOOP_A)" class="Default">
       <node ref="A1" pin="1" pinfunction="LOOP_A_1" pintype="passive"/>
       <node ref="R27" pin="2" pintype="passive"/>
     </net>
-    <net code="60" name="Net-(A1-LOOP_B)" class="Default">
+    <net code="62" name="Net-(A1-LOOP_B)" class="Default">
       <node ref="A1" pin="2" pinfunction="LOOP_B_2" pintype="passive"/>
       <node ref="R28" pin="2" pintype="passive"/>
     </net>
-    <net code="61" name="Net-(C28-Pad2)" class="Default">
+    <net code="63" name="Net-(C28-Pad2)" class="Default">
       <node ref="C28" pin="2" pintype="passive"/>
       <node ref="R25" pin="1" pintype="passive"/>
     </net>
-    <net code="62" name="Net-(C29-Pad2)" class="Default">
+    <net code="64" name="Net-(C29-Pad2)" class="Default">
       <node ref="C29" pin="2" pintype="passive"/>
       <node ref="R26" pin="1" pintype="passive"/>
     </net>
-    <net code="63" name="Net-(D3-K)" class="Default">
+    <net code="65" name="Net-(D3-K)" class="Default">
       <node ref="D3" pin="1" pinfunction="K_1" pintype="passive"/>
       <node ref="R4" pin="2" pintype="passive"/>
     </net>
-    <net code="64" name="Net-(J1-CC1)" class="Default">
+    <net code="66" name="Net-(J1-CC1)" class="Default">
       <node ref="J1" pin="A5" pinfunction="CC1_A5" pintype="bidirectional"/>
       <node ref="R1" pin="1" pintype="passive"/>
     </net>
-    <net code="65" name="Net-(J1-CC2)" class="Default">
+    <net code="67" name="Net-(J1-CC2)" class="Default">
       <node ref="J1" pin="B5" pinfunction="CC2_B5" pintype="bidirectional"/>
       <node ref="R2" pin="1" pintype="passive"/>
     </net>
-    <net code="66" name="Net-(R14-Pad2)" class="Default">
+    <net code="68" name="Net-(R14-Pad2)" class="Default">
       <node ref="R14" pin="2" pintype="passive"/>
       <node ref="SW2" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="67" name="Net-(U1-PROG)" class="Default">
+    <net code="69" name="Net-(U1-PROG)" class="Default">
       <node ref="R3" pin="1" pintype="passive"/>
       <node ref="U1" pin="5" pinfunction="PROG_5" pintype="passive"/>
     </net>
-    <net code="68" name="Net-(U1-~{CHRG})" class="Default">
+    <net code="70" name="Net-(U1-~{CHRG})" class="Default">
       <node ref="R4" pin="1" pintype="passive"/>
       <node ref="U1" pin="1" pinfunction="~{CHRG}_1" pintype="open_collector"/>
     </net>
-    <net code="69" name="Net-(U2-LX)" class="Default">
+    <net code="71" name="Net-(U2-LX)" class="Default">
       <node ref="L1" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U2" pin="3" pinfunction="LX_3" pintype="power_out"/>
     </net>
-    <net code="70" name="Net-(U3-IO18)" class="Default">
+    <net code="72" name="Net-(U3-IO18)" class="Default">
       <node ref="C7" pin="1" pintype="passive"/>
       <node ref="R12" pin="2" pintype="passive"/>
       <node ref="U3" pin="13" pinfunction="IO18_13" pintype="bidirectional"/>
     </net>
-    <net code="71" name="Net-(U3-IO19)" class="Default">
+    <net code="73" name="Net-(U3-IO19)" class="Default">
       <node ref="C8" pin="1" pintype="passive"/>
       <node ref="R13" pin="2" pintype="passive"/>
       <node ref="U3" pin="14" pinfunction="IO19_14" pintype="bidirectional"/>
     </net>
-    <net code="72" name="unconnected-(DS1-NC-Pad4)" class="Default">
+    <net code="74" name="unconnected-(DS1-NC-Pad4)" class="Default">
       <node ref="DS1" pin="4" pinfunction="NC_4" pintype="no_connect"/>
     </net>
-    <net code="73" name="unconnected-(J1-SBU1-PadA8)" class="Default">
+    <net code="75" name="unconnected-(J1-SBU1-PadA8)" class="Default">
       <node ref="J1" pin="A8" pinfunction="SBU1_A8" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="74" name="unconnected-(J1-SBU2-PadB8)" class="Default">
+    <net code="76" name="unconnected-(J1-SBU2-PadB8)" class="Default">
       <node ref="J1" pin="B8" pinfunction="SBU2_B8" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="75" name="unconnected-(U3-IO21/TXD-Pad12)" class="Default">
+    <net code="77" name="unconnected-(U3-IO21/TXD-Pad12)" class="Default">
       <node ref="U3" pin="12" pinfunction="IO21/TXD_12" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="76" name="unconnected-(U6-ANT1-Pad23)" class="Default">
+    <net code="78" name="unconnected-(U6-ANT1-Pad23)" class="Default">
       <node ref="U6" pin="23" pinfunction="ANT1_23" pintype="passive+no_connect"/>
     </net>
-    <net code="77" name="unconnected-(U6-ANT2-Pad24)" class="Default">
+    <net code="79" name="unconnected-(U6-ANT2-Pad24)" class="Default">
       <node ref="U6" pin="24" pinfunction="ANT2_24" pintype="passive+no_connect"/>
     </net>
-    <net code="78" name="unconnected-(U6-CLK_REQ-Pad40)" class="Default">
+    <net code="80" name="unconnected-(U6-CLK_REQ-Pad40)" class="Default">
       <node ref="U6" pin="40" pinfunction="CLK_REQ_40" pintype="output+no_connect"/>
     </net>
-    <net code="79" name="unconnected-(U6-DCDC_EN-Pad37)" class="Default">
+    <net code="81" name="unconnected-(U6-DCDC_EN-Pad37)" class="Default">
       <node ref="U6" pin="37" pinfunction="DCDC_EN_37" pintype="output+no_connect"/>
     </net>
-    <net code="80" name="unconnected-(U6-I.C._1-Pad11)" class="Default">
+    <net code="82" name="unconnected-(U6-I.C._1-Pad11)" class="Default">
       <node ref="U6" pin="11" pinfunction="I.C._1_11" pintype="no_connect"/>
     </net>
-    <net code="81" name="unconnected-(U6-I.C._2-Pad38)" class="Default">
+    <net code="83" name="unconnected-(U6-I.C._2-Pad38)" class="Default">
       <node ref="U6" pin="38" pinfunction="I.C._2_38" pintype="no_connect"/>
     </net>
-    <net code="82" name="unconnected-(U6-N.C._1-Pad32)" class="Default">
+    <net code="84" name="unconnected-(U6-N.C._1-Pad32)" class="Default">
       <node ref="U6" pin="32" pinfunction="N.C._1_32" pintype="no_connect"/>
     </net>
-    <net code="83" name="unconnected-(U6-N.C._2-Pad33)" class="Default">
+    <net code="85" name="unconnected-(U6-N.C._2-Pad33)" class="Default">
       <node ref="U6" pin="33" pinfunction="N.C._2_33" pintype="no_connect"/>
     </net>
-    <net code="84" name="unconnected-(U6-N.C._3-Pad34)" class="Default">
+    <net code="86" name="unconnected-(U6-N.C._3-Pad34)" class="Default">
       <node ref="U6" pin="34" pinfunction="N.C._3_34" pintype="no_connect"/>
     </net>
-    <net code="85" name="unconnected-(U6-N.C._4-Pad35)" class="Default">
+    <net code="87" name="unconnected-(U6-N.C._4-Pad35)" class="Default">
       <node ref="U6" pin="35" pinfunction="N.C._4_35" pintype="no_connect"/>
     </net>
-    <net code="86" name="unconnected-(U6-N.C._5-Pad36)" class="Default">
+    <net code="88" name="unconnected-(U6-N.C._5-Pad36)" class="Default">
       <node ref="U6" pin="36" pinfunction="N.C._5_36" pintype="no_connect"/>
     </net>
-    <net code="87" name="unconnected-(U6-VDD(HF)-Pad25)" class="Default">
+    <net code="89" name="unconnected-(U6-VDD(HF)-Pad25)" class="Default">
       <node ref="U6" pin="25" pinfunction="VDD(HF)_25" pintype="passive+no_connect"/>
     </net>
   </nets>

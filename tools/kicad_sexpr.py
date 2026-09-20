@@ -28,3 +28,16 @@ def children(node, key):
 
 def child(node, key):
     return children(node, key)[0]
+
+
+def dump(node, depth=0):
+    """Write parsed tokens without altering quoted values."""
+    if not isinstance(node, list):
+        return node
+    if not any(isinstance(x, list) for x in node):
+        return '(' + ' '.join(node) + ')'
+    text = '('
+    for i, item in enumerate(node):
+        text += ('\n' + '  ' * (depth + 1) if isinstance(item, list)
+                 else (' ' if i else '')) + dump(item, depth + 1)
+    return text + '\n' + '  ' * depth + ')'

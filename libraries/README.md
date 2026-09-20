@@ -21,15 +21,31 @@ The global `Nucula` library remains available separately, including PN7160.
   its terms are in [PN7160 model license](../LICENSES/PN7160-model-SamacSys.txt).
 - SSD1309_COG_26: new symbol for the 26-contact glass interface in the supplied
   Waveshare schematic. These are flex/contact numbers, not bare SSD1309 die pads.
-  The assigned Hirose FH12 26-way 0.5 mm connector and its standard 3D model are
-  **provisional**, pending the actual panel's mechanical drawing/contact side.
-  No glass assembly model is claimed.
-- NFC_Loop_TBD / NFC_Antenna_Interface_TBD: explicit three-pad placeholder for
-  coil ends and reference/shield ground. It contains no antenna geometry and
-  has no 3D model. Replace it when the coil is designed.
+  The user confirms the reference pin order/orientation: 24 initially counted
+  contacts plus two outer ground contacts. The assigned Hirose FH12 26-way
+  0.5 mm connector and its standard 3D model are retained. The socket accepts
+  0.30 mm flex and uses bottom contacts; check fit/fold during PCB placement.
+  DS1's BOM item is the socket; the glass is supplied separately. No glass
+  assembly model is claimed.
+- Crystal_NDK_NX2016SA_2.0x1.6mm: adapted from KiCad's four-pad 2016 crystal
+  footprint and standard package model, with NDK EXD14B-00467 recommended
+  0.85 × 0.75 mm lands at 1.35 × 1.05 mm center spacing. Y1 uses the exact
+  NX2016SA-27.12MHZ-EXS00A-CS06346 reference in NXP AN14518.
+- NFC_PCB_Loop_40x40_4T / NFC_PCB_Loop_40x40_4T_W0.50_S0.30: new two-terminal
+  PCB antenna replacing the three-pad placeholder. Four front copper turns,
+  0.50 mm track / 0.30 mm gap, two plated return holes and a bottom underpass.
+  Includes an all-copper-layer keepout and intentional net-tie declaration.
+  No ground/shield pad, no discrete-part 3D model, excluded from purchased BOM
+  and placement outputs. [Design and calculations](../docs/nfc-antenna.md).
+- C_0805_HandSolder_NoPaste: KiCad's C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+  geometry and standard model, with F.Paste removed for six optional RF trim pads.
+- L_Coilcraft_0805HP: newly drawn from the manufacturer's 0805HP land pattern:
+  1.02 × 1.98 mm pads with 1.12 mm gap, for L2/L3 = 0805HP-151XGRC (150 nH).
+  No package model is claimed. RF electrical model is included in the calculations.
 - L_Coilcraft_0805HQ_2012Metric and L_Coilcraft_LPS4018: unmodified KiCad land
   patterns copied locally with their missing optional 3D references removed.
-  L2/L3 values and final ordering codes await RF tuning. L4 is LPS4018-103MRC.
+  The 0805HQ footprint is retained as an unassigned legacy asset; L2/L3 now use
+  the distinct 0805HP footprint above. L4 is LPS4018-103MRC.
   Manufacturer models are offered through Coilcraft's
   [mechanical model service](https://www.coilcraft.com/en-us/models/mechanical/),
   including a registration-based STEP export; these models are not installed.
@@ -54,3 +70,13 @@ Original sources: [symbols](https://gitlab.com/kicad/libraries/kicad-symbols),
 [footprints](https://gitlab.com/kicad/libraries/kicad-footprints),
 [3D models](https://gitlab.com/kicad/libraries/kicad-packages3D).
 Manufacturer datasheets retain their respective notices.
+
+The added NXP AN13219 rev 1.6, Mohan inductance paper, Coilcraft RF model/land
+drawing and Vishay resistor datasheet are archived under `parts documentation/`
+for design traceability. [Source URLs and hashes](../docs/nfc/sources.json).
+
+PN7160 datasheet rev. 4.2, NXP AN12988/AN14518 and both NDK CS06346 drawings
+are also archived under `parts documentation/`. Samsung's numerical typical
+DC-bias curves and JLCPCB's observed crystal sourcing stock are recorded in
+`docs/components/`, with source URLs and retrieval dates. See the
+[component refinements and calculations](../docs/component-refinements.md).

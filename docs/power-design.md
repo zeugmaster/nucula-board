@@ -40,6 +40,10 @@ connector polarity. The exact pack, polarity, charge limits and discharge-curren
 rating must be checked before assembly. There is no battery protection IC,
 cell-temperature sensor, or physical off switch in this draft.
 
+For the current iteration, battery operation is an optional experiment. The
+user accepts the present low-battery/reset behavior and defers runtime and
+discharge-budget refinement. USB operation does not require a battery.
+
 JST-PH is used on small packs such as the
 [Adafruit 400 mAh pack](https://www.adafruit.com/product/3898) and
 [SparkFun 400 mAh pack](https://www.sparkfun.com/lithium-ion-battery-400mah.html).
@@ -126,7 +130,9 @@ input-current negotiation/limiting, charger suspend control, or controlled
 charging of the input capacitors.** C1+C4 alone total 44 µF nominal behind the
 diodes. Do not treat two CC resistors or a zero-error ERC as USB compliance.
 A full 500 mA rail load plus charging can exceed a legacy USB 2.0 port's 500 mA
-budget. For initial powered evaluation use an adequate 5 V source (1 A or more);
+budget. The prototype's user-confirmed source is **5 V USB-C with at least
+1.5 A available at 5 V**; the updated planning estimate is 1.10 A including
+charging. See [component refinements](component-refinements.md). Adequate
 source current capability does not replace USB host enumeration, suspend or
 inrush requirements. Product-level use with arbitrary hosts needs a power-budget
 and input-management revision before layout. The added NFC and OLED loads are
@@ -135,9 +141,11 @@ the 400 mAh capacity alone does not establish a suitable discharge rating.
 See the explicit load assumptions in [peripheral power budget](peripherals-design.md#power-budget).
 [USB-IF specifications](https://www.usb.org/document-library/usb-20-specification).
 
-Select actual MLCC ordering codes and verify capacitance under DC bias,
-tolerance and temperature: C1/C2/C4 need at least 10 µF effective; C5+C6 should
-exceed 22 µF effective. Check charger heat, Wi-Fi load steps, low-cell reset,
+Critical MLCC ordering codes are now selected using archived manufacturer
+DC-bias curves: C1/C2/C4 use 22 µF 25 V X7R 1210; C5/C6/C9 use 22 µF
+25 V X5R 1206. The screening estimates retain >10 µF each at the input
+and >22 µF combined for C5/C6. These are estimates, not guaranteed
+combined-corner specifications. Check charger heat, Wi-Fi load steps, low-cell reset,
 USB insertion/removal, charging termination and battery-only leakage. Verify
 90 Ω USB routing, short ESD return paths, buck switching loops and feedback
 routing, and the module antenna keepout when PCB work begins.
@@ -148,7 +156,7 @@ routing, and the module antenna keepout when PCB work begins.
 checks critical pin groups independently of drawing coordinates, checks selected
 values/tolerances and DNP flags, matches physical symbol pins to footprint pads,
 resolves assigned models, and recalculates the static limits above.
-The combined draft has **124 components across five sheets and zero ERC
+The combined draft has **128 components across five sheets and zero ERC
 errors/warnings**. Footprint
 filter checking is enabled. The drawing was also rendered and visually inspected.
 This is schematic verification, not circuit simulation or hardware validation.

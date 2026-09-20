@@ -1,0 +1,43 @@
+{
+  "access_date": "2026-09-20",
+  "sources": [
+    {
+      "file": "parts documentation/AN13219-rev1.6.pdf",
+      "url": "https://www.nxp.com/docs/en/application-note/AN13219.pdf",
+      "revision_or_note": "NXP AN13219 rev 1.6, 25 June 2026",
+      "sha256": "cae47079932766f304c40e0a9a0d01d69dc8db2e5560070e0ea13cbe5ae5e982"
+    },
+    {
+      "file": "parts documentation/Mohan-planar-spiral-inductance.pdf",
+      "url": "https://web.stanford.edu/~boyd/papers/pdf/inductance_expressions.pdf",
+      "revision_or_note": "IEEE JSSC 34(10), 1999",
+      "sha256": "ec074b47d0dcf087ee39a56786105be91cc7014a42c6ea995c52c157e9c6d98f"
+    },
+    {
+      "file": "parts documentation/Coilcraft-0805HP-SPICE.pdf",
+      "url": "https://www.coilcraft.com/getmedia/d2f56f9b-ef33-42ca-bf60-5b64b7e705a7/spice_0805hp.pdf",
+      "revision_or_note": "Coilcraft 158-1 / 158-27, 24 August 2017",
+      "sha256": "27e060dee9341160087c2be236b707c4d8bfb318cbcc939071bbd30be785e056"
+    },
+    {
+      "file": "parts documentation/Coilcraft-0805HP-land-pattern.png",
+      "url": "https://www.coilcraft.com/getattachment/eba2ab04-f3e8-4d9b-94e8-80658f32bf26/0805hpd.gif",
+      "revision_or_note": "Manufacturer GIF converted losslessly to PNG",
+      "sha256": "7745be002eeca760040e16d1ca1124dbc626a53a6f15bb5d50d505c7abd39546"
+    },
+    {
+      "file": "parts documentation/Vishay-CRCW-HP-e3.pdf",
+      "url": "https://www.vishay.com/docs/20043/crcwhpe3.pdf",
+      "revision_or_note": "Vishay 20043, 17 March 2026",
+      "sha256": "38f96c0033a826fefb626ce4b77894b1eed94c3226228eee8fab1103338c1e0b"
+    },
+    {
+      "file": "parts documentation/PN7160_schematic-3.pdf",
+      "url": "https://www.elechouse.com/wp-content/uploads/2023/11/PN7160_schematic.pdf",
+      "revision_or_note": "Previously supplied by user; no RF component values",
+      "sha256": "81ac77576ec3db2d5a1e45cd80b1f5a089041f5e380ca99bb6a5b3710cbd5f29"
+    }
+  ],
+  "online_calculator_executed": false,
+  "pdf_embedded_calculator_found": false
+}

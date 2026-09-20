@@ -1,0 +1,368 @@
+{
+  "frequency_Hz": 13560000.0,
+  "estimates": {
+    "inner_opening_mm": 34.2,
+    "fill_ratio": 0.07816711590296495,
+    "mohan_current_sheet_uH": 1.5590049325492097,
+    "modified_wheeler_uH": 1.436672530135309,
+    "neumann_filament_gmd_uH": 1.552889076841519,
+    "planar_trace_length_mm": 607.4999999999998,
+    "rdc_trace_ohm": 0.5984742857142856,
+    "skin_depth_um": 17.94563860824889,
+    "two_surface_skin_only_ohm": 0.9369721700654515
+  },
+  "fitted_model_assumptions": {
+    "la_uH": 1.5590049325492095,
+    "ra_ohm": 1.5,
+    "ca_pF": 2.0,
+    "measured": false,
+    "capacitor_esr_each_ohm": 0.03,
+    "rx_internal_each_ohm": 2200.0
+  },
+  "nxp_figure24_regression": {
+    "c1_pF": 65.52217227908282,
+    "c2_pF": 111.24637896823434,
+    "rq_ohm": 2.541859724721765
+  },
+  "exact_solve": {
+    "c1_pF": 66.5978570071454,
+    "c2_pF": 102.07327832275627,
+    "rq_each_ohm": 2.612430934537687,
+    "target_ohm": 20.0
+  },
+  "alternate_13ohm_solve": {
+    "c1_pF": 76.30979445919425,
+    "c2_pF": 87.43869016076829,
+    "rq_each_ohm": 2.612430934537687,
+    "target_ohm": 13.0
+  },
+  "isolated_rx_removed_Z_ohm": [
+    18.909928831087043,
+    -0.2841624937657379
+  ],
+  "paired_trim_examples": [
+    {
+      "change": "C1",
+      "added_each_leg_pF": 1.0,
+      "z_diff_real_ohm": 20.642781423772043,
+      "z_diff_imag_ohm": 1.3494714361388809
+    },
+    {
+      "change": "C2",
+      "added_each_leg_pF": 1.0,
+      "z_diff_real_ohm": 20.745375303801218,
+      "z_diff_imag_ohm": 0.7560890517720829
+    },
+    {
+      "change": "C0",
+      "added_each_leg_pF": 10.0,
+      "z_diff_real_ohm": 18.580906689837054,
+      "z_diff_imag_ohm": -0.030736525402623727
+    }
+  ],
+  "assembly": {
+    "c0_pF": 360.0,
+    "c1_pF": 68.0,
+    "c2_pF": 100.0,
+    "rq_each_ohm": 2.7,
+    "z_diff_real_ohm": 18.95043977035925,
+    "z_diff_imag_ohm": -0.18395401598375472,
+    "coil_damped_q": 19.497471607525092,
+    "emc_nominal_resonance_MHz": 21.658244478713225,
+    "modeled_inductor_z_real_ohm": 0.8604106253813453,
+    "modeled_inductor_z_imag_ohm": 12.679604071109013,
+    "return_loss_to_target_dB": 31.25879501093174,
+    "coil_srf_MHz": 90.13249417765135
+  },
+  "stress_fundamental_only": [
+    {
+      "tvdd_V": 2.7,
+      "differential_fundamental_rms_V": 2.430854053624187,
+      "tx_fundamental_rms_A": 0.12826823883340677,
+      "coil_fundamental_rms_A": 0.20051137133089791,
+      "damping_each_W": 0.10855298708909253,
+      "coil_differential_peak_V": 38.53997175438778,
+      "ideal_driver_real_power_W": 0.3117866791482438
+    },
+    {
+      "tvdd_V": 3.3,
+      "differential_fundamental_rms_V": 2.97104384331845,
+      "tx_fundamental_rms_A": 0.15677229190749714,
+      "coil_fundamental_rms_A": 0.24506945384887519,
+      "damping_each_W": 0.1621594004664221,
+      "coil_differential_peak_V": 47.1044099220295,
+      "ideal_driver_real_power_W": 0.4657554095918208
+    },
+    {
+      "tvdd_V": 5.0,
+      "differential_fundamental_rms_V": 4.501581580785531,
+      "tx_fundamental_rms_A": 0.23753377561741992,
+      "coil_fundamental_rms_A": 0.37131735431647755,
+      "damping_each_W": 0.37226675956478905,
+      "coil_differential_peak_V": 71.37031806368105,
+      "ideal_driver_real_power_W": 1.0692272947470636
+    }
+  ],
+  "scatter_10000_seed7160": {
+    "real_range_ohm": [
+      5.642145906556787,
+      90.1170530186633
+    ],
+    "imag_range_ohm": [
+      -76.33210923604155,
+      11.504756610212237
+    ],
+    "note": "Uniform assumed uncertainty; balanced paired variations; not manufacturing yield"
+  },
+  "retuning_scenarios": [
+    {
+      "la_uH": 1.4031044392942886,
+      "ra_ohm": 1.0,
+      "ca_pF": 1.0,
+      "c1_pF": 70.44896435897893,
+      "c2_pF": 119.43315863202218,
+      "rq_each_ohm": 2.509019877025346,
+      "target_ohm": 20.0
+    },
+    {
+      "la_uH": 1.4031044392942886,
+      "ra_ohm": 1.5,
+      "ca_pF": 1.0,
+      "c1_pF": 70.44899485451282,
+      "c2_pF": 119.4333014562963,
+      "rq_each_ohm": 2.253845671931843,
+      "target_ohm": 20.0
+    },
+    {
+      "la_uH": 1.4031044392942886,
+      "ra_ohm": 2.5,
+      "ca_pF": 1.0,
+      "c1_pF": 70.4490924404906,
+      "c2_pF": 119.43375849580659,
+      "rq_each_ohm": 1.7434939954567945,
+      "target_ohm": 20.0
+    },
+    {
+      "la_uH": 1.4031044392942886,
+      "ra_ohm": 1.0,
+      "ca_pF": 2.0,
+      "c1_pF": 70.10294072845969,
+      "c2_pF": 117.81805140382811,
+      "rq_each_ohm": 2.5297426143421253,
+      "target_ohm": 20.0
+    },
+    {
+      "la_uH": 1.4031044392942886,
+      "ra_ohm": 1.5,
+      "ca_pF": 2.0,
+      "c1_pF": 70.10300269535094,
+      "c2_pF": 117.8183396615147,
+      "rq_each_ohm": 2.269231910509974,
+      "target_ohm": 20.0
+    },
+    {
+      "la_uH": 1.4031044392942886,
+      "ra_ohm": 2.5,
+      "ca_pF": 2.0,
+      "c1_pF": 70.10320099050371,
+      "c2_pF": 117.81926209359614,
+      "rq_each_ohm": 1.7482038241118558,
+      "target_ohm": 20.0
+    },
+    {
+      "la_uH": 1.4031044392942886,
+      "ra_ohm": 1.0,
+      "ca_pF": 5.0,
+      "c1_pF": 69.0531791918528,
+      "c2_pF": 112.98511097224772,
+      "rq_each_ohm": 2.5938663036049037,
+      "target_ohm": 20.0
+    },
+    {
+      "la_uH": 1.4031044392942886,
+      "ra_ohm": 1.5,
+      "ca_pF": 5.0,
+      "c1_pF": 69.05334182891158,
+      "c2_pF": 112.98585193654198,
+      "rq_each_ohm": 2.316301906091385,
+      "target_ohm": 20.0
+    },
+    {
+      "la_uH": 1.4031044392942886,
+      "ra_ohm": 2.5,
+      "ca_pF": 5.0,
+      "c1_pF": 69.05386227486983,
+      "c2_pF": 112.98822307207578,
+      "rq_each_ohm": 1.7611552628706457,
+      "target_ohm": 20.0
+    },
+    {
+      "la_uH": 1.5590049325492095,
+      "ra_ohm": 1.0,
+      "ca_pF": 1.0,
+      "c1_pF": 66.96421904211333,
+      "c2_pF": 103.66666443678301,
+      "rq_each_ohm": 2.8471759827028933,
+      "target_ohm": 20.0
+    },
+    {
+      "la_uH": 1.5590049325492095,
+      "ra_ohm": 1.5,
+      "ca_pF": 1.0,
+      "c1_pF": 66.96424522056873,
+      "c2_pF": 103.66677872764917,
+      "rq_each_ohm": 2.591417274184371,
+      "target_ohm": 20.0
+    },
+    {
+      "la_uH": 1.5590049325492095,
+      "ra_ohm": 2.5,
+      "ca_pF": 1.0,
+      "c1_pF": 66.96432899183426,
+      "c2_pF": 103.6671444597478,
+      "rq_each_ohm": 2.0798965796628264,
+      "target_ohm": 20.0
+    },
+    {
+      "la_uH": 1.5590049325492095,
+      "ra_ohm": 1.0,
+      "ca_pF": 2.0,
+      "c1_pF": 66.59780371688849,
+      "c2_pF": 102.07304743789345,
+      "rq_each_ohm": 2.8741496248790552,
+      "target_ohm": 20.0
+    },
+    {
+      "la_uH": 1.5590049325492095,
+      "ra_ohm": 1.5,
+      "ca_pF": 2.0,
+      "c1_pF": 66.5978570071454,
+      "c2_pF": 102.07327832275627,
+      "rq_each_ohm": 2.612430934537687,
+      "target_ohm": 20.0
+    },
+    {
+      "la_uH": 1.5590049325492095,
+      "ra_ohm": 2.5,
+      "ca_pF": 2.0,
+      "c1_pF": 66.59802753682185,
+      "c2_pF": 102.07401715974588,
+      "rq_each_ohm": 2.088986828889671,
+      "target_ohm": 20.0
+    },
+    {
+      "la_uH": 1.5590049325492095,
+      "ra_ohm": 1.0,
+      "ca_pF": 5.0,
+      "c1_pF": 65.48474209786204,
+      "c2_pF": 97.306742075128,
+      "rq_each_ohm": 2.9580592237495598,
+      "target_ohm": 20.0
+    },
+    {
+      "la_uH": 1.5590049325492095,
+      "ra_ohm": 1.5,
+      "ca_pF": 5.0,
+      "c1_pF": 65.48488275260539,
+      "c2_pF": 97.3073372949813,
+      "rq_each_ohm": 2.6771551863591165,
+      "target_ohm": 20.0
+    },
+    {
+      "la_uH": 1.5590049325492095,
+      "ra_ohm": 2.5,
+      "ca_pF": 5.0,
+      "c1_pF": 65.48533285354056,
+      "c2_pF": 97.30924203489822,
+      "rq_each_ohm": 2.1153289454263273,
+      "target_ohm": 20.0
+    },
+    {
+      "la_uH": 1.7149054258041307,
+      "ra_ohm": 1.0,
+      "ca_pF": 1.0,
+      "c1_pF": 63.953893960072804,
+      "c2_pF": 90.93438932021277,
+      "rq_each_ohm": 3.18610576859621,
+      "target_ohm": 20.0
+    },
+    {
+      "la_uH": 1.7149054258041307,
+      "ra_ohm": 1.5,
+      "ca_pF": 1.0,
+      "c1_pF": 63.95391676641673,
+      "c2_pF": 90.9344826797011,
+      "rq_each_ohm": 2.9297605460500655,
+      "target_ohm": 20.0
+    },
+    {
+      "la_uH": 1.7149054258041307,
+      "ra_ohm": 2.5,
+      "ca_pF": 1.0,
+      "c1_pF": 63.95398974688254,
+      "c2_pF": 90.93478143105366,
+      "rq_each_ohm": 2.41706681222559,
+      "target_ohm": 20.0
+    },
+    {
+      "la_uH": 1.7149054258041307,
+      "ra_ohm": 1.0,
+      "ca_pF": 2.0,
+      "c1_pF": 63.567959431136615,
+      "c2_pF": 89.3612453345799,
+      "rq_each_ohm": 3.220149859619361,
+      "target_ohm": 20.0
+    },
+    {
+      "la_uH": 1.7149054258041307,
+      "ra_ohm": 1.5,
+      "ca_pF": 2.0,
+      "c1_pF": 63.56800594062936,
+      "c2_pF": 89.36143410830599,
+      "rq_each_ohm": 2.9572147611085056,
+      "target_ohm": 20.0
+    },
+    {
+      "la_uH": 1.7149054258041307,
+      "ra_ohm": 2.5,
+      "ca_pF": 2.0,
+      "c1_pF": 63.56815477168429,
+      "c2_pF": 89.3620381882911,
+      "rq_each_ohm": 2.431337792462384,
+      "target_ohm": 20.0
+    },
+    {
+      "la_uH": 1.7149054258041307,
+      "ra_ohm": 1.0,
+      "ca_pF": 5.0,
+      "c1_pF": 62.394085030239076,
+      "c2_pF": 84.65865246286303,
+      "rq_each_ohm": 3.326606566613915,
+      "target_ohm": 20.0
+    },
+    {
+      "la_uH": 1.7149054258041307,
+      "ra_ohm": 1.5,
+      "ca_pF": 5.0,
+      "c1_pF": 62.39420848632043,
+      "c2_pF": 84.6591405254529,
+      "rq_each_ohm": 3.0423022512023334,
+      "target_ohm": 20.0
+    },
+    {
+      "la_uH": 1.7149054258041307,
+      "ra_ohm": 2.5,
+      "ca_pF": 5.0,
+      "c1_pF": 62.39460355039099,
+      "c2_pF": 84.66070235315628,
+      "rq_each_ohm": 2.473675128673605,
+      "target_ohm": 20.0
+    }
+  ],
+  "limitations": [
+    "Quasi-static estimates, not a full-wave EM simulation.",
+    "Ra and Ca are assumed, not extracted or measured.",
+    "No tag coupling, metal, ferrite, reader driver impedance or nonlinear RX model.",
+    "Square-wave harmonics, transient overshoot and card-mode external fields not in stress estimate."
+  ]
+}

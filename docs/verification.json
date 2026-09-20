@@ -1,19 +1,19 @@
 {
   "schematic_sha256": {
-    "nucula-v2.kicad_sch": "6ccd3b55d63f88231f0bee54def398f6b995660a27b226e2c99fd4619f09b9df",
-    "power-mcu.kicad_sch": "9f3b08a2a03ea92fbda53b861995204ca860ede68efcacf25e65bb731a4b77b2",
-    "nfc.kicad_sch": "69ab566b6035c4f869083b4aadcb9f4357bc6bd4f8512d4a34f8e86ca36d6f33",
-    "oled.kicad_sch": "20fee91b878ccb64be37714204babd027166e74412e0b04c669e920d741a320b",
+    "nucula-v2.kicad_sch": "16b54ab54630b504598d63fa4d7518fe99d8caefeb215367153f1cb008b02894",
+    "power-mcu.kicad_sch": "6c09a1e016c0f4c303d8cf048ea503680da06cdc564ffc0ca6f6317606827156",
+    "nfc.kicad_sch": "6d9060fb0a8ce42713fc172964478e890bb5d75a2dd2457c9e5b6048a05bfaae",
+    "oled.kicad_sch": "014d1eca2230fbe604d2424530a7c2663359f4cae6a79fddfb3efe019bf50c0f",
     "keyboard.kicad_sch": "9655c82050767b6eaa6cf416bef472af45ec4f1b38c2e63214400707c0d56eec"
   },
   "kicad_version": "10.0.6",
   "erc_violations": 0,
   "sheets": 5,
-  "components": 124,
-  "net_count": 87,
-  "checked_named_nets": 57,
-  "unique_footprints": 24,
-  "resolved_models": 20,
+  "components": 128,
+  "net_count": 89,
+  "checked_named_nets": 59,
+  "unique_footprints": 29,
+  "resolved_models": 23,
   "components_without_3D": [
     "L1",
     "A1",
@@ -51,98 +51,99 @@
   },
   "pending_selection_or_tuning": {
     "A1": {
-      "value": "13.56MHz coil / TBD",
-      "status": "PLACEHOLDER: no coil geometry or inductance selected"
+      "value": "PCB loop 40x40 / 4T",
+      "status": "PROTOTYPE: 1.56uH estimated; measure RL/C before final tuning"
+    },
+    "C26": {
+      "value": "12pF",
+      "status": "PROTOTYPE START: 12pF/15pF pair; tune carrier to -5..0ppm per AN14518"
+    },
+    "C27": {
+      "value": "15pF",
+      "status": "PROTOTYPE START: 12pF/15pF pair; tune carrier to -5..0ppm per AN14518"
     },
     "C28": {
-      "value": "TBD C_RX",
-      "status": ""
+      "value": "1nF",
+      "status": "PROTOTYPE START: validate with VNA / AGC / RF stress measurements"
     },
     "C29": {
-      "value": "TBD C_RX",
-      "status": ""
+      "value": "1nF",
+      "status": "PROTOTYPE START: validate with VNA / AGC / RF stress measurements"
     },
     "C30": {
-      "value": "TBD C_EMC",
-      "status": ""
+      "value": "360pF",
+      "status": "PROTOTYPE START: validate with VNA / AGC / RF stress measurements"
     },
     "C31": {
-      "value": "TBD C_EMC",
-      "status": ""
+      "value": "360pF",
+      "status": "PROTOTYPE START: validate with VNA / AGC / RF stress measurements"
     },
     "C32": {
-      "value": "TBD C_SER",
-      "status": ""
+      "value": "68pF",
+      "status": "PROTOTYPE START: validate with VNA / AGC / RF stress measurements"
     },
     "C33": {
-      "value": "TBD C_SER",
-      "status": ""
-    },
-    "C34": {
-      "value": "TBD C_TRIM",
-      "status": ""
-    },
-    "C35": {
-      "value": "TBD C_TRIM",
-      "status": ""
+      "value": "68pF",
+      "status": "PROTOTYPE START: validate with VNA / AGC / RF stress measurements"
     },
     "C36": {
-      "value": "TBD C_SHUNT",
-      "status": ""
+      "value": "100pF",
+      "status": "PROTOTYPE START: validate with VNA / AGC / RF stress measurements"
     },
     "C37": {
-      "value": "TBD C_SHUNT",
-      "status": ""
-    },
-    "C38": {
-      "value": "TBD C_TRIM",
-      "status": ""
-    },
-    "C39": {
-      "value": "TBD C_TRIM",
-      "status": ""
+      "value": "100pF",
+      "status": "PROTOTYPE START: validate with VNA / AGC / RF stress measurements"
     },
     "L2": {
-      "value": "TBD L_EMC",
-      "status": "TUNE: high-Q RF inductor, >=0.5 A; self-resonance above operating band"
+      "value": "150nH",
+      "status": "PROTOTYPE: RF model included; 0.60A thermal reference, verify actual RF heating"
     },
     "L3": {
-      "value": "TBD L_EMC",
-      "status": "TUNE: high-Q RF inductor, >=0.5 A; self-resonance above operating band"
+      "value": "150nH",
+      "status": "PROTOTYPE: RF model included; 0.60A thermal reference, verify actual RF heating"
     },
     "R25": {
-      "value": "TBD R_RX",
-      "status": ""
+      "value": "2.2k",
+      "status": "PROTOTYPE: tune equal RX resistors for AGC 500-800 decimal"
     },
     "R26": {
-      "value": "TBD R_RX",
-      "status": ""
+      "value": "2.2k",
+      "status": "PROTOTYPE: tune equal RX resistors for AGC 500-800 decimal"
     },
     "R27": {
-      "value": "TBD R_DAMP",
-      "status": ""
+      "value": "2.7R",
+      "status": "PROTOTYPE: Q about 20; also lift to measure bare antenna"
     },
     "R28": {
-      "value": "TBD R_DAMP",
-      "status": ""
+      "value": "2.7R",
+      "status": "PROTOTYPE: Q about 20; also lift to measure bare antenna"
     },
     "Y1": {
-      "value": "27.12MHz / CL TBD",
-      "status": "27.12 MHz fixed; load capacitors require crystal selection"
+      "value": "27.12MHz / CL 10pF",
+      "status": "SELECTED: NXP AN14518 reference; measure frequency/startup/drive on prototype"
     },
     "DS1": {
-      "value": "SSD1309 / 26-pad glass",
-      "status": "PROVISIONAL: confirm 26-pin 0.5 mm flex/contact side; may require solder pads instead"
+      "value": "SSD1309 OLED / 26-pin",
+      "status": "Pinout/orientation confirmed by user; DS1 BOM part is the FPC socket, OLED glass supplied separately"
     }
   },
+  "ready_to_begin_pcb_layout": true,
+  "fabrication_release_ready": false,
+  "layout_blockers": [],
+  "prototype_power_source": "User-confirmed: dedicated USB-C 5 V supply rated at least 1.5 A; ordinary computer-host operation unqualified.",
+  "user_deferred": [
+    "Battery discharge capability/runtime",
+    "Off switch and improved low-battery behavior"
+  ],
   "limits": [
     "Static checks only; no board or bench measurements.",
     "No USB input current/inrush/suspend controller; host-power compliance unresolved.",
     "Full-charge headroom depends on VBUS at connector and D1 forward drop.",
-    "Battery model/polarity/discharge rating and MLCC DC-bias curves require selection before PCB.",
-    "Concurrent peak loads can exceed 1 A at the battery; input budget and thermal checks remain open.",
-    "RF values/coil and crystal grade/load require selection and measurement.",
-    "OLED panel/flex footprint is provisional; actual display load and supply sequencing need validation.",
+    "Battery is optional; select/check a protected pack and polarity before battery testing, not a USB-prototype layout prerequisite.",
+    "USB steady-state estimate is 1.10 A from a specified 5 V / 1.5 A supply; startup/inrush and thermal performance require bench validation.",
+    "Power MLCC ordering codes and typical DC-bias curves selected; combined-corner screening is an estimate, not a guaranteed minimum.",
+    "RF prototype values and 40mm coil selected; actual RL/C, tuning and RF stress still require measurement. NDK crystal selected; load/frequency/startup/drive require bench verification.",
+    "OLED 26-contact pinout/orientation confirmed by user, including outer GND contacts; verify socket fit/flex fold during placement and panel current at bring-up.",
     "MCP1700 low-current dropout and AP3012 switch-current limits need bench validation.",
     "Keyboard break line, routing and reconnect cable capacitance are deferred to PCB layout."
   ],
@@ -150,12 +151,14 @@
     "${KICAD_SHARE}/3dmodels/Button_Switch_SMD.3dshapes/SW_SPST_B3U-1000P.step",
     "${KICAD_SHARE}/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
     "${KICAD_SHARE}/3dmodels/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+    "${KICAD_SHARE}/3dmodels/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+    "${KICAD_SHARE}/3dmodels/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
     "${KICAD_SHARE}/3dmodels/Connector_FFC-FPC.3dshapes/Hirose_FH12-26S-0.5SH_1x26-1MP_P0.50mm_Horizontal.step",
     "${KICAD_SHARE}/3dmodels/Connector_JST.3dshapes/JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical.step",
     "${KICAD_SHARE}/3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.step",
     "${KICAD_SHARE}/3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x09_P2.54mm_Vertical.step",
     "${KICAD_SHARE}/3dmodels/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step",
-    "${KICAD_SHARE}/3dmodels/Crystal.3dshapes/Crystal_SMD_SeikoEpson_TSX3225-4Pin_3.2x2.5mm.step",
+    "${KICAD_SHARE}/3dmodels/Crystal.3dshapes/Crystal_SMD_2016-4Pin_2.0x1.6mm.step",
     "${KICAD_SHARE}/3dmodels/Diode_SMD.3dshapes/D_SMA.step",
     "${KICAD_SHARE}/3dmodels/LED_SMD.3dshapes/LED_0603_1608Metric.step",
     "${KICAD_SHARE}/3dmodels/Package_SO.3dshapes/SOIC-16W_7.5x10.3mm_P1.27mm.step",
@@ -165,6 +168,7 @@
     "${KICAD_SHARE}/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-323_SC-70.step",
     "${KICAD_SHARE}/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
     "${KICAD_SHARE}/3dmodels/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+    "${KICAD_SHARE}/3dmodels/Resistor_SMD.3dshapes/R_1206_3216Metric.step",
     "${KIPRJMOD}/libraries/Nucula_Project.3dshapes/ESP32-C3-WROOM-02-N4.step",
     "${KIPRJMOD}/libraries/Nucula_Project.3dshapes/PN7160A1HN_C100E.step"
   ]

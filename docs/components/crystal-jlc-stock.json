@@ -1,0 +1,16 @@
+{
+  "source": "https://jlcpcb.com/partdetail/C3008209",
+  "retrieved": "2026-09-20",
+  "fields": {
+    "componentCode": "C3008209",
+    "componentModelEn": "NX2016SA-27.12MHZ-EXS00A-CS06346",
+    "componentBrandEn": "NDK",
+    "componentSpecificationEn": "SMD2016-4P",
+    "preMinPurchaseNum": 24,
+    "canPresaleNumber": 8533,
+    "overseasStockCount": 8896,
+    "leastPatchNumber": 5,
+    "isBuyComponent": "1"
+  },
+  "interpretation": "Public JLCPCB sourcing fields show overseas supply and purchasable quantity. Not a reservation or proof of stock at the assembly factory."
+}

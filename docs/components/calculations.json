@@ -1,0 +1,151 @@
+{
+  "scope": "Prototype engineering estimates; not measured or guaranteed limits",
+  "capacitor_screening_factors": {
+    "tolerance": 0.9,
+    "temperature": 0.85,
+    "additional_aging_margin_assumption": 0.95
+  },
+  "capacitors": [
+    {
+      "refs": "C1 C2 C4",
+      "mpn": "CL32B226KAJNNNE",
+      "nominal_uF": 22,
+      "evaluated_bias_V": 5.5,
+      "typical_bias_change_pct": -24.373038173947265,
+      "typical_biased_uF": 16.6379316017316,
+      "screening_uF": 12.091616791558442,
+      "screening_target_uF": 10
+    },
+    {
+      "refs": "C5 C6 C9",
+      "mpn": "CL31A226KAHNNNE",
+      "nominal_uF": 22,
+      "evaluated_bias_V": 3.393,
+      "typical_bias_change_pct": -21.540269516328625,
+      "typical_biased_uF": 17.2611407064077,
+      "screening_uF": 12.544534008381797,
+      "screening_target_uF": 11
+    },
+    {
+      "refs": "C17 C19 C40",
+      "mpn": "CL31B106KAHNNNE",
+      "nominal_uF": 10,
+      "evaluated_bias_V": 5.5,
+      "typical_bias_change_pct": -31.441745489337727,
+      "typical_biased_uF": 6.855825451066227,
+      "screening_uF": 4.982471146562381,
+      "screening_target_uF": 4.7
+    },
+    {
+      "refs": "C21 C22",
+      "mpn": "CL21B225KAFNNNE",
+      "nominal_uF": 2.2,
+      "evaluated_bias_V": 1.8,
+      "typical_bias_change_pct": -0.8049916352684569,
+      "typical_biased_uF": 2.1822901840240942,
+      "screening_uF": 1.5859793912395106,
+      "screening_target_uF": null
+    },
+    {
+      "refs": "C23 C24",
+      "mpn": "CL21B225KAFNNNE",
+      "nominal_uF": 2.2,
+      "evaluated_bias_V": 5.25,
+      "typical_bias_change_pct": -16.077780239814718,
+      "typical_biased_uF": 1.8462888347240762,
+      "screening_uF": 1.3417904106357221,
+      "screening_target_uF": null
+    },
+    {
+      "refs": "C15",
+      "mpn": "CL21B105KBFNNNE",
+      "nominal_uF": 1,
+      "evaluated_bias_V": 3.393,
+      "typical_bias_change_pct": -0.2991435423262375,
+      "typical_biased_uF": 0.9970085645767376,
+      "screening_uF": 0.724575974306144,
+      "screening_target_uF": null
+    },
+    {
+      "refs": "C42",
+      "mpn": "CL21B105KBFNNNE",
+      "nominal_uF": 1,
+      "evaluated_bias_V": 13.5,
+      "typical_bias_change_pct": -17.539921486738088,
+      "typical_biased_uF": 0.8246007851326191,
+      "screening_uF": 0.599278620595131,
+      "screening_target_uF": null
+    },
+    {
+      "refs": "C44",
+      "mpn": "CL21B475KAFNNNE",
+      "nominal_uF": 4.7,
+      "evaluated_bias_V": 3.135,
+      "typical_bias_change_pct": -11.879145662252402,
+      "typical_biased_uF": 4.1416801538741375,
+      "screening_uF": 3.0099660518280293,
+      "screening_target_uF": null
+    },
+    {
+      "refs": "C46",
+      "mpn": "CL31B475KBHNNNE",
+      "nominal_uF": 4.7,
+      "evaluated_bias_V": 13.5,
+      "typical_bias_change_pct": -28.145657928844148,
+      "typical_biased_uF": 3.377154077344325,
+      "screening_uF": 2.4543467257099882,
+      "screening_target_uF": null
+    },
+    {
+      "refs": "C47",
+      "mpn": "CL21B225KAFNNNE",
+      "nominal_uF": 2.2,
+      "evaluated_bias_V": 13.5,
+      "typical_bias_change_pct": -52.2197064386008,
+      "typical_biased_uF": 1.0511664583507825,
+      "screening_uF": 0.7639352236064312,
+      "screening_target_uF": null
+    }
+  ],
+  "oscillator": {
+    "crystal": "NDK NX2016SA-27.12MHZ-EXS00A-CS06346",
+    "frequency_Hz": 27120000,
+    "load_pF": 10.0,
+    "shunt_pF": 0.6,
+    "motional_pF": 0.00154,
+    "pin_pF": [
+      2.0,
+      2.0
+    ],
+    "assumed_NXP_EVK_pcb_pF": [
+      1.19,
+      1.31,
+      1.39
+    ],
+    "calculated_equal_external_pF": 12.770224715948984,
+    "populated_external_pF": [
+      12.0,
+      15.0
+    ],
+    "nxp_model_seen_pF": 10.292355223880596,
+    "nominal_model_offset_ppm": -1.9494462004665536,
+    "caveat": "NXP reference-board parasitics and typical IC/crystal values; actual PCB and initial frequency error are unknown. NXP Fig.5 shunt-capacitance convention is used explicitly. Measure the carrier; do not treat this offset as a prediction for manufactured hardware."
+  },
+  "usb": {
+    "source_min_V": 4.75,
+    "source_rating_A": 1.5,
+    "diode_drop_allowance_V_each": 0.5,
+    "vsys_min_estimate_V": 3.75,
+    "buck_output_V": 3.393,
+    "buck_output_A": 0.5,
+    "buck_efficiency": 0.85,
+    "oled_output_V": 13.5,
+    "oled_output_A": 0.03,
+    "oled_efficiency": 0.75,
+    "nfc_allowance_A": 0.29,
+    "charger_max_A": 0.115,
+    "auxiliary_allowance_A": 0.02,
+    "estimated_continuous_input_A": 1.101235294117647,
+    "source_current_margin_A": 0.3987647058823529
+  }
+}

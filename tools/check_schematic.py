@@ -76,15 +76,17 @@ groups = {
     'NFC_RXN': 'C28.1 U6.15',
     'NFC_RXP': 'C29.1 U6.16',
     'NFC_TVDD': 'C23.1 C24.1 U6.14 U6.18 U6.22',
-    'NFC_TX1': 'L2.1 U6.21',
-    'NFC_TX2': 'L3.1 U6.19',
+    'NFC_TX1': 'R41.1 U6.21',
+    'NFC_TX2': 'R42.1 U6.19',
+    'RF_DRV_P': 'R41.2 L2.1',
+    'RF_DRV_N': 'R42.2 L3.1',
     'NFC_VDD18': 'C21.1 C22.1 U6.26 U6.27 U6.31',
     'NFC_VDDUP': 'C19.1 C20.1 R29.2 U6.13',
     'NFC_VMID': 'C25.1 U6.17',
     'NFC_XTAL1': 'C26.1 U6.30 Y1.1',
     'NFC_XTAL2': 'C27.1 U6.29 Y1.3',
-    'RF_EMC_P': 'C30.1 C32.1 C34.1 L2.2 R25.2',
-    'RF_EMC_N': 'C31.2 C33.1 C35.1 L3.2 R26.2',
+    'RF_EMC_P': 'C30.1 C32.1 C34.1 C53.1 L2.2 R25.2',
+    'RF_EMC_N': 'C31.2 C33.1 C35.1 C54.2 L3.2 R26.2',
     'RF_MATCH_P': 'C32.2 C34.2 C36.1 C38.1 R27.1',
     'RF_MATCH_N': 'C33.2 C35.2 C37.2 C39.2 R28.1',
     'OLED_PWR_EN': 'Q4.1 R34.1 U3.15',
@@ -112,7 +114,7 @@ for pin in ('J1.A1 J1.A12 J1.B1 J1.B12 J1.SH J2.2 U1.2 U2.2 U3.9 U3.19 U4.2 U5.1
             'Q2.2 R1.2 R2.2 R3.2 R5.2 R7.2 '
             'U6.4 U6.9 U6.20 U6.39 U6.41 Y1.2 Y1.4 R21.2 R22.2 R23.2 R24.2 '
             'C15.2 C16.2 C17.2 C18.2 C19.2 C20.2 C21.2 C22.2 C23.2 C24.2 C25.2 '
-            'C26.2 C27.2 C30.2 C31.1 C36.2 C37.1 C38.2 C39.1 A1.3 '
+            'C26.2 C27.2 C30.2 C31.1 C36.2 C37.1 C38.2 C39.1 C53.2 C54.1 '
             'U7.2 Q4.2 Q5.2 R31.2 R32.2 R34.2 R36.2 C40.2 C42.2 C43.2 C44.2 '
             'C45.2 C46.2 C47.2 C48.2 DS1.1 DS1.2 DS1.3 DS1.7 DS1.8 DS1.10 '
             'DS1.11 DS1.12 DS1.16 DS1.17 DS1.18 DS1.19 DS1.20 DS1.24 DS1.25 DS1.26 '
@@ -130,7 +132,11 @@ for ref, value in {'U1':'TP4054-42-SOT235', 'U2':'SY8089AAAC', 'U3':'ESP32-C3-WR
                    'U6':'PN7160A1HN/C100E','U7':'AP3012KTR-E1','U8':'PCF8574T',
                    'U9':'MCP1700T-3002E/TT','R19':'2.2k','R20':'2.2k','R21':'10k',
                    'R22':'100k','R23':'100k','R24':'100k','R29':'0R','R30':'1.8M',
-                   'R31':'200k','R32':'910k','L4':'10uH','D4':'SS14'}.items():
+                   'R31':'200k','R32':'910k','L4':'10uH','D4':'SS14',
+                   'L2':'150nH','L3':'150nH','C28':'1nF','C29':'1nF',
+                   'C30':'360pF','C31':'360pF','C32':'68pF','C33':'68pF',
+                   'C36':'100pF','C37':'100pF','R25':'2.2k','R26':'2.2k',
+                   'R27':'2.7R','R28':'2.7R','R41':'0R','R42':'0R'}.items():
     assert values[ref] == value, (ref, values[ref])
 fields = {r: {f.attrib['name']: f.text or '' for f in c.findall('./fields/field')} for r,c in components.items()}
 for ref in ['R6','R7','R30','R31']:
@@ -156,7 +162,7 @@ read_hierarchy(SCH)
 assert len(schematics) == 5
 for ref in ['D1','D2']:
     assert properties(instances[ref])['Datasheet'] == 'https://www.diodes.com/datasheet/download/B340A.pdf'
-for ref in ['C7','C8','J3','J4','J5','C34','C35','C38','C39','R38','R39']:
+for ref in ['C7','C8','J3','J4','J5','C34','C35','C38','C39','C53','C54','R38','R39']:
     assert child(instances[ref],'dnp')[1] == 'yes', f'{ref} must remain DNP'
 keyboard = schematics[ROOT / 'keyboard.kicad_sch']
 assert {uq(p[1]) for p in children(keyboard, 'hierarchical_label')} == {
@@ -167,7 +173,35 @@ for symbol in children(keyboard, 'symbol'):
         assert props['PCB Region'] == 'BREAKAWAY_KEYBOARD'
 for ref, address in [('U6','0x28'),('U8','0x20'),('DS1','0x3C')]:
     assert fields[ref]['I2C Address'] == address
-assert fields['DS1']['Footprint Status'].startswith('PROVISIONAL:')
+assert fields['DS1']['Footprint Status'].startswith('SELECTED:')
+assert fields['DS1']['Actual Flex'].startswith('26 contacts total:')
+assert fields['DS1']['MPN'] == 'FH12-26S-0.5SH(55)'
+assert net_of['DS1.1'] == net_of['DS1.26'] == 'GND'
+# Pin order/orientation are user-confirmed; fit/fold is checked during placement.
+assert fields['Y1']['MPN'] == 'NX2016SA-27.12MHZ-EXS00A-CS06346'
+assert fields['Y1']['LCSC'] == 'C3008209'
+assert components['Y1'].findtext('footprint') == 'Nucula_Project:Crystal_NDK_NX2016SA_2.0x1.6mm'
+assert values['C26'] == '12pF' and values['C27'] == '15pF'
+for ref in ['C21','C22','C23','C24']:
+    assert values[ref] == '2.2uF'
+    assert fields[ref]['Tolerance'] == '10%'
+    assert '0805' in components[ref].findtext('footprint')
+    assert fields[ref]['Placement'].startswith('Local capacitor at U6.')
+for ref in ['C1','C2','C4']:
+    assert fields[ref]['MPN'] == 'CL32B226KAJNNNE'
+    assert '1210' in components[ref].findtext('footprint')
+for ref in ['C5','C6','C9']:
+    assert fields[ref]['MPN'] == 'CL31A226KAHNNNE'
+    assert '1206' in components[ref].findtext('footprint')
+assert fields['J2']['MPN'] == 'B2B-PH-K-S(LF)(SN)'
+assert 'P2.00mm' in components['J2'].findtext('footprint')
+assert child(instances['A1'], 'in_bom')[1] == 'no', 'Etched coil is not a purchased component'
+assert 'A1.3' not in net_of, 'PCB loop has exactly two terminals, no ground tap'
+for ref in ['C28','C29','C30','C31','C32','C33','C34','C35','C36','C37','C38','C39','C53','C54']:
+    assert fields[ref]['Dielectric'] == 'C0G/NP0'
+    assert fields[ref]['Voltage'] == '100 V'
+    assert '0805' in components[ref].findtext('footprint')
+    assert 'HandSolder' in components[ref].findtext('footprint')
 
 # Check every physical symbol pin has a matching footprint pad and every referenced
 # 3D model exists; excludes power symbols, which are not physical BOM components.
@@ -232,7 +266,8 @@ boost_input_A = boost_max*oled_load_A/(3*.75)
 boost_peak_A = boost_input_A + 3*(1-3/boost_max)/(2*1.1e6*10e-6*.8)
 assert boost_peak_A < .5  # AP3012 typical limit, not a guaranteed minimum.
 pending = {ref: {'value': values[ref], 'status': fields[ref].get('Status', fields[ref].get('Footprint Status',''))}
-           for ref in components if 'TBD' in values[ref] or ref in ['DS1','Y1']}
+           for ref in components if 'TBD' in values[ref] or ref in ['DS1','Y1','A1']
+           or fields[ref].get('Status','').startswith('PROTOTYPE')}
 report={
  'schematic_sha256':{str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in schematics},
  'kicad_version':subprocess.check_output([CLI,'version'],text=True).strip(),
@@ -247,21 +282,29 @@ report={
                  'I2C_rise_ns_at_400pF':rise_ns,'OLED_boost_peak_estimate_A_at_30mA_output':boost_peak_A},
  'i2c':{'speed_Hz':100000,'pullup_V':3.0,'addresses':{'PN7160':'0x28','SSD1309':'0x3C','PCF8574T':'0x20'}},
  'pending_selection_or_tuning':pending,
+ 'ready_to_begin_pcb_layout':True,
+ 'fabrication_release_ready':False,
+ 'layout_blockers':[],
+ 'prototype_power_source':'User-confirmed: dedicated USB-C 5 V supply rated at least 1.5 A; ordinary computer-host operation unqualified.',
+ 'user_deferred':['Battery discharge capability/runtime','Off switch and improved low-battery behavior'],
  'limits':['Static checks only; no board or bench measurements.',
            'No USB input current/inrush/suspend controller; host-power compliance unresolved.',
            'Full-charge headroom depends on VBUS at connector and D1 forward drop.',
-           'Battery model/polarity/discharge rating and MLCC DC-bias curves require selection before PCB.',
-           'Concurrent peak loads can exceed 1 A at the battery; input budget and thermal checks remain open.',
-           'RF values/coil and crystal grade/load require selection and measurement.',
-           'OLED panel/flex footprint is provisional; actual display load and supply sequencing need validation.',
+           'Battery is optional; select/check a protected pack and polarity before battery testing, not a USB-prototype layout prerequisite.',
+           'USB steady-state estimate is 1.10 A from a specified 5 V / 1.5 A supply; startup/inrush and thermal performance require bench validation.',
+           'Power MLCC ordering codes and typical DC-bias curves selected; combined-corner screening is an estimate, not a guaranteed minimum.',
+           'RF prototype values and 40mm coil selected; actual RL/C, tuning and RF stress still require measurement. NDK crystal selected; load/frequency/startup/drive require bench verification.',
+           'OLED 26-contact pinout/orientation confirmed by user, including outer GND contacts; verify socket fit/flex fold during placement and panel current at bring-up.',
            'MCP1700 low-current dropout and AP3012 switch-current limits need bench validation.',
            'Keyboard break line, routing and reconnect cable capacitance are deferred to PCB layout.'],
  'models':sorted(models)
 }
 (DOC/'verification.json').write_text(json.dumps(report,indent=2)+'\n')
 with (DOC/'bom.csv').open('w',newline='') as f:
-    writer=csv.writer(f,lineterminator='\n');writer.writerow(['Reference','Value','Footprint','Manufacturer','MPN','Tolerance','Voltage','Dielectric','DNP','PCB Region','Status','Datasheet'])
+    writer=csv.writer(f,lineterminator='\n');writer.writerow(['Reference','Value','Footprint','Manufacturer','MPN','LCSC','Tolerance','Voltage','Rating','Dielectric','DNP','PCB Region','Status','Datasheet'])
     for ref in sorted(components,key=lambda s:(re.sub(r'\d','',s),int(re.search(r'\d+',s)[0]))):
+        if child(instances[ref], 'in_bom')[1] == 'no':
+            continue  # A1 is manufactured PCB copper, not an assembled part.
         c=components[ref];p=fields[ref]
-        writer.writerow([ref,c.findtext('value'),c.findtext('footprint'),p.get('Manufacturer',''),p.get('MPN',''),p.get('Tolerance',''),p.get('Voltage',''),p.get('Dielectric',''),child(instances[ref],'dnp')[1],p.get('PCB Region','MAIN'),p.get('Status',p.get('Footprint Status','')),properties(instances[ref]).get('Datasheet',c.findtext('datasheet'))])
+        writer.writerow([ref,c.findtext('value'),c.findtext('footprint'),p.get('Manufacturer',''),p.get('MPN',''),p.get('LCSC',''),p.get('Tolerance',''),p.get('Voltage',''),p.get('Rating',''),p.get('Dielectric',''),child(instances[ref],'dnp')[1],p.get('PCB Region','MAIN'),p.get('Status',p.get('Footprint Status','')),properties(instances[ref]).get('Datasheet',c.findtext('datasheet'))])
 print(json.dumps({k:v for k,v in report.items() if k not in ['models','limits','pending_selection_or_tuning']},indent=2))

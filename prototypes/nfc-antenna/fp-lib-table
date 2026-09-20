@@ -1,0 +1,2 @@
+(fp_lib_table (version 7)
+ (lib (name "Nucula_Project") (type "KiCad") (uri "${KIPRJMOD}/../../libraries/Nucula_Project.pretty") (options "") (descr "Project NFC coil")))

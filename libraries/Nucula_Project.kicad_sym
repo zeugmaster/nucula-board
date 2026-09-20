@@ -1814,7 +1814,7 @@
         ) hide
       )
     )
-    (property "Description" "26-contact OLED glass interface from Waveshare reference; FPC mechanics provisional"
+    (property "Description" "26-contact OLED glass interface; Waveshare pin order/orientation confirmed by user"
       (at 0 0 0)
       (effects
         (font
@@ -2343,53 +2343,54 @@
       )
     )
   )
-  (symbol "NFC_Loop_TBD"
-    (property "Description" "Two-terminal 13.56 MHz coil plus reference/shield ground; geometry and tuning TBD"
-      (at 0 0 0)
-      (effects
-        (font
-          (size 1.27 1.27)
-        ) hide
-      )
-    )
-    (property "Datasheet" ""
-      (at 0 0 0)
-      (effects
-        (font
-          (size 1.27 1.27)
-        ) hide
-      )
-    )
-    (property "Footprint" "Nucula_Project:NFC_Antenna_Interface_TBD"
-      (at 0 0 0)
-      (effects
-        (font
-          (size 1.27 1.27)
-        ) hide
-      )
-    )
-    (property "Value" "NFC_Loop_TBD"
-      (at 0 0 0)
-      (effects
-        (font
-          (size 1.27 1.27)
-        ) hide
-      )
-    )
-    (property "Reference" "A"
-      (at 0 0 0)
-      (effects
-        (font
-          (size 1.27 1.27)
-        ) hide
-      )
-    )
-    (pin_names
-      (offset 0.508)
-    )
-    (in_bom yes)
+  (symbol "NFC_PCB_Loop_40x40_4T"
+    (exclude_from_sim no)
+    (in_bom no)
     (on_board yes)
-    (symbol "NFC_Loop_TBD_0_1"
+    (property "Reference" "A"
+      (at 2.54 0 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "NFC_PCB_Loop_40x40_4T"
+      (at 0 -2.54 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Footprint" "Nucula_Project:NFC_PCB_Loop_40x40_4T_W0.50_S0.30"
+      (at 0 -5.08 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+      (hide yes)
+    )
+    (property "Datasheet" "~"
+      (at 0 -7.62 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+      (hide yes)
+    )
+    (property "Description" "Two-terminal etched PCB NFC coil. 40x40 mm outer copper; 4 turns, 0.50 mm trace, 0.30 mm gap. No ground or center tap."
+      (at 0 -10.16 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+      (hide yes)
+    )
+    (symbol "NFC_PCB_Loop_40x40_4T_0_1"
       (rectangle
         (start -10.16 12.7)
         (end 10.16 -12.7)
@@ -2401,22 +2402,45 @@
           (type background)
         )
       )
+      (polyline
+        (pts
+          (xy -7 7)
+          (xy 7 7)
+          (xy 7 -7)
+          (xy -7 -7)
+          (xy -7 4.5)
+          (xy 4.5 4.5)
+          (xy 4.5 -4.5)
+          (xy -4.5 -4.5)
+          (xy -4.5 2)
+          (xy 2 2)
+          (xy 2 -2)
+          (xy -2 -2)
+        )
+        (stroke
+          (width 0.254)
+          (type default)
+        )
+        (fill
+          (type none)
+        )
+      )
     )
-    (symbol "NFC_Loop_TBD_1_1"
+    (symbol "NFC_PCB_Loop_40x40_4T_1_1"
       (pin passive line
         (at -15.24 7.62 0)
         (length 5.08)
         (name "LOOP_A"
           (effects
             (font
-              (size 1.016 1.016)
+              (size 1.27 1.27)
             )
           )
         )
         (number "1"
           (effects
             (font
-              (size 1.016 1.016)
+              (size 1.27 1.27)
             )
           )
         )
@@ -2427,32 +2451,14 @@
         (name "LOOP_B"
           (effects
             (font
-              (size 1.016 1.016)
+              (size 1.27 1.27)
             )
           )
         )
         (number "2"
           (effects
             (font
-              (size 1.016 1.016)
-            )
-          )
-        )
-      )
-      (pin passive line
-        (at -15.24 0 0)
-        (length 5.08)
-        (name "REF_GND"
-          (effects
-            (font
-              (size 1.016 1.016)
-            )
-          )
-        )
-        (number "3"
-          (effects
-            (font
-              (size 1.016 1.016)
+              (size 1.27 1.27)
             )
           )
         )
