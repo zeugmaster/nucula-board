@@ -122,7 +122,10 @@ I²C; GPIO6/7 control NFC; GPIO3/10 control the OLED; GPIO20 receives keyboard I
 
 GPIO0/ADC1 senses half the battery voltage through 470 kΩ / 470 kΩ and 100 nF.
 The calculated maximum is 2.142 V; use calibrated 11/12 dB attenuation and
-allow at least 120 ms after the sensed rail settles. High divider impedance and
+allow at least 200 ms after the sensed rail settles for an initial <0.1% RC
+settling target. The [simulation screening](simulation/README.md) finds that
+120 ms can leave about 1% settling error at +R/+C tolerance; ADC acquisition,
+leakage and capacitor temperature effects are separate. High divider impedance and
 ADC sampling/calibration need firmware validation. GPIO1 receives inverted
 VBUS presence through Q2: LOW means USB present. This avoids a 5 V divider
 injecting current into an unpowered GPIO. R18 discharges the VBUS detector.

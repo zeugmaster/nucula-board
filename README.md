@@ -11,6 +11,7 @@ and a detachable PCF8574T keyboard section. The four-layer PCB is placed and
 routed, with all components on top and the NFC circuitry inside the coil.
 
 - [Completed PCB layout, layer drawings and validation](docs/pcb-layout.md)
+- [Circuit simulation screening, findings and model limits](docs/simulation/README.md)
 - [Schematic PDF](docs/schematic.pdf)
 - [Design choices, datasheets and outstanding hardware limits](docs/power-design.md)
 - [NFC, OLED, I²C pin map and breakaway keyboard design](docs/peripherals-design.md)

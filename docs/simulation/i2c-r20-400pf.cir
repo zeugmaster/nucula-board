@@ -1,0 +1,12 @@
+Nucula R20 I2C pull-up release, Cbus=4e-10
+* Bus capacitance is a scenario, not extracted from PCB/cable.
+* Sink represented by an ideal controlled switch, 100 ohm on resistance.
+Vrail n1 0 3
+R20 n1 n3 2222
+Cbus n3 0 4e-10
+Vctrl ctrl 0 PULSE(1 0 2u 1n 1n 20u 40u)
+Ssink n3 0 ctrl 0 sink
+.model sink SW(Ron=100 Roff=1e12 Vt=.5 Vh=0)
+.options reltol=1e-7
+.tran 2n 10u 0 2n
+.end

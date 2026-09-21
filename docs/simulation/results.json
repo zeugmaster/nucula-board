@@ -1,0 +1,339 @@
+{
+  "scope": "Partial circuit simulation; not a manufacturing release or complete board simulation.",
+  "design_commit": "33dbf43ad5e07135038a32afff75e1a56fff7e87",
+  "source_sha256": {
+    "nucula-v2.kicad_pcb": "07027a726f4fc0830c1147406bcd379af5dfc489b48b13961e14678e99367fa1",
+    "nucula-v2.kicad_pro": "37aaeb35a6800dcbe25072dc5728b01e033570ba8f0f0d689eb1c9d8d76e7ce3",
+    "nucula-v2.kicad_dru": "0cc68ae3d35c53f9ffb6ccc96d374ca469143e9da5bda10a333df08a57e9c92f",
+    "keyboard.kicad_sch": "9489d40c8a70b60037e6dd5a4849a09903941db6114d3cf6ed89d5500f043259",
+    "nfc.kicad_sch": "cd0d8381536f28a9dcab08e50a41ef020105190ca204bd47ace184fb11758f13",
+    "nucula-v2.kicad_sch": "4438052cb3ed03d7555772a1ca6d5177c5d74cef2f3e5ba6155279f69393aef3",
+    "oled.kicad_sch": "0848cb10d9b3f22e53e663d9c6202f6cf5e52ce8735ab09e96bf8f6ddca321cf",
+    "power-mcu.kicad_sch": "87cdb59acb6c5b88d273f9ccd8cbc1848213c045ed9a5452e7b29e5f002cfa69"
+  },
+  "netlist_sha256": "d002bc73b3fe2e095e2758afd958650436350952dbde2c22f115a2a9b5fe5d3d",
+  "simulation_script_sha256": "ea8f4cf7693066ac14d072c1c53c9722f505009401f071036381d6954162dd76",
+  "nfc_assumptions_sha256": "baa8787481de41c02eb8bca8ff0022c189ff107ff500211aeddf36f169a92375",
+  "engine": [
+    "stdout ** ngspice-45.2 shared library",
+    "stdout ** ngspice-45.2 : Circuit level simulation program"
+  ],
+  "pcb_values_pad_nets_population_match_netlist": true,
+  "nfc": {
+    "nominal": {
+      "scenario": "nominal_assumed_coil",
+      "la": 1.5590049325492093e-06,
+      "ra": 1.5,
+      "ca": 2e-12,
+      "z_real_ohm": 18.837653164370273,
+      "z_imag_ohm": -0.1402741342980615,
+      "z_abs_ohm": 18.838175431125553,
+      "coil_rms_A_at_3V3_fundamental": 0.2514387068108059,
+      "coil_peak_V_at_3V3_fundamental": 47.23477708382161
+    },
+    "scenarios": [
+      {
+        "scenario": "nominal_assumed_coil",
+        "la": 1.5590049325492093e-06,
+        "ra": 1.5,
+        "ca": 2e-12,
+        "z_real_ohm": 18.837653164370273,
+        "z_imag_ohm": -0.1402741342980615,
+        "z_abs_ohm": 18.838175431125553,
+        "coil_rms_A_at_3V3_fundamental": 0.2514387068108059,
+        "coil_peak_V_at_3V3_fundamental": 47.23477708382161
+      },
+      {
+        "scenario": "coil_L_minus_10pct",
+        "la": 1.4031044392942883e-06,
+        "ra": 1.5,
+        "ca": 2e-12,
+        "z_real_ohm": 6.815871082578099,
+        "z_imag_ohm": -13.66514797360108,
+        "z_abs_ohm": 15.270637437734484,
+        "coil_rms_A_at_3V3_fundamental": 0.16625412185644378,
+        "coil_peak_V_at_3V3_fundamental": 28.1093731903888
+      },
+      {
+        "scenario": "coil_L_plus_10pct",
+        "la": 1.7149054258041303e-06,
+        "ra": 1.5,
+        "ca": 2e-12,
+        "z_real_ohm": 80.03379706612391,
+        "z_imag_ohm": -38.06175584220032,
+        "z_abs_ohm": 88.6233938111872,
+        "coil_rms_A_at_3V3_fundamental": 0.11397316678186331,
+        "coil_peak_V_at_3V3_fundamental": 23.55158991947335
+      },
+      {
+        "scenario": "extra_1pF_each_match_node",
+        "la": 1.5590049325492093e-06,
+        "ra": 1.5,
+        "ca": 2e-12,
+        "extra_shunt": 1e-12,
+        "z_real_ohm": 20.625192139245847,
+        "z_imag_ohm": 0.7863816827410673,
+        "z_abs_ohm": 20.640177977230703,
+        "coil_rms_A_at_3V3_fundamental": 0.24124197702090222,
+        "coil_peak_V_at_3V3_fundamental": 45.3192396364688
+      },
+      {
+        "scenario": "extra_3pF_each_match_node",
+        "la": 1.5590049325492093e-06,
+        "ra": 1.5,
+        "ca": 2e-12,
+        "extra_shunt": 3e-12,
+        "z_real_ohm": 24.99679826636413,
+        "z_imag_ohm": 2.509430236934542,
+        "z_abs_ohm": 25.12244342581641,
+        "coil_rms_A_at_3V3_fundamental": 0.22000668112698793,
+        "coil_peak_V_at_3V3_fundamental": 41.33001904040215
+      },
+      {
+        "scenario": "rx_load_1k",
+        "la": 1.5590049325492093e-06,
+        "ra": 1.5,
+        "ca": 2e-12,
+        "rin": 1000,
+        "z_real_ohm": 18.852588670070382,
+        "z_imag_ohm": -0.10299154249191136,
+        "z_abs_ohm": 18.852869988961654,
+        "coil_rms_A_at_3V3_fundamental": 0.2510577365190008,
+        "coil_peak_V_at_3V3_fundamental": 47.16320875992585
+      },
+      {
+        "scenario": "rx_load_10k",
+        "la": 1.5590049325492093e-06,
+        "ra": 1.5,
+        "ca": 2e-12,
+        "rin": 10000,
+        "z_real_ohm": 18.8117797767713,
+        "z_imag_ohm": -0.20382025088186728,
+        "z_abs_ohm": 18.8128839114159,
+        "coil_rms_A_at_3V3_fundamental": 0.2520914890194194,
+        "coil_peak_V_at_3V3_fundamental": 47.35740745564956
+      },
+      {
+        "scenario": "coil_L0.9_R1_C1p",
+        "la": 1.4031044392942883e-06,
+        "ra": 1.0,
+        "ca": 1e-12,
+        "z_real_ohm": 6.10956579855324,
+        "z_imag_ohm": -14.25857713954824,
+        "z_abs_ohm": 15.512376229685096,
+        "coil_rms_A_at_3V3_fundamental": 0.1559314892811762,
+        "coil_peak_V_at_3V3_fundamental": 26.36292386944406
+      },
+      {
+        "scenario": "coil_L0.9_R1_C5p",
+        "la": 1.4031044392942883e-06,
+        "ra": 1.0,
+        "ca": 5e-12,
+        "z_real_ohm": 8.071870053042954,
+        "z_imag_ohm": -10.701629202286773,
+        "z_abs_ohm": 13.404475138417345,
+        "coil_rms_A_at_3V3_fundamental": 0.2270608136106035,
+        "coil_peak_V_at_3V3_fundamental": 38.38857033011733
+      },
+      {
+        "scenario": "coil_L0.9_R2.5_C1p",
+        "la": 1.4031044392942883e-06,
+        "ra": 2.5,
+        "ca": 1e-12,
+        "z_real_ohm": 6.977319600946179,
+        "z_imag_ohm": -14.717203079167454,
+        "z_abs_ohm": 16.287389455870567,
+        "coil_rms_A_at_3V3_fundamental": 0.14660600631394674,
+        "coil_peak_V_at_3V3_fundamental": 24.790841261323823
+      },
+      {
+        "scenario": "coil_L0.9_R2.5_C5p",
+        "la": 1.4031044392942883e-06,
+        "ra": 2.5,
+        "ca": 5e-12,
+        "z_real_ohm": 9.340303841275242,
+        "z_imag_ohm": -11.578084680205507,
+        "z_abs_ohm": 14.875930919083702,
+        "coil_rms_A_at_3V3_fundamental": 0.20038919158583368,
+        "coil_peak_V_at_3V3_fundamental": 33.88549189759096
+      },
+      {
+        "scenario": "coil_L1.1_R1_C1p",
+        "la": 1.7149054258041303e-06,
+        "ra": 1.0,
+        "ca": 1e-12,
+        "z_real_ohm": 83.57629582215458,
+        "z_imag_ohm": -15.261846554210369,
+        "z_abs_ohm": 84.95834969911172,
+        "coil_rms_A_at_3V3_fundamental": 0.1252663713935911,
+        "coil_peak_V_at_3V3_fundamental": 25.884477271641483
+      },
+      {
+        "scenario": "coil_L1.1_R1_C5p",
+        "la": 1.7149054258041303e-06,
+        "ra": 1.0,
+        "ca": 5e-12,
+        "z_real_ohm": 45.08973941626499,
+        "z_imag_ohm": -73.94466074740971,
+        "z_abs_ohm": 86.60772167466476,
+        "coil_rms_A_at_3V3_fundamental": 0.09237187377700899,
+        "coil_peak_V_at_3V3_fundamental": 19.08730683837989
+      },
+      {
+        "scenario": "coil_L1.1_R2.5_C1p",
+        "la": 1.7149054258041303e-06,
+        "ra": 2.5,
+        "ca": 1e-12,
+        "z_real_ohm": 68.97212525986446,
+        "z_imag_ohm": -20.971755957831384,
+        "z_abs_ohm": 72.09000354291342,
+        "coil_rms_A_at_3V3_fundamental": 0.12027549181719333,
+        "coil_peak_V_at_3V3_fundamental": 24.856240113905724
+      },
+      {
+        "scenario": "coil_L1.1_R2.5_C5p",
+        "la": 1.7149054258041303e-06,
+        "ra": 2.5,
+        "ca": 5e-12,
+        "z_real_ohm": 43.753610544343026,
+        "z_imag_ohm": -64.47564213124178,
+        "z_abs_ohm": 77.91974630285962,
+        "coil_rms_A_at_3V3_fundamental": 0.09027531832961141,
+        "coil_peak_V_at_3V3_fundamental": 18.656377578323323
+      }
+    ],
+    "half_circuit_relative_difference": 1.058576662150296e-07,
+    "part_tolerance_samples": 200,
+    "random_seed": 7160,
+    "tolerance_ranges": {
+      "z_real_ohm": [
+        15.69816165788515,
+        22.802051289925178
+      ],
+      "z_imag_ohm": [
+        -2.851008168480435,
+        2.0162608901338523
+      ],
+      "coil_peak_V_at_3V3_fundamental": [
+        43.133195033651816,
+        50.397661834571736
+      ]
+    },
+    "scope": "Passive schematic with ideal TX and assumed RX/coil loads; no EM extraction, active RF or tag model."
+  },
+  "i2c": {
+    "cases": [
+      {
+        "ref": "R19",
+        "assumed_capacitance_pF": 100.0,
+        "rise_30_70_ns": 188.26867936754024,
+        "standard_mode_rise_pass": true,
+        "within_400pF_design_ceiling": true
+      },
+      {
+        "ref": "R19",
+        "assumed_capacitance_pF": 200.0,
+        "rise_30_70_ns": 376.5383891293728,
+        "standard_mode_rise_pass": true,
+        "within_400pF_design_ceiling": true
+      },
+      {
+        "ref": "R19",
+        "assumed_capacitance_pF": 400.0,
+        "rise_30_70_ns": 753.0784888872699,
+        "standard_mode_rise_pass": true,
+        "within_400pF_design_ceiling": true
+      },
+      {
+        "ref": "R19",
+        "assumed_capacitance_pF": 600.0,
+        "rise_30_70_ns": 1129.6173884854907,
+        "standard_mode_rise_pass": false,
+        "within_400pF_design_ceiling": false
+      },
+      {
+        "ref": "R20",
+        "assumed_capacitance_pF": 100.0,
+        "rise_30_70_ns": 188.26867936754024,
+        "standard_mode_rise_pass": true,
+        "within_400pF_design_ceiling": true
+      },
+      {
+        "ref": "R20",
+        "assumed_capacitance_pF": 200.0,
+        "rise_30_70_ns": 376.5383891293728,
+        "standard_mode_rise_pass": true,
+        "within_400pF_design_ceiling": true
+      },
+      {
+        "ref": "R20",
+        "assumed_capacitance_pF": 400.0,
+        "rise_30_70_ns": 753.0784888872699,
+        "standard_mode_rise_pass": true,
+        "within_400pF_design_ceiling": true
+      },
+      {
+        "ref": "R20",
+        "assumed_capacitance_pF": 600.0,
+        "rise_30_70_ns": 1129.6173884854907,
+        "standard_mode_rise_pass": false,
+        "within_400pF_design_ceiling": false
+      }
+    ],
+    "pcf8574_max_bus_Hz": 100000,
+    "scope": "RC edge only; device protocol, clock stretching, pin leakage and rail startup not simulated."
+  },
+  "rc": {
+    "esp-enable": {
+      "time_to_logic_high_ms": 15.40173026416243,
+      "high_fraction": 0.75,
+      "rc_tau_ms": 11.11,
+      "scope": "Passive RC after ideal reset release; initial capacitance tolerance only."
+    },
+    "oled-reset": {
+      "time_to_logic_high_ms": 1.7880854271129025,
+      "high_fraction": 0.8,
+      "rc_tau_ms": 1.1110000000000002,
+      "scope": "Passive RC after ideal reset release; initial capacitance tolerance only."
+    },
+    "battery-adc": {
+      "rc_tau_ms": 26.108500000000006,
+      "settling_error_at_120ms_pct": 1.009006018900116,
+      "time_to_0_1pct_ms": 180.35112129884277,
+      "settling_error_at_200ms_pct": 0.04711468021183496,
+      "scope": "Initial R/C tolerance only; capacitor temperature, ADC sampling, DC error and leakage excluded."
+    }
+  },
+  "dc": {
+    "buck": {
+      "min_V": 3.227966633359017,
+      "max_V": 3.393227565663153,
+      "cases": 16,
+      "scope": "Ideal DC regulation only; no startup, load regulation, stability, dropout or ripple validation."
+    },
+    "oled-boost": {
+      "min_V": 11.499140906805223,
+      "max_V": 13.504143785959059,
+      "cases": 16,
+      "scope": "Ideal DC regulation only; no startup, load regulation, stability, dropout or ripple validation."
+    },
+    "reset_release_margin_mV": 39.242633359017454,
+    "reset_falling_margin_mV": 86.36663335901717
+  },
+  "simulations_completed": 261,
+  "solver_errors": [],
+  "engine_warnings": [
+    "stderr Warning: can't find the initialization file spinit."
+  ],
+  "not_simulated": [
+    "SY8089/AP3012 closed-loop switching and startup",
+    "USB insertion/removal, inrush, source/cable and charger dynamics",
+    "MCP1700 dropout and regulator stability",
+    "PN7160 active TX/RX, firmware, tags and read range",
+    "ESP32 execution, RF behavior and current bursts",
+    "SSD1309 panel/firmware sequencing",
+    "27.12 MHz oscillator startup/drive",
+    "USB signal integrity and ESD",
+    "PCB parasitic extraction, EM coupling, thermal behavior and EMC"
+  ]
+}

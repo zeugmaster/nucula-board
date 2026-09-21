@@ -1,0 +1,9 @@
+Nucula oled-reset passive release, +R and +C tolerance
+* IC reset output is replaced by an ideal open circuit after release.
+* No supervisor delay, glitch filtering, GPIO clamp or transistor model.
+Vrail n1 0 3.0
+R35 n1 n39 10100
+C48 n39 0 1.1e-07 IC=0
+.options reltol=1e-8
+.tran 1e-06 0.01 uic
+.end
