@@ -60,7 +60,7 @@
     "DS1": {
       "position_rotation": [
         80.0,
-        108.65,
+        108.85,
         180.0
       ],
       "unchanged": true,
@@ -251,7 +251,7 @@
       "name": "GND F.Cu outside NFC and fracture band",
       "layer": "F.Cu",
       "net": "GND",
-      "filled_area_mm2": 3338.7548,
+      "filled_area_mm2": 3338.4509,
       "nfc_overlap_mm2": 0.0,
       "fracture_overlap_mm2": 0.0
     },
@@ -259,7 +259,7 @@
       "name": "GND B.Cu outside NFC and fracture band",
       "layer": "B.Cu",
       "net": "GND",
-      "filled_area_mm2": 3810.9451,
+      "filled_area_mm2": 3811.0429,
       "nfc_overlap_mm2": 0.0,
       "fracture_overlap_mm2": 0.0
     },
@@ -267,7 +267,7 @@
       "name": "GND In1.Cu outside NFC and fracture band",
       "layer": "In1.Cu",
       "net": "GND",
-      "filled_area_mm2": 3427.0674,
+      "filled_area_mm2": 3426.988,
       "nfc_overlap_mm2": 0.0,
       "fracture_overlap_mm2": 0.0
     },
@@ -275,7 +275,7 @@
       "name": "GND In2.Cu outside NFC and fracture band",
       "layer": "In2.Cu",
       "net": "GND",
-      "filled_area_mm2": 3747.7035,
+      "filled_area_mm2": 3748.102,
       "nfc_overlap_mm2": 0.0,
       "fracture_overlap_mm2": 0.0
     }
@@ -337,7 +337,7 @@
     },
     "GND": {
       "0.225": 8.6316,
-      "0.3": 177.0956,
+      "0.3": 177.2956,
       "0.2502": 1.1542,
       "0.2": 18.6454,
       "0.18": 0.1707,
@@ -370,11 +370,11 @@
       "0.5624": 4.2076
     },
     "/I2C_SDA": {
-      "0.2": 147.1353,
+      "0.2": 147.0729,
       "0.15": 7.0067
     },
     "/I2C_SCL": {
-      "0.2": 150.7221,
+      "0.2": 150.7293,
       "0.15": 3.3428
     },
     "/KEY_INT_N": {
@@ -390,7 +390,7 @@
       "0.15": 3.451
     },
     "/OLED {slash} SSD1309 {slash} 0x3C/OLED_12V5": {
-      "0.2": 60.2352,
+      "0.2": 60.4352,
       "0.15": 0.8485
     },
     "/Power + ESP32-C3/VBUS": {
@@ -415,7 +415,7 @@
       "0.3": 2.35
     },
     "/+3V0": {
-      "0.2": 50.0274,
+      "0.2": 50.2274,
       "0.15": 0.8463
     },
     "/NFC {slash} PN7160 {slash} 0x28/RF_EMC_N": {
@@ -570,10 +570,10 @@
       "0.2502": 0.5528
     },
     "/OLED {slash} SSD1309 {slash} 0x3C/OLED_IREF": {
-      "0.2": 10.5209
+      "0.2": 10.3825
     },
     "/OLED {slash} SSD1309 {slash} 0x3C/OLED_VCOMH": {
-      "0.2": 7.3079,
+      "0.2": 7.1079,
       "0.15": 0.7915
     },
     "Net-(U2-LX)": {

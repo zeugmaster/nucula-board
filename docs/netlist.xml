@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>nucula-v2.kicad_sch</source>
-    <date>2026-09-21T17:40:54</date>
+    <date>2026-09-21T19:04:23</date>
     <tool>Eeschema 10.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -4027,33 +4027,33 @@
     </comp>
     <comp ref="DS1">
       <value>SSD1309 OLED / 24-pin</value>
-      <footprint>Connector_FFC-FPC:Hirose_FH12-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal</footprint>
-      <datasheet>https://www.hirose.com/product/p/CL0586-0521-0-55</datasheet>
+      <footprint>Nucula_Project:Hirose_FH12A-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal</footprint>
+      <datasheet>https://www.hirose.com/en/product/p/CL0586-0555-2-55</datasheet>
       <fields>
-        <field name="MPN">FH12-24S-0.5SH(55)</field>
-        <field name="Footprint Status">SELECTED: 24-way 0.50 mm bottom-contact socket; electrical pinout checked against supplied CON24 breakout schematic</field>
+        <field name="MPN">FH12A-24S-0.5SH(55)</field>
+        <field name="Footprint Status">SELECTED: 24-way 0.50 mm top-contact socket; Hirose drawing EDC3-150555-51 sheet 1 lands verified; supplied CON24 electrical map retained</field>
         <field name="I2C Address">0x3C</field>
-        <field name="Actual Flex">24 contacts per user and supplied CON24 schematic; retained 0.50 mm pitch/contact-side assumption; exact glass MPN not yet known</field>
-        <field name="Status">24-pin electrical map verified against supplied breakout; DS1 BOM is socket; glass MPN and mechanical fit remain to verify</field>
+        <field name="Actual Flex">24 contacts per user and supplied CON24 schematic; NFP1309-02Y ribbon marking; 0.50 mm pitch, 0.30 mm thick; mounted tip contacts face away from PCB</field>
+        <field name="Status">Top-contact socket selected for user-confirmed ribbon orientation; DS1 BOM is socket only; display and keyboard modules excluded; final physical fit and panel operation need prototype verification</field>
         <field name="Manufacturer">HRS(Hirose)</field>
-        <field name="Connector Mechanics">FH12 bottom-contact, 0.30 mm flex thickness; verify panel flex thickness, contact face and fold against actual glass</field>
-        <field name="Connector Datasheet">https://www.hirose.com/product/p/CL0586-0521-0-55</field>
-        <field name="LCSC">C202112</field>
+        <field name="Connector Mechanics">FH12A top-contact, 0.30 mm flex, 0.50 mm pitch; same copper lands and pin order; larger body/latch checked in layout; open latch height about 3.6 mm</field>
+        <field name="Connector Datasheet">https://www.hirose.com/en/product/p/CL0586-0555-2-55</field>
+        <field name="LCSC">C506794</field>
         <field name="Panel Datasheet">https://files.waveshare.com/wiki/2.42inch-OLED-Module/SSD1309Datasheet.pdf</field>
-        <field name="Footprint">Connector_FFC-FPC:Hirose_FH12-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal</field>
-        <field name="Datasheet">https://www.hirose.com/product/p/CL0586-0521-0-55</field>
+        <field name="Footprint">Nucula_Project:Hirose_FH12A-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal</field>
+        <field name="Datasheet">https://www.hirose.com/en/product/p/CL0586-0555-2-55</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Nucula_Project" part="SSD1309_COG_24" description="24-contact SSD1309 glass interface; supplied CON24 breakout pinout"/>
-      <property name="MPN" value="FH12-24S-0.5SH(55)"/>
-      <property name="Footprint Status" value="SELECTED: 24-way 0.50 mm bottom-contact socket; electrical pinout checked against supplied CON24 breakout schematic"/>
+      <property name="MPN" value="FH12A-24S-0.5SH(55)"/>
+      <property name="Footprint Status" value="SELECTED: 24-way 0.50 mm top-contact socket; Hirose drawing EDC3-150555-51 sheet 1 lands verified; supplied CON24 electrical map retained"/>
       <property name="I2C Address" value="0x3C"/>
-      <property name="Actual Flex" value="24 contacts per user and supplied CON24 schematic; retained 0.50 mm pitch/contact-side assumption; exact glass MPN not yet known"/>
-      <property name="Status" value="24-pin electrical map verified against supplied breakout; DS1 BOM is socket; glass MPN and mechanical fit remain to verify"/>
+      <property name="Actual Flex" value="24 contacts per user and supplied CON24 schematic; NFP1309-02Y ribbon marking; 0.50 mm pitch, 0.30 mm thick; mounted tip contacts face away from PCB"/>
+      <property name="Status" value="Top-contact socket selected for user-confirmed ribbon orientation; DS1 BOM is socket only; display and keyboard modules excluded; final physical fit and panel operation need prototype verification"/>
       <property name="Manufacturer" value="HRS(Hirose)"/>
-      <property name="Connector Mechanics" value="FH12 bottom-contact, 0.30 mm flex thickness; verify panel flex thickness, contact face and fold against actual glass"/>
-      <property name="Connector Datasheet" value="https://www.hirose.com/product/p/CL0586-0521-0-55"/>
-      <property name="LCSC" value="C202112"/>
+      <property name="Connector Mechanics" value="FH12A top-contact, 0.30 mm flex, 0.50 mm pitch; same copper lands and pin order; larger body/latch checked in layout; open latch height about 3.6 mm"/>
+      <property name="Connector Datasheet" value="https://www.hirose.com/en/product/p/CL0586-0555-2-55"/>
+      <property name="LCSC" value="C506794"/>
       <property name="Panel Datasheet" value="https://files.waveshare.com/wiki/2.42inch-OLED-Module/SSD1309Datasheet.pdf"/>
       <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
       <property name="Sheetfile" value="oled.kicad_sch"/>
@@ -5160,10 +5160,10 @@
       <fields>
         <field name="Reference">DS</field>
         <field name="Value">SSD1309_COG_24</field>
-        <field name="Footprint">Connector_FFC-FPC:Hirose_FH12-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal</field>
+        <field name="Footprint">Nucula_Project:Hirose_FH12A-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal</field>
         <field name="Datasheet">parts documentation/i2c-display-breakout-schematic.png.png</field>
         <field name="Description">24-contact SSD1309 glass interface; supplied CON24 breakout pinout</field>
-        <field name="Footprint Status">SELECTED: 24-way 0.50 mm bottom-contact socket; electrical pinout checked against supplied CON24 breakout schematic</field>
+        <field name="Footprint Status">SELECTED: 24-way 0.50 mm top-contact socket; Hirose drawing EDC3-150555-51 sheet 1 lands verified; supplied CON24 electrical map retained</field>
       </fields>
       <pins>
         <pin num="1" name="GND" type="power_in"/>

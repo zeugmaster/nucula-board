@@ -125,8 +125,29 @@
       "project_net": "GND"
     }
   ],
-  "socket_mpn": "FH12-24S-0.5SH(55)",
-  "socket_lcsc": "C202112",
-  "footprint": "Connector_FFC-FPC:Hirose_FH12-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal",
-  "mechanical_limit": "Pinout source does not specify glass MPN, pitch, flex thickness or contact face. Retain existing 0.50 mm bottom-contact assumption; verify actual panel fit."
+  "socket_mpn": "FH12A-24S-0.5SH(55)",
+  "socket_lcsc": "C506794",
+  "footprint": "Nucula_Project:Hirose_FH12A-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal",
+  "user_reported_panel": {
+    "reported_date": "2026-09-21",
+    "source": "User report in manufacturing-planning conversation",
+    "scope": "One of the user's intended displays; other variants not qualified",
+    "ribbon_marking": "NFP1309-02Y",
+    "manufacturer_ordering_code_verified": false,
+    "construction": "chip on glass",
+    "diagonal_inches": 2.4,
+    "contact_pitch_mm": 0.5,
+    "insertion_thickness_mm": 0.3,
+    "exposed_contact_face": "Same face as the display light-emitting surface",
+    "mounted_tip_contact_face_relative_to_pcb": "Away from PCB, confirmed by user for intended mounted/folded arrangement",
+    "required_socket_contact_orientation": "Top",
+    "include_panel_in_assembly_bom": false
+  },
+  "mechanical_limit": "Top-contact socket matches user-confirmed 24 contacts, 0.50 mm pitch, 0.30 mm thickness and contacts away from PCB. Manufacturer land pattern and polarity marker checked; physical panel pin-1 correspondence, insertion length, fold strain, enclosure clearance and panel operation still require prototype validation. Ribbon marking is not independently verified as a manufacturer ordering code.",
+  "socket_model": "${KIPRJMOD}/libraries/Nucula_Project.3dshapes/FH12A-24S-0.5SH-envelope.wrl",
+  "placement_mm_deg": [
+    80.0,
+    108.85,
+    180.0
+  ]
 }

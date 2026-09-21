@@ -1,6 +1,11 @@
 # OLED correction to the 24-contact interface
 
-2026-09-21 · KiCad 10.0.6 · compared with saved design `600d88a`
+2026-09-21 · KiCad 10.0.6
+
+**Current socket: FH12A-24S-0.5SH(55), C506794, top contacts.**
+The [subsequent top-contact update](top-contact.md) supersedes the socket and
+placement described in the historical 26-to-24-contact correction below.
+The electrical map remains unchanged. Historical baseline: `600d88a`.
 
 The user's [exact breakout schematic](../../parts%20documentation/i2c-display-breakout-schematic.png.png)
 shows **J1 CON24**. This supersedes the previous 26-contact assumption.
@@ -85,13 +90,35 @@ Reproduce with `tools/check_schematic.py`, native KiCad PCB DRC,
 The last check compares against commit `600d88a` and requires fresh simulation
 and netlist results for the current saved design.
 
-## Remaining panel information
+## Panel identification and remaining mechanical check
 
-The exact glass part number is still unknown. The schematic establishes the
-electrical map but does not establish flex pitch, thickness, contact face or
-fold direction. The selected [Hirose socket](https://www.hirose.com/product/p/CL0586-0521-0-55)
-has **0.50 mm pitch, bottom contacts and a 0.30 mm flex requirement**. These
-retained mechanical assumptions must be checked against the actual panel
-before manufacturing. Panel current, sequencing and optical operation still
-need prototype validation. No display-glass 3D model or validated panel SPICE
-model is available in this project.
+On 2026-09-21 the user identified one of the intended displays as a **2.4-inch
+chip-on-glass panel with `NFP1309-02Y` printed on its ribbon**, and confirmed:
+
+- **0.50 mm contact pitch**.
+- **0.30 mm insertion thickness**.
+- **Exposed contacts on the same face as the light-emitting display surface**.
+- **With the display mounted and ribbon folded into DS1, the tip contacts face
+  away from the PCB** (subsequently confirmed by the user).
+
+These are user-confirmed properties of that panel. An exact-marking web search
+did not locate a manufacturer datasheet; the ribbon marking is not treated as a
+verified manufacturer ordering code. Other display variants must be checked
+separately. The supplied CON24 breakout remains the electrical pin-map source.
+
+The selected socket is now **Hirose FH12A-24S-0.5SH(55), C506794**, with top
+contacts matching the confirmed insertion orientation. Its manufacturer drawing,
+lands, pin order, paste pattern and updated placement have been checked. The
+[completed connector update](top-contact.md) includes the revised schematic/PCB,
+BOM, sourcing observation and regression reports. The 0.20 mm move toward the
+keyboard clears the larger latch while keeping all other footprints fixed.
+
+Actual panel pin-1 correspondence, insertion length, fold strain, enclosure
+clearance and display operation still require physical prototype checks.
+
+The **OLED panel and external keyboard/keypad remain excluded from the assembly
+BOM and CPL**. DS1 purchases only the PCB socket; onboard display support and
+keyboard interface components remain populated as specified. J3/J4/J5 remain
+DNP/user-fitted. Panel current, sequencing and optical operation still require
+prototype validation; no glass assembly model or validated panel SPICE model
+is claimed.

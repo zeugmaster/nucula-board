@@ -201,15 +201,14 @@ SDA on 14 and 15, reset on 9, IREF on 21, VCOM on 22 and panel power on 23.
 Pins 1–24 retain their previous signal assignments; the extra ground contacts
 25 and 26 were removed. Pin 4 remains NC. See the [complete map and checks](oled24/README.md).
 
-DS1's purchased item is **Hirose FH12-24S-0.5SH(55)**, JLCPCB **C202112**;
-the OLED glass is supplied separately. Its 24-way footprint and 3D model replace
-the old 26-way part at the same PCB center and rotation. Local escapes are rerouted.
-
-The [Hirose socket specification](https://www.hirose.com/product/p/CL0586-0521-0-55)
-calls for **0.50 mm pitch, 0.30 mm flex and bottom contacts**. The schematic alone
-does not establish these mechanical dimensions. The exact glass MPN, insertion
-thickness, pin-1 view, contact face and fold remain to verify against the panel.
-No panel assembly model is claimed.
+DS1's purchased item is **Hirose FH12A-24S-0.5SH(55)**, JLCPCB **C506794**;
+the OLED glass is supplied separately and excluded from the assembly BOM.
+The top-contact socket matches the user-confirmed NFP1309-02Y ribbon: 0.50 mm
+pitch, 0.30 mm thickness and mounted tip contacts facing away from the PCB.
+Its drawing-derived footprint/paste and local routing pass the
+[connector update checks](oled24/top-contact.md). DS1 moved 0.20 mm toward the
+keyboard while retaining its 180° orientation. Physical insertion, panel pin-1
+correspondence and operation still need prototype validation.
 
 ## Reproduction
 

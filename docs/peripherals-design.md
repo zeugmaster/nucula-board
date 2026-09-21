@@ -142,11 +142,12 @@ inductor current. The AP3012's 500 mA switch limit is **typical**, not a
 guaranteed display-output rating. Full-white current, efficiency and overshoot
 must be measured before fixing brightness limits.
 
-DS1 now uses **Hirose FH12-24S-0.5SH(55)**, a 24-way 0.50 mm socket,
-with JLCPCB C202112 in the BOM; the panel is supplied separately. The connector's
-PCB center and rotation are preserved. Pins 1 and 24 are ground.
-The exact glass MPN is still unknown: verify the assumed pitch, 0.30 mm flex
-thickness, bottom-contact insertion, pin-1 view and fold against the real panel.
+DS1 uses **Hirose FH12A-24S-0.5SH(55)**, a 24-way 0.50 mm top-contact socket,
+JLCPCB **C506794**. The OLED panel is supplied separately and excluded from the
+assembly BOM. The user-confirmed NFP1309-02Y flex has 0.30 mm thickness and its
+mounted tip contacts face away from the PCB. The
+[connector update](oled24/top-contact.md) preserves all 24 net assignments and
+rotates nothing, moving DS1 only 0.20 mm toward the keyboard for latch clearance.
 
 ## Breakaway keyboard
 

@@ -3,7 +3,7 @@
     "nucula-v2.kicad_sch": "4081b173500c0a25de31dc031a0f1ada0357ff43d71c6eef7a2d901b89453ae0",
     "power-mcu.kicad_sch": "87cdb59acb6c5b88d273f9ccd8cbc1848213c045ed9a5452e7b29e5f002cfa69",
     "nfc.kicad_sch": "cd0d8381536f28a9dcab08e50a41ef020105190ca204bd47ace184fb11758f13",
-    "oled.kicad_sch": "7aa42a98406d5b87c4f709b0d457c8981ca6c88fce73d513fc41514e919c5ed6",
+    "oled.kicad_sch": "6ec08982ae62f4b6196a94bae57195ff38833512f93fda12b959927023c96754",
     "keyboard.kicad_sch": "9489d40c8a70b60037e6dd5a4849a09903941db6114d3cf6ed89d5500f043259"
   },
   "kicad_version": "10.0.6",
@@ -164,7 +164,7 @@
     },
     "DS1": {
       "value": "SSD1309 OLED / 24-pin",
-      "status": "24-pin electrical map verified against supplied breakout; DS1 BOM is socket; glass MPN and mechanical fit remain to verify"
+      "status": "Top-contact socket selected for user-confirmed ribbon orientation; DS1 BOM is socket only; display and keyboard modules excluded; final physical fit and panel operation need prototype verification"
     }
   },
   "ready_to_begin_pcb_layout": true,
@@ -184,7 +184,7 @@
     "USB steady-state estimate is 1.10 A from a specified 5 V / 1.5 A supply; startup/inrush and thermal performance require bench validation.",
     "Power MLCC ordering codes and typical DC-bias curves selected; combined-corner screening is an estimate, not a guaranteed minimum.",
     "RF prototype values and 40mm coil selected; actual RL/C, tuning and RF stress still require measurement. NDK crystal selected; load/frequency/startup/drive require bench verification.",
-    "OLED 24-contact electrical map verified against the supplied CON24 breakout; glass MPN, flex pitch/thickness/contact face/fold and panel current remain to verify.",
+    "OLED CON24 electrical map retained; NFP1309-02Y user confirms 0.50mm pitch, 0.30mm flex and mounted contacts away from PCB. FH12A top-contact socket selected; physical panel pin-1 correspondence, insertion length, fold/enclosure clearance and panel current remain hardware checks.",
     "MCP1700 low-current dropout and AP3012 switch-current limits need bench validation.",
     "Keyboard break line and routing are covered by the PCB layout report; reconnect cable capacitance still needs validation."
   ],
@@ -194,7 +194,6 @@
     "${KICAD_SHARE}/3dmodels/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
     "${KICAD_SHARE}/3dmodels/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
     "${KICAD_SHARE}/3dmodels/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
-    "${KICAD_SHARE}/3dmodels/Connector_FFC-FPC.3dshapes/Hirose_FH12-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal.step",
     "${KICAD_SHARE}/3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.step",
     "${KICAD_SHARE}/3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x09_P2.54mm_Vertical.step",
     "${KICAD_SHARE}/3dmodels/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step",
@@ -209,6 +208,7 @@
     "${KICAD_SHARE}/3dmodels/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
     "${KICAD_SHARE}/3dmodels/Resistor_SMD.3dshapes/R_1206_3216Metric.step",
     "${KIPRJMOD}/libraries/Nucula_Project.3dshapes/ESP32-C3-WROOM-02-N4.step",
+    "${KIPRJMOD}/libraries/Nucula_Project.3dshapes/FH12A-24S-0.5SH-envelope.wrl",
     "${KIPRJMOD}/libraries/Nucula_Project.3dshapes/PN7160A1HN_C100E.step"
   ]
 }

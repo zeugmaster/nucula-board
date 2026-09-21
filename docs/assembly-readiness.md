@@ -2,8 +2,11 @@
 
 Checked 2026-09-20 against KiCad 10.0.6 and JLCPCB's public catalogue;
 J2 changed to SMT and its stock rechecked 2026-09-21 (Berlin).
-DS1 corrected to the 24-position FH12-24S-0.5SH(55), C202112, and its public
-catalogue record checked on 2026-09-21. Other dated stock observations remain unchanged.
+DS1 now uses the 24-position **top-contact FH12A-24S-0.5SH(55), C506794**.
+Its manufacturer land pattern, pin order and updated placement are checked;
+the public catalogue record was refreshed on 2026-09-21, with 5,189 available
+against ten needed. Other dated stock observations remain unchanged.
+[Connector update and verification](oled24/top-contact.md).
 **Every physical symbol has a resolving
 footprint and every populated purchased item has an exact manufacturer part
 number and JLCPCB C-code.** This is not a fabrication release: the main PCB
@@ -29,7 +32,8 @@ The stock screen passes for ten boards, but two RF parts have limited stock.
 - [Updated schematic](schematic.pdf) and [complete engineering BOM](bom.csv).
 
 DS1's purchased item is the Hirose FPC **socket**, not the OLED glass. The OLED
-and keypad are user-supplied external modules. J3/J4/J5 remain DNP; J3 still has
+and keypad are user-supplied external modules, excluded from assembly BOM/CPL
+as explicitly reconfirmed by the user on 2026-09-21. J3/J4/J5 remain DNP; J3 still has
 isolated end pins 1/9 and P0–P6 on pins 2–8. A1 is manufactured copper, excluded
 from the assembly BOM and future CPL. J2 is the populated **JST-PH 2 mm vertical
 surface-mount battery connector**, **B2B-PH-SM4-TB(LF)(SN) / C160352**. JLCPCB
@@ -76,7 +80,7 @@ support parts, and routes the five J4-to-J5 connections. Its
 
 | Reference | Final selection | Why / footprint consequence |
 |---|---|---|
-| DS1 | Hirose FH12-24S-0.5SH(55), **C202112** | Corrected to the supplied 24-contact CON24 map; 0.50 mm socket replaces the 26-way footprint at the same center and rotation. |
+| DS1 | Hirose FH12A-24S-0.5SH(55), **C506794** | Top-contact socket for confirmed mounted flex orientation; 24-contact CON24 map retained, manufacturer-derived lands/paste and larger body outline. Moved 0.20 mm toward keyboard. |
 | J2 | JST B2B-PH-SM4-TB(LF)(SN), **C160352** | Stocked SMT top-entry PH connector; same 2 mm mating family and battery polarity. Larger footprint with two solder hold-down tabs replaces through-hole assembly. |
 | U5 | TI TLV803EA30DBZR, **C5218924** | The DCKR variant was out of stock. Same 3.08 V threshold and nominal 200 ms delay; **SOT-23 replaces SC70**. Both selected variants use 1=GND, 2=RESET, 3=VDD. |
 | J1 | GCT USB4105-GF-A-120, **C5184243** | Unsuffixed part had zero available order quantity. Same XY land pattern; shell stakes are **1.20 mm**, suitable for the specified 1.6 mm board. |
@@ -159,8 +163,8 @@ Sources: [JLCPCB BOM format](https://jlcpcb.com/help/article/bill-of-materials-f
 ## Footprints and 3D coverage
 
 All assigned footprint files resolve, and every schematic physical pin has a
-matching numbered footprint pad. **123 of 128 symbols have resolving 3D models.**
-The exceptions are A1 (etched copper, no separate body) and L1–L4 (footprints
+matching numbered footprint pad. **122 of 128 symbols have resolving 3D models.**
+The exceptions are J2, A1 (etched copper, no separate body) and L1–L4 (footprints
 ready, optional body models absent). The ESP32 and PN7160 STEP files are bundled;
 other assigned models use installed KiCad libraries. These are visual package
 representations, not a certification of every selected vendor variant. In
@@ -172,8 +176,12 @@ Yuden part: **0.8 × 2.7 mm pads on 2.2 mm centers**, matching the project footp
 The source explicitly identifies NRS3015T2R2MNGH as the former part number.
 The RF inductors retain their manufacturer-derived 0805HP lands; the NDK crystal
 retains its specific 2016 land pattern. U8 is the **wide 7.5 mm SOIC-16** variant.
-The Hirose socket accepts 0.30 mm flex and has bottom contacts; the confirmed
-electrical pin order remains, with physical fit/fold to check during placement.
+The Hirose socket accepts 0.30 mm flex and has **top contacts**, matching the
+user-confirmed NFP1309-02Y panel pitch/thickness and mounted contacts facing away
+from the PCB. The project-local footprint and simplified envelope model are
+checked against the manufacturer drawing. Actual insertion length, panel pin-1
+correspondence, enclosure clearance and operation remain prototype checks.
+See the [connector update](oled24/top-contact.md).
 
 ## Reproduce and refresh
 
@@ -197,6 +205,6 @@ python3 tools/check_assembly_readiness.py --boards 10
 The refresh script rejects part-number/manufacturer/package changes rather than
 silently substituting a part. JLCPCB's undocumented public endpoint may change;
 if retrieval fails, inspect the linked part pages. The stock report is dated and
-should always be regenerated close to ordering. Do not generate a CPL from the
-blank PCB; export it after placement and verify every polarized part's orientation
-in JLCPCB's assembly preview.
+should always be regenerated close to ordering. Export the CPL from the
+final placed PCB and verify every polarized part's orientation in JLCPCB's
+assembly preview.

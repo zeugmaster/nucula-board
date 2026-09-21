@@ -4,7 +4,7 @@
     "reference_image_hash": true,
     "same_130_footprints": true,
     "all_other_footprints_identical": true,
-    "ds1_center_rotation_lock_preserved": true,
+    "ds1_documented_position_rotation_lock": true,
     "selected_socket_and_model": true,
     "exactly_24_numbered_pads": true,
     "pad_row_pitch_and_number_order": true,
@@ -233,7 +233,7 @@
     "segment": {
       "removed": 43,
       "added": 40,
-      "changed": 0
+      "changed": 15
     },
     "arc": {
       "removed": 0,
@@ -243,10 +243,10 @@
     "via": {
       "removed": 0,
       "added": 0,
-      "changed": 5
+      "changed": 11
     }
   },
-  "board_sha256": "edd228bc2805aee9b5e7edf9403beb46de530372c278b33141e43c9e269921cc",
-  "netlist_sha256": "c823b6f65c649eec51dfff9017aac8f9cd70cad7e370aa50896e22a7886d4df2",
-  "limits": "Pinout source does not specify glass MPN, pitch, flex thickness or contact face. Retain existing 0.50 mm bottom-contact assumption; verify actual panel fit."
+  "board_sha256": "c9ceb3e2f4234543fddb1297efd6d905d61f4fb353fb5913bab42164abaf5a2b",
+  "netlist_sha256": "ed111c37b5b3c23cc9de5d75fd36939da6920e6d392dcce4d91169a3c95809bc",
+  "limits": "Top-contact socket matches user-confirmed 24 contacts, 0.50 mm pitch, 0.30 mm thickness and contacts away from PCB. Manufacturer land pattern and polarity marker checked; physical panel pin-1 correspondence, insertion length, fold strain, enclosure clearance and panel operation still require prototype validation. Ribbon marking is not independently verified as a manufacturer ordering code."
 }

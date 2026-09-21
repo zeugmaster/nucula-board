@@ -42,9 +42,14 @@ tree now has calculated starting values, 0805 manual tuning pads and TX isolatio
 links. [A separate bare-coil coupon](prototypes/nfc-antenna/nfc-antenna.kicad_pro)
 is available for fabrication and measurement. The OLED now uses the **24-contact
 CON24 pinout** in the user's exact breakout schematic, superseding the earlier
-26-contact assumption. DS1 is a Hirose FH12-24S-0.5SH(55), 0.5 mm socket.
+26-contact assumption. DS1 is a Hirose FH12A-24S-0.5SH(55), 0.5 mm top-contact socket (C506794).
 [Pinout and regression checks](docs/oled24/README.md) cover all 24 connections.
-The glass MPN, flex thickness/contact face and physical fit remain to verify.
+The user identifies one panel by ribbon marking **NFP1309-02Y**: 2.4-inch COG,
+0.50 mm pitch, 0.30 mm flex, contacts on the emitting face. In its confirmed
+mounted position the tip contacts face away from the PCB. The
+[top-contact update and checks](docs/oled24/top-contact.md) cover the new lands,
+paste apertures and 0.20 mm placement adjustment. The display and external keypad are excluded
+from the assembly BOM; DS1 purchases the socket only.
 See the library notes for unavailable models.
 
 The shared I²C bus runs at 100 kHz: PN7160 `0x28`, SSD1309 `0x3C`, PCF8574T `0x20`.

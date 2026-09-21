@@ -1806,7 +1806,7 @@
     )
   )
   (symbol "SSD1309_COG_24"
-    (property "Footprint Status" "SELECTED: 24-way 0.50 mm bottom-contact socket; electrical pinout checked against supplied CON24 breakout schematic"
+    (property "Footprint Status" "SELECTED: 24-way 0.50 mm top-contact socket; Hirose drawing EDC3-150555-51 sheet 1 lands verified; supplied CON24 electrical map retained"
       (at 0 0 0)
       (effects
         (font
@@ -1830,7 +1830,7 @@
         ) hide
       )
     )
-    (property "Footprint" "Connector_FFC-FPC:Hirose_FH12-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal"
+    (property "Footprint" "Nucula_Project:Hirose_FH12A-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal"
       (at 0 0 0)
       (effects
         (font

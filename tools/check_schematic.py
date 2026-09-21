@@ -181,13 +181,16 @@ for ref, address in [('U6','0x28'),('U8','0x20'),('DS1','0x3C')]:
     assert fields[ref]['I2C Address'] == address
 assert fields['DS1']['Footprint Status'].startswith('SELECTED:')
 assert fields['DS1']['Actual Flex'].startswith('24 contacts per user')
-assert fields['DS1']['MPN'] == 'FH12-24S-0.5SH(55)'
-assert fields['DS1']['LCSC'] == 'C202112'
+assert fields['DS1']['MPN'] == 'FH12A-24S-0.5SH(55)'
+assert fields['DS1']['LCSC'] == 'C506794'
+assert components['DS1'].findtext('footprint') == 'Nucula_Project:Hirose_FH12A-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal'
+assert 'top-contact' in fields['DS1']['Connector Mechanics']
 assert net_of['DS1.1'] == net_of['DS1.24'] == 'GND'
 assert not {'DS1.25', 'DS1.26'} & set(net_of)
 assert {int(pin.split('.')[1]) for pin in net_of if pin.startswith('DS1.')} == set(range(1, 25))
 # All 24 nets are checked above against the supplied CON24 breakout.
-# Exact glass MPN and flex mechanical fit remain unverified.
+# User confirms flex pitch/thickness and top-contact insertion. Actual panel
+# pin-1 correspondence, insertion length and operation still need hardware checks.
 assert fields['Y1']['MPN'] == 'NX2016SA-27.12MHZ-EXS00A-CS06346'
 assert fields['Y1']['LCSC'] == 'C3008209'
 assert components['Y1'].findtext('footprint') == 'Nucula_Project:Crystal_NDK_NX2016SA_2.0x1.6mm'
@@ -311,7 +314,7 @@ report={
            'USB steady-state estimate is 1.10 A from a specified 5 V / 1.5 A supply; startup/inrush and thermal performance require bench validation.',
            'Power MLCC ordering codes and typical DC-bias curves selected; combined-corner screening is an estimate, not a guaranteed minimum.',
            'RF prototype values and 40mm coil selected; actual RL/C, tuning and RF stress still require measurement. NDK crystal selected; load/frequency/startup/drive require bench verification.',
-           'OLED 24-contact electrical map verified against the supplied CON24 breakout; glass MPN, flex pitch/thickness/contact face/fold and panel current remain to verify.',
+           'OLED CON24 electrical map retained; NFP1309-02Y user confirms 0.50mm pitch, 0.30mm flex and mounted contacts away from PCB. FH12A top-contact socket selected; physical panel pin-1 correspondence, insertion length, fold/enclosure clearance and panel current remain hardware checks.',
            'MCP1700 low-current dropout and AP3012 switch-current limits need bench validation.',
            'Keyboard break line and routing are covered by the PCB layout report; reconnect cable capacitance still needs validation.'],
  'models':sorted(models)

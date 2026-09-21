@@ -33,11 +33,18 @@ The global `Nucula` library remains available separately, including PN7160.
 - SSD1309_COG_24: 24-contact glass interface checked against the user's exact
   CON24 breakout schematic. These are flex/contact numbers, not bare SSD1309
   die pads. The new reference supersedes the earlier 26-contact assumption.
-  The assigned Hirose FH12-24S-0.5SH(55) socket has 0.5 mm pitch and a standard
-  3D model. It accepts 0.30 mm flex and uses bottom contacts; these mechanical
-  assumptions still require verification against the unidentified glass.
-  DS1's BOM item is the socket; the glass is supplied separately. No glass
-  assembly model is claimed.
+  The assigned **Hirose FH12A-24S-0.5SH(55)** socket has 0.5 mm pitch, top
+  contacts and a 0.30 mm flex requirement. Its project-local footprint uses
+  Hirose drawing EDC3-150555-51 sheet 1: 0.30 × 1.30 mm signal lands,
+  0.25 × 1.30 mm separate paste apertures and 1.80 × 2.20 mm mounting lands.
+  The independently authored VRML envelope is a simplified closed-latch
+  illustration generated from published dimensions; it is not vendor CAD.
+  Regenerate both with `tools/generate_fh12a_footprint.py`. The downloaded
+  manufacturer STEP model is not distributed with the project.
+  The user confirms NFP1309-02Y pitch/thickness and mounted contacts facing
+  away from the PCB. [Connector checks](../docs/oled24/top-contact.md).
+  DS1 purchases only the socket; the display and keyboard modules remain
+  excluded from the assembly BOM. No display-glass assembly model is claimed.
 - Crystal_NDK_NX2016SA_2.0x1.6mm: adapted from KiCad's four-pad 2016 crystal
   footprint and standard package model, with NDK EXD14B-00467 recommended
   0.85 × 0.75 mm lands at 1.35 × 1.05 mm center spacing. Y1 uses the exact

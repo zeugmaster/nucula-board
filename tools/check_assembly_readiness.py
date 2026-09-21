@@ -56,7 +56,7 @@ def main():
     assert selected == {r for p in parts.values() for r in p['references']}
     byref = {r['Reference']: r for r in bom}
     expected = {
-        'DS1': ('C202112', 'Connector_FFC-FPC:Hirose_FH12-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal'),
+        'DS1': ('C506794', 'Nucula_Project:Hirose_FH12A-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal'),
         'J2': ('C160352', 'Nucula_Project:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical'),
         'U5': ('C5218924', 'Package_TO_SOT_SMD:SOT-23'),
         'R30': ('C2088132', 'Resistor_SMD:R_0805_2012Metric'),

@@ -60,10 +60,14 @@ def run(board_path, drc_path):
     modified_others = [r for r in oldfps if r != 'DS1' and canonical(oldfps[r]) != canonical(newfps[r])]
     checks['all_other_footprints_identical'] = not modified_others
     ds = newfps['DS1']
-    checks['ds1_center_rotation_lock_preserved'] = all(canonical(child(ds, k)) == canonical(child(oldfps['DS1'], k)) for k in ['at', 'locked', 'layer'])
+    # Top-contact latch needs 0.20mm more space toward the keyboard. Keep X,
+    # rotation and lock; this is the documented subsequent connector update.
+    checks['ds1_documented_position_rotation_lock'] = (
+        canonical(child(ds, 'at')) == ['at', *source['placement_mm_deg']] and
+        all(canonical(child(ds, k)) == canonical(child(oldfps['DS1'], k)) for k in ['locked', 'layer']))
     checks['selected_socket_and_model'] = (uq(ds[1]) == source['footprint'] and
         props(ds)['MPN'] == source['socket_mpn'] and props(ds)['LCSC'] == source['socket_lcsc'] and
-        len(children(ds, 'model')) == 1 and 'FH12-24S' in uq(child(ds, 'model')[1]))
+        len(children(ds, 'model')) == 1 and uq(child(ds, 'model')[1]) == source['socket_model'])
     pads = {uq(p[1]): p for p in children(ds, 'pad') if uq(p[1]).isdigit()}
     checks['exactly_24_numbered_pads'] = set(pads) == {str(i) for i in range(1, 25)}
     checks['pad_row_pitch_and_number_order'] = all(
@@ -116,6 +120,7 @@ def run(board_path, drc_path):
     current_constraints.pop('authorized_amendments', None)
     previous_constraints['pad_nets']['DS1'] = [p for p in previous_constraints['pad_nets']['DS1'] if p[0] not in ['25', '26']]
     previous_constraints['values']['DS1'] = 'SSD1309 OLED / 24-pin'
+    previous_constraints['fixed_placements']['DS1'] = [80.0, 108.85, 180.0]
     checks['no_unrelated_validation_constraints_relaxed'] = current_constraints == previous_constraints
     drc = json.loads(drc_path.read_text())
     before_drc = json.loads((OUT / 'baseline-drc.json').read_text())

@@ -47,5 +47,19 @@
     "sha256": "447624f4f2f7d37c58c1eaa7ee314ad757fe7aff48f6186491ef6f69fbc00b96",
     "checked_date": "2026-09-21",
     "use": "J2 SMT change: page 2 top-entry land pattern and circuit 1 orientation; page 4 B2B-PH-SM4-TB two-circuit header dimensions."
+  },
+  {
+    "file": "parts documentation/FH12A-24S-0.5SH-drawing.pdf",
+    "source": "https://www.hirose.com/en/product/document?clcode=CL0586-0555-2-55&documentid=0000906835&documenttype=2DDrawing&lang=en&productname=FH12A-24S-0.5SH%2855%29&series=FH12",
+    "sha256": "8eb5a93ce09b22760384ad2fbf78b5555290335f4a51295b34db0c0775e87f4c",
+    "checked_date": "2026-09-21",
+    "use": "DS1 EDC3-150555-51 sheet 1: top-contact polarity mark; 24 lands at 0.50 pitch, 0.30x1.30 copper, 0.25x1.30 paste, 1.80x2.20 mounting lands; 0.30mm flex."
+  },
+  {
+    "file": "parts documentation/Hirose-FH12-series.pdf",
+    "source": "https://www.hirose.com/en/product/document?clcode=CL0586-0555-2-55&documentid=D31648_en&documenttype=Catalog&lang=en&productname=FH12A-24S-0.5SH%2855%29&series=FH12",
+    "sha256": "71ee7e624d8db9ee105c477a89cf6b1b38edb580639f0ab6c29c90acedf43a7f",
+    "checked_date": "2026-09-21",
+    "use": "DS1 FH12A top-contact family and 24-position body dimensions, pages 2 and 6."
   }
 ]

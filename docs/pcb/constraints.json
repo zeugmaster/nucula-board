@@ -18,7 +18,7 @@
     ],
     "DS1": [
       80.0,
-      108.65,
+      108.85,
       180.0
     ],
     "J1": [
@@ -2475,6 +2475,21 @@
         "Remove nonexistent DS1 pads 25 and 26 from expected ground membership"
       ],
       "preserved": "All original fixed positions, other values/pad nets, outline, antenna and routing requirements"
+    },
+    {
+      "date": "2026-09-21",
+      "reference": "DS1",
+      "reason": "User requested top-contact FH12A replacement; move 0.20 mm toward keyboard to clear enlarged latch courtyard",
+      "old_position_rotation": [
+        80.0,
+        108.65,
+        180.0
+      ],
+      "new_position_rotation": [
+        80.0,
+        108.85,
+        180.0
+      ]
     }
   ]
 }

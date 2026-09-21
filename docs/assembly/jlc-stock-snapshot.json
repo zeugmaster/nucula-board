@@ -1705,35 +1705,29 @@
         "Y1"
       ]
     },
-    "C202112": {
-      "componentCode": "C202112",
-      "componentModelEn": "FH12-24S-0.5SH(55)",
+    "C506794": {
+      "componentCode": "C506794",
+      "componentModelEn": "FH12A-24S-0.5SH(55)",
       "componentBrandEn": "HRS(Hirose)",
       "componentSpecificationEn": "SMD,P=0.5mm,Surface Mount，Right Angle",
-      "describe": "-40℃~+85℃ 0.3mm 0.5mm 24P 2mm Bottom Contact Gold Hinged Lid Phosphor bronze Surface Mount, Right Angle SMD,P=0.5mm,卧贴 FFC, FPC (Flat Flexible) Connector Assemblies ROHS",
       "componentLibraryType": "expand",
       "assemblyMode": "smtWeld",
       "assemblyComponentFlag": false,
-      "componentProductType": 0,
-      "needAuditFlag": false,
-      "xrayFlag": false,
-      "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_HRS-Hirose-FH12-24S-0-5SH-55_C202112.pdf",
-      "dataManualOfficialLink": "",
-      "orderInstructionEnglish": "",
-      "preMinPurchaseNum": 20,
-      "overseasStockCount": 12285,
-      "canPresaleNumber": 12226,
+      "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_HRS-Hirose-FH12A-24S-0-5SH-55_C506794.pdf",
+      "preMinPurchaseNum": 14,
+      "overseasStockCount": 5464,
+      "canPresaleNumber": 5189,
       "leastPatchNumber": 0,
       "lossNumber": 0,
       "isBuyComponent": "1",
       "allowPostFlag": true,
-      "initialPrice": 0.5127,
-      "source": "https://jlcpcb.com/partdetail/C202112",
-      "retrieved_at": "2026-09-21T15:31:42.580430+00:00",
-      "page_sha256": "6dad13674d7c59dc12357780efa9e0815847140e6014e6fe34c2d58f73d736d6",
+      "initialPrice": 0.8057,
       "references": [
         "DS1"
-      ]
+      ],
+      "source": "https://jlcpcb.com/partdetail/C506794",
+      "retrieved_at": "2026-09-21T17:02:12.255813+00:00",
+      "page_sha256": "cefdf10bb26528fc7844ad73aa385f0d23d5973c4c4876c10206568da0ef1370"
     }
   }
 }

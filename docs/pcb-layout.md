@@ -4,8 +4,8 @@
 
 The remaining **113 footprints are placed and all 91 nets are connected**.
 All 130 footprints, including the two mouse-bite patterns, are on F.Cu.
-The 17 previously placed footprints remain at their original positions and
-rotations and are locked. The board outline, antenna copper, antenna rule areas,
+The 17 constrained footprints remain locked; DS1 has the documented 0.20 mm
+placement amendment below, with the other 16 original positions/rotations retained. The board outline, antenna copper, antenna rule areas,
 and five breakaway bridge crossings are preserved.
 
 [Top view](pcb/top.svg) · [NFC detail](pcb/nfc.svg) ·
@@ -15,12 +15,13 @@ and five breakaway bridge crossings are preserved.
 
 ![Completed PCB, top copper and silkscreen](pcb/top.png)
 
-The OLED connector is now the **24-position FH12-24S-0.5SH(55)**. Its center
-(80, 108.65 mm), 180° rotation and lock remain unchanged. Pins 1–24 retain their
-net assignments; nonexistent contacts 25/26 are removed. The smaller socket
-shifts its pad row by 0.50 mm, so its local escapes were rerouted and five vias
-shifted. [Pinout and regression report](oled24/README.md) confirms all other
-footprints and the user’s back silkscreen are preserved.
+The OLED connector is **FH12A-24S-0.5SH(55), C506794**, a 24-position top-contact
+socket for the confirmed ribbon orientation. Its center is now **(80, 108.85 mm)**,
+0.20 mm toward the keyboard from the prior position; its 180° rotation and lock
+are retained. The larger latch courtyard is clear of neighboring components.
+All 24 nets are unchanged, with 47 local trace segments and eight vias adjusted.
+The other 129 footprints, board graphics, NFC/USB geometry and outline are
+unchanged. [Manufacturer lands, paste and regression checks](oled24/top-contact.md).
 
 ## NFC placement and copper
 
