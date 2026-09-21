@@ -1,0 +1,132 @@
+{
+  "source": "parts documentation/i2c-display-breakout-schematic.png.png",
+  "source_sha256": "3b3b5a9669af047fa21de5f49c3bdc627357c478b17c06bb66094a0840f3a8e7",
+  "source_connector": "J1 CON24 / SSD1309",
+  "target_connector": "DS1",
+  "pins": [
+    {
+      "pin": 1,
+      "reference_name": "GND",
+      "project_net": "GND"
+    },
+    {
+      "pin": 2,
+      "reference_name": "VLSS",
+      "project_net": "GND"
+    },
+    {
+      "pin": 3,
+      "reference_name": "VSS",
+      "project_net": "GND"
+    },
+    {
+      "pin": 4,
+      "reference_name": "N.C.",
+      "project_net": "NC"
+    },
+    {
+      "pin": 5,
+      "reference_name": "VDD",
+      "project_net": "+3V0"
+    },
+    {
+      "pin": 6,
+      "reference_name": "BS1",
+      "project_net": "+3V0"
+    },
+    {
+      "pin": 7,
+      "reference_name": "BS2",
+      "project_net": "GND"
+    },
+    {
+      "pin": 8,
+      "reference_name": "CS#",
+      "project_net": "GND"
+    },
+    {
+      "pin": 9,
+      "reference_name": "RES#",
+      "project_net": "OLED_RES_N"
+    },
+    {
+      "pin": 10,
+      "reference_name": "D/C#",
+      "project_net": "GND"
+    },
+    {
+      "pin": 11,
+      "reference_name": "R/W#",
+      "project_net": "GND"
+    },
+    {
+      "pin": 12,
+      "reference_name": "E/RD#",
+      "project_net": "GND"
+    },
+    {
+      "pin": 13,
+      "reference_name": "D0",
+      "project_net": "I2C_SCL"
+    },
+    {
+      "pin": 14,
+      "reference_name": "D1",
+      "project_net": "I2C_SDA"
+    },
+    {
+      "pin": 15,
+      "reference_name": "D2",
+      "project_net": "I2C_SDA"
+    },
+    {
+      "pin": 16,
+      "reference_name": "D3",
+      "project_net": "GND"
+    },
+    {
+      "pin": 17,
+      "reference_name": "D4",
+      "project_net": "GND"
+    },
+    {
+      "pin": 18,
+      "reference_name": "D5",
+      "project_net": "GND"
+    },
+    {
+      "pin": 19,
+      "reference_name": "D6",
+      "project_net": "GND"
+    },
+    {
+      "pin": 20,
+      "reference_name": "D7",
+      "project_net": "GND"
+    },
+    {
+      "pin": 21,
+      "reference_name": "IREF",
+      "project_net": "OLED_IREF"
+    },
+    {
+      "pin": 22,
+      "reference_name": "VCOM",
+      "project_net": "OLED_VCOMH"
+    },
+    {
+      "pin": 23,
+      "reference_name": "VOP",
+      "project_net": "OLED_12V5"
+    },
+    {
+      "pin": 24,
+      "reference_name": "GND",
+      "project_net": "GND"
+    }
+  ],
+  "socket_mpn": "FH12-24S-0.5SH(55)",
+  "socket_lcsc": "C202112",
+  "footprint": "Connector_FFC-FPC:Hirose_FH12-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal",
+  "mechanical_limit": "Pinout source does not specify glass MPN, pitch, flex thickness or contact face. Retain existing 0.50 mm bottom-contact assumption; verify actual panel fit."
+}

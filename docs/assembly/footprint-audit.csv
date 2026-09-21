@@ -106,7 +106,7 @@ C46,Assemble,CL31B475KBHNNNE,Capacitor_SMD:C_1206_3216Metric,b2e4a08e3aaf40bc587
 C47,Assemble,CL21B225KAFNNNE,Capacitor_SMD:C_0805_2012Metric,62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb,${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step,Available
 C48,Assemble,CL10B104KB8NNNC,Capacitor_SMD:C_0603_1608Metric,fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405,${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step,Available
 D4,Assemble,SS14-E3/61T,Diode_SMD:D_SMA,f7cba3b52ed8b34dce89170722de58324eac04e9e61a095e0eab37b9ca93cb7f,${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMA.step,Available
-DS1,Assemble,FH12-26S-0.5SH(55),Connector_FFC-FPC:Hirose_FH12-26S-0.5SH_1x26-1MP_P0.50mm_Horizontal,4976dcf8b5a391863b089b0ae59e7093752aad1a2f0d3fc5453da83732aa4b17,${KICAD10_3DMODEL_DIR}/Connector_FFC-FPC.3dshapes/Hirose_FH12-26S-0.5SH_1x26-1MP_P0.50mm_Horizontal.step,Available
+DS1,Assemble,FH12-24S-0.5SH(55),Connector_FFC-FPC:Hirose_FH12-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal,cb74368b5abe8f3aec49ab37ab6c6d02f1f23fa0101aab3c22a64e5bc5d532e2,${KICAD10_3DMODEL_DIR}/Connector_FFC-FPC.3dshapes/Hirose_FH12-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal.step,Available
 L4,Assemble,LPS4018-103MRC,Nucula_Project:L_Coilcraft_LPS4018,eba2835b26e2022e44edca5d349be24f8522d7ce450dc189bf3d261225c580be,,No model assigned
 Q3,Assemble,IRLML6402TRPBF,Package_TO_SOT_SMD:SOT-23,0d88c86c1b6d8c1aae4aa8c09386264c089d4451a128b6ccd63ed253f4300b15,${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step,Available
 Q4,Assemble,BSS138,Package_TO_SOT_SMD:SOT-23,0d88c86c1b6d8c1aae4aa8c09386264c089d4451a128b6ccd63ed253f4300b15,${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step,Available

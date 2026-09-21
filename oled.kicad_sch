@@ -1762,8 +1762,8 @@
       )
       (embedded_fonts no)
     )
-    (symbol "Nucula_Project:SSD1309_COG_26"
-      (property "Footprint Status" "PROVISIONAL: confirm panel flex pitch, orientation and contact side before layout"
+    (symbol "Nucula_Project:SSD1309_COG_24"
+      (property "Footprint Status" "SELECTED: 24-way 0.50 mm bottom-contact socket; electrical pinout checked against supplied CON24 breakout schematic"
         (at 0 0 0)
         (effects
           (font
@@ -1771,7 +1771,7 @@
           ) hide
         )
       )
-      (property "Description" "26-contact OLED glass interface; Waveshare pin order/orientation confirmed by user"
+      (property "Description" "24-contact SSD1309 glass interface; supplied CON24 breakout pinout"
         (at 0 0 0)
         (effects
           (font
@@ -1779,7 +1779,7 @@
           ) hide
         )
       )
-      (property "Datasheet" "https://files.waveshare.com/wiki/2.42inch-OLED-Module/SSD1309Datasheet.pdf"
+      (property "Datasheet" "parts documentation/i2c-display-breakout-schematic.png.png"
         (at 0 0 0)
         (effects
           (font
@@ -1787,7 +1787,7 @@
           ) hide
         )
       )
-      (property "Footprint" "Connector_FFC-FPC:Hirose_FH12-26S-0.5SH_1x26-1MP_P0.50mm_Horizontal"
+      (property "Footprint" "Connector_FFC-FPC:Hirose_FH12-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal"
         (at 0 0 0)
         (effects
           (font
@@ -1795,7 +1795,7 @@
           ) hide
         )
       )
-      (property "Value" "SSD1309_COG_26"
+      (property "Value" "SSD1309_COG_24"
         (at 0 0 0)
         (effects
           (font
@@ -1816,7 +1816,7 @@
       )
       (in_bom yes)
       (on_board yes)
-      (symbol "SSD1309_COG_26_0_1"
+      (symbol "SSD1309_COG_24_0_1"
         (rectangle
           (start -15.24 30.48)
           (end 15.24 -30.48)
@@ -1829,7 +1829,7 @@
           )
         )
       )
-      (symbol "SSD1309_COG_26_1_1"
+      (symbol "SSD1309_COG_24_1_1"
         (pin input line
           (at -20.32 26.67 0)
           (length 5.08)
@@ -2121,7 +2121,7 @@
         (pin power_in line
           (at 20.32 22.86 180)
           (length 5.08)
-          (name "VCC_PANEL"
+          (name "VOP_PANEL"
             (effects
               (font
                 (size 1.016 1.016)
@@ -2193,7 +2193,7 @@
         (pin power_in line
           (at 20.32 7.62 180)
           (length 5.08)
-          (name "VSS"
+          (name "VLSS"
             (effects
               (font
                 (size 1.016 1.016)
@@ -2244,42 +2244,6 @@
             )
           )
         )
-        (pin power_in line
-          (at 20.32 -3.81 180)
-          (length 5.08)
-          (name "GND"
-            (effects
-              (font
-                (size 1.016 1.016)
-              )
-            )
-          )
-          (number "25"
-            (effects
-              (font
-                (size 1.016 1.016)
-              )
-            )
-          )
-        )
-        (pin power_in line
-          (at 20.32 -7.62 180)
-          (length 5.08)
-          (name "GND"
-            (effects
-              (font
-                (size 1.016 1.016)
-              )
-            )
-          )
-          (number "26"
-            (effects
-              (font
-                (size 1.016 1.016)
-              )
-            )
-          )
-        )
         (pin no_connect line
           (at 20.32 -11.43 180)
           (length 5.08)
@@ -2301,7 +2265,7 @@
       )
     )
   )
-  (text "OLED / confirmed 26-contact Waveshare interface"
+  (text "OLED / verified CON24 breakout pinout"
     (at 15.24 17.78 0)
     (effects
       (font
@@ -4809,7 +4773,7 @@
     (uuid 9afa91ac-acef-5467-bd0a-156d90dc78bc)
   )
   (symbol
-    (lib_id "Nucula_Project:SSD1309_COG_26")
+    (lib_id "Nucula_Project:SSD1309_COG_24")
     (at 345.44 88.9 0)
     (unit 1)
     (in_bom yes)
@@ -4825,7 +4789,7 @@
         (justify left)
       )
     )
-    (property "Value" "SSD1309 OLED / 26-pin"
+    (property "Value" "SSD1309 OLED / 24-pin"
       (at 321.31 50.8 0)
       (effects
         (font
@@ -4834,7 +4798,7 @@
         (justify left)
       )
     )
-    (property "Footprint" "Connector_FFC-FPC:Hirose_FH12-26S-0.5SH_1x26-1MP_P0.50mm_Horizontal"
+    (property "Footprint" "Connector_FFC-FPC:Hirose_FH12-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal"
       (at 345.44 88.9 0)
       (effects
         (font
@@ -4844,7 +4808,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410010332_HRS-Hirose-FH12-26S-0-5SH-55_C202113.pdf"
+    (property "Datasheet" "https://www.hirose.com/product/p/CL0586-0521-0-55"
       (at 345.44 88.9 0)
       (effects
         (font
@@ -4854,7 +4818,7 @@
         (justify left)
       )
     )
-    (property "MPN" "FH12-26S-0.5SH(55)"
+    (property "MPN" "FH12-24S-0.5SH(55)"
       (at 345.44 88.9 0)
       (effects
         (font
@@ -4864,7 +4828,7 @@
         (justify left)
       )
     )
-    (property "Footprint Status" "SELECTED: 26-way 0.50 mm; user confirms Waveshare pin order/orientation, including outer ground contacts"
+    (property "Footprint Status" "SELECTED: 24-way 0.50 mm bottom-contact socket; electrical pinout checked against supplied CON24 breakout schematic"
       (at 345.44 88.9 0)
       (effects
         (font
@@ -4884,7 +4848,7 @@
         (justify left)
       )
     )
-    (property "Actual Flex" "26 contacts total: 24 counted plus two outer GND contacts; 0.50 mm pitch; copper on emitting side (user confirmed)"
+    (property "Actual Flex" "24 contacts per user and supplied CON24 schematic; retained 0.50 mm pitch/contact-side assumption; exact glass MPN not yet known"
       (at 345.44 88.9 0)
       (effects
         (font
@@ -4893,7 +4857,7 @@
         (hide yes)
       )
     )
-    (property "Status" "Pinout/orientation confirmed by user; DS1 BOM part is the FPC socket, OLED glass supplied separately"
+    (property "Status" "24-pin electrical map verified against supplied breakout; DS1 BOM is socket; glass MPN and mechanical fit remain to verify"
       (at 345.44 88.9 0)
       (effects
         (font
@@ -4911,7 +4875,7 @@
         (hide yes)
       )
     )
-    (property "Connector Mechanics" "FH12 bottom-contact, 0.30 mm flex thickness; check insertion/fold and physical fit during PCB placement"
+    (property "Connector Mechanics" "FH12 bottom-contact, 0.30 mm flex thickness; verify panel flex thickness, contact face and fold against actual glass"
       (at 345.44 88.9 0)
       (effects
         (font
@@ -4920,7 +4884,7 @@
         (hide yes)
       )
     )
-    (property "Connector Datasheet" "https://www.hirose.com/product/p/CL0586-0576-2-55"
+    (property "Connector Datasheet" "https://www.hirose.com/product/p/CL0586-0521-0-55"
       (at 345.44 88.9 0)
       (effects
         (font
@@ -4998,12 +4962,6 @@
     (pin "24"
       (uuid 51313526-c618-5cd6-9590-e997ea60d232)
     )
-    (pin "25"
-      (uuid 6a21a6d7-9fc4-5421-b15a-8184b6805a3e)
-    )
-    (pin "26"
-      (uuid a255c41f-1d8b-5c13-9555-6f5817a852a0)
-    )
     (pin "4"
       (uuid 63c11ecc-30a8-5a1a-9a7a-c07b2daa9403)
     )
@@ -5015,7 +4973,7 @@
         )
       )
     )
-    (property "LCSC" "C202113"
+    (property "LCSC" "C202112"
       (at 345.44 88.9 0)
       (effects
         (font
@@ -5516,48 +5474,6 @@
       (justify left)
     )
     (uuid b6ee5eb1-55cf-5b05-91a2-613356d2dbc0)
-  )
-  (wire
-    (pts
-      (xy 365.76 92.71)
-      (xy 373.38 92.71)
-    )
-    (stroke
-      (width 0)
-      (type default)
-    )
-    (uuid 02ade5a3-c543-55d5-9602-c9440b66f198)
-  )
-  (label "GND"
-    (at 373.38 92.71 0)
-    (effects
-      (font
-        (size 1.05 1.05)
-      )
-      (justify left)
-    )
-    (uuid 3f0094da-c0d9-5905-8e1e-ca99a0d8d34f)
-  )
-  (wire
-    (pts
-      (xy 365.76 96.52)
-      (xy 373.38 96.52)
-    )
-    (stroke
-      (width 0)
-      (type default)
-    )
-    (uuid e90e4de8-930c-5b00-81ce-f17b6a335132)
-  )
-  (label "GND"
-    (at 373.38 96.52 0)
-    (effects
-      (font
-        (size 1.05 1.05)
-      )
-      (justify left)
-    )
-    (uuid caf15069-e1be-57ac-a675-68ebbfaf8251)
   )
   (no_connect
     (at 365.76 100.33)
@@ -7553,7 +7469,7 @@
       )
     )
   )
-  (text "26 contacts total; 0.50mm pitch (user confirmed).\n24 counted contacts + two outer GND contacts.\nWaveshare pin order / orientation confirmed.\nDS1: FH12 socket; glass supplied separately.\nCheck 0.30mm flex fit / fold during PCB placement.\nSSD1309 I2C 0x3C, shared pull-ups 3.0V."
+  (text "24 contacts: supplied CON24 breakout schematic.\n13=SCL; 14+15=SDA; 9=RES#; 23=VOP.\n1/2/3/24=GND; 4=NC; 5/6=3.0V.\nDS1: FH12-24S socket; glass MPN unknown.\nVerify 0.30mm flex fit / contact face / fold.\nSSD1309 I2C 0x3C, shared pull-ups 3.0V."
     (at 20.32 246.38 0)
     (effects
       (font

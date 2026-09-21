@@ -10,10 +10,17 @@ and five breakaway bridge crossings are preserved.
 
 [Top view](pcb/top.svg) · [NFC detail](pcb/nfc.svg) ·
 [All copper layers](pcb/copper-layers.svg) ·
-[Six-page copper/silkscreen/assembly PDF](pcb/layers.pdf) ·
+[Seven-page copper/silkscreen/assembly PDF](pcb/layers.pdf) ·
 [Native DRC](pcb/drc.json) · [Geometry checks](pcb/layout-check.json)
 
 ![Completed PCB, top copper and silkscreen](pcb/top.png)
+
+The OLED connector is now the **24-position FH12-24S-0.5SH(55)**. Its center
+(80, 108.65 mm), 180° rotation and lock remain unchanged. Pins 1–24 retain their
+net assignments; nonexistent contacts 25/26 are removed. The smaller socket
+shifts its pad row by 0.50 mm, so its local escapes were rerouted and five vias
+shifted. [Pinout and regression report](oled24/README.md) confirms all other
+footprints and the user’s back silkscreen are preserved.
 
 ## NFC placement and copper
 
@@ -43,7 +50,7 @@ values and topology are unchanged.
 
 ## Routing and manufacturing dimensions
 
-The board contains **1,069 trace segments and 321 through-vias**. Ground pours
+The board contains **1,066 trace segments and 321 through-vias**. Ground pours
 on all four layers are connected with stitching and component-return vias.
 The full fracture band remains free of pours and vias; only the original five
 0.20 mm F.Cu traces cross the cut bridge.

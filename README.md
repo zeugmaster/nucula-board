@@ -40,11 +40,12 @@ All 128 physical components have assigned footprints. A1 is a reusable four-turn
 40 × 40 mm PCB coil with its bottom return and copper keepout included. The NFC
 tree now has calculated starting values, 0805 manual tuning pads and TX isolation
 links. [A separate bare-coil coupon](prototypes/nfc-antenna/nfc-antenna.kicad_pro)
-is available for fabrication and measurement. The user has confirmed the OLED's
-**26-contact Waveshare pin order and orientation**: the initially counted 24
-contacts exclude two outer ground contacts. The 0.5 mm 26-way FPC socket is
-retained; check the physical fit and fold during PCB placement. See the library
-notes for unavailable models.
+is available for fabrication and measurement. The OLED now uses the **24-contact
+CON24 pinout** in the user's exact breakout schematic, superseding the earlier
+26-contact assumption. DS1 is a Hirose FH12-24S-0.5SH(55), 0.5 mm socket.
+[Pinout and regression checks](docs/oled24/README.md) cover all 24 connections.
+The glass MPN, flex thickness/contact face and physical fit remain to verify.
+See the library notes for unavailable models.
 
 The shared I²C bus runs at 100 kHz: PN7160 `0x28`, SSD1309 `0x3C`, PCF8574T `0x20`.
 PCF8574T is an eight-bit I/O expander; no bus multiplexer is needed.

@@ -68,11 +68,11 @@
   ],
   "shortages": [],
   "through_hole_assembly": [],
-  "scope": "Component and footprint readiness; preliminary PCB placement exists, final routing and CPL pending",
+  "scope": "Component and footprint readiness; routed PCB checked separately in docs/pcb/layout-check.json; CPL and manufacturing release pending",
   "stock_reserved": false,
   "quantity_method": "Planning only: max(placements, public minimum placement) + public loss allowance. Final JLCPCB BOM matching controls quantities.",
   "inputs_sha256": {
-    "docs/bom.csv": "e96ff29443c5e8ad01bd10d369012c651c6e7fcef6059bac0e2235ee5a360b1c",
-    "docs/assembly/jlc-stock-snapshot.json": "6103f0c61715cc6c473d5d80c79979b564ec430cb13b334808a51f5302addd73"
+    "docs/bom.csv": "e641209fd5a3ef03627874a409af035f25380fae93e200526a32f256772b9f72",
+    "docs/assembly/jlc-stock-snapshot.json": "36499236bd0a74e2e495bee178b4a0155d19a32b2f5dd4e8447d52a8239eed9e"
   }
 }

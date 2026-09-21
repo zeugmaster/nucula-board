@@ -101,20 +101,18 @@ and power transients still need measurement after layout.
 
 ## OLED glass and boost supply
 
-The supplied
-[Waveshare 2.42-inch OLED schematic](../parts%20documentation/2.42inch-OLED-Module-Schematic.pdf)
-defines a **26-contact SSD1309 glass interface**. The user confirms its pin
-order and orientation: the earlier count of 24 excluded two outer ground
-contacts. The ribbon pitch is 0.5 mm, with exposed contacts on the emitting
-side. DS1 represents this interface and the controller is already on the
-glass. Pin 6/BS1 is high, BS2 and CS are low,
-and pin 10/SA0 is low. D0 is SCL; **D1 and D2 both connect to SDA** for data and
+The supplied [exact CON24 breakout schematic](../parts%20documentation/i2c-display-breakout-schematic.png.png)
+defines a **24-contact SSD1309 glass interface**, correcting the earlier
+26-contact assumption. DS1 represents the glass interface; the controller is
+already on the glass. Pin 6/BS1 is high, BS2 and CS are low, and pin 10/SA0 is
+low. Pin 13/D0 is SCL; **14/D1 and 15/D2 both connect to SDA** for data and
 acknowledgement. Unused parallel inputs are grounded; pin 4 is NC.
+[All 24 pins are independently checked](oled24/README.md).
 
-The shared 3.0 V logic rail replaces the reference's RT9193-33 stage. The
-TXB0108 translation stage is omitted: all hosts share compatible voltage levels
-and open-drain I²C. Q5 translates the MCU reset signal without applying a 3.3 V
-push-pull level to the OLED logic rail.
+The project retains its shared 3.0 V logic supply and switched AP3012 boost
+instead of the breakout's XC6206 and HM1308 stages. All I²C hosts share compatible
+voltage levels and open-drain signaling. Q5 translates the MCU reset signal
+without applying a 3.3 V push-pull level to the OLED logic rail.
 
 U7 is **AP3012KTR-E1**, with 10 µH Coilcraft LPS4018-103MRC and an SS14
 Schottky output diode. R30/R31 = 1.8 MΩ / 200 kΩ, both 0.1%, set nominal
@@ -144,11 +142,11 @@ inductor current. The AP3012's 500 mA switch limit is **typical**, not a
 guaranteed display-output rating. Full-white current, efficiency and overshoot
 must be measured before fixing brightness limits.
 
-DS1's assigned **Hirose FH12-26S-0.5SH(55)** 26-way footprint is retained,
-with the socket ordering code now in the BOM; the panel is supplied separately.
-Pins 1 and 26 connect to ground. Check its 0.30 mm flex thickness requirement,
-bottom-contact insertion and the intended fold during PCB placement.
-The user-confirmed pinout/orientation closes the electrical interface question.
+DS1 now uses **Hirose FH12-24S-0.5SH(55)**, a 24-way 0.50 mm socket,
+with JLCPCB C202112 in the BOM; the panel is supplied separately. The connector's
+PCB center and rotation are preserved. Pins 1 and 24 are ground.
+The exact glass MPN is still unknown: verify the assumed pitch, 0.30 mm flex
+thickness, bottom-contact insertion, pin-1 view and fold against the real panel.
 
 ## Breakaway keyboard
 
@@ -221,8 +219,8 @@ mappings, DNP/region/address fields, available model paths and static voltage
 calculations. The five-page PDF was rendered and visually inspected.
 
 Crystal and critical supply MLCC ordering codes are now selected; see
-[component refinements](component-refinements.md). The user has confirmed the
-26-contact OLED pinout/orientation and 5 V / at least 1.5 A USB-C supply.
+[component refinements](component-refinements.md). The user supplied the
+24-contact OLED reference and confirmed the 5 V / at least 1.5 A USB-C supply.
 PCB placement and routing are complete. RF/oscillator tuning, display sequencing/current and USB power
 transients require prototype measurements. Battery runtime and improved
 low-battery behavior are deferred, as accepted by the user.

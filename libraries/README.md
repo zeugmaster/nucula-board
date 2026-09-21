@@ -30,12 +30,12 @@ The global `Nucula` library remains available separately, including PN7160.
   The KiCad-derived land pattern and installed SamacSys STEP model are included
   with relative paths. The model is a package representation, not an RF model;
   its terms are in [PN7160 model license](../LICENSES/PN7160-model-SamacSys.txt).
-- SSD1309_COG_26: new symbol for the 26-contact glass interface in the supplied
-  Waveshare schematic. These are flex/contact numbers, not bare SSD1309 die pads.
-  The user confirms the reference pin order/orientation: 24 initially counted
-  contacts plus two outer ground contacts. The assigned Hirose FH12 26-way
-  0.5 mm connector and its standard 3D model are retained. The socket accepts
-  0.30 mm flex and uses bottom contacts; check fit/fold during PCB placement.
+- SSD1309_COG_24: 24-contact glass interface checked against the user's exact
+  CON24 breakout schematic. These are flex/contact numbers, not bare SSD1309
+  die pads. The new reference supersedes the earlier 26-contact assumption.
+  The assigned Hirose FH12-24S-0.5SH(55) socket has 0.5 mm pitch and a standard
+  3D model. It accepts 0.30 mm flex and uses bottom contacts; these mechanical
+  assumptions still require verification against the unidentified glass.
   DS1's BOM item is the socket; the glass is supplied separately. No glass
   assembly model is claimed.
 - Crystal_NDK_NX2016SA_2.0x1.6mm: adapted from KiCad's four-pad 2016 crystal

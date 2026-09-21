@@ -640,36 +640,6 @@
         "D4"
       ]
     },
-    "C202113": {
-      "componentCode": "C202113",
-      "componentModelEn": "FH12-26S-0.5SH(55)",
-      "componentBrandEn": "HRS(Hirose)",
-      "componentSpecificationEn": "SMD,P=0.5mm,Surface Mount，Right Angle",
-      "describe": "-40℃~+85℃ 0.3mm 0.5mm 26P 2mm Bottom Contact Gold Hinged Lid Phosphor bronze Surface Mount, Right Angle SMD,P=0.5mm,卧贴 FFC, FPC (Flat Flexible) Connector Assemblies ROHS",
-      "componentLibraryType": "expand",
-      "assemblyMode": "smtWeld",
-      "assemblyComponentFlag": false,
-      "componentProductType": 0,
-      "needAuditFlag": false,
-      "xrayFlag": false,
-      "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2410010332_HRS-Hirose-FH12-26S-0-5SH-55_C202113.pdf",
-      "dataManualOfficialLink": "",
-      "orderInstructionEnglish": "",
-      "preMinPurchaseNum": 14,
-      "overseasStockCount": 3299,
-      "canPresaleNumber": 3296,
-      "leastPatchNumber": 0,
-      "lossNumber": 0,
-      "isBuyComponent": "1",
-      "allowPostFlag": true,
-      "initialPrice": 0.8513,
-      "source": "https://jlcpcb.com/partdetail/C202113",
-      "retrieved_at": "2026-09-20T16:23:27.167109+00:00",
-      "page_sha256": "62a7a0741058a93dc8bb3b8c2348e19890d24734268e8475fef79fe19dfa19b0",
-      "references": [
-        "DS1"
-      ]
-    },
     "C5184243": {
       "componentCode": "C5184243",
       "componentModelEn": "USB4105-GF-A-120",
@@ -1733,6 +1703,36 @@
       "page_sha256": "d5aa4f98931ccd538e16ad17e597f2e944a9ec48660352016ac9fc6dce7a8053",
       "references": [
         "Y1"
+      ]
+    },
+    "C202112": {
+      "componentCode": "C202112",
+      "componentModelEn": "FH12-24S-0.5SH(55)",
+      "componentBrandEn": "HRS(Hirose)",
+      "componentSpecificationEn": "SMD,P=0.5mm,Surface Mount，Right Angle",
+      "describe": "-40℃~+85℃ 0.3mm 0.5mm 24P 2mm Bottom Contact Gold Hinged Lid Phosphor bronze Surface Mount, Right Angle SMD,P=0.5mm,卧贴 FFC, FPC (Flat Flexible) Connector Assemblies ROHS",
+      "componentLibraryType": "expand",
+      "assemblyMode": "smtWeld",
+      "assemblyComponentFlag": false,
+      "componentProductType": 0,
+      "needAuditFlag": false,
+      "xrayFlag": false,
+      "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_HRS-Hirose-FH12-24S-0-5SH-55_C202112.pdf",
+      "dataManualOfficialLink": "",
+      "orderInstructionEnglish": "",
+      "preMinPurchaseNum": 20,
+      "overseasStockCount": 12285,
+      "canPresaleNumber": 12226,
+      "leastPatchNumber": 0,
+      "lossNumber": 0,
+      "isBuyComponent": "1",
+      "allowPostFlag": true,
+      "initialPrice": 0.5127,
+      "source": "https://jlcpcb.com/partdetail/C202112",
+      "retrieved_at": "2026-09-21T15:31:42.580430+00:00",
+      "page_sha256": "6dad13674d7c59dc12357780efa9e0815847140e6014e6fe34c2d58f73d736d6",
+      "references": [
+        "DS1"
       ]
     }
   }

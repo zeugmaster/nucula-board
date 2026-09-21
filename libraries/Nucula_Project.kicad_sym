@@ -1805,8 +1805,8 @@
       )
     )
   )
-  (symbol "SSD1309_COG_26"
-    (property "Footprint Status" "PROVISIONAL: confirm panel flex pitch, orientation and contact side before layout"
+  (symbol "SSD1309_COG_24"
+    (property "Footprint Status" "SELECTED: 24-way 0.50 mm bottom-contact socket; electrical pinout checked against supplied CON24 breakout schematic"
       (at 0 0 0)
       (effects
         (font
@@ -1814,7 +1814,7 @@
         ) hide
       )
     )
-    (property "Description" "26-contact OLED glass interface; Waveshare pin order/orientation confirmed by user"
+    (property "Description" "24-contact SSD1309 glass interface; supplied CON24 breakout pinout"
       (at 0 0 0)
       (effects
         (font
@@ -1822,7 +1822,7 @@
         ) hide
       )
     )
-    (property "Datasheet" "https://files.waveshare.com/wiki/2.42inch-OLED-Module/SSD1309Datasheet.pdf"
+    (property "Datasheet" "parts documentation/i2c-display-breakout-schematic.png.png"
       (at 0 0 0)
       (effects
         (font
@@ -1830,7 +1830,7 @@
         ) hide
       )
     )
-    (property "Footprint" "Connector_FFC-FPC:Hirose_FH12-26S-0.5SH_1x26-1MP_P0.50mm_Horizontal"
+    (property "Footprint" "Connector_FFC-FPC:Hirose_FH12-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal"
       (at 0 0 0)
       (effects
         (font
@@ -1838,7 +1838,7 @@
         ) hide
       )
     )
-    (property "Value" "SSD1309_COG_26"
+    (property "Value" "SSD1309_COG_24"
       (at 0 0 0)
       (effects
         (font
@@ -1859,7 +1859,7 @@
     )
     (in_bom yes)
     (on_board yes)
-    (symbol "SSD1309_COG_26_0_1"
+    (symbol "SSD1309_COG_24_0_1"
       (rectangle
         (start -15.24 30.48)
         (end 15.24 -30.48)
@@ -1872,7 +1872,7 @@
         )
       )
     )
-    (symbol "SSD1309_COG_26_1_1"
+    (symbol "SSD1309_COG_24_1_1"
       (pin input line
         (at -20.32 26.67 0)
         (length 5.08)
@@ -2164,7 +2164,7 @@
       (pin power_in line
         (at 20.32 22.86 180)
         (length 5.08)
-        (name "VCC_PANEL"
+        (name "VOP_PANEL"
           (effects
             (font
               (size 1.016 1.016)
@@ -2236,7 +2236,7 @@
       (pin power_in line
         (at 20.32 7.62 180)
         (length 5.08)
-        (name "VSS"
+        (name "VLSS"
           (effects
             (font
               (size 1.016 1.016)
@@ -2280,42 +2280,6 @@
           )
         )
         (number "24"
-          (effects
-            (font
-              (size 1.016 1.016)
-            )
-          )
-        )
-      )
-      (pin power_in line
-        (at 20.32 -3.81 180)
-        (length 5.08)
-        (name "GND"
-          (effects
-            (font
-              (size 1.016 1.016)
-            )
-          )
-        )
-        (number "25"
-          (effects
-            (font
-              (size 1.016 1.016)
-            )
-          )
-        )
-      )
-      (pin power_in line
-        (at 20.32 -7.62 180)
-        (length 5.08)
-        (name "GND"
-          (effects
-            (font
-              (size 1.016 1.016)
-            )
-          )
-        )
-        (number "26"
           (effects
             (font
               (size 1.016 1.016)

@@ -1,0 +1,252 @@
+{
+  "baseline_commit": "600d88a",
+  "checks": {
+    "reference_image_hash": true,
+    "same_130_footprints": true,
+    "all_other_footprints_identical": true,
+    "ds1_center_rotation_lock_preserved": true,
+    "selected_socket_and_model": true,
+    "exactly_24_numbered_pads": true,
+    "pad_row_pitch_and_number_order": true,
+    "all_91_nets_unchanged_except_removed_25_26": true,
+    "all_24_pins_match_independent_reference": true,
+    "gr_text_preserved": true,
+    "gr_text_box_preserved": true,
+    "gr_poly_preserved": true,
+    "gr_line_preserved": true,
+    "gr_arc_preserved": true,
+    "gr_circle_preserved": true,
+    "dimension_preserved": true,
+    "group_preserved": true,
+    "setup_preserved": true,
+    "layers_preserved": true,
+    "general_preserved": true,
+    "zone_outlines_and_keepouts_preserved": true,
+    "routing_changes_only_oled_escapes": true,
+    "nucula-v2.kicad_pro_unchanged": true,
+    "nucula-v2.kicad_dru_unchanged": true,
+    "power-mcu.kicad_sch_unchanged": true,
+    "nfc.kicad_sch_unchanged": true,
+    "keyboard.kicad_sch_unchanged": true,
+    "no_unrelated_validation_constraints_relaxed": true,
+    "native_drc_no_new_findings": true,
+    "simulation_uses_current_design": true,
+    "all_261_simulation_results_unchanged": true
+  },
+  "passed": true,
+  "pinout": [
+    {
+      "pin": 1,
+      "reference_name": "GND",
+      "project_net": "GND",
+      "schematic_net": "GND",
+      "board_net": "GND",
+      "passed": true
+    },
+    {
+      "pin": 2,
+      "reference_name": "VLSS",
+      "project_net": "GND",
+      "schematic_net": "GND",
+      "board_net": "GND",
+      "passed": true
+    },
+    {
+      "pin": 3,
+      "reference_name": "VSS",
+      "project_net": "GND",
+      "schematic_net": "GND",
+      "board_net": "GND",
+      "passed": true
+    },
+    {
+      "pin": 4,
+      "reference_name": "N.C.",
+      "project_net": "NC",
+      "schematic_net": "unconnected-(DS1-NC-Pad4)",
+      "board_net": "unconnected-(DS1-NC-Pad4)",
+      "passed": true
+    },
+    {
+      "pin": 5,
+      "reference_name": "VDD",
+      "project_net": "+3V0",
+      "schematic_net": "+3V0",
+      "board_net": "+3V0",
+      "passed": true
+    },
+    {
+      "pin": 6,
+      "reference_name": "BS1",
+      "project_net": "+3V0",
+      "schematic_net": "+3V0",
+      "board_net": "+3V0",
+      "passed": true
+    },
+    {
+      "pin": 7,
+      "reference_name": "BS2",
+      "project_net": "GND",
+      "schematic_net": "GND",
+      "board_net": "GND",
+      "passed": true
+    },
+    {
+      "pin": 8,
+      "reference_name": "CS#",
+      "project_net": "GND",
+      "schematic_net": "GND",
+      "board_net": "GND",
+      "passed": true
+    },
+    {
+      "pin": 9,
+      "reference_name": "RES#",
+      "project_net": "OLED_RES_N",
+      "schematic_net": "OLED_RES_N",
+      "board_net": "OLED_RES_N",
+      "passed": true
+    },
+    {
+      "pin": 10,
+      "reference_name": "D/C#",
+      "project_net": "GND",
+      "schematic_net": "GND",
+      "board_net": "GND",
+      "passed": true
+    },
+    {
+      "pin": 11,
+      "reference_name": "R/W#",
+      "project_net": "GND",
+      "schematic_net": "GND",
+      "board_net": "GND",
+      "passed": true
+    },
+    {
+      "pin": 12,
+      "reference_name": "E/RD#",
+      "project_net": "GND",
+      "schematic_net": "GND",
+      "board_net": "GND",
+      "passed": true
+    },
+    {
+      "pin": 13,
+      "reference_name": "D0",
+      "project_net": "I2C_SCL",
+      "schematic_net": "I2C_SCL",
+      "board_net": "I2C_SCL",
+      "passed": true
+    },
+    {
+      "pin": 14,
+      "reference_name": "D1",
+      "project_net": "I2C_SDA",
+      "schematic_net": "I2C_SDA",
+      "board_net": "I2C_SDA",
+      "passed": true
+    },
+    {
+      "pin": 15,
+      "reference_name": "D2",
+      "project_net": "I2C_SDA",
+      "schematic_net": "I2C_SDA",
+      "board_net": "I2C_SDA",
+      "passed": true
+    },
+    {
+      "pin": 16,
+      "reference_name": "D3",
+      "project_net": "GND",
+      "schematic_net": "GND",
+      "board_net": "GND",
+      "passed": true
+    },
+    {
+      "pin": 17,
+      "reference_name": "D4",
+      "project_net": "GND",
+      "schematic_net": "GND",
+      "board_net": "GND",
+      "passed": true
+    },
+    {
+      "pin": 18,
+      "reference_name": "D5",
+      "project_net": "GND",
+      "schematic_net": "GND",
+      "board_net": "GND",
+      "passed": true
+    },
+    {
+      "pin": 19,
+      "reference_name": "D6",
+      "project_net": "GND",
+      "schematic_net": "GND",
+      "board_net": "GND",
+      "passed": true
+    },
+    {
+      "pin": 20,
+      "reference_name": "D7",
+      "project_net": "GND",
+      "schematic_net": "GND",
+      "board_net": "GND",
+      "passed": true
+    },
+    {
+      "pin": 21,
+      "reference_name": "IREF",
+      "project_net": "OLED_IREF",
+      "schematic_net": "OLED_IREF",
+      "board_net": "OLED_IREF",
+      "passed": true
+    },
+    {
+      "pin": 22,
+      "reference_name": "VCOM",
+      "project_net": "OLED_VCOMH",
+      "schematic_net": "OLED_VCOMH",
+      "board_net": "OLED_VCOMH",
+      "passed": true
+    },
+    {
+      "pin": 23,
+      "reference_name": "VOP",
+      "project_net": "OLED_12V5",
+      "schematic_net": "OLED_12V5",
+      "board_net": "OLED_12V5",
+      "passed": true
+    },
+    {
+      "pin": 24,
+      "reference_name": "GND",
+      "project_net": "GND",
+      "schematic_net": "GND",
+      "board_net": "GND",
+      "passed": true
+    }
+  ],
+  "other_footprints_modified": [],
+  "routing_changes": {
+    "segment": {
+      "removed": 43,
+      "added": 40,
+      "changed": 0
+    },
+    "arc": {
+      "removed": 0,
+      "added": 0,
+      "changed": 0
+    },
+    "via": {
+      "removed": 0,
+      "added": 0,
+      "changed": 5
+    }
+  },
+  "board_sha256": "edd228bc2805aee9b5e7edf9403beb46de530372c278b33141e43c9e269921cc",
+  "netlist_sha256": "c823b6f65c649eec51dfff9017aac8f9cd70cad7e370aa50896e22a7886d4df2",
+  "limits": "Pinout source does not specify glass MPN, pitch, flex thickness or contact face. Retain existing 0.50 mm bottom-contact assumption; verify actual panel fit."
+}

@@ -1192,14 +1192,6 @@
         "GND"
       ],
       [
-        "25",
-        "GND"
-      ],
-      [
-        "26",
-        "GND"
-      ],
-      [
         "3",
         "GND"
       ],
@@ -2301,7 +2293,7 @@
     "R19": "2.2k",
     "R1": "5.1k",
     "Q3": "IRLML6402",
-    "DS1": "SSD1309 OLED / 26-pin",
+    "DS1": "SSD1309 OLED / 24-pin",
     "C37": "100pF",
     "D1": "B340A",
     "U8": "PCF8574T",
@@ -2473,5 +2465,16 @@
     48.5,
     103.25,
     93.5
+  ],
+  "authorized_amendments": [
+    {
+      "baseline_commit": "600d88a",
+      "reason": "User supplied exact CON24 breakout schematic and corrected OLED to 24 contacts.",
+      "changes": [
+        "DS1 value updated to 24-pin",
+        "Remove nonexistent DS1 pads 25 and 26 from expected ground membership"
+      ],
+      "preserved": "All original fixed positions, other values/pad nets, outline, antenna and routing requirements"
+    }
   ]
 }

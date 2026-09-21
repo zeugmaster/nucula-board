@@ -395,6 +395,7 @@ def main():
     hashes = {p: sha(ROOT/p) for p in tracked}
     report = dict(scope='Partial circuit simulation; not a manufacturing release or complete board simulation.',
                   design_commit=subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip(),
+                  design_snapshot='Working tree; source_sha256 identifies the simulated files; design_commit is the base commit.',
                   source_sha256=hashes, netlist_sha256=sha(ROOT/'docs/netlist.xml'),
                   simulation_script_sha256=sha(Path(__file__)),
                   nfc_assumptions_sha256=sha(ROOT/'docs/nfc/calculations.json'),

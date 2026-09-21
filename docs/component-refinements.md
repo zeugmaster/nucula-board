@@ -5,9 +5,9 @@ USB-C supply rated for at least 1.5 A at 5 V**, confirmed by the user. Battery r
 discharge capability and improved low-battery behavior are deferred by the
 user. The charger, battery connector and existing buck/reset behavior remain.
 
-The user also confirms the **26-contact Waveshare OLED pin order and
-orientation**: the earlier count of 24 excluded two outer ground contacts.
-The schematic can proceed to PCB layout within this prototype scope.
+OLED correction, 2026-09-21: the user's exact breakout schematic specifies
+**24 contacts**, superseding the earlier 26-contact assumption. The schematic,
+socket, routing and purchasing data now use the CON24 map.
 
 ## Crystal selected from NXP's recommended references
 
@@ -195,24 +195,21 @@ a battery, but battery runtime is not a USB-prototype layout criterion.
 
 ## Confirmed OLED interface
 
-The user corrected the initial count: **26 contacts total**, comprising the
-24 originally counted contacts plus two outer ground contacts, at **0.50 mm
-pitch**, with copper on the emitting side. They explicitly confirmed that
-the supplied Waveshare 2.42-inch schematic has the correct pin order and
-orientation. This confirmation is the basis for retaining the existing
-26-pin circuit; no pin numbers have been shifted. Pins **1 and 26 are GND**,
-as are the other ground pins in the reference, verified in the netlist.
+The exact [CON24 breakout schematic](../parts%20documentation/i2c-display-breakout-schematic.png.png)
+is now the electrical reference. DS1 has **24 contacts**, with SCL on 13,
+SDA on 14 and 15, reset on 9, IREF on 21, VCOM on 22 and panel power on 23.
+Pins 1–24 retain their previous signal assignments; the extra ground contacts
+25 and 26 were removed. Pin 4 remains NC. See the [complete map and checks](oled24/README.md).
 
-DS1 now names the board-mounted **Hirose FH12-26S-0.5SH(55)** socket in the
-BOM; the OLED glass is supplied separately. It is a bottom-contact socket
-for **0.30 mm thick flex**. During PCB placement, check the actual insertion
-thickness, pin-1 view and flex fold against the installed connector. Contacts
-on the emitting face do not alone determine top/bottom contact after folding.
-The electrical pinout blocker is closed; mechanical fit is part of the next
-PCB placement work. No panel assembly model is claimed.
+DS1's purchased item is **Hirose FH12-24S-0.5SH(55)**, JLCPCB **C202112**;
+the OLED glass is supplied separately. Its 24-way footprint and 3D model replace
+the old 26-way part at the same PCB center and rotation. Local escapes are rerouted.
 
-Sources: [user-supplied Waveshare schematic](../parts%20documentation/2.42inch-OLED-Module-Schematic.pdf),
-[Hirose socket specification](https://www.hirose.com/product/p/CL0586-0576-2-55).
+The [Hirose socket specification](https://www.hirose.com/product/p/CL0586-0521-0-55)
+calls for **0.50 mm pitch, 0.30 mm flex and bottom contacts**. The schematic alone
+does not establish these mechanical dimensions. The exact glass MPN, insertion
+thickness, pin-1 view, contact face and fold remain to verify against the panel.
+No panel assembly model is claimed.
 
 ## Reproduction
 

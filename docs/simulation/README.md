@@ -1,6 +1,9 @@
 # Circuit simulation screening
 
-2026-09-21 · design commit `33dbf43` · KiCad's bundled ngspice 45.2
+2026-09-21 · base commit `600d88a` plus the 24-pin OLED working-tree update · KiCad's bundled ngspice 45.2
+
+The 261 cases were rerun after the connector correction. Results record the
+actual working-tree file hashes; the electrical findings below are unchanged.
 
 **261 scoped simulation cases completed. This is a partial electrical analysis,
 not a complete simulation of the assembled PCB or a fabrication release.**

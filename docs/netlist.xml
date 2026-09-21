@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>nucula-v2.kicad_sch</source>
-    <date>2026-09-21T02:53:36</date>
+    <date>2026-09-21T17:40:54</date>
     <tool>Eeschema 10.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -4026,34 +4026,34 @@
       </units>
     </comp>
     <comp ref="DS1">
-      <value>SSD1309 OLED / 26-pin</value>
-      <footprint>Connector_FFC-FPC:Hirose_FH12-26S-0.5SH_1x26-1MP_P0.50mm_Horizontal</footprint>
-      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2410010332_HRS-Hirose-FH12-26S-0-5SH-55_C202113.pdf</datasheet>
+      <value>SSD1309 OLED / 24-pin</value>
+      <footprint>Connector_FFC-FPC:Hirose_FH12-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal</footprint>
+      <datasheet>https://www.hirose.com/product/p/CL0586-0521-0-55</datasheet>
       <fields>
-        <field name="MPN">FH12-26S-0.5SH(55)</field>
-        <field name="Footprint Status">SELECTED: 26-way 0.50 mm; user confirms Waveshare pin order/orientation, including outer ground contacts</field>
+        <field name="MPN">FH12-24S-0.5SH(55)</field>
+        <field name="Footprint Status">SELECTED: 24-way 0.50 mm bottom-contact socket; electrical pinout checked against supplied CON24 breakout schematic</field>
         <field name="I2C Address">0x3C</field>
-        <field name="Actual Flex">26 contacts total: 24 counted plus two outer GND contacts; 0.50 mm pitch; copper on emitting side (user confirmed)</field>
-        <field name="Status">Pinout/orientation confirmed by user; DS1 BOM part is the FPC socket, OLED glass supplied separately</field>
+        <field name="Actual Flex">24 contacts per user and supplied CON24 schematic; retained 0.50 mm pitch/contact-side assumption; exact glass MPN not yet known</field>
+        <field name="Status">24-pin electrical map verified against supplied breakout; DS1 BOM is socket; glass MPN and mechanical fit remain to verify</field>
         <field name="Manufacturer">HRS(Hirose)</field>
-        <field name="Connector Mechanics">FH12 bottom-contact, 0.30 mm flex thickness; check insertion/fold and physical fit during PCB placement</field>
-        <field name="Connector Datasheet">https://www.hirose.com/product/p/CL0586-0576-2-55</field>
-        <field name="LCSC">C202113</field>
+        <field name="Connector Mechanics">FH12 bottom-contact, 0.30 mm flex thickness; verify panel flex thickness, contact face and fold against actual glass</field>
+        <field name="Connector Datasheet">https://www.hirose.com/product/p/CL0586-0521-0-55</field>
+        <field name="LCSC">C202112</field>
         <field name="Panel Datasheet">https://files.waveshare.com/wiki/2.42inch-OLED-Module/SSD1309Datasheet.pdf</field>
-        <field name="Footprint">Connector_FFC-FPC:Hirose_FH12-26S-0.5SH_1x26-1MP_P0.50mm_Horizontal</field>
-        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2410010332_HRS-Hirose-FH12-26S-0-5SH-55_C202113.pdf</field>
+        <field name="Footprint">Connector_FFC-FPC:Hirose_FH12-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal</field>
+        <field name="Datasheet">https://www.hirose.com/product/p/CL0586-0521-0-55</field>
         <field name="Description"/>
       </fields>
-      <libsource lib="Nucula_Project" part="SSD1309_COG_26" description="26-contact OLED glass interface; Waveshare pin order/orientation confirmed by user"/>
-      <property name="MPN" value="FH12-26S-0.5SH(55)"/>
-      <property name="Footprint Status" value="SELECTED: 26-way 0.50 mm; user confirms Waveshare pin order/orientation, including outer ground contacts"/>
+      <libsource lib="Nucula_Project" part="SSD1309_COG_24" description="24-contact SSD1309 glass interface; supplied CON24 breakout pinout"/>
+      <property name="MPN" value="FH12-24S-0.5SH(55)"/>
+      <property name="Footprint Status" value="SELECTED: 24-way 0.50 mm bottom-contact socket; electrical pinout checked against supplied CON24 breakout schematic"/>
       <property name="I2C Address" value="0x3C"/>
-      <property name="Actual Flex" value="26 contacts total: 24 counted plus two outer GND contacts; 0.50 mm pitch; copper on emitting side (user confirmed)"/>
-      <property name="Status" value="Pinout/orientation confirmed by user; DS1 BOM part is the FPC socket, OLED glass supplied separately"/>
+      <property name="Actual Flex" value="24 contacts per user and supplied CON24 schematic; retained 0.50 mm pitch/contact-side assumption; exact glass MPN not yet known"/>
+      <property name="Status" value="24-pin electrical map verified against supplied breakout; DS1 BOM is socket; glass MPN and mechanical fit remain to verify"/>
       <property name="Manufacturer" value="HRS(Hirose)"/>
-      <property name="Connector Mechanics" value="FH12 bottom-contact, 0.30 mm flex thickness; check insertion/fold and physical fit during PCB placement"/>
-      <property name="Connector Datasheet" value="https://www.hirose.com/product/p/CL0586-0576-2-55"/>
-      <property name="LCSC" value="C202113"/>
+      <property name="Connector Mechanics" value="FH12 bottom-contact, 0.30 mm flex thickness; verify panel flex thickness, contact face and fold against actual glass"/>
+      <property name="Connector Datasheet" value="https://www.hirose.com/product/p/CL0586-0521-0-55"/>
+      <property name="LCSC" value="C202112"/>
       <property name="Panel Datasheet" value="https://files.waveshare.com/wiki/2.42inch-OLED-Module/SSD1309Datasheet.pdf"/>
       <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
       <property name="Sheetfile" value="oled.kicad_sch"/>
@@ -4085,8 +4085,6 @@
             <pin num="2"/>
             <pin num="3"/>
             <pin num="24"/>
-            <pin num="25"/>
-            <pin num="26"/>
             <pin num="4"/>
           </pins>
         </unit>
@@ -5156,20 +5154,20 @@
         <pin num="41" name="VSS" type="power_in"/>
       </pins>
     </libpart>
-    <libpart lib="Nucula_Project" part="SSD1309_COG_26">
-      <description>26-contact OLED glass interface; Waveshare pin order/orientation confirmed by user</description>
-      <docs>https://files.waveshare.com/wiki/2.42inch-OLED-Module/SSD1309Datasheet.pdf</docs>
+    <libpart lib="Nucula_Project" part="SSD1309_COG_24">
+      <description>24-contact SSD1309 glass interface; supplied CON24 breakout pinout</description>
+      <docs>parts documentation/i2c-display-breakout-schematic.png.png</docs>
       <fields>
         <field name="Reference">DS</field>
-        <field name="Value">SSD1309_COG_26</field>
-        <field name="Footprint">Connector_FFC-FPC:Hirose_FH12-26S-0.5SH_1x26-1MP_P0.50mm_Horizontal</field>
-        <field name="Datasheet">https://files.waveshare.com/wiki/2.42inch-OLED-Module/SSD1309Datasheet.pdf</field>
-        <field name="Description">26-contact OLED glass interface; Waveshare pin order/orientation confirmed by user</field>
-        <field name="Footprint Status">PROVISIONAL: confirm panel flex pitch, orientation and contact side before layout</field>
+        <field name="Value">SSD1309_COG_24</field>
+        <field name="Footprint">Connector_FFC-FPC:Hirose_FH12-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal</field>
+        <field name="Datasheet">parts documentation/i2c-display-breakout-schematic.png.png</field>
+        <field name="Description">24-contact SSD1309 glass interface; supplied CON24 breakout pinout</field>
+        <field name="Footprint Status">SELECTED: 24-way 0.50 mm bottom-contact socket; electrical pinout checked against supplied CON24 breakout schematic</field>
       </fields>
       <pins>
         <pin num="1" name="GND" type="power_in"/>
-        <pin num="2" name="VSS" type="power_in"/>
+        <pin num="2" name="VLSS" type="power_in"/>
         <pin num="3" name="VSS" type="power_in"/>
         <pin num="4" name="NC" type="no_connect"/>
         <pin num="5" name="VDD" type="power_in"/>
@@ -5190,10 +5188,8 @@
         <pin num="20" name="D7" type="input"/>
         <pin num="21" name="IREF" type="passive"/>
         <pin num="22" name="VCOMH" type="passive"/>
-        <pin num="23" name="VCC_PANEL" type="power_in"/>
+        <pin num="23" name="VOP_PANEL" type="power_in"/>
         <pin num="24" name="GND" type="power_in"/>
-        <pin num="25" name="GND" type="power_in"/>
-        <pin num="26" name="GND" type="power_in"/>
       </pins>
     </libpart>
     <libpart lib="Nucula_Project" part="SY8089AAAC">
@@ -5621,7 +5617,7 @@
       <node ref="C45" pin="1" pintype="passive"/>
       <node ref="C46" pin="1" pintype="passive"/>
       <node ref="D4" pin="1" pinfunction="K_1" pintype="passive"/>
-      <node ref="DS1" pin="23" pinfunction="VCC_PANEL_23" pintype="power_in"/>
+      <node ref="DS1" pin="23" pinfunction="VOP_PANEL_23" pintype="power_in"/>
       <node ref="R30" pin="1" pintype="passive"/>
     </net>
     <net code="35" name="/OLED / SSD1309 / 0x3C/OLED_BOOST_IN" class="OLED_Boost">
@@ -5822,11 +5818,9 @@
       <node ref="DS1" pin="17" pinfunction="D4_17" pintype="input"/>
       <node ref="DS1" pin="18" pinfunction="D5_18" pintype="input"/>
       <node ref="DS1" pin="19" pinfunction="D6_19" pintype="input"/>
-      <node ref="DS1" pin="2" pinfunction="VSS_2" pintype="power_in"/>
+      <node ref="DS1" pin="2" pinfunction="VLSS_2" pintype="power_in"/>
       <node ref="DS1" pin="20" pinfunction="D7_20" pintype="input"/>
       <node ref="DS1" pin="24" pinfunction="GND_24" pintype="power_in"/>
-      <node ref="DS1" pin="25" pinfunction="GND_25" pintype="power_in"/>
-      <node ref="DS1" pin="26" pinfunction="GND_26" pintype="power_in"/>
       <node ref="DS1" pin="3" pinfunction="VSS_3" pintype="power_in"/>
       <node ref="DS1" pin="7" pinfunction="BS2_7" pintype="input"/>
       <node ref="DS1" pin="8" pinfunction="~{CS}_8" pintype="input"/>

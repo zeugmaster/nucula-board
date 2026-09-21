@@ -118,7 +118,7 @@ for pin in ('J1.A1 J1.A12 J1.B1 J1.B12 J1.SH J2.2 U1.2 U2.2 U3.9 U3.19 U4.2 U5.1
             'C26.2 C27.2 C30.2 C31.1 C36.2 C37.1 C38.2 C39.1 C53.2 C54.1 '
             'U7.2 Q4.2 Q5.2 R31.2 R32.2 R34.2 R36.2 C40.2 C42.2 C43.2 C44.2 '
             'C45.2 C46.2 C47.2 C48.2 DS1.1 DS1.2 DS1.3 DS1.7 DS1.8 DS1.10 '
-            'DS1.11 DS1.12 DS1.16 DS1.17 DS1.18 DS1.19 DS1.20 DS1.24 DS1.25 DS1.26 '
+            'DS1.11 DS1.12 DS1.16 DS1.17 DS1.18 DS1.19 DS1.20 DS1.24 '
             'U8.1 U8.2 U8.3 U8.8 J4.2 J5.2 C49.2 C50.2 C51.2 C52.2 U9.1').split():
     assert net_of[pin] == 'GND', pin
 for pin in ('J1.A8 J1.B8 U3.12 DS1.4 U6.11 U6.23 U6.24 U6.25 '
@@ -180,10 +180,14 @@ for symbol in children(keyboard, 'symbol'):
 for ref, address in [('U6','0x28'),('U8','0x20'),('DS1','0x3C')]:
     assert fields[ref]['I2C Address'] == address
 assert fields['DS1']['Footprint Status'].startswith('SELECTED:')
-assert fields['DS1']['Actual Flex'].startswith('26 contacts total:')
-assert fields['DS1']['MPN'] == 'FH12-26S-0.5SH(55)'
-assert net_of['DS1.1'] == net_of['DS1.26'] == 'GND'
-# Pin order/orientation are user-confirmed; fit/fold is checked during placement.
+assert fields['DS1']['Actual Flex'].startswith('24 contacts per user')
+assert fields['DS1']['MPN'] == 'FH12-24S-0.5SH(55)'
+assert fields['DS1']['LCSC'] == 'C202112'
+assert net_of['DS1.1'] == net_of['DS1.24'] == 'GND'
+assert not {'DS1.25', 'DS1.26'} & set(net_of)
+assert {int(pin.split('.')[1]) for pin in net_of if pin.startswith('DS1.')} == set(range(1, 25))
+# All 24 nets are checked above against the supplied CON24 breakout.
+# Exact glass MPN and flex mechanical fit remain unverified.
 assert fields['Y1']['MPN'] == 'NX2016SA-27.12MHZ-EXS00A-CS06346'
 assert fields['Y1']['LCSC'] == 'C3008209'
 assert components['Y1'].findtext('footprint') == 'Nucula_Project:Crystal_NDK_NX2016SA_2.0x1.6mm'
@@ -307,7 +311,7 @@ report={
            'USB steady-state estimate is 1.10 A from a specified 5 V / 1.5 A supply; startup/inrush and thermal performance require bench validation.',
            'Power MLCC ordering codes and typical DC-bias curves selected; combined-corner screening is an estimate, not a guaranteed minimum.',
            'RF prototype values and 40mm coil selected; actual RL/C, tuning and RF stress still require measurement. NDK crystal selected; load/frequency/startup/drive require bench verification.',
-           'OLED 26-contact pinout/orientation confirmed by user, including outer GND contacts; verify socket fit/flex fold during placement and panel current at bring-up.',
+           'OLED 24-contact electrical map verified against the supplied CON24 breakout; glass MPN, flex pitch/thickness/contact face/fold and panel current remain to verify.',
            'MCP1700 low-current dropout and AP3012 switch-current limits need bench validation.',
            'Keyboard break line and routing are covered by the PCB layout report; reconnect cable capacitance still needs validation.'],
  'models':sorted(models)

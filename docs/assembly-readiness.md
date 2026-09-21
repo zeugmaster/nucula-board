@@ -2,10 +2,13 @@
 
 Checked 2026-09-20 against KiCad 10.0.6 and JLCPCB's public catalogue;
 J2 changed to SMT and its stock rechecked 2026-09-21 (Berlin).
-**Ready to begin component placement. Every physical symbol has a resolving
+DS1 corrected to the 24-position FH12-24S-0.5SH(55), C202112, and its public
+catalogue record checked on 2026-09-21. Other dated stock observations remain unchanged.
+**Every physical symbol has a resolving
 footprint and every populated purchased item has an exact manufacturer part
 number and JLCPCB C-code.** This is not a fabrication release: the main PCB
-has a preliminary layout; routing, final DRC, assembly rotations and CPL remain to be done.
+is fully routed with zero DRC errors and zero unconnected items; assembly
+rotations, CPL and physical prototype qualification remain to be completed.
 
 There are **128 physical symbols**: 116 populated purchased components,
 11 DNP components, and one etched PCB antenna. The populated BOM contains
@@ -54,6 +57,10 @@ The installed library's SMT 3D model was missing, so its unresolved reference
 was removed from the local copy. J2 has no 3D body model; fabrication geometry is
 unchanged from the verified KiCad footprint.
 
+Historical placement milestones (the current completed routing and DRC are
+reported in [PCB layout](pcb-layout.md), and the newer DS1 correction in
+[24-pin OLED update](oled24/README.md)):
+
 J3 and DS1 are centered on the board's X = 80 mm centerline (edges at X = 50
 and 110 mm). J3 moved 2 mm left and DS1 moved 0.5 mm left; their Y positions
 and rotations are unchanged. The [saved-board check](assembly/connector-update-check.json)
@@ -69,6 +76,7 @@ support parts, and routes the five J4-to-J5 connections. Its
 
 | Reference | Final selection | Why / footprint consequence |
 |---|---|---|
+| DS1 | Hirose FH12-24S-0.5SH(55), **C202112** | Corrected to the supplied 24-contact CON24 map; 0.50 mm socket replaces the 26-way footprint at the same center and rotation. |
 | J2 | JST B2B-PH-SM4-TB(LF)(SN), **C160352** | Stocked SMT top-entry PH connector; same 2 mm mating family and battery polarity. Larger footprint with two solder hold-down tabs replaces through-hole assembly. |
 | U5 | TI TLV803EA30DBZR, **C5218924** | The DCKR variant was out of stock. Same 3.08 V threshold and nominal 200 ms delay; **SOT-23 replaces SC70**. Both selected variants use 1=GND, 2=RESET, 3=VDD. |
 | J1 | GCT USB4105-GF-A-120, **C5184243** | Unsuffixed part had zero available order quantity. Same XY land pattern; shell stakes are **1.20 mm**, suitable for the specified 1.6 mm board. |
