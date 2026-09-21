@@ -1,7 +1,8 @@
 # USB-C, battery power and ESP32-C3 draft
 
 Revision B-draft, updated 2026-09-20. Open `nucula-v2.kicad_pro` in KiCad 10.
-The schematic is complete for this draft; the PCB remains the original blank board.
+The schematic is complete for this draft. The PCB is now placed and routed;
+see the [layout and validation report](pcb-layout.md).
 [PDF drawing](schematic.pdf), [BOM](bom.csv), [verification results](verification.json).
 
 ## Reference and scope
@@ -17,7 +18,8 @@ selection, and an SY8089 buck converter. The WROOM-02-N4 replaces the reference
 board's MINI module. Its physical pin numbers were checked separately.
 This circuit is now on `power-mcu.kicad_sch`. NFC, OLED and I/O expansion are
 integrated on separate sheets; see [peripheral design](peripherals-design.md).
-Firmware and PCB layout remain outside this draft.
+Firmware remains outside this draft. PCB placement and routing are documented
+in the separate layout report.
 
 ## Power behavior
 

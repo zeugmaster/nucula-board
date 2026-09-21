@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>nucula-v2.kicad_sch</source>
-    <date>2026-09-21T00:22:41</date>
+    <date>2026-09-21T02:53:36</date>
     <tool>Eeschema 10.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -5418,7 +5418,7 @@
       <node ref="R35" pin="1" pintype="passive"/>
       <node ref="U9" pin="2" pinfunction="VO_2" pintype="power_out"/>
     </net>
-    <net code="2" name="/+3V3" class="Default">
+    <net code="2" name="/+3V3" class="Power_500mA">
       <node ref="C10" pin="1" pintype="passive"/>
       <node ref="C11" pin="1" pintype="passive"/>
       <node ref="C15" pin="1" pintype="passive"/>
@@ -5533,11 +5533,11 @@
       <node ref="U6" pin="18" pinfunction="TVDD_IN_18" pintype="power_in"/>
       <node ref="U6" pin="22" pinfunction="TVDD_IN2_22" pintype="power_in"/>
     </net>
-    <net code="19" name="/NFC / PN7160 / 0x28/NFC_TX1" class="Default">
+    <net code="19" name="/NFC / PN7160 / 0x28/NFC_TX1" class="NFC_RF">
       <node ref="R41" pin="1" pintype="passive"/>
       <node ref="U6" pin="21" pinfunction="TX1_21" pintype="output"/>
     </net>
-    <net code="20" name="/NFC / PN7160 / 0x28/NFC_TX2" class="Default">
+    <net code="20" name="/NFC / PN7160 / 0x28/NFC_TX2" class="NFC_RF">
       <node ref="R42" pin="1" pintype="passive"/>
       <node ref="U6" pin="19" pinfunction="TX2_19" pintype="output"/>
     </net>
@@ -5568,15 +5568,15 @@
       <node ref="U6" pin="29" pinfunction="XTAL2_29" pintype="output"/>
       <node ref="Y1" pin="3" pinfunction="3_3" pintype="passive"/>
     </net>
-    <net code="26" name="/NFC / PN7160 / 0x28/RF_DRV_N" class="Default">
+    <net code="26" name="/NFC / PN7160 / 0x28/RF_DRV_N" class="NFC_RF">
       <node ref="L3" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="R42" pin="2" pintype="passive"/>
     </net>
-    <net code="27" name="/NFC / PN7160 / 0x28/RF_DRV_P" class="Default">
+    <net code="27" name="/NFC / PN7160 / 0x28/RF_DRV_P" class="NFC_RF">
       <node ref="L2" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="R41" pin="2" pintype="passive"/>
     </net>
-    <net code="28" name="/NFC / PN7160 / 0x28/RF_EMC_N" class="Default">
+    <net code="28" name="/NFC / PN7160 / 0x28/RF_EMC_N" class="NFC_RF">
       <node ref="C31" pin="2" pintype="passive"/>
       <node ref="C33" pin="1" pintype="passive"/>
       <node ref="C35" pin="1" pintype="passive"/>
@@ -5584,7 +5584,7 @@
       <node ref="L3" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R26" pin="2" pintype="passive"/>
     </net>
-    <net code="29" name="/NFC / PN7160 / 0x28/RF_EMC_P" class="Default">
+    <net code="29" name="/NFC / PN7160 / 0x28/RF_EMC_P" class="NFC_RF">
       <node ref="C30" pin="1" pintype="passive"/>
       <node ref="C32" pin="1" pintype="passive"/>
       <node ref="C34" pin="1" pintype="passive"/>
@@ -5592,14 +5592,14 @@
       <node ref="L2" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R25" pin="2" pintype="passive"/>
     </net>
-    <net code="30" name="/NFC / PN7160 / 0x28/RF_MATCH_N" class="Default">
+    <net code="30" name="/NFC / PN7160 / 0x28/RF_MATCH_N" class="NFC_RF">
       <node ref="C33" pin="2" pintype="passive"/>
       <node ref="C35" pin="2" pintype="passive"/>
       <node ref="C37" pin="2" pintype="passive"/>
       <node ref="C39" pin="2" pintype="passive"/>
       <node ref="R28" pin="1" pintype="passive"/>
     </net>
-    <net code="31" name="/NFC / PN7160 / 0x28/RF_MATCH_P" class="Default">
+    <net code="31" name="/NFC / PN7160 / 0x28/RF_MATCH_P" class="NFC_RF">
       <node ref="C32" pin="2" pintype="passive"/>
       <node ref="C34" pin="2" pintype="passive"/>
       <node ref="C36" pin="1" pintype="passive"/>
@@ -5624,7 +5624,7 @@
       <node ref="DS1" pin="23" pinfunction="VCC_PANEL_23" pintype="power_in"/>
       <node ref="R30" pin="1" pintype="passive"/>
     </net>
-    <net code="35" name="/OLED / SSD1309 / 0x3C/OLED_BOOST_IN" class="Default">
+    <net code="35" name="/OLED / SSD1309 / 0x3C/OLED_BOOST_IN" class="OLED_Boost">
       <node ref="C40" pin="1" pintype="passive"/>
       <node ref="L4" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="Q3" pin="3" pinfunction="D_3" pintype="passive"/>
@@ -5652,7 +5652,7 @@
       <node ref="Q5" pin="3" pinfunction="D_3" pintype="passive"/>
       <node ref="R35" pin="2" pintype="passive"/>
     </net>
-    <net code="40" name="/OLED / SSD1309 / 0x3C/OLED_SW" class="Default">
+    <net code="40" name="/OLED / SSD1309 / 0x3C/OLED_SW" class="OLED_Boost">
       <node ref="D4" pin="2" pinfunction="A_2" pintype="passive"/>
       <node ref="L4" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="U7" pin="1" pinfunction="SW_1" pintype="passive"/>
@@ -5697,7 +5697,7 @@
       <node ref="R10" pin="2" pintype="passive"/>
       <node ref="U3" pin="7" pinfunction="IO8_7" pintype="bidirectional"/>
     </net>
-    <net code="49" name="/Power + ESP32-C3/USB_5V" class="Default">
+    <net code="49" name="/Power + ESP32-C3/USB_5V" class="Power_1A">
       <node ref="C1" pin="1" pintype="passive"/>
       <node ref="D1" pin="1" pinfunction="K_1" pintype="passive"/>
       <node ref="D2" pin="2" pinfunction="A_2" pintype="passive"/>
@@ -5716,11 +5716,11 @@
       <node ref="J1" pin="B7" pinfunction="D-_B7" pintype="bidirectional"/>
       <node ref="U4" pin="1" pinfunction="I/O1_1" pintype="passive"/>
     </net>
-    <net code="52" name="/Power + ESP32-C3/USB_ESD_D+" class="Default">
+    <net code="52" name="/Power + ESP32-C3/USB_ESD_D+" class="USB_90ohm">
       <node ref="R13" pin="1" pintype="passive"/>
       <node ref="U4" pin="4" pinfunction="I/O2_4" pintype="passive"/>
     </net>
-    <net code="53" name="/Power + ESP32-C3/USB_ESD_D-" class="Default">
+    <net code="53" name="/Power + ESP32-C3/USB_ESD_D-" class="USB_90ohm">
       <node ref="R12" pin="1" pintype="passive"/>
       <node ref="U4" pin="6" pinfunction="I/O1_6" pintype="passive"/>
     </net>
@@ -5729,7 +5729,7 @@
       <node ref="R17" pin="2" pintype="passive"/>
       <node ref="U3" pin="17" pinfunction="IO1_17" pintype="bidirectional"/>
     </net>
-    <net code="55" name="/Power + ESP32-C3/VBAT" class="Default">
+    <net code="55" name="/Power + ESP32-C3/VBAT" class="Power_1A">
       <node ref="C2" pin="1" pintype="passive"/>
       <node ref="J2" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
       <node ref="Q1" pin="3" pinfunction="D_3" pintype="passive"/>
@@ -5742,7 +5742,7 @@
       <node ref="R16" pin="1" pintype="passive"/>
       <node ref="U3" pin="18" pinfunction="IO0_18" pintype="bidirectional"/>
     </net>
-    <net code="57" name="/Power + ESP32-C3/VBUS" class="Default">
+    <net code="57" name="/Power + ESP32-C3/VBUS" class="Power_1A">
       <node ref="C14" pin="1" pintype="passive"/>
       <node ref="D1" pin="2" pinfunction="A_2" pintype="passive"/>
       <node ref="J1" pin="A4" pinfunction="VBUS_A4" pintype="passive"/>
@@ -5753,7 +5753,7 @@
       <node ref="R18" pin="1" pintype="passive"/>
       <node ref="U4" pin="5" pinfunction="VBUS_5" pintype="passive"/>
     </net>
-    <net code="58" name="/VSYS" class="Default">
+    <net code="58" name="/VSYS" class="Power_1A">
       <node ref="C17" pin="1" pintype="passive"/>
       <node ref="C18" pin="1" pintype="passive"/>
       <node ref="C4" pin="1" pintype="passive"/>
@@ -5767,7 +5767,7 @@
       <node ref="U6" pin="12" pinfunction="VBAT2_12" pintype="power_in"/>
       <node ref="U6" pin="28" pinfunction="VBAT_28" pintype="power_in"/>
     </net>
-    <net code="59" name="GND" class="Default">
+    <net code="59" name="GND" class="Ground">
       <node ref="C1" pin="2" pintype="passive"/>
       <node ref="C10" pin="2" pintype="passive"/>
       <node ref="C11" pin="2" pintype="passive"/>
@@ -5878,11 +5878,11 @@
       <node ref="Y1" pin="2" pinfunction="G_2" pintype="passive"/>
       <node ref="Y1" pin="4" pinfunction="G_4" pintype="passive"/>
     </net>
-    <net code="60" name="Net-(A1-LOOP_A)" class="Default">
+    <net code="60" name="Net-(A1-LOOP_A)" class="NFC_RF">
       <node ref="A1" pin="1" pinfunction="LOOP_A_1" pintype="passive"/>
       <node ref="R27" pin="2" pintype="passive"/>
     </net>
-    <net code="61" name="Net-(A1-LOOP_B)" class="Default">
+    <net code="61" name="Net-(A1-LOOP_B)" class="NFC_RF">
       <node ref="A1" pin="2" pinfunction="LOOP_B_2" pintype="passive"/>
       <node ref="R28" pin="2" pintype="passive"/>
     </net>
@@ -5918,16 +5918,16 @@
       <node ref="R4" pin="1" pintype="passive"/>
       <node ref="U1" pin="1" pinfunction="~{CHRG}_1" pintype="open_collector"/>
     </net>
-    <net code="70" name="Net-(U2-LX)" class="Default">
+    <net code="70" name="Net-(U2-LX)" class="Power_500mA">
       <node ref="L1" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U2" pin="3" pinfunction="LX_3" pintype="power_out"/>
     </net>
-    <net code="71" name="Net-(U3-IO18)" class="Default">
+    <net code="71" name="Net-(U3-IO18)" class="USB_90ohm">
       <node ref="C7" pin="1" pintype="passive"/>
       <node ref="R12" pin="2" pintype="passive"/>
       <node ref="U3" pin="13" pinfunction="IO18_13" pintype="bidirectional"/>
     </net>
-    <net code="72" name="Net-(U3-IO19)" class="Default">
+    <net code="72" name="Net-(U3-IO19)" class="USB_90ohm">
       <node ref="C8" pin="1" pintype="passive"/>
       <node ref="R13" pin="2" pintype="passive"/>
       <node ref="U3" pin="14" pinfunction="IO19_14" pintype="bidirectional"/>

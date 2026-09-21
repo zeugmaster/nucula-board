@@ -7,8 +7,10 @@ a 100 mA single-cell Li-ion charger with JST-PH connector, USB/battery supply
 selection, a 3.31 V buck rail, and boot/reset/voltage supervision. It is adapted
 from Olimex ESP32-C3-DevKit-Lipo **revision C**. It now includes the PN7160 NFC
 controller and antenna matching tree, SSD1309 OLED glass driver/boost supply,
-and a detachable PCF8574T keyboard section. The PCB is still blank.
+and a detachable PCF8574T keyboard section. The four-layer PCB is placed and
+routed, with all components on top and the NFC circuitry inside the coil.
 
+- [Completed PCB layout, layer drawings and validation](docs/pcb-layout.md)
 - [Schematic PDF](docs/schematic.pdf)
 - [Design choices, datasheets and outstanding hardware limits](docs/power-design.md)
 - [NFC, OLED, I²C pin map and breakaway keyboard design](docs/peripherals-design.md)
@@ -57,9 +59,10 @@ Y1 is now NDK NX2016SA-27.12MHZ-EXS00A-CS06346 (JLCPCB C3008209),
 capacitor ordering codes and larger bulk footprints are selected using archived
 manufacturer DC-bias curves. Run `python3 tools/check_component_choices.py` to
 reproduce those estimates. RF tuning, oscillator qualification and power
-measurements remain prototype bring-up work. **The schematic is ready to begin
-PCB layout** for the agreed USB-powered prototype; the main PCB is not routed
-or released for fabrication.
+measurements remain prototype bring-up work. **Placement and routing are complete**
+for the agreed USB-powered prototype. Native PCB DRC has zero errors and zero
+unconnected items; the layout report records the two existing silkscreen warnings
+and the remaining prototype measurements.
 
 Git tracks design files, project libraries and documentation. Local editor state,
 lock files, automatic backups and KiCad's `.history` are ignored.

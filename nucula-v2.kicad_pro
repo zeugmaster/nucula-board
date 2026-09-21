@@ -152,10 +152,10 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.2,
+        "min_through_hole_diameter": 0.2,
+        "min_track_width": 0.15,
         "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.5,
+        "min_via_diameter": 0.45,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -511,6 +511,114 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Ground",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 5,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.3,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "NFC_RF",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 4,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.35,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "OLED_Boost",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.4,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Power_1A",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.75,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Power_500mA",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.5,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.21,
+        "diff_pair_width": 0.15,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "USB_90ohm",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.15,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -518,7 +626,100 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Power_1A",
+        "pattern": "/VSYS"
+      },
+      {
+        "netclass": "Power_1A",
+        "pattern": "/Power + ESP32-C3/VBUS"
+      },
+      {
+        "netclass": "Power_1A",
+        "pattern": "/Power + ESP32-C3/USB_5V"
+      },
+      {
+        "netclass": "Power_1A",
+        "pattern": "/Power + ESP32-C3/VBAT"
+      },
+      {
+        "netclass": "Power_500mA",
+        "pattern": "/+3V3"
+      },
+      {
+        "netclass": "Power_500mA",
+        "pattern": "Net-(U2-LX)"
+      },
+      {
+        "netclass": "NFC_RF",
+        "pattern": "/NFC {slash} PN7160 {slash} 0x28/RF_DRV_P"
+      },
+      {
+        "netclass": "NFC_RF",
+        "pattern": "/NFC {slash} PN7160 {slash} 0x28/RF_EMC_P"
+      },
+      {
+        "netclass": "NFC_RF",
+        "pattern": "/NFC {slash} PN7160 {slash} 0x28/RF_EMC_N"
+      },
+      {
+        "netclass": "NFC_RF",
+        "pattern": "/NFC {slash} PN7160 {slash} 0x28/RF_MATCH_N"
+      },
+      {
+        "netclass": "NFC_RF",
+        "pattern": "/NFC {slash} PN7160 {slash} 0x28/RF_MATCH_P"
+      },
+      {
+        "netclass": "NFC_RF",
+        "pattern": "Net-(A1-LOOP_B)"
+      },
+      {
+        "netclass": "NFC_RF",
+        "pattern": "/NFC {slash} PN7160 {slash} 0x28/NFC_TX2"
+      },
+      {
+        "netclass": "NFC_RF",
+        "pattern": "/NFC {slash} PN7160 {slash} 0x28/NFC_TX1"
+      },
+      {
+        "netclass": "NFC_RF",
+        "pattern": "/NFC {slash} PN7160 {slash} 0x28/RF_DRV_N"
+      },
+      {
+        "netclass": "NFC_RF",
+        "pattern": "Net-(A1-LOOP_A)"
+      },
+      {
+        "netclass": "Ground",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "USB_90ohm",
+        "pattern": "Net-(U3-IO18)"
+      },
+      {
+        "netclass": "USB_90ohm",
+        "pattern": "/Power + ESP32-C3/USB_ESD_D+"
+      },
+      {
+        "netclass": "USB_90ohm",
+        "pattern": "/Power + ESP32-C3/USB_ESD_D-"
+      },
+      {
+        "netclass": "USB_90ohm",
+        "pattern": "Net-(U3-IO19)"
+      },
+      {
+        "netclass": "OLED_Boost",
+        "pattern": "/OLED {slash} SSD1309 {slash} 0x3C/OLED_SW"
+      },
+      {
+        "netclass": "OLED_Boost",
+        "pattern": "/OLED {slash} SSD1309 {slash} 0x3C/OLED_BOOST_IN"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {

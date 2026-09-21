@@ -1,0 +1,2477 @@
+{
+  "source_commit": "f8a132d",
+  "fixed_placements": {
+    "A1": [
+      80.75,
+      71.0,
+      -90.0
+    ],
+    "C51": [
+      66.9,
+      141.5,
+      0.0
+    ],
+    "C52": [
+      66.9,
+      138.5,
+      0.0
+    ],
+    "DS1": [
+      80.0,
+      108.65,
+      180.0
+    ],
+    "J1": [
+      53.395,
+      111.89,
+      -90.0
+    ],
+    "J2": [
+      56.75,
+      100.9,
+      90.0
+    ],
+    "J3": [
+      69.84,
+      157.5,
+      90.0
+    ],
+    "J4": [
+      74.92,
+      119.0,
+      90.0
+    ],
+    "J5": [
+      74.92,
+      130.0,
+      90.0
+    ],
+    "MB1": [
+      62.0,
+      124.0,
+      0.0
+    ],
+    "MB2": [
+      98.0,
+      124.0,
+      0.0
+    ],
+    "R37": [
+      68.5,
+      149.5,
+      0.0
+    ],
+    "R38": [
+      68.5,
+      144.5,
+      0.0
+    ],
+    "R39": [
+      68.5,
+      147.0,
+      0.0
+    ],
+    "U3": [
+      97.9,
+      106.14,
+      -90.0
+    ],
+    "U6": [
+      75.9375,
+      69.75,
+      0.0
+    ],
+    "U8": [
+      60.15,
+      148.095,
+      0.0
+    ]
+  },
+  "pad_nets": {
+    "R8": [
+      [
+        "1",
+        "/+3V3"
+      ],
+      [
+        "2",
+        "/Power + ESP32-C3/ESP_EN"
+      ]
+    ],
+    "C49": [
+      [
+        "1",
+        "/+3V3"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "C26": [
+      [
+        "1",
+        "/NFC {slash} PN7160 {slash} 0x28/NFC_XTAL1"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "U7": [
+      [
+        "1",
+        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_SW"
+      ],
+      [
+        "2",
+        "GND"
+      ],
+      [
+        "3",
+        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_FB"
+      ],
+      [
+        "4",
+        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_BOOST_IN"
+      ],
+      [
+        "5",
+        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_BOOST_IN"
+      ]
+    ],
+    "C18": [
+      [
+        "1",
+        "/VSYS"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "MB2": [
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ]
+    ],
+    "C10": [
+      [
+        "1",
+        "/+3V3"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "D2": [
+      [
+        "1",
+        "/VSYS"
+      ],
+      [
+        "2",
+        "/Power + ESP32-C3/USB_5V"
+      ]
+    ],
+    "J4": [
+      [
+        "1",
+        "/+3V3"
+      ],
+      [
+        "2",
+        "GND"
+      ],
+      [
+        "3",
+        "/I2C_SDA"
+      ],
+      [
+        "4",
+        "/I2C_SCL"
+      ],
+      [
+        "5",
+        "/KEY_INT_N"
+      ]
+    ],
+    "C25": [
+      [
+        "1",
+        "/NFC {slash} PN7160 {slash} 0x28/NFC_VMID"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "R29": [
+      [
+        "1",
+        "/VSYS"
+      ],
+      [
+        "2",
+        "/NFC {slash} PN7160 {slash} 0x28/NFC_VDDUP"
+      ]
+    ],
+    "R30": [
+      [
+        "1",
+        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_12V5"
+      ],
+      [
+        "2",
+        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_FB"
+      ]
+    ],
+    "C14": [
+      [
+        "1",
+        "/Power + ESP32-C3/VBUS"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "C51": [
+      [
+        "1",
+        "/+3V3"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "C11": [
+      [
+        "1",
+        "/+3V3"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "C22": [
+      [
+        "1",
+        "/NFC {slash} PN7160 {slash} 0x28/NFC_VDD18"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "L2": [
+      [
+        "1",
+        "/NFC {slash} PN7160 {slash} 0x28/RF_DRV_P"
+      ],
+      [
+        "2",
+        "/NFC {slash} PN7160 {slash} 0x28/RF_EMC_P"
+      ]
+    ],
+    "C44": [
+      [
+        "1",
+        "/+3V0"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "C35": [
+      [
+        "1",
+        "/NFC {slash} PN7160 {slash} 0x28/RF_EMC_N"
+      ],
+      [
+        "2",
+        "/NFC {slash} PN7160 {slash} 0x28/RF_MATCH_N"
+      ]
+    ],
+    "C36": [
+      [
+        "1",
+        "/NFC {slash} PN7160 {slash} 0x28/RF_MATCH_P"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "R16": [
+      [
+        "1",
+        "/Power + ESP32-C3/VBAT_ADC"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "C34": [
+      [
+        "1",
+        "/NFC {slash} PN7160 {slash} 0x28/RF_EMC_P"
+      ],
+      [
+        "2",
+        "/NFC {slash} PN7160 {slash} 0x28/RF_MATCH_P"
+      ]
+    ],
+    "R17": [
+      [
+        "1",
+        "/+3V3"
+      ],
+      [
+        "2",
+        "/Power + ESP32-C3/USB_PRESENT_N"
+      ]
+    ],
+    "J2": [
+      [
+        "1",
+        "/Power + ESP32-C3/VBAT"
+      ],
+      [
+        "2",
+        "GND"
+      ],
+      [
+        "MP",
+        ""
+      ],
+      [
+        "MP",
+        ""
+      ]
+    ],
+    "C53": [
+      [
+        "1",
+        "/NFC {slash} PN7160 {slash} 0x28/RF_EMC_P"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "C7": [
+      [
+        "1",
+        "Net-(U3-IO18)"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "R33": [
+      [
+        "1",
+        "/VSYS"
+      ],
+      [
+        "2",
+        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_GATE_N"
+      ]
+    ],
+    "R38": [
+      [
+        "1",
+        "/+3V3"
+      ],
+      [
+        "2",
+        "/I2C_SDA"
+      ]
+    ],
+    "U1": [
+      [
+        "1",
+        "Net-(U1-~{CHRG})"
+      ],
+      [
+        "2",
+        "GND"
+      ],
+      [
+        "3",
+        "/Power + ESP32-C3/VBAT"
+      ],
+      [
+        "4",
+        "/Power + ESP32-C3/USB_5V"
+      ],
+      [
+        "5",
+        "Net-(U1-PROG)"
+      ]
+    ],
+    "R28": [
+      [
+        "1",
+        "/NFC {slash} PN7160 {slash} 0x28/RF_MATCH_N"
+      ],
+      [
+        "2",
+        "Net-(A1-LOOP_B)"
+      ]
+    ],
+    "C2": [
+      [
+        "1",
+        "/Power + ESP32-C3/VBAT"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "R36": [
+      [
+        "1",
+        "/OLED_RESET"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "C5": [
+      [
+        "1",
+        "/+3V3"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "R20": [
+      [
+        "1",
+        "/+3V0"
+      ],
+      [
+        "2",
+        "/I2C_SCL"
+      ]
+    ],
+    "C27": [
+      [
+        "1",
+        "/NFC {slash} PN7160 {slash} 0x28/NFC_XTAL2"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "R25": [
+      [
+        "1",
+        "Net-(C28-Pad2)"
+      ],
+      [
+        "2",
+        "/NFC {slash} PN7160 {slash} 0x28/RF_EMC_P"
+      ]
+    ],
+    "C45": [
+      [
+        "1",
+        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_12V5"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "SW1": [
+      [
+        "1",
+        "/Power + ESP32-C3/ESP_EN"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "Q5": [
+      [
+        "1",
+        "/OLED_RESET"
+      ],
+      [
+        "2",
+        "GND"
+      ],
+      [
+        "3",
+        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_RES_N"
+      ]
+    ],
+    "R21": [
+      [
+        "1",
+        "/NFC {slash} PN7160 {slash} 0x28/NFC_DWL_REQ"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "R18": [
+      [
+        "1",
+        "/Power + ESP32-C3/VBUS"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "C52": [
+      [
+        "1",
+        "/+3V3"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "L4": [
+      [
+        "1",
+        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_BOOST_IN"
+      ],
+      [
+        "2",
+        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_SW"
+      ]
+    ],
+    "C39": [
+      [
+        "1",
+        "GND"
+      ],
+      [
+        "2",
+        "/NFC {slash} PN7160 {slash} 0x28/RF_MATCH_N"
+      ]
+    ],
+    "U9": [
+      [
+        "1",
+        "GND"
+      ],
+      [
+        "2",
+        "/+3V0"
+      ],
+      [
+        "3",
+        "/+3V3"
+      ]
+    ],
+    "J3": [
+      [
+        "1",
+        "unconnected-(J3-Pin_1-Pad1)"
+      ],
+      [
+        "2",
+        "/Keyboard {slash} breakaway {slash} 0x20/KEY_P0"
+      ],
+      [
+        "3",
+        "/Keyboard {slash} breakaway {slash} 0x20/KEY_P1"
+      ],
+      [
+        "4",
+        "/Keyboard {slash} breakaway {slash} 0x20/KEY_P2"
+      ],
+      [
+        "5",
+        "/Keyboard {slash} breakaway {slash} 0x20/KEY_P3"
+      ],
+      [
+        "6",
+        "/Keyboard {slash} breakaway {slash} 0x20/KEY_P4"
+      ],
+      [
+        "7",
+        "/Keyboard {slash} breakaway {slash} 0x20/KEY_P5"
+      ],
+      [
+        "8",
+        "/Keyboard {slash} breakaway {slash} 0x20/KEY_P6"
+      ],
+      [
+        "9",
+        "unconnected-(J3-Pin_9-Pad9)"
+      ]
+    ],
+    "R35": [
+      [
+        "1",
+        "/+3V0"
+      ],
+      [
+        "2",
+        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_RES_N"
+      ]
+    ],
+    "R14": [
+      [
+        "1",
+        "/Power + ESP32-C3/BOOT_N"
+      ],
+      [
+        "2",
+        "Net-(R14-Pad2)"
+      ]
+    ],
+    "C13": [
+      [
+        "1",
+        "/Power + ESP32-C3/VBAT_ADC"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "C12": [
+      [
+        "1",
+        "/Power + ESP32-C3/ESP_EN"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "R34": [
+      [
+        "1",
+        "/OLED_PWR_EN"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "J1": [
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "A1",
+        "GND"
+      ],
+      [
+        "A12",
+        "GND"
+      ],
+      [
+        "A4",
+        "/Power + ESP32-C3/VBUS"
+      ],
+      [
+        "A5",
+        "Net-(J1-CC1)"
+      ],
+      [
+        "A6",
+        "/Power + ESP32-C3/USB_D+"
+      ],
+      [
+        "A7",
+        "/Power + ESP32-C3/USB_D-"
+      ],
+      [
+        "A8",
+        "unconnected-(J1-SBU1-PadA8)"
+      ],
+      [
+        "A9",
+        "/Power + ESP32-C3/VBUS"
+      ],
+      [
+        "B1",
+        "GND"
+      ],
+      [
+        "B12",
+        "GND"
+      ],
+      [
+        "B4",
+        "/Power + ESP32-C3/VBUS"
+      ],
+      [
+        "B5",
+        "Net-(J1-CC2)"
+      ],
+      [
+        "B6",
+        "/Power + ESP32-C3/USB_D+"
+      ],
+      [
+        "B7",
+        "/Power + ESP32-C3/USB_D-"
+      ],
+      [
+        "B8",
+        "unconnected-(J1-SBU2-PadB8)"
+      ],
+      [
+        "B9",
+        "/Power + ESP32-C3/VBUS"
+      ],
+      [
+        "SH",
+        "GND"
+      ],
+      [
+        "SH",
+        "GND"
+      ],
+      [
+        "SH",
+        "GND"
+      ],
+      [
+        "SH",
+        "GND"
+      ]
+    ],
+    "R11": [
+      [
+        "1",
+        "/+3V3"
+      ],
+      [
+        "2",
+        "/Power + ESP32-C3/BOOT_N"
+      ]
+    ],
+    "C29": [
+      [
+        "1",
+        "/NFC {slash} PN7160 {slash} 0x28/NFC_RXP"
+      ],
+      [
+        "2",
+        "Net-(C29-Pad2)"
+      ]
+    ],
+    "C43": [
+      [
+        "1",
+        "/+3V0"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "C24": [
+      [
+        "1",
+        "/NFC {slash} PN7160 {slash} 0x28/NFC_TVDD"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "R15": [
+      [
+        "1",
+        "/Power + ESP32-C3/VBAT"
+      ],
+      [
+        "2",
+        "/Power + ESP32-C3/VBAT_ADC"
+      ]
+    ],
+    "R24": [
+      [
+        "1",
+        "/NFC {slash} PN7160 {slash} 0x28/NFC_ADR1"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "C21": [
+      [
+        "1",
+        "/NFC {slash} PN7160 {slash} 0x28/NFC_VDD18"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "U6": [
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "1",
+        "/NFC {slash} PN7160 {slash} 0x28/NFC_ADR0"
+      ],
+      [
+        "10",
+        "/NFC_VEN"
+      ],
+      [
+        "11",
+        "unconnected-(U6-I.C._1-Pad11)"
+      ],
+      [
+        "12",
+        "/VSYS"
+      ],
+      [
+        "13",
+        "/NFC {slash} PN7160 {slash} 0x28/NFC_VDDUP"
+      ],
+      [
+        "14",
+        "/NFC {slash} PN7160 {slash} 0x28/NFC_TVDD"
+      ],
+      [
+        "15",
+        "/NFC {slash} PN7160 {slash} 0x28/NFC_RXN"
+      ],
+      [
+        "16",
+        "/NFC {slash} PN7160 {slash} 0x28/NFC_RXP"
+      ],
+      [
+        "17",
+        "/NFC {slash} PN7160 {slash} 0x28/NFC_VMID"
+      ],
+      [
+        "18",
+        "/NFC {slash} PN7160 {slash} 0x28/NFC_TVDD"
+      ],
+      [
+        "19",
+        "/NFC {slash} PN7160 {slash} 0x28/NFC_TX2"
+      ],
+      [
+        "2",
+        "/NFC {slash} PN7160 {slash} 0x28/NFC_DWL_REQ"
+      ],
+      [
+        "20",
+        "GND"
+      ],
+      [
+        "21",
+        "/NFC {slash} PN7160 {slash} 0x28/NFC_TX1"
+      ],
+      [
+        "22",
+        "/NFC {slash} PN7160 {slash} 0x28/NFC_TVDD"
+      ],
+      [
+        "23",
+        "unconnected-(U6-ANT1-Pad23)"
+      ],
+      [
+        "24",
+        "unconnected-(U6-ANT2-Pad24)"
+      ],
+      [
+        "25",
+        "unconnected-(U6-VDD(HF)-Pad25)"
+      ],
+      [
+        "26",
+        "/NFC {slash} PN7160 {slash} 0x28/NFC_VDD18"
+      ],
+      [
+        "27",
+        "/NFC {slash} PN7160 {slash} 0x28/NFC_VDD18"
+      ],
+      [
+        "28",
+        "/VSYS"
+      ],
+      [
+        "29",
+        "/NFC {slash} PN7160 {slash} 0x28/NFC_XTAL2"
+      ],
+      [
+        "3",
+        "/NFC {slash} PN7160 {slash} 0x28/NFC_ADR1"
+      ],
+      [
+        "30",
+        "/NFC {slash} PN7160 {slash} 0x28/NFC_XTAL1"
+      ],
+      [
+        "31",
+        "/NFC {slash} PN7160 {slash} 0x28/NFC_VDD18"
+      ],
+      [
+        "32",
+        "unconnected-(U6-N.C._1-Pad32)"
+      ],
+      [
+        "33",
+        "unconnected-(U6-N.C._2-Pad33)"
+      ],
+      [
+        "34",
+        "unconnected-(U6-N.C._3-Pad34)"
+      ],
+      [
+        "35",
+        "unconnected-(U6-N.C._4-Pad35)"
+      ],
+      [
+        "36",
+        "unconnected-(U6-N.C._5-Pad36)"
+      ],
+      [
+        "37",
+        "unconnected-(U6-DCDC_EN-Pad37)"
+      ],
+      [
+        "38",
+        "unconnected-(U6-I.C._2-Pad38)"
+      ],
+      [
+        "39",
+        "GND"
+      ],
+      [
+        "4",
+        "GND"
+      ],
+      [
+        "40",
+        "unconnected-(U6-CLK_REQ-Pad40)"
+      ],
+      [
+        "41",
+        "GND"
+      ],
+      [
+        "5",
+        "/I2C_SDA"
+      ],
+      [
+        "6",
+        "/+3V3"
+      ],
+      [
+        "7",
+        "/I2C_SCL"
+      ],
+      [
+        "8",
+        "/NFC_IRQ"
+      ],
+      [
+        "9",
+        "GND"
+      ]
+    ],
+    "R19": [
+      [
+        "1",
+        "/+3V0"
+      ],
+      [
+        "2",
+        "/I2C_SDA"
+      ]
+    ],
+    "R1": [
+      [
+        "1",
+        "Net-(J1-CC1)"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "Q3": [
+      [
+        "1",
+        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_GATE_N"
+      ],
+      [
+        "2",
+        "/VSYS"
+      ],
+      [
+        "3",
+        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_BOOST_IN"
+      ]
+    ],
+    "DS1": [
+      [
+        "1",
+        "GND"
+      ],
+      [
+        "10",
+        "GND"
+      ],
+      [
+        "11",
+        "GND"
+      ],
+      [
+        "12",
+        "GND"
+      ],
+      [
+        "13",
+        "/I2C_SCL"
+      ],
+      [
+        "14",
+        "/I2C_SDA"
+      ],
+      [
+        "15",
+        "/I2C_SDA"
+      ],
+      [
+        "16",
+        "GND"
+      ],
+      [
+        "17",
+        "GND"
+      ],
+      [
+        "18",
+        "GND"
+      ],
+      [
+        "19",
+        "GND"
+      ],
+      [
+        "2",
+        "GND"
+      ],
+      [
+        "20",
+        "GND"
+      ],
+      [
+        "21",
+        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_IREF"
+      ],
+      [
+        "22",
+        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_VCOMH"
+      ],
+      [
+        "23",
+        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_12V5"
+      ],
+      [
+        "24",
+        "GND"
+      ],
+      [
+        "25",
+        "GND"
+      ],
+      [
+        "26",
+        "GND"
+      ],
+      [
+        "3",
+        "GND"
+      ],
+      [
+        "4",
+        "unconnected-(DS1-NC-Pad4)"
+      ],
+      [
+        "5",
+        "/+3V0"
+      ],
+      [
+        "6",
+        "/+3V0"
+      ],
+      [
+        "7",
+        "GND"
+      ],
+      [
+        "8",
+        "GND"
+      ],
+      [
+        "9",
+        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_RES_N"
+      ],
+      [
+        "MP",
+        ""
+      ],
+      [
+        "MP",
+        ""
+      ]
+    ],
+    "C37": [
+      [
+        "1",
+        "GND"
+      ],
+      [
+        "2",
+        "/NFC {slash} PN7160 {slash} 0x28/RF_MATCH_N"
+      ]
+    ],
+    "D1": [
+      [
+        "1",
+        "/Power + ESP32-C3/USB_5V"
+      ],
+      [
+        "2",
+        "/Power + ESP32-C3/VBUS"
+      ]
+    ],
+    "U8": [
+      [
+        "1",
+        "GND"
+      ],
+      [
+        "10",
+        "/Keyboard {slash} breakaway {slash} 0x20/KEY_P5"
+      ],
+      [
+        "11",
+        "/Keyboard {slash} breakaway {slash} 0x20/KEY_P6"
+      ],
+      [
+        "12",
+        "unconnected-(U8-P7-Pad12)"
+      ],
+      [
+        "13",
+        "/KEY_INT_N"
+      ],
+      [
+        "14",
+        "/I2C_SCL"
+      ],
+      [
+        "15",
+        "/I2C_SDA"
+      ],
+      [
+        "16",
+        "/+3V3"
+      ],
+      [
+        "2",
+        "GND"
+      ],
+      [
+        "3",
+        "GND"
+      ],
+      [
+        "4",
+        "/Keyboard {slash} breakaway {slash} 0x20/KEY_P0"
+      ],
+      [
+        "5",
+        "/Keyboard {slash} breakaway {slash} 0x20/KEY_P1"
+      ],
+      [
+        "6",
+        "/Keyboard {slash} breakaway {slash} 0x20/KEY_P2"
+      ],
+      [
+        "7",
+        "/Keyboard {slash} breakaway {slash} 0x20/KEY_P3"
+      ],
+      [
+        "8",
+        "GND"
+      ],
+      [
+        "9",
+        "/Keyboard {slash} breakaway {slash} 0x20/KEY_P4"
+      ]
+    ],
+    "L1": [
+      [
+        "1",
+        "Net-(U2-LX)"
+      ],
+      [
+        "2",
+        "/+3V3"
+      ]
+    ],
+    "C20": [
+      [
+        "1",
+        "/NFC {slash} PN7160 {slash} 0x28/NFC_VDDUP"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "C4": [
+      [
+        "1",
+        "/VSYS"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "U4": [
+      [
+        "1",
+        "/Power + ESP32-C3/USB_D-"
+      ],
+      [
+        "2",
+        "GND"
+      ],
+      [
+        "3",
+        "/Power + ESP32-C3/USB_D+"
+      ],
+      [
+        "4",
+        "/Power + ESP32-C3/USB_ESD_D+"
+      ],
+      [
+        "5",
+        "/Power + ESP32-C3/VBUS"
+      ],
+      [
+        "6",
+        "/Power + ESP32-C3/USB_ESD_D-"
+      ]
+    ],
+    "R10": [
+      [
+        "1",
+        "/+3V3"
+      ],
+      [
+        "2",
+        "/Power + ESP32-C3/STRAP_GPIO8"
+      ]
+    ],
+    "R26": [
+      [
+        "1",
+        "Net-(C29-Pad2)"
+      ],
+      [
+        "2",
+        "/NFC {slash} PN7160 {slash} 0x28/RF_EMC_N"
+      ]
+    ],
+    "R2": [
+      [
+        "1",
+        "Net-(J1-CC2)"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "C23": [
+      [
+        "1",
+        "/NFC {slash} PN7160 {slash} 0x28/NFC_TVDD"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "R3": [
+      [
+        "1",
+        "Net-(U1-PROG)"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "U5": [
+      [
+        "1",
+        "GND"
+      ],
+      [
+        "2",
+        "/Power + ESP32-C3/ESP_EN"
+      ],
+      [
+        "3",
+        "/+3V3"
+      ]
+    ],
+    "R6": [
+      [
+        "1",
+        "/+3V3"
+      ],
+      [
+        "2",
+        "/Power + ESP32-C3/BUCK_FB"
+      ]
+    ],
+    "R12": [
+      [
+        "1",
+        "/Power + ESP32-C3/USB_ESD_D-"
+      ],
+      [
+        "2",
+        "Net-(U3-IO18)"
+      ]
+    ],
+    "U3": [
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "1",
+        "/+3V3"
+      ],
+      [
+        "10",
+        "/OLED_RESET"
+      ],
+      [
+        "11",
+        "/KEY_INT_N"
+      ],
+      [
+        "12",
+        "unconnected-(U3-IO21{slash}TXD-Pad12)"
+      ],
+      [
+        "13",
+        "Net-(U3-IO18)"
+      ],
+      [
+        "14",
+        "Net-(U3-IO19)"
+      ],
+      [
+        "15",
+        "/OLED_PWR_EN"
+      ],
+      [
+        "16",
+        "/Power + ESP32-C3/STRAP_GPIO2"
+      ],
+      [
+        "17",
+        "/Power + ESP32-C3/USB_PRESENT_N"
+      ],
+      [
+        "18",
+        "/Power + ESP32-C3/VBAT_ADC"
+      ],
+      [
+        "19",
+        "GND"
+      ],
+      [
+        "19",
+        "GND"
+      ],
+      [
+        "19",
+        "GND"
+      ],
+      [
+        "19",
+        "GND"
+      ],
+      [
+        "19",
+        "GND"
+      ],
+      [
+        "19",
+        "GND"
+      ],
+      [
+        "19",
+        "GND"
+      ],
+      [
+        "19",
+        "GND"
+      ],
+      [
+        "19",
+        "GND"
+      ],
+      [
+        "19",
+        "GND"
+      ],
+      [
+        "19",
+        "GND"
+      ],
+      [
+        "19",
+        "GND"
+      ],
+      [
+        "19",
+        "GND"
+      ],
+      [
+        "2",
+        "/Power + ESP32-C3/ESP_EN"
+      ],
+      [
+        "3",
+        "/I2C_SDA"
+      ],
+      [
+        "4",
+        "/I2C_SCL"
+      ],
+      [
+        "5",
+        "/NFC_IRQ"
+      ],
+      [
+        "6",
+        "/NFC_VEN"
+      ],
+      [
+        "7",
+        "/Power + ESP32-C3/STRAP_GPIO8"
+      ],
+      [
+        "8",
+        "/Power + ESP32-C3/BOOT_N"
+      ],
+      [
+        "9",
+        "GND"
+      ]
+    ],
+    "C50": [
+      [
+        "1",
+        "/+3V0"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "J5": [
+      [
+        "1",
+        "/+3V3"
+      ],
+      [
+        "2",
+        "GND"
+      ],
+      [
+        "3",
+        "/I2C_SDA"
+      ],
+      [
+        "4",
+        "/I2C_SCL"
+      ],
+      [
+        "5",
+        "/KEY_INT_N"
+      ]
+    ],
+    "R39": [
+      [
+        "1",
+        "/+3V3"
+      ],
+      [
+        "2",
+        "/I2C_SCL"
+      ]
+    ],
+    "C1": [
+      [
+        "1",
+        "/Power + ESP32-C3/USB_5V"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "SW2": [
+      [
+        "1",
+        "Net-(R14-Pad2)"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "C32": [
+      [
+        "1",
+        "/NFC {slash} PN7160 {slash} 0x28/RF_EMC_P"
+      ],
+      [
+        "2",
+        "/NFC {slash} PN7160 {slash} 0x28/RF_MATCH_P"
+      ]
+    ],
+    "R23": [
+      [
+        "1",
+        "/NFC {slash} PN7160 {slash} 0x28/NFC_ADR0"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "MB1": [
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ]
+    ],
+    "R32": [
+      [
+        "1",
+        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_IREF"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "R4": [
+      [
+        "1",
+        "Net-(U1-~{CHRG})"
+      ],
+      [
+        "2",
+        "Net-(D3-K)"
+      ]
+    ],
+    "R13": [
+      [
+        "1",
+        "/Power + ESP32-C3/USB_ESD_D+"
+      ],
+      [
+        "2",
+        "Net-(U3-IO19)"
+      ]
+    ],
+    "C31": [
+      [
+        "1",
+        "GND"
+      ],
+      [
+        "2",
+        "/NFC {slash} PN7160 {slash} 0x28/RF_EMC_N"
+      ]
+    ],
+    "L3": [
+      [
+        "1",
+        "/NFC {slash} PN7160 {slash} 0x28/RF_DRV_N"
+      ],
+      [
+        "2",
+        "/NFC {slash} PN7160 {slash} 0x28/RF_EMC_N"
+      ]
+    ],
+    "C16": [
+      [
+        "1",
+        "/+3V3"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "D3": [
+      [
+        "1",
+        "Net-(D3-K)"
+      ],
+      [
+        "2",
+        "/Power + ESP32-C3/USB_5V"
+      ]
+    ],
+    "C17": [
+      [
+        "1",
+        "/VSYS"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "C46": [
+      [
+        "1",
+        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_12V5"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "C19": [
+      [
+        "1",
+        "/NFC {slash} PN7160 {slash} 0x28/NFC_VDDUP"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "D4": [
+      [
+        "1",
+        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_12V5"
+      ],
+      [
+        "2",
+        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_SW"
+      ]
+    ],
+    "C38": [
+      [
+        "1",
+        "/NFC {slash} PN7160 {slash} 0x28/RF_MATCH_P"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "R27": [
+      [
+        "1",
+        "/NFC {slash} PN7160 {slash} 0x28/RF_MATCH_P"
+      ],
+      [
+        "2",
+        "Net-(A1-LOOP_A)"
+      ]
+    ],
+    "C30": [
+      [
+        "1",
+        "/NFC {slash} PN7160 {slash} 0x28/RF_EMC_P"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "R31": [
+      [
+        "1",
+        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_FB"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "C6": [
+      [
+        "1",
+        "/+3V3"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "Q1": [
+      [
+        "1",
+        "/Power + ESP32-C3/USB_5V"
+      ],
+      [
+        "2",
+        "/VSYS"
+      ],
+      [
+        "3",
+        "/Power + ESP32-C3/VBAT"
+      ]
+    ],
+    "R42": [
+      [
+        "1",
+        "/NFC {slash} PN7160 {slash} 0x28/NFC_TX2"
+      ],
+      [
+        "2",
+        "/NFC {slash} PN7160 {slash} 0x28/RF_DRV_N"
+      ]
+    ],
+    "Y1": [
+      [
+        "1",
+        "/NFC {slash} PN7160 {slash} 0x28/NFC_XTAL1"
+      ],
+      [
+        "2",
+        "GND"
+      ],
+      [
+        "3",
+        "/NFC {slash} PN7160 {slash} 0x28/NFC_XTAL2"
+      ],
+      [
+        "4",
+        "GND"
+      ]
+    ],
+    "A1": [
+      [
+        "1",
+        "Net-(A1-LOOP_A)"
+      ],
+      [
+        "1",
+        "Net-(A1-LOOP_A)"
+      ],
+      [
+        "1",
+        "Net-(A1-LOOP_A)"
+      ],
+      [
+        "1",
+        "Net-(A1-LOOP_A)"
+      ],
+      [
+        "1",
+        "Net-(A1-LOOP_A)"
+      ],
+      [
+        "2",
+        "Net-(A1-LOOP_B)"
+      ],
+      [
+        "2",
+        "Net-(A1-LOOP_B)"
+      ]
+    ],
+    "C15": [
+      [
+        "1",
+        "/+3V3"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "R5": [
+      [
+        "1",
+        "/Power + ESP32-C3/USB_5V"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "R41": [
+      [
+        "1",
+        "/NFC {slash} PN7160 {slash} 0x28/NFC_TX1"
+      ],
+      [
+        "2",
+        "/NFC {slash} PN7160 {slash} 0x28/RF_DRV_P"
+      ]
+    ],
+    "Q4": [
+      [
+        "1",
+        "/OLED_PWR_EN"
+      ],
+      [
+        "2",
+        "GND"
+      ],
+      [
+        "3",
+        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_GATE_N"
+      ]
+    ],
+    "R22": [
+      [
+        "1",
+        "/NFC_VEN"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "C33": [
+      [
+        "1",
+        "/NFC {slash} PN7160 {slash} 0x28/RF_EMC_N"
+      ],
+      [
+        "2",
+        "/NFC {slash} PN7160 {slash} 0x28/RF_MATCH_N"
+      ]
+    ],
+    "R40": [
+      [
+        "1",
+        "/+3V3"
+      ],
+      [
+        "2",
+        "/KEY_INT_N"
+      ]
+    ],
+    "R37": [
+      [
+        "1",
+        "/+3V3"
+      ],
+      [
+        "2",
+        "/KEY_INT_N"
+      ]
+    ],
+    "C42": [
+      [
+        "1",
+        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_12V5"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "C40": [
+      [
+        "1",
+        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_BOOST_IN"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "C41": [
+      [
+        "1",
+        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_12V5"
+      ],
+      [
+        "2",
+        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_FB"
+      ]
+    ],
+    "C8": [
+      [
+        "1",
+        "Net-(U3-IO19)"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "C48": [
+      [
+        "1",
+        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_RES_N"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "U2": [
+      [
+        "1",
+        "/VSYS"
+      ],
+      [
+        "2",
+        "GND"
+      ],
+      [
+        "3",
+        "Net-(U2-LX)"
+      ],
+      [
+        "4",
+        "/VSYS"
+      ],
+      [
+        "5",
+        "/Power + ESP32-C3/BUCK_FB"
+      ]
+    ],
+    "C47": [
+      [
+        "1",
+        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_VCOMH"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "C28": [
+      [
+        "1",
+        "/NFC {slash} PN7160 {slash} 0x28/NFC_RXN"
+      ],
+      [
+        "2",
+        "Net-(C28-Pad2)"
+      ]
+    ],
+    "R9": [
+      [
+        "1",
+        "/+3V3"
+      ],
+      [
+        "2",
+        "/Power + ESP32-C3/STRAP_GPIO2"
+      ]
+    ],
+    "C3": [
+      [
+        "1",
+        "/+3V3"
+      ],
+      [
+        "2",
+        "/Power + ESP32-C3/BUCK_FB"
+      ]
+    ],
+    "C9": [
+      [
+        "1",
+        "/+3V3"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "C54": [
+      [
+        "1",
+        "GND"
+      ],
+      [
+        "2",
+        "/NFC {slash} PN7160 {slash} 0x28/RF_EMC_N"
+      ]
+    ],
+    "Q2": [
+      [
+        "1",
+        "/Power + ESP32-C3/VBUS"
+      ],
+      [
+        "2",
+        "GND"
+      ],
+      [
+        "3",
+        "/Power + ESP32-C3/USB_PRESENT_N"
+      ]
+    ],
+    "R7": [
+      [
+        "1",
+        "/Power + ESP32-C3/BUCK_FB"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ]
+  },
+  "values": {
+    "R8": "10k",
+    "C49": "1uF",
+    "C26": "12pF",
+    "U7": "AP3012KTR-E1",
+    "C18": "100nF",
+    "MB2": "MouseBite_2Rows7_D0.60_P1.00_Inset_Gap2.00",
+    "C10": "100nF",
+    "D2": "B340A",
+    "J4": "MAIN LINK / OPTIONAL",
+    "C25": "100nF",
+    "R29": "0R",
+    "R30": "1.8M",
+    "C14": "100nF",
+    "C51": "100nF",
+    "C11": "100nF",
+    "C22": "2.2uF",
+    "L2": "150nH",
+    "C44": "4.7uF",
+    "C35": "DNP / TRIM",
+    "C36": "100pF",
+    "R16": "470k",
+    "C34": "DNP / TRIM",
+    "R17": "100k",
+    "J2": "JST-PH / 1S Li-ion",
+    "C53": "33pF",
+    "C7": "DNP / USB tune",
+    "R33": "100k",
+    "R38": "4.7k",
+    "U1": "TP4054-42-SOT25R",
+    "R28": "2.7R",
+    "C2": "22uF",
+    "R36": "100k",
+    "C5": "22uF",
+    "R20": "2.2k",
+    "C27": "15pF",
+    "R25": "2.2k",
+    "C45": "100nF",
+    "SW1": "RESET",
+    "Q5": "BSS138",
+    "R21": "10k",
+    "R18": "100k",
+    "C52": "1uF",
+    "L4": "10uH",
+    "C39": "DNP / TRIM",
+    "U9": "MCP1700T-3002E/TT",
+    "J3": "KEYBOARD / USER FIT",
+    "R35": "10k",
+    "R14": "100R",
+    "C13": "100nF",
+    "C12": "1uF",
+    "R34": "100k",
+    "J1": "USB4105-GF-A-120",
+    "R11": "10k",
+    "C29": "1nF",
+    "C43": "100nF",
+    "C24": "2.2uF",
+    "R15": "470k",
+    "R24": "100k",
+    "C21": "2.2uF",
+    "U6": "PN7160A1HN/C100E",
+    "R19": "2.2k",
+    "R1": "5.1k",
+    "Q3": "IRLML6402",
+    "DS1": "SSD1309 OLED / 26-pin",
+    "C37": "100pF",
+    "D1": "B340A",
+    "U8": "PCF8574T",
+    "L1": "2.2uH",
+    "C20": "100nF",
+    "C4": "22uF",
+    "U4": "USBLC6-2SC6",
+    "R10": "10k",
+    "R26": "2.2k",
+    "R2": "5.1k",
+    "C23": "2.2uF",
+    "R3": "10k",
+    "U5": "TLV803EA30DBZR",
+    "R6": "220k",
+    "R12": "22R",
+    "U3": "ESP32-C3-WROOM-02-N4",
+    "C50": "2.2uF",
+    "J5": "MODULE LINK / OPTIONAL",
+    "R39": "4.7k",
+    "C1": "22uF",
+    "SW2": "BOOT",
+    "C32": "68pF",
+    "R23": "100k",
+    "MB1": "MouseBite_2Rows7_D0.60_P1.00_Inset_Gap2.00",
+    "R32": "910k",
+    "R4": "2.2k",
+    "R13": "22R",
+    "C31": "330pF",
+    "L3": "150nH",
+    "C16": "100nF",
+    "D3": "CHARGE (red)",
+    "C17": "10uF",
+    "C46": "4.7uF",
+    "C19": "10uF",
+    "D4": "SS14",
+    "C38": "DNP / TRIM",
+    "R27": "2.7R",
+    "C30": "330pF",
+    "R31": "200k",
+    "C6": "22uF",
+    "Q1": "IRLML6402",
+    "R42": "0R",
+    "Y1": "27.12MHz / CL 10pF",
+    "A1": "PCB loop 40x40 / 4T",
+    "C15": "1uF",
+    "R5": "10k",
+    "R41": "0R",
+    "Q4": "BSS138",
+    "R22": "100k",
+    "C33": "68pF",
+    "R40": "100k",
+    "R37": "10k",
+    "C42": "1uF",
+    "C40": "10uF",
+    "C41": "22pF",
+    "C8": "DNP / USB tune",
+    "C48": "100nF",
+    "U2": "SY8089AAAC",
+    "C47": "2.2uF",
+    "C28": "1nF",
+    "R9": "10k",
+    "C3": "22pF",
+    "C9": "22uF",
+    "C54": "33pF",
+    "Q2": "BSS138",
+    "R7": "48.7k"
+  },
+  "antenna_copper_and_rule_sha256": "d59502c6aed490f966bb845a4400af206a1246088f0fa6b29024725e0b6da3fa",
+  "edge_cuts_sha256": "02f7c97b7a1f638b534da9947c810d0cf1e5901762b2e6ef5140e702e0ec0cc3",
+  "nfc_refs": [
+    "U6",
+    "Y1",
+    "L2",
+    "L3",
+    "C15",
+    "C16",
+    "C17",
+    "C18",
+    "C19",
+    "C20",
+    "C21",
+    "C22",
+    "C23",
+    "C24",
+    "C25",
+    "C26",
+    "C27",
+    "C28",
+    "C29",
+    "C30",
+    "C31",
+    "C32",
+    "C33",
+    "C34",
+    "C35",
+    "C36",
+    "C37",
+    "C38",
+    "C39",
+    "C53",
+    "C54",
+    "R21",
+    "R22",
+    "R23",
+    "R24",
+    "R25",
+    "R26",
+    "R27",
+    "R28",
+    "R29",
+    "R41",
+    "R42"
+  ],
+  "mirrored_pairs": [
+    [
+      "R41",
+      "R42"
+    ],
+    [
+      "L2",
+      "L3"
+    ],
+    [
+      "C28",
+      "C29"
+    ],
+    [
+      "R25",
+      "R26"
+    ],
+    [
+      "C30",
+      "C31"
+    ],
+    [
+      "C53",
+      "C54"
+    ],
+    [
+      "C32",
+      "C33"
+    ],
+    [
+      "C34",
+      "C35"
+    ],
+    [
+      "C36",
+      "C37"
+    ],
+    [
+      "C38",
+      "C39"
+    ],
+    [
+      "R27",
+      "R28"
+    ]
+  ],
+  "mirror_y_mm": 80.5,
+  "nfc_aperture_mm": [
+    64.65,
+    54.9,
+    96.85,
+    87.1
+  ],
+  "pour_exclusion_mm": [
+    58.25,
+    48.5,
+    103.25,
+    93.5
+  ]
+}

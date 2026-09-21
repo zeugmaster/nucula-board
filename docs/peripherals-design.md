@@ -3,10 +3,10 @@
 Revision B-draft, 2026-09-20. The project now has five schematic sheets:
 system interconnect, power/ESP32, NFC, OLED, and keyboard.
 [Combined drawing](schematic.pdf), [BOM](bom.csv), [verification](verification.json).
-The main PCB has a preliminary layout and a 35 mm detachable keyboard section;
-the five breakaway interconnects are routed. Other routing and firmware remain
-to be completed. A separate NFC coil measurement coupon and reusable coil
-footprint are available.
+The main PCB is placed and routed, with its 35 mm detachable keyboard section
+and five preserved breakaway interconnects. See the [layout report](pcb-layout.md)
+for layer drawings and validation. Firmware remains to be completed. A separate
+NFC coil measurement coupon and reusable coil footprint are available.
 
 ## Shared I²C and MCU connections
 
@@ -223,6 +223,6 @@ calculations. The five-page PDF was rendered and visually inspected.
 Crystal and critical supply MLCC ordering codes are now selected; see
 [component refinements](component-refinements.md). The user has confirmed the
 26-contact OLED pinout/orientation and 5 V / at least 1.5 A USB-C supply.
-The schematic is ready to begin PCB layout. RF/oscillator tuning, display sequencing/current and USB power
+PCB placement and routing are complete. RF/oscillator tuning, display sequencing/current and USB power
 transients require prototype measurements. Battery runtime and improved
 low-battery behavior are deferred, as accepted by the user.

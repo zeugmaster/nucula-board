@@ -10764,4 +10764,26 @@
     )
     (uuid 78f89b8b-2f1b-4ee3-9ad0-f13621eaf8be)
   )
+  (global_label "Net-(A1-LOOP_A)"
+    (shape bidirectional)
+    (at 368.3 73.66 0)
+    (effects
+      (font
+        (size 1.0 1.0)
+      )
+      (justify left)
+    )
+    (uuid "f1a33b04-2067-40b4-9148-5ffb36e035da")
+  )
+  (global_label "Net-(A1-LOOP_B)"
+    (shape bidirectional)
+    (at 368.3 119.38 0)
+    (effects
+      (font
+        (size 1.0 1.0)
+      )
+      (justify left)
+    )
+    (uuid "174c507c-3e3f-4f4b-b7a2-1463110f448d")
+  )
 )

@@ -2,7 +2,7 @@
   "schematic_sha256": {
     "nucula-v2.kicad_sch": "4438052cb3ed03d7555772a1ca6d5177c5d74cef2f3e5ba6155279f69393aef3",
     "power-mcu.kicad_sch": "87cdb59acb6c5b88d273f9ccd8cbc1848213c045ed9a5452e7b29e5f002cfa69",
-    "nfc.kicad_sch": "b53c0a821f9459b59cb7290baf316fcb1a243e9a1915049caed038ef868e030e",
+    "nfc.kicad_sch": "cd0d8381536f28a9dcab08e50a41ef020105190ca204bd47ace184fb11758f13",
     "oled.kicad_sch": "0848cb10d9b3f22e53e663d9c6202f6cf5e52ce8735ab09e96bf8f6ddca321cf",
     "keyboard.kicad_sch": "9489d40c8a70b60037e6dd5a4849a09903941db6114d3cf6ed89d5500f043259"
   },
@@ -185,7 +185,7 @@
     "RF prototype values and 40mm coil selected; actual RL/C, tuning and RF stress still require measurement. NDK crystal selected; load/frequency/startup/drive require bench verification.",
     "OLED 26-contact pinout/orientation confirmed by user, including outer GND contacts; verify socket fit/flex fold during placement and panel current at bring-up.",
     "MCP1700 low-current dropout and AP3012 switch-current limits need bench validation.",
-    "Keyboard break line, routing and reconnect cable capacitance are deferred to PCB layout."
+    "Keyboard break line and routing are covered by the PCB layout report; reconnect cable capacitance still needs validation."
   ],
   "models": [
     "${KICAD_SHARE}/3dmodels/Button_Switch_SMD.3dshapes/SW_SPST_B3U-1000P.step",
@@ -209,5 +209,6 @@
     "${KICAD_SHARE}/3dmodels/Resistor_SMD.3dshapes/R_1206_3216Metric.step",
     "${KIPRJMOD}/libraries/Nucula_Project.3dshapes/ESP32-C3-WROOM-02-N4.step",
     "${KIPRJMOD}/libraries/Nucula_Project.3dshapes/PN7160A1HN_C100E.step"
-  ]
+  ],
+  "pcb_layout_report": "pcb/layout-check.json"
 }

@@ -295,6 +295,7 @@ report={
            'reference_rows_P':[1,6,5,3],'reference_columns_P':[2,0,4]},
  'pending_selection_or_tuning':pending,
  'ready_to_begin_pcb_layout':True,
+ 'pcb_layout_report':'pcb/layout-check.json',
  'fabrication_release_ready':False,
  'layout_blockers':[],
  'prototype_power_source':'User-confirmed: dedicated USB-C 5 V supply rated at least 1.5 A; ordinary computer-host operation unqualified.',
@@ -308,7 +309,7 @@ report={
            'RF prototype values and 40mm coil selected; actual RL/C, tuning and RF stress still require measurement. NDK crystal selected; load/frequency/startup/drive require bench verification.',
            'OLED 26-contact pinout/orientation confirmed by user, including outer GND contacts; verify socket fit/flex fold during placement and panel current at bring-up.',
            'MCP1700 low-current dropout and AP3012 switch-current limits need bench validation.',
-           'Keyboard break line, routing and reconnect cable capacitance are deferred to PCB layout.'],
+           'Keyboard break line and routing are covered by the PCB layout report; reconnect cable capacitance still needs validation.'],
  'models':sorted(models)
 }
 (DOC/'verification.json').write_text(json.dumps(report,indent=2)+'\n')
