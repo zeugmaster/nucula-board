@@ -60,7 +60,7 @@ def main():
         'J2': ('C160352', 'Nucula_Project:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical'),
         'U5': ('C5218924', 'Package_TO_SOT_SMD:SOT-23'),
         'R30': ('C2088132', 'Resistor_SMD:R_0805_2012Metric'),
-        'J1': ('C5184243', 'Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal'),
+        'J1': ('C5184243', 'Nucula_Project:USB_C_GCT_USB4105_16P_JLCPCB'),
         'U8': ('C7605', 'Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm'),
     }
     for ref, (code, footprint) in expected.items():
@@ -139,7 +139,7 @@ def main():
                   shortages=[r for r in purchasing if r['Stock_status'] == 'SHORTAGE'],
                   through_hole_assembly=sorted(r['Reference'] for r in populated
                                               if parts[r['LCSC']]['assemblyMode'] == 'manualWeld'),
-                  scope='Component and footprint readiness; routed PCB checked separately in docs/pcb/layout-check.json; CPL and manufacturing release pending',
+                  scope='Component and footprint readiness; see docs/manufacturing-release.md and the hash-bound manufacturing package for Gerber/CPL validation and pending CAM acceptance',
                   stock_reserved=False,
                   quantity_method='Planning only: max(placements, public minimum placement) + public loss allowance. Final JLCPCB BOM matching controls quantities.',
                   inputs_sha256={str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest()

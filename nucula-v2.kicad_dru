@@ -1,2 +1,2 @@
 (version 1)
-(rule "USB4105 manufacturer NPTH-pad spacing" (condition "A.memberOfFootprint('J1') && B.memberOfFootprint('J1')") (constraint hole_clearance (min 0.19mm)))
+(rule "USB4105 JLCPCB NPTH-pad spacing" (condition "A.memberOfFootprint('J1') && B.memberOfFootprint('J1')") (constraint hole_clearance (min 0.20mm)))

@@ -4364,7 +4364,7 @@
         (justify left)
       )
     )
-    (property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal"
+    (property "Footprint" "Nucula_Project:USB_C_GCT_USB4105_16P_JLCPCB"
       (at 27.94 53.34 0)
       (effects
         (font

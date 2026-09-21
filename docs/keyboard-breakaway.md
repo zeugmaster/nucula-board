@@ -63,12 +63,14 @@ and front-layer tracks through the mechanical tab regions. The five deliberate
 front-layer bridge traces are allowed. Keep component bodies and pads away
 from the fracture band when continuing placement.
 
-Only the J4-to-J5 bridge connections are routed. The remainder of the keyboard
-and main-board circuitry still needs routing before it can operate.
+All keyboard and main-board routing is complete. The five original J4-to-J5
+bridge connections and the fracture-band restrictions are preserved; see the
+[current layout checks](pcb-layout.md).
 
 ## Verification and fabrication
 
-The [saved-board verification](keyboard/breakaway-check.json) checks:
+The [original breakaway verification](keyboard/breakaway-check.json) records the
+mechanical construction before full-board routing:
 
 - One connected board outline with two closed internal slots.
 - All eight keyboard-region footprints within the lower 35 mm section.
@@ -79,7 +81,9 @@ The [saved-board verification](keyboard/breakaway-check.json) checks:
 - No new DRC violations: the same 18 existing findings remain, with 303
   unconnected items still to route.
 
-This is a preliminary layout, not a fabrication release. Supply Edge.Cuts and
-the PTH/NPTH drill files when manufacturing, and identify this as an intentional
-functional breakaway that must remain attached through assembly. Confirm the
-fabricator's interpretation of the tabs and central cut bridge during CAM review.
+That report is historical. The [manufacturing package](manufacturing-release.md)
+contains freshly checked Edge.Cuts and separate PTH/NPTH drills, with zero
+unconnected items. Its independent drill readback confirms all 28 mouse bites.
+Identify this as an intentional functional breakaway that must remain attached
+through assembly and delivery. Confirm the fabricator's interpretation of the
+tabs and central cut bridge during CAM review.

@@ -8,6 +8,11 @@ The global `Nucula` library remains available separately, including PN7160.
   metadata. Footprint pad geometry and antenna keepout are preserved.
 - TLV803EA30DBZR: adapted from KiCad's TPS3839DBZ drawing. Corrected to the
   TLV803E open-drain output, SOT-23 footprint, ordering code and documentation.
+- USB_C_GCT_USB4105_16P_JLCPCB: adapted from KiCad 10.0.6's GCT USB4105
+  footprint. The two outer ground lands (A1/B12 and A12/B1) are shortened
+  0.04 mm only at the locating-hole end: 0.60 × 1.11 mm at Y = −3.70 mm.
+  Holes, shell stakes, other pads, outlines and the standard STEP model are
+  unchanged. [Dimensions and manufacturing audit](../docs/usb-connector-clearance.md).
 - JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical: KiCad's unmodified SMT
   land pattern for J2 / JST B2B-PH-SM4-TB(LF)(SN), JLCPCB C160352. Two
   electrical pads and two unconnected solder hold-down tabs, all with paste.

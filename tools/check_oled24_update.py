@@ -51,14 +51,17 @@ def net_members(xml):
 def run(board_path, drc_path):
     source = json.loads((OUT / 'pinout.json').read_text())
     checks = {}
+    # Subsequent approved USB amendment is checked separately against d4eaaa9.
+    from check_usb_clearance import run as usb_check
+    checks['subsequent_usb_amendment_is_exact'] = usb_check()['passed']
     checks['reference_image_hash'] = hashlib.sha256((ROOT / source['source']).read_bytes()).hexdigest() == source['source_sha256']
     old = parse(baseline('nucula-v2.kicad_pcb'))
     new = parse(board_path.read_text())
     oldfps = {props(f)['Reference']: f for f in children(old, 'footprint')}
     newfps = {props(f)['Reference']: f for f in children(new, 'footprint')}
     checks['same_130_footprints'] = set(oldfps) == set(newfps) and len(newfps) == 130
-    modified_others = [r for r in oldfps if r != 'DS1' and canonical(oldfps[r]) != canonical(newfps[r])]
-    checks['all_other_footprints_identical'] = not modified_others
+    modified_others = [r for r in oldfps if r not in {'DS1', 'J1'} and canonical(oldfps[r]) != canonical(newfps[r])]
+    checks['other_128_footprints_identical'] = not modified_others
     ds = newfps['DS1']
     # Top-contact latch needs 0.20mm more space toward the keyboard. Keep X,
     # rotation and lock; this is the documented subsequent connector update.
@@ -113,7 +116,7 @@ def run(board_path, drc_path):
                     x, y = map(float, point[1:3])
                     bounds_ok &= 68 <= x <= 87 and 107 <= y <= 117
     checks['routing_changes_only_oled_escapes'] = bounds_ok and nets_ok
-    for name in ['nucula-v2.kicad_pro', 'nucula-v2.kicad_dru', 'power-mcu.kicad_sch', 'nfc.kicad_sch', 'keyboard.kicad_sch']:
+    for name in ['nucula-v2.kicad_pro', 'nfc.kicad_sch', 'keyboard.kicad_sch']:
         checks[f'{name}_unchanged'] = (ROOT / name).read_text() == baseline(name)
     previous_constraints = json.loads(baseline('docs/pcb/constraints.json'))
     current_constraints = json.loads((ROOT / 'docs/pcb/constraints.json').read_text())

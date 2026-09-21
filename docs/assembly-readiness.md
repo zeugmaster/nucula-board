@@ -1,17 +1,18 @@
 # Component and footprint readiness — 10-board prototype
 
-Checked 2026-09-20 against KiCad 10.0.6 and JLCPCB's public catalogue;
-J2 changed to SMT and its stock rechecked 2026-09-21 (Berlin).
+All 55 exact selections refreshed 2026-09-21 against JLCPCB's public catalogue;
+native schematic checks repeated with KiCad 10.0.6.
 DS1 now uses the 24-position **top-contact FH12A-24S-0.5SH(55), C506794**.
 Its manufacturer land pattern, pin order and updated placement are checked;
 the public catalogue record was refreshed on 2026-09-21, with 5,189 available
-against ten needed. Other dated stock observations remain unchanged.
+against ten needed. All other BOM part observations were refreshed in the same run.
 [Connector update and verification](oled24/top-contact.md).
 **Every physical symbol has a resolving
 footprint and every populated purchased item has an exact manufacturer part
-number and JLCPCB C-code.** This is not a fabrication release: the main PCB
-is fully routed with zero DRC errors and zero unconnected items; assembly
-rotations, CPL and physical prototype qualification remain to be completed.
+number and JLCPCB C-code.** The [manufacturing package](manufacturing-release.md)
+now includes Gerbers, drills, stencil data and a matching 116-placement CPL.
+It has zero DRC errors and zero unconnected items. JLCPCB CAM acceptance,
+catalogue-specific assembly preview and physical prototype qualification remain.
 
 There are **128 physical symbols**: 116 populated purchased components,
 11 DNP components, and one etched PCB antenna. The populated BOM contains
@@ -35,15 +36,15 @@ DS1's purchased item is the Hirose FPC **socket**, not the OLED glass. The OLED
 and keypad are user-supplied external modules, excluded from assembly BOM/CPL
 as explicitly reconfirmed by the user on 2026-09-21. J3/J4/J5 remain DNP; J3 still has
 isolated end pins 1/9 and P0–P6 on pins 2–8. A1 is manufactured copper, excluded
-from the assembly BOM and future CPL. J2 is the populated **JST-PH 2 mm vertical
+from the assembly BOM and CPL. J2 is the populated **JST-PH 2 mm vertical
 surface-mount battery connector**, **B2B-PH-SM4-TB(LF)(SN) / C160352**. JLCPCB
 lists `smtWeld`, supporting Economic and Standard SMT assembly. It replaces the
 through-hole C131337 connector; there are no remaining populated components
 classified as manual/through-hole assembly in this catalogue audit. Mechanical
 anchors on other SMT connectors are still part of their respective footprints.
 
-J2 stock was checked at **2026-09-20 22:17 UTC / 2026-09-21 00:17 Berlin**:
-**35,730 in stock; 34,746 available to order**, versus 10 needed. Public minimum
+J2 stock was refreshed on **2026-09-21**:
+**34,636 available to order**, versus 10 needed. Public minimum
 placement is 5 and loss allowance is 0, so the planning quantity remains 10.
 The listed pre-order MOQ of 42 applies to pre-orders, not this available stock.
 Stock is a dated observation, not a reservation.
@@ -83,7 +84,7 @@ support parts, and routes the five J4-to-J5 connections. Its
 | DS1 | Hirose FH12A-24S-0.5SH(55), **C506794** | Top-contact socket for confirmed mounted flex orientation; 24-contact CON24 map retained, manufacturer-derived lands/paste and larger body outline. Moved 0.20 mm toward keyboard. |
 | J2 | JST B2B-PH-SM4-TB(LF)(SN), **C160352** | Stocked SMT top-entry PH connector; same 2 mm mating family and battery polarity. Larger footprint with two solder hold-down tabs replaces through-hole assembly. |
 | U5 | TI TLV803EA30DBZR, **C5218924** | The DCKR variant was out of stock. Same 3.08 V threshold and nominal 200 ms delay; **SOT-23 replaces SC70**. Both selected variants use 1=GND, 2=RESET, 3=VDD. |
-| J1 | GCT USB4105-GF-A-120, **C5184243** | Unsuffixed part had zero available order quantity. Same XY land pattern; shell stakes are **1.20 mm**, suitable for the specified 1.6 mm board. |
+| J1 | GCT USB4105-GF-A-120, **C5184243** | Unsuffixed part had zero available order quantity. Original XY pattern with [0.04 mm outer ground-land trim](usb-connector-clearance.md); holes unchanged. Shell stakes are **1.20 mm**, suitable for the specified 1.6 mm board. |
 | R30 | TE CPF0805B1M8E, **C2088132** | Stocked 1.8 MΩ, **0.1%**, 0.1 W, 100 V; **0805 replaces 0603**. Divider voltage and precision remain unchanged. |
 | U1 | TOPPOWER TP4054-42-SOT25R, **C32574** | Exact stocked catalogue ordering code replaces SOT235. Catalogue-linked manufacturer sheet confirms the same five-pin assignment and 100 mA with 10 kΩ. SOT-23-5 footprint retained. |
 | C30/C31 + C53/C54 | 330 pF 1% **C527075** + 33 pF 5% **C309485** | Replaces the poorly stocked 360 pF 2% selection with **363 pF ±1.364%**, 100 V C0G, using the existing parallel pads. C53/C54 now populated with paste openings. |

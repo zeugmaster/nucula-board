@@ -1,5 +1,12 @@
 # JLCPCB prototype manufacturing plan
 
+**Superseded by the [prepared manufacturing package](manufacturing-release.md)
+on 2026-09-21.** The design and OLED connector are locked. Gerbers, drills, BOM,
+CPL, stencil and drawings are generated, and all 55 selected parts were refreshed
+in stock for ten boards. The release instructions record the remaining supplier
+CAM/preview checks, including J1 hole clearance and filled/capped via processing.
+The plan below is retained as the preparation history.
+
 Prepared 2026-09-21 against saved design `96c8114`. This is a preparation plan,
 not a manufacturing release or an order. The planning basis remains **10 assembled
 boards**, with assembly on the top side and the keyboard attached.
@@ -87,9 +94,9 @@ explicitly sourced part and a realistic quantity/lead time.
 - Compare the design against the chosen JLCPCB process: 0.15 mm minimum tracks,
   0.20 mm copper clearance, 0.20 mm minimum via drill and 0.125 mm annular ring.
   Review board-edge, slot, hole and mask clearances, including process tolerances.
-- Resolve J1's local NPTH-to-pad exception: the current manufacturer footprint
-  has about 0.1944 mm clearance and a 0.19 mm KiCad rule. A passing local DRC does
-  not establish acceptance by the selected fabrication process.
+- Completed: J1's [approved local ground-land trim](usb-connector-clearance.md)
+  raises NPTH-to-pad clearance from 0.1944 to 0.2333 mm. Its KiCad rule now
+  requires JLCPCB's 0.20 mm minimum; the holes and connector part are unchanged.
 - Check PN7160 exposed-pad paste coverage and nearby vias, fine-pitch connector
   paste/mask openings, connector mechanical lands and all DNP paste apertures.
   Confirm via tenting and any via-in-pad treatment actually required by geometry.

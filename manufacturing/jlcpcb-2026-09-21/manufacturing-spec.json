@@ -1,0 +1,79 @@
+{
+  "release": "jlcpcb-2026-09-21",
+  "boards": 10,
+  "service": "Standard PCBA",
+  "assembly_side": "Top",
+  "board_size_mm": [
+    60,
+    110
+  ],
+  "thickness_mm": 1.6,
+  "solder_mask": "Black",
+  "silkscreen": "White",
+  "finish": "ENIG",
+  "via_covering": "Epoxy Filled & Capped; fill all 0.20, 0.30 and 0.40 mm plated round holes (335); leave 0.60 mm connector slots, 1.00 mm header holes and all NPTH open",
+  "stackup": "JLC04161H-3313",
+  "outer_copper_mm": 0.035,
+  "inner_copper_mm": 0.0152,
+  "prepreg_mm": 0.0994,
+  "prepreg_er": 4.1,
+  "core_mm": 1.265,
+  "core_er": 4.6,
+  "origin_kicad_mm": [
+    50,
+    160
+  ],
+  "dnp": [
+    "C7",
+    "C8",
+    "C34",
+    "C35",
+    "C38",
+    "C39",
+    "J3",
+    "J4",
+    "J5",
+    "R38",
+    "R39"
+  ],
+  "non_components": [
+    "A1",
+    "MB1",
+    "MB2"
+  ],
+  "local_body_center_offsets_mm": {
+    "U3": [
+      0,
+      -3.1
+    ],
+    "J2": [
+      0,
+      -1.75
+    ],
+    "DS1": [
+      0,
+      1.9
+    ]
+  },
+  "rotation_corrections_deg": {},
+  "rotation_status": "KiCad CCW angles; JLCPCB catalogue orientation preview requires verification before payment",
+  "carrier": "Edge rails/fiducials/tooling holes Added by JLCPCB; single-board BOM/CPL; keyboard stays attached",
+  "status": "Prepared for quotation and final supplier stackup, carrier and placement review",
+  "sources_checked": "2026-09-21",
+  "sources": {
+    "stackup": "https://jlcpcb.com/impedance",
+    "fabrication": "https://jlcpcb.com/capabilities/Capab",
+    "assembly": "https://jlcpcb.com/capabilities/pcb-assembly-capabilities",
+    "carrier": "https://jlcpcb.com/help/article/how-to-add-edge-rails-fiducials-for-pcb-assembly-order",
+    "gerber": "https://jlcpcb.com/help/article/how-to-generate-gerber-and-drill-files-in-kicad-9",
+    "bom": "https://jlcpcb.com/help/article/bill-of-materials-for-pcb-assembly",
+    "cpl": "https://jlcpcb.com/help/article/pick-place-file-for-pcb-assembly",
+    "via_covering": "https://jlcpcb.com/help/article/pcb-via-covering"
+  },
+  "usb_connector_clearance": {
+    "local_footprint": "Nucula_Project:USB_C_GCT_USB4105_16P_JLCPCB",
+    "minimum_npth_to_pad_mm": 0.233308,
+    "rule_minimum_mm": 0.2,
+    "outer_ground_land_trim_mm": 0.04
+  }
+}

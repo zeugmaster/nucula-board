@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>nucula-v2.kicad_sch</source>
-    <date>2026-09-21T19:04:23</date>
+    <date>2026-09-21T20:21:32</date>
     <tool>Eeschema 10.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -959,14 +959,14 @@
     </comp>
     <comp ref="J1">
       <value>USB4105-GF-A-120</value>
-      <footprint>Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal</footprint>
+      <footprint>Nucula_Project:USB_C_GCT_USB4105_16P_JLCPCB</footprint>
       <datasheet>https://gct.co/files/drawings/usb4105.pdf</datasheet>
       <fields>
         <field name="Manufacturer">Global Connector Technology</field>
         <field name="MPN">USB4105-GF-A-120</field>
         <field name="Mechanical Note">1.20 mm shell stakes; common USB4105 XY PCB pattern; 1.6 mm prototype PCB</field>
         <field name="LCSC">C5184243</field>
-        <field name="Footprint">Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal</field>
+        <field name="Footprint">Nucula_Project:USB_C_GCT_USB4105_16P_JLCPCB</field>
         <field name="Datasheet">https://gct.co/files/drawings/usb4105.pdf</field>
         <field name="Description"/>
       </fields>

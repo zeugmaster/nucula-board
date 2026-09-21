@@ -2,6 +2,13 @@
 
 2026-09-21 · KiCad 10.0.6 · four-layer prototype layout
 
+The [manufacturing package](manufacturing-release.md) specifies JLC04161H-3313,
+ENIG and epoxy-filled/capped vias and contains final manufacturing exports.
+Its export copy supersedes the nominal stackup below without changing locked
+placement, routing or the outline. The approved
+[J1 ground-land trim](usb-connector-clearance.md) raises its NPTH clearance
+to 0.233 mm; the former 0.1944 mm fabrication exception is resolved.
+
 The remaining **113 footprints are placed and all 91 nets are connected**.
 All 130 footprints, including the two mouse-bite patterns, are on F.Cu.
 The 17 constrained footprints remain locked; DS1 has the documented 0.20 mm
@@ -20,8 +27,9 @@ socket for the confirmed ribbon orientation. Its center is now **(80, 108.85 mm)
 0.20 mm toward the keyboard from the prior position; its 180° rotation and lock
 are retained. The larger latch courtyard is clear of neighboring components.
 All 24 nets are unchanged, with 47 local trace segments and eight vias adjusted.
-The other 129 footprints, board graphics, NFC/USB geometry and outline are
-unchanged. [Manufacturer lands, paste and regression checks](oled24/top-contact.md).
+That OLED amendment preserved the other 129 footprints, board graphics,
+NFC/USB geometry and outline. The subsequent J1 amendment changes only two
+physical ground lands; all routing remains unchanged. [Manufacturer lands, paste and regression checks](oled24/top-contact.md).
 
 ## NFC placement and copper
 
@@ -70,9 +78,11 @@ The full fracture band remains free of pours and vias; only the original five
 
 The global track minimum is 0.15 mm and the through-hole minimum is 0.20 mm.
 These dimensions must be included in the fabrication specification. The
-footprint-specific rule in `nucula-v2.kicad_dru` permits 0.19 mm NPTH-to-pad
-clearance only within J1: its existing manufacturer land pattern has about
-0.1944 mm there. Other hole-clearance constraints remain unchanged.
+footprint-specific rule in `nucula-v2.kicad_dru` requires 0.20 mm NPTH-to-pad
+clearance within J1, matching JLCPCB's minimum. The project-local USB4105
+footprint achieves 0.2333 mm with a 0.04 mm trim at the hole-facing end of
+each outer ground land. Holes, shell stakes and the global 0.25 mm
+hole-clearance constraint remain unchanged.
 
 The USB pair from U4 to R12/R13 uses **0.15 mm traces with 0.21 mm edge spacing
 on B.Cu**, referenced to In2.Cu. The nominal stack is 35 µm copper with 0.10 mm

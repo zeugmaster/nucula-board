@@ -1,0 +1,38 @@
+{
+  "baseline_commit": "d4eaaa9",
+  "passed": true,
+  "checks": {
+    "same_130_footprints": true,
+    "j1_only_approved_four_pad_definitions_and_library_id": true,
+    "other_129_footprints_identical": true,
+    "all_other_board_geometry_and_settings_identical_except_zone_refill": true,
+    "schematic_only_j1_library_assignment_changed": true,
+    "only_j1_hole_rule_raised_to_0_20mm": true,
+    "nucula-v2.kicad_pro_unchanged": true,
+    "nucula-v2.kicad_sch_unchanged": true,
+    "oled.kicad_sch_unchanged": true,
+    "nfc.kicad_sch_unchanged": true,
+    "keyboard.kicad_sch_unchanged": true,
+    "all_library_pad_shapes_and_holes_match_board": true,
+    "all_j1_npth_to_smd_clearances_above_0_20mm": true,
+    "minimum_matches_independent_geometry_0_233308mm": true,
+    "native_drc_only_original_two_silk_warnings": true
+  },
+  "minimum_npth_to_smd_clearance_mm": 0.233308,
+  "j1_rule_minimum_mm": 0.2,
+  "physical_lands_modified": 2,
+  "pad_definitions_modified": [
+    "A1",
+    "A12",
+    "B1",
+    "B12"
+  ],
+  "trim_at_hole_facing_end_mm": 0.04,
+  "land_size_mm": [
+    0.6,
+    1.11
+  ],
+  "land_area_reduction_percent": 3.578,
+  "board_sha256": "0ffb427b707ffb8290029c605edbd8b14c490a60822fa13a1c43e3cfb68e0d4a",
+  "limits": "Nominal geometry audit, not a physical connector or assembly qualification; project adaptation of manufacturer lands."
+}

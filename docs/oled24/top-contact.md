@@ -32,9 +32,11 @@ The copper land pattern matches the former bottom-contact footprint, but the
 larger latch initially overlapped neighboring courtyards. DS1 moved **0.20 mm
 toward the keyboard**, from Y = 108.65 to 108.85 mm, to clear them. Its 47 affected
 local trace segments and eight vias were adjusted without adding or deleting
-routing items. The board still has 1,066 segments and 321 vias. The other 129
+routing items. The board still has 1,066 segments and 321 vias. At commit `d4eaaa9`, the other 129
 footprints, board outline, graphics, black-mask setting, NFC geometry, USB pair
-and breakaway connections remain unchanged.
+and breakaway connections were unchanged. The subsequent approved
+[USB ground-land trim](../usb-connector-clearance.md) is independently checked;
+the OLED footprint and all routing are preserved.
 
 The local footprint uses an independently authored, simplified VRML envelope
 for visual inspection. This is a closed-latch illustration from drawing
@@ -56,10 +58,10 @@ dimensions, not manufacturer CAD or a model of the display. Allow approximately
 - **23/23 layout checks pass**, including pad nets, constrained placements,
   all-layer antenna exclusions, mirrored RF routing, USB reference coverage and
   the five breakaway crossings.
-- **32/32 top-contact checks pass**, including drawing-derived lands/paste,
+- **Top-contact checks pass**, including drawing-derived lands/paste,
   placed/library agreement, unchanged net membership, unrelated footprints and
   settings, scoped routing changes and assembly exclusions.
-- **31/31 OLED regression checks pass**, retaining the independently recorded
+- **OLED regression checks pass**, retaining the independently recorded
   CON24 map and the earlier 26-to-24-contact correction.
 - The component-choice and ten-board assembly audits pass. There are still
   **55 purchased part groups and 116 placements per board**.

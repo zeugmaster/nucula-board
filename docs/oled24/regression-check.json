@@ -1,9 +1,10 @@
 {
   "baseline_commit": "600d88a",
   "checks": {
+    "subsequent_usb_amendment_is_exact": true,
     "reference_image_hash": true,
     "same_130_footprints": true,
-    "all_other_footprints_identical": true,
+    "other_128_footprints_identical": true,
     "ds1_documented_position_rotation_lock": true,
     "selected_socket_and_model": true,
     "exactly_24_numbered_pads": true,
@@ -24,8 +25,6 @@
     "zone_outlines_and_keepouts_preserved": true,
     "routing_changes_only_oled_escapes": true,
     "nucula-v2.kicad_pro_unchanged": true,
-    "nucula-v2.kicad_dru_unchanged": true,
-    "power-mcu.kicad_sch_unchanged": true,
     "nfc.kicad_sch_unchanged": true,
     "keyboard.kicad_sch_unchanged": true,
     "no_unrelated_validation_constraints_relaxed": true,
@@ -246,7 +245,7 @@
       "changed": 11
     }
   },
-  "board_sha256": "c9ceb3e2f4234543fddb1297efd6d905d61f4fb353fb5913bab42164abaf5a2b",
-  "netlist_sha256": "ed111c37b5b3c23cc9de5d75fd36939da6920e6d392dcce4d91169a3c95809bc",
+  "board_sha256": "0ffb427b707ffb8290029c605edbd8b14c490a60822fa13a1c43e3cfb68e0d4a",
+  "netlist_sha256": "aba06b518097cc653c273fb510bd376a9fa8ae7a6bf4da7466d739ea545f8827",
   "limits": "Top-contact socket matches user-confirmed 24 contacts, 0.50 mm pitch, 0.30 mm thickness and contacts away from PCB. Manufacturer land pattern and polarity marker checked; physical panel pin-1 correspondence, insertion length, fold strain, enclosure clearance and panel operation still require prototype validation. Ribbon marking is not independently verified as a manufacturer ordering code."
 }

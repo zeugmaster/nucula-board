@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="62mm" height="112mm" viewBox="-1 -1 62 112" style="background-color:white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(-1.0 111.0) scale(1 -1) translate(1.0 1.0)">
+    <path d="M 0.0 106.0 A 4.0 4.0 0 0 0 4.0 110.0" fill="none" stroke="black" stroke-width="0.05"/>
+    <path d="M 0.0 37.0 L 0.0 106.0" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.05"/>
+    <path d="M 0.0 37.0 L 8.75 37.0" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.05"/>
+    <path d="M 0.0 35.0 L 0.0 4.0" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.05"/>
+    <path d="M 4.0 110.0 L 56.0 110.0" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.05"/>
+    <path d="M 4.0 0.0 A 4.0 4.0 0 0 0 0.0 4.0" fill="none" stroke="black" stroke-width="0.05"/>
+    <path d="M 8.75 37.0 A 1.0 1.0 0 0 0 8.75 35.0" fill="none" stroke="black" stroke-width="0.05"/>
+    <path d="M 8.75 35.0 L 0.0 35.0" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.05"/>
+    <path d="M 15.25 37.0 L 27.25 37.0" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.05"/>
+    <path d="M 15.25 35.0 A 1.0 1.0 0 0 0 15.25 37.0" fill="none" stroke="black" stroke-width="0.05"/>
+    <path d="M 27.25 37.0 A 1.0 1.0 0 0 0 27.25 35.0" fill="none" stroke="black" stroke-width="0.05"/>
+    <path d="M 27.25 35.0 L 15.25 35.0" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.05"/>
+    <path d="M 32.75 37.0 L 44.75 37.0" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.05"/>
+    <path d="M 32.75 35.0 A 1.0 1.0 0 0 0 32.75 37.0" fill="none" stroke="black" stroke-width="0.05"/>
+    <path d="M 44.75 37.0 A 1.0 1.0 0 0 0 44.75 35.0" fill="none" stroke="black" stroke-width="0.05"/>
+    <path d="M 44.75 35.0 L 32.75 35.0" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.05"/>
+    <path d="M 51.25 37.0 L 60.0 37.0" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.05"/>
+    <path d="M 51.25 35.0 A 1.0 1.0 0 0 0 51.25 37.0" fill="none" stroke="black" stroke-width="0.05"/>
+    <path d="M 55.0 41.5 L 55.0 66.0" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.05"/>
+    <path d="M 55.0 41.5 L 60.0 41.5" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.05"/>
+    <path d="M 56.0 110.0 A 4.0 4.0 0 0 0 60.0 106.0" fill="none" stroke="black" stroke-width="0.05"/>
+    <path d="M 56.0 0.0 L 4.0 0.0" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.05"/>
+    <path d="M 60.0 106.0 L 60.0 66.0 L 55.0 66.0" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.05"/>
+    <path d="M 60.0 41.5 L 60.0 37.0" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.05"/>
+    <path d="M 60.0 35.0 L 51.25 35.0" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.05"/>
+    <path d="M 60.0 35.0 L 60.0 4.0" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.05"/>
+    <path d="M 60.0 4.0 A 4.0 4.0 0 0 0 56.0 0.0" fill="none" stroke="black" stroke-width="0.05"/>
+  </g>
+</svg>

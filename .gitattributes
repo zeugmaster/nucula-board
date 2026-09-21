@@ -1,0 +1,2 @@
+# Generated manufacturing drawings must retain their binary PDF structure.
+*.pdf binary

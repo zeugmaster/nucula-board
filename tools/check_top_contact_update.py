@@ -30,8 +30,11 @@ def run():
     footprint = ROOT / 'libraries/Nucula_Project.pretty/Hirose_FH12A-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal.kicad_mod'
     lib = parse(footprint.read_text())
     checks = {}
+    # Subsequent approved USB amendment is checked separately against d4eaaa9.
+    from check_usb_clearance import run as usb_check
+    checks['subsequent_usb_amendment_is_exact'] = usb_check()['passed']
     checks['same_130_footprints'] = set(a) == set(b) and len(b) == 130
-    checks['other_129_footprints_identical'] = all(canonical(a[r]) == canonical(b[r]) for r in a if r != 'DS1')
+    checks['other_128_footprints_identical'] = all(canonical(a[r]) == canonical(b[r]) for r in a if r not in {'DS1', 'J1'})
     checks['ds1_center_shift_only_0_20mm_y'] = canonical(child(ds, 'at')) == ['at', 80., 108.85, 180.]
     checks['ds1_lock_side_uuid_preserved'] = all(canonical(child(ds, k)) == canonical(child(a['DS1'], k)) for k in ['locked', 'layer', 'uuid'])
     checks['correct_top_contact_part'] = props(ds)['MPN'] == 'FH12A-24S-0.5SH(55)' and props(ds)['LCSC'] == 'C506794'
@@ -86,7 +89,7 @@ def run():
         bom['DS1']['Comment'] == 'FH12A-24S-0.5SH(55)' and bom['DS1']['LCSC Part #'] == 'C506794' and
         bom['U8']['LCSC Part #'] == 'C7605' and not {'J3', 'J4', 'J5', 'A1', 'MB1', 'MB2'} & bom.keys() and
         not any('NFP1309' in v for row in rows for v in row.values()))
-    for name in ['nucula-v2.kicad_pro', 'nucula-v2.kicad_dru', 'nucula-v2.kicad_sch', 'power-mcu.kicad_sch', 'nfc.kicad_sch', 'keyboard.kicad_sch']:
+    for name in ['nucula-v2.kicad_pro', 'nucula-v2.kicad_sch', 'nfc.kicad_sch', 'keyboard.kicad_sch']:
         checks[f'{name}_unchanged'] = (ROOT / name).read_text() == old(name)
     return {'baseline_commit': BASE, 'passed': all(checks.values()), 'checks': checks,
             'routing_items_modified': changes, 'board_sha256': hashlib.sha256((ROOT / 'nucula-v2.kicad_pcb').read_bytes()).hexdigest(),

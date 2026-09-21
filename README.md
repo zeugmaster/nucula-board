@@ -11,6 +11,8 @@ and a detachable PCF8574T keyboard section. The four-layer PCB is placed and
 routed, with all components on top and the NFC circuitry inside the coil.
 
 - [Completed PCB layout, layer drawings and validation](docs/pcb-layout.md)
+- [JLCPCB manufacturing package and order settings](docs/manufacturing-release.md)
+- [Complete manufacturing ZIP](manufacturing/jlcpcb-2026-09-21-package.zip)
 - [Circuit simulation screening, findings and model limits](docs/simulation/README.md)
 - [Schematic PDF](docs/schematic.pdf)
 - [Design choices, datasheets and outstanding hardware limits](docs/power-design.md)
@@ -73,3 +75,11 @@ and the remaining prototype measurements.
 
 Git tracks design files, project libraries and documentation. Local editor state,
 lock files, automatic backups and KiCad's `.history` are ignored.
+
+Manufacturing files are prepared for 10 top-side assemblies, black mask, ENIG,
+and JLC04161H-3313. All 55 exact BOM parts were checked in stock on 2026-09-21;
+L2/L3 have only 21 available for 20 placements. The package includes a matching
+116-placement CPL and specifies filled/capped vias. Production still requires
+review of the carrier, impedance and assembly preview. J1's approved
+[ground-land trim](docs/usb-connector-clearance.md) raises hole clearance to
+0.233 mm and removes the former manufacturing exception. See the release instructions before ordering.

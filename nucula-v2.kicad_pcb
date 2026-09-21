@@ -13397,7 +13397,7 @@
 			)
 		)
 	)
-	(footprint "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal"
+	(footprint "Nucula_Project:USB_C_GCT_USB4105_16P_JLCPCB"
 		(locked yes)
 		(layer "F.Cu")
 		(uuid "54d0982d-549a-4f9a-8e28-5e02e4861f46")
@@ -13611,8 +13611,8 @@
 			(uuid "04e52f50-b6cf-4f1c-bf0c-dabdae4bf0ec")
 		)
 		(pad "A1" smd roundrect
-			(at -3.2 -3.68 270)
-			(size 0.6 1.15)
+			(at -3.2 -3.7 270)
+			(size 0.6 1.11)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
@@ -13681,8 +13681,8 @@
 			(uuid "a6f66025-dbbe-4b14-990d-a99a46740b30")
 		)
 		(pad "A12" smd roundrect
-			(at 3.2 -3.68 270)
-			(size 0.6 1.15)
+			(at 3.2 -3.7 270)
+			(size 0.6 1.11)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
@@ -13691,8 +13691,8 @@
 			(uuid "41c9c1a0-8c42-42fb-9f11-86f0e9702489")
 		)
 		(pad "B1" smd roundrect
-			(at 3.2 -3.68 270)
-			(size 0.6 1.15)
+			(at 3.2 -3.7 270)
+			(size 0.6 1.11)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
@@ -13761,8 +13761,8 @@
 			(uuid "a03261dd-6be5-4fc8-bb39-ffa1181723e6")
 		)
 		(pad "B12" smd roundrect
-			(at -3.2 -3.68 270)
-			(size 0.6 1.15)
+			(at -3.2 -3.7 270)
+			(size 0.6 1.11)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")

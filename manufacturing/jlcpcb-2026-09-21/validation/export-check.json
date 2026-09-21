@@ -1,0 +1,96 @@
+{
+  "bom_groups": 55,
+  "bom_and_cpl_placements": 116,
+  "excluded_references": [
+    "A1",
+    "C7",
+    "C8",
+    "C34",
+    "C35",
+    "C38",
+    "C39",
+    "J3",
+    "J4",
+    "J5",
+    "MB1",
+    "MB2",
+    "R38",
+    "R39"
+  ],
+  "removed_dnp_paste_pads": [
+    "C7.1",
+    "C7.2",
+    "R38.1",
+    "R38.2",
+    "R39.1",
+    "R39.2",
+    "C8.1",
+    "C8.2"
+  ],
+  "original_design_unchanged": true,
+  "source_drc_errors": 0,
+  "source_drc_warnings": 2,
+  "u6_exposed_pad_paste_apertures": 9,
+  "u6_exposed_pad_paste_coverage_percent": 61.91,
+  "smd_pad_via_hole_intersections": [
+    {
+      "Reference": "DS1",
+      "Pad": "1",
+      "via_mm": [
+        85.55,
+        110.7
+      ],
+      "hole_overlap_mm2": 0.020614
+    },
+    {
+      "Reference": "DS1",
+      "Pad": "17",
+      "via_mm": [
+        77.55,
+        110.7
+      ],
+      "hole_overlap_mm2": 0.020614
+    },
+    {
+      "Reference": "R28",
+      "Pad": "2",
+      "via_mm": [
+        93.55,
+        85.85
+      ],
+      "hole_overlap_mm2": 0.070657
+    },
+    {
+      "Reference": "C45",
+      "Pad": "1",
+      "via_mm": [
+        65.8,
+        110.6
+      ],
+      "hole_overlap_mm2": 0.00897
+    },
+    {
+      "Reference": "U3",
+      "Pad": "8",
+      "via_mm": [
+        93.4,
+        98.09
+      ],
+      "hole_overlap_mm2": 0.025266
+    }
+  ],
+  "u3_thermal_holes_to_fill": 12,
+  "via_covering": "Epoxy Filled & Capped; fill all 0.20, 0.30 and 0.40 mm plated round holes (335); leave 0.60 mm connector slots, 1.00 mm header holes and all NPTH open",
+  "manufacturing_metadata_changes": [
+    "JLC04161H-3313 stackup",
+    "ENIG",
+    "aux origin 50,160",
+    "epoxy filling and copper capping"
+  ],
+  "usb_npth_to_pad_clearance_mm": 0.233308,
+  "cam_acceptance_pending": [
+    "90 ohm USB impedance on selected stackup",
+    "carrier avoiding ESP32 overhang and preserving keyboard",
+    "catalogue-specific placement rotations and centroids"
+  ]
+}
