@@ -1,0 +1,41 @@
+SUPERSEDED / UNSENT: retained as a record only. Private-customer online checkout is required; use pcb-online-ordering.md instead.
+
+An: team@contag.de
+Betreff: Express-Anfrage: 5 Stück 4-Lagen-PCB 60 x 110 mm, Via-in-Pad gefüllt/gedeckelt, plus 100-µm-SMD-Schablone – Berlin
+
+Guten Tag,
+
+bitte erstellen Sie ein Angebot für fünf unbestückte Prototypen gemäß den beigefügten r2-Gerberdaten und eine passende Top-SMD-Schablone. Bestückt und reflowgelötet wird anschließend von uns in einem Elektroniklabor in Berlin.
+
+Gewünschter Termin für Leiterplatten UND Schablone in Berlin: Dienstag, 29. September 2026; Mittwoch, 30. September 2026 ist als Ausweichtermin möglich. Bitte den frühesten erreichbaren Termin anbieten; Liefergeschwindigkeit hat Vorrang vor dem Preis. Bitte trotzdem alle Kosten ausweisen.
+Bitte nennen Sie auch unabhängig davon Ihren frühestmöglichen verbindlich angebotenen Fertigstellungstermin sowie Möglichkeiten für Selbstabholung oder einen lokalen Kurier. Diese Nachricht ist eine Angebotsanfrage, keine Fertigungsfreigabe.
+
+Spezifikation:
+- 5 komplette Leiterplatten, 4 Lagen FR-4, 60 x 110 mm Außenmaß, nominal 1,6 mm.
+- ENIG, schwarz/weißer Bestückungsdruck. Grün bitte als Option anbieten, falls dies den Termin verbessert.
+- Außenkupfer 35 µm fertig; Innenkupfer ca. 15–18 µm. Elektrischer Test erforderlich.
+- Die ursprüngliche Konstruktion entspricht JLC04161H-3313: außen ca. 0,0994 mm Prepreg (Dk ca. 4,1), Kern ca. 1,265 mm. Bitte einen geeigneten eigenen Aufbau zur Prüfung vorschlagen.
+- Vorhandenes USB-Differenzpaar auf B.Cu gegen In2.Cu/GND: Breite 0,15 mm, Abstand Kante/Kante 0,21 mm, Ziel 90 Ohm differentiell +/-10%. Bitte Impedanz mit dem angebotenen Aufbau bestätigen. Keine automatische Änderung an Leiterbahnen oder Gerbergeometrie. Abweichungen im Aufbau bitte vor Fertigung mit uns klären; die Leiterplatte trägt auch eine NFC-Antenne.
+- Alle 335 kleinen runden DK-Bohrungen pro Leiterplatte mit Epoxidharz füllen, planarisieren und mit Kupfer deckeln (Via-in-Pad): 32 x 0,20 mm, 301 x 0,30 mm, 2 x 0,40 mm. Die angegebenen Maße entsprechen den gelieferten Bohrdaten. Vorhandene Lötstoppöffnungen beibehalten. Nur Tenting/Maskenverschluss reicht nicht.
+- Vier USB-DK-Schlitze mit 0,60 mm Werkzeugbreite, 19 Header-Bohrungen mit 1,00 mm und alle NPTH bleiben OFFEN.
+- Kleinste Via-Geometrie 0,20-mm-Bohrung / 0,45-mm-Pad. J1-NPTH-Abstand zu Kupfer minimal ca. 0,233 mm. Bitte im CAM prüfen.
+- Die untere Tastatursektion gehört funktional zu EINER Leiterplatte und bleibt bei Fertigung/Lieferung verbunden. Zwei innere Ausfräsungen und 28 Mouse-Bite-Bohrungen sind absichtlich vorhanden. Keinen zusätzlichen Trennschnitt, keine V-Nut und keine Trennung durch den mittleren elektrischen Steg hinzufügen.
+- ESP32-Antennenüberhang/Aussparung und NFC-Antennenfreiflächen erhalten. Keine zusätzlichen Kennzeichnungen dort oder auf Pads.
+- Einzelplatinen für manuelle Laborbestückung bevorzugt. Falls Träger/Randstege erforderlich sind, bitte Zeichnung vorlegen; nicht an Antennenfreiflächen oder am Tastatur-Trennbereich befestigen. Schablone und Träger müssen zueinander passen.
+
+Schablone:
+- Eine lasergeschnittene Edelstahl-SMD-Schablone, Top, nominal 0,10 mm, gemäß nucula-v2-F_Paste.gtp.
+- U6-Exposed-Pad: vorhandene neun gerundete 1,1-mm-Fenster erhalten; nicht zu einer Vollfläche zusammenfassen.
+- DS1: vorhandene 24 Signalöffnungen 0,25 x 1,30 mm im 0,50-mm-Raster plus Halterungen erhalten.
+- DNP-Flächen ohne Paste belassen. Keine Bottom-Schablone.
+- Außenformat/Rahmen für unser Laborwerkzeug wird vor Auftrag festgelegt; bitte Standardoptionen nennen.
+
+Bitte führen Sie PCB-Kosten, Via-Füllung/Deckelung, Schablone, Expresszuschlag, elektrische Prüfung, Transport/Abholung sowie Steuer getrennt auf. Teilen Sie uns bitte mit, bis wann vollständige Daten, Rückfragenklärung und Bestellung für den angebotenen Termin vorliegen müssen.
+
+Anlagen:
+- nucula-v2-gerbers.zip (r2, unverändert)
+- nucula-v2-F_Paste.gtp
+- fabrication-outline.pdf
+
+Vielen Dank!
+[NAME / RECHNUNGSADRESSE / TELEFON EINTRAGEN]

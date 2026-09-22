@@ -1,0 +1,35 @@
+{
+  "checked_on": "2026-09-22",
+  "checks": "PASS: exact release BOM/CPL reference coverage; quantity and ordering multiples; observed stock sufficient; selected LCSC price tiers; import parity; copied fabrication hashes and source equality",
+  "bom_lines": 55,
+  "placements_per_board": 116,
+  "five_board_placements": 580,
+  "vendors": {
+    "LCSC": 45,
+    "Mouser": 10
+  },
+  "purchased_pieces": 2056,
+  "substitution_groups": [
+    "C10, C11, C13, C14, C16, C18, C20, C25, C43, C45, C48, C51",
+    "C32, C33",
+    "C36, C37"
+  ],
+  "catalogue_price_sums_before_rounding": {
+    "LCSC USD": "125.5342",
+    "Mouser EUR": "14.340",
+    "Mouser USD": "20.575"
+  },
+  "limits": "This validates prepared files, not current stock, substitute qualification, checkout prices, CAM approval or arrival commitments.",
+  "via_fill_identification": {
+    "result": "PASS: 335 unique flashes exactly match released selected PTH coordinates and diameters; no slots/header/NPTH selected",
+    "counts_by_released_diameter_mm": {
+      "0.200": 32,
+      "0.300": 301,
+      "0.400": 2
+    },
+    "file": "nucula-v2-Via_Filling.gbr",
+    "sha256": "51036502b5767f43d96a7e4cc9d071b8b459f8f769d83468c242d92516f3c478",
+    "source_sha256": "b253e8b53064c7258e7dab25273c70b9f521b3b20ca4b60f630e98e93bfb3dd3"
+  },
+  "pcb_supplier_status": "Eurocircuits candidate for private-customer online checkout; DFM, stackup, price and delivery not verified"
+}

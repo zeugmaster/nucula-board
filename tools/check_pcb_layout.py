@@ -197,9 +197,25 @@ def run(board_path, constraints, drc_path):
     if drc is not None:
         checks["native_drc_zero_errors"] = not any(v["severity"] == "error" for v in drc["violations"])
         checks["native_drc_zero_unconnected"] = not drc["unconnected_items"]
-        checks["native_drc_no_new_warning_types"] = all(v["type"] == "silk_edge_clearance" for v in drc["violations"])
+        reviewed_silk = set(constraints.get('reviewed_library_silkscreen_changes', []))
+        reviewed_art = set(constraints.get('reviewed_back_art_mask_clipping', []))
+        def reviewed_warning(v):
+            if v['severity'] != 'warning':
+                return False
+            if v['type'] == 'silk_edge_clearance':
+                return True
+            if v['type'] == 'lib_footprint_mismatch':
+                return all(i['description'][len('Footprint '):] in reviewed_silk
+                           for i in v['items'])
+            return v['type'] == 'silk_over_copper' and any(
+                i['uuid'] in reviewed_art for i in v['items'])
+        checks["native_drc_only_reviewed_cosmetic_warnings"] = all(reviewed_warning(v) for v in drc['violations'])
         checks["native_report_has_no_schematic_parity_issues"] = not drc.get("schematic_parity", [])
-    return {"board": board_path.name, "checks": checks, "passed": all(checks.values()),
+    advisory_names = set(constraints.get("advisory_checks", []))
+    assert advisory_names <= set(checks), "Unknown advisory check"
+    advisory = {name: checks.pop(name) for name in sorted(advisory_names)}
+    return {"board": board_path.name, "checks": checks, "advisory_checks": advisory,
+            "passed": all(checks.values()),
             "footprints": len(fps), "tracks": len(tracks), "vias": len(vias),
             "fixed_placements": fixed, "nfc_courtyard_outside_area_mm2": outside,
             "matching_component_symmetry": symmetry, "matching_copper_symmetry": rf_symmetry,
@@ -220,4 +236,6 @@ if __name__ == "__main__":
     args.output.write_text(json.dumps(report, indent=2) + "\n")
     for name, passed in report["checks"].items():
         print(("PASS " if passed else "FAIL ") + name)
+    for name, passed in report["advisory_checks"].items():
+        print(("ADVISORY OK " if passed else "ADVISORY UNMET ") + name)
     raise SystemExit(0 if report["passed"] else 1)

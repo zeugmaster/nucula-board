@@ -6,6 +6,15 @@ No workstation-global custom library is required.
 - ESP32-C3-WROOM-02-N4 symbol, footprint and STEP: KiCad Library Team's
   ESP32-C3-WROOM-02 assets from installed KiCad 10.0.6, specialized with N4/4 MB
   metadata. Footprint pad geometry and antenna keepout are preserved.
+- ESP32-C3-WROOM-02-N4_NoEPADSolder: project variant for the standard-fabrication
+  revision. The optional centre joint has one masked GND land, no paste windows
+  and no thermal-hole array. Edge pads, required GND pin 9 and antenna keepout
+  are retained. [Rationale and checks](../docs/standard-fabrication.md).
+- USB_C_GCT_USB4105_16P_Standard: project variant using 0.70 mm plated shell
+  slots and at least 0.30 mm rings. Outer GND lands are 0.60 × 1.05 mm at
+  local Y = −3.73 mm to achieve 0.25 mm NPTH clearance. Slot/peg centres remain
+  unchanged. Adapted from the KiCad pattern and GCT drawing; physical fit is
+  untested. [Dimensions](../docs/standard-fabrication.md).
 - TLV803EA30DBZR: adapted from KiCad's TPS3839DBZ drawing. Corrected to the
   TLV803E open-drain output, SOT-23 footprint, ordering code and documentation.
 - USB_C_GCT_USB4105_16P_JLCPCB: adapted from KiCad 10.0.6's GCT USB4105

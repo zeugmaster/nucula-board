@@ -1,0 +1,1626 @@
+{
+  "checked_on": "2026-09-22",
+  "method": "Public distributor pages via web search/open. Crawl ages vary; these are catalogue observations, not live cart inventory or reserved stock. Null stock means not established here, not necessarily zero. Out-of-stock reference prices must not be used as purchase offers.",
+  "items": [
+    {
+      "lcsc": "C309062",
+      "mpn": "CL32B226KAJNNNE",
+      "stock": 134622,
+      "moq": 1,
+      "multiple": 1,
+      "prices": [
+        {
+          "qty": 1,
+          "unit_usd": 0.3569
+        },
+        {
+          "qty": 10,
+          "unit_usd": 0.2815
+        },
+        {
+          "qty": 30,
+          "unit_usd": 0.2447
+        },
+        {
+          "qty": 100,
+          "unit_usd": 0.2118
+        },
+        {
+          "qty": 500,
+          "unit_usd": 0.2028
+        },
+        {
+          "qty": 1000,
+          "unit_usd": 0.1611
+        }
+      ],
+      "crawled": "today",
+      "url": "https://www.lcsc.com/product-detail/C309062.html"
+    },
+    {
+      "lcsc": "C1653",
+      "mpn": "CL10C220JB8NNNC",
+      "stock": 542200,
+      "moq": 100,
+      "multiple": 100,
+      "prices": [
+        {
+          "qty": 100,
+          "unit_usd": 0.0058
+        },
+        {
+          "qty": 1000,
+          "unit_usd": 0.0044
+        },
+        {
+          "qty": 4000,
+          "unit_usd": 0.0039
+        },
+        {
+          "qty": 8000,
+          "unit_usd": 0.0034
+        },
+        {
+          "qty": 48000,
+          "unit_usd": 0.0032
+        },
+        {
+          "qty": 100000,
+          "unit_usd": 0.0031
+        }
+      ],
+      "crawled": "today",
+      "url": "https://www.lcsc.com/product-detail/C1653.html"
+    },
+    {
+      "lcsc": "C12891",
+      "mpn": "CL31A226KAHNNNE",
+      "stock": 77420,
+      "moq": 20,
+      "multiple": 20,
+      "prices": [
+        {
+          "qty": 20,
+          "unit_usd": 0.1775
+        },
+        {
+          "qty": 200,
+          "unit_usd": 0.1363
+        },
+        {
+          "qty": 600,
+          "unit_usd": 0.1162
+        },
+        {
+          "qty": 2000,
+          "unit_usd": 0.0983
+        },
+        {
+          "qty": 10000,
+          "unit_usd": 0.0933
+        },
+        {
+          "qty": 20000,
+          "unit_usd": 0.0904
+        }
+      ],
+      "crawled": "today",
+      "url": "https://www.lcsc.com/product-detail/C12891.html"
+    },
+    {
+      "lcsc": "C1591",
+      "mpn": "CL10B104KB8NNNC",
+      "stock": null,
+      "moq": 100,
+      "multiple": 100,
+      "prices": [
+        {
+          "qty": 100,
+          "unit_usd": 0.0104
+        },
+        {
+          "qty": 1000,
+          "unit_usd": 0.0079
+        },
+        {
+          "qty": 4000,
+          "unit_usd": 0.0067
+        },
+        {
+          "qty": 8000,
+          "unit_usd": 0.0059
+        },
+        {
+          "qty": 48000,
+          "unit_usd": 0.0055
+        },
+        {
+          "qty": 100000,
+          "unit_usd": 0.0053
+        }
+      ],
+      "crawled": "today",
+      "url": "https://www.lcsc.com/product-detail/C1591.html"
+    },
+    {
+      "lcsc": "C29936",
+      "mpn": "CL10B105KA8NNNC",
+      "stock": 205670,
+      "moq": 10,
+      "multiple": 10,
+      "prices": [
+        {
+          "qty": 10,
+          "unit_usd": 0.0214
+        },
+        {
+          "qty": 100,
+          "unit_usd": 0.0165
+        },
+        {
+          "qty": 300,
+          "unit_usd": 0.0143
+        },
+        {
+          "qty": 1000,
+          "unit_usd": 0.0127
+        },
+        {
+          "qty": 4000,
+          "unit_usd": 0.0099
+        },
+        {
+          "qty": 8000,
+          "unit_usd": 0.0095
+        }
+      ],
+      "crawled": "today",
+      "url": "https://www.lcsc.com/product-detail/C29936.html"
+    },
+    {
+      "lcsc": "C28323",
+      "mpn": "CL21B105KBFNNNE",
+      "stock": 572660,
+      "moq": 10,
+      "multiple": 10,
+      "prices": [
+        {
+          "qty": 10,
+          "unit_usd": 0.0403
+        },
+        {
+          "qty": 100,
+          "unit_usd": 0.0309
+        },
+        {
+          "qty": 300,
+          "unit_usd": 0.0261
+        },
+        {
+          "qty": 2000,
+          "unit_usd": 0.0221
+        },
+        {
+          "qty": 4000,
+          "unit_usd": 0.0207
+        },
+        {
+          "qty": 10000,
+          "unit_usd": 0.0198
+        }
+      ],
+      "crawled": "today",
+      "url": "https://www.lcsc.com/product-detail/C28323.html"
+    },
+    {
+      "lcsc": "C14860",
+      "mpn": "CL31B106KAHNNNE",
+      "stock": 939520,
+      "moq": 20,
+      "multiple": 20,
+      "prices": [
+        {
+          "qty": 20,
+          "unit_usd": 0.1958
+        },
+        {
+          "qty": 200,
+          "unit_usd": 0.146
+        },
+        {
+          "qty": 600,
+          "unit_usd": 0.1216
+        },
+        {
+          "qty": 2000,
+          "unit_usd": 0.0999
+        },
+        {
+          "qty": 10000,
+          "unit_usd": 0.094
+        },
+        {
+          "qty": 20000,
+          "unit_usd": 0.0904
+        }
+      ],
+      "crawled": "today",
+      "url": "https://www.lcsc.com/product-detail/C14860.html"
+    },
+    {
+      "lcsc": "C19110",
+      "mpn": "CL21B225KAFNNNE",
+      "stock": 860,
+      "moq": 10,
+      "multiple": 10,
+      "prices": [
+        {
+          "qty": 10,
+          "unit_usd": 0.0379
+        },
+        {
+          "qty": 100,
+          "unit_usd": 0.0306
+        },
+        {
+          "qty": 300,
+          "unit_usd": 0.0268
+        },
+        {
+          "qty": 2000,
+          "unit_usd": 0.0204
+        },
+        {
+          "qty": 4000,
+          "unit_usd": 0.0193
+        },
+        {
+          "qty": 10000,
+          "unit_usd": 0.0186
+        }
+      ],
+      "crawled": "today",
+      "url": "https://www.lcsc.com/product-detail/C19110.html"
+    },
+    {
+      "lcsc": "C38523",
+      "mpn": "CL10C120JB8NNNC",
+      "stock": null,
+      "moq": null,
+      "multiple": null,
+      "prices": [],
+      "crawled": "yesterday",
+      "url": "https://www.lcsc.com/product-detail/C38523.html"
+    },
+    {
+      "lcsc": "C1644",
+      "mpn": "CL10C150JB8NNNC",
+      "stock": 662450,
+      "moq": 50,
+      "multiple": 50,
+      "prices": [
+        {
+          "qty": 50,
+          "unit_usd": 0.0115
+        },
+        {
+          "qty": 500,
+          "unit_usd": 0.0088
+        },
+        {
+          "qty": 1500,
+          "unit_usd": 0.0073
+        },
+        {
+          "qty": 4000,
+          "unit_usd": 0.0065
+        },
+        {
+          "qty": 24000,
+          "unit_usd": 0.0057
+        },
+        {
+          "qty": 48000,
+          "unit_usd": 0.0053
+        }
+      ],
+      "crawled": "today",
+      "url": "https://www.lcsc.com/product-detail/C1644.html"
+    },
+    {
+      "lcsc": "C162289",
+      "mpn": "GRM2165C2A102JA01D",
+      "stock": 5300,
+      "moq": 20,
+      "multiple": 20,
+      "prices": [
+        {
+          "qty": 20,
+          "unit_usd": 0.0367
+        },
+        {
+          "qty": 200,
+          "unit_usd": 0.0298
+        },
+        {
+          "qty": 600,
+          "unit_usd": 0.0259
+        },
+        {
+          "qty": 4000,
+          "unit_usd": 0.0236
+        },
+        {
+          "qty": 8000,
+          "unit_usd": 0.0216
+        },
+        {
+          "qty": 20000,
+          "unit_usd": 0.0205
+        }
+      ],
+      "crawled": "yesterday",
+      "url": "https://www.lcsc.com/product-detail/C162289.html"
+    },
+    {
+      "lcsc": "C527075",
+      "mpn": "CC0805FRNPO0BN331",
+      "stock": null,
+      "moq": null,
+      "multiple": null,
+      "prices": [],
+      "crawled": "unknown",
+      "url": "https://www.lcsc.com/product-detail/C527075.html"
+    },
+    {
+      "lcsc": "C576904",
+      "mpn": "CC0805FRNPO0BN680",
+      "stock": null,
+      "moq": null,
+      "multiple": null,
+      "prices": [],
+      "crawled": "unknown",
+      "url": "https://www.lcsc.com/product-detail/C576904.html"
+    },
+    {
+      "lcsc": "C527192",
+      "mpn": "CC0805GRNPO0BN101",
+      "stock": null,
+      "moq": null,
+      "multiple": null,
+      "prices": [],
+      "crawled": "last month",
+      "url": "https://www.lcsc.com/product-detail/C527192.html"
+    },
+    {
+      "lcsc": "C98195",
+      "mpn": "CL21B475KAFNNNE",
+      "stock": 314440,
+      "moq": 10,
+      "multiple": 10,
+      "prices": [
+        {
+          "qty": 10,
+          "unit_usd": 0.0527
+        },
+        {
+          "qty": 100,
+          "unit_usd": 0.0435
+        },
+        {
+          "qty": 300,
+          "unit_usd": 0.0388
+        },
+        {
+          "qty": 2000,
+          "unit_usd": 0.0281
+        },
+        {
+          "qty": 4000,
+          "unit_usd": 0.0267
+        },
+        {
+          "qty": 10000,
+          "unit_usd": 0.0258
+        }
+      ],
+      "crawled": "today",
+      "url": "https://www.lcsc.com/product-detail/C98195.html"
+    },
+    {
+      "lcsc": "C51205",
+      "mpn": "CL31B475KBHNNNE",
+      "stock": 211830,
+      "moq": 10,
+      "multiple": 10,
+      "prices": [
+        {
+          "qty": 10,
+          "unit_usd": 0.076
+        },
+        {
+          "qty": 100,
+          "unit_usd": 0.0608
+        },
+        {
+          "qty": 300,
+          "unit_usd": 0.053
+        },
+        {
+          "qty": 2000,
+          "unit_usd": 0.0465
+        },
+        {
+          "qty": 4000,
+          "unit_usd": 0.0443
+        },
+        {
+          "qty": 10000,
+          "unit_usd": 0.0428
+        }
+      ],
+      "crawled": "today",
+      "url": "https://www.lcsc.com/product-detail/C51205.html"
+    },
+    {
+      "lcsc": "C309485",
+      "mpn": "CC0805JRNPO0BN330",
+      "stock": null,
+      "moq": null,
+      "multiple": null,
+      "prices": [],
+      "crawled": "unknown",
+      "url": "https://www.lcsc.com/product-detail/C309485.html"
+    },
+    {
+      "lcsc": "C85098",
+      "mpn": "B340A-13-F",
+      "stock": 204770,
+      "moq": 10,
+      "multiple": 10,
+      "prices": [
+        {
+          "qty": 10,
+          "unit_usd": 0.0877
+        },
+        {
+          "qty": 100,
+          "unit_usd": 0.0713
+        },
+        {
+          "qty": 300,
+          "unit_usd": 0.0628
+        },
+        {
+          "qty": 1000,
+          "unit_usd": 0.0559
+        },
+        {
+          "qty": 5000,
+          "unit_usd": 0.0534
+        },
+        {
+          "qty": 10000,
+          "unit_usd": 0.0518
+        }
+      ],
+      "crawled": "3 days ago",
+      "url": "https://www.lcsc.com/product-detail/C85098.html"
+    },
+    {
+      "lcsc": "C2286",
+      "mpn": "KT-0603R",
+      "stock": 1428700,
+      "moq": 100,
+      "multiple": 100,
+      "prices": [
+        {
+          "qty": 100,
+          "unit_usd": 0.0075
+        },
+        {
+          "qty": 1000,
+          "unit_usd": 0.0058
+        },
+        {
+          "qty": 4000,
+          "unit_usd": 0.0045
+        },
+        {
+          "qty": 8000,
+          "unit_usd": 0.0039
+        },
+        {
+          "qty": 48000,
+          "unit_usd": 0.0037
+        },
+        {
+          "qty": 100000,
+          "unit_usd": 0.0035
+        }
+      ],
+      "crawled": "today",
+      "url": "https://www.lcsc.com/product-detail/C2286.html"
+    },
+    {
+      "lcsc": "C47460",
+      "mpn": "SS14-E3/61T",
+      "stock": 26592,
+      "moq": 3,
+      "multiple": 3,
+      "prices": [
+        {
+          "qty": 3,
+          "unit_usd": 0.1114
+        },
+        {
+          "qty": 30,
+          "unit_usd": 0.0891
+        },
+        {
+          "qty": 90,
+          "unit_usd": 0.078
+        },
+        {
+          "qty": 300,
+          "unit_usd": 0.0696
+        },
+        {
+          "qty": 1800,
+          "unit_usd": 0.0551
+        },
+        {
+          "qty": 3600,
+          "unit_usd": 0.0518
+        }
+      ],
+      "crawled": "today",
+      "url": "https://www.lcsc.com/product-detail/C47460.html"
+    },
+    {
+      "lcsc": "C506794",
+      "mpn": "FH12A-24S-0.5SH(55)",
+      "stock": null,
+      "moq": null,
+      "multiple": null,
+      "prices": [],
+      "crawled": "last week",
+      "url": "https://www.lcsc.com/product-detail/C506794.html"
+    },
+    {
+      "lcsc": "C5184243",
+      "mpn": "USB4105-GF-A-120",
+      "stock": 4625,
+      "moq": 1,
+      "multiple": 1,
+      "prices": [
+        {
+          "qty": 1,
+          "unit_usd": 0.923
+        },
+        {
+          "qty": 10,
+          "unit_usd": 0.7259
+        },
+        {
+          "qty": 30,
+          "unit_usd": 0.6274
+        },
+        {
+          "qty": 100,
+          "unit_usd": 0.5289
+        }
+      ],
+      "crawled": "today",
+      "url": "https://www.lcsc.com/product-detail/C5184243.html"
+    },
+    {
+      "lcsc": "C160352",
+      "mpn": "B2B-PH-SM4-TB(LF)(SN)",
+      "stock": 33855,
+      "moq": 5,
+      "multiple": 5,
+      "prices": [
+        {
+          "qty": 5,
+          "unit_usd": 0.222
+        },
+        {
+          "qty": 50,
+          "unit_usd": 0.1774
+        },
+        {
+          "qty": 150,
+          "unit_usd": 0.1582
+        },
+        {
+          "qty": 1000,
+          "unit_usd": 0.1344
+        },
+        {
+          "qty": 2000,
+          "unit_usd": 0.1237
+        },
+        {
+          "qty": 5000,
+          "unit_usd": 0.1173
+        }
+      ],
+      "crawled": "today",
+      "url": "https://www.lcsc.com/product-detail/C160352.html"
+    },
+    {
+      "lcsc": "C6980123",
+      "mpn": "LSXND3030QKT2R2MNG",
+      "stock": 1645,
+      "moq": 5,
+      "multiple": 5,
+      "prices": [
+        {
+          "qty": 5,
+          "unit_usd": 0.1449
+        },
+        {
+          "qty": 50,
+          "unit_usd": 0.114
+        },
+        {
+          "qty": 150,
+          "unit_usd": 0.0986
+        },
+        {
+          "qty": 500,
+          "unit_usd": 0.087
+        },
+        {
+          "qty": 2000,
+          "unit_usd": 0.0777
+        },
+        {
+          "qty": 4000,
+          "unit_usd": 0.0731
+        }
+      ],
+      "crawled": "2 weeks ago",
+      "url": "https://www.lcsc.com/product-detail/C6980123.html"
+    },
+    {
+      "lcsc": "C20417049",
+      "mpn": "0805HP-151XGRC",
+      "stock": null,
+      "moq": null,
+      "multiple": null,
+      "prices": [],
+      "crawled": "unknown",
+      "url": "https://www.lcsc.com/product-detail/C20417049.html"
+    },
+    {
+      "lcsc": "C6127589",
+      "mpn": "LPS4018-103MRC",
+      "stock": 4799,
+      "moq": 1,
+      "multiple": 1,
+      "prices": [
+        {
+          "qty": 1,
+          "unit_usd": 0.7563
+        },
+        {
+          "qty": 10,
+          "unit_usd": 0.6095
+        }
+      ],
+      "crawled": "5 months ago",
+      "url": "https://www.lcsc.com/product-detail/C6127589.html"
+    },
+    {
+      "lcsc": "C2593",
+      "mpn": "IRLML6402TRPBF",
+      "stock": 20972,
+      "moq": 1,
+      "multiple": 1,
+      "prices": [
+        {
+          "qty": 1,
+          "unit_usd": 0.4961
+        },
+        {
+          "qty": 10,
+          "unit_usd": 0.3975
+        },
+        {
+          "qty": 30,
+          "unit_usd": 0.3499
+        },
+        {
+          "qty": 100,
+          "unit_usd": 0.3072
+        },
+        {
+          "qty": 500,
+          "unit_usd": 0.2957
+        },
+        {
+          "qty": 1000,
+          "unit_usd": 0.2875
+        }
+      ],
+      "crawled": "2 days ago",
+      "url": "https://www.lcsc.com/product-detail/C2593.html"
+    },
+    {
+      "lcsc": "C52895",
+      "mpn": "BSS138",
+      "stock": 61380,
+      "moq": 10,
+      "multiple": 10,
+      "prices": [
+        {
+          "qty": 10,
+          "unit_usd": 0.063
+        },
+        {
+          "qty": 100,
+          "unit_usd": 0.0523
+        },
+        {
+          "qty": 300,
+          "unit_usd": 0.047
+        },
+        {
+          "qty": 3000,
+          "unit_usd": 0.0277
+        },
+        {
+          "qty": 6000,
+          "unit_usd": 0.0245
+        },
+        {
+          "qty": 9000,
+          "unit_usd": 0.0229
+        }
+      ],
+      "crawled": "today",
+      "url": "https://www.lcsc.com/product-detail/C52895.html"
+    },
+    {
+      "lcsc": "C23186",
+      "mpn": "0603WAF5101T5E",
+      "stock": 23544500,
+      "moq": 100,
+      "multiple": 100,
+      "prices": [
+        {
+          "qty": 100,
+          "unit_usd": 0.0018
+        },
+        {
+          "qty": 1000,
+          "unit_usd": 0.0014
+        },
+        {
+          "qty": 5000,
+          "unit_usd": 0.0013
+        },
+        {
+          "qty": 10000,
+          "unit_usd": 0.0011
+        },
+        {
+          "qty": 50000,
+          "unit_usd": 0.001
+        }
+      ],
+      "crawled": "today",
+      "url": "https://www.lcsc.com/product-detail/C23186.html"
+    },
+    {
+      "lcsc": "C25804",
+      "mpn": "0603WAF1002T5E",
+      "stock": 2204600,
+      "moq": 100,
+      "multiple": 100,
+      "prices": [
+        {
+          "qty": 100,
+          "unit_usd": 0.0019
+        },
+        {
+          "qty": 1000,
+          "unit_usd": 0.0015
+        },
+        {
+          "qty": 5000,
+          "unit_usd": 0.0014
+        },
+        {
+          "qty": 10000,
+          "unit_usd": 0.0013
+        },
+        {
+          "qty": 50000,
+          "unit_usd": 0.0012
+        }
+      ],
+      "crawled": "today",
+      "url": "https://www.lcsc.com/product-detail/C25804.html"
+    },
+    {
+      "lcsc": "C4190",
+      "mpn": "0603WAF2201T5E",
+      "stock": 6526300,
+      "moq": 100,
+      "multiple": 100,
+      "prices": [
+        {
+          "qty": 100,
+          "unit_usd": 0.0017
+        },
+        {
+          "qty": 1000,
+          "unit_usd": 0.0013
+        },
+        {
+          "qty": 5000,
+          "unit_usd": 0.0012
+        },
+        {
+          "qty": 10000,
+          "unit_usd": 0.0011
+        },
+        {
+          "qty": 50000,
+          "unit_usd": 0.0009
+        }
+      ],
+      "crawled": "today",
+      "url": "https://www.lcsc.com/product-detail/C4190.html"
+    },
+    {
+      "lcsc": "C861231",
+      "mpn": "RT0603BRD07220KL",
+      "stock": 16490,
+      "moq": 10,
+      "multiple": 10,
+      "prices": [
+        {
+          "qty": 10,
+          "unit_usd": 0.0532
+        },
+        {
+          "qty": 100,
+          "unit_usd": 0.045
+        },
+        {
+          "qty": 300,
+          "unit_usd": 0.041
+        },
+        {
+          "qty": 1000,
+          "unit_usd": 0.0379
+        },
+        {
+          "qty": 5000,
+          "unit_usd": 0.0355
+        },
+        {
+          "qty": 10000,
+          "unit_usd": 0.0342
+        }
+      ],
+      "crawled": "5 days ago",
+      "url": "https://www.lcsc.com/product-detail/C861231.html"
+    },
+    {
+      "lcsc": "C861429",
+      "mpn": "RT0603BRD0748K7L",
+      "stock": 460,
+      "moq": 20,
+      "multiple": 20,
+      "prices": [
+        {
+          "qty": 20,
+          "unit_usd": 0.0319
+        }
+      ],
+      "crawled": "2 months ago",
+      "url": "https://www.lcsc.com/product-detail/C861429.html"
+    },
+    {
+      "lcsc": "C23345",
+      "mpn": "0603WAF220JT5E",
+      "stock": 7680800,
+      "moq": 100,
+      "multiple": 100,
+      "prices": [
+        {
+          "qty": 100,
+          "unit_usd": 0.0017
+        },
+        {
+          "qty": 1000,
+          "unit_usd": 0.0013
+        },
+        {
+          "qty": 5000,
+          "unit_usd": 0.0012
+        },
+        {
+          "qty": 10000,
+          "unit_usd": 0.0011
+        },
+        {
+          "qty": 50000,
+          "unit_usd": 0.001
+        }
+      ],
+      "crawled": "today",
+      "url": "https://www.lcsc.com/product-detail/C23345.html"
+    },
+    {
+      "lcsc": "C22775",
+      "mpn": "0603WAF1000T5E",
+      "stock": 7706100,
+      "moq": 100,
+      "multiple": 100,
+      "prices": [
+        {
+          "qty": 100,
+          "unit_usd": 0.0032
+        },
+        {
+          "qty": 1000,
+          "unit_usd": 0.0025
+        },
+        {
+          "qty": 5000,
+          "unit_usd": 0.0022
+        },
+        {
+          "qty": 10000,
+          "unit_usd": 0.0018
+        },
+        {
+          "qty": 50000,
+          "unit_usd": 0.0016
+        }
+      ],
+      "crawled": "today",
+      "url": "https://www.lcsc.com/product-detail/C22775.html"
+    },
+    {
+      "lcsc": "C23178",
+      "mpn": "0603WAF4703T5E",
+      "stock": 1236000,
+      "moq": 100,
+      "multiple": 100,
+      "prices": [
+        {
+          "qty": 100,
+          "unit_usd": 0.0028
+        },
+        {
+          "qty": 1000,
+          "unit_usd": 0.0023
+        },
+        {
+          "qty": 5000,
+          "unit_usd": 0.0019
+        },
+        {
+          "qty": 10000,
+          "unit_usd": 0.0016
+        },
+        {
+          "qty": 50000,
+          "unit_usd": 0.0013
+        }
+      ],
+      "crawled": "today",
+      "url": "https://www.lcsc.com/product-detail/C23178.html"
+    },
+    {
+      "lcsc": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "stock": 17700800,
+      "moq": 100,
+      "multiple": 100,
+      "prices": [
+        {
+          "qty": 100,
+          "unit_usd": 0.0031
+        },
+        {
+          "qty": 1000,
+          "unit_usd": 0.0024
+        },
+        {
+          "qty": 5000,
+          "unit_usd": 0.0021
+        },
+        {
+          "qty": 10000,
+          "unit_usd": 0.0017
+        },
+        {
+          "qty": 50000,
+          "unit_usd": 0.0016
+        }
+      ],
+      "crawled": "today",
+      "url": "https://www.lcsc.com/product-detail/C25803.html"
+    },
+    {
+      "lcsc": "C17520",
+      "mpn": "0805W8F2201T5E",
+      "stock": 3133800,
+      "moq": 100,
+      "multiple": 100,
+      "prices": [
+        {
+          "qty": 100,
+          "unit_usd": 0.0046
+        },
+        {
+          "qty": 1000,
+          "unit_usd": 0.0037
+        },
+        {
+          "qty": 5000,
+          "unit_usd": 0.0031
+        },
+        {
+          "qty": 10000,
+          "unit_usd": 0.0028
+        },
+        {
+          "qty": 50000,
+          "unit_usd": 0.0026
+        },
+        {
+          "qty": 100000,
+          "unit_usd": 0.0024
+        }
+      ],
+      "crawled": "today",
+      "url": "https://www.lcsc.com/product-detail/C17520.html"
+    },
+    {
+      "lcsc": "C2079511",
+      "mpn": "CRCW12062R70FKEAHP",
+      "stock": null,
+      "moq": null,
+      "multiple": null,
+      "prices": [],
+      "crawled": "unknown",
+      "url": "https://www.lcsc.com/product-detail/C2079511.html"
+    },
+    {
+      "lcsc": "C21189",
+      "mpn": "0603WAF0000T5E",
+      "stock": 17075800,
+      "moq": 100,
+      "multiple": 100,
+      "prices": [
+        {
+          "qty": 100,
+          "unit_usd": 0.0023
+        },
+        {
+          "qty": 1000,
+          "unit_usd": 0.0018
+        },
+        {
+          "qty": 5000,
+          "unit_usd": 0.0016
+        },
+        {
+          "qty": 10000,
+          "unit_usd": 0.0013
+        },
+        {
+          "qty": 50000,
+          "unit_usd": 0.0012
+        }
+      ],
+      "crawled": "today",
+      "url": "https://www.lcsc.com/product-detail/C21189.html"
+    },
+    {
+      "lcsc": "C2088132",
+      "mpn": "CPF0805B1M8E",
+      "stock": null,
+      "moq": null,
+      "multiple": null,
+      "prices": [],
+      "crawled": "unknown",
+      "url": "https://www.lcsc.com/product-detail/C2088132.html"
+    },
+    {
+      "lcsc": "C728585",
+      "mpn": "RT0603BRD07200KL",
+      "stock": 249580,
+      "moq": 20,
+      "multiple": 20,
+      "prices": [
+        {
+          "qty": 20,
+          "unit_usd": 0.0562
+        },
+        {
+          "qty": 200,
+          "unit_usd": 0.048
+        },
+        {
+          "qty": 600,
+          "unit_usd": 0.0434
+        },
+        {
+          "qty": 5000,
+          "unit_usd": 0.0407
+        },
+        {
+          "qty": 10000,
+          "unit_usd": 0.0384
+        },
+        {
+          "qty": 20000,
+          "unit_usd": 0.0371
+        }
+      ],
+      "crawled": "5 days ago",
+      "url": "https://www.lcsc.com/product-detail/C728585.html"
+    },
+    {
+      "lcsc": "C23263",
+      "mpn": "0603WAF9103T5E",
+      "stock": 300200,
+      "moq": 100,
+      "multiple": 100,
+      "prices": [
+        {
+          "qty": 100,
+          "unit_usd": 0.0019
+        },
+        {
+          "qty": 1000,
+          "unit_usd": 0.0015
+        },
+        {
+          "qty": 5000,
+          "unit_usd": 0.0013
+        },
+        {
+          "qty": 10000,
+          "unit_usd": 0.0012
+        },
+        {
+          "qty": 50000,
+          "unit_usd": 0.0011
+        }
+      ],
+      "crawled": "last week",
+      "url": "https://www.lcsc.com/product-detail/C23263.html"
+    },
+    {
+      "lcsc": "C96345",
+      "mpn": "RC0805JR-070RL",
+      "stock": 3031300,
+      "moq": 100,
+      "multiple": 100,
+      "prices": [
+        {
+          "qty": 100,
+          "unit_usd": 0.0054
+        },
+        {
+          "qty": 1000,
+          "unit_usd": 0.0043
+        },
+        {
+          "qty": 5000,
+          "unit_usd": 0.0036
+        },
+        {
+          "qty": 10000,
+          "unit_usd": 0.0032
+        },
+        {
+          "qty": 50000,
+          "unit_usd": 0.0029
+        },
+        {
+          "qty": 100000,
+          "unit_usd": 0.0028
+        }
+      ],
+      "crawled": "today",
+      "url": "https://www.lcsc.com/product-detail/C96345.html"
+    },
+    {
+      "lcsc": "C231329",
+      "mpn": "B3U-1000P",
+      "stock": 161660,
+      "moq": 5,
+      "multiple": 5,
+      "prices": [
+        {
+          "qty": 5,
+          "unit_usd": 0.188
+        },
+        {
+          "qty": 50,
+          "unit_usd": 0.1476
+        },
+        {
+          "qty": 150,
+          "unit_usd": 0.1278
+        },
+        {
+          "qty": 500,
+          "unit_usd": 0.1102
+        },
+        {
+          "qty": 3500,
+          "unit_usd": 0.1054
+        },
+        {
+          "qty": 7000,
+          "unit_usd": 0.1025
+        }
+      ],
+      "crawled": "today",
+      "url": "https://www.lcsc.com/product-detail/C231329.html"
+    },
+    {
+      "lcsc": "C32574",
+      "mpn": "TP4054-42-SOT25R",
+      "stock": 27505,
+      "moq": 5,
+      "multiple": 5,
+      "prices": [
+        {
+          "qty": 5,
+          "unit_usd": 0.1343
+        },
+        {
+          "qty": 50,
+          "unit_usd": 0.1066
+        },
+        {
+          "qty": 150,
+          "unit_usd": 0.0928
+        },
+        {
+          "qty": 500,
+          "unit_usd": 0.0824
+        },
+        {
+          "qty": 3000,
+          "unit_usd": 0.0708
+        },
+        {
+          "qty": 6000,
+          "unit_usd": 0.0666
+        }
+      ],
+      "crawled": "today",
+      "url": "https://www.lcsc.com/product-detail/C32574.html"
+    },
+    {
+      "lcsc": "C78988",
+      "mpn": "SY8089AAAC",
+      "stock": 53005,
+      "moq": 5,
+      "multiple": 5,
+      "prices": [
+        {
+          "qty": 5,
+          "unit_usd": 0.1522
+        },
+        {
+          "qty": 50,
+          "unit_usd": 0.119
+        },
+        {
+          "qty": 150,
+          "unit_usd": 0.1028
+        },
+        {
+          "qty": 500,
+          "unit_usd": 0.0883
+        },
+        {
+          "qty": 3000,
+          "unit_usd": 0.0798
+        },
+        {
+          "qty": 6000,
+          "unit_usd": 0.0774
+        }
+      ],
+      "crawled": "today",
+      "url": "https://www.lcsc.com/product-detail/C78988.html"
+    },
+    {
+      "lcsc": "C2934560",
+      "mpn": "ESP32-C3-WROOM-02-N4",
+      "stock": 3857,
+      "moq": 1,
+      "multiple": 1,
+      "prices": [
+        {
+          "qty": 1,
+          "unit_usd": 3.3224
+        },
+        {
+          "qty": 10,
+          "unit_usd": 2.9217
+        },
+        {
+          "qty": 30,
+          "unit_usd": 2.7181
+        },
+        {
+          "qty": 100,
+          "unit_usd": 2.4454
+        },
+        {
+          "qty": 650,
+          "unit_usd": 2.3469
+        },
+        {
+          "qty": 1300,
+          "unit_usd": 2.3042
+        }
+      ],
+      "crawled": "today",
+      "url": "https://www.lcsc.com/product-detail/C2934560.html"
+    },
+    {
+      "lcsc": "C7519",
+      "mpn": "USBLC6-2SC6",
+      "stock": 41215,
+      "moq": 5,
+      "multiple": 5,
+      "prices": [
+        {
+          "qty": 5,
+          "unit_usd": 0.1782
+        },
+        {
+          "qty": 50,
+          "unit_usd": 0.1372
+        },
+        {
+          "qty": 150,
+          "unit_usd": 0.1172
+        },
+        {
+          "qty": 500,
+          "unit_usd": 0.0993
+        },
+        {
+          "qty": 3000,
+          "unit_usd": 0.0944
+        },
+        {
+          "qty": 6000,
+          "unit_usd": 0.0914
+        }
+      ],
+      "crawled": "today",
+      "url": "https://www.lcsc.com/product-detail/C7519.html"
+    },
+    {
+      "lcsc": "C5218924",
+      "mpn": "TLV803EA30DBZR",
+      "stock": 3585,
+      "moq": 1,
+      "multiple": 1,
+      "prices": [
+        {
+          "qty": 1,
+          "unit_usd": 0.3934
+        },
+        {
+          "qty": 10,
+          "unit_usd": 0.3098
+        },
+        {
+          "qty": 30,
+          "unit_usd": 0.2672
+        },
+        {
+          "qty": 100,
+          "unit_usd": 0.2311
+        },
+        {
+          "qty": 500,
+          "unit_usd": 0.2213
+        },
+        {
+          "qty": 1000,
+          "unit_usd": 0.2147
+        }
+      ],
+      "crawled": "today",
+      "url": "https://www.lcsc.com/product-detail/C5218924.html"
+    },
+    {
+      "lcsc": "C3303788",
+      "mpn": "PN7160A1HN/C100E",
+      "stock": 3219,
+      "moq": 1,
+      "multiple": 1,
+      "prices": [
+        {
+          "qty": 1,
+          "unit_usd": 4.0545
+        },
+        {
+          "qty": 10,
+          "unit_usd": 3.3744
+        },
+        {
+          "qty": 30,
+          "unit_usd": 3.045
+        },
+        {
+          "qty": 100,
+          "unit_usd": 2.7106
+        },
+        {
+          "qty": 490,
+          "unit_usd": 2.5566
+        },
+        {
+          "qty": 980,
+          "unit_usd": 2.4878
+        }
+      ],
+      "crawled": "last week",
+      "url": "https://www.lcsc.com/product-detail/C3303788.html"
+    },
+    {
+      "lcsc": "C460356",
+      "mpn": "AP3012KTR-E1",
+      "stock": 57165,
+      "moq": 5,
+      "multiple": 5,
+      "prices": [
+        {
+          "qty": 5,
+          "unit_usd": 0.2141
+        },
+        {
+          "qty": 50,
+          "unit_usd": 0.1721
+        },
+        {
+          "qty": 150,
+          "unit_usd": 0.1542
+        },
+        {
+          "qty": 500,
+          "unit_usd": 0.1317
+        },
+        {
+          "qty": 3000,
+          "unit_usd": 0.1126
+        },
+        {
+          "qty": 6000,
+          "unit_usd": 0.1066
+        }
+      ],
+      "crawled": "last month",
+      "url": "https://www.lcsc.com/product-detail/C460356.html"
+    },
+    {
+      "lcsc": "C7605",
+      "mpn": "PCF8574T/3,518",
+      "stock": 2973,
+      "moq": 1,
+      "multiple": 1,
+      "prices": [
+        {
+          "qty": 1,
+          "unit_usd": 2.14
+        },
+        {
+          "qty": 10,
+          "unit_usd": 1.835
+        },
+        {
+          "qty": 30,
+          "unit_usd": 1.6448
+        },
+        {
+          "qty": 100,
+          "unit_usd": 1.2988
+        },
+        {
+          "qty": 500,
+          "unit_usd": 1.2119
+        },
+        {
+          "qty": 1000,
+          "unit_usd": 1.1725
+        }
+      ],
+      "crawled": "2 weeks ago",
+      "url": "https://www.lcsc.com/product-detail/C7605.html"
+    },
+    {
+      "lcsc": "C62244",
+      "mpn": "MCP1700T-3002E/TT",
+      "stock": 2870,
+      "moq": 1,
+      "multiple": 1,
+      "prices": [
+        {
+          "qty": 1,
+          "unit_usd": 0.5207
+        },
+        {
+          "qty": 10,
+          "unit_usd": 0.4123
+        },
+        {
+          "qty": 30,
+          "unit_usd": 0.3663
+        },
+        {
+          "qty": 100,
+          "unit_usd": 0.3088
+        },
+        {
+          "qty": 500,
+          "unit_usd": 0.2825
+        },
+        {
+          "qty": 1000,
+          "unit_usd": 0.2678
+        }
+      ],
+      "crawled": "2 days ago",
+      "url": "https://www.lcsc.com/product-detail/C62244.html"
+    },
+    {
+      "lcsc": "C3008209",
+      "mpn": "NX2016SA-27.12MHZ-EXS00A-CS06346",
+      "stock": 8135,
+      "moq": 5,
+      "multiple": 5,
+      "prices": [
+        {
+          "qty": 5,
+          "unit_usd": 0.3815
+        },
+        {
+          "qty": 50,
+          "unit_usd": 0.3058
+        },
+        {
+          "qty": 150,
+          "unit_usd": 0.2733
+        },
+        {
+          "qty": 500,
+          "unit_usd": 0.2328
+        },
+        {
+          "qty": 3000,
+          "unit_usd": 0.2148
+        },
+        {
+          "qty": 6000,
+          "unit_usd": 0.204
+        }
+      ],
+      "crawled": "6 days ago",
+      "url": "https://www.lcsc.com/product-detail/C3008209.html"
+    }
+  ]
+}

@@ -1,4 +1,27 @@
-# Component and footprint readiness — 10-board prototype
+# Component and footprint readiness
+
+## Current five-board revision — 22 September 2026
+
+The component, footprint and assembly checks pass for the revised board: 116
+populated components per board, 55 distinct BOM parts, with values and MPNs
+unchanged. Use the [current fabrication/assembly package](manufacturing-release.md)
+and its updated placement drawing. The 19 component moves and two adapted
+footprints are documented in [standard fabrication](standard-fabrication.md).
+
+[Current readiness result](assembly/readiness.json) ·
+[Footprint audit](assembly/footprint-audit.csv) ·
+[Five-board LCSC/Mouser proposal](../manufacturing/contingency-2026-09-22/purchasing-5-boards.csv)
+
+The readiness tool reuses the dated 21 September JLC catalogue snapshot; it does
+not establish present stock or delivery. Its five-board JLC purchasing report is
+a catalogue cross-check, not the separate manual-assembly sourcing proposal.
+That proposal includes explicitly marked substitute MPNs; the design BOM remains
+unchanged. Nothing is reserved or ordered by these checks.
+
+## Historical ten-board sourcing notes — 21 September 2026
+
+The following records describe the earlier JLCPCB order. The newer release above
+supersedes its layout, footprint and fabrication instructions.
 
 All 55 exact selections refreshed 2026-09-21 against JLCPCB's public catalogue;
 native schematic checks repeated with KiCad 10.0.6.

@@ -1,0 +1,55 @@
+NUCULA V2 r2 - FIVE BARE BOARDS AND ONE TOP STENCIL
+Private-customer order; manual placement and reflow in Berlin.
+Target receipt: 29 September 2026, with 30 September as fallback.
+Arrival time takes priority over cost; show all costs before ordering.
+
+GEOMETRY AND FINISH
+- Use the released r2 Gerbers and drill files without automatic copper changes.
+- Five complete single boards, 60 x 110 mm, four layers, FR-4, nominal 1.6 mm.
+- ENIG. Black soldermask, white legend; green may be compared for faster delivery.
+- Finished outer copper 35 um; inner copper approximately 15-18 um.
+- Electrical test required.
+- Keep the keyboard section attached. Preserve both internal cutouts, the 28
+  mouse-bite holes and the central electrical bridge. No extra cut or V-score.
+- Preserve ESP32 antenna overhang/notch and NFC exclusions. No markings on pads
+  or antenna exclusions. No factory separation of the keyboard.
+
+STACKUP AND IMPEDANCE
+- Original construction is JLC04161H-3313: approximately 0.0994 mm outer
+  dielectric, nominal Dk 4.1, approximately 1.265 mm central core.
+- This supplier-specific name is a reference, not a universal stackup selection.
+- Existing USB pair: B.Cu over In2.Cu ground, width 0.15 mm, edge gap 0.21 mm,
+  target differential impedance 90 ohms +/-10%.
+- Propose a compatible construction and validate impedance before production.
+  Do not change traces automatically. Construction deviations need review.
+
+VIA FILL AND OPEN HOLES
+- Fill, planarize and copper-cap exactly the 335 round plated holes identified
+  by nucula-v2-Via_Filling.gbr: 32 x 0.20 mm, 301 x 0.30 mm, 2 x 0.40 mm.
+- These are the nominal diameters in the RELEASED drill data. The added layer
+  is only a selection mask, NOT copper, soldermask, paste or replacement drills.
+- Include the thermal holes represented as ComponentDrill in the release.
+- Leave the four 0.60 mm USB plated slots, nineteen 1.00 mm header holes and all
+  NPTH open. Preserve the released soldermask openings.
+- Smallest released via is 0.20 mm hole / 0.45 mm pad. Eurocircuits' normal
+  drill oversize and annular-ring rules need explicit review. Any proposed
+  reduction of filled via diameters must be shown in pre-production data;
+  no connector or mounting hole may be reduced to resolve this.
+- USB connector NPTH-to-copper clearance is approximately 0.233 mm minimum;
+  check against the selected manufacturing class.
+
+DELIVERED STENCIL
+- One top-side laser-cut stainless stencil, nominal thickness 0.10 mm.
+- Use nucula-v2-F_Paste.gtp; preserve its existing apertures without another
+  automatic pad reduction. No bottom stencil.
+- U6 exposed pad: preserve nine rounded 1.1 mm windows; do not merge them.
+- DS1: preserve 24 signal apertures, 0.25 x 1.30 mm at 0.50 mm pitch, plus anchors.
+- Preserve DNP paste omissions.
+- Stencil outer size/frame must match the lab fixture. If rails are required,
+  provide the carrier drawing and matching stencil before manufacture.
+
+COMMERCIAL CHECK
+- Quote/calculate five boards, via fill/cap, stencil, express production,
+  shipment to Berlin and VAT. Give production completion and expected arrival
+  separately. Both boards and stencil must meet the material receipt date.
+- These notes are technical requirements, not an order or approval to alter data.

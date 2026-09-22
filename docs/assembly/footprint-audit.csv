@@ -23,7 +23,7 @@ C14,Assemble,CL10B104KB8NNNC,Capacitor_SMD:C_0603_1608Metric,fe0dbfefbb181a0466f
 D1,Assemble,B340A-13-F,Diode_SMD:D_SMA,f7cba3b52ed8b34dce89170722de58324eac04e9e61a095e0eab37b9ca93cb7f,${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMA.step,Available
 D2,Assemble,B340A-13-F,Diode_SMD:D_SMA,f7cba3b52ed8b34dce89170722de58324eac04e9e61a095e0eab37b9ca93cb7f,${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMA.step,Available
 D3,Assemble,KT-0603R,LED_SMD:LED_0603_1608Metric,7931ed1efba34cb13c8d74a60eb1dca4b0be57d950c38e08c3e7f007db500a1c,${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step,Available
-J1,Assemble,USB4105-GF-A-120,Nucula_Project:USB_C_GCT_USB4105_16P_JLCPCB,422da94699b8ac2d4e2d3b11b6ed34c1edbf278334e774d90f37e00bdaf1af86,${KICAD10_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step,Available
+J1,Assemble,USB4105-GF-A-120,Nucula_Project:USB_C_GCT_USB4105_16P_Standard,b8969a687bd9d8fba32ed192af729c3e1bdc0ca596031964823cab2cdf893d09,${KICAD10_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step,Available
 J2,Assemble,B2B-PH-SM4-TB(LF)(SN),Nucula_Project:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical,e65a6723199bdd38537157202af12b59195c490395d4b19d0b658eda24e076c8,,No model assigned
 L1,Assemble,LSXND3030QKT2R2MNG,Nucula_Project:L_Taiyo-Yuden_NR-30xx,36868d6592ff7013fcb4cc56cefbe9a12344213123aaa432c00cfd760b7f7e1f,,No model assigned
 Q1,Assemble,IRLML6402TRPBF,Package_TO_SOT_SMD:SOT-23,0d88c86c1b6d8c1aae4aa8c09386264c089d4451a128b6ccd63ed253f4300b15,${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step,Available
@@ -50,7 +50,7 @@ SW1,Assemble,B3U-1000P,Button_Switch_SMD:SW_SPST_B3U-1000P,d24fc396b98fa262d6010
 SW2,Assemble,B3U-1000P,Button_Switch_SMD:SW_SPST_B3U-1000P,d24fc396b98fa262d6010f2ad81156242d03adfd5f80dfb1eff19093e59bc2ea,${KICAD10_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_B3U-1000P.step,Available
 U1,Assemble,TP4054-42-SOT25R,Package_TO_SOT_SMD:SOT-23-5,455a3f7c3e5eb5b8847eaa5df23e18651e78ab9f75afd09a0883758a0d901761,${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step,Available
 U2,Assemble,SY8089AAAC,Package_TO_SOT_SMD:SOT-23-5,455a3f7c3e5eb5b8847eaa5df23e18651e78ab9f75afd09a0883758a0d901761,${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step,Available
-U3,Assemble,ESP32-C3-WROOM-02-N4,Nucula_Project:ESP32-C3-WROOM-02-N4,220cd3480e84334f0006c08ddb3121ccddf2b1038a54e79c409d3329cef46b1c,${KIPRJMOD}/libraries/Nucula_Project.3dshapes/ESP32-C3-WROOM-02-N4.step,Available
+U3,Assemble,ESP32-C3-WROOM-02-N4,Nucula_Project:ESP32-C3-WROOM-02-N4_NoEPADSolder,6e6498f24c618ac42d5c684c91cd8d0fb732425418880c80a121b8748ce4c4c1,${KIPRJMOD}/libraries/Nucula_Project.3dshapes/ESP32-C3-WROOM-02-N4.step,Available
 U4,Assemble,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,f341c73aac9dcb553456f68bf3fee3d26eb14acf6d8a1cae82b50418fe1d71ca,${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step,Available
 U5,Assemble,TLV803EA30DBZR,Package_TO_SOT_SMD:SOT-23,0d88c86c1b6d8c1aae4aa8c09386264c089d4451a128b6ccd63ed253f4300b15,${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step,Available
 A1,Etched PCB copper,,Nucula_Project:NFC_PCB_Loop_40x40_4T_W0.50_S0.30_InsideFeed,bf6afdbb316f08f34774d6476692c1e4275f73c04d105eb4724d1be76385a1dc,,No model assigned

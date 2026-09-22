@@ -63,6 +63,7 @@ def main():
     if out.exists():
         raise SystemExit('Output already exists; choose a new directory to avoid mixing releases')
     spec = json.loads((ROOT / 'docs/manufacturing-spec.json').read_text())
+    assert spec['release'].startswith('jlcpcb-'), 'Use export_standard_fabrication.py for the current standard-fabrication revision'
     erc = json.loads((ROOT / 'docs/verification.json').read_text())
     assert erc['erc_violations'] == 0
     for name, digest in erc['schematic_sha256'].items():

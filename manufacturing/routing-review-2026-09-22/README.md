@@ -1,0 +1,41 @@
+# Standard fabrication / five-board contingency — routing review
+
+Upload `nucula-v2-gerbers.zip`. Order five bare four-layer FR-4 boards, nominal
+1.6 mm, green mask, white legend, ENIG, standard copper and supplier stackup.
+No controlled impedance, via filling/capping, or custom dielectric construction
+is required. Request normal electrical testing. Keep the keyboard attached.
+The Gerber job identifies the four layers and nominal board thickness; its
+individual material-stack dimensions are deliberately omitted. Follow the
+supplier's standard four-layer construction and the accompanying specification.
+
+Order a 100 µm top stencil using the included F.Paste Gerber. DNP paste and the
+optional ESP32 centre-pad paste are omitted. Fit the unchanged 116 components
+per board using `assembly/bom.csv` and the updated assembly drawing.
+The five-board purchasing list carries dated vendor observations and proposed
+substitutes, not reserved stock or a delivery promise. The engineering BOM
+retains its original MPNs; substitution notes in the purchasing list still apply.
+
+`drawings/display-clearance.png` marks a 17.70 × 5.00 mm component-free ribbon
+insertion area above DS1. Tracks, vias and soldermask-covered copper are permitted
+there. This annotated review image is not a fabrication layer.
+
+These files supersede the older filled-via contingency Gerbers. The archived
+JLCPCB r2 package describes the board already submitted and remains unchanged.
+They also supersede the first standard-fabrication package: routing has been
+rebuilt with full pad/via entries and 45-degree traces. The independent geometry
+audit checks every trace, rejects connections relying only on edge overlap,
+and reports no acute return bends or exposed segments shorter than 0.20 mm.
+`drawings/routing-comparison.png` shows two areas before and after the repair.
+Validation reports accompany this package; supplier CAM acceptance and physical
+prototype testing remain separate from the recorded software checks.
+
+Native DRC has zero errors, zero unconnected items and zero schematic-parity
+findings. Its 40 cosmetic warnings are documented: 37 footprint-library
+differences from front-legend clipping around open vias, two existing ESP32
+outline/edge warnings, and one back-artwork/mask overlap clipped in Gerbers.
+The independent geometry audit verifies that legend clipping changed no pads,
+models, rules or other footprint geometry. The 261 simulation cases exercise
+partial circuit models; they do not validate PCB parasitics or full operation.
+The layout report retains two USB advisories: 0.9915 mm U4-to-series-resistor
+length mismatch and two uncovered ground-reference samples out of 2,171.
+USB signal integrity has not been qualified.

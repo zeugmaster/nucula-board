@@ -1,8 +1,8 @@
 # Circuit simulation screening
 
-2026-09-21 · base commit `600d88a` plus the 24-pin OLED working-tree update · KiCad's bundled ngspice 45.2
+2026-09-22 · routing-review working tree · KiCad's bundled ngspice 45.2
 
-The 261 cases were rerun after the connector correction. Results record the
+The 261 cases were rerun after the full-board routing repair. Results record the
 actual working-tree file hashes; the electrical findings below are unchanged.
 
 **261 scoped simulation cases completed. This is a partial electrical analysis,

@@ -3,9 +3,10 @@
 An ESP32-C3 hardware prototype with USB-C, battery charging, PN7160 NFC,
 an SSD1309 OLED interface, and a detachable I²C keyboard section.
 
-**Status: routed prototype, awaiting physical bring-up.** The published
-manufacturing package is revision **r2**; supplier placement review, RF tuning,
-power measurements and display fit checks are still required before production.
+**Status: routed prototype, awaiting physical bring-up.** The current
+**routing-review-2026-09-22** package is for five bare boards and manual assembly,
+with ordinary unfilled vias and a 17.70 × 5.00 mm display-ribbon access area.
+Supplier CAM review, RF tuning, power measurements and display fit checks remain.
 
 ![Nucula v2 PCB layout](docs/pcb/top.png)
 
@@ -36,8 +37,9 @@ and a detachable PCF8574T keyboard section. The four-layer PCB is placed and
 routed, with all components on top and the NFC circuitry inside the coil.
 
 - [Completed PCB layout, layer drawings and validation](docs/pcb-layout.md)
-- [JLCPCB manufacturing package and order settings](docs/manufacturing-release.md)
-- [Complete manufacturing ZIP](manufacturing/jlcpcb-2026-09-21-r2-package.zip)
+- [Routing repair, before/after comparison and geometry audit](docs/routing-review.md)
+- [Standard manufacturing package and order settings](docs/manufacturing-release.md)
+- [Complete manufacturing ZIP](manufacturing/routing-review-2026-09-22-package.zip)
 - [Circuit simulation screening, findings and model limits](docs/simulation/README.md)
 - [Schematic PDF](docs/schematic.pdf)
 - [Design choices, datasheets and outstanding hardware limits](docs/power-design.md)
@@ -45,7 +47,8 @@ routed, with all components on top and the NFC circuitry inside the coil.
 - [35 mm keyboard breakaway geometry and separation instructions](docs/keyboard-breakaway.md)
 - [40 mm NFC coil, calculated matching values and prototype tuning guide](docs/nfc-antenna.md)
 - [Selected crystal, capacitor calculations and confirmed prototype interfaces](docs/component-refinements.md)
-- [10-board assembly audit, exact JLCPCB BOM and stock risks](docs/assembly-readiness.md)
+- [Five-board assembly audit and historical sourcing notes](docs/assembly-readiness.md)
+- [Manufacturing simplification and ribbon-clearance changes](docs/standard-fabrication.md)
 - [BOM](docs/bom.csv) and [verification results](docs/verification.json)
 - [Project library sources and licenses](libraries/README.md)
 
@@ -97,21 +100,24 @@ manufacturer DC-bias curves. Run `python3 tools/check_component_choices.py` to
 reproduce those estimates. RF tuning, oscillator qualification and power
 measurements remain prototype bring-up work. **Placement and routing are complete**
 for the agreed USB-powered prototype. Native PCB DRC has zero errors and zero
-unconnected items; the layout report records the two existing silkscreen warnings
-and the remaining prototype measurements.
+unconnected items; the layout report records 40 reviewed cosmetic warnings
+and the remaining prototype measurements. All six independent routing-quality
+checks pass after repairing the free-form routing regression. The 261 scoped
+SPICE cases were rerun.
 
 Git tracks design files, project libraries and documentation. Local editor state,
 lock files, automatic backups and KiCad's `.history` are ignored.
 
-Manufacturing files are prepared for 10 top-side assemblies, black mask, ENIG,
-and JLC04161H-3313. All 55 exact BOM parts were checked in stock on 2026-09-21;
-L2/L3 have only 21 available for 20 placements. The package includes a matching
-116-placement CPL and specifies filled/capped vias. Use **revision r2**: the
-original CPL added unverified body-center offsets that displaced U3 and DS1 in
-JLCPCB. [Placement correction and review](docs/assembly/cpl-alignment.md). Production still requires
-review of the carrier, impedance and assembly preview. J1's approved
-[ground-land trim](docs/usb-connector-clearance.md) raises hole clearance to
-0.233 mm and removes the former manufacturing exception. See the release instructions before ordering.
+Manufacturing files now target five bare four-layer boards, nominal 1.6 mm,
+green mask, white legend and ENIG using the supplier's standard stackup.
+Routing vias are 0.30 mm drill / 0.70 mm land, without filling or capping.
+There is no controlled-impedance requirement. The package includes updated
+116-part placements, stencil data and assembly drawings. The component BOM
+is unchanged. [Manufacturing changes and validation](docs/standard-fabrication.md).
+
+The [JLCPCB r2 archive](manufacturing/jlcpcb-2026-09-21-r2-package.zip) records
+the previously submitted board and remains unchanged. Its order settings and
+placements belong to that earlier design. Use the new package for new orders.
 
 ## License and attribution
 

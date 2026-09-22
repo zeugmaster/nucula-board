@@ -1,0 +1,18 @@
+UNSENT DRAFT
+For: Mouser Germany customer service / quotation form
+Subject: Ten-line component quotation for Berlin delivery by 29–30 September 2026
+
+Hello,
+
+Please quote the exact MPNs and quantities in mouser-import.csv, confirming immediately available stock and cut-tape packaging. Two rows have no distributor SKU; please match their exact manufacturer part numbers. No automatic alternatives, backorders or factory lead-time items.
+
+Preferred arrival in Berlin: 29 September 2026; 30 September is the fallback. Arrival time takes priority over cost. Delivery postcode/address: [INSERT].
+
+Please state the payment/order cutoff, earliest carrier handover, fastest suitable courier service and estimated or guaranteed delivery date. Quote all ten lines in EUR, plus shipping and VAT/other fees. Please distinguish any advertised free standard shipping from the service needed to meet this date.
+
+The three intentionally selected capacitor alternatives are CC0603KRX7R9BB104, VJ0805A680FXBPW1BC, and C0805C101F1GACTU. The remaining MPNs are exact release-BOM parts. The FPC connector must be FH12A-24S-0.5SH(55), the top-contact version.
+
+This is a quotation and availability inquiry, not an order.
+
+Attachment: mouser-import.csv
+[NAME / BILLING DETAILS / PHONE]

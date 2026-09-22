@@ -1,134 +1,107 @@
 # PCB placement and routing
 
-2026-09-21 · KiCad 10.0.6 · four-layer prototype layout
+22 September 2026 · KiCad 10.0.6 · routing-review revision
 
-The [manufacturing package](manufacturing-release.md) specifies JLC04161H-3313,
-ENIG and epoxy-filled/capped vias and contains final manufacturing exports.
-Its export copy supersedes the nominal stackup below without changing locked
-placement, routing or the outline. The approved
-[J1 ground-land trim](usb-connector-clearance.md) raises its NPTH clearance
-to 0.233 mm; the former 0.1944 mm fabrication exception is resolved.
+All 130 footprints are on top, with 116 populated purchased components and all
+91 nets connected. Nineteen parts have been rearranged for ordinary 0.30/0.70 mm
+vias and the **17.70 × 5.00 mm display-ribbon access area**. DS1 remains at
+(80.00, 108.85) mm, rotated 180°. Its insertion area is enforced by a front
+component keepout and independently checked against every component courtyard.
+[Changes, dimensions and checks](standard-fabrication.md). The subsequent
+[routing repair](routing-review.md) preserves every footprint's placement.
 
-The remaining **113 footprints are placed and all 91 nets are connected**.
-All 130 footprints, including the two mouse-bite patterns, are on F.Cu.
-The 17 constrained footprints remain locked; DS1 has the documented 0.20 mm
-placement amendment below, with the other 16 original positions/rotations retained. The board outline, antenna copper, antenna rule areas,
-and five breakaway bridge crossings are preserved.
+[Top view](pcb/top.svg) · [Ribbon clearance](pcb/display-clearance.svg) ·
+[NFC detail](pcb/nfc.svg) · [All copper layers](pcb/copper-layers.svg) ·
+[Layer PDF](../manufacturing/routing-review-2026-09-22/drawings/layers.pdf) ·
+[Native DRC](pcb/drc.json) · [Layout checks](pcb/layout-check.json)
 
-[Top view](pcb/top.svg) · [NFC detail](pcb/nfc.svg) ·
-[All copper layers](pcb/copper-layers.svg) ·
-[Seven-page copper/silkscreen/assembly PDF](pcb/layers.pdf) ·
-[Native DRC](pcb/drc.json) · [Geometry checks](pcb/layout-check.json)
+![Current PCB, top copper and component outlines](pcb/top.png)
 
-![Completed PCB, top copper and silkscreen](pcb/top.png)
+## Preserved geometry
 
-The OLED connector is **FH12A-24S-0.5SH(55), C506794**, a 24-position top-contact
-socket for the confirmed ribbon orientation. Its center is now **(80, 108.85 mm)**,
-0.20 mm toward the keyboard from the prior position; its 180° rotation and lock
-are retained. The larger latch courtyard is clear of neighboring components.
-All 24 nets are unchanged, with 47 local trace segments and eight vias adjusted.
-That OLED amendment preserved the other 129 footprints, board graphics,
-NFC/USB geometry and outline. The subsequent J1 amendment changes only two
-physical ground lands; all routing remains unchanged. [Manufacturer lands, paste and regression checks](oled24/top-contact.md).
+The board outline, 40 mm coil copper and antenna rule areas remain unchanged.
+All 42 NFC support/controller footprints remain inside the coil's open courtyard;
+other circuitry remains outside. U6 and its decoupling move upward, while the
+eleven matching-component pairs and their mirrored matching-tree copper are
+preserved. The original antenna feed corridor and five 0.20 mm functional
+keyboard breakaway crossings are retained. The fracture band has no vias or
+pours. Fixed connector positions and component values/nets are unchanged.
 
-## NFC placement and copper
+The all-layer pour exclusion remains x = 58.25–103.25 mm, y = 48.5–93.5 mm.
+No pour occurs inside or beneath the winding. NFC ground connections use traces
+and vias. Antenna tuning and complete populated-board performance require
+measurements; matching-tree symmetry alone does not establish RF performance.
 
-All 42 NFC support/controller footprints fit inside the coil's open courtyard,
-including the PN7160, crystal, decoupling, receiver taps and tuning components.
-Other circuitry remains outside that aperture.
+## Manufacturing and routing
 
-The eleven matching-component pairs mirror about **y = 80.5 mm**. The driver,
-EMC and matching branches also have exactly mirrored trace coordinates, layers
-and widths. L2/L3 sit 0.4 mm inward from their respective main buses to make room
-for the fixed QFN's staggered via escapes. The fixed IC pins and antenna terminals
-require different incoming TX and outgoing antenna-feed paths; those paths are
-not claimed to be geometrically identical.
+The revised board has **1,021 trace segments and 312 routing vias**. Every trace
+follows the 45-degree convention. Pad/via entries and centreline joins pass the
+independent geometry audit, with no edge-only connections, acute return bends,
+duplicate traces or exposed segments shorter than 0.20 mm. The audit permits
+short segments buried inside lands. [Before/after evidence](routing-review.md).
+All routing vias are ordinary through-vias with 0.30 mm holes and 0.70 mm lands,
+separated from solderable SMT lands by at least 0.10 mm mask-opening separation.
+The optional ESP32 centre joint/thermal holes are omitted. The PN7160 centre
+pad remains soldered without via holes in its wettable land.
 
-An all-layer pour exclusion covers **x = 58.25–103.25 mm,
-y = 48.5–93.5 mm**, extending 2.5 mm beyond the nominal winding rectangle.
-There are **no copper pours in the aperture or under/near the winding on any
-layer**. NFC ground connections use traces and vias, including the common shunt
-return, rather than a local poured plane. The seven host connections cross the
-winding only through its existing B.Cu entry corridor. The original winding
-restrictions remain in force.
+Routing retains the 0.15 mm minimum track and 0.20 mm net clearance. General
+NPTH clearance is 0.25 mm; J1 no longer needs a footprint-specific exception.
+Its USB shell slots are widened to 0.70 mm with 0.30 mm minimum rings. See the
+[standard-fabrication report](standard-fabrication.md) for adapted USB lands,
+fit limitations and the complete fabrication settings.
 
-The existing antenna-feed net names are now explicit global labels in
-`nfc.kicad_sch`. This removes a KiCad CLI parity discrepancy with automatically
-assigned antenna-net names. The exported net names, pin membership, circuit
-values and topology are unchanged.
-
-## Routing and manufacturing dimensions
-
-The board contains **1,066 trace segments and 321 through-vias**. Ground pours
-on all four layers are connected with stitching and component-return vias.
-The full fracture band remains free of pours and vias; only the original five
-0.20 mm F.Cu traces cross the cut bridge.
-
-| Use | Routing dimensions |
-|---|---|
-| Main supply trunks | 0.75 mm; narrower branches according to their load and pin escapes |
-| 3.3 V distribution | 0.50 mm main routes |
-| Buck switch/output connections | 0.50 / 0.60 mm |
-| OLED boost input and switch paths | 0.40 mm, entirely on F.Cu; no switch-node vias |
-| NFC RF branches | 0.35–0.40 mm main traces, with local taps and pin necks |
-| General signals | 0.20 mm nominal; 0.15 mm for dense escapes |
-| General vias | 0.60 mm copper / 0.30 mm finished drill |
-| Dense QFN escapes | 0.45 mm copper / 0.20 mm finished drill; 0.125 mm annulus |
-| Copper clearance | 0.20 mm minimum; pours use 0.25 mm clearance |
-
-The global track minimum is 0.15 mm and the through-hole minimum is 0.20 mm.
-These dimensions must be included in the fabrication specification. The
-footprint-specific rule in `nucula-v2.kicad_dru` requires 0.20 mm NPTH-to-pad
-clearance within J1, matching JLCPCB's minimum. The project-local USB4105
-footprint achieves 0.2333 mm with a 0.04 mm trim at the hole-facing end of
-each outer ground land. Holes, shell stakes and the global 0.25 mm
-hole-clearance constraint remain unchanged.
-
-The USB pair from U4 to R12/R13 uses **0.15 mm traces with 0.21 mm edge spacing
-on B.Cu**, referenced to In2.Cu. The nominal stack is 35 µm copper with 0.10 mm
-dielectric to that reference plane, targeting 90 Ω differential. Confirm the
-impedance with the fabricator's actual stackup. The two routed lengths are
-**41.2784 mm and 41.4968 mm**, giving **0.2184 mm skew**, with two equal through-via
-transitions per conductor. A rule area protects the ground reference under the
-long coupled run. The geometry check samples the center and both edges every
-0.1 mm: all 2,324 samples have ground beneath them, excluding the intentional
-0.6 mm radius around the signal-via antipads.
+The USB D−/D+ traces between U4 and R12/R13 are 41.3053 mm and 42.2968 mm long
+(0.9915 mm skew). The reference-plane sampling has two uncovered points out of
+2,171. The 0.5 mm skew advisory and complete reference-coverage advisory are
+unmet. Both are reported as **advisory**, following
+the request to focus on manufacturing compatibility. There is no controlled
+impedance order or custom stackup; USB signal integrity has not been qualified.
 
 ## Validation
 
-- Native DRC, including all-track checking: **0 errors, 0 unconnected items**.
-- Schematic/PCB parity: **0 findings**.
-- Schematic ERC and existing independent pin/net checks: **0 violations**,
-  128 physical schematic components, 91 nets.
-- The layout checker passes all 23 checks, including fixed placements, component
-  containment, net/value preservation, unchanged antenna/outline geometry,
-  mirrored matching copper, USB reference coverage and actual filled-pour limits.
-- Two pre-existing silkscreen-edge warnings remain on U3's outline at the fixed
-  ESP32 antenna overhang. There are no other DRC warnings, routing stubs,
-  clearance violations or courtyard overlaps.
+- Native KiCad DRC with zone refill, all-track checks and schematic parity:
+  **0 errors, 0 unconnected items, 0 parity findings**.
+- Schematic ERC and independent pin/net checks: **0 violations**.
+- **21 layout checks and 16 standard-fabrication checks pass**, including
+  keepout enforcement, via-to-pad separation, preserved geometry and no dangling copper.
+- **Six routing-quality checks pass** across all four copper layers; five
+  regression tests exercise the audit's handling of good and marginal joins.
+- **40 cosmetic warnings** remain: 37 deliberate front-legend/library differences,
+  two existing ESP32 legend/edge warnings and one preserved back-artwork overlap
+  clipped against mask during Gerber export. A separate footprint hash audit
+  confirms that legend editing changed no other geometry.
+- Component choices and the five-board assembly audit pass. **261 partial circuit
+  simulations** complete without solver errors; their limitations and findings
+  are in the [simulation report](simulation/README.md).
 
-Fifteen crowded component references are retained on the fabrication layer
-instead of being printed over pads. The assembly page in the PDF shows their
-locations. Copper-layer plots and the revised NFC schematic were visually checked.
+References that cannot print legibly beside the open vias remain in the
+[assembly drawing](../manufacturing/routing-review-2026-09-22/drawings/assembly-top.pdf).
+The original rear artwork and locally added U6 3D-model reference are preserved.
 
-Run from the project directory, with `kicad-cli` and a Python interpreter that
-can import `pcbnew`:
+## Reproduce
+
+Run from the project directory. The PCB tools require KiCad's `pcbnew` Python;
+the routing-quality checker requires Shapely 2. SPICE additionally requires
+numpy/matplotlib and a shared ngspice library. Use a suitable Python environment
+for each tool; the geometry JSON connects the KiCad and Shapely environments.
 
 ```sh
 kicad-cli pcb drc --refill-zones --save-board --schematic-parity \
-  --all-track-errors --format json -o docs/pcb/drc.json nucula-v2.kicad_pcb
+  --all-track-errors --severity-all --format json -o docs/pcb/drc.json nucula-v2.kicad_pcb
 python3 tools/check_pcb_layout.py --drc docs/pcb/drc.json
+python3 tools/check_standard_fabrication.py
+python3 tools/export_routing_geometry.py
+python3 tools/check_routing_quality.py
+python3 tools/test_routing_quality.py
 python3 tools/check_schematic.py
+python3 tools/check_component_choices.py
+python3 tools/check_assembly_readiness.py --boards 5
+python3 tools/simulate_preflight.py
+python3 tools/render_pcb_review.py
+python3 tools/export_standard_fabrication.py
 ```
 
-On the macOS installation used here, the PCB checker runs with
-`/Applications/KiCad/KiCad.app/Contents/Frameworks/Python.framework/Versions/3.9/bin/python3.9`.
-The original placement/net/geometry constraints are recorded in
-[constraints.json](pcb/constraints.json), against commit `f8a132d`.
-
-This completes placement and routing for the agreed prototype. DRC does not
-measure NFC tuning, crystal startup, power transients or USB impedance. Follow
-the existing [NFC tuning procedure](nfc-antenna.md#bench-procedure) with the
-assembled board and final enclosure, and the documented power bring-up checks.
-The [NXP PN7160 hardware guide](https://www.nxp.com/docs/en/application-note/AN12988.pdf)
-remains the reference for hardware bring-up and layout guidance.
+The [constraints](pcb/constraints.json) retain the original geometric baseline
+with the explicitly documented placement/land-pattern amendments. The isolated
+older OLED and USB regression scripts remain historical records; this broader
+revision uses the current layout and fabrication audits.

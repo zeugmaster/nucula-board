@@ -1,0 +1,20 @@
+UNSENT DRAFT
+To: support@lcsc.com
+Subject: Urgent stock/dispatch check: attached 45-line BOM, delivery Berlin 29–30 September 2026
+
+Hello,
+
+We need the attached lcsc-import.csv quantities for five prototype boards. Please confirm whether EVERY line is in immediately shippable warehouse stock, with no backorders or supplier transfers.
+
+Our preferred delivery date in Berlin, Germany is 29 September 2026, with 30 September as the fallback. Arrival time takes priority over cost. Please quote the fastest suitable express courier, total parts price, shipping, taxes/fees charged by you, and any charges due on import/delivery. Delivery postcode/address: [INSERT].
+
+Your help centre lists a holiday operations notice covering 25 September–7 October. Please confirm the warehouse and carrier collection schedule affecting this order, the payment cutoff, and earliest actual carrier handover date. Could the complete order be handed to the carrier on 23 September, or by 24 September at the latest? These are our requested dates, not assumed service cutoffs.
+
+Please distinguish warehouse processing time from transit time, state whether the Berlin arrival date is estimated or guaranteed, and flag any line that would hold the shipment. Do not substitute parts. Cut tape / small retail packs are intended; no full reels unless already required by the listed quantities.
+
+In particular, please reconfirm the exact part numbers for U1 (C32574), U2 (C78988), Y1 (C3008209), U3 (C2934560), U6 (C3303788), and all other lines in the attachment.
+
+This is a quotation and availability inquiry, not an order.
+
+Attachment: lcsc-import.csv
+[NAME / BILLING DETAILS / PHONE]

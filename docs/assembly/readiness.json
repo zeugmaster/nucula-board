@@ -1,5 +1,5 @@
 {
-  "boards": 10,
+  "boards": 5,
   "physical_symbols": 128,
   "purchased_populated_per_board": 116,
   "unique_purchased_parts": 55,
@@ -34,8 +34,8 @@
       "LCSC": "C527192",
       "Package": "0805",
       "Per_board": 2,
-      "Boards": 10,
-      "Placements": 20,
+      "Boards": 5,
+      "Placements": 10,
       "Minimum_placement": 20,
       "Loss_allowance": 8,
       "Planning_quantity": 28,
@@ -46,25 +46,6 @@
       "Preorder_MOQ": 494,
       "Observed_UTC": "2026-09-21T17:35:23.751917+00:00",
       "Source": "https://jlcpcb.com/partdetail/C527192"
-    },
-    {
-      "References": "L2, L3",
-      "MPN": "0805HP-151XGRC",
-      "LCSC": "C20417049",
-      "Package": "0805",
-      "Per_board": 2,
-      "Boards": 10,
-      "Placements": 20,
-      "Minimum_placement": 2,
-      "Loss_allowance": 0,
-      "Planning_quantity": 20,
-      "Available_order_quantity": 21,
-      "Stock_status": "TIGHT",
-      "Library": "expand",
-      "Assembly_mode": "smtWeld",
-      "Preorder_MOQ": 14,
-      "Observed_UTC": "2026-09-21T17:35:29.011355+00:00",
-      "Source": "https://jlcpcb.com/partdetail/C20417049"
     }
   ],
   "shortages": [],
@@ -73,7 +54,7 @@
   "stock_reserved": false,
   "quantity_method": "Planning only: max(placements, public minimum placement) + public loss allowance. Final JLCPCB BOM matching controls quantities.",
   "inputs_sha256": {
-    "docs/bom.csv": "fdbe391a8a170854765a6797f5983cd4f6e22456c576e216a13ff6d7f2654800",
+    "docs/bom.csv": "7d7e6e0c87075ddac4fe1b26af7234eca0d5e3f77a709bfd229c7c169bcce082",
     "docs/assembly/jlc-stock-snapshot.json": "a158392e737624a048653dad0101facdf610da84e1509d2d4f299ac83cd44d52"
   }
 }

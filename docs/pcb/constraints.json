@@ -78,7 +78,7 @@
     ],
     "U6": [
       75.9375,
-      69.75,
+      63.55,
       0.0
     ],
     "U8": [
@@ -1456,42 +1456,6 @@
     ],
     "U3": [
       [
-        "",
-        ""
-      ],
-      [
-        "",
-        ""
-      ],
-      [
-        "",
-        ""
-      ],
-      [
-        "",
-        ""
-      ],
-      [
-        "",
-        ""
-      ],
-      [
-        "",
-        ""
-      ],
-      [
-        "",
-        ""
-      ],
-      [
-        "",
-        ""
-      ],
-      [
-        "",
-        ""
-      ],
-      [
         "1",
         "/+3V3"
       ],
@@ -1530,54 +1494,6 @@
       [
         "18",
         "/Power + ESP32-C3/VBAT_ADC"
-      ],
-      [
-        "19",
-        "GND"
-      ],
-      [
-        "19",
-        "GND"
-      ],
-      [
-        "19",
-        "GND"
-      ],
-      [
-        "19",
-        "GND"
-      ],
-      [
-        "19",
-        "GND"
-      ],
-      [
-        "19",
-        "GND"
-      ],
-      [
-        "19",
-        "GND"
-      ],
-      [
-        "19",
-        "GND"
-      ],
-      [
-        "19",
-        "GND"
-      ],
-      [
-        "19",
-        "GND"
-      ],
-      [
-        "19",
-        "GND"
-      ],
-      [
-        "19",
-        "GND"
       ],
       [
         "19",
@@ -2490,6 +2406,62 @@
         108.85,
         180.0
       ]
+    },
+    {
+      "date": "2026-09-22",
+      "reason": "User authorized standard fabrication changes, a connector-width 5 mm ribbon-access area, and component rearrangement; USB impedance optimization is outside this revision.",
+      "changes": [
+        "U3 optional centre solder joint omitted: one masked copper pad 19 remains on GND; remove centre paste and twelve thermal holes. Ground pin 9 is unchanged.",
+        "U6 moved 6.2 mm toward the antenna to allow 0.30/0.70 mm through-via escape. It remains locked at the new position.",
+        "USB skew/reference checks remain reported as advisories rather than manufacturing release gates."
+      ],
+      "preserved": "Component values and logical nets, DS1 position, other fixed placements, antenna copper and outline remain constrained."
     }
+  ],
+  "advisory_checks": [
+    "usb_esd_to_series_resistor_skew_below_0_5mm",
+    "usb_has_in2_ground_beneath_both_trace_edges"
+  ],
+  "reviewed_library_silkscreen_changes": [
+    "C17",
+    "C2",
+    "C22",
+    "C23",
+    "C25",
+    "C27",
+    "C28",
+    "C4",
+    "C47",
+    "D2",
+    "D4",
+    "DS1",
+    "J2",
+    "J4",
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "R10",
+    "R11",
+    "R20",
+    "R31",
+    "R34",
+    "R42",
+    "R8",
+    "R9",
+    "SW1",
+    "SW2",
+    "U1",
+    "U2",
+    "U3",
+    "U5",
+    "U7",
+    "U8",
+    "U9",
+    "Y1"
+  ],
+  "reviewed_back_art_mask_clipping": [
+    "c1a5f62c-017f-49b8-b078-5b58dbcb9520"
   ]
 }

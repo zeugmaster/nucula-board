@@ -1,0 +1,66 @@
+{
+  "release": "standard-2026-09-22",
+  "boards": 5,
+  "service": "Bare PCBs; self assembly",
+  "assembly_side": "Top",
+  "board_size_mm": [
+    60,
+    110
+  ],
+  "thickness_mm": 1.6,
+  "solder_mask": "Green",
+  "silkscreen": "White",
+  "finish": "ENIG",
+  "via_covering": "Unfilled, uncapped, open through-vias",
+  "stackup": "Supplier standard four-layer FR-4; no custom dielectric construction",
+  "outer_copper_mm": 0.035,
+  "inner_copper": "Supplier standard 0.5 or 1 oz",
+  "controlled_impedance": false,
+  "tolerances": "Supplier standard",
+  "minimum_track_mm": 0.15,
+  "minimum_clearance_mm": 0.2,
+  "routing_via_drill_mm": 0.3,
+  "routing_via_pad_mm": 0.7,
+  "minimum_npth_copper_clearance_mm": 0.25,
+  "usb_plated_slot_width_mm": 0.7,
+  "usb_slot_annular_ring_mm": 0.3,
+  "electrical_test": true,
+  "origin_kicad_mm": [
+    50,
+    160
+  ],
+  "top_stencil_um": 100,
+  "ribbon_access_area_mm": [
+    71.15,
+    98.55,
+    88.85,
+    103.55
+  ],
+  "esp32_centre_joint": "Omitted: masked centre land, no thermal hole array, no centre paste; pin 9 remains soldered to GND",
+  "keyboard": "Delivered attached; preserve functional bridge and mouse bites",
+  "dnp": [
+    "C7",
+    "C8",
+    "C34",
+    "C35",
+    "C38",
+    "C39",
+    "J3",
+    "J4",
+    "J5",
+    "R38",
+    "R39"
+  ],
+  "non_components": [
+    "A1",
+    "MB1",
+    "MB2"
+  ],
+  "status": "Local engineering checks validated; supplier CAM acceptance and delivery remain unconfirmed",
+  "sources_checked": "2026-09-22",
+  "sources": {
+    "eurocircuits": "https://www.eurocircuits.com/services/pcb-proto/",
+    "aisler": "https://community.aisler.net/t/4-layer-35-m-enig-design-rules/3733",
+    "esp32": "https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf"
+  }
+}

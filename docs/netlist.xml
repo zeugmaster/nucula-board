@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>nucula-v2.kicad_sch</source>
-    <date>2026-09-22T16:47:13</date>
+    <date>2026-09-22T22:27:44</date>
     <tool>Eeschema 10.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -959,14 +959,14 @@
     </comp>
     <comp ref="J1">
       <value>USB4105-GF-A-120</value>
-      <footprint>Nucula_Project:USB_C_GCT_USB4105_16P_JLCPCB</footprint>
+      <footprint>Nucula_Project:USB_C_GCT_USB4105_16P_Standard</footprint>
       <datasheet>https://gct.co/files/drawings/usb4105.pdf</datasheet>
       <fields>
         <field name="Manufacturer">Global Connector Technology</field>
         <field name="MPN">USB4105-GF-A-120</field>
         <field name="Mechanical Note">1.20 mm shell stakes; common USB4105 XY PCB pattern; 1.6 mm prototype PCB</field>
         <field name="LCSC">C5184243</field>
-        <field name="Footprint">Nucula_Project:USB_C_GCT_USB4105_16P_JLCPCB</field>
+        <field name="Footprint">Nucula_Project:USB_C_GCT_USB4105_16P_Standard</field>
         <field name="Datasheet">https://gct.co/files/drawings/usb4105.pdf</field>
         <field name="Description"/>
       </fields>
@@ -1896,14 +1896,14 @@
     </comp>
     <comp ref="U3">
       <value>ESP32-C3-WROOM-02-N4</value>
-      <footprint>Nucula_Project:ESP32-C3-WROOM-02-N4</footprint>
+      <footprint>Nucula_Project:ESP32-C3-WROOM-02-N4_NoEPADSolder</footprint>
       <datasheet>https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf</datasheet>
       <description>4 MB flash, onboard antenna; native USB Serial/JTAG</description>
       <fields>
         <field name="MPN">ESP32-C3-WROOM-02-N4</field>
         <field name="Manufacturer">Espressif Systems</field>
         <field name="LCSC">C2934560</field>
-        <field name="Footprint">Nucula_Project:ESP32-C3-WROOM-02-N4</field>
+        <field name="Footprint">Nucula_Project:ESP32-C3-WROOM-02-N4_NoEPADSolder</field>
         <field name="Datasheet">https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf</field>
         <field name="Description">4 MB flash, onboard antenna; native USB Serial/JTAG</field>
       </fields>

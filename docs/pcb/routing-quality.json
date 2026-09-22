@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "checks": {
+    "tracks_follow_45_degree_convention": true,
+    "all_track_ends_have_full_entries_or_centreline_joins": true,
+    "no_connections_depend_only_on_edge_overlap": true,
+    "no_duplicate_tracks": true,
+    "no_acute_two_segment_return_bends": true,
+    "no_exposed_segments_shorter_than_0_20_mm": true
+  },
+  "source_board_sha256": "675917f91f1d26dfde7e194eeaeac015fa8e7ae071f56e1bf8784768668b93fe",
+  "coordinate_tolerance_mm": 0.002,
+  "statistics": {
+    "tracks": 1021,
+    "vias": 312,
+    "non45_tracks": 0,
+    "shallow_ends": 0,
+    "weak_connection_groups": 0,
+    "duplicate_tracks": 0,
+    "acute_bends": 0,
+    "exposed_short_segments": 0
+  },
+  "non45": [],
+  "shallow_ends": [],
+  "weak_connections": [],
+  "duplicates": [],
+  "acute_bends": [],
+  "exposed_short_segments": [],
+  "scope": "Copper geometry; native DRC additionally checks clearances, filled zones and netlist parity. No SI, RF, thermal or yield guarantee."
+}
