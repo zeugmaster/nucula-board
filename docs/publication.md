@@ -1,8 +1,13 @@
 # Public repository and validation
 
-This repository publishes the Nucula v2 hardware as `nucula-board`. It starts
-with a clean public history. Private development commits and workstation
-configuration are not required to open or validate the design.
+This repository publishes the Nucula v2 hardware as `nucula-board`. Its original
+17 development commits retain their sequence, messages, author dates and
+committer dates. Personal email addresses and private file details are scrubbed
+throughout that history. The publication cleanup remains a separate commit.
+See the [history map](history.md) for the rewritten commit IDs.
+
+Workstation configuration is excluded and is not required to open or validate
+the design.
 
 ## Validation
 
@@ -26,7 +31,8 @@ The independent Gerber audit requires `gerbonara==1.5.0`, `reportlab` and
 
 The USB and display-change regression tools read sanitized design snapshots
 from `tools/baselines/`, so they work without private Git commits. The filenames
-identify the original development revisions, not reachable public commits.
+identify the original development revisions, not the rewritten public commit
+IDs; the [history map](history.md) links them to their sanitized counterparts.
 Only their required design/report inputs are retained. Local paths and the
 restricted PN7160 visualization model were removed consistently from both
 the baselines and current design. The older `check_oled24_update.py` describes
@@ -39,8 +45,10 @@ Only the corrected r2 release is published. The public repack preserves all
 Gerber, drill, BOM and CPL bytes. It removes editor state, local paths and the
 restricted optional 3D model, refreshes the source snapshot and validation
 records, and recalculates the manifest and archive checksums. `source_commit`
-records the original development baseline; the snapshot's file hashes identify
-the published inputs independently of that private commit.
+records the original development baseline before history scrubbing; the
+[history map](history.md) identifies its public counterpart. The snapshot's file
+hashes identify the release inputs independently of commit IDs. Later changes
+to repository documentation do not change the archived release snapshot.
 
 The design still needs the physical qualification and supplier review described
 in [the manufacturing instructions](manufacturing-release.md). Successful
