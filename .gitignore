@@ -20,3 +20,15 @@ _autosave-*
 # Python verification-tool cache
 __pycache__/
 *.pyc
+
+# Private publication backups and workstation configuration
+/.private-publication-backup/
+/.codex/
+/.agents/
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+*.pem
+*.key

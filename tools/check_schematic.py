@@ -29,6 +29,9 @@ def run(*args):
 
 run('sch', 'erc', '--format', 'json', '--severity-all', '--exit-code-violations', '--output', DOC/'erc.json', SCH)
 run('sch', 'export', 'netlist', '--format', 'kicadxml', '--output', DOC/'netlist.xml', SCH)
+# KiCad embeds the absolute input path; publish a portable project-relative path.
+netlist = DOC / 'netlist.xml'
+netlist.write_text(netlist.read_text().replace(str(SCH), SCH.name))
 erc = json.loads((DOC/'erc.json').read_text())
 assert not any(sheet['violations'] for sheet in erc['sheets'])
 xml = ET.parse(DOC/'netlist.xml').getroot()

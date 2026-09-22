@@ -164,9 +164,10 @@ Sources: [JLCPCB BOM format](https://jlcpcb.com/help/article/bill-of-materials-f
 ## Footprints and 3D coverage
 
 All assigned footprint files resolve, and every schematic physical pin has a
-matching numbered footprint pad. **122 of 128 symbols have resolving 3D models.**
-The exceptions are J2, A1 (etched copper, no separate body) and L1–L4 (footprints
-ready, optional body models absent). The ESP32 and PN7160 STEP files are bundled;
+matching numbered footprint pad. **121 of 128 symbols have resolving 3D models.**
+The exceptions are J2, A1 (etched copper, no separate body), U6 and L1–L4 (footprints
+ready, optional body models absent). The ESP32 STEP file is bundled; the optional
+PN7160 model is omitted because its terms prohibit redistribution. The
 other assigned models use installed KiCad libraries. These are visual package
 representations, not a certification of every selected vendor variant. In
 particular, the generic USB4105 model may depict the original stake length.

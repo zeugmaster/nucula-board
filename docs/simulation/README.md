@@ -100,14 +100,15 @@ electrical behaviors.
 
 Run from the repository with Python, numpy, matplotlib and a shared ngspice
 library. The existing [NFC requirements](../../tools/nfc/requirements.txt) contain
-the tested numerical packages. On this machine:
+the tested numerical packages. Create a local environment:
 
 ```sh
-MPLCONFIGDIR=/private/tmp/nucula-simulation-matplotlib \
-  /private/tmp/nucula-nfc-venv/bin/python tools/simulate_preflight.py
+python3 -m venv .venv
+.venv/bin/python -m pip install -r tools/nfc/requirements.txt
+.venv/bin/python tools/simulate_preflight.py
 ```
 
-Elsewhere, run `python3 tools/simulate_preflight.py`; set `NGSPICE_LIBRARY` to
+With dependencies already installed, run `python3 tools/simulate_preflight.py`; set `NGSPICE_LIBRARY` to
 the shared library path if different from KiCad's macOS installation. `--out`
 selects another output directory. The saved `.cir` files can also be loaded into
 standalone ngspice. `node-map.json` maps their nodes to schematic net names.

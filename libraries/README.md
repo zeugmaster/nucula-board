@@ -1,7 +1,7 @@
 # Project libraries and attribution
 
 KiCad project tables register `Nucula_Project` with relative `${KIPRJMOD}` paths.
-The global `Nucula` library remains available separately, including PN7160.
+No workstation-global custom library is required.
 
 - ESP32-C3-WROOM-02-N4 symbol, footprint and STEP: KiCad Library Team's
   ESP32-C3-WROOM-02 assets from installed KiCad 10.0.6, specialized with N4/4 MB
@@ -32,9 +32,10 @@ The global `Nucula` library remains available separately, including PN7160.
   missing 3D-model reference. No substitute model is claimed.
 - PN7160A1HN_C100E: project-local copy of the installed part, with a new readable
   symbol drawing using NXP's HVQFN40 pin map, including exposed ground pad 41.
-  The KiCad-derived land pattern and installed SamacSys STEP model are included
-  with relative paths. The model is a package representation, not an RF model;
-  its terms are in [PN7160 model license](../LICENSES/PN7160-model-SamacSys.txt).
+  The KiCad-derived land pattern is included. The optional SamacSys STEP model
+  and its references are omitted from the public repository and release archives:
+  its [terms](../LICENSES/PN7160-model-SamacSys.txt) prohibit distributing reusable
+  library models outside the company. The electrical footprint is unchanged.
 - SSD1309_COG_24: 24-contact glass interface checked against the user's exact
   CON24 breakout schematic. These are flex/contact numbers, not bare SSD1309
   die pads. The new reference supersedes the earlier 26-contact assumption.
@@ -82,7 +83,7 @@ The global `Nucula` library remains available separately, including PN7160.
 
 PCF8574T, its SOIC-16W_7.5x10.3mm_P1.27mm footprint and package model use the
 standard KiCad libraries. All assigned model paths resolve in the checked
-installation. The verification report lists A1, J2 and L1–L4 as having no model.
+installation. The verification report lists A1, J2, L1–L4 and U6 as having no model.
 
 The two user-supplied reference schematics remain under `parts documentation/`.
 Their respective authors retain ownership; no broader redistribution license

@@ -5,6 +5,7 @@ Requires gerbonara==1.5.0, reportlab and rsvg-convert. No KiCad Python required.
 """
 import argparse
 from collections import Counter, defaultdict
+import csv
 from datetime import datetime, timezone
 import hashlib
 import importlib.metadata
@@ -39,6 +40,28 @@ def main():
         assert sha(out / name) == digest, 'Modified release artifact: ' + name
     g = out / 'gerbers'
     spec = json.loads((out / 'manufacturing-spec.json').read_text())
+    # Native KiCad export is an independent reference for the CSV conversion.
+    # A pass here does not certify JLC's own catalogue model/pin registration.
+    assert not spec['local_placement_offsets_mm'], 'Review any new catalogue offsets independently'
+    with (out / 'validation/kicad-positions.csv').open() as f:
+        native_rows = list(csv.DictReader(f))
+    with (out / 'assembly/jlcpcb-cpl.csv').open() as f:
+        cpl_rows = list(csv.DictReader(f))
+    with (out / 'assembly/jlcpcb-bom.csv').open() as f:
+        bom_refs = [r.strip() for row in csv.DictReader(f) for r in row['Designator'].split(',')]
+    native = {row['Ref']: row for row in native_rows}
+    cpl = {row['Designator']: row for row in cpl_rows}
+    assert len(native_rows) == len(native) == len(cpl_rows) == len(cpl) == len(bom_refs) == len(set(bom_refs)) == 116
+    assert set(native) == set(cpl) == set(bom_refs)
+    for ref, row in cpl.items():
+        original = native[ref]
+        assert abs(float(row['Mid X'])-float(original['PosX'])) < 1e-6, ref
+        assert abs(float(row['Mid Y'])-float(original['PosY'])) < 1e-6, ref
+        expected_rotation = (float(original['Rot'])+spec['rotation_corrections_deg'].get(ref,0))%360
+        assert abs(float(row['Rotation'])-expected_rotation) < 1e-6, ref
+        assert original['Side'] == 'top' and row['Layer'] == 'Top', ref
+    for ref, expected in {'U3':(47.9,53.86,270), 'DS1':(30,51.15,180), 'J2':(6.75,59.1,90)}.items():
+        assert tuple(float(cpl[ref][k]) for k in ['Mid X','Mid Y','Rotation']) == expected
     with warnings.catch_warnings(record=True) as caught:
         stack = LayerStack.open(g)
         pth = ExcellonFile.open(g / 'nucula-v2-PTH.drl')
@@ -133,6 +156,10 @@ def main():
         'inspected_utc': datetime.now(timezone.utc).isoformat(),
         'gerbonara_version': importlib.metadata.version('gerbonara'),
         'checks_passed': True, 'parser_warnings': parser_warnings,
+        'placement': {'rows':len(cpl), 'matches_native_kicad_origins':True,
+                      'matches_bom_references':True, 'rotation_conversion_checked':True,
+                      'unverified_body_center_offsets_removed':['U3','DS1','J2'],
+                      'jlc_catalogue_pin_alignment':'Pending user review in JLCPCB 2D viewer'},
         'parser_warning_review': 'KiCad G90 after M95 is accepted as absolute coordinates; all hole coordinates checked',
         'copper_layers': sorted(copper), 'closed_outline_contours': len(loops),
         'board_envelope_mm': [60,110], 'pth_features': len(pth.objects),

@@ -1,6 +1,31 @@
-# Nucula v2
+# Nucula Board
 
-Open `nucula-v2.kicad_pro` in **KiCad 10**.
+An ESP32-C3 hardware prototype with USB-C, battery charging, PN7160 NFC,
+an SSD1309 OLED interface, and a detachable I²C keyboard section.
+
+**Status: routed prototype, awaiting physical bring-up.** The published
+manufacturing package is revision **r2**; supplier placement review, RF tuning,
+power measurements and display fit checks are still required before production.
+
+![Nucula v2 PCB layout](docs/pcb/top.png)
+
+## Open the design
+
+Clone this repository and open `nucula-v2.kicad_pro` in **KiCad 10** with its
+standard symbol, footprint and 3D libraries installed. Project-specific libraries
+use relative paths. The project filenames retain the hardware revision name
+`nucula-v2`; the GitHub repository is `nucula-board`.
+
+```sh
+git clone https://github.com/zeugmaster/nucula-board.git
+cd nucula-board
+python3 tools/check_schematic.py
+```
+
+The check requires Python 3 and KiCad CLI. See [validation and repository
+notes](docs/publication.md) for other checks, dependencies and historical inputs.
+
+## Hardware and documentation
 
 The five-sheet schematic contains the ESP32-C3-WROOM-02-N4, native USB-C data,
 a 100 mA single-cell Li-ion charger with JST-PH connector, USB/battery supply
@@ -12,7 +37,7 @@ routed, with all components on top and the NFC circuitry inside the coil.
 
 - [Completed PCB layout, layer drawings and validation](docs/pcb-layout.md)
 - [JLCPCB manufacturing package and order settings](docs/manufacturing-release.md)
-- [Complete manufacturing ZIP](manufacturing/jlcpcb-2026-09-21-package.zip)
+- [Complete manufacturing ZIP](manufacturing/jlcpcb-2026-09-21-r2-package.zip)
 - [Circuit simulation screening, findings and model limits](docs/simulation/README.md)
 - [Schematic PDF](docs/schematic.pdf)
 - [Design choices, datasheets and outstanding hardware limits](docs/power-design.md)
@@ -30,23 +55,25 @@ pin 2 ground. Charging remains 100 mA (0.25C at 400 mAh).
 Battery operation is optional for this prototype; runtime/discharge capability
 and improved low-battery behavior are deferred. J2 uses a vertical SMT JST-PH
 2.00 mm connector, B2B-PH-SM4-TB(LF)(SN), JLCPCB C160352.
-The user-confirmed USB source is a dedicated **5 V / at least 1.5 A** supply; the
+The intended USB source is a dedicated **5 V / at least 1.5 A** supply; the
 steady-state planning budget is about 1.10 A including charging. Startup/inrush
 must be tested; operation from arbitrary computer hosts is not qualified.
 
 Run `python3 tools/check_schematic.py` to repeat ERC, connectivity, pad/model and
 voltage checks. KiCad's standard symbols, footprints and 3D models are required;
 `KICAD_CLI` and `KICAD_SHARE` can override their locations. The project-specific
-parts and ESP32/PN7160 STEP models are included with relative paths in `libraries/`.
+parts and the ESP32 STEP model are included with relative paths in `libraries/`.
+The optional PN7160 3D model is omitted because its terms prohibit redistribution;
+its symbol and electrical footprint are included.
 All 128 physical components have assigned footprints. A1 is a reusable four-turn
 40 × 40 mm PCB coil with its bottom return and copper keepout included. The NFC
 tree now has calculated starting values, 0805 manual tuning pads and TX isolation
 links. [A separate bare-coil coupon](prototypes/nfc-antenna/nfc-antenna.kicad_pro)
 is available for fabrication and measurement. The OLED now uses the **24-contact
-CON24 pinout** in the user's exact breakout schematic, superseding the earlier
+CON24 pinout** in the reference breakout schematic, superseding the earlier
 26-contact assumption. DS1 is a Hirose FH12A-24S-0.5SH(55), 0.5 mm top-contact socket (C506794).
 [Pinout and regression checks](docs/oled24/README.md) cover all 24 connections.
-The user identifies one panel by ribbon marking **NFP1309-02Y**: 2.4-inch COG,
+The target panel has ribbon marking **NFP1309-02Y**: 2.4-inch COG,
 0.50 mm pitch, 0.30 mm flex, contacts on the emitting face. In its confirmed
 mounted position the tip contacts face away from the PCB. The
 [top-contact update and checks](docs/oled24/top-contact.md) cover the new lands,
@@ -79,7 +106,18 @@ lock files, automatic backups and KiCad's `.history` are ignored.
 Manufacturing files are prepared for 10 top-side assemblies, black mask, ENIG,
 and JLC04161H-3313. All 55 exact BOM parts were checked in stock on 2026-09-21;
 L2/L3 have only 21 available for 20 placements. The package includes a matching
-116-placement CPL and specifies filled/capped vias. Production still requires
+116-placement CPL and specifies filled/capped vias. Use **revision r2**: the
+original CPL added unverified body-center offsets that displaced U3 and DS1 in
+JLCPCB. [Placement correction and review](docs/assembly/cpl-alignment.md). Production still requires
 review of the carrier, impedance and assembly preview. J1's approved
 [ground-land trim](docs/usb-connector-clearance.md) raises hole clearance to
 0.233 mm and removes the former manufacturing exception. See the release instructions before ordering.
+
+## License and attribution
+
+The hardware design is distributed under [CERN-OHL-S-2.0](LICENSE), retaining
+the attribution and license of the Olimex ESP32-C3-DevKit-Lipo revision C design
+from which the power section was adapted. Third-party library assets and
+reference documents retain their own terms; see [library attribution](libraries/README.md)
+and [LICENSES](LICENSES/). These notices do not grant additional rights to
+third-party material. Firmware is not included in this repository.

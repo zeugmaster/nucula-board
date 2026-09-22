@@ -1,9 +1,9 @@
 {
   "scope": "Partial circuit simulation; not a manufacturing release or complete board simulation.",
-  "design_commit": "d4eaaa9dcd4b16c4278c4b5c87639456b6b28397",
+  "design_commit": "a67a5b61ff2e1b2bdb844273adea9ed86af28cc5",
   "design_snapshot": "Working tree; source_sha256 identifies the simulated files; design_commit is the base commit.",
   "source_sha256": {
-    "nucula-v2.kicad_pcb": "0ffb427b707ffb8290029c605edbd8b14c490a60822fa13a1c43e3cfb68e0d4a",
+    "nucula-v2.kicad_pcb": "4e582fc67796c618ffb62488af51a3807b1540be308f1a315ecae28ff7b50e96",
     "nucula-v2.kicad_pro": "37aaeb35a6800dcbe25072dc5728b01e033570ba8f0f0d689eb1c9d8d76e7ce3",
     "nucula-v2.kicad_dru": "1aa4b4203ca92e3120f9cf0dd140c78b641b9065338f678aa6f4709655dca53e",
     "keyboard.kicad_sch": "9489d40c8a70b60037e6dd5a4849a09903941db6114d3cf6ed89d5500f043259",
@@ -12,7 +12,7 @@
     "oled.kicad_sch": "6ec08982ae62f4b6196a94bae57195ff38833512f93fda12b959927023c96754",
     "power-mcu.kicad_sch": "834ddc8f552dbd62193d0cc48d51484371cb291e67dc29b9c031c3edc905fb02"
   },
-  "netlist_sha256": "aba06b518097cc653c273fb510bd376a9fa8ae7a6bf4da7466d739ea545f8827",
+  "netlist_sha256": "5e81dabffd5fe71e1ea491b29b95e12a71d68f0e3f36e22b46eca4da8d5f646c",
   "simulation_script_sha256": "409c24a0b6c18135a6a13889465c2baf30544c8686bb7b1b5f5ff1671089d6e9",
   "nfc_assumptions_sha256": "baa8787481de41c02eb8bca8ff0022c189ff107ff500211aeddf36f169a92375",
   "engine": [

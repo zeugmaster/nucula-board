@@ -19,7 +19,8 @@ BASE = '96c8114'
 
 
 def old(name):
-    return subprocess.check_output(['git', 'show', f'{BASE}:{name}'], cwd=ROOT, text=True)
+    from historical_source import read_baseline
+    return read_baseline(BASE, name)
 
 
 def run():

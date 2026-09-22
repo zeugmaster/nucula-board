@@ -110,22 +110,26 @@ def main():
         list(ROOT.glob('*.kicad_*')) + [ROOT / 'fp-lib-table', ROOT / 'sym-lib-table'] +
         [p for p in (ROOT / 'libraries').rglob('*') if p.is_file()] +
         [p for p in (ROOT / 'LICENSES').rglob('*') if p.is_file()] +
-        list((ROOT / 'tools').rglob('*.py')) + [ROOT / 'README.md'] +
+        list((ROOT / 'tools').rglob('*.py')) + list((ROOT / 'tools/baselines').glob('*.zip')) +
+        [ROOT / 'README.md', ROOT / 'LICENSE'] +
         [p for p in (ROOT / 'docs').rglob('*') if p.suffix in ['.md','.json','.csv','.xml']]))
-    source_paths = [p for p in source_paths if p.is_file() and p.suffix != '.kicad_prl']
+    source_paths = [p for p in source_paths if p.is_file() and
+                    p.suffix not in {'.kicad_prl', '.lck'} and not p.name.startswith('~')]
     source_hashes = {str(p.relative_to(ROOT)): sha(p) for p in source_paths}
     zip_files(out / 'nucula-v2-design-snapshot.zip', ROOT, source_paths)
     log = []
 
     def run(*argv):
         command = [CLI, *map(str, argv)]
-        log.append(command)
+        # Record reproducible arguments without exposing workstation paths.
+        log.append(['kicad-cli', *[str(arg).replace(str(ROOT) + '/', '').replace(
+            str(out), '${RELEASE_DIR}').replace(str(tmp), '${EXPORT_TMP}') for arg in argv]])
         subprocess.run(command, check=True, cwd=ROOT)
 
     with tempfile.TemporaryDirectory(prefix='nucula-jlcpcb-') as tmp:
         tmp = Path(tmp)
         for p in ROOT.glob('*.kicad_*'):
-            if p.suffix != '.kicad_prl':
+            if p.suffix not in {'.kicad_prl', '.lck'} and not p.name.startswith('~'):
                 shutil.copy2(p, tmp / p.name)
         for name in ['fp-lib-table', 'sym-lib-table']:
             shutil.copy2(ROOT / name, tmp / name)
@@ -202,7 +206,9 @@ def main():
             fp = footprints[ref]
             angle = fp.GetOrientationDegrees()
             a = math.radians(angle)
-            dx, dy = spec['local_body_center_offsets_mm'].get(ref, [0, 0])
+            # Preserve the footprint anchor. F.Fab body centers are not verified
+            # JLC catalogue anchors and caused U3/DS1 translation errors in r1.
+            dx, dy = spec['local_placement_offsets_mm'].get(ref, [0, 0])
             # KiCad +Y is downward; the export origin uses +Y upward.
             gx, gy = dx*math.cos(a) + dy*math.sin(a), -dx*math.sin(a) + dy*math.cos(a)
             x, y = k.ToMM(fp.GetPosition().x) - ox, oy - k.ToMM(fp.GetPosition().y)
@@ -211,8 +217,8 @@ def main():
             placement.append({'Designator': ref, 'Mid X': f'{x+gx:.6f}', 'Mid Y': f'{y-gy:.6f}',
                               'Layer': 'Top', 'Rotation': f'{(angle+correction)%360:.6f}'})
             audit.append({'Reference': ref, 'LCSC': fp.GetFieldText('LCSC'),
-                          'Origin_X': x, 'Origin_Y': y, 'Center_offset_local_X': dx,
-                          'Center_offset_local_Y': dy, 'KiCad_rotation_CCW': angle,
+                          'Origin_X': x, 'Origin_Y': y, 'Placement_offset_local_X': dx,
+                          'Placement_offset_local_Y': dy, 'KiCad_rotation_CCW': angle,
                           'JLC_rotation_correction': correction,
                           'Preview_status': 'Requires JLCPCB catalogue preview verification'})
             for pad in fp.Pads():
@@ -277,7 +283,7 @@ def main():
             'usb_npth_to_pad_clearance_mm': usb['minimum_npth_to_smd_clearance_mm'],
             'cam_acceptance_pending': ['90 ohm USB impedance on selected stackup',
                                        'carrier avoiding ESP32 overhang and preserving keyboard',
-                                       'catalogue-specific placement rotations and centroids']})
+                                       'JLCPCB 2D pin alignment after removing unverified U3/DS1/J2 body-center offsets']})
 
     for p in ['jlcpcb-bom.csv', 'purchasing-10-boards.csv', 'jlc-stock-snapshot.json', 'readiness.json']:
         shutil.copy2(ROOT / 'docs/assembly' / p, out / 'assembly' / p)
