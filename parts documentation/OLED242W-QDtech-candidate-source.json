@@ -1,0 +1,38 @@
+{
+  "document": "parts documentation/OLED242W-QDtech-candidate-datasheet.pdf",
+  "source_url": "https://www.lcdwiki.com/res/MSP242X/OLED242W_SPEC.pdf",
+  "sha256": "2106e57d1743bea9726e16c6e822cbc4121922b4732fbf11a7b98d5aec5e7d96",
+  "model": "QDtech OLED242W",
+  "fpc_marking_in_document": "NFP1309-02",
+  "identification_status": "User reports the unmarked white glass worked when transplanted onto the original breakout supplied with the marked panel. This supports pinout compatibility of those physical panels; exact QDtech ordering-code identity and Nucula connector pin-1 correspondence remain unconfirmed.",
+  "pdf_pages": {
+    "mechanical_drawing": 5,
+    "pin_definitions": [
+      6,
+      7
+    ],
+    "dc_characteristics": 8,
+    "i2c_reference_schematic": 17,
+    "power_sequence": 18
+  },
+  "pin4_ambiguity": "Mechanical drawing and I2C diagram label pin 4 NC; pin-definition text groups 1,4,24 as requiring GND. Board reference leaves pin 4 NC. Obtain supplier clarification before altering wiring.",
+  "operating_vdd_v": [
+    1.65,
+    3.3
+  ],
+  "operating_vcc_v": [
+    12,
+    13
+  ],
+  "i2c_example_vcc_in_v": [
+    11.5,
+    12.5
+  ],
+  "user_reported_compatibility_test": {
+    "test": "Unmarked white glass transplanted onto marked panel original breakout",
+    "result": "Display worked",
+    "timing": "Before overheating on Nucula",
+    "post_overheat_condition": "Unknown; no retest requested",
+    "overheating_location": "Display glass or ribbon, per user"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "release_commit": "7584d71f3cb1b120934be2b80cfab4a015ecddfd",
+  "original_development_baseline": "a67a5b61ff2e1b2bdb844273adea9ed86af28cc5",
+  "archive_generated_utc": "2026-09-21T19:23:59.654692+00:00",
+  "source_entries": 124,
+  "source_hash_mismatches": [],
+  "source_missing": [],
+  "release_commit_source_mismatches": [],
+  "artifact_entries": 67,
+  "artifact_hash_mismatches": [],
+  "outer_package_sha256_verified": true,
+  "outer_package_member_mismatches": [],
+  "pcb_sha256": "4e582fc67796c618ffb62488af51a3807b1540be308f1a315ecae28ff7b50e96",
+  "outer_package_members_checked": 68,
+  "branch": "rev-A",
+  "submitted_package": "manufacturing/jlcpcb-2026-09-21-r2-package.zip",
+  "submission_evidence": [
+    "manufacturing/README.md: Archived JLCPCB order identifies r2 as already submitted",
+    "docs/manufacturing-release.md: archived r2 records board already sent to manufacturing",
+    "docs/history.md: explains rewritten commits and r2 changes captured at publication"
+  ],
+  "subsequent_design_revision": {
+    "commit": "e63def3d3c9ea9002d0d7bd15deca36c7c453a36",
+    "tag": "revision-B",
+    "date": "2026-09-22",
+    "changes": [
+      "19 component moves including ribbon-access clearance",
+      "Standard unfilled vias and green-mask fabrication",
+      "USB connector and ESP32 centre-pad footprint changes",
+      "Routing repair"
+    ],
+    "oled_schematic_unchanged": true
+  },
+  "scope": "Identifies the exact submitted release inputs recorded in this repository; supplier CAM edits and substitutions are not established by repository hashes.",
+  "inspection": "Check out branch rev-A in the board repository to inspect the submitted design."
+}

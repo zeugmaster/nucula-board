@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-01",
+  "board_revision": "rev-A",
+  "board_commit": "7584d71f3cb1b120934be2b80cfab4a015ecddfd",
+  "firmware_commit": "9750262",
+  "chip": "ESP32-C3 revision 0.4",
+  "idf_version": "5.5.1",
+  "observations": [
+    "User reports battery at 4.0 V and main rail at correct 3.3 V.",
+    "With USB only, /dev/cu.usbmodem101 enumerates and status command responds.",
+    "User attached battery, unplugged USB and reconnected USB while battery remained attached.",
+    "After this reconnect, /dev/cu.usbmodem101 remained absent and ioreg showed no USB JTAG/serial debug device.",
+    "User pressed RESET with battery and USB still attached. USB device reappeared and status responded; Wi-Fi connected, NFC initialized.",
+    "User then followed BOOT+RESET download-mode entry and unplugged/reconnected USB with battery attached.",
+    "Host observed USB disappear/reappear during button sequence, then disappear during unplug; no device reappeared after user confirmed reconnect.",
+    "ROM download-mode entry was not independently confirmed by protocol before the second reconnect. Treat this as a control attempt, not proof of ROM operation.",
+    "On battery power alone, user measured VBUS remaining at 2.1 V with RESET released and dropping almost to 0 V when RESET is pressed."
+  ],
+  "confirmed_workaround": "After reconnecting USB with battery attached, briefly press RESET (BOOT released). Verified once.",
+  "source_findings": [
+    "Native USB D-/D+ use GPIO18/19, USBLC6 protection U4 and 22-ohm R12/R13.",
+    "VBUS sensing Q2 drives active-low USB_PRESENT_N to GPIO1; Nucula firmware does not currently consume this signal.",
+    "No application deep/light sleep calls or USB pin reassignment found.",
+    "Console sends with portMAX_DELAY. Potential offline blocking is separate from host-level device disappearance."
+  ],
+  "conclusion": "Confirmed reset-dependent backfeed onto connector VBUS from the battery-powered board. Rev-A wiring, U4 topology, RESET-dependent VBUS collapse, and host power-on during RESET strongly identify ESP32 USB D+ pull-up -> R13 -> U4 upper steering diode -> VBUS as the cause of failed USB-C attachment. The particular U4 current path is inferred with high confidence, not physically isolated.",
+  "pending": [],
+  "changes": "Diagnostic report updated only; no firmware, flash, NVS or schematic changes made.",
+  "host_log_findings": [
+    "17:05:28: cable-change power-off and device removal.",
+    "17:07:35: cable-change power-on and successful enumeration, coinciding with user RESET recovery.",
+    "17:09:03: successful enumeration during BOOT/RESET sequence.",
+    "17:09:15: cable-change power-off and device removal; no subsequent power-on/enum recorded before log capture despite confirmed cable reconnection."
+  ],
+  "hypotheses": [
+    {
+      "status": "high-confidence circuit diagnosis; reset-dependent VBUS backfeed measured",
+      "description": "The battery-powered ESP32 USB D+ pull-up feeds connector VBUS through the U4 USBLC6-2SC6 upper steering diode. VBUS stays at 2.1 V, preventing the USB-C source from reaching its required safe-zero attach condition. RESET removes the source of the backfeed, allowing VBUS to fall and the host to attach.",
+      "support": [
+        "U4 pin 5 is connected to raw VBUS in rev-A netlist.",
+        "USBLC6-2 manufacturer documents a rail-to-rail protection topology.",
+        "USB-C source attach requires VBUS at vSafe0V.",
+        "Host cable-power-on occurs during RESET recovery.",
+        "User measured C14 VBUS at 2.1 V and C12 ESP_EN at 3.3 V with USB and battery connected in the failed state.",
+        "Battery-only VBUS is 2.1 V with RESET released and nearly 0 V with RESET held; USB cable is disconnected during these measurements."
+      ],
+      "limits": [
+        "U4 has not been electrically isolated and D+ has not been measured; the exact diode current path remains an inference.",
+        "Board 3.3 V was not simultaneously captured during RESET; no oscilloscope power transient measurements made."
+      ]
+    }
+  ],
+  "sources": [
+    "https://www.st.com/resource/en/datasheet/usblc6-2.pdf",
+    "https://www.usb.org/sites/default/files/USB%20Type%20C%20Functional%20Test%20Specification%202024%2003%2003.pdf",
+    "https://docs.espressif.com/projects/esp-idf/en/v5.5.1/esp32c3/api-guides/usb-serial-jtag-console.html"
+  ],
+  "measurements": [
+    {
+      "state": "Failed USB reconnection, USB and battery both connected",
+      "source": "User multimeter readings",
+      "C14_pad_1_VBUS_V": 2.1,
+      "C12_pad_1_ESP_EN_V": 3.3
+    },
+    {
+      "state": "USB unplugged, battery attached, RESET released",
+      "source": "User multimeter reading",
+      "C14_pad_1_VBUS_V": 2.1
+    },
+    {
+      "state": "USB unplugged, battery attached, RESET held",
+      "source": "User multimeter reading",
+      "C14_pad_1_VBUS": "almost 0 V; exact value not reported"
+    }
+  ],
+  "future_fix_requirements": [
+    "Prevent the battery-powered USB data lines from energizing connector VBUS; review data-line ESD topology and retain suitable ESD protection for data and VBUS.",
+    "Implement valid VBUS-dependent USB attachment. Review Q2 sensing at the measured 2.1 V before relying on USB_PRESENT_N for a firmware-only workaround.",
+    "Validate battery-only VBUS discharge and repeated battery-powered USB-C reconnects after any fix; include ROM download-mode recovery."
+  ],
+  "firmware_repository": "https://github.com/zeugmaster/nucula",
+  "raw_logs_note": "Raw serial logs remain local; this report contains the diagnostic observations and voltage measurements."
+}
