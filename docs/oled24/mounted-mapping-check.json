@@ -1,0 +1,234 @@
+{
+  "passed": true,
+  "checks": {
+    "same_top_contact_socket_and_footprint": true,
+    "same_position_rotation_and_front_side": true,
+    "manufacturer_pad_geometry_and_numbering_unchanged": true,
+    "exactly_24_signal_pads": true,
+    "panel_1_left_panel_24_right": true,
+    "all_24_physical_contacts_match_panel": true,
+    "all_24_schematic_socket_pins_match_panel": true,
+    "panel_NC_is_isolated_socket_21": true
+  },
+  "contacts_left_to_right": [
+    {
+      "panel_pin": 1,
+      "socket_pad": 24,
+      "x_mm": 74.25,
+      "y_mm": 110.69999999999999,
+      "expected_net": "GND",
+      "pcb_net": "GND",
+      "schematic_net": "GND"
+    },
+    {
+      "panel_pin": 2,
+      "socket_pad": 23,
+      "x_mm": 74.75,
+      "y_mm": 110.69999999999999,
+      "expected_net": "GND",
+      "pcb_net": "GND",
+      "schematic_net": "GND"
+    },
+    {
+      "panel_pin": 3,
+      "socket_pad": 22,
+      "x_mm": 75.25,
+      "y_mm": 110.69999999999999,
+      "expected_net": "GND",
+      "pcb_net": "GND",
+      "schematic_net": "GND"
+    },
+    {
+      "panel_pin": 4,
+      "socket_pad": 21,
+      "x_mm": 75.75,
+      "y_mm": 110.69999999999999,
+      "expected_net": "NC",
+      "pcb_net": "NC",
+      "schematic_net": "NC"
+    },
+    {
+      "panel_pin": 5,
+      "socket_pad": 20,
+      "x_mm": 76.25,
+      "y_mm": 110.69999999999999,
+      "expected_net": "+3V0",
+      "pcb_net": "+3V0",
+      "schematic_net": "+3V0"
+    },
+    {
+      "panel_pin": 6,
+      "socket_pad": 19,
+      "x_mm": 76.75,
+      "y_mm": 110.69999999999999,
+      "expected_net": "+3V0",
+      "pcb_net": "+3V0",
+      "schematic_net": "+3V0"
+    },
+    {
+      "panel_pin": 7,
+      "socket_pad": 18,
+      "x_mm": 77.25,
+      "y_mm": 110.69999999999999,
+      "expected_net": "GND",
+      "pcb_net": "GND",
+      "schematic_net": "GND"
+    },
+    {
+      "panel_pin": 8,
+      "socket_pad": 17,
+      "x_mm": 77.75,
+      "y_mm": 110.69999999999999,
+      "expected_net": "GND",
+      "pcb_net": "GND",
+      "schematic_net": "GND"
+    },
+    {
+      "panel_pin": 9,
+      "socket_pad": 16,
+      "x_mm": 78.25,
+      "y_mm": 110.69999999999999,
+      "expected_net": "OLED_RES_N",
+      "pcb_net": "OLED_RES_N",
+      "schematic_net": "OLED_RES_N"
+    },
+    {
+      "panel_pin": 10,
+      "socket_pad": 15,
+      "x_mm": 78.75,
+      "y_mm": 110.69999999999999,
+      "expected_net": "GND",
+      "pcb_net": "GND",
+      "schematic_net": "GND"
+    },
+    {
+      "panel_pin": 11,
+      "socket_pad": 14,
+      "x_mm": 79.25,
+      "y_mm": 110.69999999999999,
+      "expected_net": "GND",
+      "pcb_net": "GND",
+      "schematic_net": "GND"
+    },
+    {
+      "panel_pin": 12,
+      "socket_pad": 13,
+      "x_mm": 79.75,
+      "y_mm": 110.69999999999999,
+      "expected_net": "GND",
+      "pcb_net": "GND",
+      "schematic_net": "GND"
+    },
+    {
+      "panel_pin": 13,
+      "socket_pad": 12,
+      "x_mm": 80.25,
+      "y_mm": 110.69999999999999,
+      "expected_net": "I2C_SCL",
+      "pcb_net": "I2C_SCL",
+      "schematic_net": "I2C_SCL"
+    },
+    {
+      "panel_pin": 14,
+      "socket_pad": 11,
+      "x_mm": 80.75,
+      "y_mm": 110.69999999999999,
+      "expected_net": "I2C_SDA",
+      "pcb_net": "I2C_SDA",
+      "schematic_net": "I2C_SDA"
+    },
+    {
+      "panel_pin": 15,
+      "socket_pad": 10,
+      "x_mm": 81.25,
+      "y_mm": 110.69999999999999,
+      "expected_net": "I2C_SDA",
+      "pcb_net": "I2C_SDA",
+      "schematic_net": "I2C_SDA"
+    },
+    {
+      "panel_pin": 16,
+      "socket_pad": 9,
+      "x_mm": 81.75,
+      "y_mm": 110.69999999999999,
+      "expected_net": "GND",
+      "pcb_net": "GND",
+      "schematic_net": "GND"
+    },
+    {
+      "panel_pin": 17,
+      "socket_pad": 8,
+      "x_mm": 82.25,
+      "y_mm": 110.69999999999999,
+      "expected_net": "GND",
+      "pcb_net": "GND",
+      "schematic_net": "GND"
+    },
+    {
+      "panel_pin": 18,
+      "socket_pad": 7,
+      "x_mm": 82.75,
+      "y_mm": 110.69999999999999,
+      "expected_net": "GND",
+      "pcb_net": "GND",
+      "schematic_net": "GND"
+    },
+    {
+      "panel_pin": 19,
+      "socket_pad": 6,
+      "x_mm": 83.25,
+      "y_mm": 110.69999999999999,
+      "expected_net": "GND",
+      "pcb_net": "GND",
+      "schematic_net": "GND"
+    },
+    {
+      "panel_pin": 20,
+      "socket_pad": 5,
+      "x_mm": 83.75,
+      "y_mm": 110.69999999999999,
+      "expected_net": "GND",
+      "pcb_net": "GND",
+      "schematic_net": "GND"
+    },
+    {
+      "panel_pin": 21,
+      "socket_pad": 4,
+      "x_mm": 84.25,
+      "y_mm": 110.69999999999999,
+      "expected_net": "OLED_IREF",
+      "pcb_net": "OLED_IREF",
+      "schematic_net": "OLED_IREF"
+    },
+    {
+      "panel_pin": 22,
+      "socket_pad": 3,
+      "x_mm": 84.75,
+      "y_mm": 110.69999999999999,
+      "expected_net": "OLED_VCOMH",
+      "pcb_net": "OLED_VCOMH",
+      "schematic_net": "OLED_VCOMH"
+    },
+    {
+      "panel_pin": 23,
+      "socket_pad": 2,
+      "x_mm": 85.25,
+      "y_mm": 110.69999999999999,
+      "expected_net": "OLED_12V5",
+      "pcb_net": "OLED_12V5",
+      "schematic_net": "OLED_12V5"
+    },
+    {
+      "panel_pin": 24,
+      "socket_pad": 1,
+      "x_mm": 85.75,
+      "y_mm": 110.69999999999999,
+      "expected_net": "GND",
+      "pcb_net": "GND",
+      "schematic_net": "GND"
+    }
+  ],
+  "board_sha256": "23db2fe951c0e3d4f548a399efa88cabd58a474a9da42398dd4254144a85c377",
+  "netlist_sha256": "f86e387c5a96e0dec7c3865b2417de2d8e7724f5aa94fc22b766e6455e24f7a3",
+  "scope": "Mounted electrical mapping and connector lands; operation and flex fit require hardware."
+}

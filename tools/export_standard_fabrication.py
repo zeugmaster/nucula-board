@@ -5,6 +5,7 @@ Run with KiCad's pcbnew-enabled Python. No orders or supplier uploads are made.
 Historical JLCPCB releases remain immutable.
 """
 import csv
+import argparse
 import hashlib
 import json
 import re
@@ -24,6 +25,9 @@ def sha(p):
 
 
 def main():
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument('--out', type=Path, help='Alternate output directory for validation exports; preserves archived releases.')
+    args = ap.parse_args()
     spec = json.loads((ROOT/'docs/manufacturing-spec.json').read_text())
     assert spec['via_covering'] == 'Unfilled, uncapped, open through-vias'
     check = json.loads((ROOT/'docs/pcb/standard-fabrication-check.json').read_text())
@@ -39,8 +43,12 @@ def main():
     assert simulations['simulations_completed'] == 261 and not simulations['solver_errors']
     for name, digest in simulations['source_sha256'].items():
         assert sha(ROOT/name) == digest, 'Stale simulation input: '+name
-    out = ROOT/'manufacturing'/spec['release']
-    out.mkdir(exist_ok=True)
+    out = args.out.resolve() if args.out else ROOT/'manufacturing'/spec['release']
+    if args.out:
+        spec = dict(spec, release=out.name, release_status='Validation export only; see current hardware findings.')
+    if (out / 'manifest.json').exists():
+        raise SystemExit('Refusing to overwrite an archived export. Choose a new --out directory.')
+    out.mkdir(parents=True, exist_ok=True)
     for name in ['gerbers','assembly','drawings','validation']:
         (out/name).mkdir(exist_ok=True)
     logs=[]
@@ -163,6 +171,17 @@ The layout report retains two USB advisories: 0.9915 mm U4-to-series-resistor
 length mismatch and two uncovered ground-reference samples out of 2,171.
 USB signal integrity has not been qualified.
 ''')
+    if args.out:
+        (out / 'manufacturing-spec.json').write_text(json.dumps(spec, indent=2) + '\n')
+        (out / 'README.md').write_text(
+            '# Validation export — not a fabrication release\n\n'
+            'Generated from the current board to check Gerber, drill, stencil and placement output. '
+            'Historical manufacturing packages are unchanged.\n\n'
+            'Display ribbon mapping is reversed at the fixed Hirose socket: panel pin n = socket pad 25-n. '
+            'The USB backfeed issue remains open pending isolation measurements and a validated remedy. '
+            'Do not use this export as authorization to order boards.\n\n'
+            'Consult the current schematic verification, routing, fabrication and simulation reports '
+            'included under validation/. The older routing-comparison drawing is historical.\n')
     with zipfile.ZipFile(out/'nucula-v2-gerbers.zip','w',zipfile.ZIP_DEFLATED) as z:
         for p in sorted((out/'gerbers').iterdir()):z.write(p,p.name)
     files=[p for p in out.rglob('*') if p.is_file() and p.name!='manifest.json']

@@ -3,7 +3,7 @@
     "nucula-v2.kicad_sch": "4081b173500c0a25de31dc031a0f1ada0357ff43d71c6eef7a2d901b89453ae0",
     "power-mcu.kicad_sch": "7ca0ed3330f6ff97c1e6be835174532bf93325df28fac7388dee09d1c2fb8b00",
     "nfc.kicad_sch": "cd0d8381536f28a9dcab08e50a41ef020105190ca204bd47ace184fb11758f13",
-    "oled.kicad_sch": "6ec08982ae62f4b6196a94bae57195ff38833512f93fda12b959927023c96754",
+    "oled.kicad_sch": "681cc05aafeac40752d00fcdd000d7bb0a9a516affefa045895fe2061c677794",
     "keyboard.kicad_sch": "9489d40c8a70b60037e6dd5a4849a09903941db6114d3cf6ed89d5500f043259"
   },
   "kicad_version": "10.0.6",
@@ -165,12 +165,16 @@
     },
     "DS1": {
       "value": "SSD1309 OLED / 24-pin",
-      "status": "Top-contact socket selected for user-confirmed ribbon orientation; DS1 BOM is socket only; display and keyboard modules excluded; final physical fit and panel operation need prototype verification"
+      "status": "Top-contact socket selected for user-confirmed ribbon orientation; DS1 BOM is socket only; display and keyboard modules excluded; panel pin 1 confirmed PCB-left on 2026-10-06; validate operation on corrected board"
     }
   },
   "ready_to_begin_pcb_layout": true,
   "pcb_layout_report": "pcb/layout-check.json",
   "fabrication_release_ready": false,
+  "known_hardware_findings": [
+    "Rev-A battery-only VBUS measured 2.05 V, falling to 0.01 V on RESET while D+ falls from 2.84 V to 0 V and +3V3 stays at 3.33 V. The user accepts the inferred U4 steering-diode path for redesign without physical isolation; a validated hardware remedy remains required.",
+    "Mounted display mapping corrected: panel pin n connects to Hirose socket pad 25-n. See oled24/mounted-mapping-check.json."
+  ],
   "layout_blockers": [],
   "prototype_power_source": "User-confirmed: dedicated USB-C 5 V supply rated at least 1.5 A; ordinary computer-host operation unqualified.",
   "user_deferred": [
@@ -185,7 +189,7 @@
     "USB steady-state estimate is 1.10 A from a specified 5 V / 1.5 A supply; startup/inrush and thermal performance require bench validation.",
     "Power MLCC ordering codes and typical DC-bias curves selected; combined-corner screening is an estimate, not a guaranteed minimum.",
     "RF prototype values and 40mm coil selected; actual RL/C, tuning and RF stress still require measurement. NDK crystal selected; load/frequency/startup/drive require bench verification.",
-    "OLED CON24 electrical map retained; NFP1309-02Y user confirms 0.50mm pitch, 0.30mm flex and mounted contacts away from PCB. FH12A top-contact socket selected; physical panel pin-1 correspondence, insertion length, fold/enclosure clearance and panel current remain hardware checks.",
+    "OLED CON24 panel functions retained with reversed socket mapping: display pin 1 is PCB-left, on DS1 pad 24. NFP1309-02Y user confirms 0.50mm pitch, 0.30mm flex and mounted contacts away from PCB. Corrected-board operation, insertion length, fold/enclosure clearance and panel current remain hardware checks.",
     "MCP1700 low-current dropout and AP3012 switch-current limits need bench validation.",
     "Keyboard break line and routing are covered by the PCB layout report; reconnect cable capacitance still needs validation."
   ],

@@ -54,7 +54,7 @@
   "stock_reserved": false,
   "quantity_method": "Planning only: max(placements, public minimum placement) + public loss allowance. Final JLCPCB BOM matching controls quantities.",
   "inputs_sha256": {
-    "docs/bom.csv": "7d7e6e0c87075ddac4fe1b26af7234eca0d5e3f77a709bfd229c7c169bcce082",
+    "docs/bom.csv": "25d1a5b42ca8d2aa50fb58a36ee2c92913991cc6b354e5685b0dd017fded9efd",
     "docs/assembly/jlc-stock-snapshot.json": "a158392e737624a048653dad0101facdf610da84e1509d2d4f299ac83cd44d52"
   }
 }

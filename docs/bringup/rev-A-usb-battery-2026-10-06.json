@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-06",
+  "board_revision": "rev-A",
+  "board_commit": "7584d71f3cb1b120934be2b80cfab4a015ecddfd",
+  "source": "User annotations in bench PDF, visually transcribed; user confirms USB physically disconnected for revised readings.",
+  "annotated_pdf": "docs/bringup/measurements/rev-A-usb-battery-2026-10-06.pdf",
+  "annotated_pdf_sha256": "19e38574b925b84a90d13d8537aa28a441d1f82c4bb2836c5be7d26f9d30d17c",
+  "firmware_or_confirmed_ROM": null,
+  "battery_voltage_V": null,
+  "meter_model": null,
+  "probe_input_ohm": null,
+  "measurement_kind": "Reported steady DC readings in two reset states; no simultaneous waveform capture.",
+  "battery_only": {
+    "reset_released": {
+      "VBUS_C14_1_V": 2.05,
+      "Dplus_R13_1_V": 2.84,
+      "3V3_C11_1_V": 3.33
+    },
+    "reset_held": {
+      "VBUS_C14_1_V": 0.01,
+      "Dplus_R13_1_V": 0.0,
+      "3V3_C11_1_V": 3.33
+    }
+  },
+  "prior_USB_connected_control": {
+    "source": "Earlier PDF values transcribed in conversation; user then confirmed USB was connected. They are not battery-only observations.",
+    "reset_released": {
+      "VBUS_C14_1_V": 5.17,
+      "Dplus_R13_1_V": 3.25,
+      "3V3_C11_1_V": 3.35
+    },
+    "reset_held": {
+      "VBUS_C14_1_V": 5.17,
+      "Dplus_R13_1_V": 0.71,
+      "3V3_C11_1_V": 3.35
+    }
+  },
+  "derived": {
+    "released_Dplus_minus_VBUS_V": 0.79,
+    "nominal_R18_100k_current_released_uA": 20.5,
+    "steady_3V3_difference_V": 0.0
+  },
+  "interpretation": "D+ and VBUS collapse on RESET while steady +3V3 remains unchanged. This strongly supports the inferred ESP32 D+ -> R13 -> U4 upper steering diode -> raw VBUS path. The 0.79 V difference is consistent with forward diode conduction, not component-specific proof.",
+  "limits": [
+    "U4 pin 5 has not been physically isolated.",
+    "Steady meter readings do not exclude short supply transients.",
+    "Battery voltage, firmware/mode and meter input impedance were not supplied.",
+    "No hardware remedy has been applied or validated."
+  ],
+  "next_discriminating_test": "Optional diagnostic reference only: isolate U4 pin 5 and repeat battery-only readings. The user has elected to proceed without this test.",
+  "hardware_fix_verified": false,
+  "design_decision": {
+    "date": "2026-10-06",
+    "accepted_working_diagnosis": "ESP32 D+ -> R13 -> U4 upper steering diode -> raw VBUS",
+    "basis": "User accepts the existing measurements as sufficient basis to proceed with the redesign.",
+    "physical_isolation_performed": false,
+    "physical_isolation_required_before_redesign": false,
+    "reason": "User does not have the tools to perform pin-isolation rework.",
+    "hardware_remedy_implemented": false,
+    "hardware_remedy_validated": false
+  }
+}

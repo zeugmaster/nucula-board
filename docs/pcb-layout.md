@@ -1,5 +1,10 @@
 # PCB placement and routing
 
+**6 October update:** the display pin mapping and local routing are corrected
+at the unchanged socket orientation. Current JSON reports and top/copper
+drawings reflect that change; the September narrative below is historical.
+See the [current correction and USB backfeed report](bringup/rev-b-display-and-usb.md).
+
 22 September 2026 · KiCad 10.0.6 · routing-review revision
 
 All 130 footprints are on top, with 116 populated purchased components and all
@@ -94,14 +99,19 @@ python3 tools/export_routing_geometry.py
 python3 tools/check_routing_quality.py
 python3 tools/test_routing_quality.py
 python3 tools/check_schematic.py
+python3 tools/check_display_mapping.py
+python3 tools/test_display_mapping.py
 python3 tools/check_component_choices.py
 python3 tools/check_assembly_readiness.py --boards 5
 python3 tools/simulate_preflight.py
+python3 tools/analyze_usb_backfeed.py
 python3 tools/render_pcb_review.py
-python3 tools/export_standard_fabrication.py
+python3 tools/export_standard_fabrication.py --out /tmp/nucula-validation-export
 ```
 
 The [constraints](pcb/constraints.json) retain the original geometric baseline
 with the explicitly documented placement/land-pattern amendments. The isolated
 older OLED and USB regression scripts remain historical records; this broader
 revision uses the current layout and fabrication audits.
+The export directory must be fresh; archived packages are never overwritten.
+USB backfeed analysis is a diagnostic screen, not a verified hardware fix.

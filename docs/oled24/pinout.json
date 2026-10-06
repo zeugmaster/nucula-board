@@ -7,122 +7,146 @@
     {
       "pin": 1,
       "reference_name": "GND",
-      "project_net": "GND"
+      "project_net": "GND",
+      "socket_pad": 24
     },
     {
       "pin": 2,
       "reference_name": "VLSS",
-      "project_net": "GND"
+      "project_net": "GND",
+      "socket_pad": 23
     },
     {
       "pin": 3,
       "reference_name": "VSS",
-      "project_net": "GND"
+      "project_net": "GND",
+      "socket_pad": 22
     },
     {
       "pin": 4,
       "reference_name": "N.C.",
-      "project_net": "NC"
+      "project_net": "NC",
+      "socket_pad": 21
     },
     {
       "pin": 5,
       "reference_name": "VDD",
-      "project_net": "+3V0"
+      "project_net": "+3V0",
+      "socket_pad": 20
     },
     {
       "pin": 6,
       "reference_name": "BS1",
-      "project_net": "+3V0"
+      "project_net": "+3V0",
+      "socket_pad": 19
     },
     {
       "pin": 7,
       "reference_name": "BS2",
-      "project_net": "GND"
+      "project_net": "GND",
+      "socket_pad": 18
     },
     {
       "pin": 8,
       "reference_name": "CS#",
-      "project_net": "GND"
+      "project_net": "GND",
+      "socket_pad": 17
     },
     {
       "pin": 9,
       "reference_name": "RES#",
-      "project_net": "OLED_RES_N"
+      "project_net": "OLED_RES_N",
+      "socket_pad": 16
     },
     {
       "pin": 10,
       "reference_name": "D/C#",
-      "project_net": "GND"
+      "project_net": "GND",
+      "socket_pad": 15
     },
     {
       "pin": 11,
       "reference_name": "R/W#",
-      "project_net": "GND"
+      "project_net": "GND",
+      "socket_pad": 14
     },
     {
       "pin": 12,
       "reference_name": "E/RD#",
-      "project_net": "GND"
+      "project_net": "GND",
+      "socket_pad": 13
     },
     {
       "pin": 13,
       "reference_name": "D0",
-      "project_net": "I2C_SCL"
+      "project_net": "I2C_SCL",
+      "socket_pad": 12
     },
     {
       "pin": 14,
       "reference_name": "D1",
-      "project_net": "I2C_SDA"
+      "project_net": "I2C_SDA",
+      "socket_pad": 11
     },
     {
       "pin": 15,
       "reference_name": "D2",
-      "project_net": "I2C_SDA"
+      "project_net": "I2C_SDA",
+      "socket_pad": 10
     },
     {
       "pin": 16,
       "reference_name": "D3",
-      "project_net": "GND"
+      "project_net": "GND",
+      "socket_pad": 9
     },
     {
       "pin": 17,
       "reference_name": "D4",
-      "project_net": "GND"
+      "project_net": "GND",
+      "socket_pad": 8
     },
     {
       "pin": 18,
       "reference_name": "D5",
-      "project_net": "GND"
+      "project_net": "GND",
+      "socket_pad": 7
     },
     {
       "pin": 19,
       "reference_name": "D6",
-      "project_net": "GND"
+      "project_net": "GND",
+      "socket_pad": 6
     },
     {
       "pin": 20,
       "reference_name": "D7",
-      "project_net": "GND"
+      "project_net": "GND",
+      "socket_pad": 5
     },
     {
       "pin": 21,
       "reference_name": "IREF",
-      "project_net": "OLED_IREF"
+      "project_net": "OLED_IREF",
+      "socket_pad": 4
     },
     {
       "pin": 22,
       "reference_name": "VCOM",
-      "project_net": "OLED_VCOMH"
+      "project_net": "OLED_VCOMH",
+      "socket_pad": 3
     },
     {
       "pin": 23,
       "reference_name": "VOP",
-      "project_net": "OLED_12V5"
+      "project_net": "OLED_12V5",
+      "socket_pad": 2
     },
     {
       "pin": 24,
       "reference_name": "GND",
-      "project_net": "GND"
+      "project_net": "GND",
+      "socket_pad": 1
     }
   ],
   "socket_mpn": "FH12A-24S-0.5SH(55)",
@@ -141,13 +165,17 @@
     "exposed_contact_face": "Same face as the display light-emitting surface",
     "mounted_tip_contact_face_relative_to_pcb": "Away from PCB, confirmed by user for intended mounted/folded arrangement",
     "required_socket_contact_orientation": "Top",
-    "include_panel_in_assembly_bom": false
+    "include_panel_in_assembly_bom": false,
+    "pin_1_side_in_mounted_pcb_top_view": "left",
+    "pin_24_side_in_mounted_pcb_top_view": "right"
   },
-  "mechanical_limit": "Top-contact socket matches user-confirmed 24 contacts, 0.50 mm pitch, 0.30 mm thickness and contacts away from PCB. Manufacturer land pattern and polarity marker checked; physical panel pin-1 correspondence, insertion length, fold strain, enclosure clearance and panel operation still require prototype validation. Ribbon marking is not independently verified as a manufacturer ordering code.",
+  "mechanical_limit": "Top-contact socket matches user-confirmed 24 contacts, 0.50 mm pitch, 0.30 mm thickness and contacts away from PCB. Manufacturer land pattern and polarity marker checked; insertion length, fold strain, enclosure clearance and panel operation still require prototype validation. Ribbon marking is not independently verified as a manufacturer ordering code.",
   "socket_model": "${KIPRJMOD}/libraries/Nucula_Project.3dshapes/FH12A-24S-0.5SH-envelope.wrl",
   "placement_mm_deg": [
     80.0,
     108.85,
     180.0
-  ]
+  ],
+  "mapping_revision": "2026-10-06: user confirmed panel pin 1 left and pin 24 right in mounted PCB component-side view",
+  "numbering": "pin is the display ribbon pin; socket_pad is the physical Hirose pad. At unchanged 180-degree placement, PCB left-to-right socket pads are 24..1."
 }

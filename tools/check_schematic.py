@@ -57,7 +57,7 @@ groups = {
     'VSYS': 'D2.1 Q1.2 U2.1 U2.4 C4.1 C17.1 C18.1 Q3.2 R29.1 R33.1 U6.12 U6.28',
     'VBAT': 'U1.3 J2.1 Q1.3 C2.1 R15.1',
     '+3V3': 'L1.2 R6.1 C3.1 C5.1 C6.1 C9.1 C10.1 U3.1 U5.3 C11.1 R8.1 R9.1 R10.1 R11.1 R17.1 C15.1 C16.1 C49.1 C51.1 C52.1 J4.1 J5.1 R37.1 R38.1 R39.1 R40.1 U6.6 U8.16 U9.3',
-    '+3V0': 'C43.1 C44.1 C50.1 DS1.5 DS1.6 R19.1 R20.1 R35.1 U9.2',
+    '+3V0': 'C43.1 C44.1 C50.1 DS1.20 DS1.19 R19.1 R20.1 R35.1 U9.2',
     'BUCK_FB': 'U2.5 R6.2 R7.1 C3.2',
     'ESP_EN': 'U3.2 U5.2 R8.2 C12.1 SW1.1',
     'BOOT_N': 'U3.8 R11.2 R14.1',
@@ -69,8 +69,8 @@ groups = {
     'USB_D+': 'J1.A6 J1.B6 U4.3',
     'USB_ESD_D-': 'U4.6 R12.1',
     'USB_ESD_D+': 'U4.4 R13.1',
-    'I2C_SDA': 'DS1.14 DS1.15 J4.3 J5.3 R19.2 R38.2 U3.3 U6.5 U8.15',
-    'I2C_SCL': 'DS1.13 J4.4 J5.4 R20.2 R39.2 U3.4 U6.7 U8.14',
+    'I2C_SDA': 'DS1.11 DS1.10 J4.3 J5.3 R19.2 R38.2 U3.3 U6.5 U8.15',
+    'I2C_SCL': 'DS1.12 J4.4 J5.4 R20.2 R39.2 U3.4 U6.7 U8.14',
     'KEY_INT_N': 'J4.5 J5.5 R37.2 R40.2 U3.11 U8.13',
     'NFC_IRQ': 'U3.5 U6.8',
     'NFC_VEN': 'R22.1 U3.6 U6.10',
@@ -95,14 +95,14 @@ groups = {
     'RF_MATCH_N': 'C33.2 C35.2 C37.2 C39.2 R28.1',
     'OLED_PWR_EN': 'Q4.1 R34.1 U3.15',
     'OLED_RESET': 'Q5.1 R36.1 U3.10',
-    'OLED_12V5': 'C41.1 C42.1 C45.1 C46.1 D4.1 DS1.23 R30.1',
+    'OLED_12V5': 'C41.1 C42.1 C45.1 C46.1 D4.1 DS1.2 R30.1',
     'OLED_BOOST_IN': 'C40.1 L4.1 Q3.3 U7.4 U7.5',
     'OLED_FB': 'C41.2 R30.2 R31.1 U7.3',
     'OLED_GATE_N': 'Q3.1 Q4.3 R33.2',
-    'OLED_IREF': 'DS1.21 R32.1',
-    'OLED_RES_N': 'C48.1 DS1.9 Q5.3 R35.2',
+    'OLED_IREF': 'DS1.4 R32.1',
+    'OLED_RES_N': 'C48.1 DS1.16 Q5.3 R35.2',
     'OLED_SW': 'D4.2 L4.2 U7.1',
-    'OLED_VCOMH': 'C47.1 DS1.22',
+    'OLED_VCOMH': 'C47.1 DS1.3',
 }
 for i, pin in enumerate([4, 5, 6, 7, 9, 10, 11]):
     groups[f'KEY_P{i}'] = f'J3.{i+2} U8.{pin}'
@@ -120,11 +120,11 @@ for pin in ('J1.A1 J1.A12 J1.B1 J1.B12 J1.SH J2.2 U1.2 U2.2 U3.9 U3.19 U4.2 U5.1
             'C15.2 C16.2 C17.2 C18.2 C19.2 C20.2 C21.2 C22.2 C23.2 C24.2 C25.2 '
             'C26.2 C27.2 C30.2 C31.1 C36.2 C37.1 C38.2 C39.1 C53.2 C54.1 '
             'U7.2 Q4.2 Q5.2 R31.2 R32.2 R34.2 R36.2 C40.2 C42.2 C43.2 C44.2 '
-            'C45.2 C46.2 C47.2 C48.2 DS1.1 DS1.2 DS1.3 DS1.7 DS1.8 DS1.10 '
-            'DS1.11 DS1.12 DS1.16 DS1.17 DS1.18 DS1.19 DS1.20 DS1.24 '
+            'C45.2 C46.2 C47.2 C48.2 DS1.24 DS1.23 DS1.22 DS1.18 DS1.17 DS1.15 '
+            'DS1.14 DS1.13 DS1.9 DS1.8 DS1.7 DS1.6 DS1.5 DS1.1 '
             'U8.1 U8.2 U8.3 U8.8 J4.2 J5.2 C49.2 C50.2 C51.2 C52.2 U9.1').split():
     assert net_of[pin] == 'GND', pin
-for pin in ('J1.A8 J1.B8 U3.12 DS1.4 U6.11 U6.23 U6.24 U6.25 '
+for pin in ('J1.A8 J1.B8 U3.12 DS1.21 U6.11 U6.23 U6.24 U6.25 '
             'U6.32 U6.33 U6.34 U6.35 U6.36 U6.37 U6.38 U6.40 J3.1 J3.9 U8.12').split():
     assert net_of[pin].startswith('unconnected-'), pin
 for pin in ['J3.1','J3.9','U8.12']:
@@ -188,12 +188,12 @@ assert fields['DS1']['MPN'] == 'FH12A-24S-0.5SH(55)'
 assert fields['DS1']['LCSC'] == 'C506794'
 assert components['DS1'].findtext('footprint') == 'Nucula_Project:Hirose_FH12A-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal'
 assert 'top-contact' in fields['DS1']['Connector Mechanics']
-assert net_of['DS1.1'] == net_of['DS1.24'] == 'GND'
+assert net_of['DS1.24'] == net_of['DS1.1'] == 'GND'
 assert not {'DS1.25', 'DS1.26'} & set(net_of)
 assert {int(pin.split('.')[1]) for pin in net_of if pin.startswith('DS1.')} == set(range(1, 25))
 # All 24 nets are checked above against the supplied CON24 breakout.
-# User confirms flex pitch/thickness and top-contact insertion. Actual panel
-# pin-1 correspondence, insertion length and operation still need hardware checks.
+# User confirms flex pitch/thickness and top-contact insertion. Panel pin 1 is confirmed PCB-left; socket pad numbers stay manufacturer-defined.
+# Insertion length and operation still need hardware checks.
 assert fields['Y1']['MPN'] == 'NX2016SA-27.12MHZ-EXS00A-CS06346'
 assert fields['Y1']['LCSC'] == 'C3008209'
 assert components['Y1'].findtext('footprint') == 'Nucula_Project:Crystal_NDK_NX2016SA_2.0x1.6mm'
@@ -307,6 +307,10 @@ report={
  'ready_to_begin_pcb_layout':True,
  'pcb_layout_report':'pcb/layout-check.json',
  'fabrication_release_ready':False,
+ 'known_hardware_findings':[
+     'Rev-A battery-only VBUS measured 2.05 V, falling to 0.01 V on RESET while D+ falls from 2.84 V to 0 V and +3V3 stays at 3.33 V. The user accepts the inferred U4 steering-diode path for redesign without physical isolation; a validated hardware remedy remains required.',
+     'Mounted display mapping corrected: panel pin n connects to Hirose socket pad 25-n. See oled24/mounted-mapping-check.json.'
+ ],
  'layout_blockers':[],
  'prototype_power_source':'User-confirmed: dedicated USB-C 5 V supply rated at least 1.5 A; ordinary computer-host operation unqualified.',
  'user_deferred':['Battery discharge capability/runtime','Off switch and improved low-battery behavior'],
@@ -317,7 +321,7 @@ report={
            'USB steady-state estimate is 1.10 A from a specified 5 V / 1.5 A supply; startup/inrush and thermal performance require bench validation.',
            'Power MLCC ordering codes and typical DC-bias curves selected; combined-corner screening is an estimate, not a guaranteed minimum.',
            'RF prototype values and 40mm coil selected; actual RL/C, tuning and RF stress still require measurement. NDK crystal selected; load/frequency/startup/drive require bench verification.',
-           'OLED CON24 electrical map retained; NFP1309-02Y user confirms 0.50mm pitch, 0.30mm flex and mounted contacts away from PCB. FH12A top-contact socket selected; physical panel pin-1 correspondence, insertion length, fold/enclosure clearance and panel current remain hardware checks.',
+           'OLED CON24 panel functions retained with reversed socket mapping: display pin 1 is PCB-left, on DS1 pad 24. NFP1309-02Y user confirms 0.50mm pitch, 0.30mm flex and mounted contacts away from PCB. Corrected-board operation, insertion length, fold/enclosure clearance and panel current remain hardware checks.',
            'MCP1700 low-current dropout and AP3012 switch-current limits need bench validation.',
            'Keyboard break line and routing are covered by the PCB layout report; reconnect cable capacitance still needs validation.'],
  'models':sorted(models)

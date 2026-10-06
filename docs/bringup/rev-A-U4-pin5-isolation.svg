@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="630" viewBox="0 0 1280 630">
+  <title>Rev-A U4 pin 5 isolation: lift the centre leg on the right</title>
+  <desc>Component-side view, NFC coil above and keyboard below. U4 sits immediately left of C14. Its right-hand pins from top to bottom are 6, 5 and 4. Lift only the metal leg at pin 5 off its VBUS copper pad, leaving the other five legs soldered. A side-view sketch shows a visible air gap between the lifted lead and the unchanged PCB pad. Illustration is not to scale.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#bc4918"/></marker>
+  </defs>
+  <rect width="1280" height="630" fill="#fff"/>
+  <g font-family="Helvetica,Arial,sans-serif" fill="#182d3c">
+    <text x="40" y="50" font-size="30" font-weight="bold">REV A · LIFT ONLY U4 PIN 5</text>
+    <text x="40" y="82" font-size="20">Disconnect battery and USB before rework. This is a temporary diagnostic test.</text>
+    <rect x="30" y="112" width="606" height="388" rx="12" fill="#f0f5f2"/>
+    <rect x="656" y="112" width="594" height="388" rx="12" fill="#f4f6f9"/>
+    <text x="52" y="146" font-size="19" font-weight="bold">TOP VIEW · COMPONENT SIDE</text>
+    <text x="52" y="174" font-size="17">NFC coil above ↑ · keyboard below ↓</text>
+    <!-- Pin arrangement verified against fabricated Rev-A 7584d71f3cb1. -->
+    <rect x="237" y="221" width="123" height="219" rx="10" fill="#334651"/>
+    <text x="298" y="339" font-size="29" font-weight="bold" fill="white" text-anchor="middle">U4</text>
+    <circle cx="253" cy="243" r="5" fill="#b5c2c8"/>
+    <g fill="#aebec5" stroke="#6c808c" stroke-width="2">
+      <rect x="177" y="242" width="60" height="34" rx="4"/>
+      <rect x="177" y="315" width="60" height="34" rx="4"/>
+      <rect x="177" y="388" width="60" height="34" rx="4"/>
+      <rect x="360" y="242" width="60" height="34" rx="4"/>
+      <rect x="360" y="388" width="60" height="34" rx="4"/>
+    </g>
+    <rect x="360" y="315" width="60" height="34" rx="4" fill="#bc4918"/>
+    <g font-size="22" font-weight="bold" text-anchor="middle">
+      <text x="207" y="267">1</text><text x="207" y="340">2</text><text x="207" y="413">3</text>
+      <text x="390" y="267">6</text><text x="390" y="340" fill="white">5</text><text x="390" y="413">4</text>
+    </g>
+    <g font-size="17" text-anchor="end" fill="#556671">
+      <text x="159" y="265">D−</text><text x="159" y="338">GND</text><text x="159" y="411">D+</text>
+    </g>
+    <g font-size="17" fill="#556671">
+      <text x="437" y="265">D−</text><text x="437" y="411">D+</text>
+    </g>
+    <path d="M 486 305 L 420 331" stroke="#bc4918" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="450" y="293" font-size="20" font-weight="bold" fill="#bc4918">PIN 5 · VBUS</text>
+    <text x="449" y="364" font-size="17" fill="#bc4918">Middle leg, right side</text>
+    <!-- C14 is above/right of U4 in the actual mounted orientation. -->
+    <rect x="551" y="188" width="25" height="69" fill="#d4dcde" stroke="#82959d"/>
+    <rect x="544" y="180" width="39" height="20" rx="3" fill="#aebec5"/>
+    <rect x="544" y="248" width="39" height="20" rx="3" fill="#aebec5"/>
+    <text x="563" y="166" text-anchor="middle" font-size="17">C14</text>
+    <text x="52" y="475" font-size="18">U4 is the six-leg chip immediately left of C14.</text>
+
+    <text x="680" y="146" font-size="19" font-weight="bold">SIDE VIEW · PIN 5 AFTER LIFTING</text>
+    <text x="680" y="174" font-size="17">Sketch of the gap; not to scale</text>
+    <rect x="691" y="396" width="530" height="37" rx="3" fill="#8cbaa4"/>
+    <text x="1163" y="421" font-size="17">PCB</text>
+    <rect x="985" y="385" width="170" height="11" fill="#c38b37"/>
+    <rect x="697" y="249" width="207" height="100" rx="8" fill="#334651"/>
+    <text x="800" y="292" font-size="22" text-anchor="middle" fill="white">U4 body</text>
+    <text x="800" y="323" font-size="16" text-anchor="middle" fill="white">other 5 legs soldered</text>
+    <path d="M 904 310 L 934 310 Q 947 310 951 325 L 957 343 Q 962 352 979 347 L 1084 319" fill="none" stroke="#bc4918" stroke-width="11" stroke-linejoin="round"/>
+    <path d="M 1090 327 L 1090 379" fill="none" stroke="#bc4918" stroke-width="2" stroke-dasharray="4 4"/>
+    <text x="1072" y="246" text-anchor="middle" font-size="20" font-weight="bold" fill="#bc4918">Lifted metal leg</text>
+    <path d="M 1072 254 L 1055 322" fill="none" stroke="#bc4918" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="1103" y="359" font-size="17" fill="#bc4918">Air gap</text>
+    <text x="1010" y="466" text-anchor="middle" font-size="18">Copper pad stays on PCB, connected to VBUS</text>
+    <text x="40" y="544" font-size="21" font-weight="bold">After checking the gap: battery only, USB unplugged, RESET released.</text>
+    <text x="40" y="576" font-size="20">Repeat C14.1 / R13.1 / C11.1. If U4 is the source, VBUS should fall while D+ and 3.3 V stay high.</text>
+    <text x="40" y="610" font-size="16" fill="#556671">Rev-A pin orientation verified from commit 7584d71f3cb1. Resolder pin 5 after the test to restore the original circuit.</text>
+  </g>
+</svg>

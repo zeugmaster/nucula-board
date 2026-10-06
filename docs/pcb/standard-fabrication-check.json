@@ -18,8 +18,8 @@
     "no_dangling_copper": true,
     "silk_edits_preserve_all_other_footprint_geometry": true
   },
-  "board_sha256": "675917f91f1d26dfde7e194eeaeac015fa8e7ae071f56e1bf8784768668b93fe",
-  "drc_sha256": "2438083f1d5c51f60c9787e5436b28a3c07193050f603d9edbc933fae075c5a7",
+  "board_sha256": "23db2fe951c0e3d4f548a399efa88cabd58a474a9da42398dd4254144a85c377",
+  "drc_sha256": "bc884c5cdddb6cca822f1cf149f2dc696d11d562b8fc41388816b0137d7d22ea",
   "ribbon_access_mm": [
     71.15,
     98.55,
@@ -32,6 +32,6 @@
   ],
   "intruders": {},
   "smd_via_mask_conflicts": [],
-  "routing_vias": 312,
+  "routing_vias": 320,
   "scope": "Geometry and native-rule acceptance; supplier CAM acceptance and physical performance are separate."
 }

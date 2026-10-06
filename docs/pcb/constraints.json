@@ -1129,31 +1129,31 @@
       ],
       [
         "10",
-        "GND"
+        "/I2C_SDA"
       ],
       [
         "11",
-        "GND"
+        "/I2C_SDA"
       ],
       [
         "12",
-        "GND"
-      ],
-      [
-        "13",
         "/I2C_SCL"
       ],
       [
+        "13",
+        "GND"
+      ],
+      [
         "14",
-        "/I2C_SDA"
+        "GND"
       ],
       [
         "15",
-        "/I2C_SDA"
+        "GND"
       ],
       [
         "16",
-        "GND"
+        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_RES_N"
       ],
       [
         "17",
@@ -1165,27 +1165,27 @@
       ],
       [
         "19",
-        "GND"
+        "/+3V0"
       ],
       [
         "2",
-        "GND"
+        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_12V5"
       ],
       [
         "20",
-        "GND"
+        "/+3V0"
       ],
       [
         "21",
-        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_IREF"
+        "unconnected-(DS1-NC-Pad21)"
       ],
       [
         "22",
-        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_VCOMH"
+        "GND"
       ],
       [
         "23",
-        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_12V5"
+        "GND"
       ],
       [
         "24",
@@ -1193,19 +1193,19 @@
       ],
       [
         "3",
-        "GND"
+        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_VCOMH"
       ],
       [
         "4",
-        "unconnected-(DS1-NC-Pad4)"
+        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_IREF"
       ],
       [
         "5",
-        "/+3V0"
+        "GND"
       ],
       [
         "6",
-        "/+3V0"
+        "GND"
       ],
       [
         "7",
@@ -1217,7 +1217,7 @@
       ],
       [
         "9",
-        "/OLED {slash} SSD1309 {slash} 0x3C/OLED_RES_N"
+        "GND"
       ],
       [
         "MP",
@@ -2463,5 +2463,11 @@
   ],
   "reviewed_back_art_mask_clipping": [
     "c1a5f62c-017f-49b8-b078-5b58dbcb9520"
+  ],
+  "amendments": [
+    {
+      "date": "2026-10-06",
+      "scope": "DS1 pad nets only: mounted panel pin n maps to physical socket pad 25-n; position, rotation and footprint numbering unchanged. See docs/oled24/mounted-mapping-check.json."
+    }
   ]
 }

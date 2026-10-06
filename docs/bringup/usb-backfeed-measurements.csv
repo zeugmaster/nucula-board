@@ -1,0 +1,9 @@
+timestamp,board_revision,firmware_or_confirmed_ROM,state,VBAT_V,VBUS_C14_1_V,Dplus_R13_1_V,3V3_C11_1_V,ESP_EN_C12_1_V,USB5V_C1_1_V,VSYS_C4_1_V,USB_PRESENT_N_R17_2_V,Dminus_R12_1_V,isolated_U4_5_V,probe_input_ohm,notes
+2026-10-06,rev-A,,battery_only_reset_released,,2.05,2.84,3.33,,,,,,,,"User-annotated PDF; USB physically disconnected; firmware, VBAT and meter impedance not supplied; see rev-A-usb-battery-2026-10-06.json"
+2026-10-06,rev-A,,battery_only_reset_held,,0.01,0.0,3.33,,,,,,,,"User-annotated PDF; USB physically disconnected; firmware, VBAT and meter impedance not supplied; see rev-A-usb-battery-2026-10-06.json"
+,,,battery_only_10k_VBUS_load_reset_released,,,,,,,,,,,,
+,,,battery_only_U4_pin5_isolated_reset_released,,,,,,,,,,,,
+,,,battery_only_U4_pin5_isolated_reset_held,,,,,,,,,,,,
+,,,corrected_hardware_USB_unplug_transition,,,,,,,,,,,,
+,,,corrected_hardware_USB_reconnect_normal_firmware,,,,,,,,,,,,
+,,,corrected_hardware_USB_reconnect_protocol_confirmed_ROM,,,,,,,,,,,,

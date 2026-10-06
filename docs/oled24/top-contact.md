@@ -2,6 +2,11 @@
 
 2026-09-21 · KiCad 10.0.6 · compared with saved design `96c8114`
 
+Historical mechanical update. The subsequent
+[October mounted-ribbon correction](../bringup/rev-b-display-and-usb.md)
+reverses the electrical mapping (panel n → socket pad 25−n), preserving the
+lands and 180° placement described here.
+
 DS1 now uses **Hirose FH12A-24S-0.5SH(55), JLCPCB C506794**. Its top contacts
 match the user's mounted ribbon orientation: the exposed contacts face away
 from the PCB. The reported panel has ribbon marking **NFP1309-02Y**, 24 contacts,

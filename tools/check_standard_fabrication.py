@@ -98,8 +98,16 @@ def run(path, drc_path):
     checks['silk_edits_preserve_all_other_footprint_geometry'] = False
     if audit_path.exists():
         audit = json.loads(audit_path.read_text())
+        expected = dict(audit['geometry_before_silk_clipping'])
+        # Preserve the historical clipping baseline; explicitly record later
+        # electrical amendments and independently check the physical mapping.
+        for ref, amendment in audit.get('approved_footprint_amendments', {}).items():
+            assert ref == 'DS1' and expected[ref] == amendment['from_sha256']
+            from check_display_mapping import audit as display_audit
+            assert display_audit(path, ROOT / 'docs/netlist.xml')['passed']
+            expected[ref] = amendment['to_sha256']
         checks['silk_edits_preserve_all_other_footprint_geometry'] = (
-            footprint_geometry_hashes(tree) == audit['geometry_before_silk_clipping'])
+            footprint_geometry_hashes(tree) == expected)
     return {'passed': all(checks.values()), 'checks': checks,
             'board_sha256': hashlib.sha256(path.read_bytes()).hexdigest(),
             'drc_sha256': hashlib.sha256(drc_path.read_bytes()).hexdigest(),

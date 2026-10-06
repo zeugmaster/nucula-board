@@ -173,5 +173,13 @@
     "Y1"
   ],
   "back_art_mask_clipping_uuid": "c1a5f62c-017f-49b8-b078-5b58dbcb9520",
-  "back_art_handling": "Keep the user artwork unchanged in source; subtract soldermask when plotting Gerbers."
+  "back_art_handling": "Keep the user artwork unchanged in source; subtract soldermask when plotting Gerbers.",
+  "approved_footprint_amendments": {
+    "DS1": {
+      "date": "2026-10-06",
+      "from_sha256": "bf6ed3595f480a56f091aadeccbe2fcee8a272c7541984e562977640d5d8c62b",
+      "to_sha256": "7bdfdc8a75110a3c4bca3622f01036faae5322622b97fe4cc993a4179182be77",
+      "reason": "Reverse mounted panel electrical mapping at fixed Hirose footprint; physical pad geometry and numbering independently checked by check_display_mapping.py."
+    }
+  }
 }

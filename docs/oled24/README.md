@@ -5,7 +5,12 @@
 **Current socket: FH12A-24S-0.5SH(55), C506794, top contacts.**
 The [subsequent top-contact update](top-contact.md) supersedes the socket and
 placement described in the historical 26-to-24-contact correction below.
-The electrical map remains unchanged. Historical baseline: `600d88a`.
+**October correction:** mounted panel pin 1 is PCB-left and pin 24 PCB-right.
+Display pin n now maps to **DS1 socket pad 25−n** at the unchanged 180° placement.
+Use the [mounted-contact checks](mounted-mapping-check.json) and
+[current correction report](../bringup/rev-b-display-and-usb.md).
+The sections below record the historical September change against `600d88a`;
+their contact numbers describe the panel, not the corrected socket pads.
 
 The user's [exact breakout schematic](../../parts%20documentation/i2c-display-breakout-schematic.png.png)
 shows **J1 CON24**. This supersedes the previous 26-contact assumption.
@@ -113,8 +118,9 @@ lands, pin order, paste pattern and updated placement have been checked. The
 BOM, sourcing observation and regression reports. The 0.20 mm move toward the
 keyboard clears the larger latch while keeping all other footprints fixed.
 
-Actual panel pin-1 correspondence, insertion length, fold strain, enclosure
-clearance and display operation still require physical prototype checks.
+The panel pin-1 reversal was confirmed during Rev-A testing and corrected in
+October. Insertion length, fold strain, enclosure clearance and operation with
+the corrected board still require physical prototype checks.
 
 The **OLED panel and external keyboard/keypad remain excluded from the assembly
 BOM and CPL**. DS1 purchases only the PCB socket; onboard display support and

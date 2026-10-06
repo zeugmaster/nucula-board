@@ -1762,8 +1762,8 @@
       )
       (embedded_fonts no)
     )
-    (symbol "Nucula_Project:SSD1309_COG_24"
-      (property "Footprint Status" "SELECTED: 24-way 0.50 mm top-contact socket; Hirose drawing EDC3-150555-51 sheet 1 lands verified; supplied CON24 electrical map retained"
+    (symbol "Nucula_Project:SSD1309_COG_24_ReversedSocket"
+      (property "Footprint Status" "SELECTED: 24-way 0.50 mm top-contact socket; Hirose drawing EDC3-150555-51 sheet 1 lands verified; display pin n maps to socket pad 25-n; panel pin 1 is PCB-left"
         (at 0 0 0)
         (effects
           (font
@@ -1771,7 +1771,7 @@
           ) hide
         )
       )
-      (property "Description" "24-contact SSD1309 glass interface; supplied CON24 breakout pinout"
+      (property "Description" "Mounted SSD1309 ribbon: display pin n maps to socket pad 25-n; numbers are Hirose socket pads"
         (at 0 0 0)
         (effects
           (font
@@ -1795,7 +1795,7 @@
           ) hide
         )
       )
-      (property "Value" "SSD1309_COG_24"
+      (property "Value" "SSD1309_COG_24_ReversedSocket"
         (at 0 0 0)
         (effects
           (font
@@ -1816,7 +1816,7 @@
       )
       (in_bom yes)
       (on_board yes)
-      (symbol "SSD1309_COG_24_0_1"
+      (symbol "SSD1309_COG_24_ReversedSocket_0_1"
         (rectangle
           (start -15.24 30.48)
           (end 15.24 -30.48)
@@ -1829,7 +1829,7 @@
           )
         )
       )
-      (symbol "SSD1309_COG_24_1_1"
+      (symbol "SSD1309_COG_24_ReversedSocket_1_1"
         (pin input line
           (at -20.32 26.67 0)
           (length 5.08)
@@ -1840,7 +1840,7 @@
               )
             )
           )
-          (number "6"
+          (number "19"
             (effects
               (font
                 (size 1.016 1.016)
@@ -1858,7 +1858,7 @@
               )
             )
           )
-          (number "7"
+          (number "18"
             (effects
               (font
                 (size 1.016 1.016)
@@ -1876,7 +1876,7 @@
               )
             )
           )
-          (number "8"
+          (number "17"
             (effects
               (font
                 (size 1.016 1.016)
@@ -1894,7 +1894,7 @@
               )
             )
           )
-          (number "9"
+          (number "16"
             (effects
               (font
                 (size 1.016 1.016)
@@ -1912,7 +1912,7 @@
               )
             )
           )
-          (number "10"
+          (number "15"
             (effects
               (font
                 (size 1.016 1.016)
@@ -1930,7 +1930,7 @@
               )
             )
           )
-          (number "11"
+          (number "14"
             (effects
               (font
                 (size 1.016 1.016)
@@ -1948,7 +1948,7 @@
               )
             )
           )
-          (number "12"
+          (number "13"
             (effects
               (font
                 (size 1.016 1.016)
@@ -1966,7 +1966,7 @@
               )
             )
           )
-          (number "13"
+          (number "12"
             (effects
               (font
                 (size 1.016 1.016)
@@ -1984,7 +1984,7 @@
               )
             )
           )
-          (number "14"
+          (number "11"
             (effects
               (font
                 (size 1.016 1.016)
@@ -2002,7 +2002,7 @@
               )
             )
           )
-          (number "15"
+          (number "10"
             (effects
               (font
                 (size 1.016 1.016)
@@ -2020,7 +2020,7 @@
               )
             )
           )
-          (number "16"
+          (number "9"
             (effects
               (font
                 (size 1.016 1.016)
@@ -2038,7 +2038,7 @@
               )
             )
           )
-          (number "17"
+          (number "8"
             (effects
               (font
                 (size 1.016 1.016)
@@ -2056,7 +2056,7 @@
               )
             )
           )
-          (number "18"
+          (number "7"
             (effects
               (font
                 (size 1.016 1.016)
@@ -2074,7 +2074,7 @@
               )
             )
           )
-          (number "19"
+          (number "6"
             (effects
               (font
                 (size 1.016 1.016)
@@ -2092,7 +2092,7 @@
               )
             )
           )
-          (number "20"
+          (number "5"
             (effects
               (font
                 (size 1.016 1.016)
@@ -2110,7 +2110,7 @@
               )
             )
           )
-          (number "5"
+          (number "20"
             (effects
               (font
                 (size 1.016 1.016)
@@ -2128,7 +2128,7 @@
               )
             )
           )
-          (number "23"
+          (number "2"
             (effects
               (font
                 (size 1.016 1.016)
@@ -2146,7 +2146,7 @@
               )
             )
           )
-          (number "21"
+          (number "4"
             (effects
               (font
                 (size 1.016 1.016)
@@ -2164,7 +2164,7 @@
               )
             )
           )
-          (number "22"
+          (number "3"
             (effects
               (font
                 (size 1.016 1.016)
@@ -2182,7 +2182,7 @@
               )
             )
           )
-          (number "1"
+          (number "24"
             (effects
               (font
                 (size 1.016 1.016)
@@ -2200,7 +2200,7 @@
               )
             )
           )
-          (number "2"
+          (number "23"
             (effects
               (font
                 (size 1.016 1.016)
@@ -2218,7 +2218,7 @@
               )
             )
           )
-          (number "3"
+          (number "22"
             (effects
               (font
                 (size 1.016 1.016)
@@ -2236,7 +2236,7 @@
               )
             )
           )
-          (number "24"
+          (number "1"
             (effects
               (font
                 (size 1.016 1.016)
@@ -2254,7 +2254,7 @@
               )
             )
           )
-          (number "4"
+          (number "21"
             (effects
               (font
                 (size 1.016 1.016)
@@ -4773,7 +4773,7 @@
     (uuid 9afa91ac-acef-5467-bd0a-156d90dc78bc)
   )
   (symbol
-    (lib_id "Nucula_Project:SSD1309_COG_24")
+    (lib_id "Nucula_Project:SSD1309_COG_24_ReversedSocket")
     (at 345.44 88.9 0)
     (unit 1)
     (in_bom yes)
@@ -4828,7 +4828,7 @@
         (justify left)
       )
     )
-    (property "Footprint Status" "SELECTED: 24-way 0.50 mm top-contact socket; Hirose drawing EDC3-150555-51 sheet 1 lands verified; supplied CON24 electrical map retained"
+    (property "Footprint Status" "SELECTED: 24-way 0.50 mm top-contact socket; Hirose drawing EDC3-150555-51 sheet 1 lands verified; display pin n maps to socket pad 25-n; panel pin 1 is PCB-left"
       (at 345.44 88.9 0)
       (effects
         (font
@@ -4848,7 +4848,7 @@
         (justify left)
       )
     )
-    (property "Actual Flex" "24 contacts per user and supplied CON24 schematic; NFP1309-02Y ribbon marking; 0.50 mm pitch, 0.30 mm thick; mounted tip contacts face away from PCB"
+    (property "Actual Flex" "24 contacts per user; panel pin 1 at PCB-left / socket pad 24; NFP1309-02Y ribbon marking; 0.50 mm pitch, 0.30 mm thick; mounted tip contacts face away from PCB"
       (at 345.44 88.9 0)
       (effects
         (font
@@ -4857,7 +4857,7 @@
         (hide yes)
       )
     )
-    (property "Status" "Top-contact socket selected for user-confirmed ribbon orientation; DS1 BOM is socket only; display and keyboard modules excluded; final physical fit and panel operation need prototype verification"
+    (property "Status" "Top-contact socket selected for user-confirmed ribbon orientation; DS1 BOM is socket only; display and keyboard modules excluded; panel pin 1 confirmed PCB-left on 2026-10-06; validate operation on corrected board"
       (at 345.44 88.9 0)
       (effects
         (font
@@ -4875,7 +4875,7 @@
         (hide yes)
       )
     )
-    (property "Connector Mechanics" "FH12A top-contact, 0.30 mm flex, 0.50 mm pitch; same copper lands and pin order; larger body/latch checked in layout; open latch height about 3.6 mm"
+    (property "Connector Mechanics" "FH12A top-contact, 0.30 mm flex, 0.50 mm pitch; manufacturer pad numbering retained; display pin n to socket pad 25-n; larger body/latch checked in layout; open latch height about 3.6 mm"
       (at 345.44 88.9 0)
       (effects
         (font
@@ -4893,76 +4893,76 @@
         (hide yes)
       )
     )
-    (pin "6"
+    (pin "19"
       (uuid 07ef7ac0-a36b-54ff-8b25-638b7089d970)
     )
-    (pin "7"
+    (pin "18"
       (uuid be59d9de-1162-59f4-ac3a-eb589b55c3e5)
     )
-    (pin "8"
+    (pin "17"
       (uuid ea447f34-4ff9-5370-aef5-85fb6b6ac682)
     )
-    (pin "9"
+    (pin "16"
       (uuid fe0155d1-0fb1-51f1-83f8-f57746456073)
     )
-    (pin "10"
+    (pin "15"
       (uuid ab095eb2-0595-5bac-96e5-8fc8e8759e30)
     )
-    (pin "11"
+    (pin "14"
       (uuid a72bd8c2-1ce1-50d5-a770-ee007f622ddf)
     )
-    (pin "12"
+    (pin "13"
       (uuid a07570f1-e683-5b4c-88e3-ef7114542549)
     )
-    (pin "13"
+    (pin "12"
       (uuid 06be5ea0-2a97-5915-82bd-27641e922a51)
     )
-    (pin "14"
+    (pin "11"
       (uuid 7f22f788-6500-56f8-b10a-0b3e8383fac4)
     )
-    (pin "15"
+    (pin "10"
       (uuid 21433abb-eb7d-513b-bcd1-c5b9e659cca3)
     )
-    (pin "16"
+    (pin "9"
       (uuid a9abb1f2-812e-575b-8242-e01d15cce3a2)
     )
-    (pin "17"
+    (pin "8"
       (uuid c1779ecb-0e22-5f2e-a3a5-05837332b30c)
     )
-    (pin "18"
+    (pin "7"
       (uuid 64b70052-3702-5ab4-b9d5-1f3c10b3b5f6)
     )
-    (pin "19"
+    (pin "6"
       (uuid 236a9756-3a54-5f54-85f7-8d330ab983e3)
     )
-    (pin "20"
+    (pin "5"
       (uuid 28a79453-0009-5abd-9640-f24acead977c)
     )
-    (pin "5"
+    (pin "20"
       (uuid fb34c85e-29b1-5e27-b320-8e6c68cf64cd)
     )
-    (pin "23"
+    (pin "2"
       (uuid f6020f49-f9fd-513c-8310-6c0e28f00a2f)
     )
-    (pin "21"
+    (pin "4"
       (uuid 7757c207-c458-5965-9e97-695eb2b9d056)
     )
-    (pin "22"
+    (pin "3"
       (uuid 0f74931c-ba41-5b66-ba66-89ec2880602d)
     )
-    (pin "1"
+    (pin "24"
       (uuid bb650dc6-12b7-5f82-9437-f6973e00cd08)
     )
-    (pin "2"
+    (pin "23"
       (uuid fc313895-5ddb-528d-a9a4-8fd9dfa457f1)
     )
-    (pin "3"
+    (pin "22"
       (uuid 1159c27c-77b6-5cb3-9ead-36397326ccc6)
     )
-    (pin "24"
+    (pin "1"
       (uuid 51313526-c618-5cd6-9590-e997ea60d232)
     )
-    (pin "4"
+    (pin "21"
       (uuid 63c11ecc-30a8-5a1a-9a7a-c07b2daa9403)
     )
     (instances
@@ -7469,7 +7469,7 @@
       )
     )
   )
-  (text "24 contacts: supplied CON24 breakout schematic.\n13=SCL; 14+15=SDA; 9=RES#; 23=VOP.\n1/2/3/24=GND; 4=NC; 5/6=3.0V.\nDS1: FH12A-24S top-contact socket only.\nNFP1309-02Y: 0.50mm pitch, 0.30mm flex.\nMounted tip contacts face away from PCB.\nSSD1309 I2C 0x3C, shared pull-ups 3.0V."
+  (text "Panel contact numbers (NOT DS1 socket pads):\n13=SCL; 14+15=SDA; 9=RES#; 23=VOP.\n1/2/3/24=GND; 4=NC; 5/6=3.0V.\nDS1 pad = 25 - panel pin; FH12A-24S socket.\nNFP1309-02Y: 0.50mm pitch, 0.30mm flex.\nMounted tip contacts face away from PCB.\nSSD1309 I2C 0x3C, shared pull-ups 3.0V."
     (at 20.32 246.38 0)
     (effects
       (font
@@ -7490,4 +7490,6 @@
     (uuid 8f7fbbbc-1fb8-5c25-9f37-817acf40a205)
   )
   (embedded_fonts no)
+
+  (text "DS1 numbers = Hirose socket pads. Display pin n = 25 - socket pad.\nPCB component-side view: panel pin 1 LEFT, pin 24 RIGHT.\nKeep socket position/orientation; do not mirror the footprint." (at 318.77 139.7 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid 1c3db532-6223-4372-9c34-f06777e4aa8a))
 )

@@ -1,0 +1,16 @@
+Rev-A USB backfeed hypothesis; no USB cable or host attached
+* 1.5k pull-up and diode Is/N are assumptions, not fitted measurements.
+* No ESP PHY, Q2 channel, D1/D2 reverse leakage, charger, or ESD surge model.
+Vlogic logic 0 3.3
+Rpull logic phy 1000000000000.0
+R13 phy dp 22.0
+Dupper dp vbus steering
+Dlower 0 dp steering
+.model steering D(Is=1e-14 N=2 Rs=.52)
+R18 vbus 0 100000.0
+C14 vbus 0 1.0000000000000001e-07
+Rmeter vbus 0 10Meg
+Rnumeric clamp 0 1e12
+.options reltol=1e-8 abstol=1e-14
+.op
+.end

@@ -1,0 +1,52 @@
+{
+  "baseline_commit": "fdcfbe7",
+  "board_sha256": "23db2fe951c0e3d4f548a399efa88cabd58a474a9da42398dd4254144a85c377",
+  "passed": true,
+  "checks": {
+    "all_130_footprint_positions_rotations_unchanged": true,
+    "all_values_footprints_and_population_unchanged": true,
+    "all_other_pad_geometry_and_nets_unchanged": true,
+    "power_nfc_keyboard_schematic_files_unchanged": true,
+    "project_design_rules_unchanged": true,
+    "segment_changes_only_display_nets": true,
+    "via_changes_only_display_nets": true,
+    "arc_changes_only_display_nets": true,
+    "all_copper_changes_within_display_work_area": true,
+    "usb_routing_unchanged": true
+  },
+  "copper_changes": {
+    "segment": {
+      "removed": 46,
+      "added": 69,
+      "modified": 1,
+      "bounds_mm": [
+        72.0,
+        104.65,
+        89.75,
+        117.25
+      ]
+    },
+    "via": {
+      "removed": 6,
+      "added": 14,
+      "modified": 0,
+      "bounds_mm": [
+        73.25,
+        107.5,
+        86.75,
+        117.256
+      ]
+    },
+    "arc": {
+      "removed": 0,
+      "added": 0,
+      "modified": 0,
+      "bounds_mm": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  }
+}

@@ -1,5 +1,10 @@
 # USB-C, battery power and ESP32-C3 draft
 
+**October bring-up finding:** battery-only VBUS measures 2.1 V and collapses
+under RESET. The U4 data-line steering path remains present in the current
+hardware design. [Diagnosis, simulation limits and isolation measurements](bringup/rev-b-display-and-usb.md)
+must be resolved before treating USB/battery reconnection as qualified.
+
 Revision B-draft, updated 2026-09-20. Open `nucula-v2.kicad_pro` in KiCad 10.
 The schematic is complete for this draft. The PCB is now placed and routed;
 see the [layout and validation report](pcb-layout.md).

@@ -1,9 +1,14 @@
 # Standard fabrication release — five bare boards
 
+**Historical release — do not use for the October correction.** This package
+predates the confirmed display reversal and retains the USB backfeed path.
+The [editable design and bench follow-up](bringup/rev-b-display-and-usb.md)
+supersede its wiring. No corrected fabrication release has been issued.
+
 22 September 2026 · `routing-review-2026-09-22` · manual top-side reflow assembly
 
-Use the [complete package](../manufacturing/routing-review-2026-09-22-package.zip), or
-upload its [Gerber ZIP](../manufacturing/routing-review-2026-09-22/nucula-v2-gerbers.zip).
+The archived [complete package](../manufacturing/routing-review-2026-09-22-package.zip) includes
+its [Gerber ZIP](../manufacturing/routing-review-2026-09-22/nucula-v2-gerbers.zip).
 This revision includes the connector-width ribbon access area and ordinary
 unfilled through-vias, with the free-form routing regression repaired throughout
 the board. [Routing review and validation](routing-review.md) ·

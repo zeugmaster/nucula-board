@@ -3,10 +3,14 @@
 An ESP32-C3 hardware prototype with USB-C, battery charging, PN7160 NFC,
 an SSD1309 OLED interface, and a detachable I²C keyboard section.
 
-**Status: routed prototype, awaiting physical bring-up.** The current
-**routing-review-2026-09-22** package is for five bare boards and manual assembly,
-with ordinary unfilled vias and a 17.70 × 5.00 mm display-ribbon access area.
-Supplier CAM review, RF tuning, power measurements and display fit checks remain.
+**Status: Rev-A bring-up found a reversed display interface and USB backfeed.**
+The editable design now corrects and reroutes all 24 display contacts at the
+unchanged socket orientation. Existing measurements support the accepted U4
+backfeed diagnosis; its hardware remedy remains open. Pin-isolation rework is
+not required before proceeding with the redesign. See the
+[correction and bench report](docs/bringup/rev-b-display-and-usb.md).
+Existing manufacturing archives predate this correction and are not current
+ordering files. The ordinary unfilled vias and 17.70 × 5.00 mm ribbon access remain.
 
 ![Nucula v2 PCB layout](docs/pcb/top.png)
 
@@ -37,6 +41,8 @@ and a detachable PCF8574T keyboard section. The four-layer PCB is placed and
 routed, with all components on top and the NFC circuitry inside the coil.
 
 - [Completed PCB layout, layer drawings and validation](docs/pcb-layout.md)
+- [Rev-A display correction, backfeed investigation and measurements](docs/bringup/rev-b-display-and-usb.md)
+- [Rev-A bench procedure with enlarged probe-pad map (PDF)](docs/bringup/rev-A-usb-bench-guide.pdf)
 - [Routing repair, before/after comparison and geometry audit](docs/routing-review.md)
 - [Standard manufacturing package and order settings](docs/manufacturing-release.md)
 - [Complete manufacturing ZIP](manufacturing/routing-review-2026-09-22-package.zip)
@@ -76,6 +82,9 @@ is available for fabrication and measurement. The OLED now uses the **24-contact
 CON24 pinout** in the reference breakout schematic, superseding the earlier
 26-contact assumption. DS1 is a Hirose FH12A-24S-0.5SH(55), 0.5 mm top-contact socket (C506794).
 [Pinout and regression checks](docs/oled24/README.md) cover all 24 connections.
+In the mounted PCB top view, panel pin 1 is left and pin 24 right:
+**panel pin n connects to Hirose socket pad 25−n**. The manufacturer footprint
+numbering is preserved; the mounted-contact checker now verifies this distinction.
 The target panel has ribbon marking **NFP1309-02Y**: 2.4-inch COG,
 0.50 mm pitch, 0.30 mm flex, contacts on the emitting face. In its confirmed
 mounted position the tip contacts face away from the PCB. The
@@ -117,7 +126,8 @@ is unchanged. [Manufacturing changes and validation](docs/standard-fabrication.m
 
 The [JLCPCB r2 archive](manufacturing/jlcpcb-2026-09-21-r2-package.zip) records
 the previously submitted board and remains unchanged. Its order settings and
-placements belong to that earlier design. Use the new package for new orders.
+placements belong to that earlier design. No archived package contains the
+October display correction, and USB backfeed still needs a validated remedy.
 
 ## License and attribution
 

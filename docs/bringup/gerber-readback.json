@@ -1,0 +1,244 @@
+{
+  "passed": true,
+  "checks": {
+    "four_copper_layers": true,
+    "all_24_display_contacts_correct_in_exported_copper": true,
+    "display_copper_lands_0_30_by_1_30": true,
+    "display_mask_matches_all_24_lands": true,
+    "display_24_separate_0_25_by_1_30_paste_apertures": true,
+    "116_populated_parts_match_stencil_and_positions": true,
+    "no_DNP_or_mechanical_paste": true,
+    "all_round_drill_locations_and_sizes_match_board": true,
+    "four_0_70_mm_plated_USB_slots": true,
+    "30_unplated_locators_and_mouse_bites": true,
+    "three_closed_outline_contours": true,
+    "60_by_110_mm_envelope": true
+  },
+  "source_board_sha256": "23db2fe951c0e3d4f548a399efa88cabd58a474a9da42398dd4254144a85c377",
+  "export_manifest_sha256": "a90b06402f41027cdad6d8aca459e2909735b7971d2c4e05daf17151dbb3703f",
+  "parser_warnings": [
+    "G90 header statement found after end of header"
+  ],
+  "source_netlist_sha256": "f86e387c5a96e0dec7c3865b2417de2d8e7724f5aa94fc22b766e6455e24f7a3",
+  "drill_coordinate_resolution_mm": 0.001,
+  "maximum_drill_coordinate_rounding_mm": 0.0005000000000023874,
+  "display_contacts": [
+    {
+      "panel_pin": 1,
+      "socket_pad": "24",
+      "gerber_xy_mm": [
+        24.25,
+        49.3
+      ],
+      "net": "GND"
+    },
+    {
+      "panel_pin": 2,
+      "socket_pad": "23",
+      "gerber_xy_mm": [
+        24.75,
+        49.3
+      ],
+      "net": "GND"
+    },
+    {
+      "panel_pin": 3,
+      "socket_pad": "22",
+      "gerber_xy_mm": [
+        25.25,
+        49.3
+      ],
+      "net": "GND"
+    },
+    {
+      "panel_pin": 4,
+      "socket_pad": "21",
+      "gerber_xy_mm": [
+        25.75,
+        49.3
+      ],
+      "net": "unconnected-(DS1-NC-Pad21)"
+    },
+    {
+      "panel_pin": 5,
+      "socket_pad": "20",
+      "gerber_xy_mm": [
+        26.25,
+        49.3
+      ],
+      "net": "/+3V0"
+    },
+    {
+      "panel_pin": 6,
+      "socket_pad": "19",
+      "gerber_xy_mm": [
+        26.75,
+        49.3
+      ],
+      "net": "/+3V0"
+    },
+    {
+      "panel_pin": 7,
+      "socket_pad": "18",
+      "gerber_xy_mm": [
+        27.25,
+        49.3
+      ],
+      "net": "GND"
+    },
+    {
+      "panel_pin": 8,
+      "socket_pad": "17",
+      "gerber_xy_mm": [
+        27.75,
+        49.3
+      ],
+      "net": "GND"
+    },
+    {
+      "panel_pin": 9,
+      "socket_pad": "16",
+      "gerber_xy_mm": [
+        28.25,
+        49.3
+      ],
+      "net": "/OLED {slash} SSD1309 {slash} 0x3C/OLED_RES_N"
+    },
+    {
+      "panel_pin": 10,
+      "socket_pad": "15",
+      "gerber_xy_mm": [
+        28.75,
+        49.3
+      ],
+      "net": "GND"
+    },
+    {
+      "panel_pin": 11,
+      "socket_pad": "14",
+      "gerber_xy_mm": [
+        29.25,
+        49.3
+      ],
+      "net": "GND"
+    },
+    {
+      "panel_pin": 12,
+      "socket_pad": "13",
+      "gerber_xy_mm": [
+        29.75,
+        49.3
+      ],
+      "net": "GND"
+    },
+    {
+      "panel_pin": 13,
+      "socket_pad": "12",
+      "gerber_xy_mm": [
+        30.25,
+        49.3
+      ],
+      "net": "/I2C_SCL"
+    },
+    {
+      "panel_pin": 14,
+      "socket_pad": "11",
+      "gerber_xy_mm": [
+        30.75,
+        49.3
+      ],
+      "net": "/I2C_SDA"
+    },
+    {
+      "panel_pin": 15,
+      "socket_pad": "10",
+      "gerber_xy_mm": [
+        31.25,
+        49.3
+      ],
+      "net": "/I2C_SDA"
+    },
+    {
+      "panel_pin": 16,
+      "socket_pad": "9",
+      "gerber_xy_mm": [
+        31.75,
+        49.3
+      ],
+      "net": "GND"
+    },
+    {
+      "panel_pin": 17,
+      "socket_pad": "8",
+      "gerber_xy_mm": [
+        32.25,
+        49.3
+      ],
+      "net": "GND"
+    },
+    {
+      "panel_pin": 18,
+      "socket_pad": "7",
+      "gerber_xy_mm": [
+        32.75,
+        49.3
+      ],
+      "net": "GND"
+    },
+    {
+      "panel_pin": 19,
+      "socket_pad": "6",
+      "gerber_xy_mm": [
+        33.25,
+        49.3
+      ],
+      "net": "GND"
+    },
+    {
+      "panel_pin": 20,
+      "socket_pad": "5",
+      "gerber_xy_mm": [
+        33.75,
+        49.3
+      ],
+      "net": "GND"
+    },
+    {
+      "panel_pin": 21,
+      "socket_pad": "4",
+      "gerber_xy_mm": [
+        34.25,
+        49.3
+      ],
+      "net": "/OLED {slash} SSD1309 {slash} 0x3C/OLED_IREF"
+    },
+    {
+      "panel_pin": 22,
+      "socket_pad": "3",
+      "gerber_xy_mm": [
+        34.75,
+        49.3
+      ],
+      "net": "/OLED {slash} SSD1309 {slash} 0x3C/OLED_VCOMH"
+    },
+    {
+      "panel_pin": 23,
+      "socket_pad": "2",
+      "gerber_xy_mm": [
+        35.25,
+        49.3
+      ],
+      "net": "/OLED {slash} SSD1309 {slash} 0x3C/OLED_12V5"
+    },
+    {
+      "panel_pin": 24,
+      "socket_pad": "1",
+      "gerber_xy_mm": [
+        35.75,
+        49.3
+      ],
+      "net": "GND"
+    }
+  ],
+  "scope": "Gerber/drill/placement translation audit; no electrical qualification or fabrication release."
+}

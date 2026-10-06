@@ -1,0 +1,58 @@
+{
+  "board_commit": "7584d71f3cb1b120934be2b80cfab4a015ecddfd",
+  "source_board_sha256": "4e582fc67796c618ffb62488af51a3807b1540be308f1a315ecae28ff7b50e96",
+  "view": "component side; NFC above, keyboard below; no mirror",
+  "probes": [
+    {
+      "letter": "A",
+      "ref": "C14",
+      "pad": "1",
+      "xy": [
+        64.25,
+        111.525
+      ],
+      "net": "/Power + ESP32-C3/VBUS",
+      "name": "VBUS",
+      "side": "LOWER PAD"
+    },
+    {
+      "letter": "B",
+      "ref": "R13",
+      "pad": "1",
+      "xy": [
+        97.9,
+        118.325
+      ],
+      "net": "/Power + ESP32-C3/USB_ESD_D+",
+      "name": "D+",
+      "side": "LOWER PAD \u00b7 right resistor"
+    },
+    {
+      "letter": "C",
+      "ref": "C11",
+      "pad": "1",
+      "xy": [
+        94.775,
+        93.5
+      ],
+      "net": "/+3V3",
+      "name": "3.3 V",
+      "side": "RIGHT PAD"
+    }
+  ],
+  "ground": "J1 USB metal shell; all SH pads are GND",
+  "reset": {
+    "ref": "SW1",
+    "xy_mm": [
+      106.5,
+      84
+    ],
+    "position": "lower of two buttons; SW2 above is BOOT"
+  },
+  "source": "Native Rev-A pad polygons and F.Fab outlines; working Rev-B PCB is not used.",
+  "outputs_sha256": {
+    "png": "6ea5812d3d5ae349f762771c9eb80545e6e21fd75b3dc0b2dd08337bd86a416d",
+    "svg": "0ed348d648ffab66d16102dbb0878eb8f7768d711e1f4a81467c7e3e440e9ee2",
+    "pdf": "3dc13de4288b999ea9063887cb9c62b16f15a0c24def3f9a40882655ca21ca6e"
+  }
+}

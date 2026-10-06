@@ -1,7 +1,11 @@
 # Manufacturing releases
 
-Use **[routing-review-2026-09-22-package.zip](routing-review-2026-09-22-package.zip)** for new
-five-board contingency fabrication. It contains ordinary unfilled-via Gerbers,
+**No archive contains the October display-pin correction. USB backfeed remains
+open pending isolation measurements and a validated remedy.** See the
+[current engineering report](../docs/bringup/rev-b-display-and-usb.md) before new fabrication.
+
+The historical **[routing-review-2026-09-22-package.zip](routing-review-2026-09-22-package.zip)**
+contains ordinary unfilled-via Gerbers,
 the ribbon-clearance layout with repaired routing, updated stencil and assembly
 drawings, and the validation records. [Settings and changes](../docs/manufacturing-release.md).
 

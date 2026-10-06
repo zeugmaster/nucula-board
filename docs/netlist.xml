@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>nucula-v2.kicad_sch</source>
-    <date>2026-09-22T22:27:44</date>
+    <date>2026-10-06T16:14:16</date>
     <tool>Eeschema 10.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -4031,12 +4031,12 @@
       <datasheet>https://www.hirose.com/en/product/p/CL0586-0555-2-55</datasheet>
       <fields>
         <field name="MPN">FH12A-24S-0.5SH(55)</field>
-        <field name="Footprint Status">SELECTED: 24-way 0.50 mm top-contact socket; Hirose drawing EDC3-150555-51 sheet 1 lands verified; supplied CON24 electrical map retained</field>
+        <field name="Footprint Status">SELECTED: 24-way 0.50 mm top-contact socket; Hirose drawing EDC3-150555-51 sheet 1 lands verified; display pin n maps to socket pad 25-n; panel pin 1 is PCB-left</field>
         <field name="I2C Address">0x3C</field>
-        <field name="Actual Flex">24 contacts per user and supplied CON24 schematic; NFP1309-02Y ribbon marking; 0.50 mm pitch, 0.30 mm thick; mounted tip contacts face away from PCB</field>
-        <field name="Status">Top-contact socket selected for user-confirmed ribbon orientation; DS1 BOM is socket only; display and keyboard modules excluded; final physical fit and panel operation need prototype verification</field>
+        <field name="Actual Flex">24 contacts per user; panel pin 1 at PCB-left / socket pad 24; NFP1309-02Y ribbon marking; 0.50 mm pitch, 0.30 mm thick; mounted tip contacts face away from PCB</field>
+        <field name="Status">Top-contact socket selected for user-confirmed ribbon orientation; DS1 BOM is socket only; display and keyboard modules excluded; panel pin 1 confirmed PCB-left on 2026-10-06; validate operation on corrected board</field>
         <field name="Manufacturer">HRS(Hirose)</field>
-        <field name="Connector Mechanics">FH12A top-contact, 0.30 mm flex, 0.50 mm pitch; same copper lands and pin order; larger body/latch checked in layout; open latch height about 3.6 mm</field>
+        <field name="Connector Mechanics">FH12A top-contact, 0.30 mm flex, 0.50 mm pitch; manufacturer pad numbering retained; display pin n to socket pad 25-n; larger body/latch checked in layout; open latch height about 3.6 mm</field>
         <field name="Connector Datasheet">https://www.hirose.com/en/product/p/CL0586-0555-2-55</field>
         <field name="LCSC">C506794</field>
         <field name="Panel Datasheet">https://files.waveshare.com/wiki/2.42inch-OLED-Module/SSD1309Datasheet.pdf</field>
@@ -4044,14 +4044,14 @@
         <field name="Datasheet">https://www.hirose.com/en/product/p/CL0586-0555-2-55</field>
         <field name="Description"/>
       </fields>
-      <libsource lib="Nucula_Project" part="SSD1309_COG_24" description="24-contact SSD1309 glass interface; supplied CON24 breakout pinout"/>
+      <libsource lib="Nucula_Project" part="SSD1309_COG_24_ReversedSocket" description="Mounted SSD1309 ribbon: display pin n maps to socket pad 25-n; numbers are Hirose socket pads"/>
       <property name="MPN" value="FH12A-24S-0.5SH(55)"/>
-      <property name="Footprint Status" value="SELECTED: 24-way 0.50 mm top-contact socket; Hirose drawing EDC3-150555-51 sheet 1 lands verified; supplied CON24 electrical map retained"/>
+      <property name="Footprint Status" value="SELECTED: 24-way 0.50 mm top-contact socket; Hirose drawing EDC3-150555-51 sheet 1 lands verified; display pin n maps to socket pad 25-n; panel pin 1 is PCB-left"/>
       <property name="I2C Address" value="0x3C"/>
-      <property name="Actual Flex" value="24 contacts per user and supplied CON24 schematic; NFP1309-02Y ribbon marking; 0.50 mm pitch, 0.30 mm thick; mounted tip contacts face away from PCB"/>
-      <property name="Status" value="Top-contact socket selected for user-confirmed ribbon orientation; DS1 BOM is socket only; display and keyboard modules excluded; final physical fit and panel operation need prototype verification"/>
+      <property name="Actual Flex" value="24 contacts per user; panel pin 1 at PCB-left / socket pad 24; NFP1309-02Y ribbon marking; 0.50 mm pitch, 0.30 mm thick; mounted tip contacts face away from PCB"/>
+      <property name="Status" value="Top-contact socket selected for user-confirmed ribbon orientation; DS1 BOM is socket only; display and keyboard modules excluded; panel pin 1 confirmed PCB-left on 2026-10-06; validate operation on corrected board"/>
       <property name="Manufacturer" value="HRS(Hirose)"/>
-      <property name="Connector Mechanics" value="FH12A top-contact, 0.30 mm flex, 0.50 mm pitch; same copper lands and pin order; larger body/latch checked in layout; open latch height about 3.6 mm"/>
+      <property name="Connector Mechanics" value="FH12A top-contact, 0.30 mm flex, 0.50 mm pitch; manufacturer pad numbering retained; display pin n to socket pad 25-n; larger body/latch checked in layout; open latch height about 3.6 mm"/>
       <property name="Connector Datasheet" value="https://www.hirose.com/en/product/p/CL0586-0555-2-55"/>
       <property name="LCSC" value="C506794"/>
       <property name="Panel Datasheet" value="https://files.waveshare.com/wiki/2.42inch-OLED-Module/SSD1309Datasheet.pdf"/>
@@ -4062,30 +4062,30 @@
       <units>
         <unit name="A">
           <pins>
-            <pin num="6"/>
-            <pin num="7"/>
-            <pin num="8"/>
-            <pin num="9"/>
-            <pin num="10"/>
-            <pin num="11"/>
-            <pin num="12"/>
-            <pin num="13"/>
-            <pin num="14"/>
-            <pin num="15"/>
-            <pin num="16"/>
-            <pin num="17"/>
-            <pin num="18"/>
             <pin num="19"/>
-            <pin num="20"/>
+            <pin num="18"/>
+            <pin num="17"/>
+            <pin num="16"/>
+            <pin num="15"/>
+            <pin num="14"/>
+            <pin num="13"/>
+            <pin num="12"/>
+            <pin num="11"/>
+            <pin num="10"/>
+            <pin num="9"/>
+            <pin num="8"/>
+            <pin num="7"/>
+            <pin num="6"/>
             <pin num="5"/>
-            <pin num="23"/>
-            <pin num="21"/>
-            <pin num="22"/>
-            <pin num="1"/>
+            <pin num="20"/>
             <pin num="2"/>
+            <pin num="4"/>
             <pin num="3"/>
             <pin num="24"/>
-            <pin num="4"/>
+            <pin num="23"/>
+            <pin num="22"/>
+            <pin num="1"/>
+            <pin num="21"/>
           </pins>
         </unit>
       </units>
@@ -5154,41 +5154,41 @@
         <pin num="41" name="VSS" type="power_in"/>
       </pins>
     </libpart>
-    <libpart lib="Nucula_Project" part="SSD1309_COG_24">
-      <description>24-contact SSD1309 glass interface; supplied CON24 breakout pinout</description>
+    <libpart lib="Nucula_Project" part="SSD1309_COG_24_ReversedSocket">
+      <description>Mounted SSD1309 ribbon: display pin n maps to socket pad 25-n; numbers are Hirose socket pads</description>
       <docs>parts documentation/i2c-display-breakout-schematic.png.png</docs>
       <fields>
         <field name="Reference">DS</field>
-        <field name="Value">SSD1309_COG_24</field>
+        <field name="Value">SSD1309_COG_24_ReversedSocket</field>
         <field name="Footprint">Nucula_Project:Hirose_FH12A-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal</field>
         <field name="Datasheet">parts documentation/i2c-display-breakout-schematic.png.png</field>
-        <field name="Description">24-contact SSD1309 glass interface; supplied CON24 breakout pinout</field>
-        <field name="Footprint Status">SELECTED: 24-way 0.50 mm top-contact socket; Hirose drawing EDC3-150555-51 sheet 1 lands verified; supplied CON24 electrical map retained</field>
+        <field name="Description">Mounted SSD1309 ribbon: display pin n maps to socket pad 25-n; numbers are Hirose socket pads</field>
+        <field name="Footprint Status">SELECTED: 24-way 0.50 mm top-contact socket; Hirose drawing EDC3-150555-51 sheet 1 lands verified; display pin n maps to socket pad 25-n; panel pin 1 is PCB-left</field>
       </fields>
       <pins>
         <pin num="1" name="GND" type="power_in"/>
-        <pin num="2" name="VLSS" type="power_in"/>
-        <pin num="3" name="VSS" type="power_in"/>
-        <pin num="4" name="NC" type="no_connect"/>
-        <pin num="5" name="VDD" type="power_in"/>
-        <pin num="6" name="BS1" type="input"/>
-        <pin num="7" name="BS2" type="input"/>
-        <pin num="8" name="~{CS}" type="input"/>
-        <pin num="9" name="~{RES}" type="input"/>
-        <pin num="10" name="SA0_DC" type="input"/>
-        <pin num="11" name="RW" type="input"/>
-        <pin num="12" name="E_RD" type="input"/>
-        <pin num="13" name="D0_SCL" type="input"/>
-        <pin num="14" name="D1_SDA_IN" type="input"/>
-        <pin num="15" name="D2_SDA_OUT" type="open_collector"/>
-        <pin num="16" name="D3" type="input"/>
-        <pin num="17" name="D4" type="input"/>
-        <pin num="18" name="D5" type="input"/>
-        <pin num="19" name="D6" type="input"/>
-        <pin num="20" name="D7" type="input"/>
-        <pin num="21" name="IREF" type="passive"/>
-        <pin num="22" name="VCOMH" type="passive"/>
-        <pin num="23" name="VOP_PANEL" type="power_in"/>
+        <pin num="2" name="VOP_PANEL" type="power_in"/>
+        <pin num="3" name="VCOMH" type="passive"/>
+        <pin num="4" name="IREF" type="passive"/>
+        <pin num="5" name="D7" type="input"/>
+        <pin num="6" name="D6" type="input"/>
+        <pin num="7" name="D5" type="input"/>
+        <pin num="8" name="D4" type="input"/>
+        <pin num="9" name="D3" type="input"/>
+        <pin num="10" name="D2_SDA_OUT" type="open_collector"/>
+        <pin num="11" name="D1_SDA_IN" type="input"/>
+        <pin num="12" name="D0_SCL" type="input"/>
+        <pin num="13" name="E_RD" type="input"/>
+        <pin num="14" name="RW" type="input"/>
+        <pin num="15" name="SA0_DC" type="input"/>
+        <pin num="16" name="~{RES}" type="input"/>
+        <pin num="17" name="~{CS}" type="input"/>
+        <pin num="18" name="BS2" type="input"/>
+        <pin num="19" name="BS1" type="input"/>
+        <pin num="20" name="VDD" type="power_in"/>
+        <pin num="21" name="NC" type="no_connect"/>
+        <pin num="22" name="VSS" type="power_in"/>
+        <pin num="23" name="VLSS" type="power_in"/>
         <pin num="24" name="GND" type="power_in"/>
       </pins>
     </libpart>
@@ -5407,8 +5407,8 @@
       <node ref="C43" pin="1" pintype="passive"/>
       <node ref="C44" pin="1" pintype="passive"/>
       <node ref="C50" pin="1" pintype="passive"/>
-      <node ref="DS1" pin="5" pinfunction="VDD_5" pintype="power_in"/>
-      <node ref="DS1" pin="6" pinfunction="BS1_6" pintype="input"/>
+      <node ref="DS1" pin="19" pinfunction="BS1_19" pintype="input"/>
+      <node ref="DS1" pin="20" pinfunction="VDD_20" pintype="power_in"/>
       <node ref="R19" pin="1" pintype="passive"/>
       <node ref="R20" pin="1" pintype="passive"/>
       <node ref="R35" pin="1" pintype="passive"/>
@@ -5446,7 +5446,7 @@
       <node ref="U9" pin="3" pinfunction="VI_3" pintype="power_in"/>
     </net>
     <net code="3" name="/I2C_SCL" class="Default">
-      <node ref="DS1" pin="13" pinfunction="D0_SCL_13" pintype="input"/>
+      <node ref="DS1" pin="12" pinfunction="D0_SCL_12" pintype="input"/>
       <node ref="J4" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
       <node ref="J5" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
       <node ref="R20" pin="2" pintype="passive"/>
@@ -5456,8 +5456,8 @@
       <node ref="U8" pin="14" pinfunction="SCL_14" pintype="input"/>
     </net>
     <net code="4" name="/I2C_SDA" class="Default">
-      <node ref="DS1" pin="14" pinfunction="D1_SDA_IN_14" pintype="input"/>
-      <node ref="DS1" pin="15" pinfunction="D2_SDA_OUT_15" pintype="open_collector"/>
+      <node ref="DS1" pin="10" pinfunction="D2_SDA_OUT_10" pintype="open_collector"/>
+      <node ref="DS1" pin="11" pinfunction="D1_SDA_IN_11" pintype="input"/>
       <node ref="J4" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
       <node ref="J5" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
       <node ref="R19" pin="2" pintype="passive"/>
@@ -5617,7 +5617,7 @@
       <node ref="C45" pin="1" pintype="passive"/>
       <node ref="C46" pin="1" pintype="passive"/>
       <node ref="D4" pin="1" pinfunction="K_1" pintype="passive"/>
-      <node ref="DS1" pin="23" pinfunction="VOP_PANEL_23" pintype="power_in"/>
+      <node ref="DS1" pin="2" pinfunction="VOP_PANEL_2" pintype="power_in"/>
       <node ref="R30" pin="1" pintype="passive"/>
     </net>
     <net code="35" name="/OLED / SSD1309 / 0x3C/OLED_BOOST_IN" class="OLED_Boost">
@@ -5639,12 +5639,12 @@
       <node ref="R33" pin="2" pintype="passive"/>
     </net>
     <net code="38" name="/OLED / SSD1309 / 0x3C/OLED_IREF" class="Default">
-      <node ref="DS1" pin="21" pinfunction="IREF_21" pintype="passive"/>
+      <node ref="DS1" pin="4" pinfunction="IREF_4" pintype="passive"/>
       <node ref="R32" pin="1" pintype="passive"/>
     </net>
     <net code="39" name="/OLED / SSD1309 / 0x3C/OLED_RES_N" class="Default">
       <node ref="C48" pin="1" pintype="passive"/>
-      <node ref="DS1" pin="9" pinfunction="~{RES}_9" pintype="input"/>
+      <node ref="DS1" pin="16" pinfunction="~{RES}_16" pintype="input"/>
       <node ref="Q5" pin="3" pinfunction="D_3" pintype="passive"/>
       <node ref="R35" pin="2" pintype="passive"/>
     </net>
@@ -5655,7 +5655,7 @@
     </net>
     <net code="41" name="/OLED / SSD1309 / 0x3C/OLED_VCOMH" class="Default">
       <node ref="C47" pin="1" pintype="passive"/>
-      <node ref="DS1" pin="22" pinfunction="VCOMH_22" pintype="passive"/>
+      <node ref="DS1" pin="3" pinfunction="VCOMH_3" pintype="passive"/>
     </net>
     <net code="42" name="/OLED_PWR_EN" class="Default">
       <node ref="Q4" pin="1" pinfunction="G_1" pintype="input"/>
@@ -5811,19 +5811,19 @@
       <node ref="C8" pin="2" pintype="passive"/>
       <node ref="C9" pin="2" pintype="passive"/>
       <node ref="DS1" pin="1" pinfunction="GND_1" pintype="power_in"/>
-      <node ref="DS1" pin="10" pinfunction="SA0_DC_10" pintype="input"/>
-      <node ref="DS1" pin="11" pinfunction="RW_11" pintype="input"/>
-      <node ref="DS1" pin="12" pinfunction="E_RD_12" pintype="input"/>
-      <node ref="DS1" pin="16" pinfunction="D3_16" pintype="input"/>
-      <node ref="DS1" pin="17" pinfunction="D4_17" pintype="input"/>
-      <node ref="DS1" pin="18" pinfunction="D5_18" pintype="input"/>
-      <node ref="DS1" pin="19" pinfunction="D6_19" pintype="input"/>
-      <node ref="DS1" pin="2" pinfunction="VLSS_2" pintype="power_in"/>
-      <node ref="DS1" pin="20" pinfunction="D7_20" pintype="input"/>
+      <node ref="DS1" pin="13" pinfunction="E_RD_13" pintype="input"/>
+      <node ref="DS1" pin="14" pinfunction="RW_14" pintype="input"/>
+      <node ref="DS1" pin="15" pinfunction="SA0_DC_15" pintype="input"/>
+      <node ref="DS1" pin="17" pinfunction="~{CS}_17" pintype="input"/>
+      <node ref="DS1" pin="18" pinfunction="BS2_18" pintype="input"/>
+      <node ref="DS1" pin="22" pinfunction="VSS_22" pintype="power_in"/>
+      <node ref="DS1" pin="23" pinfunction="VLSS_23" pintype="power_in"/>
       <node ref="DS1" pin="24" pinfunction="GND_24" pintype="power_in"/>
-      <node ref="DS1" pin="3" pinfunction="VSS_3" pintype="power_in"/>
-      <node ref="DS1" pin="7" pinfunction="BS2_7" pintype="input"/>
-      <node ref="DS1" pin="8" pinfunction="~{CS}_8" pintype="input"/>
+      <node ref="DS1" pin="5" pinfunction="D7_5" pintype="input"/>
+      <node ref="DS1" pin="6" pinfunction="D6_6" pintype="input"/>
+      <node ref="DS1" pin="7" pinfunction="D5_7" pintype="input"/>
+      <node ref="DS1" pin="8" pinfunction="D4_8" pintype="input"/>
+      <node ref="DS1" pin="9" pinfunction="D3_9" pintype="input"/>
       <node ref="J1" pin="A1" pinfunction="GND_A1" pintype="passive"/>
       <node ref="J1" pin="A12" pinfunction="GND_A12" pintype="passive"/>
       <node ref="J1" pin="B1" pinfunction="GND_B1" pintype="passive"/>
@@ -5926,8 +5926,8 @@
       <node ref="R13" pin="2" pintype="passive"/>
       <node ref="U3" pin="14" pinfunction="IO19_14" pintype="bidirectional"/>
     </net>
-    <net code="73" name="unconnected-(DS1-NC-Pad4)" class="Default">
-      <node ref="DS1" pin="4" pinfunction="NC_4" pintype="no_connect"/>
+    <net code="73" name="unconnected-(DS1-NC-Pad21)" class="Default">
+      <node ref="DS1" pin="21" pinfunction="NC_21" pintype="no_connect"/>
     </net>
     <net code="74" name="unconnected-(J1-SBU1-PadA8)" class="Default">
       <node ref="J1" pin="A8" pinfunction="SBU1_A8" pintype="bidirectional+no_connect"/>
