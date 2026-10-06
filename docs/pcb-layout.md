@@ -1,9 +1,11 @@
 # PCB placement and routing
 
 **6 October update:** the display pin mapping and local routing are corrected
-at the unchanged socket orientation. Current JSON reports and top/copper
-drawings reflect that change; the September narrative below is historical.
-See the [current correction and USB backfeed report](bringup/rev-b-display-and-usb.md).
+at the unchanged socket orientation. The [USB backfeed redesign](bringup/usb-backfeed-fix.md)
+is also routed: 131 footprints, 119 populated parts, 1,103 trace segments and
+324 routing vias. Current JSON reports and drawings reflect both changes;
+the September narrative below is historical. USB signal-integrity advisories
+are recorded in the current report.
 
 22 September 2026 · KiCad 10.0.6 · routing-review revision
 

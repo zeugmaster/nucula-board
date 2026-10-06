@@ -164,17 +164,26 @@ def run(board_path, constraints, drc_path):
     for t in tracks:
         widths.setdefault(t.GetNetname(), collections.Counter())[str(round(k.ToMM(t.GetWidth()), 4))] += k.ToMM(t.GetLength())
     widths = {net: {w: round(length, 4) for w, length in ws.items()} for net, ws in widths.items()}
-    usb_lengths = {sign: round(sum(k.ToMM(t.GetLength()) for t in tracks if t.GetNetname().endswith("/USB_ESD_D" + sign)), 4) for sign in ["-", "+"]}
-    checks["usb_esd_to_series_resistor_skew_below_0_5mm"] = abs(usb_lengths["+"] - usb_lengths["-"]) < .5
+    usb_sections = {section: {sign: round(sum(k.ToMM(t.GetLength()) for t in tracks
+        if t.GetNetname().endswith('/' + section + sign)), 4) for sign in ['-', '+']}
+        for section in ['USB_D', 'USB_PHY_D']}
+    checks['both_sides_of_USB_switch_are_routed'] = all(
+        length > 0 for pair in usb_sections.values() for length in pair.values())
+    usb_lengths = {sign: round(sum(pair[sign] for pair in usb_sections.values()), 4)
+                   for sign in ['-', '+']}
+    checks["usb_connector_to_series_resistor_skew_below_0_5mm"] = abs(usb_lengths["+"] - usb_lengths["-"]) < .5
     reference = k.SHAPE_POLY_SET()
     for zone in board.Zones():
         if not zone.GetIsRuleArea() and zone.IsOnLayer(k.In2_Cu) and zone.GetNetname() == "GND":
             reference.BooleanAdd(zone.GetFilledPolysList(k.In2_Cu))
-    usb_vias = [v.GetPosition() for v in vias if "/USB_ESD_D" in v.GetNetname()]
+    def usb_net(name):
+        return any(name.endswith('/' + section + sign)
+                   for section in usb_sections for sign in ['-', '+'])
+    usb_vias = [v.GetPosition() for v in vias if usb_net(v.GetNetname())]
     missing_reference = []
     reference_samples = 0
     for t in tracks:
-        if t.GetLayer() != k.B_Cu or "/USB_ESD_D" not in t.GetNetname():
+        if t.GetLayer() != k.B_Cu or not usb_net(t.GetNetname()):
             continue
         a, b = t.GetStart(), t.GetEnd()
         length = t.GetLength()
@@ -220,7 +229,8 @@ def run(board_path, constraints, drc_path):
             "fixed_placements": fixed, "nfc_courtyard_outside_area_mm2": outside,
             "matching_component_symmetry": symmetry, "matching_copper_symmetry": rf_symmetry,
             "ground_pours": zones, "breakaway_crossings": crossings,
-            "usb_esd_to_series_resistor_lengths_mm": usb_lengths,
+            "usb_connector_to_series_resistor_total_copper_mm": usb_lengths,
+            "usb_section_copper_lengths_mm": usb_sections,
             "usb_ground_reference": {"samples": reference_samples, "missing": missing_reference,
                                      "via_antipad_exemption_radius_mm": .6},
             "track_widths_and_total_lengths_mm": widths}

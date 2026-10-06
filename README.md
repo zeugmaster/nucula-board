@@ -5,10 +5,11 @@ an SSD1309 OLED interface, and a detachable I²C keyboard section.
 
 **Status: Rev-A bring-up found a reversed display interface and USB backfeed.**
 The editable design now corrects and reroutes all 24 display contacts at the
-unchanged socket orientation. Existing measurements support the accepted U4
-backfeed diagnosis; its hardware remedy remains open. Pin-isolation rework is
-not required before proceeding with the redesign. See the
-[correction and bench report](docs/bringup/rev-b-display-and-usb.md).
+unchanged socket orientation. The USB redesign replaces the VBUS-steering ESD
+array with ground-referenced protection and adds a VBUS-controlled data switch.
+It uses the accepted diagnosis from the existing measurements; revised hardware
+still needs bench validation. See the [USB fix](docs/bringup/usb-backfeed-fix.md)
+and [display correction and measurements](docs/bringup/rev-b-display-and-usb.md).
 Existing manufacturing archives predate this correction and are not current
 ordering files. The ordinary unfilled vias and 17.70 × 5.00 mm ribbon access remain.
 
@@ -74,7 +75,7 @@ voltage checks. KiCad's standard symbols, footprints and 3D models are required;
 parts and the ESP32 STEP model are included with relative paths in `libraries/`.
 The optional PN7160 3D model is omitted because its terms prohibit redistribution;
 its symbol and electrical footprint are included.
-All 128 physical components have assigned footprints. A1 is a reusable four-turn
+All 129 physical components have assigned footprints. A1 is a reusable four-turn
 40 × 40 mm PCB coil with its bottom return and copper keepout included. The NFC
 tree now has calculated starting values, 0805 manual tuning pads and TX isolation
 links. [A separate bare-coil coupon](prototypes/nfc-antenna/nfc-antenna.kicad_pro)

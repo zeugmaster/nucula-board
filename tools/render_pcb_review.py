@@ -23,6 +23,7 @@ def main():
         for field in footprint.GetFields():
             field.SetVisible(field.GetName() == 'Reference')
     layers = {}
+    usb_layers = {}
     with tempfile.TemporaryDirectory(prefix='nucula-review-') as tmp:
         plot = k.PLOT_CONTROLLER(board)
         options = plot.GetPlotOptions()
@@ -42,6 +43,23 @@ def main():
             svg = (Path(tmp) / ('nucula-v2-' + name + '.svg')).read_text()
             layers[layer] = '\n'.join(line.rstrip() for line in
                                       svg[svg.index('<g '):svg.rindex('</svg>')].splitlines())
+        # Enlarged USB reviews use one centered label per component. Native
+        # reference fields plus ${REFERENCE} text otherwise overlap each other.
+        for footprint in board.GetFootprints():
+            for field in footprint.GetFields():
+                field.SetVisible(False)
+            for graphic in list(footprint.GraphicalItems()):
+                if isinstance(graphic, k.PCB_TEXT):
+                    graphic.SetLayer(k.Dwgs_User)
+        for layer in [k.F_Cu, k.F_Fab]:
+            name = 'usb-' + k.LayerName(layer).replace('.', '_')
+            plot.SetLayer(layer)
+            plot.OpenPlotfile(name, k.PLOT_FORMAT_SVG, '')
+            plot.PlotLayer()
+            plot.ClosePlot()
+            svg = (Path(tmp) / ('nucula-v2-' + name + '.svg')).read_text()
+            usb_layers[layer] = '\n'.join(line.rstrip() for line in
+                                          svg[svg.index('<g '):svg.rindex('</svg>')].splitlines())
 
     def colored(layer, color):
         return layers[layer].replace('#000000', color)
@@ -64,6 +82,18 @@ def main():
 
     write('display-clearance', '65 92 31 23', detail + access, 1550)
     write('top', '48 49 64 112', top + colored(k.Edge_Cuts, '#202c29') + access, 1400)
+    usb = usb_layers[k.F_Cu].replace('#000000', '#c4c9c6') + usb_layers[k.F_Fab].replace('#000000', '#223a4b')
+    for f in board.GetFootprints():
+        if f.GetReference().startswith('MB'):
+            continue
+        x, y = k.ToMM(f.GetPosition().x), k.ToMM(f.GetPosition().y)
+        size = .75 if f.GetReference() in ['U4', 'U10'] else .55
+        usb += (f'<text x="{x}" y="{y}" font-family="sans-serif" font-size="{size}" '
+                'text-anchor="middle" dominant-baseline="central" fill="#122c3b" '
+                'stroke="white" stroke-width="0.18" paint-order="stroke">'
+                + f.GetReference() + '</text>')
+    write('usb-protection', '54 107 16 10', usb + colored(k.Edge_Cuts, '#202c29'), 1600)
+    write('usb-switch', '87 114 18 9.5', usb + colored(k.Edge_Cuts, '#202c29'), 1800)
     write('nfc', '57 48 48 46', top, 1400)
     panels = []
     for i, (layer, name, color) in enumerate([(k.F_Cu, 'Front copper', '#9a6630'),

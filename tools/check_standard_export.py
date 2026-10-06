@@ -73,7 +73,20 @@ def main():
     # Gerbonara 1.5's Region object does not preserve component attributes;
     # every populated footprint (including DS1's mounting lands) also flashes.
     pasted = {o.attrs['.C'][0] for o in paste if isinstance(o, Flash) and '.C' in o.attrs}
-    checks['116_populated_parts_match_stencil_and_positions'] = len(placements) == len(populated) == 116 and pasted == populated
+    checks['119_populated_parts_match_stencil_and_positions'] = len(placements) == len(populated) == 119 and pasted == populated
+    from check_usb_backfeed import CHANGED_REFS, audit as usb_audit
+    assert usb_audit(ROOT/'nucula-v2.kicad_pcb', ROOT/'docs/netlist.xml')['passed']
+    expected_usb = {(q['ref'], q['num']): q for q in geometry['items']
+                    if q['type'] == 'pad' and q['ref'] in CHANGED_REFS}
+    exported_usb = {tuple(o.attrs['.P'][:2]): o
+                    for o in stack.graphic_layers['top', 'copper'].objects
+                    if isinstance(o, Flash) and o.attrs.get('.P', ('',))[0] in CHANGED_REFS}
+    checks['USB_redesign_pad_nets_and_positions_match_exported_copper'] = (
+        set(expected_usb) == set(exported_usb) and all(
+            o.attrs.get('.N', ('',))[0] == q['net']
+            and abs(o.x-(q['xy'][0]-50)) < 1e-6
+            and abs(o.y-(160-q['xy'][1])) < 1e-6
+            for key, q in expected_usb.items() for o in [exported_usb[key]]))
     spec = json.loads((out / 'manufacturing-spec.json').read_text())
     checks['no_DNP_or_mechanical_paste'] = not pasted.intersection(spec['dnp'] + spec['non_components'])
 

@@ -5,9 +5,9 @@ repair. The fabricated Rev-A provenance and original measurements remain in
 [rev-A-provenance.json](rev-A-provenance.json) and
 [rev-A-usb-battery-2026-10-01.json](rev-A-usb-battery-2026-10-01.json).
 
-**Display wiring is corrected and routed. USB backfeed remains an open hardware
-finding awaiting a remedy based on the accepted U4 diagnosis. No new fabrication release
-is approved by these software checks.** Archived manufacturing ZIPs have not
+**Display wiring is corrected and routed. The subsequent [USB hardware redesign](usb-backfeed-fix.md)
+implements the remedy based on the accepted U4 diagnosis; physical validation is pending.
+No new fabrication release is approved by these software checks.** Archived manufacturing ZIPs have not
 been updated and still contain the reversed display wiring.
 
 ## Display correction
@@ -43,11 +43,11 @@ and PCB `FLEX 1` / `24` legend explicitly identify the mounted ribbon order.
 | 23 | 2 | OLED_12V5 |
 | 24 | 1 | GND |
 
-The connector fanout and local OLED routes were rebuilt, ground buses restored
+At commit `03404a2`, the connector fanout and local OLED routes were rebuilt, ground buses restored
 and a ground stitching via added to connect the new front copper island. All
 130 footprint positions and all component values/population remain unchanged.
 The copper outside the display work, including USB and the NFC matching tree,
-is preserved. The current board has 1,044 trace segments and 320 routing vias.
+is preserved. That saved board had 1,044 trace segments and 320 routing vias.
 Two reference labels moved to the fabrication layer and one Q5 legend segment
 was clipped to clear open vias.
 
@@ -94,10 +94,10 @@ rework and has instructed us to proceed using the existing measurements as
 the basis for the diagnosis. We accept ESP32 D+ → R13 → U4 → VBUS as the
 working cause for the redesign. Physical isolation was not performed and is
 not a prerequisite for that work. The isolation instructions below remain an
-optional diagnostic reference. No backfeed hardware remedy has yet been
-implemented or validated.
+optional diagnostic reference. The subsequent [USB redesign](usb-backfeed-fix.md)
+implements the remedy; the following topology describes the historical Rev-A circuit.
 
-The saved schematic and PCB retain this possible DC path:
+The Rev-A schematic and PCB contain this possible DC path:
 
 ```mermaid
 flowchart LR

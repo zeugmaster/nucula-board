@@ -1,5 +1,5 @@
 VBUS decay after ALL sources are removed; initial VBUS 5.25 V
-R18 vbus 0 100000.0
+R18 vbus 0 10000.0
 C14 vbus 0 1.0000000000000001e-07 IC=5.25
 .tran 10u 60m uic
 .end

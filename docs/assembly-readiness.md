@@ -1,6 +1,11 @@
 # Component and footprint readiness
 
-## Current five-board revision — 22 September 2026
+**6 October update:** the [USB redesign](bringup/usb-backfeed-fix.md) has 119
+populated parts per board. The current BOM, five-board purchasing list and
+readiness JSON include the new U4, U10, D5 and C55 selections. Historical
+manufacturing archives and the September sourcing narrative below are unchanged.
+
+## Historical five-board revision — 22 September 2026
 
 The component, footprint and assembly checks pass for the revised board: 116
 populated components per board, 55 distinct BOM parts, with values and MPNs

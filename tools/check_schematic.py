@@ -52,11 +52,11 @@ for net in xml.findall('./nets/net'):
 # These physical pin numbers come from the cited component datasheets, independently
 # of the drawing-generation coordinates. Exact group membership catches crossed nets.
 groups = {
-    'VBUS': 'J1.A4 J1.A9 J1.B4 J1.B9 D1.2 U4.5 Q2.1 R18.1 C14.1',
+    'VBUS': 'J1.A4 J1.A9 J1.B4 J1.B9 D1.2 D5.1 Q2.1 R18.1 C14.1',
     'USB_5V': 'D1.1 D2.2 Q1.1 R5.1 U1.4 C1.1 D3.2',
     'VSYS': 'D2.1 Q1.2 U2.1 U2.4 C4.1 C17.1 C18.1 Q3.2 R29.1 R33.1 U6.12 U6.28',
     'VBAT': 'U1.3 J2.1 Q1.3 C2.1 R15.1',
-    '+3V3': 'L1.2 R6.1 C3.1 C5.1 C6.1 C9.1 C10.1 U3.1 U5.3 C11.1 R8.1 R9.1 R10.1 R11.1 R17.1 C15.1 C16.1 C49.1 C51.1 C52.1 J4.1 J5.1 R37.1 R38.1 R39.1 R40.1 U6.6 U8.16 U9.3',
+    '+3V3': 'L1.2 R6.1 C3.1 C5.1 C6.1 C9.1 C10.1 U3.1 U5.3 C11.1 R8.1 R9.1 R10.1 R11.1 R17.1 C15.1 C16.1 C49.1 C51.1 C52.1 J4.1 J5.1 R37.1 R38.1 R39.1 R40.1 U6.6 U8.16 U9.3 U10.10 C55.1',
     '+3V0': 'C43.1 C44.1 C50.1 DS1.20 DS1.19 R19.1 R20.1 R35.1 U9.2',
     'BUCK_FB': 'U2.5 R6.2 R7.1 C3.2',
     'ESP_EN': 'U3.2 U5.2 R8.2 C12.1 SW1.1',
@@ -64,11 +64,11 @@ groups = {
     'STRAP_GPIO2': 'U3.16 R9.2',
     'STRAP_GPIO8': 'U3.7 R10.2',
     'VBAT_ADC': 'U3.18 R15.2 R16.1 C13.1',
-    'USB_PRESENT_N': 'U3.17 Q2.3 R17.2',
-    'USB_D-': 'J1.A7 J1.B7 U4.1',
-    'USB_D+': 'J1.A6 J1.B6 U4.3',
-    'USB_ESD_D-': 'U4.6 R12.1',
-    'USB_ESD_D+': 'U4.4 R13.1',
+    'USB_PRESENT_N': 'U3.17 Q2.3 R17.2 U10.9',
+    'USB_D-': 'J1.A7 J1.B7 U4.1 U10.6',
+    'USB_D+': 'J1.A6 J1.B6 U4.2 U10.4',
+    'USB_PHY_D-': 'U10.8 R12.1',
+    'USB_PHY_D+': 'U10.2 R13.1',
     'I2C_SDA': 'DS1.11 DS1.10 J4.3 J5.3 R19.2 R38.2 U3.3 U6.5 U8.15',
     'I2C_SCL': 'DS1.12 J4.4 J5.4 R20.2 R39.2 U3.4 U6.7 U8.14',
     'KEY_INT_N': 'J4.5 J5.5 R37.2 R40.2 U3.11 U8.13',
@@ -110,11 +110,11 @@ for name, nodes in groups.items():
     assert net_members[name] == set(nodes.split()), f'{name}: {net_members[name]} != {nodes}'
 for nodes in ['U2.3 L1.1', 'U1.5 R3.1', 'U1.1 R4.1', 'R4.2 D3.1',
               'J1.A5 R1.1', 'J1.B5 R2.1', 'R14.2 SW2.1',
-              'R12.2 U3.13 C7.1', 'R13.2 U3.14 C8.1',
+              'R12.2 U3.13', 'R13.2 U3.14',
               'A1.1 R27.2', 'A1.2 R28.2', 'C28.2 R25.1', 'C29.2 R26.1']:
     expected = set(nodes.split())
     assert net_members[net_of[next(iter(expected))]] == expected, nodes
-for pin in ('J1.A1 J1.A12 J1.B1 J1.B12 J1.SH J2.2 U1.2 U2.2 U3.9 U3.19 U4.2 U5.1 '
+for pin in ('J1.A1 J1.A12 J1.B1 J1.B12 J1.SH J2.2 U1.2 U2.2 U3.9 U3.19 U4.3 U5.1 D5.2 U10.1 U10.5 C55.2 '
             'Q2.2 R1.2 R2.2 R3.2 R5.2 R7.2 '
             'U6.4 U6.9 U6.20 U6.39 U6.41 Y1.2 Y1.4 R21.2 R22.2 R23.2 R24.2 '
             'C15.2 C16.2 C17.2 C18.2 C19.2 C20.2 C21.2 C22.2 C23.2 C24.2 C25.2 '
@@ -124,20 +124,21 @@ for pin in ('J1.A1 J1.A12 J1.B1 J1.B12 J1.SH J2.2 U1.2 U2.2 U3.9 U3.19 U4.2 U5.1
             'DS1.14 DS1.13 DS1.9 DS1.8 DS1.7 DS1.6 DS1.5 DS1.1 '
             'U8.1 U8.2 U8.3 U8.8 J4.2 J5.2 C49.2 C50.2 C51.2 C52.2 U9.1').split():
     assert net_of[pin] == 'GND', pin
-for pin in ('J1.A8 J1.B8 U3.12 DS1.21 U6.11 U6.23 U6.24 U6.25 '
+for pin in ('J1.A8 J1.B8 U3.12 DS1.21 U10.3 U10.7 U6.11 U6.23 U6.24 U6.25 '
             'U6.32 U6.33 U6.34 U6.35 U6.36 U6.37 U6.38 U6.40 J3.1 J3.9 U8.12').split():
     assert net_of[pin].startswith('unconnected-'), pin
-for pin in ['J3.1','J3.9','U8.12']:
+for pin in ['J3.1','J3.9','U8.12','U10.3','U10.7']:
     assert net_members[net_of[pin]] == {pin}, f'{pin} must remain isolated'
 assert 'KEY_P7' not in net_members, 'Only seven matrix lines connect to the keypad'
 
 values = {r: c.findtext('value') for r, c in components.items()}
 for ref, value in {'U1':'TP4054-42-SOT25R', 'U2':'SY8089AAAC', 'U3':'ESP32-C3-WROOM-02-N4',
                    'U5':'TLV803EA30DBZR', 'R1':'5.1k', 'R2':'5.1k', 'R3':'10k',
-                   'R6':'220k', 'R7':'48.7k', 'R12':'22R', 'R13':'22R',
+                   'R6':'220k', 'R7':'48.7k', 'R12':'22R', 'R13':'22R', 'R17':'10k', 'R18':'10k',
                    'R15':'470k', 'R16':'470k', 'L1':'2.2uH', 'D1':'B340A','D2':'B340A',
                    'U6':'PN7160A1HN/C100E','U7':'AP3012KTR-E1','U8':'PCF8574T',
-                   'U9':'MCP1700T-3002E/TT','R19':'2.2k','R20':'2.2k','R21':'10k',
+                   'U9':'MCP1700T-3002E/TT','U4':'TPD2E2U06QDCKRQ1','U10':'TS3USB30EDGSR','D5':'TPD1E10B06DYAR','C55':'100nF',
+                   'R19':'2.2k','R20':'2.2k','R21':'10k',
                    'R22':'100k','R23':'100k','R24':'100k','R29':'0R','R30':'1.8M',
                    'R31':'200k','R32':'910k','L4':'10uH','D4':'SS14',
                    'L2':'150nH','L3':'150nH','C28':'1nF','C29':'1nF',
@@ -169,7 +170,7 @@ read_hierarchy(SCH)
 assert len(schematics) == 5
 for ref in ['D1','D2']:
     assert properties(instances[ref])['Datasheet'] == 'https://www.diodes.com/datasheet/download/B340A.pdf'
-for ref in ['C7','C8','J3','J4','J5','C34','C35','C38','C39','R38','R39']:
+for ref in ['J3','J4','J5','C34','C35','C38','C39','R38','R39']:
     assert child(instances[ref],'dnp')[1] == 'yes', f'{ref} must remain DNP'
 assert fields['J3']['Pinout'] == '1=NC; 2..8=P0..P6; 9=NC'
 assert components['J3'].findtext('footprint') == 'Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical'
@@ -308,7 +309,7 @@ report={
  'pcb_layout_report':'pcb/layout-check.json',
  'fabrication_release_ready':False,
  'known_hardware_findings':[
-     'Rev-A battery-only VBUS measured 2.05 V, falling to 0.01 V on RESET while D+ falls from 2.84 V to 0 V and +3V3 stays at 3.33 V. The user accepts the inferred U4 steering-diode path for redesign without physical isolation; a validated hardware remedy remains required.',
+     'Rev-A measured USB backfeed: redesigned with ground-referenced U4, separate VBUS TVS D5 and VBUS-controlled U10 data disconnect. The accepted diagnosis does not require further Rev-A isolation; corrected-hardware USB reconnection and ESD performance remain bench checks.',
      'Mounted display mapping corrected: panel pin n connects to Hirose socket pad 25-n. See oled24/mounted-mapping-check.json.'
  ],
  'layout_blockers':[],

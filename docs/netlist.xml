@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>nucula-v2.kicad_sch</source>
-    <date>2026-10-06T16:14:16</date>
+    <date>2026-10-06T19:45:33</date>
     <tool>Eeschema 10.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -573,68 +573,6 @@
         </unit>
       </units>
     </comp>
-    <comp ref="C7">
-      <value>DNP / USB tune</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
-      <fields>
-        <field name="Voltage">16 V</field>
-        <field name="Dielectric">X7R</field>
-        <field name="Tolerance">10%</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="16 V"/>
-      <property name="Dielectric" value="X7R"/>
-      <property name="Tolerance" value="10%"/>
-      <property name="Sheetname" value="Power + ESP32-C3"/>
-      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
-      <property name="dnp"/>
-      <property name="ki_keywords" value="cap capacitor"/>
-      <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
-      <tstamps>dea7d118-9510-50b4-b308-e7815c889dd3</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="C8">
-      <value>DNP / USB tune</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
-      <fields>
-        <field name="Voltage">16 V</field>
-        <field name="Dielectric">X7R</field>
-        <field name="Tolerance">10%</field>
-        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Voltage" value="16 V"/>
-      <property name="Dielectric" value="X7R"/>
-      <property name="Tolerance" value="10%"/>
-      <property name="Sheetname" value="Power + ESP32-C3"/>
-      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
-      <property name="dnp"/>
-      <property name="ki_keywords" value="cap capacitor"/>
-      <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
-      <tstamps>1b180e63-2891-5b81-a54b-71b80145e00b</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
     <comp ref="C9">
       <value>22uF</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
@@ -859,6 +797,43 @@
         </unit>
       </units>
     </comp>
+    <comp ref="C55">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf</datasheet>
+      <fields>
+        <field name="Voltage">50 V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Tolerance">10%</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL10B104KB8NNNC</field>
+        <field name="LCSC">C1591</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage" value="50 V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL10B104KB8NNNC"/>
+      <property name="LCSC" value="C1591"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
+      <tstamps>37b31a7e-892a-45e0-951a-120758a46349</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
     <comp ref="D1">
       <value>B340A</value>
       <footprint>Diode_SMD:D_SMA</footprint>
@@ -948,6 +923,37 @@
       <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
       <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>a48fb3ea-f964-5e14-9479-9a3e8af1b2f8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D5">
+      <value>TPD1E10B06DYAR</value>
+      <footprint>Diode_SMD:D_SOD-523</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tpd1e10b06.pdf</datasheet>
+      <fields>
+        <field name="MPN">TPD1E10B06DYAR</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="LCSC">C3712135</field>
+        <field name="Footprint">Diode_SMD:D_SOD-523</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tpd1e10b06.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="D_TVS" description="Bidirectional transient-voltage-suppression diode"/>
+      <property name="MPN" value="TPD1E10B06DYAR"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="LCSC" value="C3712135"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
+      <property name="ki_keywords" value="diode TVS thyrector"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
+      <tstamps>5f89ccdb-8d0a-4ab6-8e92-8106d96e377b</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -1699,25 +1705,25 @@
       </units>
     </comp>
     <comp ref="R17">
-      <value>100k</value>
+      <value>10k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
-      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1003T5E_C25803.pdf</datasheet>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</datasheet>
       <fields>
         <field name="Tolerance">1%</field>
         <field name="Rating">0.1 W</field>
         <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
-        <field name="MPN">0603WAF1003T5E</field>
-        <field name="LCSC">C25803</field>
+        <field name="MPN">0603WAF1002T5E</field>
+        <field name="LCSC">C25804</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1003T5E_C25803.pdf</field>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
       <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
-      <property name="MPN" value="0603WAF1003T5E"/>
-      <property name="LCSC" value="C25803"/>
+      <property name="MPN" value="0603WAF1002T5E"/>
+      <property name="LCSC" value="C25804"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1734,25 +1740,25 @@
       </units>
     </comp>
     <comp ref="R18">
-      <value>100k</value>
+      <value>10k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
-      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1003T5E_C25803.pdf</datasheet>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</datasheet>
       <fields>
         <field name="Tolerance">1%</field>
         <field name="Rating">0.1 W</field>
         <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
-        <field name="MPN">0603WAF1003T5E</field>
-        <field name="LCSC">C25803</field>
+        <field name="MPN">0603WAF1002T5E</field>
+        <field name="LCSC">C25804</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1003T5E_C25803.pdf</field>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Tolerance" value="1%"/>
       <property name="Rating" value="0.1 W"/>
       <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
-      <property name="MPN" value="0603WAF1003T5E"/>
-      <property name="LCSC" value="C25803"/>
+      <property name="MPN" value="0603WAF1002T5E"/>
+      <property name="LCSC" value="C25804"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1944,36 +1950,33 @@
       </units>
     </comp>
     <comp ref="U4">
-      <value>USBLC6-2SC6</value>
-      <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
-      <datasheet>https://www.st.com/resource/en/datasheet/usblc6-2.pdf</datasheet>
+      <value>TPD2E2U06QDCKRQ1</value>
+      <footprint>Package_TO_SOT_SMD:SOT-323_SC-70</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tpd2e2u06-q1.pdf</datasheet>
       <fields>
-        <field name="MPN">USBLC6-2SC6</field>
-        <field name="Manufacturer">STMicroelectronics</field>
-        <field name="LCSC">C7519</field>
-        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
-        <field name="Datasheet">https://www.st.com/resource/en/datasheet/usblc6-2.pdf</field>
+        <field name="MPN">TPD2E2U06QDCKRQ1</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="LCSC">C915089</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-323_SC-70</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tpd2e2u06-q1.pdf</field>
         <field name="Description"/>
       </fields>
-      <libsource lib="Power_Protection" part="USBLC6-2SC6" description="Very low capacitance ESD protection diode, 2 data-line, SOT-23-6"/>
-      <property name="MPN" value="USBLC6-2SC6"/>
-      <property name="Manufacturer" value="STMicroelectronics"/>
-      <property name="LCSC" value="C7519"/>
+      <libsource lib="Power_Protection" part="TPD2E2U06DCK" description="Dual-Channel High-Speed ESD Protection, SC-70"/>
+      <property name="MPN" value="TPD2E2U06QDCKRQ1"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="LCSC" value="C915089"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
-      <property name="ki_keywords" value="usb ethernet video"/>
-      <property name="ki_fp_filters" value="SOT?23*"/>
+      <property name="ki_keywords" value="TVS"/>
+      <property name="ki_fp_filters" value="*SC?70*"/>
       <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
       <tstamps>abde35b5-7ac4-52cf-b388-2034731b4d8d</tstamps>
       <units>
         <unit name="A">
           <pins>
             <pin num="1"/>
-            <pin num="3"/>
-            <pin num="5"/>
             <pin num="2"/>
-            <pin num="6"/>
-            <pin num="4"/>
+            <pin num="3"/>
           </pins>
         </unit>
       </units>
@@ -2006,6 +2009,45 @@
             <pin num="3"/>
             <pin num="1"/>
             <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U10">
+      <value>TS3USB30EDGSR</value>
+      <footprint>Package_SO:TSSOP-10_3x3mm_P0.5mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/ts3usb30e.pdf</datasheet>
+      <fields>
+        <field name="MPN">TS3USB30EDGSR</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="LCSC">C131998</field>
+        <field name="Footprint">Package_SO:TSSOP-10_3x3mm_P0.5mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/ts3usb30e.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Interface_USB" part="TS3USB30EDGSR" description="ESD-Protected, High-Speed USB 2.0 (480-Mbps) 1:2 Multiplexer/Demultiplexer Switch With Single Enable, TSSOP-10 (Texas DGS0010A / VSSOP)"/>
+      <property name="MPN" value="TS3USB30EDGSR"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="LCSC" value="C131998"/>
+      <property name="Sheetname" value="Power + ESP32-C3"/>
+      <property name="Sheetfile" value="power-mcu.kicad_sch"/>
+      <property name="ki_keywords" value="usb mux"/>
+      <property name="ki_fp_filters" value="*TSSOP*3x3mm?P0.5mm*"/>
+      <sheetpath names="/Power + ESP32-C3/" tstamps="/fb75d057-1132-5b57-a81b-eb5d982df322/"/>
+      <tstamps>84ab2804-5cd0-48e0-aad0-5d30b84a352b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="4"/>
+            <pin num="6"/>
+            <pin num="9"/>
+            <pin num="1"/>
+            <pin num="10"/>
+            <pin num="5"/>
+            <pin num="2"/>
+            <pin num="8"/>
+            <pin num="3"/>
+            <pin num="7"/>
           </pins>
         </unit>
       </units>
@@ -4958,6 +5000,26 @@
         <pin num="2" name="A" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="Device" part="D_TVS">
+      <description>Bidirectional transient-voltage-suppression diode</description>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_TVS</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Bidirectional transient-voltage-suppression diode</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A1" type="passive"/>
+        <pin num="2" name="A2" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="Device" part="L">
       <description>Inductor</description>
       <footprints>
@@ -5045,6 +5107,32 @@
         <pin num="14" name="SCL" type="input"/>
         <pin num="15" name="SDA" type="bidirectional"/>
         <pin num="16" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Interface_USB" part="TS3USB30EDGSR">
+      <description>ESD-Protected, High-Speed USB 2.0 (480-Mbps) 1:2 Multiplexer/Demultiplexer Switch With Single Enable, TSSOP-10 (Texas DGS0010A / VSSOP)</description>
+      <docs>https://www.ti.com/lit/ds/symlink/ts3usb30e.pdf</docs>
+      <footprints>
+        <fp>*TSSOP*3x3mm?P0.5mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TS3USB30EDGSR</field>
+        <field name="Footprint">Package_SO:TSSOP-10_3x3mm_P0.5mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/ts3usb30e.pdf</field>
+        <field name="Description">ESD-Protected, High-Speed USB 2.0 (480-Mbps) 1:2 Multiplexer/Demultiplexer Switch With Single Enable, TSSOP-10 (Texas DGS0010A / VSSOP)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="S" type="input"/>
+        <pin num="2" name="D1+" type="bidirectional"/>
+        <pin num="3" name="D2+" type="bidirectional"/>
+        <pin num="4" name="D+" type="bidirectional"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="D-" type="bidirectional"/>
+        <pin num="7" name="D2-" type="bidirectional"/>
+        <pin num="8" name="D1-" type="bidirectional"/>
+        <pin num="9" name="~{OE}" type="input"/>
+        <pin num="10" name="VCC" type="power_in"/>
       </pins>
     </libpart>
     <libpart lib="Nucula_Project" part="ESP32-C3-WROOM-02-N4">
@@ -5255,26 +5343,23 @@
         <pin num="5" name="PROG" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="Power_Protection" part="USBLC6-2SC6">
-      <description>Very low capacitance ESD protection diode, 2 data-line, SOT-23-6</description>
-      <docs>https://www.st.com/resource/en/datasheet/usblc6-2.pdf</docs>
+    <libpart lib="Power_Protection" part="TPD2E2U06DCK">
+      <description>Dual-Channel High-Speed ESD Protection, SC-70</description>
+      <docs>http://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf</docs>
       <footprints>
-        <fp>SOT?23*</fp>
+        <fp>*SC?70*</fp>
       </footprints>
       <fields>
         <field name="Reference">U</field>
-        <field name="Value">USBLC6-2SC6</field>
-        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
-        <field name="Datasheet">https://www.st.com/resource/en/datasheet/usblc6-2.pdf</field>
-        <field name="Description">Very low capacitance ESD protection diode, 2 data-line, SOT-23-6</field>
+        <field name="Value">TPD2E2U06DCK</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-323_SC-70</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf</field>
+        <field name="Description">Dual-Channel High-Speed ESD Protection, SC-70</field>
       </fields>
       <pins>
-        <pin num="1" name="I/O1" type="passive"/>
-        <pin num="2" name="GND" type="passive"/>
-        <pin num="3" name="I/O2" type="passive"/>
-        <pin num="4" name="I/O2" type="passive"/>
-        <pin num="5" name="VBUS" type="passive"/>
-        <pin num="6" name="I/O1" type="passive"/>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+        <pin num="3" name="" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Regulator_Linear" part="MCP1700x-300xxTT">
@@ -5383,6 +5468,9 @@
     <library logical="Interface_Expansion">
       <uri>${KICAD10_SYMBOL_DIR}/Interface_Expansion.kicad_sym</uri>
     </library>
+    <library logical="Interface_USB">
+      <uri>${KICAD10_SYMBOL_DIR}/Interface_USB.kicad_sym</uri>
+    </library>
     <library logical="Nucula_Project">
       <uri>${KIPRJMOD}/libraries/Nucula_Project.kicad_sym</uri>
     </library>
@@ -5424,6 +5512,7 @@
       <node ref="C5" pin="1" pintype="passive"/>
       <node ref="C51" pin="1" pintype="passive"/>
       <node ref="C52" pin="1" pintype="passive"/>
+      <node ref="C55" pin="1" pintype="passive"/>
       <node ref="C6" pin="1" pintype="passive"/>
       <node ref="C9" pin="1" pintype="passive"/>
       <node ref="J4" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
@@ -5439,6 +5528,7 @@
       <node ref="R6" pin="1" pintype="passive"/>
       <node ref="R8" pin="1" pintype="passive"/>
       <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="U10" pin="10" pinfunction="VCC_10" pintype="power_in"/>
       <node ref="U3" pin="1" pinfunction="3V3_1" pintype="power_in"/>
       <node ref="U5" pin="3" pinfunction="VDD_3" pintype="power_in"/>
       <node ref="U6" pin="6" pinfunction="VDD(PAD)_6" pintype="power_in"/>
@@ -5705,24 +5795,27 @@
     <net code="50" name="/Power + ESP32-C3/USB_D+" class="Default">
       <node ref="J1" pin="A6" pinfunction="D+_A6" pintype="bidirectional"/>
       <node ref="J1" pin="B6" pinfunction="D+_B6" pintype="bidirectional"/>
-      <node ref="U4" pin="3" pinfunction="I/O2_3" pintype="passive"/>
+      <node ref="U10" pin="4" pinfunction="D+_4" pintype="bidirectional"/>
+      <node ref="U4" pin="2" pintype="passive"/>
     </net>
     <net code="51" name="/Power + ESP32-C3/USB_D-" class="Default">
       <node ref="J1" pin="A7" pinfunction="D-_A7" pintype="bidirectional"/>
       <node ref="J1" pin="B7" pinfunction="D-_B7" pintype="bidirectional"/>
-      <node ref="U4" pin="1" pinfunction="I/O1_1" pintype="passive"/>
+      <node ref="U10" pin="6" pinfunction="D-_6" pintype="bidirectional"/>
+      <node ref="U4" pin="1" pintype="passive"/>
     </net>
-    <net code="52" name="/Power + ESP32-C3/USB_ESD_D+" class="USB_90ohm">
+    <net code="52" name="/Power + ESP32-C3/USB_PHY_D+" class="Default">
       <node ref="R13" pin="1" pintype="passive"/>
-      <node ref="U4" pin="4" pinfunction="I/O2_4" pintype="passive"/>
+      <node ref="U10" pin="2" pinfunction="D1+_2" pintype="bidirectional"/>
     </net>
-    <net code="53" name="/Power + ESP32-C3/USB_ESD_D-" class="USB_90ohm">
+    <net code="53" name="/Power + ESP32-C3/USB_PHY_D-" class="Default">
       <node ref="R12" pin="1" pintype="passive"/>
-      <node ref="U4" pin="6" pinfunction="I/O1_6" pintype="passive"/>
+      <node ref="U10" pin="8" pinfunction="D1-_8" pintype="bidirectional"/>
     </net>
     <net code="54" name="/Power + ESP32-C3/USB_PRESENT_N" class="Default">
       <node ref="Q2" pin="3" pinfunction="D_3" pintype="passive"/>
       <node ref="R17" pin="2" pintype="passive"/>
+      <node ref="U10" pin="9" pinfunction="~{OE}_9" pintype="input"/>
       <node ref="U3" pin="17" pinfunction="IO1_17" pintype="bidirectional"/>
     </net>
     <net code="55" name="/Power + ESP32-C3/VBAT" class="Power_1A">
@@ -5741,13 +5834,13 @@
     <net code="57" name="/Power + ESP32-C3/VBUS" class="Power_1A">
       <node ref="C14" pin="1" pintype="passive"/>
       <node ref="D1" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D5" pin="1" pinfunction="A1_1" pintype="passive"/>
       <node ref="J1" pin="A4" pinfunction="VBUS_A4" pintype="passive"/>
       <node ref="J1" pin="A9" pinfunction="VBUS_A9" pintype="passive"/>
       <node ref="J1" pin="B4" pinfunction="VBUS_B4" pintype="passive"/>
       <node ref="J1" pin="B9" pinfunction="VBUS_B9" pintype="passive"/>
       <node ref="Q2" pin="1" pinfunction="G_1" pintype="input"/>
       <node ref="R18" pin="1" pintype="passive"/>
-      <node ref="U4" pin="5" pinfunction="VBUS_5" pintype="passive"/>
     </net>
     <net code="58" name="/VSYS" class="Power_1A">
       <node ref="C17" pin="1" pintype="passive"/>
@@ -5806,10 +5899,10 @@
       <node ref="C52" pin="2" pintype="passive"/>
       <node ref="C53" pin="2" pintype="passive"/>
       <node ref="C54" pin="1" pintype="passive"/>
+      <node ref="C55" pin="2" pintype="passive"/>
       <node ref="C6" pin="2" pintype="passive"/>
-      <node ref="C7" pin="2" pintype="passive"/>
-      <node ref="C8" pin="2" pintype="passive"/>
       <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="D5" pin="2" pinfunction="A2_2" pintype="passive"/>
       <node ref="DS1" pin="1" pinfunction="GND_1" pintype="power_in"/>
       <node ref="DS1" pin="13" pinfunction="E_RD_13" pintype="input"/>
       <node ref="DS1" pin="14" pinfunction="RW_14" pintype="input"/>
@@ -5853,10 +5946,12 @@
       <node ref="SW1" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="SW2" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="U1" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U10" pin="1" pinfunction="S_1" pintype="input"/>
+      <node ref="U10" pin="5" pinfunction="GND_5" pintype="power_in"/>
       <node ref="U2" pin="2" pinfunction="GND_2" pintype="power_in"/>
       <node ref="U3" pin="19" pinfunction="GND_19" pintype="passive"/>
       <node ref="U3" pin="9" pinfunction="GND_9" pintype="power_in"/>
-      <node ref="U4" pin="2" pinfunction="GND_2" pintype="passive"/>
+      <node ref="U4" pin="3" pintype="passive"/>
       <node ref="U5" pin="1" pinfunction="GND_1" pintype="power_in"/>
       <node ref="U6" pin="20" pinfunction="VSS(TX)_20" pintype="power_in"/>
       <node ref="U6" pin="39" pinfunction="WKUP_REQ_39" pintype="input"/>
@@ -5917,12 +6012,10 @@
       <node ref="U2" pin="3" pinfunction="LX_3" pintype="power_out"/>
     </net>
     <net code="71" name="Net-(U3-IO18)" class="USB_90ohm">
-      <node ref="C7" pin="1" pintype="passive"/>
       <node ref="R12" pin="2" pintype="passive"/>
       <node ref="U3" pin="13" pinfunction="IO18_13" pintype="bidirectional"/>
     </net>
     <net code="72" name="Net-(U3-IO19)" class="USB_90ohm">
-      <node ref="C8" pin="1" pintype="passive"/>
       <node ref="R13" pin="2" pintype="passive"/>
       <node ref="U3" pin="14" pinfunction="IO19_14" pintype="bidirectional"/>
     </net>
@@ -5982,6 +6075,12 @@
     </net>
     <net code="91" name="unconnected-(U8-P7-Pad12)" class="Default">
       <node ref="U8" pin="12" pinfunction="P7_12" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="92" name="unconnected-(U10-D2+-Pad3)" class="Default">
+      <node ref="U10" pin="3" pinfunction="D2+_3" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="93" name="unconnected-(U10-D2--Pad7)" class="Default">
+      <node ref="U10" pin="7" pinfunction="D2-_7" pintype="bidirectional+no_connect"/>
     </net>
   </nets>
 </export>

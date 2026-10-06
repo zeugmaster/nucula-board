@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "checks": {
+    "qualified_parts_and_package_pin_maps": true,
+    "connector_Dminus_has_only_ground_TVS_and_switch_common": true,
+    "connector_Dplus_has_only_ground_TVS_and_switch_common": true,
+    "switch_port1_through_series_resistors_to_correct_ESP_pins": true,
+    "data_TVS_has_no_supply_or_VBUS_connection": true,
+    "VBUS_has_separate_ground_TVS": true,
+    "switch_select_and_ground_are_grounded": true,
+    "switch_unused_port_is_unconnected": true,
+    "switch_3V3_supply_is_decoupled": true,
+    "active_low_enable_is_driven_by_existing_VBUS_detector": true,
+    "VBUS_detector_and_pullup_have_correct_rails": true,
+    "bleeder_pullup_series_and_decoupling_values": true,
+    "unused_USB_loading_branches_removed": true,
+    "all_affected_PCB_pads_match_schematic": true
+  },
+  "board_sha256": "034a2a8362612f033b2916f6ad75a2973139eea44891740973de291a3838f344",
+  "netlist_sha256": "e368dab7c88bd888d598ee8e433702cc5ae8e0646be10fa5ae96a14e6d9189ba",
+  "hardware_tested": false,
+  "scope": "Electrical topology and manufacturer package pin maps; native DRC checks copper connectivity. Bench validation remains necessary."
+}

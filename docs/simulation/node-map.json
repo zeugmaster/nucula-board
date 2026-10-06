@@ -50,8 +50,8 @@
   "/Power + ESP32-C3/USB_5V": "n49",
   "/Power + ESP32-C3/USB_D+": "n50",
   "/Power + ESP32-C3/USB_D-": "n51",
-  "/Power + ESP32-C3/USB_ESD_D+": "n52",
-  "/Power + ESP32-C3/USB_ESD_D-": "n53",
+  "/Power + ESP32-C3/USB_PHY_D+": "n52",
+  "/Power + ESP32-C3/USB_PHY_D-": "n53",
   "/Power + ESP32-C3/USB_PRESENT_N": "n54",
   "/Power + ESP32-C3/VBAT": "n55",
   "/Power + ESP32-C3/VBAT_ADC": "n56",
@@ -89,5 +89,7 @@
   "unconnected-(U6-N.C._4-Pad35)": "n88",
   "unconnected-(U6-N.C._5-Pad36)": "n89",
   "unconnected-(U6-VDD(HF)-Pad25)": "n90",
-  "unconnected-(U8-P7-Pad12)": "n91"
+  "unconnected-(U8-P7-Pad12)": "n91",
+  "unconnected-(U10-D2+-Pad3)": "n92",
+  "unconnected-(U10-D2--Pad7)": "n93"
 }

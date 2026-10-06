@@ -106,6 +106,20 @@ def run(path, drc_path):
             from check_display_mapping import audit as display_audit
             assert display_audit(path, ROOT / 'docs/netlist.xml')['passed']
             expected[ref] = amendment['to_sha256']
+        # A separate, immutable-before / explicit-after record describes the
+        # USB electrical revision. Unaffected footprints must still match.
+        revision_path = ROOT/'docs/pcb/usb-footprint-amendments.json'
+        if revision_path.exists():
+            from check_usb_backfeed import audit as usb_audit, CHANGED_REFS
+            revision = json.loads(revision_path.read_text())
+            assert set(revision['footprints']) == CHANGED_REFS
+            assert usb_audit(path, ROOT/'docs/netlist.xml')['passed']
+            for ref, amendment in revision['footprints'].items():
+                assert expected.get(ref) == amendment['from_sha256'], ref
+                if amendment['to_sha256'] is None:
+                    expected.pop(ref)
+                else:
+                    expected[ref] = amendment['to_sha256']
         checks['silk_edits_preserve_all_other_footprint_geometry'] = (
             footprint_geometry_hashes(tree) == expected)
     return {'passed': all(checks.values()), 'checks': checks,

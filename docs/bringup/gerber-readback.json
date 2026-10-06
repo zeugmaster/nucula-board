@@ -6,7 +6,8 @@
     "display_copper_lands_0_30_by_1_30": true,
     "display_mask_matches_all_24_lands": true,
     "display_24_separate_0_25_by_1_30_paste_apertures": true,
-    "116_populated_parts_match_stencil_and_positions": true,
+    "119_populated_parts_match_stencil_and_positions": true,
+    "USB_redesign_pad_nets_and_positions_match_exported_copper": true,
     "no_DNP_or_mechanical_paste": true,
     "all_round_drill_locations_and_sizes_match_board": true,
     "four_0_70_mm_plated_USB_slots": true,
@@ -14,12 +15,12 @@
     "three_closed_outline_contours": true,
     "60_by_110_mm_envelope": true
   },
-  "source_board_sha256": "23db2fe951c0e3d4f548a399efa88cabd58a474a9da42398dd4254144a85c377",
-  "export_manifest_sha256": "a90b06402f41027cdad6d8aca459e2909735b7971d2c4e05daf17151dbb3703f",
+  "source_board_sha256": "034a2a8362612f033b2916f6ad75a2973139eea44891740973de291a3838f344",
+  "export_manifest_sha256": "749e81c697d525a9392e7e5cf0d43af6e6675def0d8c71b355039e1b556c47c6",
   "parser_warnings": [
     "G90 header statement found after end of header"
   ],
-  "source_netlist_sha256": "f86e387c5a96e0dec7c3865b2417de2d8e7724f5aa94fc22b766e6455e24f7a3",
+  "source_netlist_sha256": "e368dab7c88bd888d598ee8e433702cc5ae8e0646be10fa5ae96a14e6d9189ba",
   "drill_coordinate_resolution_mm": 0.001,
   "maximum_drill_coordinate_rounding_mm": 0.0005000000000023874,
   "display_contacts": [

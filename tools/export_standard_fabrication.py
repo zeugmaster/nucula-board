@@ -46,6 +46,7 @@ def main():
     out = args.out.resolve() if args.out else ROOT/'manufacturing'/spec['release']
     if args.out:
         spec = dict(spec, release=out.name, release_status='Validation export only; see current hardware findings.')
+        spec['dnp'] = [r['Reference'] for r in csv.DictReader((ROOT/'docs/bom.csv').open()) if r['DNP'] == 'yes']
     if (out / 'manifest.json').exists():
         raise SystemExit('Refusing to overwrite an archived export. Choose a new --out directory.')
     out.mkdir(parents=True, exist_ok=True)
@@ -72,7 +73,7 @@ def main():
                         pad.SetLayerSet(layers);removed.append(f.GetReference()+'.'+pad.GetNumber())
                 assert not any(g.GetLayer() in [k.F_Paste,k.B_Paste] for g in f.GraphicalItems())
             else:expected.add(f.GetReference())
-        assert len(expected)==116
+        assert len(expected)==119
         k.SaveBoard(str(path),b)
         shutil.copyfile(path,out/'validation/export-board.kicad_pcb')
         run('pcb','export','gerbers','--layers','F.Cu,In1.Cu,In2.Cu,B.Cu,F.Mask,B.Mask,F.Silkscreen,B.Silkscreen,Edge.Cuts,F.Paste',
@@ -92,7 +93,7 @@ def main():
         run('pcb','export','pos','--format','csv','--units','mm','--side','front','--use-drill-file-origin','--exclude-dnp',
             '-o',out/'assembly/placements.csv',path)
         rows=list(csv.DictReader((out/'assembly/placements.csv').open()))
-        assert len(rows)==116 and {r['Ref'] for r in rows}==expected
+        assert len(rows)==119 and {r['Ref'] for r in rows}==expected
         paste = (out/'gerbers/nucula-v2-F_Paste.gtp').read_text()
         paste_refs = set(re.findall(r'%TO.C,([^*]+)\*%', paste))
         assert paste_refs == expected, 'Stencil component set does not match assembly'
@@ -112,7 +113,15 @@ def main():
         run('pcb','export','pdf','--layers','F.Cu,In1.Cu,In2.Cu,B.Cu,F.Mask,B.Mask,F.Paste','--common-layers','Edge.Cuts',
             '--mode-multipage','-o',out/'drawings/layers.pdf',path)
     for src,dest in [('docs/bom.csv','assembly/bom.csv'),('docs/manufacturing-spec.json','manufacturing-spec.json'),
-                     ('manufacturing/contingency-2026-09-22/purchasing-5-boards.csv','assembly/purchasing-5-boards.csv'),
+                     ('docs/assembly/purchasing-5-boards.csv','assembly/purchasing-5-boards.csv'),
+                     ('docs/bringup/usb-backfeed-check.json','validation/usb-backfeed-check.json'),
+                     ('docs/bringup/usb-backfeed-fix.md','validation/usb-backfeed-fix.md'),
+                     ('docs/bringup/backfeed-analysis/results.json','validation/usb-spice-results.json'),
+                     ('docs/bringup/measurements/rev-A-usb-battery-2026-10-06.pdf','validation/rev-A-usb-battery-2026-10-06.pdf'),
+                     ('docs/assembly/jlc-stock-snapshot.json','assembly/jlc-stock-snapshot.json'),
+                     ('docs/pcb/usb-protection.png','drawings/usb-protection.png'),
+                     ('docs/pcb/usb-switch.png','drawings/usb-switch.png'),
+                     ('docs/pcb/usb-footprint-amendments.json','validation/usb-footprint-amendments.json'),
                      ('docs/pcb/drc.json','validation/drc.json'),('docs/pcb/layout-check.json','validation/layout-check.json'),
                      ('docs/pcb/standard-fabrication-check.json','validation/standard-fabrication-check.json'),
                      ('docs/pcb/standard-silk-audit.json','validation/standard-silk-audit.json'),
@@ -124,6 +133,10 @@ def main():
                      ('docs/pcb/display-clearance.png','drawings/display-clearance.png'),
                      ('docs/verification.json','validation/schematic-verification.json'),('docs/simulation/results.json','validation/simulation-results.json')]:
         shutil.copyfile(ROOT/src,out/dest)
+    report_path = out/'validation/usb-backfeed-fix.md'
+    report_path.write_text(report_path.read_text().replace('../pcb/', '../drawings/')
+        .replace('measurements/rev-A-usb-battery-2026-10-06.pdf', 'rev-A-usb-battery-2026-10-06.pdf')
+        .replace('backfeed-analysis/results.json', 'usb-spice-results.json'))
     (out/'validation/export-check.json').write_text(json.dumps({'passed':True,'placements':len(rows),
         'stencil_component_references_match_placements': sorted(paste_refs) == sorted(expected),
         'usb_plated_slots': 4, 'job_omits_custom_layer_construction': 'MaterialStackup' not in job,
@@ -178,7 +191,8 @@ USB signal integrity has not been qualified.
             'Generated from the current board to check Gerber, drill, stencil and placement output. '
             'Historical manufacturing packages are unchanged.\n\n'
             'Display ribbon mapping is reversed at the fixed Hirose socket: panel pin n = socket pad 25-n. '
-            'The USB backfeed issue remains open pending isolation measurements and a validated remedy. '
+            'The USB redesign uses ground-referenced data TVS protection and a VBUS-controlled data switch; '
+            'its physical operation, reconnection and ESD performance still require testing on revised hardware. '
             'Do not use this export as authorization to order boards.\n\n'
             'Consult the current schematic verification, routing, fabrication and simulation reports '
             'included under validation/. The older routing-comparison drawing is historical.\n')

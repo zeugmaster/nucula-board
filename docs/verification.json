@@ -1,7 +1,7 @@
 {
   "schematic_sha256": {
     "nucula-v2.kicad_sch": "4081b173500c0a25de31dc031a0f1ada0357ff43d71c6eef7a2d901b89453ae0",
-    "power-mcu.kicad_sch": "7ca0ed3330f6ff97c1e6be835174532bf93325df28fac7388dee09d1c2fb8b00",
+    "power-mcu.kicad_sch": "bc3a59eaf666123367c26d1fa010149f8a902a01c27e8da0b91cb1aaa0ee6d97",
     "nfc.kicad_sch": "cd0d8381536f28a9dcab08e50a41ef020105190ca204bd47ace184fb11758f13",
     "oled.kicad_sch": "681cc05aafeac40752d00fcdd000d7bb0a9a516affefa045895fe2061c677794",
     "keyboard.kicad_sch": "9489d40c8a70b60037e6dd5a4849a09903941db6114d3cf6ed89d5500f043259"
@@ -9,11 +9,11 @@
   "kicad_version": "10.0.6",
   "erc_violations": 0,
   "sheets": 5,
-  "components": 128,
-  "net_count": 91,
+  "components": 129,
+  "net_count": 93,
   "checked_named_nets": 58,
-  "unique_footprints": 29,
-  "resolved_models": 20,
+  "unique_footprints": 31,
+  "resolved_models": 22,
   "components_without_3D": [
     "J2",
     "L1",
@@ -172,7 +172,7 @@
   "pcb_layout_report": "pcb/layout-check.json",
   "fabrication_release_ready": false,
   "known_hardware_findings": [
-    "Rev-A battery-only VBUS measured 2.05 V, falling to 0.01 V on RESET while D+ falls from 2.84 V to 0 V and +3V3 stays at 3.33 V. The user accepts the inferred U4 steering-diode path for redesign without physical isolation; a validated hardware remedy remains required.",
+    "Rev-A measured USB backfeed: redesigned with ground-referenced U4, separate VBUS TVS D5 and VBUS-controlled U10 data disconnect. The accepted diagnosis does not require further Rev-A isolation; corrected-hardware USB reconnection and ESD performance remain bench checks.",
     "Mounted display mapping corrected: panel pin n connects to Hirose socket pad 25-n. See oled24/mounted-mapping-check.json."
   ],
   "layout_blockers": [],
@@ -204,11 +204,13 @@
     "${KICAD_SHARE}/3dmodels/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step",
     "${KICAD_SHARE}/3dmodels/Crystal.3dshapes/Crystal_SMD_2016-4Pin_2.0x1.6mm.step",
     "${KICAD_SHARE}/3dmodels/Diode_SMD.3dshapes/D_SMA.step",
+    "${KICAD_SHARE}/3dmodels/Diode_SMD.3dshapes/D_SOD-523.step",
     "${KICAD_SHARE}/3dmodels/LED_SMD.3dshapes/LED_0603_1608Metric.step",
     "${KICAD_SHARE}/3dmodels/Package_SO.3dshapes/SOIC-16W_7.5x10.3mm_P1.27mm.step",
+    "${KICAD_SHARE}/3dmodels/Package_SO.3dshapes/TSSOP-10_3x3mm_P0.5mm.step",
     "${KICAD_SHARE}/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
-    "${KICAD_SHARE}/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
     "${KICAD_SHARE}/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+    "${KICAD_SHARE}/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-323_SC-70.step",
     "${KICAD_SHARE}/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
     "${KICAD_SHARE}/3dmodels/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
     "${KICAD_SHARE}/3dmodels/Resistor_SMD.3dshapes/R_1206_3216Metric.step",

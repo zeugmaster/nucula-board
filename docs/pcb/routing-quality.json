@@ -8,11 +8,11 @@
     "no_acute_two_segment_return_bends": true,
     "no_exposed_segments_shorter_than_0_20_mm": true
   },
-  "source_board_sha256": "23db2fe951c0e3d4f548a399efa88cabd58a474a9da42398dd4254144a85c377",
+  "source_board_sha256": "034a2a8362612f033b2916f6ad75a2973139eea44891740973de291a3838f344",
   "coordinate_tolerance_mm": 0.002,
   "statistics": {
-    "tracks": 1044,
-    "vias": 320,
+    "tracks": 1103,
+    "vias": 324,
     "non45_tracks": 0,
     "shallow_ends": 0,
     "weak_connection_groups": 0,

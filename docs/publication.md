@@ -17,8 +17,9 @@ Use KiCad 10 with the standard libraries and Python 3:
 python3 tools/check_schematic.py
 python3 tools/check_component_choices.py
 python3 tools/check_assembly_readiness.py
-python3 tools/check_usb_clearance.py
-python3 tools/check_top_contact_update.py
+python3 tools/check_display_mapping.py
+python3 tools/check_usb_backfeed.py
+python3 -m unittest discover -s tools -p 'test_*.py'
 ```
 
 `KICAD_CLI` and `KICAD_SHARE` override the CLI and standard library locations.
@@ -33,7 +34,12 @@ The USB and display-change regression tools read sanitized design snapshots
 from `tools/baselines/`, so they work without private Git commits. The filenames
 identify the original development revisions, not the rewritten public commit
 IDs; the [history map](history.md) links them to their sanitized counterparts.
-Only their required design/report inputs are retained. Local paths and the
+Only their required design/report inputs are retained. The historical
+`check_usb_clearance.py` and `check_top_contact_update.py` compare entire older
+revisions and are not current-board acceptance tests. Current checks are
+`check_standard_fabrication.py`, `check_display_mapping.py` and
+`check_usb_backfeed.py`, alongside native ERC/DRC and routing/export audits.
+Local paths and the
 restricted PN7160 visualization model were removed consistently from both
 the baselines and current design. The older `check_oled24_update.py` describes
 the earlier 26-to-24-contact transition; use `check_top_contact_update.py` for

@@ -5,8 +5,6 @@ C3,22pF,Capacitor_SMD:C_0603_1608Metric,Samsung Electro-Mechanics,CL10C220JB8NNN
 C4,22uF,Capacitor_SMD:C_1210_3225Metric,Samsung Electro-Mechanics,CL32B226KAJNNNE,C309062,10%,25 V,,X7R,no,MAIN,SELECTED: manufacturer DC-bias curve checked; retain exact part or re-evaluate,https://product.samsungsem.com/mlcc/CL32B226KAJNNN.do
 C5,22uF,Capacitor_SMD:C_1206_3216Metric,Samsung Electro-Mechanics,CL31A226KAHNNNE,C12891,10%,25 V,,X5R,no,MAIN,SELECTED: manufacturer DC-bias curve checked,https://product.samsungsem.com/mlcc/CL31A226KAHNNN.do
 C6,22uF,Capacitor_SMD:C_1206_3216Metric,Samsung Electro-Mechanics,CL31A226KAHNNNE,C12891,10%,25 V,,X5R,no,MAIN,SELECTED: manufacturer DC-bias curve checked,https://product.samsungsem.com/mlcc/CL31A226KAHNNN.do
-C7,DNP / USB tune,Capacitor_SMD:C_0603_1608Metric,,,,10%,16 V,,X7R,yes,MAIN,,
-C8,DNP / USB tune,Capacitor_SMD:C_0603_1608Metric,,,,10%,16 V,,X7R,yes,MAIN,,
 C9,22uF,Capacitor_SMD:C_1206_3216Metric,Samsung Electro-Mechanics,CL31A226KAHNNNE,C12891,10%,25 V,,X5R,no,MAIN,SELECTED: manufacturer DC-bias curve checked,https://product.samsungsem.com/mlcc/CL31A226KAHNNN.do
 C10,100nF,Capacitor_SMD:C_0603_1608Metric,Samsung Electro-Mechanics,CL10B104KB8NNNC,C1591,10%,50 V,,X7R,no,MAIN,,https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf
 C11,100nF,Capacitor_SMD:C_0603_1608Metric,Samsung Electro-Mechanics,CL10B104KB8NNNC,C1591,10%,50 V,,X7R,no,MAIN,,https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf
@@ -53,10 +51,12 @@ C51,100nF,Capacitor_SMD:C_0603_1608Metric,Samsung Electro-Mechanics,CL10B104KB8N
 C52,1uF,Capacitor_SMD:C_0805_2012Metric,Samsung Electro-Mechanics,CL21B105KBFNNNE,C28323,10%,50 V,,X7R,no,BREAKAWAY_KEYBOARD,,https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL21B105KBFNNNE_C28323.pdf
 C53,33pF,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,YAGEO,CC0805JRNPO0BN330,C309485,5%,100 V,,C0G/NP0,no,MAIN,PROTOTYPE: 330pF 1% + 33pF 5% in parallel = 363pF +/-1.364%; fit symmetrically; measure and retune,https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YAGEO-CC0805JRNPO0BN330_C309485.pdf
 C54,33pF,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,YAGEO,CC0805JRNPO0BN330,C309485,5%,100 V,,C0G/NP0,no,MAIN,PROTOTYPE: 330pF 1% + 33pF 5% in parallel = 363pF +/-1.364%; fit symmetrically; measure and retune,https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YAGEO-CC0805JRNPO0BN330_C309485.pdf
+C55,100nF,Capacitor_SMD:C_0603_1608Metric,Samsung Electro-Mechanics,CL10B104KB8NNNC,C1591,10%,50 V,,X7R,no,MAIN,,https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf
 D1,B340A,Diode_SMD:D_SMA,Diodes Incorporated,B340A-13-F,C85098,,,3 A / 40 V; SMA; layout thermal derating required,,no,MAIN,,https://www.diodes.com/datasheet/download/B340A.pdf
 D2,B340A,Diode_SMD:D_SMA,Diodes Incorporated,B340A-13-F,C85098,,,3 A / 40 V; SMA; layout thermal derating required,,no,MAIN,,https://www.diodes.com/datasheet/download/B340A.pdf
 D3,CHARGE (red),LED_SMD:LED_0603_1608Metric,Hubei KENTO Elec,KT-0603R,C2286,,,,,no,MAIN,,https://www.lcsc.com/datasheet/lcsc_datasheet_1810231112_Hubei-KENTO-Elec-KT-0603R_C2286.pdf
 D4,SS14,Diode_SMD:D_SMA,Vishay Intertech,SS14-E3/61T,C47460,,,,,no,MAIN,,https://www.vishay.com/docs/88746/ss12.pdf
+D5,TPD1E10B06DYAR,Diode_SMD:D_SOD-523,Texas Instruments,TPD1E10B06DYAR,C3712135,,,,,no,MAIN,,https://www.ti.com/lit/ds/symlink/tpd1e10b06.pdf
 DS1,SSD1309 OLED / 24-pin,Nucula_Project:Hirose_FH12A-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal,HRS(Hirose),FH12A-24S-0.5SH(55),C506794,,,,,no,MAIN,Top-contact socket selected for user-confirmed ribbon orientation; DS1 BOM is socket only; display and keyboard modules excluded; panel pin 1 confirmed PCB-left on 2026-10-06; validate operation on corrected board,https://www.hirose.com/en/product/p/CL0586-0555-2-55
 J1,USB4105-GF-A-120,Nucula_Project:USB_C_GCT_USB4105_16P_Standard,Global Connector Technology,USB4105-GF-A-120,C5184243,,,,,no,MAIN,,https://gct.co/files/drawings/usb4105.pdf
 J2,JST-PH / 1S Li-ion,Nucula_Project:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical,JST,B2B-PH-SM4-TB(LF)(SN),C160352,,,,,no,MAIN,"OPTIONAL BATTERY TEST: SMT top-entry JST-PH 2.00 mm; pin 1 BAT+, pin 2 GND; mounting tabs unconnected; USB operation does not require a battery",https://www.jst-mfg.com/product/pdf/eng/ePH.pdf
@@ -88,8 +88,8 @@ R13,22R,Resistor_SMD:R_0603_1608Metric,UNI-ROYAL(Uniroyal Elec),0603WAF220JT5E,C
 R14,100R,Resistor_SMD:R_0603_1608Metric,UNI-ROYAL(Uniroyal Elec),0603WAF1000T5E,C22775,1%,,0.1 W,,no,MAIN,,https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0603WAF1000T5E_C22775.pdf
 R15,470k,Resistor_SMD:R_0603_1608Metric,UNI-ROYAL(Uniroyal Elec),0603WAF4703T5E,C23178,1%,,0.1 W,,no,MAIN,,https://www.lcsc.com/datasheet/lcsc_datasheet_2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF4703T5E_C23178.pdf
 R16,470k,Resistor_SMD:R_0603_1608Metric,UNI-ROYAL(Uniroyal Elec),0603WAF4703T5E,C23178,1%,,0.1 W,,no,MAIN,,https://www.lcsc.com/datasheet/lcsc_datasheet_2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF4703T5E_C23178.pdf
-R17,100k,Resistor_SMD:R_0603_1608Metric,UNI-ROYAL(Uniroyal Elec),0603WAF1003T5E,C25803,1%,,0.1 W,,no,MAIN,,https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1003T5E_C25803.pdf
-R18,100k,Resistor_SMD:R_0603_1608Metric,UNI-ROYAL(Uniroyal Elec),0603WAF1003T5E,C25803,1%,,0.1 W,,no,MAIN,,https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1003T5E_C25803.pdf
+R17,10k,Resistor_SMD:R_0603_1608Metric,UNI-ROYAL(Uniroyal Elec),0603WAF1002T5E,C25804,1%,,0.1 W,,no,MAIN,,https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf
+R18,10k,Resistor_SMD:R_0603_1608Metric,UNI-ROYAL(Uniroyal Elec),0603WAF1002T5E,C25804,1%,,0.1 W,,no,MAIN,,https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf
 R19,2.2k,Resistor_SMD:R_0603_1608Metric,UNI-ROYAL(Uniroyal Elec),0603WAF2201T5E,C4190,1%,,0.1 W,,no,MAIN,,https://www.lcsc.com/datasheet/lcsc_datasheet_2206010230_UNI-ROYAL-Uniroyal-Elec-0603WAF2201T5E_C4190.pdf
 R20,2.2k,Resistor_SMD:R_0603_1608Metric,UNI-ROYAL(Uniroyal Elec),0603WAF2201T5E,C4190,1%,,0.1 W,,no,MAIN,,https://www.lcsc.com/datasheet/lcsc_datasheet_2206010230_UNI-ROYAL-Uniroyal-Elec-0603WAF2201T5E_C4190.pdf
 R21,10k,Resistor_SMD:R_0603_1608Metric,UNI-ROYAL(Uniroyal Elec),0603WAF1002T5E,C25804,1%,,0.1 W,,no,MAIN,,https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf
@@ -119,10 +119,11 @@ SW2,BOOT,Button_Switch_SMD:SW_SPST_B3U-1000P,Omron Electronics,B3U-1000P,C231329
 U1,TP4054-42-SOT25R,Package_TO_SOT_SMD:SOT-23-5,TOPPOWER(Nanjing Extension Microelectronics),TP4054-42-SOT25R,C32574,,,,,no,MAIN,,https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1809261814_TOP-POWER-ASIC-TP4054-42-SOT25R_C32574.pdf
 U2,SY8089AAAC,Package_TO_SOT_SMD:SOT-23-5,Silergy Corp,SY8089AAAC,C78988,,,,,no,MAIN,,https://www.olimex.com/Products/Components/IC/SY8009A/resources/SY8089AAAC.pdf
 U3,ESP32-C3-WROOM-02-N4,Nucula_Project:ESP32-C3-WROOM-02-N4_NoEPADSolder,Espressif Systems,ESP32-C3-WROOM-02-N4,C2934560,,,,,no,MAIN,,https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf
-U4,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,STMicroelectronics,USBLC6-2SC6,C7519,,,,,no,MAIN,,https://www.st.com/resource/en/datasheet/usblc6-2.pdf
+U4,TPD2E2U06QDCKRQ1,Package_TO_SOT_SMD:SOT-323_SC-70,Texas Instruments,TPD2E2U06QDCKRQ1,C915089,,,,,no,MAIN,,https://www.ti.com/lit/ds/symlink/tpd2e2u06-q1.pdf
 U5,TLV803EA30DBZR,Package_TO_SOT_SMD:SOT-23,Texas Instruments,TLV803EA30DBZR,C5218924,,,,,no,MAIN,,https://www.ti.com/lit/ds/symlink/tlv803e.pdf
 U6,PN7160A1HN/C100E,Nucula_Project:PN7160A1HN_C100E,NXP Semicon,PN7160A1HN/C100E,C3303788,,,,,no,MAIN,,https://www.nxp.com/docs/en/data-sheet/PN7160_PN7161.pdf
 U7,AP3012KTR-E1,Package_TO_SOT_SMD:SOT-23-5,Diodes Incorporated,AP3012KTR-E1,C460356,,,,,no,MAIN,,https://www.diodes.com/datasheet/download/AP3012.pdf
 U8,PCF8574T,Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm,NXP Semicon,"PCF8574T/3,518",C7605,,,,,no,BREAKAWAY_KEYBOARD,,https://www.nxp.com/docs/en/data-sheet/PCF8574_PCF8574A.pdf
 U9,MCP1700T-3002E/TT,Package_TO_SOT_SMD:SOT-23,Microchip Tech,MCP1700T-3002E/TT,C62244,,,,,no,MAIN,,https://ww1.microchip.com/downloads/en/DeviceDoc/MCP1700-Data-Sheet-20001826F.pdf
+U10,TS3USB30EDGSR,Package_SO:TSSOP-10_3x3mm_P0.5mm,Texas Instruments,TS3USB30EDGSR,C131998,,,,,no,MAIN,,https://www.ti.com/lit/ds/symlink/ts3usb30e.pdf
 Y1,27.12MHz / CL 10pF,Nucula_Project:Crystal_NDK_NX2016SA_2.0x1.6mm,NDK,NX2016SA-27.12MHZ-EXS00A-CS06346,C3008209,,,,,no,MAIN,SELECTED: NXP AN14518 reference; measure frequency/startup/drive on prototype,https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6749/CS06346-27.12M.pdf

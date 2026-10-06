@@ -1,9 +1,10 @@
 # USB-C, battery power and ESP32-C3 draft
 
-**October bring-up finding:** battery-only VBUS measures 2.1 V and collapses
-under RESET. The U4 data-line steering path remains present in the current
-hardware design. [Diagnosis, simulation limits and isolation measurements](bringup/rev-b-display-and-usb.md)
-must be resolved before treating USB/battery reconnection as qualified.
+**6 October redesign:** the accepted Rev-A backfeed path is removed in the
+editable design. U4 now clamps data to ground, D5 protects VBUS separately,
+and U10 isolates the data pair when VBUS is absent. R17/R18 are now 10 kΩ.
+See the [current circuit, checks and remaining bench validation](bringup/usb-backfeed-fix.md).
+The September circuit discussion below is historical where it describes U4 or USB tuning capacitors.
 
 Revision B-draft, updated 2026-09-20. Open `nucula-v2.kicad_pro` in KiCad 10.
 The schematic is complete for this draft. The PCB is now placed and routed;

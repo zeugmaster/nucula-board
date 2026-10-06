@@ -1,10 +1,10 @@
 {
   "analysis_completed": true,
   "hardware_fix_verified": false,
-  "hardware_circuit_changed": false,
+  "hardware_circuit_changed": true,
   "bench_measurements_pending": true,
   "baseline_dc_measurements_completed": true,
-  "design_decision": {
+  "historical_design_decision": {
     "date": "2026-10-06",
     "accepted_working_diagnosis": "ESP32 D+ -> R13 -> U4 upper steering diode -> raw VBUS",
     "basis": "User accepts the existing measurements as sufficient basis to proceed with the redesign.",
@@ -14,21 +14,22 @@
     "hardware_remedy_implemented": false,
     "hardware_remedy_validated": false
   },
+  "current_design": "Ground-only data TVS U4; separate VBUS TVS D5; U10 isolates both data lines under Q2/R17 control.",
   "pending_bench_checks": [
     "RESET transient waveform capture",
     "Validation of a permanent remedy and repeated USB reconnection"
   ],
-  "simulations_completed": 39,
+  "simulations_completed": 57,
   "solver_errors": [],
   "source_sha256": {
-    "nucula-v2.kicad_pcb": "23db2fe951c0e3d4f548a399efa88cabd58a474a9da42398dd4254144a85c377",
-    "power-mcu.kicad_sch": "7ca0ed3330f6ff97c1e6be835174532bf93325df28fac7388dee09d1c2fb8b00",
-    "docs/netlist.xml": "f86e387c5a96e0dec7c3865b2417de2d8e7724f5aa94fc22b766e6455e24f7a3",
-    "tools/analyze_usb_backfeed.py": "ed6f91e23d52f596738d98b1888bb0d931ec4d58beaa7aa32678f3bd6e28d7c5",
+    "nucula-v2.kicad_pcb": "034a2a8362612f033b2916f6ad75a2973139eea44891740973de291a3838f344",
+    "power-mcu.kicad_sch": "bc3a59eaf666123367c26d1fa010149f8a902a01c27e8da0b91cb1aaa0ee6d97",
+    "docs/netlist.xml": "e368dab7c88bd888d598ee8e433702cc5ae8e0646be10fa5ae96a14e6d9189ba",
+    "tools/analyze_usb_backfeed.py": "2a74f6de4f4df7dbbdce6c8c422398142d62169757c519aea8fc11406cb85ff6",
     "tools/simulate_preflight.py": "409c24a0b6c18135a6a13889465c2baf30544c8686bb7b1b5f5ff1671089d6e9",
     "docs/bringup/rev-A-usb-battery-2026-10-06.json": "c98e42b8644e98ec344770513ba509eca63032f28864704dc52d6499a933922e"
   },
-  "verified_path": [
+  "accepted_historical_path": [
     "U3.14 / IO19",
     "R13.2 -> R13.1 (22 ohm)",
     "U4.4 -> internal upper steering diode -> U4.5",
@@ -50,9 +51,10 @@
   "observed_nominal_R18_backfeed_uA": 20.499999999999996,
   "observed_Dplus_minus_VBUS_V": 0.79,
   "observed_steady_3V3_difference_V": 0.0,
-  "maximum_total_injected_uA_for_VBUS_below_0_8V_at_R18_plus_1pct": 7.920792079207922,
+  "maximum_total_injected_uA_for_VBUS_below_0_8V_at_R18_plus_1pct": 79.20792079207921,
   "interpretation": "Measured D+ and VBUS collapse on RESET while steady +3V3 remains at 3.33 V. Together with the topology and 0.79 V D+-to-VBUS difference, this strongly supports the U4 path. Simulated voltages do not identify the physical source or reproduce the observed voltage quantitatively. The user accepts this diagnosis for redesign without physical isolation. U4 pin-5 isolation was not performed; steady meter readings do not exclude brief rail transients.",
-  "dc_scenarios": [
+  "historical_R18_ohm": 100000.0,
+  "historical_dc_scenarios": [
     {
       "state": "battery_usb_active",
       "source_V": 3.0,
@@ -378,24 +380,170 @@
       "R18_current_uA": 0.0
     }
   ],
-  "discharge_scenarios": [
+  "revised_discharge_scenarios": [
     {
-      "R18_ohm": 100000.0,
+      "R18_ohm": 10000.0,
       "C14_F": 1.0000000000000001e-07,
-      "to_0_8V_ms": 18.8195999999994,
-      "analytic_to_0_8V_ms": 18.81371627917742
+      "to_0_8V_ms": 1.8896000000000044,
+      "analytic_to_0_8V_ms": 1.8813716279177424
     },
     {
-      "R18_ohm": 99000.0,
+      "R18_ohm": 9900.0,
       "C14_F": 9.000000000000001e-08,
-      "to_0_8V_ms": 16.769599999999485,
-      "analytic_to_0_8V_ms": 16.763021204747083
+      "to_0_8V_ms": 1.6796000000000038,
+      "analytic_to_0_8V_ms": 1.6763021204747086
     },
     {
-      "R18_ohm": 101000.0,
+      "R18_ohm": 10100.0,
       "C14_F": 1.1000000000000002e-07,
-      "to_0_8V_ms": 20.909599999999315,
-      "analytic_to_0_8V_ms": 20.90203878616612
+      "to_0_8V_ms": 2.099600000000005,
+      "analytic_to_0_8V_ms": 2.0902038786166117
+    }
+  ],
+  "revised_dc_scenarios": [
+    {
+      "logic_V": 3.0,
+      "USB_present": false,
+      "assumed_other_VBUS_injection_uA": 0,
+      "connector_Dplus_V": 0.014917842468909627,
+      "VBUS_V": 0.0,
+      "enable_V": 2.9898999698020106
+    },
+    {
+      "logic_V": 3.0,
+      "USB_present": false,
+      "assumed_other_VBUS_injection_uA": 1,
+      "connector_Dplus_V": 0.014917842468909627,
+      "VBUS_V": 0.0101,
+      "enable_V": 2.9898999698020106
+    },
+    {
+      "logic_V": 3.0,
+      "USB_present": false,
+      "assumed_other_VBUS_injection_uA": 10,
+      "connector_Dplus_V": 0.014917842468909627,
+      "VBUS_V": 0.10099999999999999,
+      "enable_V": 2.9898999698020106
+    },
+    {
+      "logic_V": 3.0,
+      "USB_present": true,
+      "assumed_other_VBUS_injection_uA": 0,
+      "connector_Dplus_V": 2.7219937091701203,
+      "VBUS_V": 5.0,
+      "enable_V": 0.0029573689416419386
+    },
+    {
+      "logic_V": 3.0,
+      "USB_present": true,
+      "assumed_other_VBUS_injection_uA": 1,
+      "connector_Dplus_V": 2.7219937091701203,
+      "VBUS_V": 5.0,
+      "enable_V": 0.0029573689416419386
+    },
+    {
+      "logic_V": 3.0,
+      "USB_present": true,
+      "assumed_other_VBUS_injection_uA": 10,
+      "connector_Dplus_V": 2.7219937091701203,
+      "VBUS_V": 5.0,
+      "enable_V": 0.0029573689416419386
+    },
+    {
+      "logic_V": 3.3,
+      "USB_present": false,
+      "assumed_other_VBUS_injection_uA": 0,
+      "connector_Dplus_V": 0.014925274127534914,
+      "VBUS_V": 0.0,
+      "enable_V": 3.289899966772011
+    },
+    {
+      "logic_V": 3.3,
+      "USB_present": false,
+      "assumed_other_VBUS_injection_uA": 1,
+      "connector_Dplus_V": 0.014925274127534914,
+      "VBUS_V": 0.0101,
+      "enable_V": 3.289899966772011
+    },
+    {
+      "logic_V": 3.3,
+      "USB_present": false,
+      "assumed_other_VBUS_injection_uA": 10,
+      "connector_Dplus_V": 0.014925274127534914,
+      "VBUS_V": 0.10099999999999999,
+      "enable_V": 3.289899966772011
+    },
+    {
+      "logic_V": 3.3,
+      "USB_present": true,
+      "assumed_other_VBUS_injection_uA": 0,
+      "connector_Dplus_V": 2.9941930800871326,
+      "VBUS_V": 5.0,
+      "enable_V": 0.003254104846686449
+    },
+    {
+      "logic_V": 3.3,
+      "USB_present": true,
+      "assumed_other_VBUS_injection_uA": 1,
+      "connector_Dplus_V": 2.9941930800871326,
+      "VBUS_V": 5.0,
+      "enable_V": 0.003254104846686449
+    },
+    {
+      "logic_V": 3.3,
+      "USB_present": true,
+      "assumed_other_VBUS_injection_uA": 10,
+      "connector_Dplus_V": 2.9941930800871326,
+      "VBUS_V": 5.0,
+      "enable_V": 0.003254104846686449
+    },
+    {
+      "logic_V": 3.6,
+      "USB_present": false,
+      "assumed_other_VBUS_injection_uA": 0,
+      "connector_Dplus_V": 0.014931472834950258,
+      "VBUS_V": 0.0,
+      "enable_V": 3.5898999637420106
+    },
+    {
+      "logic_V": 3.6,
+      "USB_present": false,
+      "assumed_other_VBUS_injection_uA": 1,
+      "connector_Dplus_V": 0.014931472834950258,
+      "VBUS_V": 0.0101,
+      "enable_V": 3.5898999637420106
+    },
+    {
+      "logic_V": 3.6,
+      "USB_present": false,
+      "assumed_other_VBUS_injection_uA": 10,
+      "connector_Dplus_V": 0.014931472834950258,
+      "VBUS_V": 0.10099999999999999,
+      "enable_V": 3.5898999637420106
+    },
+    {
+      "logic_V": 3.6,
+      "USB_present": true,
+      "assumed_other_VBUS_injection_uA": 0,
+      "connector_Dplus_V": 3.266392451004145,
+      "VBUS_V": 5.0,
+      "enable_V": 0.003550840751730959
+    },
+    {
+      "logic_V": 3.6,
+      "USB_present": true,
+      "assumed_other_VBUS_injection_uA": 1,
+      "connector_Dplus_V": 3.266392451004145,
+      "VBUS_V": 5.0,
+      "enable_V": 0.003550840751730959
+    },
+    {
+      "logic_V": 3.6,
+      "USB_present": true,
+      "assumed_other_VBUS_injection_uA": 10,
+      "connector_Dplus_V": 3.266392451004145,
+      "VBUS_V": 5.0,
+      "enable_V": 0.003550840751730959
     }
   ],
   "limits": [
@@ -403,11 +551,18 @@
     "No USB-C source state machine, ESP reset/ROM behavior, Q2 switching threshold, or firmware model.",
     "D1/D2 leakage, TP4054 reverse current, contamination, cable and oscilloscope loading are omitted.",
     "Isolation scenarios are bench diagnostics; leaving U4.5 disconnected removes its VBUS protection.",
-    "Existing 261 preflight cases do not simulate this USB current path."
+    "Existing 261 preflight cases do not simulate this USB current path.",
+    "Revised DC cases assume the switch truth table and Q2 state; not manufacturer IC macromodels.",
+    "1uA disabled data leakage and 1uA control leakage are bounds; 10uA other VBUS injection is an explicit stress assumption.",
+    "IOFF is specified only at VCC=0; intermediate supply ramp and host-powered startup require hardware checks.",
+    "Switch on-resistance and 15k host loads screen DC attach only, not packet edges or ESD performance."
   ],
   "sources": [
     "https://www.st.com/resource/en/datasheet/usblc6-2.pdf",
     "https://www.usb.org/sites/default/files/USB%20Type%20C%20Functional%20Test%20Specification%202024%2003%2003.pdf",
-    "https://www.onsemi.com/pdf/datasheet/bss138-d.pdf"
+    "https://www.onsemi.com/pdf/datasheet/bss138-d.pdf",
+    "https://www.ti.com/lit/ds/symlink/ts3usb30e.pdf",
+    "https://www.ti.com/lit/ds/symlink/tpd2e2u06-q1.pdf",
+    "https://www.ti.com/lit/ds/symlink/tpd1e10b06.pdf"
   ]
 }

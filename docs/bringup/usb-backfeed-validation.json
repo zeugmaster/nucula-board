@@ -1,0 +1,86 @@
+{
+  "baseline_commit": "03404a2",
+  "board_sha256": "034a2a8362612f033b2916f6ad75a2973139eea44891740973de291a3838f344",
+  "schematic_sha256": "bc3a59eaf666123367c26d1fa010149f8a902a01c27e8da0b91cb1aaa0ee6d97",
+  "netlist_sha256": "e368dab7c88bd888d598ee8e433702cc5ae8e0646be10fa5ae96a14e6d9189ba",
+  "hardware_tested": false,
+  "ERC_violations": 0,
+  "DRC_errors": 0,
+  "unconnected": 0,
+  "schematic_parity_findings": 0,
+  "reviewed_cosmetic_warnings": 45,
+  "checks": {
+    "layout": {
+      "passed": true,
+      "checks": 22,
+      "report": "docs/pcb/layout-check.json",
+      "sha256": "b20a54f42af6883194aaa6abbaa4c307bc448bdd13da9144efac0a71da830fdd"
+    },
+    "fabrication": {
+      "passed": true,
+      "checks": 16,
+      "report": "docs/pcb/standard-fabrication-check.json",
+      "sha256": "da1d9e39e261f3fb9996dde337a7494c0cba0383979d51a9013f0bb363c811ba"
+    },
+    "routing": {
+      "passed": true,
+      "checks": 6,
+      "report": "docs/pcb/routing-quality.json",
+      "sha256": "9f4455234a1f1078721c34db51aa5e1435779ee25874a8a8a19ed543e7a74994"
+    },
+    "display": {
+      "passed": true,
+      "checks": 8,
+      "report": "docs/oled24/mounted-mapping-check.json",
+      "sha256": "661d12bac3ef148b5097497c0595191aa048ac058553c8bfeec2d0c4595424d7"
+    },
+    "USB_topology": {
+      "passed": true,
+      "checks": 14,
+      "report": "docs/bringup/usb-backfeed-check.json",
+      "sha256": "50d0cd38c0563cd4106bc18f6233ca503c288daa702b24b2da5de84a9aa47eb0"
+    },
+    "Gerber_readback": {
+      "passed": true,
+      "checks": 13,
+      "report": "docs/bringup/gerber-readback.json",
+      "sha256": "73659d7a9b1850be2a82cc4d935cf0a5b42ae94ea0a4374ba8432523be183635"
+    }
+  },
+  "regression_tests_passed": 13,
+  "preflight_SPICE_cases": 261,
+  "USB_SPICE_cases": 57,
+  "native_NFC_fixtures_passed": 12,
+  "USB_advisories": {
+    "usb_connector_to_series_resistor_skew_below_0_5mm": false,
+    "usb_has_in2_ground_beneath_both_trace_edges": false
+  },
+  "USB_total_copper_lengths_mm": {
+    "-": 63.1029,
+    "+": 50.897
+  },
+  "USB_ground_reference": {
+    "samples": 2097,
+    "missing": [
+      [
+        63.676413,
+        110.670347
+      ],
+      [
+        63.570347,
+        110.776413
+      ]
+    ],
+    "via_antipad_exemption_radius_mm": 0.6
+  },
+  "validation_archive_sha256": "8c0933035fe6cc3f0cdce299d3006e13ed289adecc7072a1c01df21dacbaad8e",
+  "protected_files": {
+    "docs/bringup/rev-A-usb-bench-guide.pdf": "19e38574b925b84a90d13d8537aa28a441d1f82c4bb2836c5be7d26f9d30d17c",
+    "docs/bringup/measurements/rev-A-usb-battery-2026-10-06.pdf": "19e38574b925b84a90d13d8537aa28a441d1f82c4bb2836c5be7d26f9d30d17c",
+    "nucula-v2.kicad_pro": "81447fe443c28501748d52a6bb5e3aa9ab1d865592221d388447ede6d47dbefb",
+    "nucula-v2.kicad_dru": "edd74546c3a662048c2f81cace7014020026bf6586abc6b7333db7df5644bfc7",
+    "nfc.kicad_sch": "cd0d8381536f28a9dcab08e50a41ef020105190ca204bd47ace184fb11758f13",
+    "oled.kicad_sch": "681cc05aafeac40752d00fcdd000d7bb0a9a516affefa045895fe2061c677794",
+    "keyboard.kicad_sch": "9489d40c8a70b60037e6dd5a4849a09903941db6114d3cf6ed89d5500f043259"
+  }
+}

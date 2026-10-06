@@ -1,11 +1,9 @@
 {
   "boards": 5,
-  "physical_symbols": 128,
-  "purchased_populated_per_board": 116,
-  "unique_purchased_parts": 55,
+  "physical_symbols": 129,
+  "purchased_populated_per_board": 119,
+  "unique_purchased_parts": 57,
   "dnp_references": [
-    "C7",
-    "C8",
     "C34",
     "C35",
     "C38",
@@ -26,7 +24,7 @@
     "U6",
     "L4"
   ],
-  "with_3d": 121,
+  "with_3d": 122,
   "tight_stock": [
     {
       "References": "C36, C37",
@@ -54,7 +52,7 @@
   "stock_reserved": false,
   "quantity_method": "Planning only: max(placements, public minimum placement) + public loss allowance. Final JLCPCB BOM matching controls quantities.",
   "inputs_sha256": {
-    "docs/bom.csv": "25d1a5b42ca8d2aa50fb58a36ee2c92913991cc6b354e5685b0dd017fded9efd",
-    "docs/assembly/jlc-stock-snapshot.json": "a158392e737624a048653dad0101facdf610da84e1509d2d4f299ac83cd44d52"
+    "docs/bom.csv": "b2b14ddf41cc367c10ea60701916422bcffd6a9f087581551139c42f7b767145",
+    "docs/assembly/jlc-stock-snapshot.json": "cd1e2eb31607b7311ad649f3e31b220cdbd5416e2e61f65853250926c9745247"
   }
 }

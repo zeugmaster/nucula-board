@@ -418,16 +418,6 @@
         "GND"
       ]
     ],
-    "C7": [
-      [
-        "1",
-        "Net-(U3-IO18)"
-      ],
-      [
-        "2",
-        "GND"
-      ]
-    ],
     "R33": [
       [
         "1",
@@ -1351,23 +1341,11 @@
       ],
       [
         "2",
-        "GND"
-      ],
-      [
-        "3",
         "/Power + ESP32-C3/USB_D+"
       ],
       [
-        "4",
-        "/Power + ESP32-C3/USB_ESD_D+"
-      ],
-      [
-        "5",
-        "/Power + ESP32-C3/VBUS"
-      ],
-      [
-        "6",
-        "/Power + ESP32-C3/USB_ESD_D-"
+        "3",
+        "GND"
       ]
     ],
     "R10": [
@@ -1447,7 +1425,7 @@
     "R12": [
       [
         "1",
-        "/Power + ESP32-C3/USB_ESD_D-"
+        "/Power + ESP32-C3/USB_PHY_D-"
       ],
       [
         "2",
@@ -1695,7 +1673,7 @@
     "R13": [
       [
         "1",
-        "/Power + ESP32-C3/USB_ESD_D+"
+        "/Power + ESP32-C3/USB_PHY_D+"
       ],
       [
         "2",
@@ -2018,16 +1996,6 @@
         "/OLED {slash} SSD1309 {slash} 0x3C/OLED_FB"
       ]
     ],
-    "C8": [
-      [
-        "1",
-        "Net-(U3-IO19)"
-      ],
-      [
-        "2",
-        "GND"
-      ]
-    ],
     "C48": [
       [
         "1",
@@ -2143,6 +2111,68 @@
         "2",
         "GND"
       ]
+    ],
+    "U10": [
+      [
+        "1",
+        "GND"
+      ],
+      [
+        "10",
+        "/+3V3"
+      ],
+      [
+        "2",
+        "/Power + ESP32-C3/USB_PHY_D+"
+      ],
+      [
+        "3",
+        "unconnected-(U10-D2+-Pad3)"
+      ],
+      [
+        "4",
+        "/Power + ESP32-C3/USB_D+"
+      ],
+      [
+        "5",
+        "GND"
+      ],
+      [
+        "6",
+        "/Power + ESP32-C3/USB_D-"
+      ],
+      [
+        "7",
+        "unconnected-(U10-D2--Pad7)"
+      ],
+      [
+        "8",
+        "/Power + ESP32-C3/USB_PHY_D-"
+      ],
+      [
+        "9",
+        "/Power + ESP32-C3/USB_PRESENT_N"
+      ]
+    ],
+    "D5": [
+      [
+        "1",
+        "/Power + ESP32-C3/VBUS"
+      ],
+      [
+        "2",
+        "GND"
+      ]
+    ],
+    "C55": [
+      [
+        "1",
+        "/+3V3"
+      ],
+      [
+        "2",
+        "GND"
+      ]
     ]
   },
   "values": {
@@ -2168,10 +2198,9 @@
     "C36": "100pF",
     "R16": "470k",
     "C34": "DNP / TRIM",
-    "R17": "100k",
+    "R17": "10k",
     "J2": "JST-PH / 1S Li-ion",
     "C53": "33pF",
-    "C7": "DNP / USB tune",
     "R33": "100k",
     "R38": "4.7k",
     "U1": "TP4054-42-SOT25R",
@@ -2186,7 +2215,7 @@
     "SW1": "RESET",
     "Q5": "BSS138",
     "R21": "10k",
-    "R18": "100k",
+    "R18": "10k",
     "C52": "1uF",
     "L4": "10uH",
     "C39": "DNP / TRIM",
@@ -2216,7 +2245,7 @@
     "L1": "2.2uH",
     "C20": "100nF",
     "C4": "22uF",
-    "U4": "USBLC6-2SC6",
+    "U4": "TPD2E2U06QDCKRQ1",
     "R10": "10k",
     "R26": "2.2k",
     "R2": "5.1k",
@@ -2265,7 +2294,6 @@
     "C42": "1uF",
     "C40": "10uF",
     "C41": "22pF",
-    "C8": "DNP / USB tune",
     "C48": "100nF",
     "U2": "SY8089AAAC",
     "C47": "2.2uF",
@@ -2275,7 +2303,10 @@
     "C9": "22uF",
     "C54": "33pF",
     "Q2": "BSS138",
-    "R7": "48.7k"
+    "R7": "48.7k",
+    "U10": "TS3USB30EDGSR",
+    "D5": "TPD1E10B06DYAR",
+    "C55": "100nF"
   },
   "antenna_copper_and_rule_sha256": "d59502c6aed490f966bb845a4400af206a1246088f0fa6b29024725e0b6da3fa",
   "edge_cuts_sha256": "02f7c97b7a1f638b534da9947c810d0cf1e5901762b2e6ef5140e702e0ec0cc3",
@@ -2419,7 +2450,7 @@
     }
   ],
   "advisory_checks": [
-    "usb_esd_to_series_resistor_skew_below_0_5mm",
+    "usb_connector_to_series_resistor_skew_below_0_5mm",
     "usb_has_in2_ground_beneath_both_trace_edges"
   ],
   "reviewed_library_silkscreen_changes": [
@@ -2431,9 +2462,12 @@
     "C27",
     "C28",
     "C4",
+    "C45",
     "C47",
+    "C49",
     "D2",
     "D4",
+    "D5",
     "DS1",
     "J2",
     "J4",
@@ -2444,6 +2478,7 @@
     "Q5",
     "R10",
     "R11",
+    "R12",
     "R20",
     "R31",
     "R34",
@@ -2453,6 +2488,7 @@
     "SW1",
     "SW2",
     "U1",
+    "U10",
     "U2",
     "U3",
     "U5",
@@ -2469,5 +2505,6 @@
       "date": "2026-10-06",
       "scope": "DS1 pad nets only: mounted panel pin n maps to physical socket pad 25-n; position, rotation and footprint numbering unchanged. See docs/oled24/mounted-mapping-check.json."
     }
-  ]
+  ],
+  "usb_revision_note": "Explicit topology changes bound to docs/pcb/usb-footprint-amendments.json; all other values and pad nets retain the prior baseline."
 }

@@ -1,13 +1,13 @@
 # Circuit simulation screening
 
-2026-10-06 · mounted-display correction · KiCad's bundled ngspice 45.2
+2026-10-06 · display correction and USB redesign · KiCad's bundled ngspice 45.2
 
-The 261 cases were rerun after correcting the mounted display mapping and
-routing. Results record the actual working-tree file hashes; the modeled
-electrical findings below are unchanged. These cases do not model the USB
-steering-diode backfeed reported during Rev-A bring-up. A separate
-[39-case diagnostic analysis](../bringup/backfeed-analysis/results.json) and
-[isolation procedure](../bringup/rev-b-display-and-usb.md) address that open issue.
+The 261 cases were rerun against the revised schematic and routed PCB. Results
+record the working-tree file hashes; the modeled electrical findings below
+are unchanged. A separate [57-case analysis](../bringup/backfeed-analysis/results.json)
+screens the historical USB backfeed hypothesis and the revised isolation/discharge
+circuit. Its assumptions and physical follow-up are described in the
+[USB redesign report](../bringup/usb-backfeed-fix.md).
 
 **261 scoped simulation cases completed. This is a partial electrical analysis,
 not a complete simulation of the assembled PCB or a fabrication release.**

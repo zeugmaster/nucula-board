@@ -18,19 +18,20 @@
     "no_pour_in_fracture_band": true,
     "five_original_breakaway_crossings_preserved": true,
     "no_vias_in_fracture_band": true,
+    "both_sides_of_USB_switch_are_routed": true,
     "native_drc_zero_errors": true,
     "native_drc_zero_unconnected": true,
     "native_drc_only_reviewed_cosmetic_warnings": true,
     "native_report_has_no_schematic_parity_issues": true
   },
   "advisory_checks": {
-    "usb_esd_to_series_resistor_skew_below_0_5mm": false,
+    "usb_connector_to_series_resistor_skew_below_0_5mm": false,
     "usb_has_in2_ground_beneath_both_trace_edges": false
   },
   "passed": true,
-  "footprints": 130,
-  "tracks": 1044,
-  "vias": 320,
+  "footprints": 131,
+  "tracks": 1103,
+  "vias": 324,
   "fixed_placements": {
     "A1": {
       "position_rotation": [
@@ -253,7 +254,7 @@
       "name": "GND F.Cu outside NFC and fracture band",
       "layer": "F.Cu",
       "net": "GND",
-      "filled_area_mm2": 3302.4116,
+      "filled_area_mm2": 3266.6322,
       "nfc_overlap_mm2": 0.0,
       "fracture_overlap_mm2": 0.0
     },
@@ -261,7 +262,7 @@
       "name": "GND B.Cu outside NFC and fracture band",
       "layer": "B.Cu",
       "net": "GND",
-      "filled_area_mm2": 3698.209,
+      "filled_area_mm2": 3691.2612,
       "nfc_overlap_mm2": 0.0,
       "fracture_overlap_mm2": 0.0
     },
@@ -269,7 +270,7 @@
       "name": "GND In1.Cu outside NFC and fracture band",
       "layer": "In1.Cu",
       "net": "GND",
-      "filled_area_mm2": 3359.5766,
+      "filled_area_mm2": 3317.7456,
       "nfc_overlap_mm2": 0.0,
       "fracture_overlap_mm2": 0.0
     },
@@ -277,7 +278,7 @@
       "name": "GND In2.Cu outside NFC and fracture band",
       "layer": "In2.Cu",
       "net": "GND",
-      "filled_area_mm2": 3712.4452,
+      "filled_area_mm2": 3697.6335,
       "nfc_overlap_mm2": 0.0,
       "fracture_overlap_mm2": 0.0
     }
@@ -314,12 +315,22 @@
       0.2
     ]
   ],
-  "usb_esd_to_series_resistor_lengths_mm": {
-    "-": 41.3053,
-    "+": 42.2968
+  "usb_connector_to_series_resistor_total_copper_mm": {
+    "-": 63.1029,
+    "+": 50.897
+  },
+  "usb_section_copper_lengths_mm": {
+    "USB_D": {
+      "-": 52.446,
+      "+": 46.6393
+    },
+    "USB_PHY_D": {
+      "-": 10.6569,
+      "+": 4.2577
+    }
   },
   "usb_ground_reference": {
-    "samples": 2171,
+    "samples": 2097,
     "missing": [
       [
         63.676413,
@@ -336,7 +347,7 @@
     "/+3V3": {
       "0.5": 200.935,
       "0.375": 7.1728,
-      "0.25": 4.4963,
+      "0.25": 21.6325,
       "0.15": 17.5287,
       "0.35": 15.2574,
       "0.2": 18.1843
@@ -346,11 +357,13 @@
       "0.15": 1.3874
     },
     "GND": {
-      "0.3": 136.328,
+      "0.3": 133.1155,
       "0.225": 6.9452,
+      "0.2": 33.3536,
       "0.15": 55.5525,
-      "0.2": 30.4518,
+      "0.25": 1.8642,
       "0.18": 0.8205,
+      "0.35": 0.895,
       "0.6": 17.2
     },
     "/NFC {slash} PN7160 {slash} 0x28/NFC_XTAL1": {
@@ -373,6 +386,14 @@
       "0.5624": 1.7206,
       "0.5": 6.5,
       "0.25": 8.3854
+    },
+    "/Power + ESP32-C3/USB_D-": {
+      "0.15": 51.854,
+      "0.2": 0.592
+    },
+    "/Power + ESP32-C3/USB_D+": {
+      "0.15": 43.8652,
+      "0.2": 2.7741
     },
     "/Power + ESP32-C3/USB_5V": {
       "0.75": 48.3179,
@@ -403,10 +424,9 @@
       "0.15": 14.9373
     },
     "/Power + ESP32-C3/VBUS": {
-      "0.75": 6.5391,
-      "0.2": 10.7874,
-      "0.35": 45.7516,
-      "0.25": 5.8988
+      "0.2": 30.5633,
+      "0.75": 3.7322,
+      "0.35": 39.6794
     },
     "/NFC {slash} PN7160 {slash} 0x28/NFC_VDD18": {
       "0.15": 24.4292,
@@ -438,9 +458,10 @@
       "0.4": 2.4125
     },
     "/Power + ESP32-C3/VBAT_ADC": {
-      "0.2": 11.1961
+      "0.2": 10.368
     },
     "/Power + ESP32-C3/USB_PRESENT_N": {
+      "0.15": 7.477,
       "0.2": 18.7452
     },
     "/Power + ESP32-C3/VBAT": {
@@ -449,8 +470,11 @@
       "0.5": 1.0,
       "0.35": 39.5227
     },
-    "Net-(U3-IO18)": {
-      "0.15": 3.7057
+    "/Power + ESP32-C3/USB_PHY_D+": {
+      "0.15": 4.2577
+    },
+    "/Power + ESP32-C3/USB_PHY_D-": {
+      "0.15": 10.6569
     },
     "/OLED {slash} SSD1309 {slash} 0x3C/OLED_GATE_N": {
       "0.2": 6.7176
@@ -522,14 +546,6 @@
     "Net-(J1-CC1)": {
       "0.2": 3.7992
     },
-    "/Power + ESP32-C3/USB_D+": {
-      "0.15": 0.9458,
-      "0.2": 3.8866
-    },
-    "/Power + ESP32-C3/USB_D-": {
-      "0.15": 4.9226,
-      "0.2": 0.592
-    },
     "Net-(J1-CC2)": {
       "0.25": 3.71
     },
@@ -580,20 +596,17 @@
     "Net-(U2-LX)": {
       "0.5": 3.0803
     },
-    "/Power + ESP32-C3/USB_ESD_D+": {
-      "0.15": 42.2968
-    },
-    "/Power + ESP32-C3/USB_ESD_D-": {
-      "0.15": 41.3053
-    },
     "/Power + ESP32-C3/STRAP_GPIO8": {
       "0.2": 7.5064
     },
     "/Power + ESP32-C3/BUCK_FB": {
       "0.15": 11.4673
     },
+    "Net-(U3-IO18)": {
+      "0.15": 2.8485
+    },
     "Net-(U3-IO19)": {
-      "0.15": 3.9057
+      "0.15": 3.0971
     },
     "/Power + ESP32-C3/STRAP_GPIO2": {
       "0.2": 18.8655
