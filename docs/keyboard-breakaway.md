@@ -4,6 +4,8 @@ The board remains 60 × 110 mm, from X = 50–110 and Y = 50–160 mm.
 The keyboard body occupies Y = 125–160 mm: **60 × 35 mm**. A 2 mm routed
 gap at Y = 123–125 mm separates it from the main body, which is 73 mm high.
 Small tab remnants remain after separation and may need trimming.
+The four corners at the left and right ends of the gap have a 4 mm radius,
+matching the board's outer corners.
 
 ![Saved PCB layout around the breakaway](keyboard/breakaway-layout.png)
 
