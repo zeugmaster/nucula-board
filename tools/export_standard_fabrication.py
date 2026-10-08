@@ -42,6 +42,8 @@ def main():
     mini = json.loads((ROOT/'docs/pcb/mini-module-check.json').read_text())
     assert mini['passed'] and mini['board_sha256'] == sha(ROOT/'nucula-v2.kicad_pcb')
     assert mini['netlist_sha256'] == sha(ROOT/'docs/netlist.xml')
+    mounting = json.loads((ROOT/'docs/pcb/mounting-holes-check.json').read_text())
+    assert mounting['passed'] and mounting['board_sha256'] == sha(ROOT/'nucula-v2.kicad_pcb')
     battery = json.loads((ROOT/'docs/assembly/battery-connector-check.json').read_text())
     assert battery['passed'] and battery['board_sha256'] == sha(ROOT/'nucula-v2.kicad_pcb')
     simulations = json.loads((ROOT/'docs/simulation/results.json').read_text())
@@ -144,6 +146,12 @@ def main():
             '--mode-multipage','-o',out/'drawings/layers.pdf',path)
     run('sch','export','pdf','-o',out/'drawings/schematic.pdf',ROOT/'nucula-v2.kicad_sch')
     for src,dest in [('docs/bom.csv','assembly/bom.csv'),('docs/manufacturing-spec.json','manufacturing-spec.json'),
+                     ('docs/mounting-holes.md','assembly/mounting-holes.md'),
+                     ('docs/pcb/mounting-holes.png','drawings/mounting-holes.png'),
+                     ('docs/pcb/mounting-holes.svg','drawings/mounting-holes.svg'),
+                     ('docs/pcb/mounting-holes-check.json','validation/mounting-holes-check.json'),
+                     ('docs/pcb/mounting-footprint-amendments.json','validation/mounting-footprint-amendments.json'),
+                     ('libraries/Nucula_Project.pretty/MountingHole_2.2mm_M2_5.5mm_Keepout.kicad_mod','assembly/M2.kicad_mod'),
                      ('docs/assembly/jlcpcb-bom.csv','assembly/jlcpcb-bom.csv'),
                      ('LICENSES/Espressif-KiCad-libraries.md','assembly/U3-library-license.md'),
                      ('docs/esp32-mini.md','assembly/esp32-mini.md'),
@@ -192,21 +200,28 @@ def main():
     report_path.write_text(report_path.read_text().replace('pcb/mini-module.png', '../drawings/mini-module.png')
                           .replace('](pcb/', '](../validation/')
                           .replace('../libraries/README.md', 'U3-library-license.md'))
+    report_path = out/'assembly/mounting-holes.md'
+    report_path.write_text(report_path.read_text().replace('pcb/mounting-holes.png', '../drawings/mounting-holes.png')
+                          .replace('](pcb/', '](../validation/'))
     (out/'validation/export-check.json').write_text(json.dumps({'passed':True,'placements':len(rows),
         'stencil_component_references_match_placements': sorted(paste_refs) == sorted(expected),
         'usb_plated_slots': 4, 'job_omits_custom_layer_construction': 'MaterialStackup' not in job,
         'dnp_paste_removed':removed,'source_board_sha256':sha(ROOT/'nucula-v2.kicad_pcb'),
         'export_board_sha256':sha(out/'validation/export-board.kicad_pcb'),'commands':logs},indent=2)+'\n')
-    (out/'README.md').write_text('''# MINI-1 with flush antenna cutout — engineering prototype
+    (out/'README.md').write_text('''# Six M2 mounts and MINI-1 — engineering prototype
 
 This package contains the current October display mapping, USB backfeed redesign,
 the MINI-1-H4X module, resized flush antenna notch, 2.95 mm JST-SH J2
 connector, and J6 direct battery wire solder pads. U3 must be C41349510; the
 WROOM footprint does not fit this PCB. See assembly/esp32-mini.md.
+Six 2.2 mm non-plated M2 clearance holes are included: four main-board corners
+and the lower two keyboard corners. Hardware up to 5.0 mm diameter has a
+5.5 mm copper/component keepout. See assembly/mounting-holes.md and the
+dimensioned review in drawings/mounting-holes.png. H1-H6 are not assembly parts.
 Antenna-side ground lands have 0.30 mm edge clearance (0.25 mm minimum);
 other copper retains 0.50 mm. Internal notch corners have 0.5 mm radius.
 Use firmware compatible with C3 chip revision 1.1 (ESP-IDF 5.4+ recommended).
-It supersedes the earlier battery-pads and connector packages and September files for the next prototype.
+It supersedes the MINI package without mounts and earlier packages for the next prototype.
 Revised hardware still requires the USB/display bring-up described in validation/.
 
 Fabrication: five four-layer FR-4 boards, nominal 1.6 mm, green mask, white legend,
@@ -274,6 +289,8 @@ remain physical prototype work. September packages remain historical records.
             'libraries/Nucula_Project.pretty/ESP32-C3-MINI-1-H4X_NoEPADSolder.kicad_mod',
             'libraries/Nucula_Project.3dshapes/ESP32-C3-MINI-1.STEP',
             'tools/check_mini_module.py','docs/esp32-mini.md',
+            'tools/check_mounting_holes.py','docs/mounting-holes.md',
+            'libraries/Nucula_Project.pretty/MountingHole_2.2mm_M2_5.5mm_Keepout.kicad_mod',
             'libraries/Nucula_Project.pretty/JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal.kicad_mod',
             'libraries/Nucula_Project.pretty/Battery_Lead_SolderPads_2x2.2x2.5mm_P3.4mm.kicad_mod',
             'tools/check_battery_connector.py','tools/check_standard_export.py',

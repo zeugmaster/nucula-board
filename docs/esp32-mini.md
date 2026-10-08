@@ -107,7 +107,7 @@ the updated design with no solver errors. Component values and peripheral
 topology are unchanged; these models do not simulate the new layout's parasitics,
 complete ICs or MCU firmware.
 
-All 30 independent export checks pass for the MINI package, covering Gerber
+All 32 independent export checks pass for the current mounting package, covering Gerber
 copper, solder mask, stencil apertures, drill data, placement data and the
 resized board outline.
 
@@ -121,5 +121,5 @@ resized board outline.
 - [Exact selected JLCPCB part](https://jlcpcb.com/partdetail/Espressif-ESP32_C3_MINI_1H4X/C41349510)
 
 Run `tools/check_mini_module.py` with KiCad's Python after schematic export and
-native DRC with zone refill. Use the **mini-2026-10-08** manufacturing package;
-previous WROOM packages remain historical records.
+native DRC with zone refill. Use the **mounting-2026-10-08** manufacturing package;
+the previous MINI and WROOM packages remain historical records.

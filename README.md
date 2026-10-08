@@ -10,8 +10,8 @@ array with ground-referenced protection and adds a VBUS-controlled data switch.
 It uses the accepted diagnosis from the existing measurements; revised hardware
 still needs bench validation. See the [USB fix](docs/bringup/usb-backfeed-fix.md)
 and [display correction and measurements](docs/bringup/rev-b-display-and-usb.md).
-The [October prototype package](manufacturing/mini-2026-10-08-package.zip)
-includes the MINI-1 module with a flush antenna cutout, these corrections,
+The [October prototype package](manufacturing/mounting-2026-10-08-package.zip)
+includes six M2 mounting holes, the MINI-1 module with a flush antenna cutout, these corrections,
 the side-entry battery connector and labeled J6
 pads for directly soldered battery leads. Revised
 hardware still needs bench validation. September archives are historical.
@@ -45,13 +45,14 @@ controller and antenna matching tree, SSD1309 OLED glass driver/boost supply,
 and a detachable PCF8574T keyboard section. The four-layer PCB is placed and
 routed, with all components on top and the NFC circuitry inside the coil.
 
+- [M2 mounting-hole positions, clearances and validation](docs/mounting-holes.md)
 - [MINI-1 compatibility, pin map, antenna fit and firmware requirements](docs/esp32-mini.md)
 - [Completed PCB layout, layer drawings and validation](docs/pcb-layout.md)
 - [Rev-A display correction, backfeed investigation and measurements](docs/bringup/rev-b-display-and-usb.md)
 - [Rev-A bench procedure with enlarged probe-pad map (PDF)](docs/bringup/rev-A-usb-bench-guide.pdf)
 - [Routing repair, before/after comparison and geometry audit](docs/routing-review.md)
 - [Standard manufacturing package and order settings](docs/manufacturing-release.md)
-- [Current prototype manufacturing ZIP](manufacturing/mini-2026-10-08-package.zip)
+- [Current prototype manufacturing ZIP](manufacturing/mounting-2026-10-08-package.zip)
 - [Side-entry battery connector selection, polarity and assembly instructions](docs/battery-connector.md)
 - [Circuit simulation screening, findings and model limits](docs/simulation/README.md)
 - [Schematic PDF](docs/schematic.pdf)
@@ -84,7 +85,8 @@ voltage checks. KiCad's standard symbols, footprints and 3D models are required;
 parts and the ESP32 STEP model are included with relative paths in `libraries/`.
 The optional PN7160 3D model is omitted because its terms prohibit redistribution;
 its symbol and electrical footprint are included.
-All 129 physical components have assigned footprints. A1 is a reusable four-turn
+All 130 schematic components have assigned footprints; the PCB also includes
+two breakaway footprints and six mechanical mounting holes. A1 is a reusable four-turn
 40 × 40 mm PCB coil with its bottom return and copper keepout included. The NFC
 tree now has calculated starting values, 0805 manual tuning pads and TX isolation
 links. [A separate bare-coil coupon](prototypes/nfc-antenna/nfc-antenna.kicad_pro)

@@ -29,6 +29,8 @@ Run `tools/check_battery_connector.py` with that interpreter to verify the
 side-entry J2 lands, battery polarity and left-edge plug access.
 Run `tools/check_mini_module.py` with that interpreter to verify the 53 MINI-1
 pins, unchanged GPIO functions, USB fanout and flush antenna cutout.
+Run `tools/check_mounting_holes.py` with that interpreter to verify the six
+2.2 mm NPTH drills and 5.5 mm hardware clearances on all four copper layers.
 The independent Gerber audit requires `gerbonara==1.5.0`, `reportlab` and
 `rsvg-convert`. Simulation dependencies are listed in
 [the simulation guide](simulation/README.md) and

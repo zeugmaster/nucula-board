@@ -134,3 +134,12 @@ DC-bias curves and JLCPCB's observed crystal sourcing stock are recorded in
 `Battery_Lead_SolderPads_2x2.2x2.5mm_P3.4mm` provides the two J6 battery wire
 lands: pin 1 BAT+ on the right and pin 2 GND on the left. Both are 2.2 × 2.5 mm
 front copper/mask pads with no holes or paste; J6 is excluded from BOM/CPL.
+
+`MountingHole_2.2mm_M2_5.5mm_Keepout` is an original project mechanical
+footprint for H1–H6. It uses the standard M2 2.2 mm clearance diameter and
+reserves a 5.5 mm circle for hardware up to 5.0 mm diameter. The hole is
+non-plated, without a copper annulus or stencil paste. Courtyards exist on
+both faces; the four-layer rule excludes tracks, vias, fills and components.
+Pads are allowed in the rule so its own NPTH can exist; the independent
+mounting audit explicitly excludes every other pad from this area. The
+footprint is board-only and excluded from the assembly BOM and placements.

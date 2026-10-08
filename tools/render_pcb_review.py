@@ -82,6 +82,25 @@ def main():
 
     write('display-clearance', '65 92 31 23', detail + access, 1550)
     write('top', '48 49 64 112', top + colored(k.Edge_Cuts, '#202c29') + access, 1400)
+    mounts = [f for f in board.GetFootprints() if f.GetReference() in {'H1','H2','H3','H4','H5','H6'}]
+    if len(mounts) == 6:
+        mounting = '<g opacity="0.18">' + top + '</g>' + colored(k.Edge_Cuts, '#202c29')
+        mounting += '<g font-family="sans-serif" fill="#075c50">'
+        mounting += '<text x="80" y="42" font-size="2" text-anchor="middle">6 × Ø2.2 mm NPTH · M2 mounting</text>'
+        mounting += '<text x="80" y="45" font-size="1.1" text-anchor="middle">Hardware Ø5.0 mm max · Ø5.5 mm keepout</text>'
+        for f in mounts:
+            x, y = k.ToMM(f.GetPosition().x), k.ToMM(f.GetPosition().y)
+            mounting += (f'<circle cx="{x}" cy="{y}" r="2.75" fill="#b7f3de" fill-opacity="0.5" '
+                         'stroke="#087f6d" stroke-width="0.15" stroke-dasharray="0.5 0.3"/>'
+                         f'<circle cx="{x}" cy="{y}" r="1.1" fill="white" stroke="#075c50" stroke-width="0.15"/>')
+            label_x, anchor = (x+4, 'start') if x < 80 else (x-4, 'end')
+            mounting += (f'<text x="{label_x}" y="{y-.5}" font-size="1.2" text-anchor="{anchor}">{f.GetReference()}</text>'
+                         f'<text x="{label_x}" y="{y+1}" font-size="0.85" text-anchor="{anchor}">({x:g}, {y:g})</text>')
+        mounting += '<path d="M53.5 49H106.5 M53.5 48V50 M106.5 48V50 M114 53.5V120 M113 53.5H115 M113 120H115" fill="none" stroke="#075c50" stroke-width="0.12"/>'
+        mounting += '<text x="80" y="48.3" text-anchor="middle" font-size="1.2">53.0 mm</text>'
+        mounting += '<text x="115.5" y="86.75" font-size="1.2" text-anchor="middle" transform="rotate(90 115.5 86.75)">66.5 mm</text>'
+        mounting += '<text x="80" y="164" text-anchor="middle" font-size="1.1">Centers in KiCad mm · keyboard hole spacing 53.0 mm</text></g>'
+        write('mounting-holes', '47 39 72 128', mounting, 1400)
     usb = usb_layers[k.F_Cu].replace('#000000', '#c4c9c6') + usb_layers[k.F_Fab].replace('#000000', '#223a4b')
     for f in board.GetFootprints():
         if f.GetReference().startswith('MB'):

@@ -186,8 +186,19 @@ def main():
         len(drill_errors) == len(expected_holes) and not unmatched)
     slots = [o for o in pth.objects if not isinstance(o, Flash)]
     checks['four_0_70_mm_plated_USB_slots'] = len(slots) == 4 and all(isinstance(o, Line) and o.aperture.diameter == .7 for o in slots)
-    checks['30_unplated_locators_and_mouse_bites'] = len(npth.objects) == 30 and Counter(
-        round(o.aperture.diameter, 6) for o in npth.objects) == {.6: 28, .65: 2}
+    checks['36_unplated_mounts_locators_and_mouse_bites'] = len(npth.objects) == 36 and Counter(
+        round(o.aperture.diameter, 6) for o in npth.objects) == {.6: 28, .65: 2, 2.2: 6}
+    mount_xy = {(3.5, 106.5), (56.5, 106.5), (3.5, 40.0),
+                (56.5, 40.0), (3.5, 3.5), (56.5, 3.5)}
+    checks['six_M2_NPTH_drills_at_requested_corners'] = {
+        (round(o.x, 6), round(o.y, 6)) for o in npth.objects
+        if isinstance(o, Flash) and abs(o.aperture.diameter - 2.2) < 1e-6
+    } == mount_xy
+    mounts = {'H1', 'H2', 'H3', 'H4', 'H5', 'H6'}
+    checks['mounts_absent_from_BOM_CPL_and_stencil'] = (
+        not mounts.intersection(populated | pasted)
+        and not mounts.intersection(r.strip() for row in bom for r in row['Designator'].split(','))
+        and not mounts.intersection(row['Designator'] for row in cpl))
 
     graph = defaultdict(set)
     for obj in stack.outline.objects:

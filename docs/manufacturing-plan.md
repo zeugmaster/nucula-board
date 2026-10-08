@@ -4,7 +4,8 @@ Current MCU revision (8 October 2026): **ESP32-C3-MINI-1-H4X / C41349510**.
 The antenna is flush with the right PCB edge; the smaller milled notch includes
 1 mm side clearance and 0.5 mm internal corner radii. GPIO functions and the
 display/USB/battery corrections remain. [Compatibility and verification](esp32-mini.md).
-Use the **mini-2026-10-08** package for this module; earlier packages use WROOM-02.
+Use **mounting-2026-10-08** for the current board, including six M2 mounting holes.
+The earlier MINI package has no mounting holes; older packages use WROOM-02.
 
 **Superseded by the [prepared manufacturing package](manufacturing-release.md)
 on 2026-09-21.** The design and OLED connector are locked. Gerbers, drills, BOM,

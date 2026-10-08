@@ -1,0 +1,105 @@
+(footprint "Battery_Lead_SolderPads_2x2.2x2.5mm_P3.4mm"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Two exposed hand-solder battery wire lands; pin 1 BAT+, pin 2 GND; no stencil paste")
+	(tags "battery wire solder pads no paste")
+	(property "Reference" "REF**"
+		(at 0 -2.1 0)
+		(layer "F.Fab")
+		(uuid "22b2fca0-9ff1-4d0d-b084-108a71c3bf2a")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "Battery wire pads"
+		(at 0 2.7 0)
+		(layer "F.Fab")
+		(uuid "ccefca2d-0239-409d-823b-8402fe6e07cf")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ccbab331-5c54-4e5b-b053-7974b7c65043")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "390fe0d2-64f8-4f38-8473-d975a07b5d22")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd exclude_from_pos_files exclude_from_bom)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -3.05 -1.5)
+		(end 3.05 1.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "720201bc-ce55-489b-be05-1ec35c3b3a68")
+	)
+	(fp_text user "GND"
+		(at -1.7 1.85 0)
+		(layer "F.SilkS")
+		(uuid "a64f1751-e373-49fd-90a5-c3b5a4ba42fb")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(fp_text user "BAT+"
+		(at 1.7 1.85 0)
+		(layer "F.SilkS")
+		(uuid "a975e240-05f1-431f-8ec5-7f458271c671")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at 1.7 0)
+		(size 2.2 2.5)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.2)
+		(uuid "f8cfdfdf-bc26-431c-ae72-5e8eac31c3d9")
+	)
+	(pad "2" smd roundrect
+		(at -1.7 0)
+		(size 2.2 2.5)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.2)
+		(zone_connect 1)
+		(thermal_bridge_width 0.4)
+		(thermal_gap 0.25)
+		(uuid "d805b1c1-8b40-46be-a145-36fe2cf9161b")
+	)
+	(embedded_fonts no)
+)

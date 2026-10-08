@@ -1,15 +1,17 @@
 # Manufacturing releases
 
-**Current engineering prototype: [mini-2026-10-08-package.zip](mini-2026-10-08-package.zip).**
+**Current engineering prototype: [mounting-2026-10-08-package.zip](mounting-2026-10-08-package.zip).**
+Six 2.2 mm NPTH holes accept M2 hardware: four main-board corners and the
+two lower keyboard corners. [Mounting plan](../docs/mounting-holes.md).
 The MINI-1-H4X module replaces WROOM-02. Its antenna tip is flush with the right
 board edge, with a resized milled notch. [Compatibility and firmware requirements](../docs/esp32-mini.md).
-The earlier battery-pads package remains the archived WROOM version.
+The earlier MINI package has no mounts; the battery-pads package is the archived WROOM version.
 Includes side-entry battery J2 **JST SM02B-SRSS-TB / C160402**, 2.95 mm high, requiring an SH lead.
 J6 adds two labeled 2.2 × 2.5 mm pads for directly soldered battery leads, in parallel
 with J2, with no stencil paste or assembly component. Use one battery connection.
 It also includes the October display-pin correction and USB redesign. Gerbers, drill/stencil data, 119-part
 assembly BOM/CPL and drawings are regenerated together. See its
-[assembly instructions](mini-2026-10-08/README.md) and the
+[assembly instructions](mounting-2026-10-08/README.md) and the
 [connector review](../docs/battery-connector.md). Revised USB/display hardware
 still requires bench validation; supplier CAM and placement acceptance remain pending.
 

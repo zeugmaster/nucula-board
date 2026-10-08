@@ -4,13 +4,14 @@ Current MCU revision (8 October 2026): **ESP32-C3-MINI-1-H4X / C41349510**.
 The antenna is flush with the right PCB edge; the smaller milled notch includes
 1 mm side clearance and 0.5 mm internal corner radii. GPIO functions and the
 display/USB/battery corrections remain. [Compatibility and verification](esp32-mini.md).
-Use the **mini-2026-10-08** package for this module; earlier packages use WROOM-02.
+Use **mounting-2026-10-08** for the current board, including six M2 mounting holes.
+The earlier MINI package has no mounting holes; older packages use WROOM-02.
 
 **8 October update:** [J2 is now JST-SH C160402](battery-connector.md),
 side entry at 2.95 mm mated height, requiring an SHR-02V-S-B lead. The [USB redesign](bringup/usb-backfeed-fix.md) has 119
 populated parts per board. The current BOM, five-board purchasing list and
 readiness JSON include the new U4, U10, D5 and C55 selections and the replacement
-J2. The [October prototype package](../manufacturing/mini-2026-10-08-package.zip)
+J2. The [October prototype package](../manufacturing/mounting-2026-10-08-package.zip)
 contains matching production inputs plus J6 direct battery wire pads. J6 is etched
 copper with no paste or purchased component, so the assembly count stays 119.
 Earlier archives remain unchanged.

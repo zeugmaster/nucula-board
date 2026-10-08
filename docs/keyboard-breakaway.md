@@ -9,6 +9,10 @@ matching the board's outer corners.
 
 ![Saved PCB layout around the breakaway](keyboard/breakaway-layout.png)
 
+The lower two keyboard corners now have **2.2 mm NPTH M2 clearance holes**,
+H5/H6 at (53.5, 156.5) and (106.5, 156.5) mm. The main board has four more.
+[Mounting plan and hardware limits](mounting-holes.md).
+
 ## Mechanical connection
 
 Two perforated support tabs, MB1 and MB2, are centered at X = 62 and 98 mm.

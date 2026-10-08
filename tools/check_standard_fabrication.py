@@ -146,6 +146,15 @@ def run(path, drc_path):
             for ref, amendment in revision['footprints'].items():
                 assert expected[ref] == amendment['from_sha256'], ref
                 expected[ref] = amendment['to_sha256']
+        mounting_path = ROOT/'docs/pcb/mounting-footprint-amendments.json'
+        if mounting_path.exists():
+            from check_mounting_holes import audit as mounting_audit, CENTERS
+            revision = json.loads(mounting_path.read_text())
+            assert set(revision['footprints']) == set(CENTERS) | {'R16'}
+            assert mounting_audit(path)['passed']
+            for ref, amendment in revision['footprints'].items():
+                assert expected.get(ref) == amendment['from_sha256'], ref
+                expected[ref] = amendment['to_sha256']
         checks['silk_edits_preserve_all_other_footprint_geometry'] = (
             footprint_geometry_hashes(tree) == expected)
     return {'passed': all(checks.values()), 'checks': checks,
