@@ -10532,8 +10532,8 @@
 		(descr "Ultra-small-sized Tactile Switch with High Contact Reliability, Top-actuated Model, without Ground Terminal, without Boss")
 		(tags "Tactile Switch")
 		(property "Reference" "SW1"
-			(at 0 -3.5 0)
-			(layer "F.SilkS")
+			(at 0 0 0)
+			(layer "F.Fab")
 			(uuid "a53a341b-dc5c-4b4c-8a31-402982d6c9ac")
 			(effects
 				(font
@@ -10770,17 +10770,6 @@
 			(fill no)
 			(layer "F.Fab")
 			(uuid "68437500-e8a5-4973-947f-bb18a2fc6b80")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -2.5 90)
-			(layer "F.Fab")
-			(uuid "2f8781e0-45e5-4040-8541-a3d21a45970b")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
 		)
 		(pad "1" smd rect
 			(at -1.7 0 90)
@@ -25130,8 +25119,8 @@
 		(descr "Ultra-small-sized Tactile Switch with High Contact Reliability, Top-actuated Model, without Ground Terminal, without Boss")
 		(tags "Tactile Switch")
 		(property "Reference" "SW2"
-			(at 0 -3.5 0)
-			(layer "F.SilkS")
+			(at 0 0 0)
+			(layer "F.Fab")
 			(uuid "e259f23b-477a-4f59-829c-3c6fd02b5c3d")
 			(effects
 				(font
@@ -25358,17 +25347,6 @@
 			(fill no)
 			(layer "F.Fab")
 			(uuid "e4bb35e1-0fa1-491f-a4d5-57b132d8b990")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -2.5 90)
-			(layer "F.Fab")
-			(uuid "e851853b-7465-49fd-83ce-e8f93d574bd3")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
 		)
 		(pad "1" smd rect
 			(at -1.7 0 90)
@@ -40000,6 +39978,28 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "36890a7f-45f3-432a-98fc-d4ae4babb1c1")
+	)
+	(gr_text "RESET"
+		(at 103 84 0)
+		(layer "F.SilkS")
+		(uuid "fd6eb62d-8939-4214-8c94-8fd7e2a005bf")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(gr_text "BOOT"
+		(at 103 79 0)
+		(layer "F.SilkS")
+		(uuid "5d41d774-fb6d-48f5-8949-a178a9a96d66")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
 	)
 	(gr_text "1 CUT BRIDGE"
 		(at 92.5 134.5 0)
