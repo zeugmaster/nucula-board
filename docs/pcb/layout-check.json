@@ -18,7 +18,11 @@
     "no_pour_in_fracture_band": true,
     "five_original_breakaway_crossings_preserved": true,
     "no_vias_in_fracture_band": true,
-    "both_sides_of_USB_switch_are_routed": true
+    "both_sides_of_USB_switch_are_routed": true,
+    "native_drc_zero_errors": true,
+    "native_drc_zero_unconnected": true,
+    "native_drc_only_reviewed_cosmetic_warnings": true,
+    "native_report_has_no_schematic_parity_issues": true
   },
   "advisory_checks": {
     "usb_connector_to_series_resistor_skew_below_0_5mm": false,
@@ -26,7 +30,7 @@
   },
   "passed": true,
   "footprints": 138,
-  "tracks": 1159,
+  "tracks": 1157,
   "vias": 318,
   "fixed_placements": {
     "A1": {
@@ -76,7 +80,7 @@
     },
     "J2": {
       "position_rotation": [
-        53.7,
+        57.7,
         100.9,
         -90.0
       ],
@@ -313,7 +317,7 @@
       "name": "GND F.Cu outside NFC and fracture band",
       "layer": "F.Cu",
       "net": "GND",
-      "filled_area_mm2": 3125.7386,
+      "filled_area_mm2": 3115.3013,
       "nfc_overlap_mm2": 0.0,
       "fracture_overlap_mm2": 0.0
     },
@@ -321,7 +325,7 @@
       "name": "GND B.Cu outside NFC and fracture band",
       "layer": "B.Cu",
       "net": "GND",
-      "filled_area_mm2": 3566.2109,
+      "filled_area_mm2": 3551.6285,
       "nfc_overlap_mm2": 0.0,
       "fracture_overlap_mm2": 0.0
     },
@@ -329,7 +333,7 @@
       "name": "GND In1.Cu outside NFC and fracture band",
       "layer": "In1.Cu",
       "net": "GND",
-      "filled_area_mm2": 3190.063,
+      "filled_area_mm2": 3173.6595,
       "nfc_overlap_mm2": 0.0,
       "fracture_overlap_mm2": 0.0
     },
@@ -337,7 +341,7 @@
       "name": "GND In2.Cu outside NFC and fracture band",
       "layer": "In2.Cu",
       "net": "GND",
-      "filled_area_mm2": 3579.6608,
+      "filled_area_mm2": 3564.4545,
       "nfc_overlap_mm2": 0.0,
       "fracture_overlap_mm2": 0.0
     }
@@ -415,7 +419,7 @@
       "0.2": 22.6352
     },
     "GND": {
-      "0.3": 131.7519,
+      "0.3": 130.0448,
       "0.225": 6.9452,
       "0.2": 33.3536,
       "0.15": 55.5525,
@@ -463,8 +467,8 @@
       "0.15": 39.2065
     },
     "/I2C_SCL": {
-      "0.15": 58.79,
-      "0.2": 117.0105
+      "0.15": 59.818,
+      "0.2": 116.5847
     },
     "/KEY_INT_N": {
       "0.2": 64.778,
@@ -524,10 +528,9 @@
       "0.2": 35.3927
     },
     "/Power + ESP32-C3/VBAT": {
-      "0.75": 28.4408,
-      "0.5": 5.5657,
+      "0.5": 6.8912,
+      "0.75": 26.7404,
       "0.15": 2.7474,
-      "0.4": 0.9,
       "0.35": 39.5227
     },
     "/Power + ESP32-C3/USB_PHY_D+": {

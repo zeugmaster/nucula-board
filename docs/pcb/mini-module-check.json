@@ -47,7 +47,7 @@
     "18": 1.8006854249492381,
     "19": 1.8006854249492381
   },
-  "board_sha256": "3c0cf58d442847710dd67f742bd31bd8aefe7c2391d729d49998fca835e549bb",
+  "board_sha256": "5fec369aedcebba27755317d4aad752be0df979abbcbb948e7b72348429d3a72",
   "netlist_sha256": "e3d7f8a73c5bd811c5d7304e5b0d91387431181796582acd4680c7bfc3c7f189",
   "hardware_tested": false
 }

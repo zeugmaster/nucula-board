@@ -129,6 +129,15 @@ def run(path, drc_path):
             amendment = revision['footprints']['J2']
             assert expected['J2'] == amendment['from_sha256']
             expected['J2'] = amendment['to_sha256']
+        notch_path = ROOT/'docs/pcb/battery-notch-amendments.json'
+        if notch_path.exists():
+            revision = json.loads(notch_path.read_text())
+            assert set(revision['footprints']) == {'J2'}
+            from check_battery_connector import audit as battery_audit
+            assert battery_audit(path)['passed']
+            amendment = revision['footprints']['J2']
+            assert expected['J2'] == amendment['from_sha256']
+            expected['J2'] = amendment['to_sha256']
         wire_path = ROOT/'docs/pcb/battery-wire-pad-amendments.json'
         if wire_path.exists():
             from check_battery_connector import audit as battery_audit
@@ -154,6 +163,13 @@ def run(path, drc_path):
             assert mounting_audit(path)['passed']
             for ref, amendment in revision['footprints'].items():
                 assert expected.get(ref) == amendment['from_sha256'], ref
+                expected[ref] = amendment['to_sha256']
+        button_path = ROOT/'docs/pcb/button-label-amendments.json'
+        if button_path.exists():
+            revision = json.loads(button_path.read_text())
+            assert set(revision['footprints']) == {'SW1', 'SW2'}
+            for ref, amendment in revision['footprints'].items():
+                assert expected[ref] == amendment['from_sha256'], ref
                 expected[ref] = amendment['to_sha256']
         checks['silk_edits_preserve_all_other_footprint_geometry'] = (
             footprint_geometry_hashes(tree) == expected)

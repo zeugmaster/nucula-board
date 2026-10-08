@@ -27,7 +27,7 @@
       -90.0
     ],
     "J2": [
-      53.7,
+      57.7,
       100.9,
       -90
     ],
@@ -2533,7 +2533,7 @@
     "H6": "M2 2.2mm NPTH"
   },
   "antenna_copper_and_rule_sha256": "d59502c6aed490f966bb845a4400af206a1246088f0fa6b29024725e0b6da3fa",
-  "edge_cuts_sha256": "18a9d232118a0e25fd36255913f866d9a4dd9e5e29ac544e4aa885ac8a79d11c",
+  "edge_cuts_sha256": "841d85d5ec358b791c9397054f4b6df987098caba7e1d81db5e5c6fdcafc371c",
   "nfc_refs": [
     "U6",
     "Y1",
@@ -2671,6 +2671,22 @@
         "USB skew/reference checks remain reported as advisories rather than manufacturing release gates."
       ],
       "preserved": "Component values and logical nets, DS1 position, other fixed placements, antenna copper and outline remain constrained."
+    },
+    {
+      "date": "2026-10-08",
+      "reference": "J2",
+      "reason": "Move J2 4 mm inward (+X), preserving orientation and land pattern. Cut a 5 mm overall mouth by 3 mm deep cable notch in the left edge, with R0.5 inner and outer corners. Reroute local VBAT/GND and SCL; preserve every other footprint and outline primitive.",
+      "record": "battery-notch-amendments.json",
+      "old_position_rotation": [
+        53.7,
+        100.9,
+        -90
+      ],
+      "new_position_rotation": [
+        57.7,
+        100.9,
+        -90
+      ]
     }
   ],
   "advisory_checks": [
@@ -2732,5 +2748,16 @@
   ],
   "usb_revision_note": "Explicit topology changes bound to docs/pcb/usb-footprint-amendments.json; all other values and pad nets retain the prior baseline.",
   "battery_connector_revision_note": "Low-profile side-entry J2 C160402, 2.95 mm mated height; left-edge access. JST-SH lead replaces PH; see battery-footprint-amendments.json and docs/battery-connector.md.",
-  "edge_cuts_baseline_note": "Refreshed stale outline hash against task-start board 95100d7cc580e9cf4c9a720851f986fd1073191a7cd6800b34e5490763bbdea3. All 32 Edge.Cuts objects, UUIDs, ordering and dimensions are exactly unchanged by the J2 correction; previous constraint hash 02f7c97b7a1f638b534da9947c810d0cf1e5901762b2e6ef5140e702e0ec0cc3"
+  "edge_cuts_baseline_note": "Current outline includes the authorized rounded battery cable notch; before/after hashes and unchanged primitive count are recorded in battery-notch-amendments.json.",
+  "reviewed_existing_silk_mask_pairs": [
+    [
+      "304a1388-e838-4578-904a-550e3cb631a2",
+      "124a979b-6edb-4900-84ef-5f984ba7daf1"
+    ],
+    [
+      "9b535970-b51f-4dfb-ad07-fda06880a3cf",
+      "ae198ebd-3e95-4d23-a354-b994ef4c1d3d"
+    ]
+  ],
+  "reviewed_existing_silk_mask_note": "R15 reference against VBAT_ADC via and R17 reference against U3 pad 51: identical in native DRC before/after the cable-notch edit; these items and footprint geometries are unchanged. Supplier plots clip silkscreen against mask."
 }

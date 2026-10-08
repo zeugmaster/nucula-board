@@ -10,6 +10,10 @@ array with ground-referenced protection and adds a VBUS-controlled data switch.
 It uses the accepted diagnosis from the existing measurements; revised hardware
 still needs bench validation. See the [USB fix](docs/bringup/usb-backfeed-fix.md)
 and [display correction and measurements](docs/bringup/rev-b-display-and-usb.md).
+The editable PCB also moves J2 **4 mm inward** and adds a **5 × 3 mm battery
+cable notch with 0.5 mm inner and outer corner radii**. Existing manufacturing
+archives predate this change; regenerate fabrication and placement files before
+ordering. See the [battery cable detail](docs/battery-connector.md).
 The [October prototype package](manufacturing/mounting-2026-10-08-package.zip)
 includes six M2 mounting holes, the MINI-1 module with a flush antenna cutout, these corrections,
 the side-entry battery connector and labeled J6

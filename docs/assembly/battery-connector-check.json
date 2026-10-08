@@ -13,6 +13,9 @@
     "physical_polarity_matches_drawing": true,
     "mounting_tabs_have_no_net": true,
     "left_edge_plug_approach_has_no_components": true,
+    "cable_notch_5mm_mouth_3mm_depth": true,
+    "cable_notch_four_R0_5_tangent_corners": true,
+    "cable_notch_is_open_removed_material": true,
     "entire_connector_courtyard_on_board": true,
     "catalogue_identifies_right_angle_smt_part": true,
     "wire_pads_same_library_in_schematic_and_board": true,
@@ -24,7 +27,7 @@
     "wire_pads_not_a_purchased_or_placed_component": true,
     "wire_pads_on_board_and_clear_of_other_components": true
   },
-  "board_sha256": "3c0cf58d442847710dd67f742bd31bd8aefe7c2391d729d49998fca835e549bb",
+  "board_sha256": "5fec369aedcebba27755317d4aad752be0df979abbcbb948e7b72348429d3a72",
   "footprint_sha256": "9990af7ee96e3d1c8a5c4d4f522e102048830449531e45bf5789d4c640bf2553",
   "wire_pad_footprint_sha256": "502624ddaac59004261ceb5b18a6f7ed9d0efdc0a041bab1aee230491d150faa",
   "wire_pads": {
@@ -56,7 +59,7 @@
   "rated_current_A_at_AWG28": 1.0,
   "peak_current_assumption": "User accepts intermittent excursions above 1 A; no new current limiter or battery operating restriction. Above-rating pulses are not manufacturer-qualified by this audit.",
   "placement_mm_deg": [
-    53.7,
+    57.7,
     100.9,
     -90.0
   ],
@@ -64,9 +67,24 @@
   "approach_bounds_mm": [
     50.0,
     98.0,
-    51.125,
+    55.125,
     103.8
   ],
+  "cable_notch": {
+    "bounds_mm": [
+      50.0,
+      98.4,
+      53.0,
+      103.4
+    ],
+    "overall_mouth_mm": 5.0,
+    "straight_channel_width_mm": 4.0,
+    "depth_mm": 3.0,
+    "inner_and_outer_radius_mm": 0.5,
+    "socket_move_inward_mm": 4.0,
+    "mating_face_x_mm": 55.125,
+    "mating_face_to_notch_back_mm": 2.125
+  },
   "intruding_courtyards": {},
   "source": "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf",
   "limitations": "KiCad SH STEP model assigned. Enclosure/cable bend room, supplied SH lead polarity and intermittent-peak performance need physical confirmation."

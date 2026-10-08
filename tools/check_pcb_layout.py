@@ -208,6 +208,8 @@ def run(board_path, constraints, drc_path):
         checks["native_drc_zero_unconnected"] = not drc["unconnected_items"]
         reviewed_silk = set(constraints.get('reviewed_library_silkscreen_changes', []))
         reviewed_art = set(constraints.get('reviewed_back_art_mask_clipping', []))
+        reviewed_mask_pairs = {frozenset(pair) for pair in
+                               constraints.get('reviewed_existing_silk_mask_pairs', [])}
         def reviewed_warning(v):
             if v['severity'] != 'warning':
                 return False
@@ -216,8 +218,9 @@ def run(board_path, constraints, drc_path):
             if v['type'] == 'lib_footprint_mismatch':
                 return all(i['description'][len('Footprint '):] in reviewed_silk
                            for i in v['items'])
-            return v['type'] == 'silk_over_copper' and any(
-                i['uuid'] in reviewed_art for i in v['items'])
+            return v['type'] == 'silk_over_copper' and (
+                any(i['uuid'] in reviewed_art for i in v['items']) or
+                frozenset(i['uuid'] for i in v['items']) in reviewed_mask_pairs)
         checks["native_drc_only_reviewed_cosmetic_warnings"] = all(reviewed_warning(v) for v in drc['violations'])
         checks["native_report_has_no_schematic_parity_issues"] = not drc.get("schematic_parity", [])
     advisory_names = set(constraints.get("advisory_checks", []))

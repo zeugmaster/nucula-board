@@ -1,0 +1,47 @@
+{
+  "source_commit": "f11f52735be1375bba0bfeb6b30050a7328ccec2",
+  "source_board_sha256": "6274a111c6aaac8714199ad2de0ac48df18ad5a1afa2783ddadcf907264a9434",
+  "reason": "Move J2 4 mm inward (+X), preserving orientation and land pattern. Cut a 5 mm overall mouth by 3 mm deep cable notch in the left edge, with R0.5 inner and outer corners. Reroute local VBAT/GND and SCL; preserve every other footprint and outline primitive.",
+  "footprints": {
+    "J2": {
+      "from_sha256": "c043f6ea8e492c2b6762aaa40c8f84fe067f3636d0362d64868dd250cc8c9ac8",
+      "to_sha256": "24c76c482d1a5c1f539a30176ba317da2b3d6abb690bf76370bcaf7cb5026cbe"
+    }
+  },
+  "edge_cuts": {
+    "from_sha256": "18a9d232118a0e25fd36255913f866d9a4dd9e5e29ac544e4aa885ac8a79d11c",
+    "to_sha256": "841d85d5ec358b791c9397054f4b6df987098caba7e1d81db5e5c6fdcafc371c",
+    "removed_uuid": [
+      "8cafe8a7-cc32-4c28-8ded-ff72e1711010"
+    ],
+    "added_uuids": [
+      "18c65096-627e-48c7-a278-bae5e9974d51",
+      "209f0ff4-6bdf-47df-a506-6cff765504b8",
+      "22ae4499-131a-4248-a752-cd0d93db79ba",
+      "2343b27c-251c-4070-b69e-24b37f1eee10",
+      "7261af58-1f62-400e-ba36-0a2db4a5d7ee",
+      "828db4d8-d739-426b-b864-6e38c96874c0",
+      "9d0052e4-b141-42ec-bd23-73d4a0cb5fb4",
+      "bc87b482-f1ec-4f66-8907-6a9b93024ffa",
+      "d24580f6-03fa-4fc0-b24a-93128629bd74"
+    ],
+    "unchanged_primitives": 33
+  },
+  "routing_changes": {
+    "segment": {
+      "before": 1159,
+      "after": 1157,
+      "removed": 16,
+      "added": 14,
+      "modified": 1
+    },
+    "via": {
+      "before": 318,
+      "after": 318,
+      "removed": 0,
+      "added": 0,
+      "modified": 3
+    }
+  },
+  "routing_scope": "Only GND, VBAT and I2C_SCL; all other track and via objects are byte-identical to the task-start board."
+}

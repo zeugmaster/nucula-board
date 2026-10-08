@@ -1,4 +1,4 @@
-# Battery connector and direct wire pads — 8 October 2026
+# Battery connector, cable notch and direct wire pads — 8 October 2026
 
 Fit **JST SM02B-SRSS-TB(LF)(SN), JLCPCB C160402**, a **1.00 mm pitch JST-SH
 side-entry SMT header, 2.95 mm high when mated**. Its opening faces the left
@@ -87,18 +87,27 @@ standard KiCad SH STEP model is assigned and resolves in the checked
 installation. Library and board lands, body, courtyard and model agree.
 KiCad assets retain the library license with design exception.
 
-J2 is locked at **(53.70, 100.90) mm, −90°**. The mating face is at
-**X = 51.125 mm**, 1.125 mm inside the left edge. The full courtyard is on
-board and the mounting copper starts 0.925 mm inside the edge. The audited
-approach corridor to the edge contains no other component courtyard. Leave
-enclosure clearance for insertion, the protruding plug and cable bend.
+J2 is locked at **(57.70, 100.90) mm, −90°**, moved **4.00 mm inward** from
+its previous X = 53.70 mm position. The mating face is at **X = 55.125 mm**.
+The full courtyard remains on the board, and the approach corridor contains
+no other component courtyard.
 
-VBAT/GND traces change only near J2; other footprints, board outline, display
-and antenna geometry remain unchanged from the prior October correction.
-The October 8 J6 addition preserves all 131 existing footprint geometries,
-all 1,110 existing trace segments and all 324 vias, adding five local trace
-segments. Only the C42 reference text moves to clear the new exposed pads.
-The two ground-via and one VBAT-via moves made for PH remain in place.
+A cable notch is centred opposite J2 at **Y = 100.90 mm**. It opens from the
+left edge at **X = 50 mm**, extends **3.00 mm inward to X = 53 mm**, and spans
+**5.00 mm overall from Y = 98.40 to 103.40 mm**. All four transitions use
+**0.50 mm radii**, including the outer shoulders and inner corners. The parallel
+channel walls are 4.00 mm apart after the rounded shoulders. The mating face
+is **2.125 mm behind the deepest notch edge**, leaving room for leads to turn
+through the notch toward the back without going beyond the board's original
+60 × 110 mm envelope. Actual plug length, wire bend radius and enclosure fit
+still need a physical check; this drawing does not model a particular cable.
+
+Only J2 changes component position. Its reference label shifts within the body
+to clear an exposed via. Local VBAT/GND connections and the SCL via escape are
+rerouted; one GND, one VBAT and one SCL via move. J6 and every other footprint,
+all mounting holes, the display, antenna and remaining outline primitives are
+preserved. The geometry amendment is recorded in
+[battery-notch-amendments.json](pcb/battery-notch-amendments.json).
 This footprint is **not compatible with an already fabricated Rev A board**.
 The original Rev A files specified vertical B2B-PH-SM4-TB / C160352, so the
 received upright part is consistent with those records; they do not establish
@@ -112,23 +121,23 @@ origin (50,160) and Y upward:
 
 | Feature | X, mm | Y, mm | Rotation |
 | --- | --- | --- | --- |
-| J2 footprint anchor | 3.700 | 59.100 | 270° |
-| Pin 1, VBAT positive | 5.700 | 59.600 | — |
-| Pin 2, GND | 5.700 | 58.600 | — |
+| J2 footprint anchor | 7.700 | 59.100 | 270° |
+| Pin 1, VBAT positive | 9.700 | 59.600 | — |
+| Pin 2, GND | 9.700 | 58.600 | — |
 | J6 pin 1, BAT+ wire pad | 6.100 | 64.000 | — |
 | J6 pin 2, GND wire pad | 2.700 | 64.000 | — |
 
 CPL coordinates preserve the KiCad anchor without assumed centre offsets.
-Use the pad-coordinate CSV for an independent preview check. BOM, CPL,
-Gerbers, drill files, paste and schematic/assembly drawings are regenerated
-in **battery-pads-2026-10-08**. This supersedes the October 7 SH/PH and September
-packages for the next prototype; all earlier archives remain unchanged.
+Use the pad-coordinate CSV for an independent preview check. **Existing
+manufacturing archives, including mounting-2026-10-08, predate this connector
+move and notch.** Generate a new manufacturing export from the current PCB
+before ordering; the archives retain their original outline and J2 coordinates.
 
 The [connector audit](assembly/battery-connector-check.json) checks exact part,
 land dimensions, polarity, orientation, model, paste and plug approach.
-Native ERC has zero violations; DRC has zero errors, zero unconnected items,
-and zero schematic-parity findings. The 44 remaining DRC warnings are the
-41 existing library differences, two ESP32 edge-silk warnings and one back
-silk/mask warning. The independent routing and Gerber readback reports cover
-the revised connector and the rest of the exported board. The October
+The audit also checks notch dimensions, all four corner radii and removed
+material. DRC with copper refill has zero errors, zero unconnected items and
+zero schematic-parity findings. The same 43 existing cosmetic warnings remain.
+All six independent routing checks pass. Manufacturing Gerber readback reports
+belong to their archived exports and do not cover this newer notch. The October
 USB/display redesigns still require testing on revised hardware.

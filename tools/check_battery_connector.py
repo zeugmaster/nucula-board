@@ -69,21 +69,44 @@ def audit(path=ROOT / 'nucula-v2.kicad_pcb'):
         outlines(placed, layer) == outlines(lib, layer) for layer in ['F.Fab', 'F.CrtYd'])
     pos = [round(k.ToMM(fp.GetPosition().x), 6), round(k.ToMM(fp.GetPosition().y), 6),
            fp.GetOrientationDegrees()]
-    checks['locked_socket_faces_left_edge'] = pos == [53.7, 100.9, -90.] and fp.IsLocked()
+    checks['locked_socket_faces_left_edge'] = pos == [57.7, 100.9, -90.] and fp.IsLocked()
     pads = {p.GetNumber(): p for p in fp.Pads() if p.GetNumber() in ['1', '2']}
     checks['pin_1_positive_pin_2_ground'] = (pads['1'].GetNetname().endswith('/VBAT')
                                            and pads['2'].GetNetname() == 'GND')
     checks['physical_polarity_matches_drawing'] = all(
-        abs(k.ToMM(pads[n].GetPosition().x) - 55.7) < 1e-6 and
+        abs(k.ToMM(pads[n].GetPosition().x) - 59.7) < 1e-6 and
         abs(k.ToMM(pads[n].GetPosition().y) - y) < 1e-6 for n, y in [('1', 100.4), ('2', 101.4)])
     checks['mounting_tabs_have_no_net'] = all(not p.GetNetname() for p in fp.Pads() if p.GetNumber() == 'MP')
-    approach_bounds = [50., 98., 51.125, 103.8]
+    approach_bounds = [50., 98., 55.125, 103.8]
     approach = rectangle(approach_bounds)
     intruders = {ref: overlap_area(f.GetCourtyard(k.F_CrtYd), approach)
                  for ref, f in fps.items() if ref != 'J2' and f.GetLayer() == k.F_Cu}
     checks['left_edge_plug_approach_has_no_components'] = not any(intruders.values())
     outline = k.SHAPE_POLY_SET()
     assert board.GetBoardPolygonOutlines(outline, False)
+    # Independent nominal dimensions for the cable notch. Both mouth shoulders
+    # and both inner corners are R0.5; the overall mouth is 5 mm, depth 3 mm.
+    def xy(point):
+        return tuple(round(k.ToMM(v), 5) for v in (point.x, point.y))
+    notch_edges = [g for g in board.GetDrawings() if g.GetLayer() == k.Edge_Cuts
+                   and all(49.99 <= x <= 53.01 and 98.39 <= y <= 103.41
+                           for x, y in [xy(g.GetStart()), xy(g.GetEnd())])]
+    straight = {tuple(sorted([xy(g.GetStart()), xy(g.GetEnd())]))
+                for g in notch_edges if g.GetShape() == k.SHAPE_T_SEGMENT}
+    checks['cable_notch_5mm_mouth_3mm_depth'] = straight == {
+        ((50.5, 98.9), (52.5, 98.9)), ((53., 99.4), (53., 102.4)),
+        ((50.5, 102.9), (52.5, 102.9))}
+    arcs = [g for g in notch_edges if g.GetShape() == k.SHAPE_T_ARC]
+    checks['cable_notch_four_R0_5_tangent_corners'] = len(arcs) == 4 and {
+        tuple(sorted([xy(g.GetStart()), xy(g.GetEnd())])) for g in arcs} == {
+        ((50., 98.4), (50.5, 98.9)), ((52.5, 98.9), (53., 99.4)),
+        ((52.5, 102.9), (53., 102.4)), ((50., 103.4), (50.5, 102.9))} and all(
+            abs(k.ToMM(g.GetRadius()) - .5) < .001 and
+            abs(abs(g.GetArcAngle().AsDegrees()) - 90) < .1 for g in arcs)
+    # Check the cut is removed material, with the deepest edge at X=53.
+    checks['cable_notch_is_open_removed_material'] = (
+        overlap_area(outline, rectangle([50., 99.4, 53., 102.4])) < 1e-6 and
+        abs(overlap_area(outline, rectangle([53., 99.4, 54., 102.4])) - 3.) < 1e-6)
     court = k.SHAPE_POLY_SET(fp.GetCourtyard(k.F_CrtYd))
     court.BooleanSubtract(outline)
     checks['entire_connector_courtyard_on_board'] = court.Area() == 0
@@ -140,6 +163,11 @@ def audit(path=ROOT / 'nucula-v2.kicad_pcb'):
                 peak_current_assumption='User accepts intermittent excursions above 1 A; no new current limiter or battery operating restriction. Above-rating pulses are not manufacturer-qualified by this audit.',
                 placement_mm_deg=pos, opening='Left edge (-X); cable parallel to PCB',
                 approach_bounds_mm=approach_bounds,
+                cable_notch=dict(bounds_mm=[50., 98.4, 53., 103.4],
+                                 overall_mouth_mm=5., straight_channel_width_mm=4.,
+                                 depth_mm=3., inner_and_outer_radius_mm=.5,
+                                 socket_move_inward_mm=4., mating_face_x_mm=55.125,
+                                 mating_face_to_notch_back_mm=2.125),
                 intruding_courtyards={r: a for r, a in intruders.items() if a},
                 source='https://www.jst-mfg.com/product/pdf/eng/eSH.pdf',
                 limitations='KiCad SH STEP model assigned. Enclosure/cable bend room, supplied SH lead polarity and intermittent-peak performance need physical confirmation.')

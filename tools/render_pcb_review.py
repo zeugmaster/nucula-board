@@ -119,13 +119,16 @@ def main():
 <rect x="43.4" y="89.2" width="30" height="3.1" fill="white"/>
 <text x="55.2" y="90.3" font-size="0.85" text-anchor="middle" fill="#122c3b">J2: side-entry JST-SH / C160402</text>
 <text x="55.2" y="91.7" font-size="0.7" text-anchor="middle" fill="#122c3b">2.95 mm high, including mated plug</text>
-<path d="M51.125 100.9 H44.2 M45.3 100.1 L44.2 100.9 L45.3 101.7" fill="none" stroke="#087f6d" stroke-width="0.23"/>
-<text x="46.9" y="99.5" text-anchor="middle" font-size="0.65" fill="#087f6d">Lead exits left</text>
-<text x="46.9" y="102.7" text-anchor="middle" font-size="0.65" fill="#087f6d">parallel to PCB</text>
-<circle cx="55.7" cy="100.4" r="0.25" fill="#b74425"/>
-<circle cx="55.7" cy="101.4" r="0.25" fill="#243e56"/>
-<text x="56.0" y="99.5" font-size="0.7" text-anchor="middle" fill="#b74425" stroke="white" stroke-width="0.16" paint-order="stroke">1 +</text>
-<text x="55.7" y="102.6" font-size="0.7" text-anchor="middle" fill="#243e56" stroke="white" stroke-width="0.16" paint-order="stroke">2 GND</text>
+<path d="M55.125 100.9 H51.5 M52.2 100.4 L51.5 100.9 L52.2 101.4" fill="none" stroke="#087f6d" stroke-width="0.16"/>
+<text x="46.8" y="99.7" text-anchor="middle" font-size="0.65" fill="#087f6d">Cable to back</text>
+<text x="46.8" y="100.8" text-anchor="middle" font-size="0.65" fill="#087f6d">5 × 3 mm notch</text>
+<text x="46.8" y="101.9" text-anchor="middle" font-size="0.6" fill="#087f6d">R0.5 all corners</text>
+<path d="M49.3 98.4V103.4 M49 98.4H49.6 M49 103.4H49.6 M50 104H53 M50 103.7V104.3 M53 103.7V104.3" fill="none" stroke="#087f6d" stroke-width="0.07"/>
+<text x="51.5" y="105" text-anchor="middle" font-size="0.65" fill="#087f6d">3 mm deep</text>
+<circle cx="59.7" cy="100.4" r="0.19" fill="#b74425"/>
+<circle cx="59.7" cy="101.4" r="0.19" fill="#243e56"/>
+<text x="59.4" y="99.5" font-size="0.7" text-anchor="middle" fill="#b74425" stroke="white" stroke-width="0.16" paint-order="stroke">1 +</text>
+<text x="60" y="102.3" font-size="0.65" text-anchor="middle" fill="#243e56" stroke="white" stroke-width="0.16" paint-order="stroke">2 GND</text>
 <rect x="51.6" y="94.75" width="2.2" height="2.5" rx="0.44" fill="#243e56" fill-opacity="0.22"/>
 <rect x="55" y="94.75" width="2.2" height="2.5" rx="0.44" fill="#b74425" fill-opacity="0.28"/>
 <text x="52.7" y="97.9" font-size="0.6" text-anchor="middle" fill="#243e56" stroke="white" stroke-width="0.15" paint-order="stroke">GND</text>

@@ -18,8 +18,8 @@
     "no_dangling_copper": true,
     "silk_edits_preserve_all_other_footprint_geometry": true
   },
-  "board_sha256": "3c0cf58d442847710dd67f742bd31bd8aefe7c2391d729d49998fca835e549bb",
-  "drc_sha256": "2b4bf36c9945c650a6f01f5b33d8730096c9b2dcdd5caf2212cd35339098ea74",
+  "board_sha256": "5fec369aedcebba27755317d4aad752be0df979abbcbb948e7b72348429d3a72",
+  "drc_sha256": "ffa46919a51e29acaa0c6cd6d6d410db5e79301692124aa192b394afbf7b0e18",
   "ribbon_access_mm": [
     71.15,
     98.55,

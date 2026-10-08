@@ -88,8 +88,8 @@ def main():
     placements = list(csv.DictReader((out / 'assembly/placements.csv').open()))
     populated = {r['Ref'] for r in placements}
     # Manufacturer side-entry lands at the locked, outward-facing placement.
-    j2_expected = [(5.7, 59.6, 1.55, .6), (5.7, 58.6, 1.55, .6),
-                   (1.825, 60.9, 1.8, 1.2), (1.825, 57.3, 1.8, 1.2)]
+    j2_expected = [(9.7, 59.6, 1.55, .6), (9.7, 58.6, 1.55, .6),
+                   (5.825, 60.9, 1.8, 1.2), (5.825, 57.3, 1.8, 1.2)]
     def j2_flashes(layer):
         return [o for o in stack.graphic_layers['top', layer].objects
                 if isinstance(o, Flash) and (o.attrs.get('.P', ('',))[0] == 'J2'
@@ -114,7 +114,7 @@ def main():
     cpl = list(csv.DictReader((out/'assembly/jlcpcb-cpl.csv').open()))
     j2_cpl = [r for r in cpl if r['Designator'] == 'J2']
     checks['J2_CPL_anchor_rotation_and_side'] = len(j2_cpl) == 1 and (
-        tuple(float(j2_cpl[0][k]) for k in ['Mid X','Mid Y','Rotation']) == (3.7,59.1,270.)
+        tuple(float(j2_cpl[0][k]) for k in ['Mid X','Mid Y','Rotation']) == (7.7,59.1,270.)
         and j2_cpl[0]['Layer'] == 'Top')
     # Hand-solder lands must survive fabrication export, but never get paste
     # or a machine-placement/BOM entry. Coordinates use the same plot origin.

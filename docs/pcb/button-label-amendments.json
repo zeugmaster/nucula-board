@@ -1,0 +1,15 @@
+{
+  "source_commit": "f11f527",
+  "reason": "Record the prior BOOT/RESET annotation commit: SW1/SW2 reference fields moved to F.Fab and duplicate F.Fab ${REFERENCE} text removed. Pads, placement, models and other graphics are byte-equivalent; no additional PCB changes made for this record.",
+  "source_board_sha256": "3c0cf58d442847710dd67f742bd31bd8aefe7c2391d729d49998fca835e549bb",
+  "footprints": {
+    "SW1": {
+      "from_sha256": "508f818134ec91ce2f0ea97542a6f99e6520631d64c5547103eae82e272f6ddd",
+      "to_sha256": "eed50da3eb6e7f010435fd955d0f2c614e88e2fa80ec32b7dfdb5540a140624f"
+    },
+    "SW2": {
+      "from_sha256": "515277177fa0df254f8c51760fe622af2ea9857eb1a3d9446ff9fba84114545e",
+      "to_sha256": "43a867b6278f4875347cc3f6184b403d04ece8e79850be51e40229e24366876e"
+    }
+  }
+}

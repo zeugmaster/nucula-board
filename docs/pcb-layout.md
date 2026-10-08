@@ -4,14 +4,16 @@ Current MCU revision (8 October 2026): **ESP32-C3-MINI-1-H4X / C41349510**.
 The antenna is flush with the right PCB edge; the smaller milled notch includes
 1 mm side clearance and 0.5 mm internal corner radii. GPIO functions and the
 display/USB/battery corrections remain. [Compatibility and verification](esp32-mini.md).
-Use **mounting-2026-10-08** for the current board, including six M2 mounting holes.
+The **mounting-2026-10-08** archive includes six M2 mounting holes but predates
+the latest battery cable notch and 4 mm inward move of J2. Regenerate manufacturing
+files from the editable PCB before ordering this newer geometry.
 The earlier MINI package has no mounting holes; older packages use WROOM-02.
 
 **8 October update:** [J2 is now side-entry JST-SH C160402](battery-connector.md),
 2.95 mm high when mated with its opening toward the left edge. The display pin mapping and local routing are corrected
 at the unchanged socket orientation. The [USB backfeed redesign](bringup/usb-backfeed-fix.md)
 is also routed. With the MINI module and [six M2 mounting holes](mounting-holes.md),
-the board has 138 footprints, 119 populated parts, 1,159 trace segments and
+the board has 138 footprints, 119 populated parts, 1,157 trace segments and
 318 routing vias. Current JSON reports and drawings reflect these changes;
 the September narrative below is historical. USB signal-integrity advisories
 are recorded in the current report.
@@ -35,6 +37,9 @@ component keepout and independently checked against every component courtyard.
 
 J6 adds two labeled 2.2 × 2.5 mm hand-solder pads above J2, connected in parallel
 to BAT+ and GND. It is excluded from the assembly BOM/CPL and stencil paste.
+J2 now sits 4 mm farther inward, opposite a 5 × 3 mm cable notch with R0.5
+inner corners and outer shoulders. The board envelope and other component
+positions remain unchanged. [Dimensions and current validation](battery-connector.md).
 
 ## Preserved geometry
 

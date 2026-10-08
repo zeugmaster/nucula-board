@@ -1,6 +1,11 @@
 # Manufacturing releases
 
-**Current engineering prototype: [mounting-2026-10-08-package.zip](mounting-2026-10-08-package.zip).**
+The editable PCB now has J2 moved 4 mm inward and a rounded 5 × 3 mm battery
+cable notch. Existing archives predate this change and retain the previous
+outline and connector placement. Generate a new export before ordering the
+current design; see [the battery geometry](../docs/battery-connector.md).
+
+**Latest archived prototype: [mounting-2026-10-08-package.zip](mounting-2026-10-08-package.zip).**
 Six 2.2 mm NPTH holes accept M2 hardware: four main-board corners and the
 two lower keyboard corners. [Mounting plan](../docs/mounting-holes.md).
 The MINI-1-H4X module replaces WROOM-02. Its antenna tip is flush with the right
