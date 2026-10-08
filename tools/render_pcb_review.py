@@ -92,8 +92,29 @@ def main():
                 'text-anchor="middle" dominant-baseline="central" fill="#122c3b" '
                 'stroke="white" stroke-width="0.18" paint-order="stroke">'
                 + f.GetReference() + '</text>')
+    mini_notes = '<g fill="#153c4a" stroke="#153c4a"><path d="M110 95V115" fill="none" stroke-width=".08" stroke-dasharray=".5 .4"/><text x="109.4" y="95.5" stroke="none" font-family="sans-serif" font-size=".65" text-anchor="end">Antenna tip flush: x = 110 mm</text></g>'
+    write('mini-module', '90 94 24 25', top + colored(k.Edge_Cuts, '#202c29') + mini_notes, 1600)
     write('usb-protection', '54 107 16 10', usb + colored(k.Edge_Cuts, '#202c29'), 1600)
     write('usb-switch', '87 114 18 9.5', usb + colored(k.Edge_Cuts, '#202c29'), 1800)
+    battery = '''<g font-family="sans-serif">
+<rect x="43.4" y="89.2" width="30" height="3.1" fill="white"/>
+<text x="55.2" y="90.3" font-size="0.85" text-anchor="middle" fill="#122c3b">J2: side-entry JST-SH / C160402</text>
+<text x="55.2" y="91.7" font-size="0.7" text-anchor="middle" fill="#122c3b">2.95 mm high, including mated plug</text>
+<path d="M51.125 100.9 H44.2 M45.3 100.1 L44.2 100.9 L45.3 101.7" fill="none" stroke="#087f6d" stroke-width="0.23"/>
+<text x="46.9" y="99.5" text-anchor="middle" font-size="0.65" fill="#087f6d">Lead exits left</text>
+<text x="46.9" y="102.7" text-anchor="middle" font-size="0.65" fill="#087f6d">parallel to PCB</text>
+<circle cx="55.7" cy="100.4" r="0.25" fill="#b74425"/>
+<circle cx="55.7" cy="101.4" r="0.25" fill="#243e56"/>
+<text x="56.0" y="99.5" font-size="0.7" text-anchor="middle" fill="#b74425" stroke="white" stroke-width="0.16" paint-order="stroke">1 +</text>
+<text x="55.7" y="102.6" font-size="0.7" text-anchor="middle" fill="#243e56" stroke="white" stroke-width="0.16" paint-order="stroke">2 GND</text>
+<rect x="51.6" y="94.75" width="2.2" height="2.5" rx="0.44" fill="#243e56" fill-opacity="0.22"/>
+<rect x="55" y="94.75" width="2.2" height="2.5" rx="0.44" fill="#b74425" fill-opacity="0.28"/>
+<text x="52.7" y="97.9" font-size="0.6" text-anchor="middle" fill="#243e56" stroke="white" stroke-width="0.15" paint-order="stroke">GND</text>
+<text x="56.1" y="97.9" font-size="0.6" text-anchor="middle" fill="#b74425" stroke="white" stroke-width="0.15" paint-order="stroke">BAT+</text>
+<text x="46.9" y="95.4" font-size="0.65" text-anchor="middle" fill="#122c3b">J6: solder leads</text>
+<text x="46.9" y="96.5" font-size="0.6" text-anchor="middle" fill="#122c3b">2.2 × 2.5 mm pads</text>
+</g>'''
+    write('battery-connector', '43 89 27 20', usb + colored(k.Edge_Cuts, '#202c29') + battery, 1600)
     write('nfc', '57 48 48 46', top, 1400)
     panels = []
     for i, (layer, name, color) in enumerate([(k.F_Cu, 'Front copper', '#9a6630'),

@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "checks": {
+    "four_copper_layers": true,
+    "all_routing_vias_0_30_drill_0_70_pad": true,
+    "ribbon_keepout_enforced_on_front_components": true,
+    "ribbon_access_contains_no_component_courtyards": true,
+    "open_vias_separated_from_solderable_smd_pads": true,
+    "esp32_centre_pad_has_no_holes_mask_or_paste": true,
+    "esp32_required_ground_pin_retained": true,
+    "usb_plated_slots_0_70_with_0_30_rings": true,
+    "no_filling_capping_plugging_or_covering": true,
+    "open_vias_in_mask_data": true,
+    "green_mask_enig_no_custom_dielectric_constraint": true,
+    "native_drc_zero_errors": true,
+    "native_drc_zero_unconnected": true,
+    "native_schematic_parity_clean": true,
+    "no_dangling_copper": true,
+    "silk_edits_preserve_all_other_footprint_geometry": true
+  },
+  "board_sha256": "f55ab44eedb0bc56e4455ee7d62e4ec558b98c477f1934dd8e79c237e584899d",
+  "drc_sha256": "51dfcafaa141827fa64920fd7fa15fe007f6c1996eaa3c5c2dbc2789d9b4c231",
+  "ribbon_access_mm": [
+    71.15,
+    98.55,
+    88.85,
+    103.55
+  ],
+  "ribbon_access_width_height_mm": [
+    17.7,
+    5.0
+  ],
+  "intruders": {},
+  "smd_via_mask_conflicts": [],
+  "routing_vias": 324,
+  "scope": "Geometry and native-rule acceptance; supplier CAM acceptance and physical performance are separate."
+}

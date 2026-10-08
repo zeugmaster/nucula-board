@@ -1,9 +1,18 @@
 # Standard fabrication release — five bare boards
 
+Current MCU revision (8 October 2026): **ESP32-C3-MINI-1-H4X / C41349510**.
+The antenna is flush with the right PCB edge; the smaller milled notch includes
+1 mm side clearance and 0.5 mm internal corner radii. GPIO functions and the
+display/USB/battery corrections remain. [Compatibility and verification](esp32-mini.md).
+Use the **mini-2026-10-08** package for this module; earlier packages use WROOM-02.
+
 **Historical release — do not use for the October correction.** This package
 predates the confirmed display reversal and retains the USB backfeed path.
 The [editable design and bench follow-up](bringup/rev-b-display-and-usb.md)
-supersede its wiring. No corrected fabrication release has been issued.
+supersede its wiring. The new [October prototype package](../manufacturing/mini-2026-10-08-package.zip)
+includes those corrections, [side-entry J2 and direct wire pads J6](battery-connector.md); see its
+[current assembly instructions](../manufacturing/mini-2026-10-08/README.md).
+The rest of this page documents the September archive.
 
 22 September 2026 · `routing-review-2026-09-22` · manual top-side reflow assembly
 

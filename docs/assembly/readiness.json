@@ -1,6 +1,6 @@
 {
   "boards": 5,
-  "physical_symbols": 129,
+  "physical_symbols": 130,
   "purchased_populated_per_board": 119,
   "unique_purchased_parts": 57,
   "dnp_references": [
@@ -16,7 +16,7 @@
   ],
   "footprint_status": "All resolved; pin/pad correspondence checked by check_schematic.py",
   "without_3d": [
-    "J2",
+    "J6",
     "L1",
     "A1",
     "L2",
@@ -24,7 +24,7 @@
     "U6",
     "L4"
   ],
-  "with_3d": 122,
+  "with_3d": 123,
   "tight_stock": [
     {
       "References": "C36, C37",
@@ -49,10 +49,13 @@
   "shortages": [],
   "through_hole_assembly": [],
   "scope": "Component and footprint readiness; see docs/manufacturing-release.md and the hash-bound manufacturing package for Gerber/CPL validation and pending CAM acceptance",
+  "assembly_mode_unverified": [
+    "U3"
+  ],
   "stock_reserved": false,
   "quantity_method": "Planning only: max(placements, public minimum placement) + public loss allowance. Final JLCPCB BOM matching controls quantities.",
   "inputs_sha256": {
-    "docs/bom.csv": "b2b14ddf41cc367c10ea60701916422bcffd6a9f087581551139c42f7b767145",
-    "docs/assembly/jlc-stock-snapshot.json": "cd1e2eb31607b7311ad649f3e31b220cdbd5416e2e61f65853250926c9745247"
+    "docs/bom.csv": "e11397369c29c5618bee75d92269b892ad8151e05d98f5ddbc3cf08de17592f9",
+    "docs/assembly/jlc-stock-snapshot.json": "0bcfcf18194e8229941ddec9dc8c4305ae862b7d68f178e2e89864b5a5afdf2d"
   }
 }

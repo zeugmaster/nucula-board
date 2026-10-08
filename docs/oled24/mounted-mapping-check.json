@@ -228,7 +228,7 @@
       "schematic_net": "GND"
     }
   ],
-  "board_sha256": "034a2a8362612f033b2916f6ad75a2973139eea44891740973de291a3838f344",
-  "netlist_sha256": "e368dab7c88bd888d598ee8e433702cc5ae8e0646be10fa5ae96a14e6d9189ba",
+  "board_sha256": "b0ce1ca4c0d21ab13d8bbfc00cbf26308f6b054d0c4042b27a7a3db4dbd03b9c",
+  "netlist_sha256": "8d66c73fa0b14cdb09020afa547c13790c7707ec01296bbc0e921654f765df39",
   "scope": "Mounted electrical mapping and connector lands; operation and flex fit require hardware."
 }

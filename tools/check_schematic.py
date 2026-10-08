@@ -55,25 +55,25 @@ groups = {
     'VBUS': 'J1.A4 J1.A9 J1.B4 J1.B9 D1.2 D5.1 Q2.1 R18.1 C14.1',
     'USB_5V': 'D1.1 D2.2 Q1.1 R5.1 U1.4 C1.1 D3.2',
     'VSYS': 'D2.1 Q1.2 U2.1 U2.4 C4.1 C17.1 C18.1 Q3.2 R29.1 R33.1 U6.12 U6.28',
-    'VBAT': 'U1.3 J2.1 Q1.3 C2.1 R15.1',
-    '+3V3': 'L1.2 R6.1 C3.1 C5.1 C6.1 C9.1 C10.1 U3.1 U5.3 C11.1 R8.1 R9.1 R10.1 R11.1 R17.1 C15.1 C16.1 C49.1 C51.1 C52.1 J4.1 J5.1 R37.1 R38.1 R39.1 R40.1 U6.6 U8.16 U9.3 U10.10 C55.1',
+    'VBAT': 'U1.3 J2.1 J6.1 Q1.3 C2.1 R15.1',
+    '+3V3': 'L1.2 R6.1 C3.1 C5.1 C6.1 C9.1 C10.1 U3.3 U5.3 C11.1 R8.1 R9.1 R10.1 R11.1 R17.1 C15.1 C16.1 C49.1 C51.1 C52.1 J4.1 J5.1 R37.1 R38.1 R39.1 R40.1 U6.6 U8.16 U9.3 U10.10 C55.1',
     '+3V0': 'C43.1 C44.1 C50.1 DS1.20 DS1.19 R19.1 R20.1 R35.1 U9.2',
     'BUCK_FB': 'U2.5 R6.2 R7.1 C3.2',
-    'ESP_EN': 'U3.2 U5.2 R8.2 C12.1 SW1.1',
-    'BOOT_N': 'U3.8 R11.2 R14.1',
-    'STRAP_GPIO2': 'U3.16 R9.2',
-    'STRAP_GPIO8': 'U3.7 R10.2',
-    'VBAT_ADC': 'U3.18 R15.2 R16.1 C13.1',
-    'USB_PRESENT_N': 'U3.17 Q2.3 R17.2 U10.9',
+    'ESP_EN': 'U3.8 U5.2 R8.2 C12.1 SW1.1',
+    'BOOT_N': 'U3.23 R11.2 R14.1',
+    'STRAP_GPIO2': 'U3.5 R9.2',
+    'STRAP_GPIO8': 'U3.22 R10.2',
+    'VBAT_ADC': 'U3.12 R15.2 R16.1 C13.1',
+    'USB_PRESENT_N': 'U3.13 Q2.3 R17.2 U10.9',
     'USB_D-': 'J1.A7 J1.B7 U4.1 U10.6',
     'USB_D+': 'J1.A6 J1.B6 U4.2 U10.4',
     'USB_PHY_D-': 'U10.8 R12.1',
     'USB_PHY_D+': 'U10.2 R13.1',
-    'I2C_SDA': 'DS1.11 DS1.10 J4.3 J5.3 R19.2 R38.2 U3.3 U6.5 U8.15',
-    'I2C_SCL': 'DS1.12 J4.4 J5.4 R20.2 R39.2 U3.4 U6.7 U8.14',
-    'KEY_INT_N': 'J4.5 J5.5 R37.2 R40.2 U3.11 U8.13',
-    'NFC_IRQ': 'U3.5 U6.8',
-    'NFC_VEN': 'R22.1 U3.6 U6.10',
+    'I2C_SDA': 'DS1.11 DS1.10 J4.3 J5.3 R19.2 R38.2 U3.18 U6.5 U8.15',
+    'I2C_SCL': 'DS1.12 J4.4 J5.4 R20.2 R39.2 U3.19 U6.7 U8.14',
+    'KEY_INT_N': 'J4.5 J5.5 R37.2 R40.2 U3.30 U8.13',
+    'NFC_IRQ': 'U3.20 U6.8',
+    'NFC_VEN': 'R22.1 U3.21 U6.10',
     'NFC_ADR0': 'R23.1 U6.1',
     'NFC_ADR1': 'R24.1 U6.3',
     'NFC_DWL_REQ': 'R21.1 U6.2',
@@ -93,8 +93,8 @@ groups = {
     'RF_EMC_N': 'C31.2 C33.1 C35.1 C54.2 L3.2 R26.2',
     'RF_MATCH_P': 'C32.2 C34.2 C36.1 C38.1 R27.1',
     'RF_MATCH_N': 'C33.2 C35.2 C37.2 C39.2 R28.1',
-    'OLED_PWR_EN': 'Q4.1 R34.1 U3.15',
-    'OLED_RESET': 'Q5.1 R36.1 U3.10',
+    'OLED_PWR_EN': 'Q4.1 R34.1 U3.6',
+    'OLED_RESET': 'Q5.1 R36.1 U3.16',
     'OLED_12V5': 'C41.1 C42.1 C45.1 C46.1 D4.1 DS1.2 R30.1',
     'OLED_BOOST_IN': 'C40.1 L4.1 Q3.3 U7.4 U7.5',
     'OLED_FB': 'C41.2 R30.2 R31.1 U7.3',
@@ -110,11 +110,11 @@ for name, nodes in groups.items():
     assert net_members[name] == set(nodes.split()), f'{name}: {net_members[name]} != {nodes}'
 for nodes in ['U2.3 L1.1', 'U1.5 R3.1', 'U1.1 R4.1', 'R4.2 D3.1',
               'J1.A5 R1.1', 'J1.B5 R2.1', 'R14.2 SW2.1',
-              'R12.2 U3.13', 'R13.2 U3.14',
+              'R12.2 U3.26', 'R13.2 U3.27',
               'A1.1 R27.2', 'A1.2 R28.2', 'C28.2 R25.1', 'C29.2 R26.1']:
     expected = set(nodes.split())
     assert net_members[net_of[next(iter(expected))]] == expected, nodes
-for pin in ('J1.A1 J1.A12 J1.B1 J1.B12 J1.SH J2.2 U1.2 U2.2 U3.9 U3.19 U4.3 U5.1 D5.2 U10.1 U10.5 C55.2 '
+for pin in ('J1.A1 J1.A12 J1.B1 J1.B12 J1.SH J2.2 J6.2 U1.2 U2.2 U3.1 U3.49 U4.3 U5.1 D5.2 U10.1 U10.5 C55.2 '
             'Q2.2 R1.2 R2.2 R3.2 R5.2 R7.2 '
             'U6.4 U6.9 U6.20 U6.39 U6.41 Y1.2 Y1.4 R21.2 R22.2 R23.2 R24.2 '
             'C15.2 C16.2 C17.2 C18.2 C19.2 C20.2 C21.2 C22.2 C23.2 C24.2 C25.2 '
@@ -124,7 +124,9 @@ for pin in ('J1.A1 J1.A12 J1.B1 J1.B12 J1.SH J2.2 U1.2 U2.2 U3.9 U3.19 U4.3 U5.1
             'DS1.14 DS1.13 DS1.9 DS1.8 DS1.7 DS1.6 DS1.5 DS1.1 '
             'U8.1 U8.2 U8.3 U8.8 J4.2 J5.2 C49.2 C50.2 C51.2 C52.2 U9.1').split():
     assert net_of[pin] == 'GND', pin
-for pin in ('J1.A8 J1.B8 U3.12 DS1.21 U10.3 U10.7 U6.11 U6.23 U6.24 U6.25 '
+for number in [1, 2, 11, 14, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53]:
+    assert net_of[f'U3.{number}'] == 'GND'
+for pin in ('J1.A8 J1.B8 U3.31 DS1.21 U10.3 U10.7 U6.11 U6.23 U6.24 U6.25 '
             'U6.32 U6.33 U6.34 U6.35 U6.36 U6.37 U6.38 U6.40 J3.1 J3.9 U8.12').split():
     assert net_of[pin].startswith('unconnected-'), pin
 for pin in ['J3.1','J3.9','U8.12','U10.3','U10.7']:
@@ -132,7 +134,7 @@ for pin in ['J3.1','J3.9','U8.12','U10.3','U10.7']:
 assert 'KEY_P7' not in net_members, 'Only seven matrix lines connect to the keypad'
 
 values = {r: c.findtext('value') for r, c in components.items()}
-for ref, value in {'U1':'TP4054-42-SOT25R', 'U2':'SY8089AAAC', 'U3':'ESP32-C3-WROOM-02-N4',
+for ref, value in {'U1':'TP4054-42-SOT25R', 'U2':'SY8089AAAC', 'U3':'ESP32-C3-MINI-1-H4X',
                    'U5':'TLV803EA30DBZR', 'R1':'5.1k', 'R2':'5.1k', 'R3':'10k',
                    'R6':'220k', 'R7':'48.7k', 'R12':'22R', 'R13':'22R', 'R17':'10k', 'R18':'10k',
                    'R15':'470k', 'R16':'470k', 'L1':'2.2uH', 'D1':'B340A','D2':'B340A',
@@ -210,10 +212,12 @@ for ref in ['C1','C2','C4']:
 for ref in ['C5','C6','C9']:
     assert fields[ref]['MPN'] == 'CL31A226KAHNNNE'
     assert '1206' in components[ref].findtext('footprint')
-assert fields['J2']['MPN'] == 'B2B-PH-SM4-TB(LF)(SN)'
-assert fields['J2']['LCSC'] == 'C160352'
-assert components['J2'].findtext('footprint') == 'Nucula_Project:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical'
+assert fields['J2']['MPN'] == 'SM02B-SRSS-TB(LF)(SN)'
+assert fields['J2']['LCSC'] == 'C160402'
+assert components['J2'].findtext('footprint') == 'Nucula_Project:JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal'
 assert child(instances['A1'], 'in_bom')[1] == 'no', 'Etched coil is not a purchased component'
+assert child(instances['J6'], 'in_bom')[1] == 'no', 'Battery wire pads are manufactured copper'
+assert components['J6'].findtext('footprint') == 'Nucula_Project:Battery_Lead_SolderPads_2x2.2x2.5mm_P3.4mm'
 assert 'A1.3' not in net_of, 'PCB loop has exactly two terminals, no ground tap'
 for ref in ['C28','C29','C30','C31','C32','C33','C34','C35','C36','C37','C38','C39','C53','C54']:
     assert fields[ref]['Dielectric'] == 'C0G/NP0'

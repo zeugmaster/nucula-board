@@ -3,7 +3,16 @@
 KiCad project tables register `Nucula_Project` with relative `${KIPRJMOD}` paths.
 No workstation-global custom library is required.
 
-- ESP32-C3-WROOM-02-N4 symbol, footprint and STEP: KiCad Library Team's
+- ESP32-C3-MINI-1-H4X symbol: adapted from the project WROOM drawing with
+  Espressif datasheet v2.2 pin numbers, all 22 GND pins and explicit NC pins.
+  The `_NoEPADSolder` footprint and STEP derive from [Espressif's official
+  KiCad library](https://github.com/espressif/kicad-libraries), under
+  [CC-BY-SA 4.0 with the design exception](../LICENSES/Espressif-KiCad-libraries.md).
+  Perimeter lands and antenna keepout are retained; optional EPAD 49 is one
+  5.4 mm masked GND land without paste or thermal holes. Front legend outside
+  the PCB is omitted. The module is locked with its antenna tip flush at x=110 mm.
+  [Pin, land and cutout checks](../docs/esp32-mini.md).
+- Historical ESP32-C3-WROOM-02-N4 symbol, footprint and STEP: KiCad Library Team's
   ESP32-C3-WROOM-02 assets from installed KiCad 10.0.6, specialized with N4/4 MB
   metadata. Footprint pad geometry and antenna keepout are preserved.
 - ESP32-C3-WROOM-02-N4_NoEPADSolder: project variant for the standard-fabrication
@@ -22,12 +31,13 @@ No workstation-global custom library is required.
   0.04 mm only at the locating-hole end: 0.60 × 1.11 mm at Y = −3.70 mm.
   Holes, shell stakes, other pads, outlines and the standard STEP model are
   unchanged. [Dimensions and manufacturing audit](../docs/usb-connector-clearance.md).
-- JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical: KiCad's unmodified SMT
-  land pattern for J2 / JST B2B-PH-SM4-TB(LF)(SN), JLCPCB C160352. Two
-  electrical pads and two unconnected solder hold-down tabs, all with paste.
-  Checked against the [JST drawing](../parts%20documentation/JST-PH-SMT-datasheet.pdf),
-  pages 2 and 4. Only the unresolved optional KiCad 3D-model reference was removed;
-  no substitute model is claimed. JST offers CAD through its email request form.
+- JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal: installed KiCad library
+  footprint copied unchanged for J2 / SM02B-SRSS-TB(LF)(SN), JLCPCB C160402.
+  Side entry, 1.00 mm pitch, 2.95 mm mated height. Two electrical lands and two
+  unconnected hold-downs, all with paste. Standard SH STEP model retained.
+  Checked against the [JST drawing](../parts%20documentation/JST-SH-side-entry-2026-10-07.pdf),
+  pages 1 and 3. The earlier vertical B2B-PH and horizontal S2B-PH footprints
+  remain unassigned historical assets. [Selection](../docs/battery-connector.md).
 - MouseBite_2Rows7_D0.60_P1.00_Inset_Gap2.00: project mechanical footprint
   for MB1/MB2, with two rows of seven 0.60 mm NPTH holes on 1.00 mm centers.
   The adjoining slots are defined by the PCB's Edge.Cuts geometry. This is a
@@ -92,7 +102,7 @@ No workstation-global custom library is required.
 
 PCF8574T, its SOIC-16W_7.5x10.3mm_P1.27mm footprint and package model use the
 standard KiCad libraries. All assigned model paths resolve in the checked
-installation. The verification report lists A1, J2, L1–L4 and U6 as having no model.
+installation. The verification report lists A1, L1–L4 and U6 as having no model.
 
 The two user-supplied reference schematics remain under `parts documentation/`.
 Their respective authors retain ownership; no broader redistribution license
@@ -120,3 +130,7 @@ are also archived under `parts documentation/`. Samsung's numerical typical
 DC-bias curves and JLCPCB's observed crystal sourcing stock are recorded in
 `docs/components/`, with source URLs and retrieval dates. See the
 [component refinements and calculations](../docs/component-refinements.md).
+
+`Battery_Lead_SolderPads_2x2.2x2.5mm_P3.4mm` provides the two J6 battery wire
+lands: pin 1 BAT+ on the right and pin 2 GND on the left. Both are 2.2 × 2.5 mm
+front copper/mask pads with no holes or paste; J6 is excluded from BOM/CPL.

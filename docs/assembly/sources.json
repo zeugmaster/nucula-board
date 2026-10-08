@@ -61,5 +61,26 @@
     "sha256": "71ee7e624d8db9ee105c477a89cf6b1b38edb580639f0ab6c29c90acedf43a7f",
     "checked_date": "2026-09-21",
     "use": "DS1 FH12A top-contact family and 24-position body dimensions, pages 2 and 6."
+  },
+  {
+    "file": "parts documentation/JST-PH-side-entry-2026-10-07.pdf",
+    "source": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf",
+    "sha256": "447624f4f2f7d37c58c1eaa7ee314ad757fe7aff48f6186491ef6f69fbc00b96",
+    "checked_date": "2026-10-07",
+    "use": "J2 side-entry PH C295747: page 2 land dimensions, circuit 1 at left, mated height 5.5 mm; page 4 S2B-PH-SM4-TB body dimensions. Historical intermediate selection, superseded by SH below."
+  },
+  {
+    "file": "parts documentation/JST-SH-side-entry-2026-10-07.pdf",
+    "source": "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf",
+    "sha256": "ea3071ca5ee5a6069eba534fa39a10f34c9fb742ee42135a69ab4156bfa0f5de",
+    "checked_date": "2026-10-07",
+    "use": "Selected J2 C160402 SH side entry; page 1 land pattern and 2.95 mm assembled height, page 3 header dimensions. 1 A at AWG28; mating SHR-02V-S-B and SSH-003T-P0.2-H."
+  },
+  {
+    "file": "parts documentation/esp32-c3-mini-1_datasheet_en.pdf",
+    "source": "https://documentation.espressif.com/esp32-c3-mini-1_datasheet_en.pdf",
+    "sha256": "de7361381348d82a1abd337f10170be7a420675987568f71fe3c5b100deed270",
+    "checked_date": "2026-10-08",
+    "use": "MINI-1 H4X: datasheet v2.2, pin map, dimensions, optional EPAD joint and land pattern."
   }
 ]

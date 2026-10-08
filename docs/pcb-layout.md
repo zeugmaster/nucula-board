@@ -1,9 +1,16 @@
 # PCB placement and routing
 
-**6 October update:** the display pin mapping and local routing are corrected
+Current MCU revision (8 October 2026): **ESP32-C3-MINI-1-H4X / C41349510**.
+The antenna is flush with the right PCB edge; the smaller milled notch includes
+1 mm side clearance and 0.5 mm internal corner radii. GPIO functions and the
+display/USB/battery corrections remain. [Compatibility and verification](esp32-mini.md).
+Use the **mini-2026-10-08** package for this module; earlier packages use WROOM-02.
+
+**8 October update:** [J2 is now side-entry JST-SH C160402](battery-connector.md),
+2.95 mm high when mated with its opening toward the left edge. The display pin mapping and local routing are corrected
 at the unchanged socket orientation. The [USB backfeed redesign](bringup/usb-backfeed-fix.md)
-is also routed: 131 footprints, 119 populated parts, 1,103 trace segments and
-324 routing vias. Current JSON reports and drawings reflect both changes;
+is also routed: 132 footprints, 119 populated parts, 1,115 trace segments and
+324 routing vias. Current JSON reports and drawings reflect all three changes;
 the September narrative below is historical. USB signal-integrity advisories
 are recorded in the current report.
 
@@ -23,6 +30,9 @@ component keepout and independently checked against every component courtyard.
 [Native DRC](pcb/drc.json) · [Layout checks](pcb/layout-check.json)
 
 ![Current PCB, top copper and component outlines](pcb/top.png)
+
+J6 adds two labeled 2.2 × 2.5 mm hand-solder pads above J2, connected in parallel
+to BAT+ and GND. It is excluded from the assembly BOM/CPL and stencil paste.
 
 ## Preserved geometry
 

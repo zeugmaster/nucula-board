@@ -20,8 +20,9 @@ from the local reference repository at commit
 [Upstream hardware repository](https://github.com/OLIMEX/ESP32-C3-DevKit-Lipo).
 
 The retained circuit is TP4054 charging, Schottky/MOSFET USB-priority power
-selection, and an SY8089 buck converter. The WROOM-02-N4 replaces the reference
-board's MINI module. Its physical pin numbers were checked separately.
+selection, and an SY8089 buck converter. The current MINI-1-H4X uses the smaller module family from the reference
+design, replacing the previous WROOM-02-N4. Its 53 physical pins were checked
+against Espressif's datasheet. [Compatibility and pin map](esp32-mini.md).
 This circuit is now on `power-mcu.kicad_sch`. NFC, OLED and I/O expansion are
 integrated on separate sheets; see [peripheral design](peripherals-design.md).
 Firmware remains outside this draft. PCB placement and routing are documented
@@ -42,8 +43,9 @@ in the separate layout report.
 
 Battery target: **approximately 400 mAh, protected single-cell Li-ion/LiPo,
 3.7 V nominal / 4.2 V full**, with pack protection against overdischarge,
-short circuit and overcurrent. J2 is **2-pin JST-PH, 2.0 mm pitch**,
-vertical: **pin 1 positive, pin 2 ground**. Purchased packs do not have universal
+short circuit and overcurrent. J6 offers direct BAT+/GND wire solder pads in parallel with J2; use one battery
+connection at a time. J2 is **2-pin JST-SH, 1.0 mm pitch**,
+side-entry SM02B-SRSS-TB(LF)(SN) / C160402, **2.95 mm mated height**: **pin 1 positive, pin 2 ground**. Purchased packs do not have universal
 connector polarity. The exact pack, polarity, charge limits and discharge-current
 rating must be checked before assembly. There is no battery protection IC,
 cell-temperature sensor, or physical off switch in this draft.
@@ -52,13 +54,17 @@ For the current iteration, battery operation is an optional experiment. The
 user accepts the present low-battery/reset behavior and defers runtime and
 discharge-budget refinement. USB operation does not require a battery.
 
-JST-PH is used on small packs such as the
-[Adafruit 400 mAh pack](https://www.adafruit.com/product/3898) and
-[SparkFun 400 mAh pack](https://www.sparkfun.com/lithium-ion-battery-400mah.html).
-These establish the connector choice; no battery model has been selected yet.
-Keep the existing **100 mA charge setting**, equivalent to **0.25C at 400 mAh**.
-Adafruit's example permits up to 400 mA charging and recommends its 100 mA
-charger setting. The final pack's own limits still apply.
+Use a matching **SHR-02V-S-B** housing and **SSH-003T-P0.2-H** contacts with
+28 AWG wire. The old PH lead is incompatible. SH is available on small flat
+packs, including [LiPol's protected 400 mAh LP572528](https://www.lipobattery.us/lp572528-400mah-3-7v-1-48wh-lipo-battery-with-pcm-and-cables-50mm-and-jst-shr-02v-s-b/).
+No final battery model is selected. Keep **100 mA charge current**, equivalent
+to **0.25C at 400 mAh**, subject to the chosen pack's own limits.
+
+JST rates this connector at **1 A with 28 AWG**. On 7 October the user accepted
+intermittent excursions above that rating and requested no new current limiter
+or operating restriction. This is a prototype assumption, not a manufacturer
+pulse-current guarantee. Confirm voltage drop and heating under actual peak
+loads as part of battery validation. [Selection and assembly notes](battery-connector.md).
 
 U1 is the Top Power **TP4054-42-SOT25R**, not the BL4054 symbol name carried by
 the reference. R3 = 10 kΩ sets 100 mA nominal; the data sheet specifies
@@ -114,8 +120,8 @@ the same. Use the new SOT-23 footprint, not the old SC70 land pattern.
 ## USB, boot and sensing
 
 J1 has separate 5.1 kΩ CC pulldowns. Both D− contacts feed U4 channel 1,
-then R12 = 22 Ω and **GPIO18 / module pin 13**. Both D+ contacts feed U4 channel 2,
-then R13 = 22 Ω and **GPIO19 / module pin 14**. U4's pass-through pairs are
+then R12 = 22 Ω and **GPIO18 / module pin 26**. Both D+ contacts feed U4 channel 2,
+then R13 = 22 Ω and **GPIO19 / module pin 27**. U4's pass-through pairs are
 pins 1–6 and 3–4. C7/C8 are **DNP**, reserved for USB tuning.
 Native USB provides Serial/JTAG and ROM download; there is no UART bridge.
 [ST USBLC6-2 datasheet](https://www.st.com/resource/en/datasheet/usblc6-2.pdf),
@@ -137,7 +143,7 @@ VBUS presence through Q2: LOW means USB present. This avoids a 5 V divider
 injecting current into an unpowered GPIO. R18 discharges the VBUS detector.
 Firmware must manage USB attachment when VBUS is absent; this is not implemented
 by the schematic alone. See the
-[ESP32-C3-WROOM-02 datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf).
+[ESP32-C3-MINI-1 datasheet](https://documentation.espressif.com/esp32-c3-mini-1_datasheet_en.pdf).
 
 ## Boundaries before PCB
 
@@ -177,7 +183,7 @@ errors/warnings**. Footprint
 filter checking is enabled. The drawing was also rendered and visually inspected.
 This is schematic verification, not circuit simulation or hardware validation.
 
-`Nucula_Project` is registered with `${KIPRJMOD}` paths. It contains the exact N4
+`Nucula_Project` is registered with `${KIPRJMOD}` paths. It contains the exact H4X
 module, TP4054, SY8089 and TLV803 symbols, module footprint/STEP and the inductor
 footprint. Standard components use KiCad's installed libraries/models.
 L1 has **no assigned 3D model**: the stock footprint's referenced model is missing,

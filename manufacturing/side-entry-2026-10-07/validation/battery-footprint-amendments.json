@@ -1,0 +1,11 @@
+{
+  "baseline_commit": "6db62cc94e04ed5c98647b8f652b1e4ab2213f15",
+  "baseline_board_sha256": "95100d7cc580e9cf4c9a720851f986fd1073191a7cd6800b34e5490763bbdea3",
+  "reason": "J2 side-entry JST PH C295747, 5.5 mm height, mating opening toward left edge; local VBAT/GND routing and three via positions adjusted. All other footprints preserved.",
+  "footprints": {
+    "J2": {
+      "from_sha256": "c9eb403bcddf844f8805913deba8082813e03e62311f8d930814547d5ec2bca9",
+      "to_sha256": "242c769972997ea19fa4562a1e5e518fc01095c881d8ce406990db8be9a4c88d"
+    }
+  }
+}

@@ -1,1 +1,7 @@
 (version 1)
+
+# MINI-1 has 0.30 mm between its ground lands and antenna boundary.
+# The cutout follows that boundary; retain 0.50 mm elsewhere.
+(rule "MINI-1 ground lands at antenna cutout"
+ (condition "A.Type == 'Pad' && A.memberOfFootprint('U3') && A.NetName == 'GND'")
+ (constraint edge_clearance (min 0.25mm)))

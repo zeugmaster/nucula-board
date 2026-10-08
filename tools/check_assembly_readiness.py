@@ -57,7 +57,7 @@ def main():
     byref = {r['Reference']: r for r in bom}
     expected = {
         'DS1': ('C506794', 'Nucula_Project:Hirose_FH12A-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal'),
-        'J2': ('C160352', 'Nucula_Project:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical'),
+        'J2': ('C160402', 'Nucula_Project:JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal'),
         'U5': ('C5218924', 'Package_TO_SOT_SMD:SOT-23'),
         'R30': ('C2088132', 'Resistor_SMD:R_0805_2012Metric'),
         'J1': ('C5184243', 'Nucula_Project:USB_C_GCT_USB4105_16P_Standard'),
@@ -97,7 +97,7 @@ def main():
         if ref in ['C34', 'C35', 'C38', 'C39']:
             for pad in children(tree, 'pad'):
                 assert not any('Paste' in uq(layer) for layer in child(pad, 'layers')[1:])
-        audit.append(dict(Reference=ref, Population=('Etched PCB copper' if ref == 'A1' else
+        audit.append(dict(Reference=ref, Population=('Etched PCB copper' if ref in ['A1', 'J6'] else
                           'DNP' if byref[ref]['DNP'] == 'yes' else 'Assemble'),
                           MPN=byref.get(ref, {}).get('MPN', ''), Footprint=footprint,
                           Footprint_SHA256=hashlib.sha256(path.read_bytes()).hexdigest(),
@@ -140,6 +140,8 @@ def main():
                   through_hole_assembly=sorted(r['Reference'] for r in populated
                                               if parts[r['LCSC']]['assemblyMode'] == 'manualWeld'),
                   scope='Component and footprint readiness; see docs/manufacturing-release.md and the hash-bound manufacturing package for Gerber/CPL validation and pending CAM acceptance',
+                  assembly_mode_unverified=sorted(r['Reference'] for r in populated
+                      if not parts[r['LCSC']].get('assemblyMode')),
                   stock_reserved=False,
                   quantity_method='Planning only: max(placements, public minimum placement) + public loss allowance. Final JLCPCB BOM matching controls quantities.',
                   inputs_sha256={str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest()

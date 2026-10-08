@@ -1,17 +1,28 @@
 # Manufacturing releases
 
-**No archive contains the October display-pin correction. USB backfeed remains
-open pending isolation measurements and a validated remedy.** See the
-[current engineering report](../docs/bringup/rev-b-display-and-usb.md) before new fabrication.
+**Current engineering prototype: [mini-2026-10-08-package.zip](mini-2026-10-08-package.zip).**
+The MINI-1-H4X module replaces WROOM-02. Its antenna tip is flush with the right
+board edge, with a resized milled notch. [Compatibility and firmware requirements](../docs/esp32-mini.md).
+The earlier battery-pads package remains the archived WROOM version.
+Includes side-entry battery J2 **JST SM02B-SRSS-TB / C160402**, 2.95 mm high, requiring an SH lead.
+J6 adds two labeled 2.2 × 2.5 mm pads for directly soldered battery leads, in parallel
+with J2, with no stencil paste or assembly component. Use one battery connection.
+It also includes the October display-pin correction and USB redesign. Gerbers, drill/stencil data, 119-part
+assembly BOM/CPL and drawings are regenerated together. See its
+[assembly instructions](mini-2026-10-08/README.md) and the
+[connector review](../docs/battery-connector.md). Revised USB/display hardware
+still requires bench validation; supplier CAM and placement acceptance remain pending.
 
 The historical **[routing-review-2026-09-22-package.zip](routing-review-2026-09-22-package.zip)**
 contains ordinary unfilled-via Gerbers,
 the ribbon-clearance layout with repaired routing, updated stencil and assembly
 drawings, and the validation records. [Settings and changes](../docs/manufacturing-release.md).
 
+The battery-pad package supersedes the SH `low-profile-2026-10-07`, PH
+`side-entry-2026-10-07` and September inputs for new prototypes. Those archives are unchanged.
 The original contingency's PCB files and the first `standard-2026-09-22` package
-are superseded by this revision. The parts sourcing proposal remains applicable; component MPNs and
-quantities have not changed. Delivery and private-customer checkout still need
+were superseded by the routing-review revision. Its historical sourcing proposal
+predates the current J2 and USB selections. Delivery and private-customer checkout still need
 confirmation in the supplier's cart.
 
 ## Archived JLCPCB order

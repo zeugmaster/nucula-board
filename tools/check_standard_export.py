@@ -45,6 +45,23 @@ def main():
     copper = {side for (side, use) in stack.graphic_layers if use == 'copper'}
     checks['four_copper_layers'] = copper == {'top', 'bottom', 'inner_1', 'inner_2'}
 
+    mini_pads = [o for o in stack.graphic_layers['top', 'copper'].objects
+                 if isinstance(o, Flash) and o.attrs.get('.P', ('',))[0] == 'U3']
+    mini_by_pin = {o.attrs['.P'][1]: o for o in mini_pads}
+    checks['MINI_all_53_lands_exported'] = len(mini_pads) == 53 and set(mini_by_pin) == {str(n) for n in range(1, 54)}
+    checks['MINI_USB_and_supply_manufacturer_pin_numbers'] = all(
+        mini_by_pin[n].attrs['.N'][0].rsplit('/', 1)[-1] == net
+        for n, net in {'3': '+3V3', '8': 'ESP_EN', '26': 'Net-(U3-IO18)', '27': 'Net-(U3-IO19)'}.items())
+    for layer in ['mask', 'paste']:
+        flashes = [o for o in stack.graphic_layers['top', layer].objects
+                   if isinstance(o, Flash) and o.attrs.get('.C') == ('U3',)]
+        checks['MINI_52_perimeter_lands_no_EPAD_in_' + layer] = (
+            len(flashes) == 52 and all(abs(o.x - 49) > .01 or abs(o.y - 53.86) > .01 for o in flashes))
+    checks['MINI_resized_notch_in_exported_outline'] = any(
+        isinstance(o, Line) and abs(o.x1 - 54.6) < 1e-5 and abs(o.x2 - 54.6) < 1e-5
+        and abs(min(o.y1, o.y2) - 46.76) < 1e-5 and abs(max(o.y1, o.y2) - 60.96) < 1e-5
+        for o in stack.outline.objects)
+
     pads = [o for o in stack.graphic_layers['top', 'copper'].objects
             if isinstance(o, Flash) and o.attrs.get('.P', ('',))[0] == 'DS1'
             and o.attrs['.P'][1].isdigit()]
@@ -70,6 +87,58 @@ def main():
         size(o) == (.25, 1.3) for o in regions) and centers == {(24.25+.5*i, 49.3) for i in range(24)}
     placements = list(csv.DictReader((out / 'assembly/placements.csv').open()))
     populated = {r['Ref'] for r in placements}
+    # Manufacturer side-entry lands at the locked, outward-facing placement.
+    j2_expected = [(5.7, 59.6, 1.55, .6), (5.7, 58.6, 1.55, .6),
+                   (1.825, 60.9, 1.8, 1.2), (1.825, 57.3, 1.8, 1.2)]
+    def j2_flashes(layer):
+        return [o for o in stack.graphic_layers['top', layer].objects
+                if isinstance(o, Flash) and (o.attrs.get('.P', ('',))[0] == 'J2'
+                                             if layer == 'copper' else o.attrs.get('.C') == ('J2',))]
+    for layer in ['copper', 'mask', 'paste']:
+        actual = [(round(o.x, 6), round(o.y, 6), *size(o)) for o in j2_flashes(layer)]
+        checks['J2_side_entry_four_lands_in_' + layer] = sorted(actual) == sorted(j2_expected)
+    j2_signals = {o.attrs['.P'][1]: o for o in j2_flashes('copper')
+                  if o.attrs.get('.P', ('', ''))[1] in ['1', '2']}
+    checks['J2_exported_positive_and_ground_polarity'] = (
+        set(j2_signals) == {'1', '2'} and
+        j2_signals['1'].attrs['.N'][0].endswith('/VBAT') and
+        j2_signals['2'].attrs['.N'][0] == 'GND' and
+        abs(j2_signals['1'].y - 59.6) < 1e-6 and abs(j2_signals['2'].y - 58.6) < 1e-6)
+    j2_tabs = [o for o in j2_flashes('copper') if o.attrs.get('.P', ('',''))[1] == 'MP']
+    checks['J2_exported_hold_down_tabs_are_unconnected'] = len(j2_tabs) == 2 and all(
+        o.attrs.get('.N', ('',))[0] == 'N/C' for o in j2_tabs)
+    bom = list(csv.DictReader((out/'assembly/jlcpcb-bom.csv').open()))
+    j2_bom = [r for r in bom if 'J2' in [s.strip() for s in r['Designator'].split(',')]]
+    checks['J2_exact_side_entry_order_code_in_BOM'] = len(j2_bom) == 1 and (
+        j2_bom[0]['Comment'] == 'SM02B-SRSS-TB(LF)(SN)' and j2_bom[0]['LCSC Part #'] == 'C160402')
+    cpl = list(csv.DictReader((out/'assembly/jlcpcb-cpl.csv').open()))
+    j2_cpl = [r for r in cpl if r['Designator'] == 'J2']
+    checks['J2_CPL_anchor_rotation_and_side'] = len(j2_cpl) == 1 and (
+        tuple(float(j2_cpl[0][k]) for k in ['Mid X','Mid Y','Rotation']) == (3.7,59.1,270.)
+        and j2_cpl[0]['Layer'] == 'Top')
+    # Hand-solder lands must survive fabrication export, but never get paste
+    # or a machine-placement/BOM entry. Coordinates use the same plot origin.
+    wire_expected = [(6.1, 64., 2.2, 2.5), (2.7, 64., 2.2, 2.5)]
+    wire_copper = []
+    for layer in ['copper', 'mask']:
+        flashes = [o for o in stack.graphic_layers['top', layer].objects
+                   if isinstance(o, Flash) and (o.attrs.get('.P', ('',))[0] == 'J6'
+                   if layer == 'copper' else o.attrs.get('.C') == ('J6',))]
+        checks['J6_two_hand_solder_lands_in_' + layer] = sorted(
+            (round(o.x, 6), round(o.y, 6), *size(o)) for o in flashes) == sorted(wire_expected)
+        if layer == 'copper':
+            wire_copper = flashes
+    checks['J6_exported_positive_right_ground_left'] = len(wire_copper) == 2 and all(
+        (o.attrs['.P'][1] == '1' and o.attrs['.N'][0].endswith('/VBAT') and abs(o.x-6.1) < 1e-6)
+        or (o.attrs['.P'][1] == '2' and o.attrs['.N'][0] == 'GND' and abs(o.x-2.7) < 1e-6)
+        for o in wire_copper)
+    checks['J6_absent_from_stencil_BOM_and_placements'] = (
+        not any(isinstance(o, Flash) and o.attrs.get('.C') == ('J6',) for o in paste)
+        and 'J6' not in populated and all('J6' not in r['Designator'].split(',') for r in bom)
+        and all(r['Designator'] != 'J6' for r in cpl))
+    checks['JLC_BOM_CPL_and_native_positions_have_same_references'] = (
+        {r.strip() for row in bom for r in row['Designator'].split(',')} == populated
+        == {r['Designator'] for r in cpl} and len(cpl) == len(populated))
     # Gerbonara 1.5's Region object does not preserve component attributes;
     # every populated footprint (including DS1's mounting lands) also flashes.
     pasted = {o.attrs['.C'][0] for o in paste if isinstance(o, Flash) and '.C' in o.attrs}

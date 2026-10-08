@@ -186,8 +186,11 @@ The source must not fold back during input-capacitor charging. If it does,
 input soft-start is needed before relying on that source. Firmware still
 needs to initialize PN7160 power/clock settings and sequence OLED power.
 
-J2 uses **JST B2B-PH-SM4-TB(LF)(SN), C160352, 2.00 mm pitch, vertical SMT**,
-replacing the original through-hole header for SMT assembly. Pin 1 is battery positive,
+J2 now uses **JST SM02B-SRSS-TB(LF)(SN), C160402, 1.00 mm pitch, side-entry SMT**,
+2.95 mm high when mated, with its opening toward the left edge. An SHR-02V-S-B
+lead replaces the PH plug. The user accepts intermittent peaks above its 1 A
+rating; the 100 mA charging circuit and battery operation remain unchanged.
+[Connector selection and validation](battery-connector.md). Pin 1 is battery positive,
 pin 2 ground. Battery testing is optional; existing charge current, lack of a
 physical off switch and low-battery reset behavior are accepted for this
 iteration. Pack selection/polarity/protection must be checked before attaching

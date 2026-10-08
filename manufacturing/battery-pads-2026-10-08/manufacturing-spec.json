@@ -1,0 +1,99 @@
+{
+  "release": "battery-pads-2026-10-08",
+  "boards": 5,
+  "service": "Standard bare PCB fabrication; self assembly or supplied JLCPCB assembly inputs",
+  "assembly_side": "Top",
+  "board_size_mm": [
+    60,
+    110
+  ],
+  "thickness_mm": 1.6,
+  "solder_mask": "Green",
+  "silkscreen": "White",
+  "finish": "ENIG",
+  "via_covering": "Unfilled, uncapped, open through-vias",
+  "stackup": "Supplier standard four-layer FR-4; no custom dielectric construction",
+  "outer_copper_mm": 0.035,
+  "inner_copper": "Supplier standard 0.5 or 1 oz",
+  "controlled_impedance": false,
+  "tolerances": "Supplier standard",
+  "minimum_track_mm": 0.15,
+  "minimum_clearance_mm": 0.2,
+  "routing_via_drill_mm": 0.3,
+  "routing_via_pad_mm": 0.7,
+  "minimum_npth_copper_clearance_mm": 0.25,
+  "usb_plated_slot_width_mm": 0.7,
+  "usb_slot_annular_ring_mm": 0.3,
+  "electrical_test": true,
+  "origin_kicad_mm": [
+    50,
+    160
+  ],
+  "top_stencil_um": 100,
+  "ribbon_access_area_mm": [
+    71.15,
+    98.55,
+    88.85,
+    103.55
+  ],
+  "esp32_centre_joint": "Omitted: masked centre land, no thermal hole array, no centre paste; pin 9 remains soldered to GND",
+  "keyboard": "Delivered attached; preserve functional bridge and mouse bites",
+  "dnp": [
+    "C34",
+    "C35",
+    "C38",
+    "C39",
+    "J3",
+    "J4",
+    "J5",
+    "R38",
+    "R39"
+  ],
+  "non_components": [
+    "A1",
+    "MB1",
+    "MB2",
+    "J6"
+  ],
+  "status": "Engineering prototype: current display/USB corrections, JST-SH J2 and J6 battery wire solder pads; revised hardware requires bench validation and supplier CAM/placement review",
+  "sources_checked": "2026-09-22",
+  "sources": {
+    "eurocircuits": "https://www.eurocircuits.com/services/pcb-proto/",
+    "aisler": "https://community.aisler.net/t/4-layer-35-m-enig-design-rules/3733",
+    "esp32": "https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf"
+  },
+  "routing_review": "All trace ends and junctions independently audited; 45-degree routing, full land entries, no exposed sub-0.20 mm segments",
+  "battery_connector": {
+    "reference": "J2",
+    "manufacturer": "JST",
+    "mpn": "SM02B-SRSS-TB(LF)(SN)",
+    "lcsc": "C160402",
+    "entry": "Side entry, opening toward left board edge (-X), cable parallel to PCB",
+    "height_mm": 2.95,
+    "mating_housing": "SHR-02V-S-B",
+    "pin_1": "VBAT positive",
+    "pin_2": "GND",
+    "substitution": "No PH, ZH, or top-entry SH substitute. Previous PH battery plug is incompatible.",
+    "mated_height_mm": 2.95,
+    "pitch_mm": 1.0,
+    "mating_contact": "SSH-003T-P0.2-H",
+    "lead_awg": 28,
+    "rated_current_A": 1.0,
+    "peak_current_assumption": "User accepts intermittent excursions above 1 A for this prototype; no current limiter or operating restriction added. This does not constitute a manufacturer pulse rating."
+  },
+  "battery_solder_pads": {
+    "reference": "J6",
+    "pad_size_mm": [
+      2.2,
+      2.5
+    ],
+    "pitch_mm": 3.4,
+    "side": "Top",
+    "pin_1": "VBAT positive, right pad at (56.1,96.0) mm",
+    "pin_2": "GND, left pad at (52.7,96.0) mm",
+    "assembly": "Hand solder only; no paste, BOM or placement entry",
+    "connection": "Parallel with J2; use one battery connection at a time",
+    "ground_thermal_gap_mm": 0.25,
+    "ground_thermal_spoke_width_mm": 0.4
+  }
+}

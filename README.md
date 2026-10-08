@@ -10,8 +10,12 @@ array with ground-referenced protection and adds a VBUS-controlled data switch.
 It uses the accepted diagnosis from the existing measurements; revised hardware
 still needs bench validation. See the [USB fix](docs/bringup/usb-backfeed-fix.md)
 and [display correction and measurements](docs/bringup/rev-b-display-and-usb.md).
-Existing manufacturing archives predate this correction and are not current
-ordering files. The ordinary unfilled vias and 17.70 × 5.00 mm ribbon access remain.
+The [October prototype package](manufacturing/mini-2026-10-08-package.zip)
+includes the MINI-1 module with a flush antenna cutout, these corrections,
+the side-entry battery connector and labeled J6
+pads for directly soldered battery leads. Revised
+hardware still needs bench validation. September archives are historical.
+The ordinary unfilled vias and 17.70 × 5.00 mm ribbon access remain.
 
 ![Nucula v2 PCB layout](docs/pcb/top.png)
 
@@ -33,20 +37,22 @@ notes](docs/publication.md) for other checks, dependencies and historical inputs
 
 ## Hardware and documentation
 
-The five-sheet schematic contains the ESP32-C3-WROOM-02-N4, native USB-C data,
-a 100 mA single-cell Li-ion charger with JST-PH connector, USB/battery supply
+The five-sheet schematic contains the ESP32-C3-MINI-1-H4X, native USB-C data,
+a 100 mA single-cell Li-ion charger with JST-SH connector, USB/battery supply
 selection, a 3.31 V buck rail, and boot/reset/voltage supervision. It is adapted
 from Olimex ESP32-C3-DevKit-Lipo **revision C**. It now includes the PN7160 NFC
 controller and antenna matching tree, SSD1309 OLED glass driver/boost supply,
 and a detachable PCF8574T keyboard section. The four-layer PCB is placed and
 routed, with all components on top and the NFC circuitry inside the coil.
 
+- [MINI-1 compatibility, pin map, antenna fit and firmware requirements](docs/esp32-mini.md)
 - [Completed PCB layout, layer drawings and validation](docs/pcb-layout.md)
 - [Rev-A display correction, backfeed investigation and measurements](docs/bringup/rev-b-display-and-usb.md)
 - [Rev-A bench procedure with enlarged probe-pad map (PDF)](docs/bringup/rev-A-usb-bench-guide.pdf)
 - [Routing repair, before/after comparison and geometry audit](docs/routing-review.md)
 - [Standard manufacturing package and order settings](docs/manufacturing-release.md)
-- [Complete manufacturing ZIP](manufacturing/routing-review-2026-09-22-package.zip)
+- [Current prototype manufacturing ZIP](manufacturing/mini-2026-10-08-package.zip)
+- [Side-entry battery connector selection, polarity and assembly instructions](docs/battery-connector.md)
 - [Circuit simulation screening, findings and model limits](docs/simulation/README.md)
 - [Schematic PDF](docs/schematic.pdf)
 - [Design choices, datasheets and outstanding hardware limits](docs/power-design.md)
@@ -60,11 +66,14 @@ routed, with all components on top and the NFC circuitry inside the coil.
 - [Project library sources and licenses](libraries/README.md)
 
 Battery target: approximately 400 mAh, protected single-cell Li-ion/LiPo,
-3.7 V nominal / 4.2 V full; 2-pin JST-PH at 2.0 mm pitch, pin 1 positive,
-pin 2 ground. Charging remains 100 mA (0.25C at 400 mAh).
-Battery operation is optional for this prototype; runtime/discharge capability
-and improved low-battery behavior are deferred. J2 uses a vertical SMT JST-PH
-2.00 mm connector, B2B-PH-SM4-TB(LF)(SN), JLCPCB C160352.
+3.7 V nominal / 4.2 V full. J2 is **JST SH SM02B-SRSS-TB(LF)(SN), C160402**:
+**side entry, 1.00 mm pitch, 2.95 mm mated height**, opening toward the left
+edge. Use an **SHR-02V-S-B** lead, pin 1 positive and pin 2 ground; the old
+PH plug no longer fits. Charging remains 100 mA (0.25C at 400 mAh).
+Battery operation remains optional. The user accepts intermittent peaks above
+the connector's 1 A rating; no current limit is added. Runtime, discharge
+qualification and low-battery improvements remain deferred.
+[Connector dimensions, current assumption and assembly details](docs/battery-connector.md).
 The intended USB source is a dedicated **5 V / at least 1.5 A** supply; the
 steady-state planning budget is about 1.10 A including charging. Startup/inrush
 must be tested; operation from arbitrary computer hosts is not qualified.
@@ -110,7 +119,7 @@ manufacturer DC-bias curves. Run `python3 tools/check_component_choices.py` to
 reproduce those estimates. RF tuning, oscillator qualification and power
 measurements remain prototype bring-up work. **Placement and routing are complete**
 for the agreed USB-powered prototype. Native PCB DRC has zero errors and zero
-unconnected items; the layout report records 40 reviewed cosmetic warnings
+unconnected items; the layout report records 43 reviewed cosmetic warnings
 and the remaining prototype measurements. All six independent routing-quality
 checks pass after repairing the free-form routing regression. The 261 scoped
 SPICE cases were rerun.
@@ -121,14 +130,17 @@ lock files, automatic backups and KiCad's `.history` are ignored.
 Manufacturing files now target five bare four-layer boards, nominal 1.6 mm,
 green mask, white legend and ENIG using the supplier's standard stackup.
 Routing vias are 0.30 mm drill / 0.70 mm land, without filling or capping.
-There is no controlled-impedance requirement. The package includes updated
-116-part placements, stencil data and assembly drawings. The component BOM
-is unchanged. [Manufacturing changes and validation](docs/standard-fabrication.md).
+There is no controlled-impedance requirement. The October package includes
+119-part placements, stencil data, assembly drawings, and JLCPCB BOM/CPL inputs.
+Its BOM includes the USB redesign and side-entry J2. J6 direct battery wire pads
+are etched copper and need no purchased component.
+[Manufacturing changes and validation](docs/standard-fabrication.md).
 
 The [JLCPCB r2 archive](manufacturing/jlcpcb-2026-09-21-r2-package.zip) records
 the previously submitted board and remains unchanged. Its order settings and
-placements belong to that earlier design. No archived package contains the
-October display correction, and USB backfeed still needs a validated remedy.
+placements belong to that earlier design. Use the October prototype package
+for the revised design; USB reconnection, ESD and display operation still need
+validation on revised hardware.
 
 ## License and attribution
 

@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "checks": {
+    "exact_side_entry_part_in_schematic_and_board": true,
+    "horizontal_footprint_selected": true,
+    "manufacturer_lands_preserved_on_board": true,
+    "horizontal_SH_model_assigned": true,
+    "jst_side_entry_land_dimensions_and_numbering": true,
+    "four_smd_lands_with_mask_and_paste_no_holes": true,
+    "body_and_courtyard_match_library": true,
+    "locked_socket_faces_left_edge": true,
+    "pin_1_positive_pin_2_ground": true,
+    "physical_polarity_matches_drawing": true,
+    "mounting_tabs_have_no_net": true,
+    "left_edge_plug_approach_has_no_components": true,
+    "entire_connector_courtyard_on_board": true,
+    "catalogue_identifies_right_angle_smt_part": true,
+    "wire_pads_same_library_in_schematic_and_board": true,
+    "wire_pads_parallel_with_J2_correct_polarity": true,
+    "wire_pads_large_exposed_top_copper_without_paste_or_holes": true,
+    "ground_wire_pad_thermal_relief_for_hand_soldering": true,
+    "wire_pads_locked_above_connector": true,
+    "wire_pads_marked_BAT_positive_and_GND": true,
+    "wire_pads_not_a_purchased_or_placed_component": true,
+    "wire_pads_on_board_and_clear_of_other_components": true
+  },
+  "board_sha256": "84ad7d5758f7b39bfd7e3cfc9ae9afd7c1120688b8caf7aa6d371609892b67e0",
+  "footprint_sha256": "9990af7ee96e3d1c8a5c4d4f522e102048830449531e45bf5789d4c640bf2553",
+  "wire_pad_footprint_sha256": "502624ddaac59004261ceb5b18a6f7ed9d0efdc0a041bab1aee230491d150faa",
+  "wire_pads": {
+    "reference": "J6",
+    "size_mm": [
+      2.2,
+      2.5
+    ],
+    "pitch_mm": 3.4,
+    "ground_thermal_gap_mm": 0.25,
+    "ground_thermal_spoke_width_mm": 0.4,
+    "positive_xy_mm": [
+      56.1,
+      96.0
+    ],
+    "ground_xy_mm": [
+      52.7,
+      96.0
+    ],
+    "paste": false,
+    "connection": "Parallel with J2; use one battery connection at a time"
+  },
+  "part": "SM02B-SRSS-TB(LF)(SN)",
+  "lcsc": "C160402",
+  "height_mm": 2.95,
+  "mated_height_mm": 2.95,
+  "mating_housing": "SHR-02V-S-B",
+  "pitch_mm": 1.0,
+  "rated_current_A_at_AWG28": 1.0,
+  "peak_current_assumption": "User accepts intermittent excursions above 1 A; no new current limiter or battery operating restriction. Above-rating pulses are not manufacturer-qualified by this audit.",
+  "placement_mm_deg": [
+    53.7,
+    100.9,
+    -90.0
+  ],
+  "opening": "Left edge (-X); cable parallel to PCB",
+  "approach_bounds_mm": [
+    50.0,
+    98.0,
+    51.125,
+    103.8
+  ],
+  "intruding_courtyards": {},
+  "source": "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf",
+  "limitations": "KiCad SH STEP model assigned. Enclosure/cable bend room, supplied SH lead polarity and intermittent-peak performance need physical confirmation."
+}

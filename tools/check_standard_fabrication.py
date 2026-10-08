@@ -67,13 +67,13 @@ def run(path, drc_path):
                                       'pad': p.GetNumber(), 'overlap_mm2': round(overlap, 8)})
     checks['open_vias_separated_from_solderable_smd_pads'] = not intersections
     u3 = fps['U3']
-    epad = [p for p in u3.Pads() if p.GetNumber() == '19']
+    epad = [p for p in u3.Pads() if p.GetNumber() == '49']
     checks['esp32_centre_pad_has_no_holes_mask_or_paste'] = len(epad) == 1 and all(
         p.GetDrillSize().x == 0 and not p.IsOnLayer(k.F_Mask) and not p.IsOnLayer(k.F_Paste)
         and p.GetNetname() == 'GND' for p in epad) and not any(
             p.GetNumber() == '' and p.IsOnLayer(k.F_Paste) for p in u3.Pads())
     checks['esp32_required_ground_pin_retained'] = any(
-        p.GetNumber() == '9' and p.GetNetname() == 'GND' and p.IsOnLayer(k.F_Mask)
+        p.GetNumber() == '1' and p.GetNetname() == 'GND' and p.IsOnLayer(k.F_Mask)
         for p in u3.Pads())
     slots = [p for p in fps['J1'].Pads() if p.GetNumber() == 'SH']
     checks['usb_plated_slots_0_70_with_0_30_rings'] = len(slots) == 4 and all(
@@ -120,6 +120,32 @@ def run(path, drc_path):
                     expected.pop(ref)
                 else:
                     expected[ref] = amendment['to_sha256']
+        battery_path = ROOT/'docs/pcb/battery-footprint-amendments.json'
+        if battery_path.exists():
+            from check_battery_connector import audit as battery_audit
+            revision = json.loads(battery_path.read_text())
+            assert set(revision['footprints']) == {'J2'}
+            assert battery_audit(path)['passed']
+            amendment = revision['footprints']['J2']
+            assert expected['J2'] == amendment['from_sha256']
+            expected['J2'] = amendment['to_sha256']
+        wire_path = ROOT/'docs/pcb/battery-wire-pad-amendments.json'
+        if wire_path.exists():
+            from check_battery_connector import audit as battery_audit
+            revision = json.loads(wire_path.read_text())
+            assert set(revision['footprints']) == {'J6'} and 'J6' not in expected
+            assert revision['footprints']['J6']['from_sha256'] is None
+            assert battery_audit(path)['passed']
+            expected['J6'] = revision['footprints']['J6']['to_sha256']
+        mini_path = ROOT/'docs/pcb/mini-footprint-amendments.json'
+        if mini_path.exists():
+            from check_mini_module import audit as mini_audit
+            revision = json.loads(mini_path.read_text())
+            assert set(revision['footprints']) == {'U3', 'R12', 'R13'}
+            assert mini_audit(path, ROOT/'docs/netlist.xml')['passed']
+            for ref, amendment in revision['footprints'].items():
+                assert expected[ref] == amendment['from_sha256'], ref
+                expected[ref] = amendment['to_sha256']
         checks['silk_edits_preserve_all_other_footprint_geometry'] = (
             footprint_geometry_hashes(tree) == expected)
     return {'passed': all(checks.values()), 'checks': checks,

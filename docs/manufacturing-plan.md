@@ -1,5 +1,11 @@
 # JLCPCB prototype manufacturing plan
 
+Current MCU revision (8 October 2026): **ESP32-C3-MINI-1-H4X / C41349510**.
+The antenna is flush with the right PCB edge; the smaller milled notch includes
+1 mm side clearance and 0.5 mm internal corner radii. GPIO functions and the
+display/USB/battery corrections remain. [Compatibility and verification](esp32-mini.md).
+Use the **mini-2026-10-08** package for this module; earlier packages use WROOM-02.
+
 **Superseded by the [prepared manufacturing package](manufacturing-release.md)
 on 2026-09-21.** The design and OLED connector are locked. Gerbers, drills, BOM,
 CPL, stencil and drawings are generated, and all 55 selected parts were refreshed
@@ -75,7 +81,7 @@ is recorded, and the assembly/carrier approach is defined.
   snapshot had 21 available against 20 placements. C36/C37, **C527192**, had 50
   against a planning requirement of 28. Neither figure is live or reserved.
 - DS1 is updated to top-contact **C506794**, with 5,189 available at the latest
-  observation; refresh again close to ordering. Confirm SMT J2 **C160352**
+  observation; refresh again close to ordering. Confirm side-entry SMT J2 **C160402**
   matches the final BOM.
   Treat any replacement as a component/footprint review; RF inductors must also
   preserve the required RF characteristics or trigger recalculation and tuning.

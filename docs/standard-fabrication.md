@@ -1,6 +1,8 @@
 # Standard-fabrication revision and OLED ribbon access
 
-The current release is **routing-review-2026-09-22**. It retains the fabrication
+The current release is **mini-2026-10-08**. The MINI revision adds the smaller
+ESP32-C3-MINI-1-H4X and flush antenna cutout; see [MINI checks](esp32-mini.md).
+The sections below also retain the September fabrication history. It retains the fabrication
 and placement changes below and repairs the routing regression introduced with
 them. [Routing review, before/after comparison and current validation](routing-review.md).
 
@@ -44,11 +46,11 @@ board outline and five functional breakaway crossings remain constrained.
 | Impedance | No controlled-impedance order or custom dielectric requirement |
 | Assembly | All parts on top; 100 µm top stencil, DNP paste omitted |
 
-The ESP32 module's optional centre solder joint is omitted. Its pad 19 remains
-GND copper under soldermask, with no paste or twelve-hole thermal array. Required
-GND pin 9 remains soldered. Espressif permits omission of the centre solder
+The MINI-1 module's optional centre solder joint is omitted. Its pad 49 remains
+GND copper under soldermask, with no paste or thermal-hole array. All 21
+perimeter GND pads remain soldered. Espressif permits omission of the centre solder
 joint; the altered thermal path still requires prototype temperature checks.
-See the [ESP32-C3-WROOM-02 datasheet, land pattern notes](https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf#page=34).
+See the [ESP32-C3-MINI-1 datasheet, peripheral schematic notes](https://documentation.espressif.com/esp32-c3-mini-1_datasheet_en.pdf#page=34).
 The PN7160 exposed pad remains soldered, without vias in its wettable pad.
 
 J1 still uses GCT USB4105-GF-A-120. Its custom `_Standard` footprint retains the

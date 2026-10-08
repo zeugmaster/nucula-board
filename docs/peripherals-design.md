@@ -1,6 +1,6 @@
 # NFC, OLED and detachable keyboard
 
-Revision B-draft, 2026-09-20. The project now has five schematic sheets:
+Updated for MINI-1, 2026-10-08; peripheral circuitry is unchanged. The project now has five schematic sheets:
 system interconnect, power/ESP32, NFC, OLED, and keyboard.
 [Combined drawing](schematic.pdf), [BOM](bom.csv), [verification](verification.json).
 The main PCB is placed and routed, with its 35 mm detachable keyboard section
@@ -10,15 +10,15 @@ NFC coil measurement coupon and reusable coil footprint are available.
 
 ## Shared I²C and MCU connections
 
-| Function | ESP32 GPIO | WROOM-02 module pad | Notes |
+| Function | ESP32 GPIO | MINI-1 module pad | Notes |
 |---|---:|---:|---|
-| SDA | 4 | 3 | Shared open-drain data |
-| SCL | 5 | 4 | Shared open-drain clock |
-| NFC IRQ | 6 | 5 | PN7160 interrupt |
-| NFC VEN | 7 | 6 | High enables NFC; external default low |
-| OLED power | 3 | 15 | High connects boost input; external default low |
-| OLED reset | 10 | 10 | High asserts reset through Q5 |
-| Keyboard INT_N | 20 | 11 | Active-low, open-drain interrupt |
+| SDA | 4 | 18 | Shared open-drain data |
+| SCL | 5 | 19 | Shared open-drain clock |
+| NFC IRQ | 6 | 20 | PN7160 interrupt |
+| NFC VEN | 7 | 21 | High enables NFC; external default low |
+| OLED power | 3 | 6 | High connects boost input; external default low |
+| OLED reset | 10 | 16 | High asserts reset through Q5 |
+| Keyboard INT_N | 20 | 30 | Active-low, open-drain interrupt |
 
 USB stays on GPIO18/19; battery ADC, USB detection, boot straps and reset
 supervision are preserved. GPIO21 remains available for later additions.
@@ -45,7 +45,7 @@ dropout, startup and load transients on hardware, especially near low-battery
 reset. Keep wiring short and total capacitance at or below 400 pF.
 [MCP1700 datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/MCP1700-Data-Sheet-20001826F.pdf),
 [PCF8574 datasheet](https://www.nxp.com/docs/en/data-sheet/PCF8574_PCF8574A.pdf),
-[ESP32-C3-WROOM-02 datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf).
+[ESP32-C3-MINI-1 datasheet](https://documentation.espressif.com/esp32-c3-mini-1_datasheet_en.pdf).
 
 ## PN7160 and antenna network
 

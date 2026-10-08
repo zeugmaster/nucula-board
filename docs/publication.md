@@ -25,6 +25,10 @@ python3 -m unittest discover -s tools -p 'test_*.py'
 `KICAD_CLI` and `KICAD_SHARE` override the CLI and standard library locations.
 The PCB layout and manufacturing exporter use KiCad's `pcbnew` Python module;
 run them with KiCad's bundled Python or an environment providing that module.
+Run `tools/check_battery_connector.py` with that interpreter to verify the
+side-entry J2 lands, battery polarity and left-edge plug access.
+Run `tools/check_mini_module.py` with that interpreter to verify the 53 MINI-1
+pins, unchanged GPIO functions, USB fanout and flush antenna cutout.
 The independent Gerber audit requires `gerbonara==1.5.0`, `reportlab` and
 `rsvg-convert`. Simulation dependencies are listed in
 [the simulation guide](simulation/README.md) and

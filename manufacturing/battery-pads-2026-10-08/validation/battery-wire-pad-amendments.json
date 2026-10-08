@@ -1,0 +1,19 @@
+{
+  "reason": "Add J6 direct battery wire solder pads in parallel with existing JST-SH J2. All 131 existing footprint geometries/properties, all original tracks/vias and outline are preserved. Only C42 reference text relocated to clear the exposed wire pads.",
+  "source_before_board_sha256": "d6d34cd5e49cec9c018324b5301573b7f9560270b0f68e55bb4afcdfea57ee6b",
+  "source_board_sha256": "84ad7d5758f7b39bfd7e3cfc9ae9afd7c1120688b8caf7aa6d371609892b67e0",
+  "footprints": {
+    "J6": {
+      "from_sha256": null,
+      "to_sha256": "01ae4d7928597dc4bea5d8503af4527961a1e656acca20f474f29c98cd0aa936"
+    }
+  },
+  "existing_footprints_preserved": 131,
+  "existing_tracks_preserved": 1110,
+  "added_tracks": 5,
+  "all_original_vias_and_board_outline_preserved": true,
+  "track_nets": [
+    "GND",
+    "/Power + ESP32-C3/VBAT"
+  ]
+}

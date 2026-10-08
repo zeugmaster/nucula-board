@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Export the verified standard-fabrication board for five bare PCBs/self assembly.
+"""Export the verified standard-fabrication board and assembly inputs.
 
 Run with KiCad's pcbnew-enabled Python. No orders or supplier uploads are made.
 Historical JLCPCB releases remain immutable.
@@ -39,6 +39,11 @@ def main():
     verification = json.loads((ROOT/'docs/verification.json').read_text())
     for name, digest in verification['schematic_sha256'].items():
         assert sha(ROOT/name) == digest, 'Stale schematic verification: '+name
+    mini = json.loads((ROOT/'docs/pcb/mini-module-check.json').read_text())
+    assert mini['passed'] and mini['board_sha256'] == sha(ROOT/'nucula-v2.kicad_pcb')
+    assert mini['netlist_sha256'] == sha(ROOT/'docs/netlist.xml')
+    battery = json.loads((ROOT/'docs/assembly/battery-connector-check.json').read_text())
+    assert battery['passed'] and battery['board_sha256'] == sha(ROOT/'nucula-v2.kicad_pcb')
     simulations = json.loads((ROOT/'docs/simulation/results.json').read_text())
     assert simulations['simulations_completed'] == 261 and not simulations['solver_errors']
     for name, digest in simulations['source_sha256'].items():
@@ -54,7 +59,7 @@ def main():
         (out/name).mkdir(exist_ok=True)
     logs=[]
     def run(*args):
-        logs.append([str(a).replace(str(ROOT),'${PROJECT}') for a in args])
+        logs.append([str(a).replace(str(ROOT),'${PROJECT}').replace(str(tmp),'${EXPORT_TMP}') for a in args])
         subprocess.run([CLI,*map(str,args)],check=True,cwd=ROOT)
     with tempfile.TemporaryDirectory(prefix='nucula-standard-export-') as tmp:
         tmp=Path(tmp)
@@ -94,6 +99,31 @@ def main():
             '-o',out/'assembly/placements.csv',path)
         rows=list(csv.DictReader((out/'assembly/placements.csv').open()))
         assert len(rows)==119 and {r['Ref'] for r in rows}==expected
+        # Keep the KiCad anchor; never invent catalogue body-centre offsets.
+        # Assembly houses must verify pin alignment in their placement preview.
+        with (out/'assembly/jlcpcb-cpl.csv').open('w', newline='') as stream:
+            writer = csv.DictWriter(stream, fieldnames=['Designator','Mid X','Mid Y','Layer','Rotation'], lineterminator='\n')
+            writer.writeheader()
+            writer.writerows({'Designator': r['Ref'], 'Mid X': r['PosX'], 'Mid Y': r['PosY'],
+                              'Layer': 'Top', 'Rotation': f"{float(r['Rot']) % 360:.6f}"} for r in rows)
+        bom_rows = list(csv.DictReader((ROOT/'docs/assembly/jlcpcb-bom.csv').open()))
+        bom_refs = [r.strip() for row in bom_rows for r in row['Designator'].split(',')]
+        assert len(bom_refs) == len(expected) and set(bom_refs) == expected
+        fps = {f.GetReference(): f for f in b.GetFootprints()}
+        for row in bom_rows:
+            for ref in row['Designator'].split(','):
+                f = fps[ref.strip()]
+                assert f.GetFieldText('MPN') == row['Comment']
+                assert f.GetFieldText('LCSC') == row['LCSC Part #']
+        with (out/'assembly/pad-coordinates.csv').open('w', newline='') as stream:
+            writer = csv.writer(stream, lineterminator='\n')
+            writer.writerow(['Reference','Pad','Net','X_mm','Y_mm'])
+            for ref in sorted(expected):
+                for pad in fps[ref].Pads():
+                    if pad.GetNumber() and pad.IsOnLayer(k.F_Cu):
+                        writer.writerow([ref,pad.GetNumber(),pad.GetNetname(),
+                                         round(k.ToMM(pad.GetPosition().x)-50,6),
+                                         round(160-k.ToMM(pad.GetPosition().y),6)])
         paste = (out/'gerbers/nucula-v2-F_Paste.gtp').read_text()
         paste_refs = set(re.findall(r'%TO.C,([^*]+)\*%', paste))
         assert paste_refs == expected, 'Stencil component set does not match assembly'
@@ -112,7 +142,25 @@ def main():
             '-o',out/'drawings/fabrication-outline.pdf',path)
         run('pcb','export','pdf','--layers','F.Cu,In1.Cu,In2.Cu,B.Cu,F.Mask,B.Mask,F.Paste','--common-layers','Edge.Cuts',
             '--mode-multipage','-o',out/'drawings/layers.pdf',path)
+    run('sch','export','pdf','-o',out/'drawings/schematic.pdf',ROOT/'nucula-v2.kicad_sch')
     for src,dest in [('docs/bom.csv','assembly/bom.csv'),('docs/manufacturing-spec.json','manufacturing-spec.json'),
+                     ('docs/assembly/jlcpcb-bom.csv','assembly/jlcpcb-bom.csv'),
+                     ('LICENSES/Espressif-KiCad-libraries.md','assembly/U3-library-license.md'),
+                     ('docs/esp32-mini.md','assembly/esp32-mini.md'),
+                     ('docs/pcb/mini-module-check.json','validation/mini-module-check.json'),
+                     ('docs/pcb/mini-footprint-amendments.json','validation/mini-footprint-amendments.json'),
+                     ('docs/pcb/mini-outline-amendment.json','validation/mini-outline-amendment.json'),
+                     ('libraries/Nucula_Project.pretty/ESP32-C3-MINI-1-H4X_NoEPADSolder.kicad_mod','assembly/U3.kicad_mod'),
+                     ('parts documentation/esp32-c3-mini-1_datasheet_en.pdf','assembly/ESP32-C3-MINI-1-datasheet.pdf'),
+                     ('docs/pcb/mini-module.png','drawings/mini-module.png'),
+                     ('docs/battery-connector.md','assembly/battery-connector.md'),
+                     ('parts documentation/JST-SH-side-entry-2026-10-07.pdf','assembly/JST-SH-datasheet.pdf'),
+                     ('libraries/Nucula_Project.pretty/JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal.kicad_mod','assembly/J2.kicad_mod'),
+                     ('libraries/Nucula_Project.pretty/Battery_Lead_SolderPads_2x2.2x2.5mm_P3.4mm.kicad_mod','assembly/J6.kicad_mod'),
+                     ('docs/assembly/battery-connector-check.json','validation/battery-connector-check.json'),
+                     ('docs/pcb/battery-footprint-amendments.json','validation/battery-footprint-amendments.json'),
+                     ('docs/pcb/battery-wire-pad-amendments.json','validation/battery-wire-pad-amendments.json'),
+                     ('docs/pcb/battery-connector.png','drawings/battery-connector.png'),
                      ('docs/assembly/purchasing-5-boards.csv','assembly/purchasing-5-boards.csv'),
                      ('docs/bringup/usb-backfeed-check.json','validation/usb-backfeed-check.json'),
                      ('docs/bringup/usb-backfeed-fix.md','validation/usb-backfeed-fix.md'),
@@ -137,52 +185,72 @@ def main():
     report_path.write_text(report_path.read_text().replace('../pcb/', '../drawings/')
         .replace('measurements/rev-A-usb-battery-2026-10-06.pdf', 'rev-A-usb-battery-2026-10-06.pdf')
         .replace('backfeed-analysis/results.json', 'usb-spice-results.json'))
+    report_path = out/'assembly/battery-connector.md'
+    report_path.write_text(report_path.read_text().replace('pcb/battery-connector.png', '../drawings/battery-connector.png')
+                          .replace('assembly/battery-connector-check.json', '../validation/battery-connector-check.json'))
+    report_path = out/'assembly/esp32-mini.md'
+    report_path.write_text(report_path.read_text().replace('pcb/mini-module.png', '../drawings/mini-module.png')
+                          .replace('](pcb/', '](../validation/')
+                          .replace('../libraries/README.md', 'U3-library-license.md'))
     (out/'validation/export-check.json').write_text(json.dumps({'passed':True,'placements':len(rows),
         'stencil_component_references_match_placements': sorted(paste_refs) == sorted(expected),
         'usb_plated_slots': 4, 'job_omits_custom_layer_construction': 'MaterialStackup' not in job,
         'dnp_paste_removed':removed,'source_board_sha256':sha(ROOT/'nucula-v2.kicad_pcb'),
         'export_board_sha256':sha(out/'validation/export-board.kicad_pcb'),'commands':logs},indent=2)+'\n')
-    (out/'README.md').write_text('''# Standard fabrication / five-board contingency — routing review
+    (out/'README.md').write_text('''# MINI-1 with flush antenna cutout — engineering prototype
 
-Upload `nucula-v2-gerbers.zip`. Order five bare four-layer FR-4 boards, nominal
-1.6 mm, green mask, white legend, ENIG, standard copper and supplier stackup.
-No controlled impedance, via filling/capping, or custom dielectric construction
-is required. Request normal electrical testing. Keep the keyboard attached.
-The Gerber job identifies the four layers and nominal board thickness; its
-individual material-stack dimensions are deliberately omitted. Follow the
-supplier's standard four-layer construction and the accompanying specification.
+This package contains the current October display mapping, USB backfeed redesign,
+the MINI-1-H4X module, resized flush antenna notch, 2.95 mm JST-SH J2
+connector, and J6 direct battery wire solder pads. U3 must be C41349510; the
+WROOM footprint does not fit this PCB. See assembly/esp32-mini.md.
+Antenna-side ground lands have 0.30 mm edge clearance (0.25 mm minimum);
+other copper retains 0.50 mm. Internal notch corners have 0.5 mm radius.
+Use firmware compatible with C3 chip revision 1.1 (ESP-IDF 5.4+ recommended).
+It supersedes the earlier battery-pads and connector packages and September files for the next prototype.
+Revised hardware still requires the USB/display bring-up described in validation/.
 
-Order a 100 µm top stencil using the included F.Paste Gerber. DNP paste and the
-optional ESP32 centre-pad paste are omitted. Fit the unchanged 116 components
-per board using `assembly/bom.csv` and the updated assembly drawing.
-The five-board purchasing list carries dated vendor observations and proposed
-substitutes, not reserved stock or a delivery promise. The engineering BOM
-retains its original MPNs; substitution notes in the purchasing list still apply.
+Fabrication: five four-layer FR-4 boards, nominal 1.6 mm, green mask, white legend,
+ENIG and the supplier standard stackup. Upload nucula-v2-gerbers.zip. No controlled
+impedance, custom dielectric construction, or via filling/capping. Request normal
+electrical test. Keep the keyboard attached. Use a 100 um top stencil; DNP and
+optional ESP32 centre-joint paste are omitted.
 
-`drawings/display-clearance.png` marks a 17.70 × 5.00 mm component-free ribbon
-insertion area above DS1. Tracks, vias and soldermask-covered copper are permitted
-there. This annotated review image is not a fabrication layer.
+Assembly: 119 populated components per board, all on top. Use assembly/bom.csv
+or assembly/jlcpcb-bom.csv, assembly/placements.csv or assembly/jlcpcb-cpl.csv,
+and drawings/assembly-top.pdf. CPL coordinates preserve KiCad anchors, with no
+unverified offsets or rotation corrections. Confirm all pin alignment in the
+supplier preview; assembly/pad-coordinates.csv provides independent pad locations.
+The public stock snapshot is dated per part and is not reserved inventory.
 
-These files supersede the older filled-via contingency Gerbers. The archived
-JLCPCB r2 package describes the board already submitted and remains unchanged.
-They also supersede the first standard-fabrication package: routing has been
-rebuilt with full pad/via entries and 45-degree traces. The independent geometry
-audit checks every trace, rejects connections relying only on edge overlap,
-and reports no acute return bends or exposed segments shorter than 0.20 mm.
-`drawings/routing-comparison.png` shows two areas before and after the repair.
-Validation reports accompany this package; supplier CAM acceptance and physical
-prototype testing remain separate from the recorded software checks.
+J2 MUST be JST SM02B-SRSS-TB(LF)(SN), JLCPCB C160402, side-entry SMT,
+1.00 mm pitch and 2.95 mm above the PCB when mated. Do not substitute PH, ZH,
+or top-entry SH. Use an SHR-02V-S-B battery plug with SSH-003T-P0.2-H contacts
+and 28 AWG leads. THE PREVIOUS JST-PH BATTERY LEAD DOES NOT FIT.
+The opening faces the LEFT edge (negative X), with the lead parallel to the
+PCB. Pin 1 = battery positive, pin 2 = GND; both hold-down tabs are unconnected.
+Check the actual lead polarity. See assembly/battery-connector.md and
+assembly/JST-SH-datasheet.pdf, plus drawings/battery-connector.png.
+At the (50,160) export origin J2 is X=3.700 mm, Y=59.100 mm, rotation=270 deg
+in the JLC CPL. Positive pad: (5.700,59.600); ground pad: (5.700,58.600) mm.
 
-Native DRC has zero errors, zero unconnected items and zero schematic-parity
-findings. Its 40 cosmetic warnings are documented: 37 footprint-library
-differences from front-legend clipping around open vias, two existing ESP32
-outline/edge warnings, and one back-artwork/mask overlap clipped in Gerbers.
-The independent geometry audit verifies that legend clipping changed no pads,
-models, rules or other footprint geometry. The 261 simulation cases exercise
-partial circuit models; they do not validate PCB parasitics or full operation.
-The layout report retains two USB advisories: 0.9915 mm U4-to-series-resistor
-length mismatch and two uncovered ground-reference samples out of 2,171.
-USB signal integrity has not been qualified.
+J6 provides two 2.2 x 2.5 mm exposed copper lands above J2 for hand-soldered
+battery leads. Viewed from the top with USB at the bottom: left = GND (pin 2),
+right = BAT+ (pin 1). Both are labeled on the front silkscreen. The pads are
+parallel with J2; use ONE battery connection at a time. No component, stencil
+paste or pick-and-place entry is required for J6. At the export origin, J6's
+BAT+ pad is (6.100,64.000), and GND is (2.700,64.000) mm.
+
+The connector is rated 1 A with 28 AWG wire. The user accepts intermittent
+peaks above this rating for the prototype; no new current limiter or operating
+restriction is added. This acceptance is not a manufacturer pulse-current
+rating or measured thermal qualification. Charging remains 100 mA.
+
+Native DRC: zero errors, zero unconnected items and zero schematic-parity findings.
+The 43 remaining warnings comprise 40 reviewed footprint-library differences
+and three silkscreen/mask clipping warnings. No dangling copper remains.
+See the hash-bound validation reports for placement, routing, stencil, polarity,
+plug-access and simulation checks. Electrical/RF/ESD and enclosure qualification
+remain physical prototype work. September packages remain historical records.
 ''')
     if args.out:
         (out / 'manufacturing-spec.json').write_text(json.dumps(spec, indent=2) + '\n')
@@ -200,10 +268,23 @@ USB signal integrity has not been qualified.
         for p in sorted((out/'gerbers').iterdir()):z.write(p,p.name)
     files=[p for p in out.rglob('*') if p.is_file() and p.name!='manifest.json']
     (out/'manifest.json').write_text(json.dumps({'release':spec['release'],'source_board_sha256':sha(ROOT/'nucula-v2.kicad_pcb'),
+        'source_inputs_sha256':{name:sha(ROOT/name) for name in [
+            'nucula-v2.kicad_pcb','nucula-v2.kicad_pro','nucula-v2.kicad_dru','power-mcu.kicad_sch',
+            'libraries/Nucula_Project.kicad_sym',
+            'libraries/Nucula_Project.pretty/ESP32-C3-MINI-1-H4X_NoEPADSolder.kicad_mod',
+            'libraries/Nucula_Project.3dshapes/ESP32-C3-MINI-1.STEP',
+            'tools/check_mini_module.py','docs/esp32-mini.md',
+            'libraries/Nucula_Project.pretty/JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal.kicad_mod',
+            'libraries/Nucula_Project.pretty/Battery_Lead_SolderPads_2x2.2x2.5mm_P3.4mm.kicad_mod',
+            'tools/check_battery_connector.py','tools/check_standard_export.py',
+            'tools/export_standard_fabrication.py','docs/battery-connector.md',
+            'docs/manufacturing-spec.json','docs/assembly/jlc-stock-snapshot.json']},
         'files_sha256':{str(p.relative_to(out)):sha(p) for p in sorted(files)}},indent=2)+'\n')
     with zipfile.ZipFile(out.with_name(out.name+'-package.zip'),'w',zipfile.ZIP_DEFLATED) as z:
         for p in sorted(out.rglob('*')):
             if p.is_file():z.write(p,str(p.relative_to(out)))
+    package = out.with_name(out.name+'-package.zip')
+    package.with_suffix('.zip.sha256').write_text(sha(package)+'  '+package.name+'\n')
     print('Exported',out)
 
 

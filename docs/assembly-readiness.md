@@ -1,9 +1,19 @@
 # Component and footprint readiness
 
-**6 October update:** the [USB redesign](bringup/usb-backfeed-fix.md) has 119
+Current MCU revision (8 October 2026): **ESP32-C3-MINI-1-H4X / C41349510**.
+The antenna is flush with the right PCB edge; the smaller milled notch includes
+1 mm side clearance and 0.5 mm internal corner radii. GPIO functions and the
+display/USB/battery corrections remain. [Compatibility and verification](esp32-mini.md).
+Use the **mini-2026-10-08** package for this module; earlier packages use WROOM-02.
+
+**8 October update:** [J2 is now JST-SH C160402](battery-connector.md),
+side entry at 2.95 mm mated height, requiring an SHR-02V-S-B lead. The [USB redesign](bringup/usb-backfeed-fix.md) has 119
 populated parts per board. The current BOM, five-board purchasing list and
-readiness JSON include the new U4, U10, D5 and C55 selections. Historical
-manufacturing archives and the September sourcing narrative below are unchanged.
+readiness JSON include the new U4, U10, D5 and C55 selections and the replacement
+J2. The [October prototype package](../manufacturing/mini-2026-10-08-package.zip)
+contains matching production inputs plus J6 direct battery wire pads. J6 is etched
+copper with no paste or purchased component, so the assembly count stays 119.
+Earlier archives remain unchanged.
 
 ## Historical five-board revision — 22 September 2026
 
@@ -64,31 +74,17 @@ DS1's purchased item is the Hirose FPC **socket**, not the OLED glass. The OLED
 and keypad are user-supplied external modules, excluded from assembly BOM/CPL
 as explicitly reconfirmed by the user on 2026-09-21. J3/J4/J5 remain DNP; J3 still has
 isolated end pins 1/9 and P0–P6 on pins 2–8. A1 is manufactured copper, excluded
-from the assembly BOM and CPL. J2 is the populated **JST-PH 2 mm vertical
-surface-mount battery connector**, **B2B-PH-SM4-TB(LF)(SN) / C160352**. JLCPCB
-lists `smtWeld`, supporting Economic and Standard SMT assembly. It replaces the
-through-hole C131337 connector; there are no remaining populated components
-classified as manual/through-hole assembly in this catalogue audit. Mechanical
-anchors on other SMT connectors are still part of their respective footprints.
+from the assembly BOM and CPL. J2 is the populated **JST-SH 1 mm side-entry
+SM02B-SRSS-TB(LF)(SN) / C160402**, **2.95 mm high when mated**. It requires
+an SHR-02V-S-B battery lead in place of PH, opening toward the left edge.
+JLCPCB lists Economic and Standard SMT assembly. The fresh 2026-10-07 API
+observation reports **27,621 available to order**; stock is dated and unreserved.
+[JLCPCB C160402](https://jlcpcb.com/partdetail/JST-SM02B_SRSS_TB_LF_SN/C160402).
 
-J2 stock was refreshed on **2026-09-21**:
-**34,636 available to order**, versus 10 needed. Public minimum
-placement is 5 and loss allowance is 0, so the planning quantity remains 10.
-The listed pre-order MOQ of 42 applies to pre-orders, not this available stock.
-Stock is a dated observation, not a reservation.
-[JLCPCB C160352](https://jlcpcb.com/partdetail/JST-B2B_PH_SM4_TB_LF_SN/C160352).
-
-The project-local copy of the standard KiCad SMT footprint has two electrical lands and two mechanical
-hold-down lands, all with paste apertures and no plated holes. JST's top-entry
-land pattern and pin-1 mark were checked against the footprint. **Pin 1 remains
-VBAT and pin 2 GND**; both `MP` hold-down pads are intentionally unconnected.
-An update-from-schematic warning about `MP` having no symbol pin is mechanical,
-not a missing battery connection. The larger package is moved slightly inward
-from the left edge; its 90° rotation and electrical pin order are retained.
-[Manufacturer drawing, pages 2 and 4](../parts%20documentation/JST-PH-SMT-datasheet.pdf).
-The installed library's SMT 3D model was missing, so its unresolved reference
-was removed from the local copy. J2 has no 3D body model; fabrication geometry is
-unchanged from the verified KiCad footprint.
+The local KiCad footprint has two signal lands and two unconnected hold-downs,
+all with paste and no holes. Pin 1 is VBAT, pin 2 GND. Its SH STEP model resolves.
+The user accepts intermittent peaks above the 1 A connector rating; no new
+limiter is introduced. [Selection and full checks](battery-connector.md).
 
 Historical placement milestones (the current completed routing and DRC are
 reported in [PCB layout](pcb-layout.md), and the newer DS1 correction in
@@ -110,7 +106,7 @@ support parts, and routes the five J4-to-J5 connections. Its
 | Reference | Final selection | Why / footprint consequence |
 |---|---|---|
 | DS1 | Hirose FH12A-24S-0.5SH(55), **C506794** | Top-contact socket for confirmed mounted flex orientation; 24-contact CON24 map retained, manufacturer-derived lands/paste and larger body outline. Moved 0.20 mm toward keyboard. |
-| J2 | JST B2B-PH-SM4-TB(LF)(SN), **C160352** | Stocked SMT top-entry PH connector; same 2 mm mating family and battery polarity. Larger footprint with two solder hold-down tabs replaces through-hole assembly. |
+| J2 | JST SM02B-SRSS-TB(LF)(SN), **C160402** | Side-entry SH, 2.95 mm mated height. New 1 mm SH lead, preserved polarity, revised lands and local routing. |
 | U5 | TI TLV803EA30DBZR, **C5218924** | The DCKR variant was out of stock. Same 3.08 V threshold and nominal 200 ms delay; **SOT-23 replaces SC70**. Both selected variants use 1=GND, 2=RESET, 3=VDD. |
 | J1 | GCT USB4105-GF-A-120, **C5184243** | Unsuffixed part had zero available order quantity. Original XY pattern with [0.04 mm outer ground-land trim](usb-connector-clearance.md); holes unchanged. Shell stakes are **1.20 mm**, suitable for the specified 1.6 mm board. |
 | R30 | TE CPF0805B1M8E, **C2088132** | Stocked 1.8 MΩ, **0.1%**, 0.1 W, 100 V; **0805 replaces 0603**. Divider voltage and precision remain unchanged. |

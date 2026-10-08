@@ -46,7 +46,7 @@ def audit(board_path, netlist_path):
     checks['connector_Dplus_has_only_ground_TVS_and_switch_common'] = group('J1.A6', 'J1.B6', 'U4.2', 'U10.4')
     checks['switch_port1_through_series_resistors_to_correct_ESP_pins'] = all([
         group('U10.8', 'R12.1'), group('U10.2', 'R13.1'),
-        group('R12.2', 'U3.13'), group('R13.2', 'U3.14')])
+        group('R12.2', 'U3.26'), group('R13.2', 'U3.27')])
     checks['data_TVS_has_no_supply_or_VBUS_connection'] = (
         {p[1] for p in pin if p[0] == 'U4'} == {'1', '2', '3'}
         and n('U4', 3) == 'GND' and n('C14', 1) not in {n('U4', p) for p in [1, 2, 3]})
@@ -55,7 +55,7 @@ def audit(board_path, netlist_path):
     checks['switch_unused_port_is_unconnected'] = all(
         n('U10', p) is not None and len(nets[n('U10', p)]) == 1 for p in [3, 7])
     checks['switch_3V3_supply_is_decoupled'] = n('U10', 10) == n('C55', 1) == n('C11', 1) and n('C55', 2) == 'GND'
-    checks['active_low_enable_is_driven_by_existing_VBUS_detector'] = group('Q2.3', 'R17.2', 'U3.17', 'U10.9')
+    checks['active_low_enable_is_driven_by_existing_VBUS_detector'] = group('Q2.3', 'R17.2', 'U3.13', 'U10.9')
     checks['VBUS_detector_and_pullup_have_correct_rails'] = (
         n('Q2', 1) == n('R18', 1) == n('C14', 1) and n('Q2', 2) == n('R18', 2) == 'GND'
         and n('R17', 1) == n('C11', 1))

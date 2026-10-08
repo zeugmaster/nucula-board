@@ -27,9 +27,9 @@
       -90.0
     ],
     "J2": [
-      56.75,
+      53.7,
       100.9,
-      90.0
+      -90
     ],
     "J3": [
       69.84,
@@ -72,7 +72,7 @@
       0.0
     ],
     "U3": [
-      97.9,
+      101.7,
       106.14,
       -90.0
     ],
@@ -85,6 +85,11 @@
       60.15,
       148.095,
       0.0
+    ],
+    "J6": [
+      54.4,
+      96,
+      0
     ]
   },
   "pad_nets": {
@@ -1435,79 +1440,215 @@
     "U3": [
       [
         "1",
-        "/+3V3"
+        "GND"
       ],
       [
         "10",
-        "/OLED_RESET"
+        "unconnected-(U3-NC-Pad10)"
       ],
       [
         "11",
-        "/KEY_INT_N"
+        "GND"
       ],
       [
         "12",
-        "unconnected-(U3-IO21{slash}TXD-Pad12)"
-      ],
-      [
-        "13",
-        "Net-(U3-IO18)"
-      ],
-      [
-        "14",
-        "Net-(U3-IO19)"
-      ],
-      [
-        "15",
-        "/OLED_PWR_EN"
-      ],
-      [
-        "16",
-        "/Power + ESP32-C3/STRAP_GPIO2"
-      ],
-      [
-        "17",
-        "/Power + ESP32-C3/USB_PRESENT_N"
-      ],
-      [
-        "18",
         "/Power + ESP32-C3/VBAT_ADC"
       ],
       [
-        "19",
+        "13",
+        "/Power + ESP32-C3/USB_PRESENT_N"
+      ],
+      [
+        "14",
         "GND"
       ],
       [
-        "2",
-        "/Power + ESP32-C3/ESP_EN"
+        "15",
+        "unconnected-(U3-NC-Pad15)"
       ],
       [
-        "3",
+        "16",
+        "/OLED_RESET"
+      ],
+      [
+        "17",
+        "unconnected-(U3-NC-Pad17)"
+      ],
+      [
+        "18",
         "/I2C_SDA"
       ],
       [
-        "4",
+        "19",
         "/I2C_SCL"
       ],
       [
-        "5",
+        "2",
+        "GND"
+      ],
+      [
+        "20",
         "/NFC_IRQ"
       ],
       [
-        "6",
+        "21",
         "/NFC_VEN"
       ],
       [
-        "7",
+        "22",
         "/Power + ESP32-C3/STRAP_GPIO8"
       ],
       [
-        "8",
+        "23",
         "/Power + ESP32-C3/BOOT_N"
       ],
       [
-        "9",
+        "24",
+        "unconnected-(U3-NC-Pad24)"
+      ],
+      [
+        "25",
+        "unconnected-(U3-NC-Pad25)"
+      ],
+      [
+        "26",
+        "Net-(U3-IO18)"
+      ],
+      [
+        "27",
+        "Net-(U3-IO19)"
+      ],
+      [
+        "28",
+        "unconnected-(U3-NC-Pad28)"
+      ],
+      [
+        "29",
+        "unconnected-(U3-NC-Pad29)"
+      ],
+      [
+        "3",
+        "/+3V3"
+      ],
+      [
+        "30",
+        "/KEY_INT_N"
+      ],
+      [
+        "31",
+        "unconnected-(U3-IO21{slash}TXD-Pad31)"
+      ],
+      [
+        "32",
+        "unconnected-(U3-NC-Pad32)"
+      ],
+      [
+        "33",
+        "unconnected-(U3-NC-Pad33)"
+      ],
+      [
+        "34",
+        "unconnected-(U3-NC-Pad34)"
+      ],
+      [
+        "35",
+        "unconnected-(U3-NC-Pad35)"
+      ],
+      [
+        "36",
         "GND"
+      ],
+      [
+        "37",
+        "GND"
+      ],
+      [
+        "38",
+        "GND"
+      ],
+      [
+        "39",
+        "GND"
+      ],
+      [
+        "4",
+        "unconnected-(U3-NC-Pad4)"
+      ],
+      [
+        "40",
+        "GND"
+      ],
+      [
+        "41",
+        "GND"
+      ],
+      [
+        "42",
+        "GND"
+      ],
+      [
+        "43",
+        "GND"
+      ],
+      [
+        "44",
+        "GND"
+      ],
+      [
+        "45",
+        "GND"
+      ],
+      [
+        "46",
+        "GND"
+      ],
+      [
+        "47",
+        "GND"
+      ],
+      [
+        "48",
+        "GND"
+      ],
+      [
+        "49",
+        "GND"
+      ],
+      [
+        "5",
+        "/Power + ESP32-C3/STRAP_GPIO2"
+      ],
+      [
+        "50",
+        "GND"
+      ],
+      [
+        "51",
+        "GND"
+      ],
+      [
+        "52",
+        "GND"
+      ],
+      [
+        "53",
+        "GND"
+      ],
+      [
+        "6",
+        "/OLED_PWR_EN"
+      ],
+      [
+        "7",
+        "unconnected-(U3-NC-Pad7)"
+      ],
+      [
+        "8",
+        "/Power + ESP32-C3/ESP_EN"
+      ],
+      [
+        "9",
+        "unconnected-(U3-NC-Pad9)"
       ]
     ],
     "C50": [
@@ -2173,6 +2314,16 @@
         "2",
         "GND"
       ]
+    ],
+    "J6": [
+      [
+        "1",
+        "/Power + ESP32-C3/VBAT"
+      ],
+      [
+        "2",
+        "GND"
+      ]
     ]
   },
   "values": {
@@ -2199,7 +2350,7 @@
     "R16": "470k",
     "C34": "DNP / TRIM",
     "R17": "10k",
-    "J2": "JST-PH / 1S Li-ion",
+    "J2": "JST-SH / 1S Li-ion",
     "C53": "33pF",
     "R33": "100k",
     "R38": "4.7k",
@@ -2254,7 +2405,7 @@
     "U5": "TLV803EA30DBZR",
     "R6": "220k",
     "R12": "22R",
-    "U3": "ESP32-C3-WROOM-02-N4",
+    "U3": "ESP32-C3-MINI-1-H4X",
     "C50": "2.2uF",
     "J5": "MODULE LINK / OPTIONAL",
     "R39": "4.7k",
@@ -2306,10 +2457,11 @@
     "R7": "48.7k",
     "U10": "TS3USB30EDGSR",
     "D5": "TPD1E10B06DYAR",
-    "C55": "100nF"
+    "C55": "100nF",
+    "J6": "Battery wire pads"
   },
   "antenna_copper_and_rule_sha256": "d59502c6aed490f966bb845a4400af206a1246088f0fa6b29024725e0b6da3fa",
-  "edge_cuts_sha256": "02f7c97b7a1f638b534da9947c810d0cf1e5901762b2e6ef5140e702e0ec0cc3",
+  "edge_cuts_sha256": "18a9d232118a0e25fd36255913f866d9a4dd9e5e29ac544e4aa885ac8a79d11c",
   "nfc_refs": [
     "U6",
     "Y1",
@@ -2506,5 +2658,7 @@
       "scope": "DS1 pad nets only: mounted panel pin n maps to physical socket pad 25-n; position, rotation and footprint numbering unchanged. See docs/oled24/mounted-mapping-check.json."
     }
   ],
-  "usb_revision_note": "Explicit topology changes bound to docs/pcb/usb-footprint-amendments.json; all other values and pad nets retain the prior baseline."
+  "usb_revision_note": "Explicit topology changes bound to docs/pcb/usb-footprint-amendments.json; all other values and pad nets retain the prior baseline.",
+  "battery_connector_revision_note": "Low-profile side-entry J2 C160402, 2.95 mm mated height; left-edge access. JST-SH lead replaces PH; see battery-footprint-amendments.json and docs/battery-connector.md.",
+  "edge_cuts_baseline_note": "Refreshed stale outline hash against task-start board 95100d7cc580e9cf4c9a720851f986fd1073191a7cd6800b34e5490763bbdea3. All 32 Edge.Cuts objects, UUIDs, ordering and dimensions are exactly unchanged by the J2 correction; previous constraint hash 02f7c97b7a1f638b534da9947c810d0cf1e5901762b2e6ef5140e702e0ec0cc3"
 }
