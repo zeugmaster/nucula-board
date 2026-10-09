@@ -2595,7 +2595,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf"
+    (property "Datasheet" "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
       (at 40.64 114.3 0)
       (effects
         (font
@@ -2658,7 +2658,7 @@
         (hide yes)
       )
     )
-    (property "MPN" "CL10B104KB8NNNC"
+    (property "MPN" "CL10B104KB8NNNL"
       (at 40.64 114.3 0)
       (effects
         (font
@@ -2667,7 +2667,7 @@
         (hide yes)
       )
     )
-    (property "LCSC" "C1591"
+    (property "LCSC" "C913912"
       (at 40.64 114.3 0)
       (effects
         (font

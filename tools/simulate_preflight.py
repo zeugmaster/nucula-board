@@ -24,6 +24,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
 from kicad_sexpr import parse, child, children, uq
+from nfc.inductor_models import MODELS
 
 ROOT = Path(__file__).resolve().parents[1]
 F0 = 13.56e6
@@ -157,7 +158,7 @@ def crossing(t, v, level, after=0):
     return float(t[i] + (t[i+1]-t[i]) * (level-v[i]) / (v[i+1]-v[i]))
 
 
-def rf_circuit(d, params, scales=None, sweep=False):
+def rf_circuit(d, params, scales=None, sweep=False, inductor_mpn=None):
     scales = scales or {}
     lines = ['Nucula current schematic: passive NFC network',
              '* Ideal balanced 1 V differential AC excitation; no PN7160 macro-model.',
@@ -171,13 +172,15 @@ def rf_circuit(d, params, scales=None, sweep=False):
         a, b = d.node(ref, 1), d.node(ref, 2)
         value = d.value(ref) * scales.get(ref, 1.)
         if ref.startswith('C'):
-            lines += [f'R_esr_{ref} {a} x_{ref} .03', f'{ref} x_{ref} {b} {value:.15g}']
+            esr = params.get('cap_esr_by_ref', {}).get(ref, .03)
+            lines += [f'R_esr_{ref} {a} x_{ref} {esr:.15g}', f'{ref} x_{ref} {b} {value:.15g}']
         elif ref.startswith('L'):
-            assert d.parts[ref].find("property[@name='MPN']").get('value') == '0805HP-151XGRC'
-            lines += [f'R_dc_{ref} {a} x_{ref} .288',
-                      f'R_skin_{ref} x_{ref} y_{ref} {1.554e-4*math.sqrt(F0):.15g}',
-                      f'{ref} y_{ref} {b} {148.8e-9*(value/150e-9):.15g}',
-                      f'C_par_{ref} x_{ref} z_{ref} .135p', f'R_par_{ref} z_{ref} {b} 10']
+            mpn = inductor_mpn or d.parts[ref].find("property[@name='MPN']").get('value')
+            m = MODELS[mpn]  # Unknown parts must not silently inherit the original model.
+            lines += [f'R_dc_{ref} {a} x_{ref} {m["rdc"]}',
+                      f'R_skin_{ref} x_{ref} y_{ref} {m["k"]*math.sqrt(F0):.15g}',
+                      f'{ref} y_{ref} {b} {m["l"]*(value/150e-9):.15g}',
+                      f'C_par_{ref} x_{ref} z_{ref} {m["c"]}', f'R_par_{ref} z_{ref} {b} {m["rpar"]}']
         else:
             # A micro-ohm numerical short; actual jumper/trace impedance is unknown.
             lines.append(f'{ref} {a} {b} {max(value, 1e-6):.15g}')
@@ -390,7 +393,7 @@ def main():
     parser.add_argument('--out', type=Path, default=ROOT/'docs/simulation')
     args = parser.parse_args(); out = args.out; out.mkdir(parents=True, exist_ok=True)
     d, ng = Design(), Ngspice()
-    tracked = ['nucula-v2.kicad_pcb', 'nucula-v2.kicad_pro', 'nucula-v2.kicad_dru',
+    tracked = ['tools/nfc/inductor_models.py', 'nucula-v2.kicad_pcb', 'nucula-v2.kicad_pro', 'nucula-v2.kicad_dru',
                *sorted(p.name for p in ROOT.glob('*.kicad_sch'))]
     hashes = {p: sha(ROOT/p) for p in tracked}
     report = dict(scope='Partial circuit simulation; not a manufacturing release or complete board simulation.',

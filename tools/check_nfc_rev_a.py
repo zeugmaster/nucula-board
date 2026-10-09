@@ -12,6 +12,7 @@ from zipfile import ZipFile
 import pcbnew as k
 from kicad_sexpr import parse, children, child, uq
 from check_pcb_layout import canonical, digest
+from substitution_amendments import original_form, AMENDMENTS
 
 ROOT = Path(__file__).resolve().parents[1]
 BASELINE = ROOT/'tools/baselines/rev-A-nfc.zip'
@@ -68,11 +69,12 @@ def audit(path=ROOT/'nucula-v2.kicad_pcb'):
     assert hashlib.sha256(old_text.encode()).hexdigest() == '4e582fc67796c618ffb62488af51a3807b1540be308f1a315ecae28ff7b50e96'
     old=parse(old_text); new=parse(path.read_text())
     refs=json.loads((ROOT/'docs/pcb/constraints.json').read_text())['nfc_refs']+['A1']
-    a,b=footprints(old),footprints(new)
+    a,b=footprints(old),footprints(original_form(new,'footprint'))
     changes=[r for r in refs if digest(electrical_footprint(a[r]))!=digest(electrical_footprint(b[r]))]
     setup, baseline_setup=child(new,'setup'),child(original_export,'setup')
-    checks={'nfc_schematic_byte_identical':sch==(ROOT/'nfc.kicad_sch').read_bytes(),
-            'all_43_NFC_footprints_identical':not changes,
+    checks={'nfc_schematic_identical_except_reviewed_substitutions':
+                digest(parse(sch.decode()))==digest(original_form(parse((ROOT/'nfc.kicad_sch').read_text()),'symbol')),
+            'all_43_NFC_footprints_identical_except_reviewed_substitutions':not changes,
             'all_NFC_tracks_and_vias_identical':routing(old)==routing(new),
             'submitted_stackup_and_via_process_identical': all(
                 digest(children(setup,key))==digest(children(baseline_setup,key)) for key in
@@ -81,7 +83,9 @@ def audit(path=ROOT/'nucula-v2.kicad_pcb'):
             'baseline_commit':COMMIT,'baseline_archive_sha256':hashlib.sha256(BASELINE.read_bytes()).hexdigest(),
             'region_mm':BOUNDS,'NFC_references':refs,'changed_footprints':changes,
             'baseline_routing_objects':len(routing(old)),'current_routing_objects':len(routing(new)),
-            'scope':'Exact local NFC design and submitted stackup/process regression. Remote supply/digital routes, board outline and mounting hardware differ. User reports rev-A NFC worked without tuning; no new RF measurement or full-board EM equivalence claimed.'}
+            'substitutions_sha256':hashlib.sha256(AMENDMENTS.read_bytes()).hexdigest(),
+            'schematic_byte_identical_to_rev_A':sch==(ROOT/'nfc.kicad_sch').read_bytes(),
+            'scope':'Rev-A copper, pads, placements, matching values and process preserved. Only explicitly reviewed purchasing metadata, C36/C37 tolerance and inductor fabrication body differ. RF substitute requires separate model validation and physical bring-up; original measured performance does not transfer automatically.'}
 
 if __name__=='__main__':
     result=audit();(ROOT/'docs/pcb/nfc-rev-a-check.json').write_text(json.dumps(result,indent=2)+'\n')

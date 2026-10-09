@@ -33,7 +33,7 @@ def main():
         new[key]=[v for v in current[key] if not allowed(v)]
     report={'passed':not any(new.values()),'source_board_sha256':board_sha,
             'checks':{'no_new_routing_findings_outside_frozen_NFC':not any(new.values()),
-                      'NFC_exact_rev_A_comparison_passes':nfc['passed']},
+                      'NFC_rev_A_copper_and_reviewed_substitutions_pass':nfc['passed']},
             'strict_geometry_passed':current['passed'],'strict_statistics':current['statistics'],
             'retained_rev_A_NFC_findings':retained,'new_findings':new,
             'scope':'User requested unchanged proven NFC. Only findings reproduced on identical rev-A copper objects are retained; no native DRC errors or new routing findings are accepted.'}

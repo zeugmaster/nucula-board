@@ -37,6 +37,12 @@ def verify(out):
         counts.append(count)
     assert json.loads((out/'validation/nfc/spice-check.json').read_text())['status']=='pass'
     assert json.loads((out/'validation/nfc/inside-feed/native-check.json').read_text())['status']=='pass'
+    qualification=json.loads((out/'validation/substitutions/rf-qualification.json').read_text())
+    assert qualification['passed'] and qualification['spice_cases']==474
+    for name,digest in qualification['source_sha256'].items():assert sha(ROOT/name)==digest,name
+    readiness=json.loads((out/'assembly/readiness.json').read_text())
+    assert readiness['boards']==5 and not readiness['shortages']
+    for name,digest in readiness['inputs_sha256'].items():assert sha(ROOT/name)==digest,name
     rows=list(csv.DictReader((out/'assembly/placement-audit.csv').open()))
     assert len(rows)==119 and len({r['Reference'] for r in rows})==119
     assert all(r['Passed']=='True' and all(float(r[k])==0 for k in
@@ -60,7 +66,8 @@ def verify(out):
             'source_inputs_checked':len(manifest['source_inputs_sha256']),
             'ERC_violations':0,'DRC_errors':0,'unconnected':0,'schematic_parity_findings':0,
             'reviewed_DRC_warnings':len(drc['violations']),
-            'placements_checked':119,'assembly_pads_checked':413,'SPICE_cases':sum(counts),
+            'placements_checked':119,'assembly_pads_checked':413,'SPICE_cases':sum(counts)+qualification['spice_cases'],
+            'RF_substitution_cases':qualification['spice_cases'],'stock_shortages':0,
             'independent_NFC_SPICE_crosscheck':'pass','NFC_keepout_fixtures':12,
             'NFC_Gerber_copper_and_mask_comparison':'pass, all four copper and both mask layers',
             'supplier_preview_approved':False,'revised_hardware_bench_qualified':False,

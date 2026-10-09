@@ -10,6 +10,7 @@ import ctypes as c
 import json
 import math
 import os
+from inductor_models import MODELS, SELECTED
 
 ROOT=Path(__file__).resolve().parents[2]
 OUT=ROOT/'docs/nfc'
@@ -19,13 +20,15 @@ def main():
     calc=json.loads((OUT/'calculations.json').read_text())
     model=calc['fitted_model_assumptions']
     la=model['la_uH']*1e-6;ra=model['ra_ohm'];ca=model['ca_pF']*1e-12
-    rskin=1.554e-4*math.sqrt(13.56e6)
+    m=MODELS[SELECTED]
+    assert calc['inductor_mpn']==SELECTED
+    rskin=m['k']*math.sqrt(13.56e6)
     lines=['Nucula NFC full differential passive model / 13.56MHz',
            '* Assumed bare-coil model; no nonlinear PN7160 or tag coupling.',
-           '* Coilcraft 0805HP-151 doc 158-1/158-27; Rvar frozen at f0.',
+           f'* Coilcraft {SELECTED}; Rvar frozen at f0.',
            'VP txp 0 DC 0 AC 0.5 0','VN txn 0 DC 0 AC 0.5 180',
-           '.subckt emc a b', 'Rd a x .288',f'Rskin x y {rskin:.15g}',
-           'Lcore y b 148.8n','Cpar x z .135p','Rpar z b 10','.ends emc',
+           '.subckt emc a b', f'Rd a x {m["rdc"]}',f'Rskin x y {rskin:.15g}',
+           f'Lcore y b {m["l"]}',f'Cpar x z {m["c"]}',f'Rpar z b {m["rpar"]}','.ends emc',
            'XLP txp ep emc','XLN txn en emc',
            'Rcp0 ep ep0 .03','Cp0 ep0 0 330p','Rcn0 en en0 .03','Cn0 en0 0 330p',
            'Rcpt ep ept .03','Cpt ept 0 33p','Rcnt en ent .03','Cnt ent 0 33p',

@@ -5515,7 +5515,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf"
+    (property "Datasheet" "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
       (at 312.42 157.48 0)
       (effects
         (font
@@ -5578,7 +5578,7 @@
         (hide yes)
       )
     )
-    (property "MPN" "CL10B104KB8NNNC"
+    (property "MPN" "CL10B104KB8NNNL"
       (at 312.42 157.48 0)
       (effects
         (font
@@ -5587,7 +5587,7 @@
         (hide yes)
       )
     )
-    (property "LCSC" "C1591"
+    (property "LCSC" "C913912"
       (at 312.42 157.48 0)
       (effects
         (font
@@ -5927,7 +5927,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf"
+    (property "Datasheet" "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
       (at 353.06 157.48 0)
       (effects
         (font
@@ -5990,7 +5990,7 @@
         (hide yes)
       )
     )
-    (property "MPN" "CL10B104KB8NNNC"
+    (property "MPN" "CL10B104KB8NNNL"
       (at 353.06 157.48 0)
       (effects
         (font
@@ -5999,7 +5999,7 @@
         (hide yes)
       )
     )
-    (property "LCSC" "C1591"
+    (property "LCSC" "C913912"
       (at 353.06 157.48 0)
       (effects
         (font
@@ -7299,7 +7299,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf"
+    (property "Datasheet" "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
       (at 116.84 198.12 0)
       (effects
         (font
@@ -7362,7 +7362,7 @@
         (hide yes)
       )
     )
-    (property "MPN" "CL10B104KB8NNNC"
+    (property "MPN" "CL10B104KB8NNNL"
       (at 116.84 198.12 0)
       (effects
         (font
@@ -7371,7 +7371,7 @@
         (hide yes)
       )
     )
-    (property "LCSC" "C1591"
+    (property "LCSC" "C913912"
       (at 116.84 198.12 0)
       (effects
         (font

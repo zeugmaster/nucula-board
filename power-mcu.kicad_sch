@@ -7121,7 +7121,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf"
+    (property "Datasheet" "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
       (at 127 71.12 0)
       (effects
         (font
@@ -7184,7 +7184,7 @@
         (hide yes)
       )
     )
-    (property "MPN" "CL10B104KB8NNNC"
+    (property "MPN" "CL10B104KB8NNNL"
       (at 127 71.12 0)
       (effects
         (font
@@ -7193,7 +7193,7 @@
         (hide yes)
       )
     )
-    (property "LCSC" "C1591"
+    (property "LCSC" "C913912"
       (at 127 71.12 0)
       (effects
         (font
@@ -11685,7 +11685,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf"
+    (property "Datasheet" "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
       (at 142.24 203.2 0)
       (effects
         (font
@@ -11748,7 +11748,7 @@
         (hide yes)
       )
     )
-    (property "MPN" "CL10B104KB8NNNC"
+    (property "MPN" "CL10B104KB8NNNL"
       (at 142.24 203.2 0)
       (effects
         (font
@@ -11757,7 +11757,7 @@
         (hide yes)
       )
     )
-    (property "LCSC" "C1591"
+    (property "LCSC" "C913912"
       (at 142.24 203.2 0)
       (effects
         (font
@@ -12113,7 +12113,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf"
+    (property "Datasheet" "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
       (at 175.26 152.4 0)
       (effects
         (font
@@ -12176,7 +12176,7 @@
         (hide yes)
       )
     )
-    (property "MPN" "CL10B104KB8NNNC"
+    (property "MPN" "CL10B104KB8NNNL"
       (at 175.26 152.4 0)
       (effects
         (font
@@ -12185,7 +12185,7 @@
         (hide yes)
       )
     )
-    (property "LCSC" "C1591"
+    (property "LCSC" "C913912"
       (at 175.26 152.4 0)
       (effects
         (font
@@ -13853,7 +13853,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf"
+    (property "Datasheet" "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
       (at 309.88 177.8 0)
       (effects
         (font
@@ -13916,7 +13916,7 @@
         (hide yes)
       )
     )
-    (property "MPN" "CL10B104KB8NNNC"
+    (property "MPN" "CL10B104KB8NNNL"
       (at 309.88 177.8 0)
       (effects
         (font
@@ -13925,7 +13925,7 @@
         (hide yes)
       )
     )
-    (property "LCSC" "C1591"
+    (property "LCSC" "C913912"
       (at 309.88 177.8 0)
       (effects
         (font
@@ -15679,7 +15679,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf"
+    (property "Datasheet" "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
       (at 246.38 107.95 0)
       (effects
         (font
@@ -15736,7 +15736,7 @@
         (hide yes)
       )
     )
-    (property "MPN" "CL10B104KB8NNNC"
+    (property "MPN" "CL10B104KB8NNNL"
       (at 246.38 107.95 0)
       (effects
         (font
@@ -15745,7 +15745,7 @@
         (hide yes)
       )
     )
-    (property "LCSC" "C1591"
+    (property "LCSC" "C913912"
       (at 246.38 107.95 0)
       (effects
         (font

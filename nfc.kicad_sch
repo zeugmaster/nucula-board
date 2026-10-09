@@ -4782,7 +4782,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL10B104KB8NNN.do"
+    (property "Datasheet" "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
       (at 43.18 207.01 0)
       (effects
         (font
@@ -4831,7 +4831,7 @@
         (hide yes)
       )
     )
-    (property "MPN" "CL10B104KB8NNNC"
+    (property "MPN" "CL10B104KB8NNNL"
       (at 43.18 207.01 0)
       (effects
         (font
@@ -4840,7 +4840,7 @@
         (hide yes)
       )
     )
-    (property "LCSC" "C1591"
+    (property "LCSC" "C913912"
       (at 43.18 207.01 0)
       (effects
         (font
@@ -5203,7 +5203,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL10B104KB8NNN.do"
+    (property "Datasheet" "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
       (at 88.9 207.01 0)
       (effects
         (font
@@ -5252,7 +5252,7 @@
         (hide yes)
       )
     )
-    (property "MPN" "CL10B104KB8NNNC"
+    (property "MPN" "CL10B104KB8NNNL"
       (at 88.9 207.01 0)
       (effects
         (font
@@ -5261,7 +5261,7 @@
         (hide yes)
       )
     )
-    (property "LCSC" "C1591"
+    (property "LCSC" "C913912"
       (at 88.9 207.01 0)
       (effects
         (font
@@ -5624,7 +5624,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL10B104KB8NNN.do"
+    (property "Datasheet" "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
       (at 134.62 207.01 0)
       (effects
         (font
@@ -5673,7 +5673,7 @@
         (hide yes)
       )
     )
-    (property "MPN" "CL10B104KB8NNNC"
+    (property "MPN" "CL10B104KB8NNNL"
       (at 134.62 207.01 0)
       (effects
         (font
@@ -5682,7 +5682,7 @@
         (hide yes)
       )
     )
-    (property "LCSC" "C1591"
+    (property "LCSC" "C913912"
       (at 134.62 207.01 0)
       (effects
         (font
@@ -6726,7 +6726,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL10B104KB8NNN.do"
+    (property "Datasheet" "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
       (at 254 207.01 0)
       (effects
         (font
@@ -6775,7 +6775,7 @@
         (hide yes)
       )
     )
-    (property "MPN" "CL10B104KB8NNNC"
+    (property "MPN" "CL10B104KB8NNNL"
       (at 254.0 207.01 0)
       (effects
         (font
@@ -6784,7 +6784,7 @@
         (hide yes)
       )
     )
-    (property "LCSC" "C1591"
+    (property "LCSC" "C913912"
       (at 254.0 207.01 0)
       (effects
         (font
@@ -7159,7 +7159,7 @@
         (justify left)
       )
     )
-    (property "Footprint" "Nucula_Project:L_Coilcraft_0805HP"
+    (property "Footprint" "Nucula_Project:L_Coilcraft_0805CS_RevALands"
       (at 228.6 60.96 90)
       (effects
         (font
@@ -7169,7 +7169,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" "https://www.coilcraft.com/en-us/products/rf/ceramic-core-chip-inductors/0805-(2012)/0805hp/0805hp-151/"
+    (property "Datasheet" "https://www.coilcraft.com/getmedia/dd5f20e4-1ff7-43df-8317-b693eb2dce3e/0805cs.pdf"
       (at 228.6 60.96 90)
       (effects
         (font
@@ -7179,7 +7179,7 @@
         (justify left)
       )
     )
-    (property "Status" "PROTOTYPE: RF model included; 0.60A thermal reference, verify actual RF heating"
+    (property "Status" "RF substitute qualified by paired models; 0.40A DC thermal reference; verify RF heating and read range on hardware"
       (at 228.6 60.96 90)
       (effects
         (font
@@ -7208,7 +7208,7 @@
         (hide yes)
       )
     )
-    (property "MPN" "0805HP-151XGRC"
+    (property "MPN" "0805CS-151XGLC"
       (at 228.6 60.96 0)
       (effects
         (font
@@ -7240,7 +7240,7 @@
         )
       )
     )
-    (property "LCSC" "C20417049"
+    (property "LCSC" "C38190612"
       (at 228.6 60.96 0)
       (effects
         (font
@@ -7249,7 +7249,7 @@
         (hide yes)
       )
     )
-    (property "Supply Status" "2026-09-20: JLCPCB C20417049 orderable 21; 10 boards require 20; secure stock before assembly"
+    (property "Supply Status" "2026-10-09: selected stocked substitute; see current JLC stock snapshot and qualification report"
       (at 228.6 60.96 0)
       (effects
         (font
@@ -7317,7 +7317,7 @@
         (justify left)
       )
     )
-    (property "Footprint" "Nucula_Project:L_Coilcraft_0805HP"
+    (property "Footprint" "Nucula_Project:L_Coilcraft_0805CS_RevALands"
       (at 228.6 132.08 90)
       (effects
         (font
@@ -7327,7 +7327,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" "https://www.coilcraft.com/en-us/products/rf/ceramic-core-chip-inductors/0805-(2012)/0805hp/0805hp-151/"
+    (property "Datasheet" "https://www.coilcraft.com/getmedia/dd5f20e4-1ff7-43df-8317-b693eb2dce3e/0805cs.pdf"
       (at 228.6 132.08 90)
       (effects
         (font
@@ -7337,7 +7337,7 @@
         (justify left)
       )
     )
-    (property "Status" "PROTOTYPE: RF model included; 0.60A thermal reference, verify actual RF heating"
+    (property "Status" "RF substitute qualified by paired models; 0.40A DC thermal reference; verify RF heating and read range on hardware"
       (at 228.6 132.08 90)
       (effects
         (font
@@ -7366,7 +7366,7 @@
         (hide yes)
       )
     )
-    (property "MPN" "0805HP-151XGRC"
+    (property "MPN" "0805CS-151XGLC"
       (at 228.6 132.08 0)
       (effects
         (font
@@ -7398,7 +7398,7 @@
         )
       )
     )
-    (property "LCSC" "C20417049"
+    (property "LCSC" "C38190612"
       (at 228.6 132.08 0)
       (effects
         (font
@@ -7407,7 +7407,7 @@
         (hide yes)
       )
     )
-    (property "Supply Status" "2026-09-20: JLCPCB C20417049 orderable 21; 10 boards require 20; secure stock before assembly"
+    (property "Supply Status" "2026-10-09: selected stocked substitute; see current JLC stock snapshot and qualification report"
       (at 228.6 132.08 0)
       (effects
         (font
@@ -8443,7 +8443,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2005222139_YAGEO-CC0805GRNPO0BN101_C527192.pdf"
+    (property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_FH--Guangdong-Fenghua-Advanced-Tech-0805CG101F101NT_C464454.pdf"
       (at 307.34 78.74 0)
       (effects
         (font
@@ -8473,7 +8473,7 @@
         (justify left)
       )
     )
-    (property "Tolerance" "2%"
+    (property "Tolerance" "1%"
       (at 307.34 78.74 0)
       (effects
         (font
@@ -8506,7 +8506,7 @@
         )
       )
     )
-    (property "Manufacturer" "YAGEO"
+    (property "Manufacturer" "FH (Guangdong Fenghua Advanced Tech)"
       (at 307.34 78.74 0)
       (effects
         (font
@@ -8515,7 +8515,7 @@
         (hide yes)
       )
     )
-    (property "MPN" "CC0805GRNPO0BN101"
+    (property "MPN" "0805CG101F101NT"
       (at 307.34 78.74 0)
       (effects
         (font
@@ -8524,7 +8524,7 @@
         (hide yes)
       )
     )
-    (property "LCSC" "C527192"
+    (property "LCSC" "C464454"
       (at 307.34 78.74 0)
       (effects
         (font
@@ -8714,7 +8714,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2005222139_YAGEO-CC0805GRNPO0BN101_C527192.pdf"
+    (property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_FH--Guangdong-Fenghua-Advanced-Tech-0805CG101F101NT_C464454.pdf"
       (at 307.34 114.3 0)
       (effects
         (font
@@ -8744,7 +8744,7 @@
         (justify left)
       )
     )
-    (property "Tolerance" "2%"
+    (property "Tolerance" "1%"
       (at 307.34 114.3 0)
       (effects
         (font
@@ -8777,7 +8777,7 @@
         )
       )
     )
-    (property "Manufacturer" "YAGEO"
+    (property "Manufacturer" "FH (Guangdong Fenghua Advanced Tech)"
       (at 307.34 114.3 0)
       (effects
         (font
@@ -8786,7 +8786,7 @@
         (hide yes)
       )
     )
-    (property "MPN" "CC0805GRNPO0BN101"
+    (property "MPN" "0805CG101F101NT"
       (at 307.34 114.3 0)
       (effects
         (font
@@ -8795,7 +8795,7 @@
         (hide yes)
       )
     )
-    (property "LCSC" "C527192"
+    (property "LCSC" "C464454"
       (at 307.34 114.3 0)
       (effects
         (font
@@ -9368,7 +9368,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM2165C2A102JA01D_C162289.pdf"
+    (property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1811151646_YAGEO-CC0805JRNPO0BN102_C326940.pdf"
       (at 220.98 40.64 90)
       (effects
         (font
@@ -9431,7 +9431,7 @@
         )
       )
     )
-    (property "Manufacturer" "Murata Electronics"
+    (property "Manufacturer" "YAGEO"
       (at 220.98 40.64 0)
       (effects
         (font
@@ -9440,7 +9440,7 @@
         (hide yes)
       )
     )
-    (property "MPN" "GRM2165C2A102JA01D"
+    (property "MPN" "CC0805JRNPO0BN102"
       (at 220.98 40.64 0)
       (effects
         (font
@@ -9449,7 +9449,7 @@
         (hide yes)
       )
     )
-    (property "LCSC" "C162289"
+    (property "LCSC" "C326940"
       (at 220.98 40.64 0)
       (effects
         (font
@@ -9665,7 +9665,7 @@
         (justify left)
       )
     )
-    (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM2165C2A102JA01D_C162289.pdf"
+    (property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1811151646_YAGEO-CC0805JRNPO0BN102_C326940.pdf"
       (at 220.98 165.1 90)
       (effects
         (font
@@ -9728,7 +9728,7 @@
         )
       )
     )
-    (property "Manufacturer" "Murata Electronics"
+    (property "Manufacturer" "YAGEO"
       (at 220.98 165.1 0)
       (effects
         (font
@@ -9737,7 +9737,7 @@
         (hide yes)
       )
     )
-    (property "MPN" "GRM2165C2A102JA01D"
+    (property "MPN" "CC0805JRNPO0BN102"
       (at 220.98 165.1 0)
       (effects
         (font
@@ -9746,7 +9746,7 @@
         (hide yes)
       )
     )
-    (property "LCSC" "C162289"
+    (property "LCSC" "C326940"
       (at 220.98 165.1 0)
       (effects
         (font

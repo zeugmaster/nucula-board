@@ -1,0 +1,722 @@
+US +1-847-639-6400   sales@coilcraft.com
++44-1236-730595   sales@coilcraft-europe.com
+UK
++886-2-2264 3646   sales@coilcraft.com.tw
+Taiwan
++86-21-6218 8074   sales@coilcraft.com.cn
+China
++ 65-6484 8412   sales@coilcraft.com.sg
+Singapore
+© Coilcraft Inc. 2022
+This product may not be used in medical or high
+risk applications without prior Coilcraft approval.
+Specification subject to change without notice.
+Please check web site for latest information.
+AEC
+Q200 125°C
++
+Halogen
+Free
+Chip Inductors – 0805CS (2012)
+Document 100-1 
+
+Document 100-1  Revised 08/05/22
+•	 Exceptional Q values, even at high frequencies
+•	 Tight tolerances – 2% for most; 1% for some values
+	
+	
+ Inductance2	
+Percent	
+	
+ SRF typ5	
+ DCR max6	
+ Irms7	
+Color
+	  Part number1	
+(nH)	
+ tolerance3	
+ Q min4	
+(MHz)	
+(Ohms)	
+(mA)	
+ code8
+0805CS-020XJR_	
+2.8 @	250 MHz	
+5	
+80 @	1500 MHz	
+12200	
+0.06	
+800	
+Gray
+0805CS-3N0XJR_	
+3.0 @	250 MHz	
+5	
+65 @	1500 MHz	
+12200	
+0.06	
+800	
+White
+0805CS-030XJR_	
+3.3 @	250 MHz	
+5	
+50 @	1500 MHz	
+12200	
+0.08	
+600	
+Black
+0805CS-050XJR_	
+5.6 @	250 MHz	
+5	
+65 @	1000 MHz	
+5900	
+0.08	
+600	
+Orange
+0805CS-060XJR_	
+6.8 @	250 MHz	
+5	
+50 @	1000 MHz	
+5600	
+0.11	
+600	
+Brown
+0805CS-070XJR_	
+7.5 @	250 MHz	
+5	
+50 @	1000 MHz	
+4800	
+0.14	
+600	
+Green
+0805CS-080X_R_	
+8.2 @	250 MHz	
+5,2	
+50 @	1000 MHz	
+4400	
+0.12	
+600	
+Red
+0805CS-100X_R_	
+10 @	250 MHz	
+5,2	
+60 @	500 MHz	
+4300	
+0.10	
+600	
+Blue
+0805CS-120X_R_	
+12 @	250 MHz	
+5,2	
+50 @	500 MHz	
+4000	
+0.15	
+600	
+Orange
+0805CS-150X_R_	
+15 @	250 MHz	
+5,2	
+50 @	500 MHz	
+3200	
+0.17	
+600	
+Yellow
+0805CS-180X_R_	
+18 @	250 MHz	
+5,2	
+50 @	500 MHz	
+3100	
+0.20	
+600	
+Green
+0805CS-220X_R_	
+22 @	250 MHz	
+5,2	
+55 @	500 MHz	
+2600	
+0.22	
+500	
+Blue
+0805CS-240X_R_	
+24 @	250 MHz	
+5,2	
+50 @	500 MHz	
+2400	
+0.22	
+500	
+Gray
+0805CS-270X_R_	
+27 @	250 MHz	
+5,2	
+55 @	500 MHz	
+2580	
+0.25	
+500	
+Violet
+0805CS-330X_R_	
+33 @	250 MHz	
+5,2,1	
+60 @	500 MHz	
+2150	
+0.27	
+500	
+Gray
+0805CS-360X_R_	
+36 @	250 MHz	
+5,2,1	
+55 @	500 MHz	
+1900	
+0.27	
+500	
+Orange
+0805CS-390X_R_	
+39 @	250 MHz	
+5,2,1	
+60 @	500 MHz	
+2000	
+0.29	
+500	
+White
+0805CS-430X_R_	
+43 @	200 MHz	
+5,2,1	
+60 @	500 MHz	
+1800	
+0.34	
+500	
+Yellow
+0805CS-470X_R_	
+47 @	200 MHz	
+5,2,1	
+60 @	500 MHz	
+1700	
+0.31	
+500	
+Black
+0805CS-560X_R_	
+56 @	200 MHz	
+5,2,1	
+60 @	500 MHz	
+1600	
+0.34	
+500	
+Brown
+0805CS-680X_R_	
+68 @	200 MHz	
+5,2,1	
+60 @	500 MHz	
+1500	
+0.38	
+500	
+Red
+0805CS-820X_R_	
+82 @	150 MHz	
+5,2,1	
+65 @	500 MHz	
+1330	
+0.42	
+400	
+Orange
+0805CS-910X_R_	
+91 @	150 MHz	
+5,2,1	
+65 @	500 MHz	
+1330	
+0.48	
+400	
+Black
+0805CS-101X_R_	
+100 @	150 MHz	
+5,2,1	
+65 @	500 MHz	
+1250	
+0.46	
+400	
+Yellow
+0805CS-111X_R_	
+110 @	150 MHz	
+5,2	
+50 @	250 MHz	
+1100	
+0.48	
+400	
+Brown
+0805CS-121X_R_	
+120 @	150 MHz	
+5,2,1	
+50 @	250 MHz	
+1100	
+0.51	
+400	
+Green
+0805CS-151X_R_	
+150 @	100 MHz	
+5,2,1	
+50 @	250 MHz	
+920	
+0.56	
+400	
+Blue
+0805CS-181X_R_	
+180 @	100 MHz	
+5,2,1	
+50 @	250 MHz	
+920	
+0.64	
+400	
+Violet
+0805CS-221X_R_	
+220 @	100 MHz	
+5,2	
+50 @	250 MHz	
+820	
+0.70	
+400	
+Gray
+0805CS-241X_R_	
+240 @	100 MHz	
+5,2	
+44 @	250 MHz	
+770	
+1.00	
+350	
+Red
+1.	 When ordering, specify tolerance, termination and packaging codes:
+0805CS-241XGRC
+Tolerance: 	
+F	 =	1%  G = 2%  J = 5%
+(Table shows stock tolerances in bold.)
+Termination:	 R	=	RoHS compliant matte tin over nickel over silver-
+platinum-glass frit.
+	
+E	=	Halogen free component. RoHS compliant silver-
+palladium-platinum-glass frit terminations.
+	
+L	 =	RoHS compliant, not halogen-free. Silver-palladium-
+platinum-glass frit terminations.
+	
+	
+	 Special order: T = RoHS tin-silver-copper (95.5/4/0.5) or 
+S = non-RoHS tin-lead (63/37).
+Packaging:	
+C	=	7″ machine-ready reel. EIA-481 embossed plastic tape 
+(2000 parts per full reel). Quantities less than full reel 
+available: in tape (not machine ready) or with leader 
+and trailer ($25 charge).
+	
+D	=	13″ machine-ready reel. EIA-481 embossed plastic 
+tape. Factory order only, not stocked (7500 parts per 
+full reel).
+	
+B	=	Less than full reel. In an effort to simplify our part 
+numbering system, Coilcraft is eliminating the need 
+for multiple packaging codes. When ordering, simply 
+change the last letter of your part number from B to C.
+2.	 Inductance measured using a Coilcraft SMD-A fixture in an Agilent/
+HP 4286A impedance analyzer with Coilcraft-provided correlation pieces.
+3.	 Tolerances in bold are stocked for immediate shipment.
+4.	 Q measured using an Agilent/HP 4291A with an Agilent/HP 16193 test 
+fixture.
+5.	 SRF measured using an Agilent/HP 8720D network analyzer and a 
+Coilcraft SMD­‑D test fixture.
+6.	 DCR measured on a Cambridge Technology micro-ohmmeter and a 
+Coilcraft CCF858 test fixture.
+7.	 Current that causes a 15°C temperature rise from 25°C ambient. This 
+information is for reference only and does not represent absolute 
+maximum ratings.
+8.	 Each part is marked with a single dot. The color dots are not unique 
+identifiers and correspond to multiple inductance values.
+9.	 Electrical specifications at 25°C.
+Refer to Doc 362 “Soldering Surface Mount Components” before soldering.
+•	 Wirewound construction provides the highest SRFs in 0805 
+size
+Sample
+& buy
+Support
+& FAQ
+Web
+page
+Tools &
+software
+Continued on next page
+US +1-847-639-6400   sales@coilcraft.com
++44-1236-730595   sales@coilcraft-europe.com
+UK
++886-2-2264 3646   sales@coilcraft.com.tw
+Taiwan
++86-21-6218 8074   sales@coilcraft.com.cn
+China
++ 65-6484 8412   sales@coilcraft.com.sg
+Singapore
+© Coilcraft Inc. 2022
+This product may not be used in medical or high
+risk applications without prior Coilcraft approval.
+Specification subject to change without notice.
+Please check web site for latest information.
+0805CS Series (2012)
+AEC
+Q200 125°C
++
+Halogen
+Free
+ 
+Document 100-2  Revised 08/05/22
+Document 100-1 
+1.	 When ordering, specify tolerance, termination and packaging codes:
+0805CS-103XGRC
+Tolerance: 	
+F	 =	1%  G = 2%  J = 5%
+(Table shows stock tolerances in bold.)
+Termination:	 R	=	RoHS compliant matte tin over nickel over silver-
+platinum-glass frit.
+	
+E	=	Halogen free component. RoHS compliant silver-
+palladium-platinum-glass frit terminations.
+	
+L	 =	RoHS compliant, not halogen-free. Silver-palladium-
+platinum-glass frit terminations.
+	
+	
+	 Special order: T = RoHS tin-silver-copper (95.5/4/0.5) or 
+S = non-RoHS tin-lead (63/37).
+Packaging:	
+C	=	7″ machine-ready reel. EIA-481 embossed plastic tape 
+(2000 parts per full reel). Quantities less than full reel 
+available: in tape (not machine ready) or with leader 
+and trailer ($25 charge).
+	
+D	=	13″ machine-ready reel. EIA-481 embossed plastic 
+tape. Factory order only, not stocked (7500 parts per 
+full reel).
+	
+B	=	Less than full reel. In an effort to simplify our part 
+numbering system, Coilcraft is eliminating the need 
+for multiple packaging codes. When ordering, simply 
+change the last letter of your part number from B to C.
+2.	 Inductance measured using a Coilcraft SMD-A fixture in an Agilent/
+HP 4286A impedance analyzer with Coilcraft-provided correlation pieces.
+3.	 Tolerances in bold are stocked for immediate shipment.
+4.	 Q measured using an Agilent/HP 4291A with an Agilent/HP 16193 test 
+fixture.
+5.	 SRF measured using an Agilent/HP 8720D network analyzer and a 
+Coilcraft SMD­‑D test fixture.
+6.	 DCR measured on a Cambridge Technology micro-ohmmeter and a 
+Coilcraft CCF858 test fixture.
+7.	 Current that causes a 15°C temperature rise from 25°C ambient. This 
+information is for reference only and does not represent absolute 
+maximum ratings.
+8.	 Each part is marked with a single dot. The color dots are not unique 
+identifiers and correspond to multiple inductance values.
+9.	 Electrical specifications at 25°C.
+Refer to Doc 362 “Soldering Surface Mount Components” before soldering.
+	
+	
+ Inductance2	
+Percent	
+	
+ SRF typ5	
+ DCR max6	
+ Irms7	
+Color
+	  Part number1	
+(nH)	
+ tolerance3	
+ Q min4	
+(MHz)	
+(Ohms)	
+(mA)	
+ code8
+0805CS-271X_R_	
+270 @	100 MHz	
+5,2	
+48 @	250 MHz	
+730	
+1.00	
+350	
+White
+0805CS-331X_R_	
+330 @	100 MHz	
+5,2	
+48 @	250 MHz	
+650	
+1.40	
+310	
+Black
+0805CS-391X_R_	
+390 @	100 MHz	
+5,2	
+48 @	250 MHz	
+600	
+1.50	
+290	
+Brown
+0805CS-471X_R_	
+470 @	50 MHz	
+5,2	
+33 @	100 MHz	
+375	
+1.76	
+250	
+Violet
+0805CS-561X_R_	
+560 @	25 MHz	
+5,2	
+23 @	50 MHz	
+330	
+1.90	
+230	
+Orange
+0805CS-681X_R_	
+680 @	25 MHz	
+5,2	
+23 @	50 MHz	
+310	
+2.20	
+190	
+Green
+0805CS-821X_R_	
+820 @	25 MHz	
+5,2	
+23 @	50 MHz	
+310	
+2.35	
+180	
+Blue
+0805CS-102X_R_	
+1000 @	25 MHz	
+5,2	
+20 @	50 MHz	
+180	
+3.20	
+175	
+Black
+0805CS-122X_R_	
+1200 @	25 MHz	
+5,2	
+22 @	50 MHz	
+224	
+3.50	
+156	
+Brown
+0805CS-152X_R_	
+1500 @	25 MHz	
+5,2	
+10 @	25 MHz	
+82	
+1.90	
+200	
+Brown
+0805CS-182X_R_	
+1800 @	25 MHz	
+5,2	
+15 @	25 MHz	
+69	
+2.42	
+250	
+Red
+0805CS-222X_R_	
+2200 @	25 MHz	
+5,2	
+16 @	25 MHz	
+105	
+4.00	
+140	
+Orange
+0805CS-272X_R_	
+2700 @	25 MHz	
+5,2	
+18 @	50 MHz	
+130	
+4.50	
+175	
+Red
+0805CS-332X_R_	
+3300 @	25 MHz	
+5,2	
+22 @	25 MHz	
+110	
+7.50	
+80	
+Green
+0805CS-472X_R_	
+4700 @	25 MHz	
+5,2	
+14 @	25 MHz	
+75	
+6.20	
+80	
+Yellow
+0805CS-562X_R_	
+5600 @	7.9 MHz	
+5,2	
+20 @	10 MHz	
+75	
+7.00	
+100	
+Violet
+0805CS-682X_R_	
+6800 @	7.9 MHz	
+5,2	
+20 @	10 MHz	
+65	
+9.80	
+80	
+Gray
+0805CS-822X_R_	
+8200 @	7.9 MHz	
+5,2	
+20 @	10 MHz	
+65	
+11	
+75	
+White
+0805CS-103X_R_	
+10000 @	7.9 MHz	
+5,2	
+20 @	10 MHz	
+60	
+12	
+70	
+Black
+Designer’s Kit C303 contains 10 of each 5% part
+Designer’s Kit C303-2 contains 10 of each 2% part
+Core material  Ceramic
+Environmental  RoHS compliant, halogen free
+Terminations  RoHS compliant matte tin over nickel over silver 
+platinum-glass frit. Other terminations available at additional cost.
+Weight  10.2 – 11.6 mg
+Ambient temperature  –40°C to +125°C with Irms current
+Maximum part temperature  +140°C (ambient + temp rise).
+Storage temperature  Component: –40°C to +140°C. 
+Tape and reel packaging: –40°C to +80°C
+Resistance to soldering heat  Max three 40 second reflows at 
++260°C, parts cooled to room temperature between cycles
+Temperature Coefficient of Inductance (TCL)  +100 to +250 ppm/°C
+Moisture Sensitivity Level (MSL)  1 (unlimited floor life at <30°C / 
+85% relative humidity)
+Packaging  2000/7″ reel; 7500/13″ reel.  Plastic tape:  8 mm wide, 
+0.23 mm thick, 4 mm pocket spacing, 1.65 mm pocket depth
+PCB washing Tested to MIL-STD-202 Method 215 plus an additional 
+aqueous wash. See Doc787_PCB_Washing.pdf.
+J
+H
+A
+B
+overall
+F
+G
+E
+terminal
+F
+C
+D
+Terminal wraparound:
+approx 0.015/0,38 both ends
+Recommended
+Land Pattern
+I
+I
+Pick and
+place
+material
+	 A	
+B	
+C	
+D
+	max	
+max	
+max	
+ref	
+E	
+F	
+G	
+H	
+I	
+J
+	0.090	 0.068	
+0.060	
+0.020	
+0.050	
+0.017	
+0.046	 0.070	 0.040	 0.030	 inches
+	
+	
+0.080	 (for values -562 and higher)
+	2,29	
+1,73	
+1,52	
+0,51	
+1,27	
+0,43	
+1,17	
+1,78	
+1,02	
+0,76	 mm
+	
+	
+2,03	 (for values -562 and higher)
+Note:	 Height dimension (C) is before optional solder application. For maximum 
+height dimension including solder, add 0.006 in / 0,152 mm.
+US +1-847-639-6400   sales@coilcraft.com
++44-1236-730595   sales@coilcraft-europe.com
+UK
++886-2-2264 3646   sales@coilcraft.com.tw
+Taiwan
++86-21-6218 8074   sales@coilcraft.com.cn
+China
++ 65-6484 8412   sales@coilcraft.com.sg
+Singapore
+© Coilcraft Inc. 2022
+This product may not be used in medical or high
+risk applications without prior Coilcraft approval.
+Specification subject to change without notice.
+Please check web site for latest information.
+0805CS Series (2012)
+AEC
+Q200 125°C
++
+Halogen
+Free
+ 
+Document 100-3  Revised 08/05/22
+Document 100-2 
+Typical Q vs Frequency	
+Typical L vs Frequency
+1
+10
+100
+1000
+10
+100
+1000
+Inductance (nH)
+Frequency (MHz)
+220 nH
+100 nH
+39 nH
+15 nH
+3.3 nH
+12 nH
+6.8 nH
+3.3 nH
+22 nH
+39 nH
+68 nH
+120 nH
+270 nH
+10
+100
+Frequency (MHz)
+Q Factor
+1000
+10,000
+100
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0

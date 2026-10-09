@@ -1,0 +1,486 @@
+US +1-847-639-6400   sales@coilcraft.com
++44-1236-730595   sales@coilcraft-europe.com
+UK
++886-2-2264 3646   sales@coilcraft.com.tw
+Taiwan
++86-21-6218 8074   sales@coilcraft.com.cn
+China
++ 65-6484 8412   sales@coilcraft.com.sg
+Singapore
+© Coilcraft Inc. 2025
+This product may not be used in medical or high
+risk applications without prior Coilcraft approval
+Specification subject to change without notice
+Please check web site for latest information
+Document 158-1
+
+Document 158-1  Revised 01/16/25
+This lumped-element (SPICE) model data simulates the 
+frequency-dependent behavior of Coilcraft RF surface mount 
+inductors from 1 MHz to the upper frequency limit shown in the 
+accompanying table.
+ The equivalent lumped element model schematic is shown below. 
+The element values R1, R2, C, and L are listed for each component 
+value. The value of the frequency-dependent variable resistor 
+RVAR relates to the skin effect and is calculated from:
+RVAR = k * 
+•	
+k is shown for each value in the accompanying table.
+•	
+f is the frequency in Hz
+The data represents de-embedded measurements, as described 
+below. Effects due to different customer circuit board traces, 
+board materials, ground planes or interactions with other com­
+ponents are not included and can have a significant effect when 
+comparing the simulation to measurements of the inductors 
+using typical production verification instruments and fixtures.
+Each model should only be analyzed at the input and output 
+ports. Individual elements of the model are not determined by 
+parameter measurement. The elements are determined by the 
+overall performance of the lumped element model compared to 
+the measurements taken of the component.
+Typically, the Self-Resonant Frequency (SRF) of the component 
+model will be higher than the measurement of the component 
+mounted on a circuit board. The parasitic reactive elements of a 
+circuit board or fixture will effectively lower the circuit resonant 
+frequency, especially for very small inductance values. Since 
+data sheet specifications are based on typical production mea­
+surements, and the SPICE models are based on de-embedded 
+measurements as described below, the model results may be 
+different from the data sheet specifications. 
+Method
+The measurements were made over a brass ground plane with 
+each component centered over an air gap, as illustrated in Figure 
+1. The gap width for each size component is given in Table 1. The 
+test pads were 30 mil (50 Ohm) wide traces of tinned gold over 
+25 mil thick alumina, and were not included in the gap. The TRL* 
+calibration plane is also illustrated in Figure 1.
+The lumped element values were determined by matching the 
+simulation model to an average of the measurements. This 
+method results in a model that represents as closely as possible 
+the typical frequency-dependent behavior of the component 
+up to a frequency just above the self-resonant frequency of 
+the model.
+The lumped element models were used to generate 
+our 2­‑port S‑parameters and therefore give identical 
+results. The S-parameters are available on our web site at 
+https://www.coilcraft.com/en-us/models/spice.
+Disclaimer
+Coilcraft makes every attempt to provide accurate measure­
+ment data and software, representative of our components, 
+in a usable format. Coilcraft, however, disclaims all warrants 
+relating to the use of its data and software, whether expressed 
+or implied, including without limitation any implied warranties 
+of merchantability or fitness for a particular purpose. Coilcraft 
+cannot and will not be liable for any special, incidental, conse­
+quential, indirect or similar damages occurring with the use of 
+the data and/or software.
+SPICE Model – 0805CS
+Pad
+Air gap
+Brass
+ground
+plane
+Calibration
+plane
+Pad
+Figure 1. Test Setup
+Table 1. Test Gap
+Size
+Gap Width (inch/mm)
+016008
+0.0055 / 0.140
+0201
+0.010 / 0.254
+0302
+0.017 / 0.432
+0402, 0403
+0.017 / 0.432
+0603
+0.026 / 0.660
+0805
+0.040 / 1.016
+1008
+0.060 / 1.524
+1206
+0.080 / 2.032
+1812
+0.120 / 3.048
+Lumped Element Modeling
+Document 158-2
+US +1-847-639-6400   sales@coilcraft.com
++44-1236-730595   sales@coilcraft-europe.com
+UK
++886-2-2264 3646   sales@coilcraft.com.tw
+Taiwan
++86-21-6218 8074   sales@coilcraft.com.cn
+China
++ 65-6484 8412   sales@coilcraft.com.sg
+Singapore
+© Coilcraft Inc. 2025
+This product may not be used in medical or high
+risk applications without prior Coilcraft approval
+Specification subject to change without notice
+Please check web site for latest information
+	
+	
+	
+	 	
+	
+	
+Upper
+	
+R1	
+R2	
+	 	
+	
+	
+limit
+Part number	
+()	
+()	
+C (pF)	
+L (nH)	
+k	
+(MHz)
+0805CS-020	
+1	
+0.06	
+0.038	
+2.75	 6.40E-06	
+17200
+0805CS-3N0	
+2	
+0.06	
+0.040	
+3.00	 8.90E-06	
+16000
+0805CS-030	
+3	
+0.08	
+0.042	
+3.30	 1.22E-05	
+14900
+0805CS-050	
+4	
+0.08	
+0.051	
+5.66	 1.36E-05	
+10400
+0805CS-060	
+5	
+0.11	
+0.041	
+6.72	 2.07E-05	
+10600
+0805CS-070	
+5	
+0.14	
+0.065	
+7.65	 2.22E-05	
+7900
+0805CS-080	
+7	
+0.12	
+0.076	
+8.05	 2.34E-05	
+7100
+0805CS-100	
+6	
+0.10	
+0.047	
+10.0	
+1.72E-05	
+8100
+0805CS-120	
+12	
+0.15	
+0.051	
+12.0	
+2.44E-05	
+7100
+0805CS-150	
+10	
+0.17	
+0.096	
+15.0	
+3.04E-05	
+4700
+0805CS-180	
+10	
+0.20	
+0.059	
+18.0	
+3.69E-05	
+5400
+0805CS-220	
+12	
+0.22	
+0.093	
+22.0	
+4.17E-05	
+3900
+0805CS-240	 12	
+0.22	
+0.110	
+24.0	
+5.01E-05	
+3500
+0805CS-270	 14	
+0.25	
+0.067	
+27.0	
+5.15E-05	
+4200
+0805CS-330	 12	
+0.27	
+0.097	
+33.0	
+5.71E-05	
+3100
+0805CS-360	 13	
+0.27	
+0.126	
+36.0	
+6.71E-05	
+2700
+0805CS-390	 13	
+0.29	
+0.082	
+39.0	
+6.81E-05	
+3400
+0805CS-430	 15	
+0.31	
+0.084	
+43.0	
+7.51E-05	
+3200
+0805CS-470	 10	
+0.31	
+0.111	
+47.0	
+8.31E-05	
+2700
+0805CS-560	 13	
+0.34	
+0.094	
+56.0	
+1.01E-04	
+2700
+0805CS-680	 12	
+0.38	
+0.088	
+67.0	
+1.20E-04	
+2500
+0805CS-820	 15	
+0.42	
+0.088	
+81.0	
+1.34E-04	
+2300
+0805CS-910	
+12	
+0.48	
+0.083	
+90.0	
+1.40E-04	
+2300
+0805CS-101	
+14	
+0.46	
+0.089	
+99.0	
+1.56E-04	
+2100
+0805CS-111	
+15	
+0.48	
+0.109	 109	
+1.52E-04	
+1800
+
+Document 158-6  Revised 01/16/25
+0805CS-121	
+18	
+0.51	
+0.095	
+119	
+1.72E-04	
+1800
+0805CS-151	
+24	
+0.56	 0.110	
+149	
+2.23E-04	
+1500
+0805CS-181	
+18	
+0.64	 0.090	
+178	
+2.75E-04	
+1600
+0805CS-221	
+26	
+0.70	 0.086	
+215	
+3.40E-04	
+1500
+0805CS-241	
+27	
+1.0	
+0.098	
+235	
+3.80E-04	
+1300
+0805CS-271	
+31	
+1.0	
+0.098	
+263	
+3.90E-04	
+1200
+0805CS-331	
+31	
+1.4	
+0.096	
+320	
+4.74E-04	
+1100
+0805CS-391	
+33	
+1.5	
+0.095	
+380	
+5.78E-04	
+1100
+0805CS-471	
+66	
+1.8	
+0.132	
+470	
+6.14E-04	
+800
+0805CS-561	
+66	
+1.9	
+0.258	
+560	
+5.54E-04	
+600
+0805CS-681	
+88	
+2.2	
+0.542	
+680	
+7.14E-04	
+400
+0805CS-821	 125	
+2.4	
+0.255	
+820	
+9.80E-04	
+500
+0805CS-102	
+75	
+2.5	
+0.462	
+1000	
+6.70E-04	
+500
+0805CS-122	
+60	
+3.0	
+0.288	
+1200	
+9.70E-04	
+500
+0805CS-152	
+30	
+1.0	
+2.420	
+1500	
+1.20E-03	
+150
+0805CS-182	
+25	
+2.0	
+2.550	
+1800	
+1.00E-03	
+150
+0805CS-222	
+40	
+2.0	
+0.700	
+2200	
+2.20E-03	
+250
+0805CS-272	
+60	
+3.0	
+0.604	
+2700	
+2.80E-03	
+250
+0805CS-332	
+75	
+5.0	
+0.436	
+3300	
+3.00E-03	
+250
+0805CS-472	
+50	
+4.0	
+0.885	
+4700	
+3.60E-03	
+250
+0805CS-562	
+80	
+5.0	
+0.986	
+5600	
+4.80E-03	
+150
+0805CS-682	 100	
+7.0	
+0.575	
+6800	
+6.10E-03	
+150
+0805CS-822	 100	 10	
+0.741	
+8200	
+7.20E-03	
+100
+0805CS-103	 150	
+12	
+0.580	
+10000	
+7.50E-03	
+100
+SPICE Model for Coilcraft 0805CS Chip Inductors
+	
+	
+	
+	
+	
+	
+Upper
+	
+R1	
+R2	
+	
+	
+	
+limit
+Part number	
+()	
+()	
+C (pF)	
+L (nH)	
+k	
+(MHz)

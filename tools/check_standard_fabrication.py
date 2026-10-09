@@ -175,8 +175,9 @@ def run(path, drc_path):
             original = footprint_geometry_hashes(parse(archive.read('nucula-v2.kicad_pcb').decode()))
         for ref in nfc['NFC_references']:
             expected[ref] = original[ref]
+        from substitution_amendments import original_form
         checks['silk_edits_preserve_all_other_footprint_geometry'] = (
-            footprint_geometry_hashes(tree) == expected)
+            footprint_geometry_hashes(original_form(tree,'footprint')) == expected)
     return {'passed': all(checks.values()), 'checks': checks,
             'board_sha256': hashlib.sha256(path.read_bytes()).hexdigest(),
             'drc_sha256': hashlib.sha256(drc_path.read_bytes()).hexdigest(),

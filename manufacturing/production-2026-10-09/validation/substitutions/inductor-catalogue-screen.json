@@ -1,0 +1,2521 @@
+{
+  "query": "150nH",
+  "total": 314,
+  "pages": 7,
+  "retrieved_date": "2026-10-09",
+  "note": "Supplemented by 0805HP, 151XG, R15G, R15F, 1515SQ and family searches; not a proof of exhaustive catalogue coverage.",
+  "results": [
+    {
+      "componentCode": "C15566",
+      "componentModelEn": "SDCL1608CR15JTDF",
+      "componentBrandEn": "Sunlord",
+      "componentSpecificationEn": "0603",
+      "describe": "1.6\u03a9 150nH 200mA 550MHz 8@100MHz \u00b15% 0603 Inductors (SMD) ROHS",
+      "canPresaleNumber": 5024
+    },
+    {
+      "componentCode": "C44566",
+      "componentModelEn": "SDCL1005CR15JTDF",
+      "componentBrandEn": "Sunlord",
+      "componentSpecificationEn": "0402",
+      "describe": "100mA 150nH 3.2\u03a9 550MHz 8@100MHz \u00b15% 0402 Inductors (SMD) ROHS",
+      "canPresaleNumber": 1003
+    },
+    {
+      "componentCode": "C74320",
+      "componentModelEn": "SDFL2012LR15KTF",
+      "componentBrandEn": "Sunlord",
+      "componentSpecificationEn": "0805",
+      "describe": "150nH 200MHz 20@25MHz 250mA 400m\u03a9 Multilayer inductor \u00b110% 0805 Inductors (SMD) ROHS",
+      "canPresaleNumber": 3541
+    },
+    {
+      "componentCode": "C76739",
+      "componentModelEn": "MLF2012DR15JT000",
+      "componentBrandEn": "TDK",
+      "componentSpecificationEn": "0805",
+      "describe": "130m\u03a9 150nH 20@25MHz 300mA 320MHz \u00b15% 0805 Inductors (SMD) ROHS",
+      "canPresaleNumber": 11721
+    },
+    {
+      "componentCode": "C76781",
+      "componentModelEn": "MLG1005SR15JT000",
+      "componentBrandEn": "TDK",
+      "componentSpecificationEn": "0402",
+      "describe": "150mA 150nH 2.44\u03a9 550MHz 8@100MHz \u00b15% 0402 Inductors (SMD) ROHS",
+      "canPresaleNumber": 4017
+    },
+    {
+      "componentCode": "C87518",
+      "componentModelEn": "MLF1608DR15JT000",
+      "componentBrandEn": "TDK",
+      "componentSpecificationEn": "0603",
+      "describe": "150nH 15@25MHz 200mA 250m\u03a9 350MHz \u00b15% 0603 Inductors (SMD) ROHS",
+      "canPresaleNumber": 961
+    },
+    {
+      "componentCode": "C89025",
+      "componentModelEn": "NLV32T-R15J-PF",
+      "componentBrandEn": "TDK",
+      "componentSpecificationEn": "1210",
+      "describe": "150nH 250m\u03a9 450mA Magnetic Shielded Inductor \u00b15% 1210 Power Inductors ROHS",
+      "canPresaleNumber": 555
+    },
+    {
+      "componentCode": "C90216",
+      "componentModelEn": "VHF160808HR15JT",
+      "componentBrandEn": "FH (Guangdong Fenghua Advanced Tech)",
+      "componentSpecificationEn": "0603",
+      "describe": "1.8\u03a9 150nH 200mA 500MHz 8@50MHz Multilayer inductor\u3001High-frequency inductor \u00b15% 0603 Inductors (SMD) ROHS",
+      "canPresaleNumber": 3608
+    },
+    {
+      "componentCode": "C98090",
+      "componentModelEn": "LQW18ANR15J00D",
+      "componentBrandEn": "Murata Electronics",
+      "componentSpecificationEn": "0603",
+      "describe": "1.5\u03a9 150nH 160mA Unshielded Inductor \u00b15% 0603 Power Inductors ROHS",
+      "canPresaleNumber": 1721
+    },
+    {
+      "componentCode": "C113131",
+      "componentModelEn": "LQW18ANR15G00D",
+      "componentBrandEn": "Murata Electronics",
+      "componentSpecificationEn": "0603",
+      "describe": "1.5\u03a9 150nH 160mA Unshielded Inductor \u00b12% 0603 Power Inductors ROHS",
+      "canPresaleNumber": 25750
+    },
+    {
+      "componentCode": "C139223",
+      "componentModelEn": "CMI201209VR15KT",
+      "componentBrandEn": "FH (Guangdong Fenghua Advanced Tech)",
+      "componentSpecificationEn": "0805",
+      "describe": "150nH 200MHz 20@25MHz 250mA 250m\u03a9 \u00b110% 0805 Inductors (SMD) ROHS",
+      "canPresaleNumber": 3919
+    },
+    {
+      "componentCode": "C139261",
+      "componentModelEn": "FHW0805UCR15JGT",
+      "componentBrandEn": "FH (Guangdong Fenghua Advanced Tech)",
+      "componentSpecificationEn": "0805",
+      "describe": "150nH 400mA 45@250MHz 560m\u03a9 920MHz \u00b15% 0805 Inductors (SMD) ROHS",
+      "canPresaleNumber": 459
+    },
+    {
+      "componentCode": "C139280",
+      "componentModelEn": "VHF201209HR15JT",
+      "componentBrandEn": "FH (Guangdong Fenghua Advanced Tech)",
+      "componentSpecificationEn": "0805",
+      "describe": "1.5\u03a9 13@50MHz 150nH 300mA 550MHz Multilayer inductor\u3001High-frequency inductor \u00b15% 0805 Inductors (SMD) ROHS",
+      "canPresaleNumber": 2244
+    },
+    {
+      "componentCode": "C155009",
+      "componentModelEn": "FCI1608F-R15K",
+      "componentBrandEn": "TAI-TECH",
+      "componentSpecificationEn": "0603",
+      "describe": "150nH 15@25MHz 180MHz 50mA 600m\u03a9 \u00b110% 0603 Inductors (SMD) ROHS",
+      "canPresaleNumber": 7
+    },
+    {
+      "componentCode": "C155026",
+      "componentModelEn": "FCI2012F-R15K",
+      "componentBrandEn": "TAI-TECH",
+      "componentSpecificationEn": "0805",
+      "describe": "150nH 200MHz 20@25MHz 250mA 400m\u03a9 \u00b110% 0805 Inductors (SMD) ROHS",
+      "canPresaleNumber": 107
+    },
+    {
+      "componentCode": "C162548",
+      "componentModelEn": "LQG15HSR15J02D",
+      "componentBrandEn": "Murata Electronics",
+      "componentSpecificationEn": "0402",
+      "describe": "150mA 150nH 2.99\u03a9 550MHz 8@100MHz Multilayer inductor \u00b15% 0402 Inductors (SMD) ROHS",
+      "canPresaleNumber": 21926
+    },
+    {
+      "componentCode": "C162635",
+      "componentModelEn": "LQP03TNR15H02D",
+      "componentBrandEn": "Murata Electronics",
+      "componentSpecificationEn": "0201",
+      "describe": "150nH 5@100MHz 650MHz 80mA 9\u03a9 Thick Film Inductor \u00b13% 0201 Inductors (SMD) ROHS",
+      "canPresaleNumber": 15562
+    },
+    {
+      "componentCode": "C162663",
+      "componentModelEn": "LQW2UASR15J00L",
+      "componentBrandEn": "Murata Electronics",
+      "componentSpecificationEn": "1008",
+      "describe": "150nH 580mA 700m\u03a9 Unshielded Inductor \u00b15% 1008 Power Inductors ROHS",
+      "canPresaleNumber": -5
+    },
+    {
+      "componentCode": "C185913",
+      "componentModelEn": "BKW0603UCR15JGT",
+      "componentBrandEn": "FH-BK(Guangdong Fenghua Bangke Elec)",
+      "componentSpecificationEn": "0603",
+      "describe": "150nH 280mA 28@250MHz 800m\u03a9 990MHz Wire-wound chip inductor \u00b15% 0603 Inductors (SMD) ROHS",
+      "canPresaleNumber": 2
+    },
+    {
+      "componentCode": "C186903",
+      "componentModelEn": "AISC-0603-R15J-T",
+      "componentBrandEn": "Abracon LLC",
+      "componentSpecificationEn": "SMD,1.8x1.1mm",
+      "describe": "1.12\u03a9 150nH 200mA Unshielded Inductor \u00b15% SMD,1.8x1.1mm Power Inductors ROHS",
+      "canPresaleNumber": 2730
+    },
+    {
+      "componentCode": "C186922",
+      "componentModelEn": "AISC-0805-R15G-T",
+      "componentBrandEn": "Abracon LLC",
+      "componentSpecificationEn": "SMD,2.3x1.7mm",
+      "describe": "150nH 400mA 50@250MHz 560m\u03a9 920MHz Wire-wound chip inductor \u00b12% SMD,2.3x1.7mm Inductors (SMD) ROHS",
+      "canPresaleNumber": 15
+    },
+    {
+      "componentCode": "C186961",
+      "componentModelEn": "AISC-0805-R15J-T",
+      "componentBrandEn": "Abracon LLC",
+      "componentSpecificationEn": "SMD,2.3x1.7mm",
+      "describe": "150nH 400mA 50@250MHz 560m\u03a9 920MHz Wire-wound chip inductor \u00b15% SMD,2.3x1.7mm Inductors (SMD) ROHS",
+      "canPresaleNumber": 82
+    },
+    {
+      "componentCode": "C206403",
+      "componentModelEn": "LQP03TNR15J02D",
+      "componentBrandEn": "Murata Electronics",
+      "componentSpecificationEn": "0201",
+      "describe": "150nH 5@100MHz 650MHz 80mA 9\u03a9 Thick Film Inductor \u00b15% 0201 Inductors (SMD) ROHS",
+      "canPresaleNumber": 23
+    },
+    {
+      "componentCode": "C219675",
+      "componentModelEn": "SCC1005CR15JSP",
+      "componentBrandEn": "Sunltech Tech",
+      "componentSpecificationEn": "0402",
+      "describe": "100mA 150nH 3.2\u03a9 550MHz 8@100MHz Multilayer inductor \u00b15% 0402 Inductors (SMD) ROHS",
+      "canPresaleNumber": 3172
+    },
+    {
+      "componentCode": "C231890",
+      "componentModelEn": "SCW1608CR15JST",
+      "componentBrandEn": "Sunltech Tech",
+      "componentSpecificationEn": "SMD,1.7x1mm",
+      "describe": "1.12\u03a9 1.4GHz 150nH 200mA 32@150MHz Wire-wound chip inductor \u00b15% SMD,1.7x1mm Inductors (SMD) ROHS",
+      "canPresaleNumber": 3389
+    },
+    {
+      "componentCode": "C251807",
+      "componentModelEn": "HSC0603-R15J-T",
+      "componentBrandEn": "EMTEK",
+      "componentSpecificationEn": "0603",
+      "describe": "150nH 280mA 28@150MHz 920m\u03a9 990MHz \u00b15% 0603 Inductors (SMD) ROHS",
+      "canPresaleNumber": 108
+    },
+    {
+      "componentCode": "C251876",
+      "componentModelEn": "HSC1008-R15J-T",
+      "componentBrandEn": "EMTEK",
+      "componentSpecificationEn": "SMD,2.9x2.5mm",
+      "describe": "150nH 580mA 700m\u03a9 Unshielded Inductor \u00b15% SMD,2.9x2.5mm Power Inductors ROHS",
+      "canPresaleNumber": 3158
+    },
+    {
+      "componentCode": "C268316",
+      "componentModelEn": "VHF100505HQR15JT",
+      "componentBrandEn": "FH (Guangdong Fenghua Advanced Tech)",
+      "componentSpecificationEn": "0402",
+      "describe": "150mA 150nH 3.5\u03a9 550MHz 8@100MHz Multilayer inductor\u3001High-frequency inductor \u00b15% 0402 Inductors (SMD) ROHS",
+      "canPresaleNumber": 7140
+    },
+    {
+      "componentCode": "C279935",
+      "componentModelEn": "SDFL1608LR15KTF",
+      "componentBrandEn": "Sunlord",
+      "componentSpecificationEn": "0603",
+      "describe": "150nH 15@25MHz 180MHz 50mA 600m\u03a9 \u00b110% 0603 Inductors (SMD) ROHS",
+      "canPresaleNumber": 1
+    },
+    {
+      "componentCode": "C280464",
+      "componentModelEn": "CS0805-R15J-S",
+      "componentBrandEn": "Chilisin Elec",
+      "componentSpecificationEn": "0805",
+      "describe": "150nH 250MHz 400mA 50@100MHz 560m\u03a9 \u00b15% 0805 Inductors (SMD) ROHS",
+      "canPresaleNumber": 134
+    },
+    {
+      "componentCode": "C280496",
+      "componentModelEn": "LT0805-R15J-N",
+      "componentBrandEn": "Chilisin Elec",
+      "componentSpecificationEn": "0805",
+      "describe": "1.2A 150nH 22@25.2MHz 25.2MHz 330m\u03a9 \u00b15% 0805 Inductors (SMD) ROHS",
+      "canPresaleNumber": 18
+    },
+    {
+      "componentCode": "C281036",
+      "componentModelEn": "MGCI1608HR15JT-LF",
+      "componentBrandEn": "microgate",
+      "componentSpecificationEn": "0603",
+      "describe": "1.5\u03a9 150nH 300mA 500MHz 8@50MHz Multilayer inductor \u00b15% 0603 Inductors (SMD) ROHS",
+      "canPresaleNumber": 91
+    },
+    {
+      "componentCode": "C281045",
+      "componentModelEn": "MGFI1608AR15KT-LF",
+      "componentBrandEn": "microgate",
+      "componentSpecificationEn": "0603",
+      "describe": "150nH 15@25MHz 300MHz 50mA 600m\u03a9 Multilayer inductor \u00b110% 0603 Inductors (SMD) ROHS",
+      "canPresaleNumber": 192
+    },
+    {
+      "componentCode": "C281078",
+      "componentModelEn": "MGFI2012AR15KT-LF",
+      "componentBrandEn": "microgate",
+      "componentSpecificationEn": "0805",
+      "describe": "150nH 200MHz 20@25MHz 250mA 400m\u03a9 Multilayer inductor \u00b110% 0805 Inductors (SMD) ROHS",
+      "canPresaleNumber": 195
+    },
+    {
+      "componentCode": "C285947",
+      "componentModelEn": "CS0805-R15G-S",
+      "componentBrandEn": "Chilisin Elec",
+      "componentSpecificationEn": "0805",
+      "describe": "150nH 250MHz 400mA 50@100MHz 560m\u03a9 \u00b12% 0805 Inductors (SMD) ROHS",
+      "canPresaleNumber": 82
+    },
+    {
+      "componentCode": "C285970",
+      "componentModelEn": "CLH1608T-R15K-S",
+      "componentBrandEn": "Chilisin Elec",
+      "componentSpecificationEn": "0603",
+      "describe": "1.7\u03a9 150nH 250mA 550MHz 8@50MHz \u00b110% 0603 Inductors (SMD) ROHS",
+      "canPresaleNumber": 11
+    },
+    {
+      "componentCode": "C285971",
+      "componentModelEn": "CLJ1608T-R15J-S",
+      "componentBrandEn": "Chilisin Elec",
+      "componentSpecificationEn": "0603",
+      "describe": "150nH 250mA \u00b15% 0603 Inductors (SMD) ROHS",
+      "canPresaleNumber": 162
+    },
+    {
+      "componentCode": "C286760",
+      "componentModelEn": "NLV32T-R15J-EF",
+      "componentBrandEn": "TDK",
+      "componentSpecificationEn": "1210",
+      "describe": "150nH 250m\u03a9 450mA Magnetic Shielded Inductor \u00b15% 1210 Power Inductors ROHS",
+      "canPresaleNumber": 1608
+    },
+    {
+      "componentCode": "C295185",
+      "componentModelEn": "NLV25T-R15J-EF",
+      "componentBrandEn": "TDK",
+      "componentSpecificationEn": "1008",
+      "describe": "150nH 350m\u03a9 500mA Magnetic Shielded Inductor \u00b15% 1008 Power Inductors ROHS",
+      "canPresaleNumber": 7
+    },
+    {
+      "componentCode": "C295223",
+      "componentModelEn": "NLCV25T-R15M-EFR",
+      "componentBrandEn": "TDK",
+      "componentSpecificationEn": "1008",
+      "describe": "1.8A 150nH 44m\u03a9 Wire-wound inductor \u00b120% 1008 Power Inductors ROHS",
+      "canPresaleNumber": 3
+    },
+    {
+      "componentCode": "C295700",
+      "componentModelEn": "FHW0603UCR15JST",
+      "componentBrandEn": "FH (Guangdong Fenghua Advanced Tech)",
+      "componentSpecificationEn": "0603",
+      "describe": "150nH 280mA 28@150MHz 800m\u03a9 990MHz \u00b15% 0603 Inductors (SMD) ROHS",
+      "canPresaleNumber": 1059
+    },
+    {
+      "componentCode": "C305251",
+      "componentModelEn": "VHF100505HR15JT",
+      "componentBrandEn": "FH (Guangdong Fenghua Advanced Tech)",
+      "componentSpecificationEn": "0402",
+      "describe": "100mA 150nH 3.2\u03a9 \u00b15% 0402 Inductors (SMD) ROHS",
+      "canPresaleNumber": 43
+    },
+    {
+      "componentCode": "C307614",
+      "componentModelEn": "LQW18ANR15G80D",
+      "componentBrandEn": "Murata Electronics",
+      "componentSpecificationEn": "0603",
+      "describe": "150nH 420mA 870m\u03a9 Unshielded Inductor \u00b12% 0603 Inductors (SMD) ROHS",
+      "canPresaleNumber": 3376
+    },
+    {
+      "componentCode": "C316411",
+      "componentModelEn": "SDFL1005LR15KTF",
+      "componentBrandEn": "Sunlord",
+      "componentSpecificationEn": "0402",
+      "describe": "10@25MHz 140MHz 150nH 25mA 900m\u03a9 \u00b110% 0402 Inductors (SMD) ROHS",
+      "canPresaleNumber": 63
+    },
+    {
+      "componentCode": "C318008",
+      "componentModelEn": "FHW1008UCR15JGT",
+      "componentBrandEn": "FH (Guangdong Fenghua Advanced Tech)",
+      "componentSpecificationEn": "SMD,2.9x2.8mm",
+      "describe": "150nH 45@100MHz 580mA 700m\u03a9 800MHz \u00b15% SMD,2.9x2.8mm Inductors (SMD) ROHS",
+      "canPresaleNumber": 2816
+    },
+    {
+      "componentCode": "C318043",
+      "componentModelEn": "FHW1210HCR15JGT",
+      "componentBrandEn": "FH (Guangdong Fenghua Advanced Tech)",
+      "componentSpecificationEn": "1210",
+      "describe": "150nH 250m\u03a9 60@300MHz 750mA 780MHz \u00b15% 1210 Inductors (SMD) ROHS",
+      "canPresaleNumber": 2121
+    },
+    {
+      "componentCode": "C329380",
+      "componentModelEn": "MHCI06030-R15M-R8",
+      "componentBrandEn": "Chilisin Elec",
+      "componentSpecificationEn": "SMD,7.3x6.6mm",
+      "describe": "150nH 2.5m\u03a9 30A 40A Magnetic Shielded Inductor \u00b120% SMD,7.3x6.6mm Power Inductors ROHS",
+      "canPresaleNumber": 3
+    },
+    {
+      "componentCode": "C329396",
+      "componentModelEn": "MHCI06024-R15M-R8A",
+      "componentBrandEn": "Chilisin Elec",
+      "componentSpecificationEn": "SMD,7.3x6.6mm",
+      "describe": "0.92m\u03a9 150nH 27A Magnetic Shielded Inductor \u00b120% SMD,7.3x6.6mm Power Inductors ROHS",
+      "canPresaleNumber": 109
+    },
+    {
+      "componentCode": "C329542",
+      "componentModelEn": "MHCI06018-R15M-R8A",
+      "componentBrandEn": "Chilisin Elec",
+      "componentSpecificationEn": "SMD,7.3x6.6mm",
+      "describe": "150nH 24A Magnetic Shielded Inductor \u00b120% SMD,7.3x6.6mm Power Inductors ROHS",
+      "canPresaleNumber": 201
+    },
+    {
+      "componentCode": "C329441",
+      "componentModelEn": "FEC0805CP-R15J-LRH",
+      "componentBrandEn": "PSA(Prosperity Dielectrics)",
+      "componentSpecificationEn": "0805",
+      "describe": "150nH 400mA 560m\u03a9 Wire-wound chip inductor \u00b15% 0805 Inductors (SMD) ROHS",
+      "canPresaleNumber": 78
+    },
+    {
+      "componentCode": "C330901",
+      "componentModelEn": "SCW2012CR15JST",
+      "componentBrandEn": "Sunltech Tech",
+      "componentSpecificationEn": "SMD,2.2x1.6mm",
+      "describe": "150nH 400mA 50@150MHz 560m\u03a9 920MHz Wire-wound chip inductor \u00b15% SMD,2.2x1.6mm Inductors (SMD) ROHS",
+      "canPresaleNumber": 1441
+    },
+    {
+      "componentCode": "C341803",
+      "componentModelEn": "LQW2BASR15J00L",
+      "componentBrandEn": "Murata Electronics",
+      "componentSpecificationEn": "0805",
+      "describe": "150nH 400mA 560m\u03a9 Unshielded Inductor \u00b15% 0805 Power Inductors ROHS",
+      "canPresaleNumber": 2008
+    },
+    {
+      "componentCode": "C346338",
+      "componentModelEn": "FEC0603CP-R15G-LRH",
+      "componentBrandEn": "PSA(Prosperity Dielectrics)",
+      "componentSpecificationEn": "0603",
+      "describe": "150nH 280mA 28@150MHz 920m\u03a9 990MHz Wire-wound chip inductor \u00b12% 0603 Inductors (SMD) ROHS",
+      "canPresaleNumber": 3999
+    },
+    {
+      "componentCode": "C357242",
+      "componentModelEn": "TMPC1004H-R15YG-D",
+      "componentBrandEn": "TAI-TECH",
+      "componentSpecificationEn": "SMD",
+      "describe": "0.5m\u03a9 150nH 43A 75A \u00b130% SMD Power Inductors ROHS",
+      "canPresaleNumber": 54
+    },
+    {
+      "componentCode": "C365908",
+      "componentModelEn": "CLH1608T-R15J-S",
+      "componentBrandEn": "Chilisin Elec",
+      "componentSpecificationEn": "0603",
+      "describe": "1.7\u03a9 150nH 250mA 550MHz 8@50MHz \u00b15% 0603 Inductors (SMD) ROHS",
+      "canPresaleNumber": 2
+    },
+    {
+      "componentCode": "C370389",
+      "componentModelEn": "SDWL2012CR15JSTF",
+      "componentBrandEn": "Sunlord",
+      "componentSpecificationEn": "0805",
+      "describe": "150nH 400mA 50@100MHz 560m\u03a9 920MHz Wire-wound chip inductor \u00b15% 0805 Inductors (SMD) ROHS",
+      "canPresaleNumber": 1
+    },
+    {
+      "componentCode": "C373747",
+      "componentModelEn": "LCN1008T-R15J-S",
+      "componentBrandEn": "Chilisin Elec",
+      "componentSpecificationEn": "SMD,2.9x2.8mm",
+      "describe": "150nH 45@100MHz 580mA 700m\u03a9 850MHz Wire-wound chip inductor \u00b15% SMD,2.9x2.8mm Inductors (SMD) ROHS",
+      "canPresaleNumber": 2
+    },
+    {
+      "componentCode": "C381910",
+      "componentModelEn": "VHF201209HR15KT",
+      "componentBrandEn": "FH (Guangdong Fenghua Advanced Tech)",
+      "componentSpecificationEn": "0805",
+      "describe": "1.5\u03a9 13@50MHz 150nH 300mA 550MHz Multilayer inductor\u3001High-frequency inductor \u00b110% 0805 Inductors (SMD) ROHS",
+      "canPresaleNumber": 352
+    },
+    {
+      "componentCode": "C389943",
+      "componentModelEn": "SMIS130804-R15MT",
+      "componentBrandEn": "SXN(Shun Xiang Nuo Elec)",
+      "componentSpecificationEn": "SMD",
+      "describe": "0.55m\u03a9 150nH 45A 85A \u00b120% SMD Power Inductors ROHS",
+      "canPresaleNumber": 14
+    },
+    {
+      "componentCode": "C394967",
+      "componentModelEn": "CMI160808VR15KT",
+      "componentBrandEn": "FH (Guangdong Fenghua Advanced Tech)",
+      "componentSpecificationEn": "0603",
+      "describe": "150nH 180MHz 20@25MHz 300m\u03a9 50mA Multilayer inductor\u3001High-frequency inductor \u00b110% 0603 Inductors (SMD) ROHS",
+      "canPresaleNumber": 5
+    },
+    {
+      "componentCode": "C394980",
+      "componentModelEn": "CMI321609VR15KT",
+      "componentBrandEn": "FH (Guangdong Fenghua Advanced Tech)",
+      "componentSpecificationEn": "1206",
+      "describe": "150nH 200MHz 250mA 250m\u03a9 25@25MHz \u00b110% 1206 Inductors (SMD) ROHS",
+      "canPresaleNumber": 2386
+    },
+    {
+      "componentCode": "C404660",
+      "componentModelEn": "MLG1005SR15HTD25",
+      "componentBrandEn": "TDK",
+      "componentSpecificationEn": "0402",
+      "describe": "150mA 150nH 2.44\u03a9 550MHz 8@100MHz Multilayer inductor \u00b13% 0402 Inductors (SMD) ROHS",
+      "canPresaleNumber": 1069
+    },
+    {
+      "componentCode": "C405043",
+      "componentModelEn": "CMCC1005CR15JSP",
+      "componentBrandEn": "Cybermax",
+      "componentSpecificationEn": "0402",
+      "describe": "100mA 150nH 3.2\u03a9 550MHz 8@100MHz Multilayer inductor \u00b15% 0402 Inductors (SMD) ROHS",
+      "canPresaleNumber": 14
+    },
+    {
+      "componentCode": "C405077",
+      "componentModelEn": "CMCC1608CR15JSP",
+      "componentBrandEn": "Cybermax",
+      "componentSpecificationEn": "0603",
+      "describe": "1.6\u03a9 150nH 200mA 500MHz 8@50MHz Multilayer inductor \u00b15% 0603 Inductors (SMD) ROHS",
+      "canPresaleNumber": 1149
+    },
+    {
+      "componentCode": "C408472",
+      "componentModelEn": "MWSA1004S-R15MT",
+      "componentBrandEn": "Sunlord",
+      "componentSpecificationEn": "SMD,11x10mm",
+      "describe": "0.65m\u03a9 150nH 45A 75A \u00b120% SMD,11x10mm Power Inductors ROHS",
+      "canPresaleNumber": 445
+    },
+    {
+      "componentCode": "C412046",
+      "componentModelEn": "SCC1608CR15JSP",
+      "componentBrandEn": "Sunltech Tech",
+      "componentSpecificationEn": "0603",
+      "describe": "1.6\u03a9 150nH 200mA 500MHz 8@50MHz Multilayer inductor \u00b15% 0603 Inductors (SMD) ROHS",
+      "canPresaleNumber": 2737
+    },
+    {
+      "componentCode": "C413899",
+      "componentModelEn": "MHQ1005PR15JT000",
+      "componentBrandEn": "TDK",
+      "componentSpecificationEn": "0402",
+      "describe": "110mA 150nH 2.03\u03a9 22@250MHz 800MHz \u00b15% 0402 Inductors (SMD) ROHS",
+      "canPresaleNumber": 8
+    },
+    {
+      "componentCode": "C455443",
+      "componentModelEn": "PA3784.151HLT",
+      "componentBrandEn": "Pulse Elec",
+      "componentSpecificationEn": "SMD",
+      "describe": "0.18m\u03a9 150nH 67A 83A \u00b110% SMD Power Inductors ROHS",
+      "canPresaleNumber": 580
+    },
+    {
+      "componentCode": "C471399",
+      "componentModelEn": "LQG18HHR15J00D",
+      "componentBrandEn": "Murata Electronics",
+      "componentSpecificationEn": "0603",
+      "describe": "1.2\u03a9 14@100MHz 150nH 300mA 550MHz Multilayer inductor \u00b15% 0603 Inductors (SMD) ROHS",
+      "canPresaleNumber": 3
+    },
+    {
+      "componentCode": "C486326",
+      "componentModelEn": "MGCI1005TR15JT-LF",
+      "componentBrandEn": "microgate",
+      "componentSpecificationEn": "0402",
+      "describe": "150mA 150nH 2.35\u03a9 550MHz 8@100MHz Multilayer inductor \u00b15% 0402 Inductors (SMD) ROHS",
+      "canPresaleNumber": 39
+    },
+    {
+      "componentCode": "C560037",
+      "componentModelEn": "LQG15HHR15G02D",
+      "componentBrandEn": "Murata Electronics",
+      "componentSpecificationEn": "0402",
+      "describe": "150mA 150nH 2.99\u03a9 550MHz 550mA 8@100MHz \u00b12% 0402 Inductors (SMD) ROHS",
+      "canPresaleNumber": 453
+    },
+    {
+      "componentCode": "C578007",
+      "componentModelEn": "SCHF160808HR15JT",
+      "componentBrandEn": "Yanchuang",
+      "componentSpecificationEn": "0603",
+      "describe": "1.8\u03a9 150mA 150nH 500MHz 50@8MHz Multilayer inductor \u00b15% 0603 Inductors (SMD) ROHS",
+      "canPresaleNumber": 123
+    },
+    {
+      "componentCode": "C578039",
+      "componentModelEn": "SCHF201209HR15KT",
+      "componentBrandEn": "Yanchuang",
+      "componentSpecificationEn": "0805",
+      "describe": "1.5\u03a9 150nH 300mA 500MHz 50@8MHz \u00b110% 0805 Inductors (SMD) ROHS",
+      "canPresaleNumber": 2691
+    },
+    {
+      "componentCode": "C603135",
+      "componentModelEn": "LQH32CNR15M33L",
+      "componentBrandEn": "Murata Electronics",
+      "componentSpecificationEn": "1210",
+      "describe": "1.45A 150nH 36.4m\u03a9 Wire-wound inductor \u00b120% 1210 Power Inductors ROHS",
+      "canPresaleNumber": 1949
+    },
+    {
+      "componentCode": "C703721",
+      "componentModelEn": "LQW2BASR15G00L",
+      "componentBrandEn": "Murata Electronics",
+      "componentSpecificationEn": "0805",
+      "describe": "150nH 400mA 560m\u03a9 Unshielded Inductor \u00b12% 0805 Power Inductors ROHS",
+      "canPresaleNumber": -84
+    },
+    {
+      "componentCode": "C964011",
+      "componentModelEn": "HBLS1005-R15J",
+      "componentBrandEn": "HYHONGYEX",
+      "componentSpecificationEn": "0402",
+      "describe": "100mA 150nH 3.2\u03a9 550MHz 8@100MHz \u00b15% 0402 Inductors (SMD) ROHS",
+      "canPresaleNumber": 6945
+    },
+    {
+      "componentCode": "C964042",
+      "componentModelEn": "HBLS1608-R15J",
+      "componentBrandEn": "HYHONGYEX",
+      "componentSpecificationEn": "0603",
+      "describe": "1.6\u03a9 150nH 200mA 500MHz 8@50MHz \u00b15% 0603 Inductors (SMD) ROHS",
+      "canPresaleNumber": 2405
+    },
+    {
+      "componentCode": "C964077",
+      "componentModelEn": "HBLS2012-R15J",
+      "componentBrandEn": "HYHONGYEX",
+      "componentSpecificationEn": "0805",
+      "describe": "1.5\u03a9 150nH 15@50MHz 300mA 500MHz \u00b15% 0805 Inductors (SMD) ROHS",
+      "canPresaleNumber": 3452
+    },
+    {
+      "componentCode": "C1012785",
+      "componentModelEn": "LQW15AWR15G80D",
+      "componentBrandEn": "Murata Electronics",
+      "componentSpecificationEn": "0402",
+      "describe": "1.71\u03a9 150nH 280mA Wire-wound inductor \u00b12% 0402 Power Inductors ROHS",
+      "canPresaleNumber": 10
+    },
+    {
+      "componentCode": "C1330125",
+      "componentModelEn": "36502CR15JTDG",
+      "componentBrandEn": "TE Connectivity",
+      "componentSpecificationEn": "1008",
+      "describe": "150nH 700m\u03a9 800mA Wire-wound inductor \u00b15% 1008 Power Inductors ROHS",
+      "canPresaleNumber": 50
+    },
+    {
+      "componentCode": "C1331085",
+      "componentModelEn": "DFE201612PD-R15M=P2",
+      "componentBrandEn": "Murata Electronics",
+      "componentSpecificationEn": "0806",
+      "describe": "150nH 18m\u03a9 5.2A 6.2A \u00b120% 0806 Power Inductors ROHS",
+      "canPresaleNumber": -3
+    },
+    {
+      "componentCode": "C1852710",
+      "componentModelEn": "LQH32CHR15M33L",
+      "componentBrandEn": "Murata Electronics",
+      "componentSpecificationEn": "1210",
+      "describe": "1.45A 150nH 28m\u03a9 \u00b120% 1210 Power Inductors ROHS",
+      "canPresaleNumber": 3190
+    },
+    {
+      "componentCode": "C1857988",
+      "componentModelEn": "LQW18ASR15G0CD",
+      "componentBrandEn": "Murata Electronics",
+      "componentSpecificationEn": "0603",
+      "describe": "150nH 280mA 920m\u03a9 \u00b12% 0603 Power Inductors ROHS",
+      "canPresaleNumber": 3700
+    },
+    {
+      "componentCode": "C2041420",
+      "componentModelEn": "VLB10050HT-R15M",
+      "componentBrandEn": "TDK",
+      "componentSpecificationEn": "SMD,10.4x7.2mm",
+      "describe": "0.35m\u03a9 150nH 31A 52A \u00b120% SMD,10.4x7.2mm Power Inductors ROHS",
+      "canPresaleNumber": 1
+    },
+    {
+      "componentCode": "C2042762",
+      "componentModelEn": "36502AR15JTDG",
+      "componentBrandEn": "TE Connectivity",
+      "componentSpecificationEn": "0805",
+      "describe": "150nH 400mA 560m\u03a9 Wire-wound inductor \u00b15% 0805 Power Inductors ROHS",
+      "canPresaleNumber": 10
+    },
+    {
+      "componentCode": "C2043109",
+      "componentModelEn": "LQW2UASR15J0CL",
+      "componentBrandEn": "Murata Electronics",
+      "componentSpecificationEn": "1008",
+      "describe": "150nH 580mA 700m\u03a9 Unshielded Inductor \u00b15% 1008 Power Inductors ROHS",
+      "canPresaleNumber": 1916
+    },
+    {
+      "componentCode": "C2044306",
+      "componentModelEn": "LQW18ANR15G8ZD",
+      "componentBrandEn": "Murata Electronics",
+      "componentSpecificationEn": "0603",
+      "describe": "150nH 420mA 870m\u03a9 \u00b12% 0603 Power Inductors ROHS",
+      "canPresaleNumber": 3854
+    },
+    {
+      "componentCode": "C2044861",
+      "componentModelEn": "LQW2UASR15F00L",
+      "componentBrandEn": "Murata Electronics",
+      "componentSpecificationEn": "1008",
+      "describe": "150nH 580mA 700m\u03a9 Unshielded Inductor \u00b11% 1008 Power Inductors ROHS",
+      "canPresaleNumber": 1422
+    },
+    {
+      "componentCode": "C2045227",
+      "componentModelEn": "VLBU1007090T-R15L",
+      "componentBrandEn": "TDK",
+      "componentSpecificationEn": "SMD,10x7.1mm",
+      "describe": "0.18m\u03a9 150nH 70A 90A \u00b115% SMD,10x7.1mm Power Inductors ROHS",
+      "canPresaleNumber": 998
+    },
+    {
+      "componentCode": "C2045463",
+      "componentModelEn": "DFE2MCAHR15MJ0L",
+      "componentBrandEn": "Murata Electronics",
+      "componentSpecificationEn": "0806",
+      "describe": "150nH 21m\u03a9 4.8A 6.1A \u00b120% 0806 Power Inductors ROHS",
+      "canPresaleNumber": 2995
+    },
+    {
+      "componentCode": "C2046580",
+      "componentModelEn": "LQW2BANR15G00L",
+      "componentBrandEn": "Murata Electronics",
+      "componentSpecificationEn": "0805",
+      "describe": "150nH 460m\u03a9 930mA Unshielded Inductor \u00b12% 0805 Power Inductors ROHS",
+      "canPresaleNumber": 205
+    },
+    {
+      "componentCode": "C2046658",
+      "componentModelEn": "IFLR2727EZERR15M01",
+      "componentBrandEn": "Vishay Intertech",
+      "componentSpecificationEn": "SMD,7x7mm",
+      "describe": "0.35m\u03a9 150nH 30A 45A Shielded Inductor \u00b120% SMD,7x7mm Power Inductors ROHS",
+      "canPresaleNumber": 100
+    },
+    {
+      "componentCode": "C2046762",
+      "componentModelEn": "SRP5030CA-R15M",
+      "componentBrandEn": "BOURNS",
+      "componentSpecificationEn": "SMD,5.3x5.5mm",
+      "describe": "14.3A 150nH 2.1m\u03a9 36A \u00b120% SMD,5.3x5.5mm Power Inductors ROHS",
+      "canPresaleNumber": 20
+    },
+    {
+      "componentCode": "C2453141",
+      "componentModelEn": "PA2607.151NLT",
+      "componentBrandEn": "Pulse Elec",
+      "componentSpecificationEn": "SMD,10.4x7.9mm",
+      "describe": "0.29m\u03a9 150nH 41A 72A \u00b115% SMD,10.4x7.9mm Power Inductors ROHS",
+      "canPresaleNumber": 286
+    },
+    {
+      "componentCode": "C2454196",
+      "componentModelEn": "104CDMCCDS-R15MC",
+      "componentBrandEn": "Sumida",
+      "componentSpecificationEn": "SMD,11.5x10mm",
+      "describe": "0.5m\u03a9 150nH 43A 71A Molded Inductor \u00b120% SMD,11.5x10mm Power Inductors ROHS",
+      "canPresaleNumber": 286
+    },
+    {
+      "componentCode": "C2455818",
+      "componentModelEn": "FP1008R6-R150-R",
+      "componentBrandEn": "EATON",
+      "componentSpecificationEn": "SMD,10.8x8mm",
+      "describe": "0.18m\u03a9 150nH 74A 85A \u00b110% SMD,10.8x8mm Power Inductors ROHS",
+      "canPresaleNumber": 34
+    },
+    {
+      "componentCode": "C2595940",
+      "componentModelEn": "0412CDMCCDS-R15MC",
+      "componentBrandEn": "Sumida",
+      "componentSpecificationEn": "SMD,4.4x4.2mm",
+      "describe": "14.5A 14.5A 150nH 8m\u03a9 Molded Inductor \u00b120% SMD,4.4x4.2mm Power Inductors ROHS",
+      "canPresaleNumber": 1983
+    },
+    {
+      "componentCode": "C2595946",
+      "componentModelEn": "0630CDMCDDS-R15MC",
+      "componentBrandEn": "Sumida",
+      "componentSpecificationEn": "2726",
+      "describe": "0.9m\u03a9 150nH 37A 47.6A Molded Inductor \u00b120% 2726 Power Inductors ROHS",
+      "canPresaleNumber": 2888
+    },
+    {
+      "componentCode": "C2595955",
+      "componentModelEn": "0618CDMCCDS-R15MC",
+      "componentBrandEn": "Sumida",
+      "componentSpecificationEn": "2726",
+      "describe": "150nH 2.05m\u03a9 25A 27A Molded Inductor \u00b120% 2726 Power Inductors ROHS",
+      "canPresaleNumber": 1338
+    },
+    {
+      "componentCode": "C2638882",
+      "componentModelEn": "PA3784.151HL",
+      "componentBrandEn": "Pulse Elec",
+      "componentSpecificationEn": "SMD,10x8mm",
+      "describe": "0.18m\u03a9 150nH 67A 83A \u00b110% SMD,10x8mm Power Inductors ROHS",
+      "canPresaleNumber": 143
+    },
+    {
+      "componentCode": "C2880086",
+      "componentModelEn": "TMPC0603H-R15YG-D",
+      "componentBrandEn": "TAI-TECH",
+      "componentSpecificationEn": "SMD,7.3x6.6mm",
+      "describe": "1.5m\u03a9 150nH 27A 45A \u00b130% SMD,7.3x6.6mm Power Inductors ROHS",
+      "canPresaleNumber": 310
+    },
+    {
+      "componentCode": "C2885846",
+      "componentModelEn": "MLI1608F-R15KT",
+      "componentBrandEn": "MetalLions",
+      "componentSpecificationEn": "0603",
+      "describe": "150nH 15@25MHz 180MHz 50mA 600m\u03a9 \u00b110% 0603 Inductors (SMD) ROHS",
+      "canPresaleNumber": 4014
+    },
+    {
+      "componentCode": "C2885876",
+      "componentModelEn": "MLI2012F-R15KT",
+      "componentBrandEn": "MetalLions",
+      "componentSpecificationEn": "0805",
+      "describe": "150nH 200MHz 20@25MHz 250mA 400m\u03a9 \u00b110% 0805 Inductors (SMD) ROHS",
+      "canPresaleNumber": 2159
+    },
+    {
+      "componentCode": "C2896795",
+      "componentModelEn": "LQW18ANR15J80D",
+      "componentBrandEn": "Murata Electronics",
+      "componentSpecificationEn": "0603",
+      "describe": "150nH 420mA 870m\u03a9 Unshielded Inductor \u00b15% 0603 Power Inductors ROHS",
+      "canPresaleNumber": 5
+    },
+    {
+      "componentCode": "C2923785",
+      "componentModelEn": "SLA9060SR15MTT",
+      "componentBrandEn": "Sunltech Tech",
+      "componentSpecificationEn": "SMD,9.6x6.4mm",
+      "describe": "150nH 250m\u03a9 65A 72A \u00b120% SMD,9.6x6.4mm Power Inductors ROHS",
+      "canPresaleNumber": 421
+    },
+    {
+      "componentCode": "C2923790",
+      "componentModelEn": "SLA1005SR15MTT",
+      "componentBrandEn": "Sunltech Tech",
+      "componentSpecificationEn": "SMD,10.2x7mm",
+      "describe": "150nH 360m\u03a9 40A 49A \u00b120% SMD,10.2x7mm Power Inductors ROHS",
+      "canPresaleNumber": 416
+    },
+    {
+      "componentCode": "C2923799",
+      "componentModelEn": "SLA100709SR15LTT",
+      "componentBrandEn": "Sunltech Tech",
+      "componentSpecificationEn": "SMD,10.4x7.3mm",
+      "describe": "150nH 220m\u03a9 75A 81A \u00b115% SMD,10.4x7.3mm Power Inductors ROHS",
+      "canPresaleNumber": 306
+    },
+    {
+      "componentCode": "C2981224",
+      "componentModelEn": "BWCS00161008R15J00",
+      "componentBrandEn": "Chilisin Elec",
+      "componentSpecificationEn": "0603",
+      "describe": "150nH 25@100MHz 280mA 920m\u03a9 990MHz Wire-wound chip inductor \u00b15% 0603 Inductors (SMD) ROHS",
+      "canPresaleNumber": 4
+    },
+    {
+      "componentCode": "C3221400",
+      "componentModelEn": "SPM5030VT-R15M-D",
+      "componentBrandEn": "TDK",
+      "componentSpecificationEn": "SMD,5.3x5.1mm",
+      "describe": "150nH 17.1A 26.7A 3m\u03a9 \u00b120% SMD,5.3x5.1mm Power Inductors ROHS",
+      "canPresaleNumber": 3
+    },
+    {
+      "componentCode": "C3223090",
+      "componentModelEn": "LQW15AWR15J80D",
+      "componentBrandEn": "Murata Electronics",
+      "componentSpecificationEn": "0402",
+      "describe": "1.71\u03a9 150nH 280mA Unshielded Inductor \u00b15% 0402 Power Inductors ROHS",
+      "canPresaleNumber": 1529
+    },
+    {
+      "componentCode": "C3224400",
+      "componentModelEn": "FP1007R3-R15-R",
+      "componentBrandEn": "EATON",
+      "componentSpecificationEn": "SMD,10.4x8mm",
+      "describe": "0.29m\u03a9 150nH 61A 76A \u00b110% SMD,10.4x8mm Power Inductors ROHS",
+      "canPresaleNumber": 12
+    },
+    {
+      "componentCode": "C3910555",
+      "componentModelEn": "MLJ1608WR15JT000",
+      "componentBrandEn": "TDK",
+      "componentSpecificationEn": "0603",
+      "describe": "150nH 15@25MHz 160m\u03a9 350MHz 600mA 700mA \u00b15% 0603 Inductors (SMD) ROHS",
+      "canPresaleNumber": -217
+    },
+    {
+      "componentCode": "C3911676",
+      "componentModelEn": "0603LS-151XGRC",
+      "componentBrandEn": "Coilcraft",
+      "componentSpecificationEn": "0603",
+      "describe": "1.05GHz 1.3A 150m\u03a9 150nH 15@7.9MHz Wire-wound chip inductor \u00b12% 0603 Inductors (SMD) ROHS",
+      "canPresaleNumber": 24
+    },
+    {
+      "componentCode": "C5137218",
+      "componentModelEn": "FHW0805UFR15JST",
+      "componentBrandEn": "FH (Guangdong Fenghua Advanced Tech)",
+      "componentSpecificationEn": "0805",
+      "describe": "150nH 300m\u03a9 600mA Wirewound Inductor \u00b15% 0805 Power Inductors ROHS",
+      "canPresaleNumber": 2002
+    },
+    {
+      "componentCode": "C5178936",
+      "componentModelEn": "SCA1812HR15GTT",
+      "componentBrandEn": "Sunltech Tech",
+      "componentSpecificationEn": "SMD,3.8x4.9mm",
+      "describe": "1.2A 100@150MHz 150nH 33m\u03a9 750MHz \u00b13% SMD,3.8x4.9mm Inductors (SMD) ROHS",
+      "canPresaleNumber": 627
+    },
+    {
+      "componentCode": "C5296184",
+      "componentModelEn": "MHCI06030-R15M-R8A",
+      "componentBrandEn": "Chilisin Elec",
+      "componentSpecificationEn": "SMD,7.3x6.6mm",
+      "describe": "150nH 2.5m\u03a9 30A 60A Magnetic Shielded Inductor \u00b120% SMD,7.3x6.6mm Power Inductors ROHS",
+      "canPresaleNumber": 4
+    },
+    {
+      "componentCode": "C5441881",
+      "componentModelEn": "CKST0603-0.15uH/N",
+      "componentBrandEn": "CENKER",
+      "componentSpecificationEn": "SMD,6.6x7.4mm",
+      "describe": "1.9m\u03a9 150nH 30A 50A Metal powder compact \u00b130% SMD,6.6x7.4mm Inductors (SMD) ROHS",
+      "canPresaleNumber": 1455
+    },
+    {
+      "componentCode": "C6162462",
+      "componentModelEn": "CW201212-R15J",
+      "componentBrandEn": "BOURNS",
+      "componentSpecificationEn": "0805",
+      "describe": "150nH 400mA 670m\u03a9 Flat-wire wound inductor \u00b15% 0805 Power Inductors ROHS",
+      "canPresaleNumber": 100
+    },
+    {
+      "componentCode": "C6382033",
+      "componentModelEn": "1008CS-151XJRC",
+      "componentBrandEn": "Coilcraft",
+      "componentSpecificationEn": "1008",
+      "describe": "150nH 580mA 700m\u03a9 \u00b15% 1008 Inductors (SMD) ROHS",
+      "canPresaleNumber": 2
+    },
+    {
+      "componentCode": "C6640258",
+      "componentModelEn": "0402DF-151XJRW",
+      "componentBrandEn": "Coilcraft",
+      "componentSpecificationEn": "0402",
+      "describe": "1.8GHz 130m\u03a9 150nH 830mA Wire-wound chip inductor \u00b15% 0402 Inductors (SMD) ROHS",
+      "canPresaleNumber": 32
+    },
+    {
+      "componentCode": "C6640492",
+      "componentModelEn": "0603USB-222MLC",
+      "componentBrandEn": "Coilcraft",
+      "componentSpecificationEn": "SMD-4P,1.6x0.8mm",
+      "describe": "-40\u2103~+85\u2103 150nH@100MHz 2 209m\u03a9 500mA 660\u03a9@1800MHz SMD-4P,1.6x0.8mm Common Mode Filters ROHS",
+      "canPresaleNumber": 1796
+    },
+    {
+      "componentCode": "C6808002",
+      "componentModelEn": "AHW1608C-R15JTF",
+      "componentBrandEn": "APV",
+      "componentSpecificationEn": "0603",
+      "describe": "150nH 28 280mA 920m\u03a9 990MHz Wire-wound chip inductor \u00b15% 0603 Inductors (SMD) ROHS",
+      "canPresaleNumber": 2482
+    },
+    {
+      "componentCode": "C6808048",
+      "componentModelEn": "AHW2012C-R15JTF",
+      "componentBrandEn": "APV",
+      "componentSpecificationEn": "0805",
+      "describe": "150nH 400mA 50@250MHz 560m\u03a9 920MHz Wire-wound chip inductor \u00b15% 0805 Inductors (SMD) ROHS",
+      "canPresaleNumber": 14265
+    },
+    {
+      "componentCode": "C6808068",
+      "componentModelEn": "AHW2520C-R15JTF",
+      "componentBrandEn": "APV",
+      "componentSpecificationEn": "SMD,2.9x2.8mm",
+      "describe": "150nH 45@100MHz 580mA 700m\u03a9 850MHz Wire-wound chip inductor \u00b15% SMD,2.9x2.8mm Inductors (SMD) ROHS",
+      "canPresaleNumber": 1210
+    },
+    {
+      "componentCode": "C7471156",
+      "componentModelEn": "SPM2512-R15MA",
+      "componentBrandEn": "cjiang (Changjiang Microelectronics Tech)",
+      "componentSpecificationEn": "SMD,2.5x2mm",
+      "describe": "11.5A 13A 150nH 7m\u03a9 \u00b120% SMD,2.5x2mm Power Inductors ROHS",
+      "canPresaleNumber": 2775
+    },
+    {
+      "componentCode": "C7522312",
+      "componentModelEn": "LQW18ANR15G0ZD",
+      "componentBrandEn": "Murata Electronics",
+      "componentSpecificationEn": "0603",
+      "describe": "1.4GHz 1.5\u03a9 150nH 160mA 32@150MHz Wire-wound chip inductor \u00b12% 0603 Inductors (SMD) ROHS",
+      "canPresaleNumber": 2599
+    },
+    {
+      "componentCode": "C17357496",
+      "componentModelEn": "SPB1007-R15M",
+      "componentBrandEn": "BOURNS",
+      "componentSpecificationEn": "SMD,10.5x8mm",
+      "describe": "0.35m\u03a9 150nH 61A 76A \u00b120% SMD,10.5x8mm Power Inductors ROHS",
+      "canPresaleNumber": 39
+    },
+    {
+      "componentCode": "C17701142",
+      "componentModelEn": "MTQH201612SR15MBT",
+      "componentBrandEn": "MetalLions",
+      "componentSpecificationEn": "0806",
+      "describe": "10A 12A 150nH 7.5m\u03a9 Magnetic Shielded Inductor \u00b120% 0806 Power Inductors ROHS",
+      "canPresaleNumber": 2558
+    },
+    {
+      "componentCode": "C17701206",
+      "componentModelEn": "MTQH252012SR15MBT",
+      "componentBrandEn": "MetalLions",
+      "componentSpecificationEn": "1008",
+      "describe": "11.5A 13A 150nH 7m\u03a9 Magnetic Shielded Inductor \u00b120% 1008 Power Inductors ROHS",
+      "canPresaleNumber": 2830
+    },
+    {
+      "componentCode": "C18184926",
+      "componentModelEn": "AHW3225C-R15JTF",
+      "componentBrandEn": "APV",
+      "componentSpecificationEn": "1210",
+      "describe": "150nH 300m\u03a9 60@300MHz 700MHz 750mA Wire-wound chip inductor \u00b15% 1210 Inductors (SMD) ROHS",
+      "canPresaleNumber": 1785
+    },
+    {
+      "componentCode": "C18221116",
+      "componentModelEn": "WI0402IFR15KST-HF",
+      "componentBrandEn": "DDY",
+      "componentSpecificationEn": "0402",
+      "describe": "1.22GHz 150nH 260m\u03a9 630mA Wire-wound chip inductor \u00b110% 0402 Inductors (SMD) ROHS",
+      "canPresaleNumber": 9969
+    },
+    {
+      "componentCode": "C18221236",
+      "componentModelEn": "WI0603UCR15JST-HF",
+      "componentBrandEn": "DDY",
+      "componentSpecificationEn": "0603",
+      "describe": "150nH 280mA 28@150MHz 920m\u03a9 990MHz Wire-wound chip inductor \u00b15% 0603 Inductors (SMD) ROHS",
+      "canPresaleNumber": 713
+    },
+    {
+      "componentCode": "C18221278",
+      "componentModelEn": "WI0805UCR15JST-HF",
+      "componentBrandEn": "DDY",
+      "componentSpecificationEn": "0805",
+      "describe": "150nH 400mA 50@250MHz 560m\u03a9 920MHz Wire-wound chip inductor \u00b15% 0805 Inductors (SMD) ROHS",
+      "canPresaleNumber": 1198
+    },
+    {
+      "componentCode": "C18221311",
+      "componentModelEn": "WI1008UCR15JST-HF",
+      "componentBrandEn": "DDY",
+      "componentSpecificationEn": "1008",
+      "describe": "150nH 45@100MHz 580mA 700m\u03a9 850MHz Wire-wound chip inductor \u00b15% 1008 Inductors (SMD) ROHS",
+      "canPresaleNumber": 2001
+    },
+    {
+      "componentCode": "C18221348",
+      "componentModelEn": "WI1210UCR15JST-HF",
+      "componentBrandEn": "DDY",
+      "componentSpecificationEn": "1210",
+      "describe": "150nH 300m\u03a9 60@300MHz 700MHz 750mA Wire-wound chip inductor \u00b15% 1210 Inductors (SMD) ROHS",
+      "canPresaleNumber": 4
+    },
+    {
+      "componentCode": "C18222200",
+      "componentModelEn": "MCMB-1040-R15MT",
+      "componentBrandEn": "MetalLions",
+      "componentSpecificationEn": "SMD,11x10mm",
+      "describe": "150nH 40A 650m\u03a9 75A \u00b120% SMD,11x10mm Power Inductors ROHS",
+      "canPresaleNumber": 245
+    },
+    {
+      "componentCode": "C19633902",
+      "componentModelEn": "AHW1005C-R15JTF",
+      "componentBrandEn": "APV",
+      "componentSpecificationEn": "0402",
+      "describe": "150nH 1GHz 20mA 4\u03a9 Wire-wound chip inductor \u00b15% 0402 Inductors (SMD) ROHS",
+      "canPresaleNumber": 8248
+    },
+    {
+      "componentCode": "C19633964",
+      "componentModelEn": "AHW1005F-R15KTF",
+      "componentBrandEn": "APV",
+      "componentSpecificationEn": "0402",
+      "describe": "1.22GHz 150nH 260m\u03a9 630mA Wire-wound chip inductor \u00b110% 0402 Inductors (SMD) ROHS",
+      "canPresaleNumber": 1578
+    },
+    {
+      "componentCode": "C19633984",
+      "componentModelEn": "AHW2012F-R15KTF",
+      "componentBrandEn": "APV",
+      "componentSpecificationEn": "0805",
+      "describe": "150nH 300m\u03a9 480MHz 720mA Wire-wound chip inductor \u00b110% 0805 Inductors (SMD) ROHS",
+      "canPresaleNumber": 1283
+    },
+    {
+      "componentCode": "C20107675",
+      "componentModelEn": "PGL6380.151HLT",
+      "componentBrandEn": "Pulse Elec",
+      "componentSpecificationEn": "SMD,12x6mm",
+      "describe": "0.125m\u03a9 150nH 45A\u300177A 75A\u300185A \u00b115% SMD,12x6mm Power Inductors ROHS",
+      "canPresaleNumber": 10
+    },
+    {
+      "componentCode": "C20616043",
+      "componentModelEn": "1008CS-151XGLC",
+      "componentBrandEn": "Coilcraft",
+      "componentSpecificationEn": "SMD,2.9x2.8mm",
+      "describe": "150nH 45@100MHz 580mA 700m\u03a9 850MHz Wire-wound chip inductor \u00b12% SMD,2.9x2.8mm Inductors (SMD) ROHS",
+      "canPresaleNumber": 113
+    },
+    {
+      "componentCode": "C22400367",
+      "componentModelEn": "YWIF1005-R15K",
+      "componentBrandEn": "YJYCOIN",
+      "componentSpecificationEn": "0402",
+      "describe": "1.22GHz 150nH 260m\u03a9 630mA Wire-wound chip inductor \u00b110% 0402 Inductors (SMD) ROHS",
+      "canPresaleNumber": 11447
+    },
+    {
+      "componentCode": "C22409946",
+      "componentModelEn": "SLC1480-151MLD",
+      "componentBrandEn": "Coilcraft",
+      "componentSpecificationEn": "SMD,13.5x13mm",
+      "describe": "0.18m\u03a9 150nH 83A 90A Magnetic Shielded Inductor \u00b120% SMD,13.5x13mm Power Inductors ROHS",
+      "canPresaleNumber": 12
+    },
+    {
+      "componentCode": "C22447699",
+      "componentModelEn": "YWIF2012-R15K",
+      "componentBrandEn": "YJYCOIN",
+      "componentSpecificationEn": "SMD,2.4x1.7mm",
+      "describe": "150nH 19@7.9MHz 300m\u03a9 480MHz 720mA Wire-wound chip inductor \u00b110% SMD,2.4x1.7mm Inductors (SMD) ROHS",
+      "canPresaleNumber": 1960
+    },
+    {
+      "componentCode": "C28314485",
+      "componentModelEn": "FC-SH1304-R15M-45A",
+      "componentBrandEn": "FANGCHENG",
+      "componentSpecificationEn": "SMD,13.3x7.5mm",
+      "describe": "0.225m\u03a9 150nH 40A 45A \u00b120% SMD,13.3x7.5mm Power Inductors ROHS",
+      "canPresaleNumber": 1176
+    },
+    {
+      "componentCode": "C37184330",
+      "componentModelEn": "IHLP6767GZER15M01",
+      "componentBrandEn": "Vishay Intertech",
+      "componentSpecificationEn": "SMD,17.2x17.2mm",
+      "describe": "150nH Magnetic Shielded Inductor \u00b120% SMD,17.2x17.2mm Power Inductors ROHS",
+      "canPresaleNumber": 2
+    },
+    {
+      "componentCode": "C38190612",
+      "componentModelEn": "0805CS-151XGLC",
+      "componentBrandEn": "Coilcraft",
+      "componentSpecificationEn": "0805",
+      "describe": "150nH 400mA 50@250MHz 560m\u03a9 920MHz Wire-wound chip inductor \u00b12% 0805 Inductors (SMD) ROHS",
+      "canPresaleNumber": 100
+    },
+    {
+      "componentCode": "C38713287",
+      "componentModelEn": "1812SMS-R15GLC",
+      "componentBrandEn": "Coilcraft",
+      "componentSpecificationEn": "1812",
+      "describe": "1.2A 150nH 33m\u03a9 \u00b12% 1812 Power Inductors ROHS",
+      "canPresaleNumber": 48
+    },
+    {
+      "componentCode": "C38766726",
+      "componentModelEn": "XEL6030-151MEC",
+      "componentBrandEn": "Coilcraft",
+      "componentSpecificationEn": "SMD,6.4x6.4mm",
+      "describe": "SMD,6.4x6.4mm Power Inductors ROHS",
+      "canPresaleNumber": 10
+    },
+    {
+      "componentCode": "C40689242",
+      "componentModelEn": "0805CS-151XJRC",
+      "componentBrandEn": "Coilcraft",
+      "componentSpecificationEn": "0805",
+      "describe": "150nH 400mA 50@250MHz 560m\u03a9 920MHz Wire-wound chip inductor \u00b15% 0805 Inductors (SMD) ROHS",
+      "canPresaleNumber": 7
+    },
+    {
+      "componentCode": "C41405944",
+      "componentModelEn": "YSMC0320H-R15MB",
+      "componentBrandEn": "YJYCOIN",
+      "componentSpecificationEn": "SMD,3x3mm",
+      "describe": "12A 150nH 17A 4\u03a9 Molded Inductor \u00b120% SMD,3x3mm Power Inductors ROHS",
+      "canPresaleNumber": 2886
+    },
+    {
+      "componentCode": "C42440751",
+      "componentModelEn": "SLQW2520CR15JT",
+      "componentBrandEn": "Magnetsyc",
+      "componentSpecificationEn": "SMD,2.9x2.7mm",
+      "describe": "150nH 45@100MHz 580mA 700m\u03a9 850MHz Wire-wound chip inductor \u00b15% SMD,2.9x2.7mm Inductors (SMD) ROHS",
+      "canPresaleNumber": 500
+    },
+    {
+      "componentCode": "C46470450",
+      "componentModelEn": "1206CS-151XGEC",
+      "componentBrandEn": "Coilcraft",
+      "componentSpecificationEn": "1206",
+      "describe": "150nH 310m\u03a9 60@300MHz 750mA 950MHz Wire-wound chip inductor \u00b12% 1206 Inductors (SMD) ROHS",
+      "canPresaleNumber": 14
+    },
+    {
+      "componentCode": "C47327178",
+      "componentModelEn": "APS0530MR15A",
+      "componentBrandEn": "COILANK INTERNATIONAL",
+      "componentSpecificationEn": "SMD,5.8x5.2mm",
+      "describe": "150nH 17.1A 26.7A 3.3m\u03a9 \u00b120% SMD,5.8x5.2mm Power Inductors ROHS",
+      "canPresaleNumber": 1535
+    },
+    {
+      "componentCode": "C47327238",
+      "componentModelEn": "APS1040MR15A",
+      "componentBrandEn": "COILANK INTERNATIONAL",
+      "componentSpecificationEn": "SMD,11.5x10mm",
+      "describe": "0.6m\u03a9 150nH 45.45A 75.75A \u00b120% SMD,11.5x10mm Power Inductors ROHS",
+      "canPresaleNumber": 160
+    },
+    {
+      "componentCode": "C48391596",
+      "componentModelEn": "XRSMS1812-R15JL",
+      "componentBrandEn": "XR",
+      "componentSpecificationEn": "SMD,4.9x3.8mm",
+      "describe": "1.2A 100@150MHz 150nH 33m\u03a9 750MHz \u00b15% SMD,4.9x3.8mm Inductors (SMD) ROHS",
+      "canPresaleNumber": 464
+    },
+    {
+      "componentCode": "C48543523",
+      "componentModelEn": "AHSC292520JR15",
+      "componentBrandEn": "COILANK INTERNATIONAL",
+      "componentSpecificationEn": "SMD",
+      "describe": "150nH 45@100MHz 580mA 700m\u03a9 850MHz Wire-wound chip inductor \u00b15% SMD Inductors (SMD) ROHS",
+      "canPresaleNumber": 1893
+    },
+    {
+      "componentCode": "C48543563",
+      "componentModelEn": "APSW07H30MR15",
+      "componentBrandEn": "COILANK INTERNATIONAL",
+      "componentSpecificationEn": "SMD",
+      "describe": "1.9m\u03a9 150nH 27A 45A \u00b120% SMD Power Inductors ROHS",
+      "canPresaleNumber": 1415
+    },
+    {
+      "componentCode": "C48783264",
+      "componentModelEn": "APS201610MR15F",
+      "componentBrandEn": "COILANK INTERNATIONAL",
+      "componentSpecificationEn": "0806",
+      "describe": "14m\u03a9 150nH 7.2A 9.8A \u00b120% 0806 Power Inductors ROHS",
+      "canPresaleNumber": 2572
+    },
+    {
+      "componentCode": "C48783278",
+      "componentModelEn": "APS201612MR15F",
+      "componentBrandEn": "COILANK INTERNATIONAL",
+      "componentSpecificationEn": "0806",
+      "describe": "10A 10m\u03a9 12A 150nH \u00b120% 0806 Power Inductors ROHS",
+      "canPresaleNumber": 2740
+    },
+    {
+      "componentCode": "C48783298",
+      "componentModelEn": "APS252012MR15F",
+      "componentBrandEn": "COILANK INTERNATIONAL",
+      "componentSpecificationEn": "1008",
+      "describe": "12.8m\u03a9 15.5A 150nH 8.8A \u00b120% 1008 Power Inductors ROHS",
+      "canPresaleNumber": 4709
+    },
+    {
+      "componentCode": "C48946137",
+      "componentModelEn": "MWI0402IFR15KST-HF",
+      "componentBrandEn": "MYX",
+      "componentSpecificationEn": "0402",
+      "describe": "1.22GHz 150nH 1A 260m\u03a9 630mA Wire-wound chip inductor \u00b110% 0402 Inductors (SMD) ROHS",
+      "canPresaleNumber": 50
+    },
+    {
+      "componentCode": "C48946325",
+      "componentModelEn": "MWI0603UCR15JST-HF",
+      "componentBrandEn": "MYX",
+      "componentSpecificationEn": "0603",
+      "describe": "150nH 280mA 28@150MHz 920m\u03a9 990MHz Wire-wound chip inductor \u00b15% 0603 Inductors (SMD) ROHS",
+      "canPresaleNumber": 10
+    },
+    {
+      "componentCode": "C48946379",
+      "componentModelEn": "MWI0603IFR15KST-HF",
+      "componentBrandEn": "MYX",
+      "componentSpecificationEn": "0603",
+      "describe": "12 150m\u03a9 150nH 1A 950MHz Wire-wound chip inductor \u00b110% 0603 Inductors (SMD) ROHS",
+      "canPresaleNumber": 7
+    },
+    {
+      "componentCode": "C48946439",
+      "componentModelEn": "MWI0805IFR15KST-HF",
+      "componentBrandEn": "MYX",
+      "componentSpecificationEn": "0805",
+      "describe": "150nH 19@7.9MHz 300m\u03a9 480MHz 720mA Wire-wound chip inductor \u00b110% 0805 Inductors (SMD) ROHS",
+      "canPresaleNumber": 30
+    },
+    {
+      "componentCode": "C48946523",
+      "componentModelEn": "MWI0805UCR15JST-HF",
+      "componentBrandEn": "MYX",
+      "componentSpecificationEn": "0805",
+      "describe": "150nH 400mA 50@250MHz 560m\u03a9 920MHz Wire-wound chip inductor \u00b15% 0805 Inductors (SMD) ROHS",
+      "canPresaleNumber": 36
+    },
+    {
+      "componentCode": "C48946572",
+      "componentModelEn": "MWI1008UCR15JST-HF",
+      "componentBrandEn": "MYX",
+      "componentSpecificationEn": "1008",
+      "describe": "150nH 45@100MHz 580mA 700m\u03a9 850MHz Wire-wound chip inductor \u00b15% 1008 Inductors (SMD) ROHS",
+      "canPresaleNumber": 27
+    },
+    {
+      "componentCode": "C48946700",
+      "componentModelEn": "MWI1210UCR15JST-HF",
+      "componentBrandEn": "MYX",
+      "componentSpecificationEn": "1210",
+      "describe": "150nH 300m\u03a9 60@300MHz 700MHz 750mA Wire-wound chip inductor \u00b15% 1210 Inductors (SMD) ROHS",
+      "canPresaleNumber": 10
+    },
+    {
+      "componentCode": "C48946758",
+      "componentModelEn": "MWI1206UCR15JST-HF",
+      "componentBrandEn": "MYX",
+      "componentSpecificationEn": "1206",
+      "describe": "150nH 310m\u03a9 55@300MHz 750mA 950MHz Wire-wound chip inductor \u00b15% 1206 Inductors (SMD) ROHS",
+      "canPresaleNumber": 15
+    },
+    {
+      "componentCode": "C48972410",
+      "componentModelEn": "AAPS252012MR15F",
+      "componentBrandEn": "COILANK INTERNATIONAL",
+      "componentSpecificationEn": "1008",
+      "describe": "12.8m\u03a9 15.5A 150nH 8.8A \u00b120% 1008 Power Inductors ROHS",
+      "canPresaleNumber": 3006
+    },
+    {
+      "componentCode": "C48972411",
+      "componentModelEn": "AAPS322512MR15F",
+      "componentBrandEn": "COILANK INTERNATIONAL",
+      "componentSpecificationEn": "1210",
+      "describe": "12m\u03a9 13.4A 150nH 8.9A \u00b120% 1210 Power Inductors ROHS",
+      "canPresaleNumber": 2000
+    },
+    {
+      "componentCode": "C49073595",
+      "componentModelEn": "APS0624MR15H",
+      "componentBrandEn": "COILANK INTERNATIONAL",
+      "componentSpecificationEn": "SMD,7.7x6.6mm",
+      "describe": "150nH 2.3m\u03a9 30A 45A \u00b120% SMD,7.7x6.6mm Power Inductors ROHS",
+      "canPresaleNumber": 195
+    },
+    {
+      "componentCode": "C49073604",
+      "componentModelEn": "APS0630MR15H",
+      "componentBrandEn": "COILANK INTERNATIONAL",
+      "componentSpecificationEn": "SMD,6.6x6.4mm",
+      "describe": "1.9m\u03a9 150nH 27A 45A \u00b120% SMD,6.6x6.4mm Power Inductors ROHS",
+      "canPresaleNumber": 180
+    },
+    {
+      "componentCode": "C49073740",
+      "componentModelEn": "AAPS0624MR15H",
+      "componentBrandEn": "COILANK INTERNATIONAL",
+      "componentSpecificationEn": "SMD,7.7x6.6mm",
+      "describe": "150nH 2.3m\u03a9 30A 45A \u00b120% SMD,7.7x6.6mm Power Inductors ROHS",
+      "canPresaleNumber": 200
+    },
+    {
+      "componentCode": "C49073749",
+      "componentModelEn": "AAPS0630MR15H",
+      "componentBrandEn": "COILANK INTERNATIONAL",
+      "componentSpecificationEn": "SMD,6.6x6.4mm",
+      "describe": "1.9m\u03a9 150nH 27A 45A \u00b120% SMD,6.6x6.4mm Power Inductors ROHS",
+      "canPresaleNumber": 195
+    },
+    {
+      "componentCode": "C49208908",
+      "componentModelEn": "GDSIHH100705-R15L-R32",
+      "componentBrandEn": "GUDIAN",
+      "componentSpecificationEn": "SMD,10x6.6mm",
+      "describe": "0.325m\u03a9 150nH 31A 42A \u00b115% SMD,10x6.6mm Power Inductors ROHS",
+      "canPresaleNumber": 2000
+    },
+    {
+      "componentCode": "C49208921",
+      "componentModelEn": "GDSIHC106580-R15L-R29",
+      "componentBrandEn": "GUDIAN",
+      "componentSpecificationEn": "SMD,9.7x6.5mm",
+      "describe": "0.29m\u03a9 150nH 42A 65A \u00b115% SMD,9.7x6.5mm Power Inductors ROHS",
+      "canPresaleNumber": 536
+    },
+    {
+      "componentCode": "C49208928",
+      "componentModelEn": "GDSIHC100808-R15L-R18",
+      "componentBrandEn": "GUDIAN",
+      "componentSpecificationEn": "SMD,10x8mm",
+      "describe": "0.18m\u03a9 150nH 70A 79A \u00b115% SMD,10x8mm Power Inductors ROHS",
+      "canPresaleNumber": 364
+    },
+    {
+      "componentCode": "C49208932",
+      "componentModelEn": "GDSIHC100808-R15L-R15",
+      "componentBrandEn": "GUDIAN",
+      "componentSpecificationEn": "SMD,10x8mm",
+      "describe": "0.15m\u03a9 150nH 75A 80A \u00b115% SMD,10x8mm Power Inductors ROHS",
+      "canPresaleNumber": 1
+    },
+    {
+      "componentCode": "C49208940",
+      "componentModelEn": "GDSI2E120611-R15L-R125-2D",
+      "componentBrandEn": "GUDIAN",
+      "componentSpecificationEn": "SMD,11.7x5.8mm",
+      "describe": "0.125m\u03a9\u30010.37m\u03a9 150nH 45A\u300177A 84A \u00b115% SMD,11.7x5.8mm Power Inductors ROHS",
+      "canPresaleNumber": 50
+    },
+    {
+      "componentCode": "C49208945",
+      "componentModelEn": "GDSI2E966410-R15L-R125-2D",
+      "componentBrandEn": "GUDIAN",
+      "componentSpecificationEn": "SMD,9.4x6.2mm",
+      "describe": "0.125m\u03a9\u30010.33m\u03a9 150nH 40A\u300175A 62A \u00b115% SMD,9.4x6.2mm Power Inductors ROHS",
+      "canPresaleNumber": 40
+    },
+    {
+      "componentCode": "C49241325",
+      "componentModelEn": "MWI1812UCR15JST-HF",
+      "componentBrandEn": "MYX",
+      "componentSpecificationEn": "1812",
+      "describe": "120m\u03a9 150nH 480mA 50@25MHz 700MHz Wire-wound chip inductor \u00b15% 1812 Inductors (SMD) ROHS",
+      "canPresaleNumber": 480
+    },
+    {
+      "componentCode": "C49247939",
+      "componentModelEn": "ESW1008R15JLB",
+      "componentBrandEn": "ABC",
+      "componentSpecificationEn": "SMD,2.9x2.7mm",
+      "describe": "150nH 45@100MHz 580mA 700m\u03a9 850MHz Wire-wound chip inductor \u00b15% SMD,2.9x2.7mm Inductors (SMD) ROHS",
+      "canPresaleNumber": 1000
+    },
+    {
+      "componentCode": "C49261143",
+      "componentModelEn": "APS0520MR15F",
+      "componentBrandEn": "COILANK INTERNATIONAL",
+      "componentSpecificationEn": "SMD,5.5x5.3mm",
+      "describe": "150nH 18.8A 27A 4.6m\u03a9 \u00b120% SMD,5.5x5.3mm Power Inductors ROHS",
+      "canPresaleNumber": 99
+    },
+    {
+      "componentCode": "C49261154",
+      "componentModelEn": "APS0530MR15F",
+      "componentBrandEn": "COILANK INTERNATIONAL",
+      "componentSpecificationEn": "SMD,5.5x5.3mm",
+      "describe": "150nH 2.31m\u03a9 22.2A 32.5A \u00b120% SMD,5.5x5.3mm Power Inductors ROHS",
+      "canPresaleNumber": 97
+    },
+    {
+      "componentCode": "C49261432",
+      "componentModelEn": "AAPS0520MR15F",
+      "componentBrandEn": "COILANK INTERNATIONAL",
+      "componentSpecificationEn": "SMD,5.5x5.3mm",
+      "describe": "150nH 18.8A 27A 4.6m\u03a9 \u00b120% SMD,5.5x5.3mm Power Inductors ROHS",
+      "canPresaleNumber": 100
+    },
+    {
+      "componentCode": "C49261443",
+      "componentModelEn": "AAPS0530MR15F",
+      "componentBrandEn": "COILANK INTERNATIONAL",
+      "componentSpecificationEn": "SMD,5.5x5.3mm",
+      "describe": "150nH 2.31m\u03a9 22.2A 32.5A \u00b120% SMD,5.5x5.3mm Power Inductors ROHS",
+      "canPresaleNumber": 100
+    },
+    {
+      "componentCode": "C49437844",
+      "componentModelEn": "TLVR100512KR15FC",
+      "componentBrandEn": "COILANK INTERNATIONAL",
+      "componentSpecificationEn": "SMD,9.7x4.7mm",
+      "describe": "0.125m\u03a9\u30010.45m\u03a9 150nH 35A\u300175A 59A \u00b110% SMD,9.7x4.7mm Power Inductors ROHS",
+      "canPresaleNumber": 271
+    },
+    {
+      "componentCode": "C50325697",
+      "componentModelEn": "APLD1608-R15KPTD3",
+      "componentBrandEn": "APV",
+      "componentSpecificationEn": "0603",
+      "describe": "150nH 180MHz 20 52mA Multilayer inductor \u00b110% 0603 Inductors (SMD) ROHS",
+      "canPresaleNumber": 4675
+    },
+    {
+      "componentCode": "C50325726",
+      "componentModelEn": "APLD2012-R15KPTD3",
+      "componentBrandEn": "APV",
+      "componentSpecificationEn": "0805",
+      "describe": "150nH 20 200MHz 260mA Multilayer inductor \u00b110% 0805 Inductors (SMD) ROHS",
+      "canPresaleNumber": 3530
+    },
+    {
+      "componentCode": "C50325761",
+      "componentModelEn": "APLD3216-R15KSTD3",
+      "componentBrandEn": "APV",
+      "componentSpecificationEn": "1206",
+      "describe": "150nH 200MHz 25 260mA Multilayer inductor \u00b110% 1206 Inductors (SMD) ROHS",
+      "canPresaleNumber": 3521
+    },
+    {
+      "componentCode": "C51822017",
+      "componentModelEn": "CM3225R15MSF",
+      "componentBrandEn": "ABC",
+      "componentSpecificationEn": "1210",
+      "describe": "150nH 250m\u03a9 450mA Molded inductor \u00b120% 1210 Inductors (SMD) ROHS",
+      "canPresaleNumber": 1990
+    },
+    {
+      "componentCode": "C52109851",
+      "componentModelEn": "TCGL1005BR15JAT",
+      "componentBrandEn": "CCTC",
+      "componentSpecificationEn": "0402",
+      "describe": "100mA 150nH 3.5\u03a9 550MHz 8@100MHz Multilayer inductor \u00b15% 0402 Inductors (SMD) ROHS",
+      "canPresaleNumber": 6900
+    },
+    {
+      "componentCode": "C52128454",
+      "componentModelEn": "XRC0.7*5.9-4.5T",
+      "componentBrandEn": "XR",
+      "componentSpecificationEn": "-",
+      "describe": "0.7mm 150nH 5.1m\u03a9 \u00b120% - Color Ring Inductors / Through Hole Inductors ROHS",
+      "canPresaleNumber": 170
+    },
+    {
+      "componentCode": "C52259779",
+      "componentModelEn": "YSCM322522-R15K",
+      "componentBrandEn": "YJYCOIN",
+      "componentSpecificationEn": "1210",
+      "describe": "150nH 250m\u03a9 30@25.2MHz 450mA 860MHz Wire-wound chip inductor \u00b110% 1210 Inductors (SMD) ROHS",
+      "canPresaleNumber": 995
+    },
+    {
+      "componentCode": "C52259868",
+      "componentModelEn": "YSCM453232-R15K",
+      "componentBrandEn": "YJYCOIN",
+      "componentSpecificationEn": "1812",
+      "describe": "150nH 220m\u03a9 35@25.2MHz 615MHz 730mA Wire-wound chip inductor \u00b110% 1812 Inductors (SMD) ROHS",
+      "canPresaleNumber": 480
+    },
+    {
+      "componentCode": "C53154769",
+      "componentModelEn": "APS0630MR15A",
+      "componentBrandEn": "COILANK INTERNATIONAL",
+      "componentSpecificationEn": "SMD,7.7x6.6mm",
+      "describe": "150nH 2.3m\u03a9 26A 41A \u00b120% SMD,7.7x6.6mm Power Inductors ROHS",
+      "canPresaleNumber": 170
+    },
+    {
+      "componentCode": "C53154770",
+      "componentModelEn": "AAPS0630MR15A",
+      "componentBrandEn": "COILANK INTERNATIONAL",
+      "componentSpecificationEn": "SMD,7.7x6.6mm",
+      "describe": "150nH 2.3m\u03a9 26A 41A \u00b120% SMD,7.7x6.6mm Power Inductors ROHS",
+      "canPresaleNumber": 200
+    },
+    {
+      "componentCode": "C53244714",
+      "componentModelEn": "APS252010MR15F",
+      "componentBrandEn": "COILANK INTERNATIONAL",
+      "componentSpecificationEn": "1008",
+      "describe": "10.5A 150nH 9.5A 9m\u03a9 \u00b120% 1008 Power Inductors ROHS",
+      "canPresaleNumber": 3000
+    },
+    {
+      "componentCode": "C53430424",
+      "componentModelEn": "HW1008JR15HSC",
+      "componentBrandEn": "COILANK INTERNATIONAL",
+      "componentSpecificationEn": "1008",
+      "describe": "150nH 580mA 700m\u03a9 Wire-wound inductor \u00b15% 1008 Power Inductors ROHS",
+      "canPresaleNumber": 1845
+    },
+    {
+      "componentCode": "C53514934",
+      "componentModelEn": "PIM303015DR15MBCA",
+      "componentBrandEn": "Huacui Micro",
+      "componentSpecificationEn": "SMD,3x3mm",
+      "describe": "11A 150nH 15A 5m\u03a9 \u00b120% SMD,3x3mm Power Inductors ROHS",
+      "canPresaleNumber": 3000
+    },
+    {
+      "componentCode": "C53514948",
+      "componentModelEn": "PIM303020DR15MBCA",
+      "componentBrandEn": "Huacui Micro",
+      "componentSpecificationEn": "SMD,3x3mm",
+      "describe": "12A 150nH 17A 4m\u03a9 \u00b120% SMD,3x3mm Power Inductors ROHS",
+      "canPresaleNumber": 3000
+    },
+    {
+      "componentCode": "C54123778",
+      "componentModelEn": "APH0840TR15MP",
+      "componentBrandEn": "APV",
+      "componentSpecificationEn": "SMD,8.8x8.2mm",
+      "describe": "1.65m\u03a9 150nH 33A 65A Magnetic Shielded Inductor \u00b120% SMD,8.8x8.2mm Power Inductors ROHS",
+      "canPresaleNumber": 790
+    },
+    {
+      "componentCode": "C54534246",
+      "componentModelEn": "HWC1005JR15D",
+      "componentBrandEn": "COILANK INTERNATIONAL",
+      "componentSpecificationEn": "0402",
+      "describe": "10@250MHz 150nH 1GHz 20mA 4\u03a9 Wire-wound inductor \u00b15% 0402 Inductors (SMD) ROHS",
+      "canPresaleNumber": 10343
+    },
+    {
+      "componentCode": "C54534302",
+      "componentModelEn": "HWC1608JR15D",
+      "componentBrandEn": "COILANK INTERNATIONAL",
+      "componentSpecificationEn": "0603",
+      "describe": "150nH 280mA 28@150MHz 920m\u03a9 990MHz Wire-wound inductor \u00b15% 0603 Inductors (SMD) ROHS",
+      "canPresaleNumber": 4266
+    },
+    {
+      "componentCode": "C54534364",
+      "componentModelEn": "HWC2012JR15D",
+      "componentBrandEn": "COILANK INTERNATIONAL",
+      "componentSpecificationEn": "0805",
+      "describe": "0805 Inductors (SMD) ROHS",
+      "canPresaleNumber": 500
+    },
+    {
+      "componentCode": "C54534423",
+      "componentModelEn": "HWC2520JR15D",
+      "componentBrandEn": "COILANK INTERNATIONAL",
+      "componentSpecificationEn": "1008",
+      "describe": "150nH 45@100MHz 580mA 700m\u03a9 850MHz Wire-wound inductor \u00b15% 1008 Inductors (SMD) ROHS",
+      "canPresaleNumber": 4130
+    },
+    {
+      "componentCode": "C54534572",
+      "componentModelEn": "AHWC1005JR15D",
+      "componentBrandEn": "COILANK INTERNATIONAL",
+      "componentSpecificationEn": "0402",
+      "describe": "10@250MHz 150nH 1GHz 20mA 4\u03a9 High-frequency inductor \u00b15% 0402 Inductors (SMD) ROHS",
+      "canPresaleNumber": 10390
+    },
+    {
+      "componentCode": "C54534628",
+      "componentModelEn": "AHWC1608JR15D",
+      "componentBrandEn": "COILANK INTERNATIONAL",
+      "componentSpecificationEn": "0603",
+      "describe": "0603 Inductors (SMD) ROHS",
+      "canPresaleNumber": 500
+    },
+    {
+      "componentCode": "C54534690",
+      "componentModelEn": "AHWC2012JR15D",
+      "componentBrandEn": "COILANK INTERNATIONAL",
+      "componentSpecificationEn": "0805",
+      "describe": "0805 Inductors (SMD) ROHS",
+      "canPresaleNumber": 495
+    },
+    {
+      "componentCode": "C54534749",
+      "componentModelEn": "AHWC2520JR15D",
+      "componentBrandEn": "COILANK INTERNATIONAL",
+      "componentSpecificationEn": "1008",
+      "describe": "150nH 45@100MHz 580mA 700m\u03a9 850MHz High-frequency inductor \u00b15% 1008 Inductors (SMD) ROHS",
+      "canPresaleNumber": 1839
+    },
+    {
+      "componentCode": "C54814996",
+      "componentModelEn": "VCMA-1040-R15-M-5A",
+      "componentBrandEn": "MAZO",
+      "componentSpecificationEn": "SMD,11.5x10mm",
+      "describe": "SMD,11.5x10mm Power Inductors ROHS",
+      "canPresaleNumber": 500
+    },
+    {
+      "componentCode": "C54815289",
+      "componentModelEn": "MATB-252012-R15-M-6A",
+      "componentBrandEn": "MAZO",
+      "componentSpecificationEn": "1008",
+      "describe": "1008 Power Inductors ROHS",
+      "canPresaleNumber": 3000
+    },
+    {
+      "componentCode": "C54951990",
+      "componentModelEn": "APGL1005-R15HETD9",
+      "componentBrandEn": "APV",
+      "componentSpecificationEn": "0402",
+      "describe": "150nH 160mA 3\u03a9 550MHz 8@100MHz Multilayer inductor \u00b13% 0402 Inductors (SMD) ROHS",
+      "canPresaleNumber": 10000
+    },
+    {
+      "componentCode": "C54952024",
+      "componentModelEn": "APGL1608-R15JETD9",
+      "componentBrandEn": "APV",
+      "componentSpecificationEn": "0603",
+      "describe": "1.6\u03a9 150nH 210mA 500MHz 8@50MHz Multilayer inductor \u00b15% 0603 Inductors (SMD) ROHS",
+      "canPresaleNumber": 3824
+    },
+    {
+      "componentCode": "C54952059",
+      "componentModelEn": "APGL2012-R15JETD9",
+      "componentBrandEn": "APV",
+      "componentSpecificationEn": "0805",
+      "describe": "1.2\u03a9 13@50MHz 150nH 310mA 550MHz Multilayer inductor \u00b15% 0805 Inductors (SMD) ROHS",
+      "canPresaleNumber": 3980
+    },
+    {
+      "componentCode": "C55067227",
+      "componentModelEn": "LQG1608HSR15JT",
+      "componentBrandEn": "Magnetsyc",
+      "componentSpecificationEn": "0603",
+      "describe": "1.6\u03a9 150nH 200mA 500MHz 8@50MHz \u00b15% 0603 Inductors (SMD) ROHS",
+      "canPresaleNumber": 3050
+    },
+    {
+      "componentCode": "C55829072",
+      "componentModelEn": "HBE120611-R15L-R125-2D",
+      "componentBrandEn": "YOUCHI",
+      "componentSpecificationEn": "SMD-4P,11.7x5.8mm",
+      "describe": "SMD-4P,11.7x5.8mm Power Inductors ROHS",
+      "canPresaleNumber": 100
+    },
+    {
+      "componentCode": "C49208900",
+      "componentModelEn": "GDSIHH070705-R15L-R26",
+      "componentBrandEn": "GUDIAN",
+      "componentSpecificationEn": "SMD,7x6.6mm",
+      "describe": "0.26m\u03a9 150nH 30A 33A \u00b115% SMD,7x6.6mm Power Inductors ROHS",
+      "canPresaleNumber": 0
+    },
+    {
+      "componentCode": "C49437834",
+      "componentModelEn": "TLVR090610LR15HC",
+      "componentBrandEn": "COILANK INTERNATIONAL",
+      "componentSpecificationEn": "SMD,9.3x6.1mm",
+      "describe": "0.125m\u03a9\u30010.33m\u03a9 150nH 40A\u300175A 67A \u00b115% SMD,9.3x6.1mm Power Inductors ROHS",
+      "canPresaleNumber": 0
+    },
+    {
+      "componentCode": "C49437848",
+      "componentModelEn": "TLVR120611LR15HC",
+      "componentBrandEn": "COILANK INTERNATIONAL",
+      "componentSpecificationEn": "SMD,11.7x5.7mm",
+      "describe": "0.125m\u03a9\u30010.37m\u03a9 150nH 45A\u300177A 71A\u300184A \u00b115% SMD,11.7x5.7mm Power Inductors ROHS",
+      "canPresaleNumber": 0
+    },
+    {
+      "componentCode": "C128680",
+      "componentModelEn": "SMMS0630-R15M",
+      "componentBrandEn": "SXN(Shun Xiang Nuo Elec)",
+      "componentSpecificationEn": "SMD,7.3x6.6mm",
+      "describe": "150nH 2.03m\u03a9 30A 41A Molded Inductor \u00b120% SMD,7.3x6.6mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 258
+    },
+    {
+      "componentCode": "C285799",
+      "componentModelEn": "MHCB06040-R15M-C1R667",
+      "componentBrandEn": "Chilisin Elec",
+      "componentSpecificationEn": "SMD",
+      "describe": "0.63m\u03a9 150nH 36A 45A Molded Inductor \u00b120% SMD Molding Power Inductors ROHS",
+      "canPresaleNumber": 954
+    },
+    {
+      "componentCode": "C524577",
+      "componentModelEn": "FXL0412-R15-M",
+      "componentBrandEn": "cjiang (Changjiang Microelectronics Tech)",
+      "componentSpecificationEn": "SMD,4.4x4.2mm",
+      "describe": "150nH 15A 7.5A 9m\u03a9 Molded inductor \u00b120% SMD,4.4x4.2mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 27
+    },
+    {
+      "componentCode": "C524611",
+      "componentModelEn": "FXL1040-R15-M",
+      "componentBrandEn": "cjiang (Changjiang Microelectronics Tech)",
+      "componentSpecificationEn": "SMD,11.5x10mm",
+      "describe": "0.65m\u03a9 150nH 45A 75A Molded inductor \u00b120% SMD,11.5x10mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 378
+    },
+    {
+      "componentCode": "C711193",
+      "componentModelEn": "NFL18ZT107H1A3D",
+      "componentBrandEn": "Murata Electronics",
+      "componentSpecificationEn": "SMD-3P,1.6x0.8mm",
+      "describe": "-55\u2103~+125\u2103 1 100MHz 10V 150nH 3 30dB@1000MHz 50pF 75mA No SMD-3P,1.6x0.8mm EMI/RFI Filters (LC, RC Networks) ROHS",
+      "canPresaleNumber": 5
+    },
+    {
+      "componentCode": "C2044394",
+      "componentModelEn": "CW252016-R15J",
+      "componentBrandEn": "BOURNS",
+      "componentSpecificationEn": "1008",
+      "describe": "150nH 580mA 700m\u03a9 Flat-wire molded inductor \u00b15% 1008 Molding Power Inductors ROHS",
+      "canPresaleNumber": 100
+    },
+    {
+      "componentCode": "C2918922",
+      "componentModelEn": "0518CDMCCDS-R15MC",
+      "componentBrandEn": "Sumida",
+      "componentSpecificationEn": "2220",
+      "describe": "150nH 19A 24A 3.6m\u03a9 Molded Inductor \u00b120% 2220 Molding Power Inductors ROHS",
+      "canPresaleNumber": 1699
+    },
+    {
+      "componentCode": "C2918930",
+      "componentModelEn": "0624CDMCCDS-R15MC",
+      "componentBrandEn": "Sumida",
+      "componentSpecificationEn": "2726",
+      "describe": "1.08m\u03a9 150nH 35A 38A Molded Inductor \u00b120% 2726 Molding Power Inductors ROHS",
+      "canPresaleNumber": 6002
+    },
+    {
+      "componentCode": "C2961891",
+      "componentModelEn": "0630CDMCCDS-R15MC",
+      "componentBrandEn": "Sumida",
+      "componentSpecificationEn": "SMD,7x6.6mm",
+      "describe": "1.14m\u03a9 150nH 34.4A 35A Molded Inductor \u00b120% SMD,7x6.6mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 82
+    },
+    {
+      "componentCode": "C5298173",
+      "componentModelEn": "FAUL1040-R15MT",
+      "componentBrandEn": "cjiang (Changjiang Microelectronics Tech)",
+      "componentSpecificationEn": "SMD,11x10mm",
+      "describe": "0.65m\u03a9 150nH 45A 75A \u00b120% SMD,11x10mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 357
+    },
+    {
+      "componentCode": "C5307661",
+      "componentModelEn": "XR1040-R15M",
+      "componentBrandEn": "XR",
+      "componentSpecificationEn": "SMD,11.5x10mm",
+      "describe": "0.65m\u03a9 150nH 45A 75A Molded Inductor \u00b120% SMD,11.5x10mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 78
+    },
+    {
+      "componentCode": "C5339400",
+      "componentModelEn": "XR0412-R15M",
+      "componentBrandEn": "XR",
+      "componentSpecificationEn": "SMD,4.4x4.2mm",
+      "describe": "150nH 15A 7.5A 9m\u03a9 Molded Inductor \u00b120% SMD,4.4x4.2mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 200
+    },
+    {
+      "componentCode": "C5378488",
+      "componentModelEn": "FEXL0520A-R15M",
+      "componentBrandEn": "cjiang (Changjiang Microelectronics Tech)",
+      "componentSpecificationEn": "SMD,5.5x5.3mm",
+      "describe": "150nH 18.8A 30A 4.6m\u03a9 \u00b120% SMD,5.5x5.3mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 32
+    },
+    {
+      "componentCode": "C5378499",
+      "componentModelEn": "FEXL0530A-R15M",
+      "componentBrandEn": "cjiang (Changjiang Microelectronics Tech)",
+      "componentSpecificationEn": "SMD,5.5x5.3mm",
+      "describe": "150nH 2.31m\u03a9 22.2A 36A \u00b120% SMD,5.5x5.3mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 733
+    },
+    {
+      "componentCode": "C5632448",
+      "componentModelEn": "SMTC0530A-R15MT",
+      "componentBrandEn": "SXN(Shun Xiang Nuo Elec)",
+      "componentSpecificationEn": "SMD,5.5x5.3mm",
+      "describe": "150nH 2.31m\u03a9 22.2A 36A \u00b120% \u4e00\u4f53\u6210\u578b\u7535\u611f SMD,5.5x5.3mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 55
+    },
+    {
+      "componentCode": "C5832336",
+      "componentModelEn": "FTC201610SR15MBCA",
+      "componentBrandEn": "cjiang (Changjiang Microelectronics Tech)",
+      "componentSpecificationEn": "SMD,1.6x2mm",
+      "describe": "150nH 7.6A 8.7A 8m\u03a9 \u00b120% SMD,1.6x2mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 2640
+    },
+    {
+      "componentCode": "C5832364",
+      "componentModelEn": "FTC252012SR15MBCA",
+      "componentBrandEn": "cjiang (Changjiang Microelectronics Tech)",
+      "componentSpecificationEn": "1008",
+      "describe": "11.5A 13A 150nH 7m\u03a9 \u00b120% 1008 Molding Power Inductors ROHS",
+      "canPresaleNumber": 127
+    },
+    {
+      "componentCode": "C7588934",
+      "componentModelEn": "CMPI0630-R15N",
+      "componentBrandEn": "Ceaiya",
+      "componentSpecificationEn": "SMD,7.1x6.6mm",
+      "describe": "150nH 2.5m\u03a9 25A 38A Molded Inductor \u00b130% SMD,7.1x6.6mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 1445
+    },
+    {
+      "componentCode": "C17273980",
+      "componentModelEn": "750310617",
+      "componentBrandEn": "Wurth Elektronik",
+      "componentSpecificationEn": "SMD,P=3mm",
+      "describe": "1 1.5kV 150nH 1:1.16:1.16 2 4.5uH 9~36V \u00b110% SMD,P=3mm Power Transformers ROHS",
+      "canPresaleNumber": 45
+    },
+    {
+      "componentCode": "C17289430",
+      "componentModelEn": "PA3856.005NLT",
+      "componentBrandEn": "Pulse Elec",
+      "componentSpecificationEn": "SMD-10P,17.7x14.5mm",
+      "describe": "128uH 14mm 150nH 2 2 2.25kV 3.5A 5V 9~57V \u00b115% SMD-10P,17.7x14.5mm Power Transformers ROHS",
+      "canPresaleNumber": 252
+    },
+    {
+      "componentCode": "C17347050",
+      "componentModelEn": "PA5131.005NLT",
+      "componentBrandEn": "Pulse Elec",
+      "componentSpecificationEn": "-",
+      "describe": "1 13uH 15.5mm 150nH 1:1:2:1 2.25kV 50mA\u30013.5A 5V\u300110V 9V~57V Three channels \u00b110% - Power Transformers ROHS",
+      "canPresaleNumber": 50
+    },
+    {
+      "componentCode": "C17566687",
+      "componentModelEn": "PM9595NLT",
+      "componentBrandEn": "Pulse Elec",
+      "componentSpecificationEn": "SMD",
+      "describe": "-5.5V\u300120V 0.12A 1 12V 150nH 4.3kV Single, Multi-tap \u00b117% SMD Power Transformers ROHS",
+      "canPresaleNumber": 8
+    },
+    {
+      "componentCode": "C17700156",
+      "componentModelEn": "MWSA0804S-R15MT",
+      "componentBrandEn": "Sunlord",
+      "componentSpecificationEn": "SMD,8.8x8.2mm",
+      "describe": "1.65m\u03a9 150nH 39A 70A \u00b120% SMD,8.8x8.2mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 801
+    },
+    {
+      "componentCode": "C18236234",
+      "componentModelEn": "YSPIT0530A-R15M",
+      "componentBrandEn": "YJYCOIN",
+      "componentSpecificationEn": "SMD,5.5x5.3mm",
+      "describe": "150nH 2.4m\u03a9 22.2A 36A Molded Inductor \u00b120% SMD,5.5x5.3mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 1439
+    },
+    {
+      "componentCode": "C18724416",
+      "componentModelEn": "FTC201612SR15MBCA",
+      "componentBrandEn": "cjiang (Changjiang Microelectronics Tech)",
+      "componentSpecificationEn": "SMD,1.6x2mm",
+      "describe": "10A 10m\u03a9 12A 150nH \u00b120% SMD,1.6x2mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 936
+    },
+    {
+      "componentCode": "C19188673",
+      "componentModelEn": "YSPIT0520A-R15M",
+      "componentBrandEn": "YJYCOIN",
+      "componentSpecificationEn": "SMD,5.5x5.3mm",
+      "describe": "150nH 18.8A 30A 4.6m\u03a9 Molded Inductor \u00b120% SMD,5.5x5.3mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 987
+    },
+    {
+      "componentCode": "C19630749",
+      "componentModelEn": "YSPI105840TP-R15M",
+      "componentBrandEn": "YJYCOIN",
+      "componentSpecificationEn": "SMD,10.2x5.6mm",
+      "describe": "0.57m\u03a9 150nH 45A 90A Molded Inductor \u00b120% SMD,10.2x5.6mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 897
+    },
+    {
+      "componentCode": "C20611015",
+      "componentModelEn": "FCH0630-R15M",
+      "componentBrandEn": "FANGCHENG",
+      "componentSpecificationEn": "SMD,7.5x6.8mm",
+      "describe": "0.7m\u03a9 150nH 25A 28A \u00b120% SMD,7.5x6.8mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 2872
+    },
+    {
+      "componentCode": "C39846829",
+      "componentModelEn": "XRTC303020DR15MBCA",
+      "componentBrandEn": "XR",
+      "componentSpecificationEn": "SMD,3x3mm",
+      "describe": "13A 150nH 18A 4m\u03a9 \u00b120% \u4e00\u4f53\u6210\u578b\u7535\u611f SMD,3x3mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 825
+    },
+    {
+      "componentCode": "C41384226",
+      "componentModelEn": "FPIB130840-R15M-XA",
+      "componentBrandEn": "cjiang (Changjiang Microelectronics Tech)",
+      "componentSpecificationEn": "SMD,12.8x8mm",
+      "describe": "SMD,12.8x8mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 1560
+    },
+    {
+      "componentCode": "C41405856",
+      "componentModelEn": "YSMC201208H-R15MB",
+      "componentBrandEn": "YJYCOIN",
+      "componentSpecificationEn": "0805",
+      "describe": "11m\u03a9 150nH 6.3A 7A Molded Inductor \u00b120% 0805 Molding Power Inductors ROHS",
+      "canPresaleNumber": 2219
+    },
+    {
+      "componentCode": "C48689493",
+      "componentModelEn": "SRTC.252012.YBR15MT00",
+      "componentBrandEn": "SOREDE",
+      "componentSpecificationEn": "1008",
+      "describe": "10A 11m\u03a9 12A 150nH Molded Inductor \u00b120% 1008 Molding Power Inductors ROHS",
+      "canPresaleNumber": 2960
+    },
+    {
+      "componentCode": "C48888132",
+      "componentModelEn": "FTC201208SR15MBCA",
+      "componentBrandEn": "cjiang (Changjiang Microelectronics Tech)",
+      "componentSpecificationEn": "0805",
+      "describe": "11m\u03a9 150nH 6.8A 7.5A \u00b120% 0805 Molding Power Inductors ROHS",
+      "canPresaleNumber": 160
+    },
+    {
+      "componentCode": "C48888321",
+      "componentModelEn": "FTC303015DR15MBCA",
+      "componentBrandEn": "cjiang (Changjiang Microelectronics Tech)",
+      "componentSpecificationEn": "SMD,3x3mm",
+      "describe": "12A 150nH 16A 5m\u03a9 \u00b120% SMD,3x3mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 175
+    },
+    {
+      "componentCode": "C48888330",
+      "componentModelEn": "FTC303020DR15MBCA",
+      "componentBrandEn": "cjiang (Changjiang Microelectronics Tech)",
+      "componentSpecificationEn": "SMD,3x3mm",
+      "describe": "13A 150nH 18A 4m\u03a9 \u00b120% SMD,3x3mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 5
+    },
+    {
+      "componentCode": "C48945486",
+      "componentModelEn": "ZETC201610S-R15MT-LF",
+      "componentBrandEn": "ZE",
+      "componentSpecificationEn": "0806",
+      "describe": "150nH 7.8A 8.9A 8m\u03a9 Molded Inductor \u00b120% 0806 Molding Power Inductors ROHS",
+      "canPresaleNumber": 500
+    },
+    {
+      "componentCode": "C48945487",
+      "componentModelEn": "ZEPIM201610S-R15M",
+      "componentBrandEn": "ZE",
+      "componentSpecificationEn": "0806",
+      "describe": "0806 Molding Power Inductors ROHS",
+      "canPresaleNumber": 500
+    },
+    {
+      "componentCode": "C48945488",
+      "componentModelEn": "ZET-CORE-201610STR15MBCA",
+      "componentBrandEn": "ZE",
+      "componentSpecificationEn": "0806",
+      "describe": "150nH 7.8A 8.9A 8m\u03a9 Molded Inductor \u00b120% 0806 Molding Power Inductors ROHS",
+      "canPresaleNumber": 3000
+    },
+    {
+      "componentCode": "C48945489",
+      "componentModelEn": "ZEPIM201610TR15MLF",
+      "componentBrandEn": "ZE",
+      "componentSpecificationEn": "0806",
+      "describe": "0806 Molding Power Inductors ROHS",
+      "canPresaleNumber": 500
+    },
+    {
+      "componentCode": "C48945490",
+      "componentModelEn": "ZETC201610SR15MBT-LF",
+      "componentBrandEn": "ZE",
+      "componentSpecificationEn": "0806",
+      "describe": "150nH 7.8A 8.9A 8m\u03a9 Molded Inductor \u00b120% 0806 Molding Power Inductors ROHS",
+      "canPresaleNumber": 500
+    },
+    {
+      "componentCode": "C48945491",
+      "componentModelEn": "ZEMS201610-R15M",
+      "componentBrandEn": "ZE",
+      "componentSpecificationEn": "0806",
+      "describe": "0806 Molding Power Inductors ROHS",
+      "canPresaleNumber": 500
+    },
+    {
+      "componentCode": "C49140784",
+      "componentModelEn": "YSPI0724T-R15M",
+      "componentBrandEn": "YJYCOIN",
+      "componentSpecificationEn": "SMD,7.3x6.6mm",
+      "describe": "150nH 2.3m\u03a9 30A 45A Molded Inductor \u00b120% SMD,7.3x6.6mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 966
+    },
+    {
+      "componentCode": "C49140869",
+      "componentModelEn": "YSPI1040T-R15M",
+      "componentBrandEn": "YJYCOIN",
+      "componentSpecificationEn": "SMD,11x10mm",
+      "describe": "0.65m\u03a9 150nH 48A 90A Molded Inductor \u00b120% SMD,11x10mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 463
+    },
+    {
+      "componentCode": "C49190092",
+      "componentModelEn": "HCTC-201610-R15-M",
+      "componentBrandEn": "YOUCHI",
+      "componentSpecificationEn": "0806",
+      "describe": "150nH 7.6A 8.7A 8m\u03a9 Molded Inductor 0806 Molding Power Inductors ROHS",
+      "canPresaleNumber": 2980
+    },
+    {
+      "componentCode": "C49190108",
+      "componentModelEn": "HCTC-252010-R15-M",
+      "componentBrandEn": "YOUCHI",
+      "componentSpecificationEn": "1008",
+      "describe": "10.5A 150nH 7m\u03a9 9.5A Molded Inductor \u00b120% 1008 Molding Power Inductors ROHS",
+      "canPresaleNumber": 2960
+    },
+    {
+      "componentCode": "C49232840",
+      "componentModelEn": "FEXU0420SR15MBH",
+      "componentBrandEn": "cjiang (Changjiang Microelectronics Tech)",
+      "componentSpecificationEn": "SMD,4.1x4.1mm",
+      "describe": "1.8m\u03a9 150nH 28.5A 28A Molded inductor \u00b120% SMD,4.1x4.1mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 907
+    },
+    {
+      "componentCode": "C49232859",
+      "componentModelEn": "FEXU0530SR15MGS",
+      "componentBrandEn": "cjiang (Changjiang Microelectronics Tech)",
+      "componentSpecificationEn": "SMD,5.2x5mm",
+      "describe": "1.05m\u03a9 150nH 25A 43A Molded inductor \u00b120% SMD,5.2x5mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 1856
+    },
+    {
+      "componentCode": "C49237916",
+      "componentModelEn": "GDIM0530-R15S1MTF-0R95",
+      "componentBrandEn": "GUDIAN",
+      "componentSpecificationEn": "SMD,5.8x5.2mm",
+      "describe": "0.95m\u03a9 150nH 35A 41A Molded Inductor \u00b120% SMD,5.8x5.2mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 1790
+    },
+    {
+      "componentCode": "C49237925",
+      "componentModelEn": "GDIM0630-R15S1MTF-0R67",
+      "componentBrandEn": "GUDIAN",
+      "componentSpecificationEn": "SMD,7.5x6.6mm",
+      "describe": "0.67m\u03a9 150nH 45A 60A Molded Inductor \u00b15% SMD,7.5x6.6mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 1050
+    },
+    {
+      "componentCode": "C49237926",
+      "componentModelEn": "GDIM0630-R15S1MTF-0R72",
+      "componentBrandEn": "GUDIAN",
+      "componentSpecificationEn": "SMD,7.5x6.6mm",
+      "describe": "0.72m\u03a9 150nH 43A 60A Molded Inductor \u00b15% SMD,7.5x6.6mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 825
+    },
+    {
+      "componentCode": "C49237927",
+      "componentModelEn": "GDIM0630-R15S1MTF-0R93",
+      "componentBrandEn": "GUDIAN",
+      "componentSpecificationEn": "SMD,7.5x6.6mm",
+      "describe": "0.93m\u03a9 150nH 37A 44A Molded Inductor \u00b15% SMD,7.5x6.6mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 1500
+    },
+    {
+      "componentCode": "C49237931",
+      "componentModelEn": "GDIM0640-R15S1MTF-0R71",
+      "componentBrandEn": "GUDIAN",
+      "componentSpecificationEn": "SMD,7.5x6.6mm",
+      "describe": "0.71m\u03a9 150nH 45A 90A Molded Inductor \u00b120% SMD,7.5x6.6mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 951
+    },
+    {
+      "componentCode": "C49237934",
+      "componentModelEn": "GDIM1040-R15MTF-0R45",
+      "componentBrandEn": "GUDIAN",
+      "componentSpecificationEn": "SMD,11.5x10mm",
+      "describe": "0.58m\u03a9 150nH 40A 75A \u00b120% SMD,11.5x10mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 800
+    },
+    {
+      "componentCode": "C49237950",
+      "componentModelEn": "GDIM105804-R15S1MTF-0R6",
+      "componentBrandEn": "GUDIAN",
+      "componentSpecificationEn": "SMD,10.5x5.8mm",
+      "describe": "0.6m\u03a9 100A 150nH 45A Molded Inductor \u00b120% SMD,10.5x5.8mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 957
+    },
+    {
+      "componentCode": "C49237952",
+      "componentModelEn": "GDIM106550-R15S1MTF-0R46",
+      "componentBrandEn": "GUDIAN",
+      "componentSpecificationEn": "SMD,10.5x6.5mm",
+      "describe": "0.46m\u03a9 100A 150nH 60A \u00b120% SMD,10.5x6.5mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 905
+    },
+    {
+      "componentCode": "C49237958",
+      "componentModelEn": "GDIM107050-R15S1MTF-0R58",
+      "componentBrandEn": "GUDIAN",
+      "componentSpecificationEn": "SMD,10.1x7mm",
+      "describe": "0.58m\u03a9 150nH 42A 90A \u00b120% SMD,10.1x7mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 1000
+    },
+    {
+      "componentCode": "C49237959",
+      "componentModelEn": "GDIM107050-R15S1MTF-0R46",
+      "componentBrandEn": "GUDIAN",
+      "componentSpecificationEn": "SMD,10.1x7mm",
+      "describe": "0.46m\u03a9 150nH 45A 95A \u00b120% SMD,10.1x7mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 1000
+    },
+    {
+      "componentCode": "C49237960",
+      "componentModelEn": "GDIM107050-R15S1MTF-0R37",
+      "componentBrandEn": "GUDIAN",
+      "componentSpecificationEn": "SMD,10.1x7mm",
+      "describe": "0.37m\u03a9 110A 150nH 55A Molded Inductor \u00b15% SMD,10.1x7mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 552
+    },
+    {
+      "componentCode": "C49237968",
+      "componentModelEn": "GDIM107075-R15MTF-0R5",
+      "componentBrandEn": "GUDIAN",
+      "componentSpecificationEn": "SMD,11x7mm",
+      "describe": "0.5m\u03a9 150nH 42A 70A \u00b120% SMD,11x7mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 700
+    },
+    {
+      "componentCode": "C49237971",
+      "componentModelEn": "GDIM108775-R15MTF-0R4",
+      "componentBrandEn": "GUDIAN",
+      "componentSpecificationEn": "SMD,11.5x8.8mm",
+      "describe": "0.4m\u03a9 100A 150nH 50A Molded Inductor \u00b120% SMD,11.5x8.8mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 325
+    },
+    {
+      "componentCode": "C49237974",
+      "componentModelEn": "GDIM1284-R15S1MTF-0R4",
+      "componentBrandEn": "GUDIAN",
+      "componentSpecificationEn": "SMD,12.9x8.1mm",
+      "describe": "100A 150nH 400m\u03a9 50A Molded Inductor \u00b120% SMD,12.9x8.1mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 369
+    },
+    {
+      "componentCode": "C49328927",
+      "componentModelEn": "MSM252012-R15M",
+      "componentBrandEn": "COILMX",
+      "componentSpecificationEn": "SMD,2.5x2mm",
+      "describe": "10A 11m\u03a9 12A 150nH Molded inductor \u00b120% SMD,2.5x2mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 2980
+    },
+    {
+      "componentCode": "C49340331",
+      "componentModelEn": "ZBJ201610SR15MBCA",
+      "componentBrandEn": "DMBJ",
+      "componentSpecificationEn": "0806",
+      "describe": "150nH 7A 8A 8m\u03a9 Molded Inductor \u00b120% 0806 Molding Power Inductors ROHS",
+      "canPresaleNumber": 2950
+    },
+    {
+      "componentCode": "C49340346",
+      "componentModelEn": "ZBJ252012SR15MBCA",
+      "componentBrandEn": "DMBJ",
+      "componentSpecificationEn": "1008",
+      "describe": "10A 12A 150nH 7m\u03a9 Molded Inductor \u00b120% 1008 Molding Power Inductors ROHS",
+      "canPresaleNumber": 2990
+    },
+    {
+      "componentCode": "C49383083",
+      "componentModelEn": "HCMA-0520-R15-M",
+      "componentBrandEn": "YOUCHI",
+      "componentSpecificationEn": "SMD",
+      "describe": "13A 150nH 16A 4m\u03a9 Molded Inductor \u00b120% SMD Molding Power Inductors ROHS",
+      "canPresaleNumber": 1435
+    },
+    {
+      "componentCode": "C50086654",
+      "componentModelEn": "YSPI0740S-R15MD",
+      "componentBrandEn": "YJYCOIN",
+      "componentSpecificationEn": "SMD,7x6.6mm",
+      "describe": "0.66m\u03a9 150nH 40A 50A \u00b120% SMD,7x6.6mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 602
+    },
+    {
+      "componentCode": "C50086674",
+      "componentModelEn": "YSPI1040S-R15M",
+      "componentBrandEn": "YJYCOIN",
+      "componentSpecificationEn": "SMD,11.5x10mm",
+      "describe": "0.65m\u03a9 150nH 45A 75A Molded Inductor \u00b120% SMD,11.5x10mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 499
+    },
+    {
+      "componentCode": "C51484054",
+      "componentModelEn": "XRFWHP0530G-R15M",
+      "componentBrandEn": "XR",
+      "componentSpecificationEn": "SMD,5.2x5mm",
+      "describe": "1.05m\u03a9 150nH 25A 43A \u00b120% SMD,5.2x5mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 118
+    },
+    {
+      "componentCode": "C51901151",
+      "componentModelEn": "HCMA-0630-R15-M-K",
+      "componentBrandEn": "YOUCHI",
+      "componentSpecificationEn": "SMD,7.3x6.6mm",
+      "describe": "0.9m\u03a9 150nH 38A 45A \u00b120% \u4e00\u4f53\u6210\u578b\u7535\u611f SMD,7.3x6.6mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 16273
+    },
+    {
+      "componentCode": "C51901997",
+      "componentModelEn": "MTQH303020DR15MBT",
+      "componentBrandEn": "MetalLions",
+      "componentSpecificationEn": "SMD,3x3mm",
+      "describe": "SMD,3x3mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 470
+    },
+    {
+      "componentCode": "C51902009",
+      "componentModelEn": "MTQH505012SR15MGT",
+      "componentBrandEn": "MetalLions",
+      "componentSpecificationEn": "SMD,5.2x5mm",
+      "describe": "SMD,5.2x5mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 170
+    },
+    {
+      "componentCode": "C51902011",
+      "componentModelEn": "MTQH505030SR15MGT",
+      "componentBrandEn": "MetalLions",
+      "componentSpecificationEn": "SMD,5.2x5mm",
+      "describe": "SMD,5.2x5mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 494
+    },
+    {
+      "componentCode": "C52128606",
+      "componentModelEn": "HCMA-0640-R15-M",
+      "componentBrandEn": "YOUCHI",
+      "componentSpecificationEn": "SMD,7.1x6.6mm",
+      "describe": "0.7m\u03a9 150nH 45A 50A Molded Inductor \u00b120% SMD,7.1x6.6mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 580
+    },
+    {
+      "componentCode": "C52128612",
+      "componentModelEn": "HCMC-0624-R15-M",
+      "componentBrandEn": "YOUCHI",
+      "componentSpecificationEn": "SMD,7x6.6mm",
+      "describe": "0.9m\u03a9 150nH 37A 47A Molded Inductor \u00b120% SMD,7x6.6mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 800
+    },
+    {
+      "componentCode": "C52195072",
+      "componentModelEn": "HCMA-0830-R15-M",
+      "componentBrandEn": "YOUCHI",
+      "componentSpecificationEn": "SMD,8.7x7mm",
+      "describe": "0.66m\u03a9 150nH 29A 40A Molded Inductor \u00b120% SMD,8.7x7mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 1000
+    },
+    {
+      "componentCode": "C53145242",
+      "componentModelEn": "FTC322520SR15MBCA",
+      "componentBrandEn": "cjiang (Changjiang Microelectronics Tech)",
+      "componentSpecificationEn": "1210",
+      "describe": "14A 150nH 20A 5m\u03a9 \u00b120% 1210 Molding Power Inductors ROHS",
+      "canPresaleNumber": 410
+    },
+    {
+      "componentCode": "C53154586",
+      "componentModelEn": "APS0412MR15A",
+      "componentBrandEn": "COILANK INTERNATIONAL",
+      "componentSpecificationEn": "SMD,4.8x4.2mm",
+      "describe": "15.16A 150nH 7.57A 8.9m\u03a9 Molded Inductor \u00b120% SMD,4.8x4.2mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 200
+    },
+    {
+      "componentCode": "C53154587",
+      "componentModelEn": "AAPS0412MR15A",
+      "componentBrandEn": "COILANK INTERNATIONAL",
+      "componentSpecificationEn": "SMD,4.8x4.2mm",
+      "describe": "15.16A 150nH 7.57A 8.9m\u03a9 Molded Inductor \u00b120% SMD,4.8x4.2mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 195
+    },
+    {
+      "componentCode": "C53281620",
+      "componentModelEn": "FTC252010SR15MBCA",
+      "componentBrandEn": "cjiang (Changjiang Microelectronics Tech)",
+      "componentSpecificationEn": "1008",
+      "describe": "10.5A 150nH 9.5A 9m\u03a9 \u00b120% 1008 Molding Power Inductors ROHS",
+      "canPresaleNumber": 2900
+    },
+    {
+      "componentCode": "C53285294",
+      "componentModelEn": "FTC252012SR15MBCD",
+      "componentBrandEn": "cjiang (Changjiang Microelectronics Tech)",
+      "componentSpecificationEn": "1008",
+      "describe": "11.5A 13A 150nH 7m\u03a9 \u00b120% 1008 Molding Power Inductors ROHS",
+      "canPresaleNumber": 1960
+    },
+    {
+      "componentCode": "C53368462",
+      "componentModelEn": "MTQH201208SR15MBT",
+      "componentBrandEn": "MetalLions",
+      "componentSpecificationEn": "0805",
+      "describe": "11m\u03a9 150nH 6.8A 7.5A \u00b120% 0805 Molding Power Inductors ROHS",
+      "canPresaleNumber": 200
+    },
+    {
+      "componentCode": "C53368491",
+      "componentModelEn": "MTQH252010SR15MBT",
+      "componentBrandEn": "MetalLions",
+      "componentSpecificationEn": "1008",
+      "describe": "10.5A 150nH 7m\u03a9 9.5A \u00b120% 1008 Molding Power Inductors ROHS",
+      "canPresaleNumber": 200
+    },
+    {
+      "componentCode": "C53436325",
+      "componentModelEn": "FTC141265SR15MBCA",
+      "componentBrandEn": "cjiang (Changjiang Microelectronics Tech)",
+      "componentSpecificationEn": "SMD,1.4x1.2mm",
+      "describe": "SMD,1.4x1.2mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 1385
+    },
+    {
+      "componentCode": "C54123614",
+      "componentModelEn": "AWLU0530F-R15MGA",
+      "componentBrandEn": "APV",
+      "componentSpecificationEn": "SMD,5.2x5mm",
+      "describe": "1.05m\u03a9 150nH 24A 41A Molded Inductor \u00b120% SMD,5.2x5mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 300
+    },
+    {
+      "componentCode": "C54123626",
+      "componentModelEn": "AWLU0420F-R15MPA",
+      "componentBrandEn": "APV",
+      "componentSpecificationEn": "SMD,4.1x4.1mm",
+      "describe": "1.8m\u03a9 150nH 24A 25.5A Molded Inductor \u00b120% SMD,4.1x4.1mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 258
+    },
+    {
+      "componentCode": "C54140009",
+      "componentModelEn": "FEXU5324SR15MGS",
+      "componentBrandEn": "cjiang (Changjiang Microelectronics Tech)",
+      "componentSpecificationEn": "SMD,5.5x5.3mm",
+      "describe": "0.95m\u03a9 150nH 27A 45A \u00b120% SMD,5.5x5.3mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 200
+    },
+    {
+      "componentCode": "C54140033",
+      "componentModelEn": "FEXU0512SR15MGS",
+      "componentBrandEn": "cjiang (Changjiang Microelectronics Tech)",
+      "componentSpecificationEn": "SMD,5.2x5mm",
+      "describe": "150nH 17A 30A 4.2m\u03a9 \u00b120% SMD,5.2x5mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 200
+    },
+    {
+      "componentCode": "C54620198",
+      "componentModelEn": "APH1040TR15M",
+      "componentBrandEn": "APV",
+      "componentSpecificationEn": "SMD,11x10mm",
+      "describe": "0.65m\u03a9 150nH 40.75A 62.25A \u00b120% \u4e00\u4f53\u6210\u578b\u7535\u611f SMD,11x10mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 500
+    },
+    {
+      "componentCode": "C54620217",
+      "componentModelEn": "APH0630TR15M",
+      "componentBrandEn": "APV",
+      "componentSpecificationEn": "SMD,7x6.6mm",
+      "describe": "150nH 2.4m\u03a9 25A 35A \u00b120% \u4e00\u4f53\u6210\u578b\u7535\u611f SMD,7x6.6mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 1000
+    },
+    {
+      "componentCode": "C54620246",
+      "componentModelEn": "APH0412TR15M",
+      "componentBrandEn": "APV",
+      "componentSpecificationEn": "SMD,4.4x4.2mm",
+      "describe": "12.45A 150nH 6.91A 9m\u03a9 Molded Inductor \u00b120% SMD,4.4x4.2mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 1500
+    },
+    {
+      "componentCode": "C54623439",
+      "componentModelEn": "APZBX1040MR15",
+      "componentBrandEn": "COILANK INTERNATIONAL",
+      "componentSpecificationEn": "SMD,10.5x10.2mm",
+      "describe": "0.64m\u03a9 150nH 25A 60A Molded Inductor \u00b120% SMD,10.5x10.2mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 20
+    },
+    {
+      "componentCode": "C54777987",
+      "componentModelEn": "FEXU6420SR15MGS",
+      "componentBrandEn": "cjiang (Changjiang Microelectronics Tech)",
+      "componentSpecificationEn": "SMD,6.6x6.4mm",
+      "describe": "1.3m\u03a9 150nH 37A 43A \u00b120% SMD,6.6x6.4mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 25
+    },
+    {
+      "componentCode": "C55138111",
+      "componentModelEn": "HCTC-303015-R15-M",
+      "componentBrandEn": "YOUCHI",
+      "componentSpecificationEn": "SMD,3x3mm",
+      "describe": "12A 150nH 16A 5m\u03a9 Shielded Inductor \u00b120% SMD,3x3mm Molding Power Inductors ROHS",
+      "canPresaleNumber": 2994
+    }
+  ]
+}

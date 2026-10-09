@@ -15,6 +15,7 @@ import shutil
 import subprocess
 import tempfile
 import zipfile
+from datetime import datetime, timezone
 from pathlib import Path
 import pcbnew as k
 
@@ -34,6 +35,18 @@ def main():
     assert spec['via_covering'].startswith('Epoxy filled and copper capped')
     from check_nfc_rev_a import audit as nfc_audit
     assert nfc_audit()['passed'], 'Refusing export with changed NFC geometry or process'
+    readiness = json.loads((ROOT/'docs/assembly/readiness.json').read_text())
+    assert readiness['boards']==spec['boards'] and not readiness['shortages']
+    for name,digest in readiness['inputs_sha256'].items():
+        assert sha(ROOT/name)==digest, 'Stale assembly readiness: '+name
+    stock = json.loads((ROOT/'docs/assembly/jlc-stock-snapshot.json').read_text())
+    now = datetime.now(timezone.utc)
+    assert all(0 <= (now-datetime.fromisoformat(p['retrieved_at'])).total_seconds()<86400
+               for p in stock['parts'].values()), 'Refresh all inventory observations (24h maximum age)'
+    qualification = json.loads((ROOT/'docs/components/substitutions-2026-10-09/rf-qualification.json').read_text())
+    assert qualification['passed'], 'RF replacement did not meet documented screening limits'
+    for name,digest in qualification['source_sha256'].items():
+        assert sha(ROOT/name)==digest, 'Stale RF replacement qualification: '+name
     check = json.loads((ROOT/'docs/pcb/standard-fabrication-check.json').read_text())
     assert check['passed'] and check['board_sha256'] == sha(ROOT/'nucula-v2.kicad_pcb')
     assert check['drc_sha256'] == sha(ROOT/'docs/pcb/drc.json')
@@ -237,7 +250,9 @@ def main():
             'included under validation/. The older routing-comparison drawing is historical.\n')
     with zipfile.ZipFile(out/'nucula-v2-gerbers.zip','w',zipfile.ZIP_DEFLATED) as z:
         for p in sorted((out/'gerbers').iterdir()):z.write(p,p.name)
-    for source, dest in [('docs/simulation','validation/simulation'),
+    shutil.copyfile(ROOT/'docs/assembly/readiness.json',out/'assembly/readiness.json')
+    for source, dest in [('docs/components/substitutions-2026-10-09','validation/substitutions'),
+                         ('docs/simulation','validation/simulation'),
                          ('docs/nfc','validation/nfc'),
                          ('docs/bringup/backfeed-analysis','validation/usb-analysis')]:
         shutil.copytree(ROOT/source,out/dest)
@@ -246,7 +261,8 @@ def main():
                        or p.name in ['fp-lib-table','sym-lib-table','LICENSE','README.md'])]
     for folder in ['libraries','LICENSES','tools','docs']:
         snapshot_files += [p for p in (ROOT/folder).rglob('*') if p.is_file()
-                           and '__pycache__' not in p.parts and p.suffix != '.pyc']
+                           and '__pycache__' not in p.parts and p.suffix != '.pyc'
+                           and p != ROOT/'docs/production-package-check.json']
     with zipfile.ZipFile(out/'nucula-v2-design-snapshot.zip','w',zipfile.ZIP_DEFLATED) as z:
         for p in sorted(snapshot_files): z.write(p,str(p.relative_to(ROOT)))
     files=[p for p in out.rglob('*') if p.is_file() and p.name!='manifest.json']
@@ -262,6 +278,10 @@ def main():
             'tools/check_nfc_rev_a.py','tools/baselines/rev-A-nfc.zip','tools/check_release_routing.py',
             'tools/check_nfc_gerbers.py','tools/verify_production_package.py','tools/check_pcb_layout.py',
             'tools/render_placement_reference.py',
+            'tools/substitution_amendments.py','tools/nfc/inductor_models.py','tools/nfc/qualify_substitution.py',
+            'docs/components/substitutions-2026-10-09/amendments.json',
+            'docs/components/substitutions-2026-10-09/rf-qualification.json',
+            'libraries/Nucula_Project.pretty/L_Coilcraft_0805CS_RevALands.kicad_mod',
             'tools/check_routing_quality.py','tools/check_standard_fabrication.py','docs/production-release.md',
             'libraries/Nucula_Project.pretty/MountingHole_2.2mm_M2_5.5mm_Keepout.kicad_mod',
             'libraries/Nucula_Project.pretty/JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal.kicad_mod',

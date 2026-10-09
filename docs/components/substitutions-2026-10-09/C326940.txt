@@ -1,0 +1,3769 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Product Specification – March 14, 2025  V.21 
+DATA SHEET
+SURFACE-MOUNT CERAMIC 
+MULTILAYER CAPACITORS 
+General purpose 
+Class 1, NP0 
+16 V TO 250 V 
+0.22 pF to 100 nF 
+RoHS compliant & Halogen Free 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+www.yageo.com
+May.14, 2025  V.21 
+ 
+Surface-Mount Ceramic Multilayer Capacitors
+2 
+23 
+Product specification
+General Purpose 
+16 V to 250 V 
+NP0 
+ 
+ 
+ 
+ 
+SCOPE  
+This specification describes NP0 
+series chip capacitors with lead-
+free terminations. 
+APPLICATIONS 
+⚫ Consumer electronics for 
+example 
+- Tuners 
+- Television receivers 
+- All types of cameras 
+⚫ Telecommunications 
+⚫ Data processing 
+FEATURES 
+⚫ Supplied in tape on reel  
+⚫ Nickel-barrier end termination 
+⚫ RoHS compliant 
+⚫ Halogen Free compliant 
+⚫ MSL class: level 1 
+ORDERING INFORMATION - GLOBAL PART NUMBER, PHYCOMP 
+CTC & 12NC 
+All part numbers are identified by the series, size, tolerance, TC material, 
+packing style, voltage, process code, termination and capacitance value. 
+YAGEO BRAND ordering code 
+GLOBAL PART NUMBER (PREFERRED) 
+CC     XXXX    X    X    NPO    X    BN    XXX 
+               (1)      (2)  (3)               (4)               (5)     
+(1) SIZE – INCH BASED (METRIC) 
+0201 (0603) 
+0402 (1005) 
+0603 (1608) 
+0805 (2012) 
+1206 (3216) 
+1210 (3225) 
+1812 (4532) 
+(2) TOLERANCE 
+B = ± 0.1 pF  
+C = ± 0.25 pF  
+D = ± 0.5 pF  
+ F = ± 1%  
+G = ± 2%  
+ J = ± 5% 
+K = ± 10% 
+(3) PACKING STYLE 
+R = Paper/PE taping reel; Reel 7 inch 
+K = Blister taping reel; Reel 7 inch 
+ P = Paper/PE taping reel; Reel 13 inch 
+ F = Blister taping reel; Reel 13 inch 
+C = Bulk case 
+(4) RATED VOLTAGE 
+7 = 16 V  
+8 = 25 V  
+9 = 50 V    
+0 = 100 V 
+A = 200 V 
+Y = 250 V 
+(5) CAPACITANCE VALUE 
+2 significant digits+number of zeros 
+The 3rd digit signifies the multiplying factor, and letter R is decimal point 
+Example: 121 = 12 x 101 = 120 pF 
+ 
+ 
+ 
+www.yageo.com
+May.14, 2025  V.21 
+ 
+Surface-Mount Ceramic Multilayer Capacitors
+3 
+23 
+Product specification
+General Purpose 
+16 V to 250 V 
+NP0 
+ 
+ 
+ 
+Table 1 For outlines see fig. 2 
+DIMENSION 
+ 
+ 
+ 
+ 
+ 
+MBB211
+T
+L4
+L1
+L2
+L3
+W
+ 
+ 
+OUTLINES 
+For dimension see Table 1 
+Fig. 2   Surface 
+mounted multilayer ceramic c
+CONSTRUCTION  
+The capacitor consists of a 
+rectangular block of ceramic 
+dielectric in which a number of 
+interleaved metal electrodes 
+are contained. This structure 
+gives rise to a high capacitance 
+per unit volume. 
+The inner electrodes 
+are connected to the two 
+end terminations 
+and finally covered with a layer 
+of plated tin (NiSn). The 
+terminations are lead-free. 
+A cross section of the structure 
+is shown in Fig.1. 
+ 
+MLB457
+terminations
+electrodes
+ceramic material
+ 
+ 
+ 
+ 
+ 
+ 
+Fig. 1 Surface mounted multilayer ceramic capacitor construction 
+TYPE 
+L1 (mm) 
+W (mm)
+T (MM)
+L2 / L3 (mm) L4 (mm) 
+min. max. 
+min. 
+0201 
+0.6 ± 0.03 
+0.3± 0.03
+0.3± 0.03
+0.10 
+0.20 
+0.20 
+0402 
+1.0 ± 0.05 
+0.5 ± 0.05
+0.5 ± 0.05
+0.15 
+0.35 
+0.30 
+0603 
+1.6 ± 0.10 
+0.8 ± 0.10
+0.8 ± 0.10
+0.20 
+0.60 
+0.40 
+0805 
+2.0 ± 0.10 
+1.25 ± 0.10 
+0.6 ± 0.10
+0.25 
+0.75 
+0.70 
+2.0 ± 0.20 
+1.25 ± 0.20 
+0.85 ± 0.10
+1.25 ± 0.20
+1206 
+3.2 ± 0.15 
+1.6 ± 0.15
+0.6 ± 0.10
+0.25 
+0.75 
+1.40 
+0.85 ± 0.10
+3.2 ± 0.30 
+1.6 ± 0.20
+0.85 ± 0.10(1)
+1.6 ± 0.20
+3.2 ± 0.30 
+1.6 ± 0.30
+1.6 ± 0.30
+0.3 
+0.9 
+1.4 
+1210 
+3.2 ± 0.20 
+2.5 ± 0.20
+0.85 ± 0.10
+0.25 
+0.75 
+1.40 
+3.2 ± 0.40 
+2.5 ± 0.30
+1.25 ± 0.20
+1.6 ± 0.20
+2.0 ± 0.20
+1808 
+4.5 ± 0.40 
+2.0 ± 0.30
+1.25 ± 0.20
+0.25 
+0.75 
+2.20 
+1812 
+4.5 ± 0.40 
+3.2 ± 0.30
+0.85 ± 0.10
+1.25 ± 0.20
+1.60 ± 0.20
+0.25 
+0.75 
+2.20 
+2020 
+5.7 ± 0.40 
+5.0 ± 0.30
+2.0 ± 0.20
+0.25 
+0.75 
+3.40 
+NOTE 
+1. Dimension for size 1206, 12nF to 33nF, 25V to 100V. 
+ 
+ 
+www.yageo.com
+May.14, 2025  V.21 
+ 
+Surface-Mount Ceramic Multilayer Capacitors
+4 
+23 
+Product specification
+General Purpose 
+16 V to 250 V 
+NP0 
+ CAPACITANCE RANGE & THICKNESS FOR NP0 
+Table 2 Sizes from 0201 to 0402 
+ 
+CAP. 
+0201 
+ 
+ 
+0402 
+ 
+ 
+ 
+25 V 
+50 V 
+100 V 
+16 V  
+25 V 
+50 V 
+100 V 
+0.22 pF 
+0.3±0.03 
+0.3±0.03 
+ 
+ 
+ 
+ 
+ 
+0.47 pF 
+0.3±0.03 
+0.3±0.03 
+0.3±0.03 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+0.82 pF 
+0.3±0.03 
+0.3±0.03 
+0.3±0.03 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+1.0 pF 
+0.3±0.03 
+0.3±0.03 
+0.3±0.03 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+1.2 pF 
+0.3±0.03 
+0.3±0.03 
+0.3±0.03 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+1.5 pF 
+0.3±0.03 
+0.3±0.03 
+0.3±0.03 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+1.8 pF 
+0.3±0.03 
+0.3±0.03 
+0.3±0.03 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+2.2 pF 
+0.3±0.03 
+0.3±0.03 
+0.3±0.03 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+2.7 pF 
+0.3±0.03 
+0.3±0.03 
+0.3±0.03 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+3.3 pF 
+0.3±0.03 
+0.3±0.03 
+0.3±0.03 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+3.9 pF 
+0.3±0.03 
+0.3±0.03 
+0.3±0.03 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+4.7 pF 
+0.3±0.03 
+0.3±0.03 
+0.3±0.03 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+5.6 pF 
+0.3±0.03 
+0.3±0.03 
+0.3±0.03 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+6.8 pF 
+0.3±0.03 
+0.3±0.03 
+0.3±0.03 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+8.2 pF 
+0.3±0.03 
+0.3±0.03 
+0.3±0.03 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+10 pF 
+0.3±0.03 
+0.3±0.03 
+0.3±0.03 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+12 pF 
+0.3±0.03 
+0.3±0.03 
+0.3±0.03 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+15 pF 
+0.3±0.03 
+0.3±0.03 
+0.3±0.03 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+18 pF 
+0.3±0.03 
+0.3±0.03 
+0.3±0.03 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+22 pF 
+0.3±0.03 
+0.3±0.03 
+0.3±0.03 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+27 pF 
+0.3±0.03 
+0.3±0.03 
+0.3±0.03 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+33 pF 
+0.3±0.03 
+0.3±0.03 
+0.3±0.03 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+39 pF 
+0.3±0.03 
+0.3±0.03 
+0.3±0.03 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+47 pF 
+0.3±0.03 
+0.3±0.03 
+0.3±0.03 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+56 pF 
+0.3±0.03 
+0.3±0.03 
+0.3±0.03 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+68 pF 
+0.3±0.03 
+0.3±0.03 
+0.3±0.03 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+82 pF 
+0.3±0.03 
+0.3±0.03 
+0.3±0.03 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+100 pF 
+0.3±0.03 
+0.3±0.03 
+0.3±0.03 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+0.5±0.05 
+NOTE 
+1. Values in shaded cells indicate thickness class in mm 
+2. Capacitance value of non E-12 series is on request 
+ 
+ 
+ 
+www.yageo.com
+May.14, 2025  V.21 
+ 
+Surface-Mount Ceramic Multilayer Capacitors
+5 
+23 
+Product specification
+General Purpose 
+16 V to 250 V 
+NP0 
+CAPACITANCE RANGE & THICKNESS FOR NP0 
+Table 3 Sizes from 0603 
+ 
+CAP. 
+0603 
+ 
+ 
+ 
+ 
+ 
+25 V 
+50 V 
+100 V 
+200 V 
+250 V 
+0.22 pF 
+ 
+ 
+ 
+ 
+ 
+0.47 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.82 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+1.0 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+1.2 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+1.5 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+1.8 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+2.2 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+2.7 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+3.3 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+3.9 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+4.7 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+5.6 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+6.8 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+8.2 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+10 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+12 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+15 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+18 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+22 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+27 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+33 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+39 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+47 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+56 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+68 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+82 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+100 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+NOTE 
+3. Values in shaded cells indicate thickness class in mm 
+4. Capacitance value of non E-12 series is on request 
+ 
+ 
+ 
+www.yageo.com
+May.14, 2025  V.21 
+ 
+Surface-Mount Ceramic Multilayer Capacitors
+6 
+23 
+Product specification
+General Purpose 
+16 V to 250 V 
+NP0 
+CAP. 
+0402 
+ 
+ 
+ 
+16 V  
+ 25 V 
+50 V 
+100 V 
+120 pF 
+0.5± 0.05 
+0.5± 0.05 
+0.5± 0.05 
+0.5± 0.05 
+150 pF 
+0.5± 0.05 
+0.5± 0.05 
+0.5± 0.05 
+0.5± 0.05 
+180 pF 
+0.5± 0.05 
+0.5± 0.05 
+0.5± 0.05 
+0.5± 0.05 
+220 pF 
+0.5± 0.05 
+0.5± 0.05 
+0.5± 0.05 
+0.5± 0.05 
+270 pF 
+0.5± 0.05 
+0.5± 0.05 
+0.5± 0.05 
+0.5± 0.05 
+330 pF 
+0.5± 0.05 
+0.5± 0.05 
+0.5± 0.05 
+0.5± 0.05 
+390 pF 
+0.5± 0.05 
+0.5± 0.05 
+0.5± 0.05 
+0.5± 0.05 
+470 pF 
+0.5± 0.05 
+0.5± 0.05 
+0.5± 0.05 
+0.5± 0.05 
+560 pF 
+0.5± 0.05 
+0.5± 0.05 
+0.5± 0.05 
+0.5± 0.05 
+680 pF 
+0.5± 0.05 
+0.5± 0.05 
+0.5± 0.05 
+0.5± 0.05 
+820 pF 
+0.5± 0.05 
+0.5± 0.05 
+0.5± 0.05 
+0.5± 0.05 
+1.0 nF 
+0.5± 0.05 
+0.5± 0.05 
+0.5± 0.05 
+0.5± 0.05 
+1.2 nF 
+ 
+ 
+ 
+ 
+1.5 nF 
+ 
+ 
+ 
+ 
+1.8 nF 
+ 
+ 
+ 
+ 
+2.2 nF 
+ 
+ 
+ 
+ 
+2.7 nF 
+ 
+ 
+ 
+ 
+3.3 nF 
+ 
+ 
+ 
+ 
+3.9 nF 
+ 
+ 
+ 
+ 
+4.7 nF 
+ 
+ 
+ 
+ 
+5.6 nF 
+ 
+ 
+ 
+ 
+6.8 nF 
+ 
+ 
+ 
+ 
+8.2 nF 
+ 
+ 
+ 
+ 
+10 nF 
+ 
+ 
+ 
+ 
+12 nF 
+ 
+ 
+ 
+ 
+15 nF 
+ 
+ 
+ 
+ 
+18 nF 
+ 
+ 
+ 
+ 
+22 nF 
+ 
+ 
+ 
+ 
+33 nF 
+ 
+ 
+ 
+ 
+NOTE 
+1. Values in shaded cells indicate thickness class in mm 
+2. Capacitance value of non E-12 series is on request 
+Table 4 Sizes from 0201 to 0402 (continued) 
+CAPACITANCE RANGE & THICKNESS FOR NP0 
+ 
+ 
+www.yageo.com
+May.14, 2025  V.21 
+ 
+Surface-Mount Ceramic Multilayer Capacitors
+7 
+23 
+Product specification
+General Purpose 
+16 V to 250 V 
+NP0 
+CAP. 
+0603 
+ 
+ 
+ 
+ 
+25 V 
+50 V 
+100 V 
+200 V  
+250 V  
+120 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+150 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+180 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+220 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+270 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+330 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+390 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+470 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+560 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+680 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+820 pF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+ 
+ 
+1.0 nF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+ 
+ 
+1.2 nF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+ 
+ 
+1.5 nF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+ 
+ 
+1.8 nF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+ 
+ 
+2.2 nF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+ 
+ 
+2.7 nF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+ 
+ 
+3.3 nF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+ 
+ 
+3.9 nF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+ 
+ 
+4.7 nF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+ 
+ 
+5.6 nF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+ 
+ 
+6.8 nF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+ 
+ 
+8.2 nF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+ 
+ 
+10 nF 
+0.8± 0.1 
+0.8± 0.1 
+0.8± 0.1 
+ 
+ 
+12 nF 
+ 
+ 
+ 
+ 
+ 
+15 nF 
+ 
+ 
+ 
+ 
+ 
+18 nF 
+ 
+ 
+ 
+ 
+ 
+22 nF 
+ 
+ 
+ 
+ 
+ 
+33 nF 
+ 
+ 
+ 
+ 
+ 
+NOTE 
+3. Values in shaded cells indicate thickness class in mm 
+4. Capacitance value of non E-12 series is on request 
+ 
+Table 5 Sizes from 0603 
+CAPACITANCE RANGE & THICKNESS FOR NP0 
+ 
+ 
+www.yageo.com
+May.14, 2025  V.21 
+ 
+Surface-Mount Ceramic Multilayer Capacitors
+8 
+23 
+Product specification
+General Purpose 
+16 V to 250 V 
+NP0 
+CAPACITANCE RANGE & THICKNESS FOR NP0 
+Table 6 Sizes from 0805 to 1206 
+CAP. 
+0805 
+ 
+ 
+ 
+ 
+1206 
+ 
+ 
+ 
+ 
+25 V 
+ 50 V 
+100 V 
+200 V 
+250 V 
+25 V 
+50 V 
+100 V 
+200 V 
+250 V 
+0.22 pF 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+0.47 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.82 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+1.0 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+1.2 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+1.5 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+1.8 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+2.2 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+2.7 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+3.3 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+3.9 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+4.7 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+5.6 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+6.8 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+8.2 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+10 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+12 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+15 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+18 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+22 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+27 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+33 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+39 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+47 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+56 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+68 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+82 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+100 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+NOTE 
+1. Values in shaded cells indicate thickness class in mm 
+2. Capacitance value of non E-12 series is on request 
+ 
+ 
+ 
+www.yageo.com
+May.14, 2025  V.21 
+ 
+Surface-Mount Ceramic Multilayer Capacitors
+9 
+23 
+Product specification
+General Purpose 
+16 V to 250 V 
+NP0 
+CAPACITANCE RANGE & THICKNESS FOR NP0 
+Table 7 Sizes from 1210 
+CAP. 
+1210 
+ 
+ 
+ 
+ 
+25 V 
+50 V 
+100 V 
+200 V 
+250 V 
+0.22 pF 
+ 
+ 
+ 
+ 
+ 
+0.47 pF 
+ 
+ 
+ 
+ 
+ 
+0.82 pF 
+ 
+ 
+ 
+ 
+ 
+1.0 pF 
+ 
+ 
+ 
+ 
+ 
+1.2 pF 
+ 
+ 
+ 
+ 
+ 
+1.5 pF 
+ 
+ 
+ 
+ 
+ 
+1.8 pF 
+ 
+ 
+ 
+ 
+ 
+2.2 pF 
+ 
+ 
+ 
+ 
+ 
+2.7 pF 
+ 
+ 
+ 
+ 
+ 
+3.3 pF 
+ 
+ 
+ 
+ 
+ 
+3.9 pF 
+ 
+ 
+ 
+ 
+ 
+4.7 pF 
+ 
+ 
+ 
+ 
+ 
+5.6 pF 
+ 
+ 
+ 
+ 
+ 
+6.8 pF 
+ 
+ 
+ 
+ 
+ 
+8.2 pF 
+ 
+ 
+ 
+ 
+ 
+10 pF 
+ 
+ 
+ 
+ 
+ 
+12 pF 
+ 
+ 
+ 
+ 
+ 
+15 pF 
+ 
+ 
+ 
+ 
+ 
+18 pF 
+ 
+ 
+ 
+ 
+ 
+22 pF 
+ 
+ 
+ 
+ 
+ 
+27 pF 
+ 
+ 
+ 
+ 
+ 
+33 pF 
+ 
+ 
+ 
+ 
+ 
+39 pF 
+ 
+ 
+ 
+ 
+ 
+47 pF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+56 pF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+68 pF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+82 pF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+100 pF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+NOTE 
+3. Values in shaded cells indicate thickness class in mm 
+4. Capacitance value of non E-12 series is on request 
+ 
+ 
+ 
+www.yageo.com
+May.14, 2025  V.21 
+ 
+Surface-Mount Ceramic Multilayer Capacitors
+10 
+23 
+Product specification
+General Purpose 
+16 V to 250 V 
+NP0 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+CAP. 
+0805 
+ 
+ 
+ 
+ 
+1206 
+ 
+ 
+ 
+ 
+ 
+25 V 
+50 V 
+100 V 
+200 V 
+250 V 
+25 V 
+50 V 
+100 V 
+200 V 
+250 V 
+120 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+150 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+180 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+220 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+270 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+330 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+390 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+470 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+560 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+680 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+820 pF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 0.85± 0.1  0.85± 0.1  
+1.0 nF 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 0.85± 0.1  0.85± 0.1  
+1.2 nF 
+0.85± 0.1 
+0.85± 0.1 
+0.85± 0.1 
+0.85± 0.1 
+0.85± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 0.85± 0.1  0.85± 0.1  
+1.5 nF 
+0.85± 0.1 
+0.85± 0.1 
+0.85± 0.1 
+0.85± 0.1 
+0.85± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 0.85± 0.1  0.85± 0.1  
+1.8 nF 
+0.85± 0.1 
+0.85± 0.1 
+0.85± 0.1 
+0.85± 0.1 
+0.85± 0.1 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 1.25± 0.2  1.25± 0.2  
+2.2 nF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 1.25± 0.2  1.25± 0.2  
+2.7 nF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+0.6± 0.1 
+0.6± 0.1 
+0.6± 0.1 1.25± 0.2  1.25± 0.2  
+3.3 nF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+0.85± 0.1 
+0.85± 0.1 
+0.85± 0.1 1.25± 0.2  1.25± 0.2  
+3.9 nF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+0.85± 0.1 
+0.85± 0.1 
+0.85± 0.1 1.25± 0.2  1.25± 0.2  
+4.7 nF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+0.85± 0.1 
+0.85± 0.1 
+0.85± 0.1 
+ 
+ 
+5.6 nF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+ 
+ 
+0.85± 0.1 
+0.85± 0.1 
+0.85± 0.1 
+ 
+ 
+6.8 nF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+ 
+ 
+0.85± 0.1 
+0.85± 0.1 
+0.85± 0.1 
+ 
+ 
+8.2 nF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+ 
+ 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+ 
+ 
+10 nF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+ 
+ 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+ 
+ 
+12 nF 
+ 
+ 
+ 
+ 
+ 
+0.85± 0.1 
+0.85± 0.1 
+0.85± 0.1 
+ 
+ 
+15 nF 
+ 
+ 
+ 
+ 
+ 
+0.85± 0.1 
+0.85± 0.1 
+0.85± 0.1 
+ 
+ 
+18 nF 
+ 
+ 
+ 
+ 
+ 
+0.85± 0.1 
+0.85± 0.1 
+0.85± 0.1 
+ 
+ 
+22 nF 
+ 
+ 
+ 
+ 
+ 
+0.85± 0.1 
+0.85± 0.1 
+0.85± 0.1 
+ 
+ 
+33 nF 
+ 
+ 
+ 
+ 
+ 
+0.85± 0.1 
+0.85± 0.1 
+0.85± 0.1 
+ 
+ 
+47 nF 
+ 
+ 
+ 
+ 
+ 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+ 
+ 
+56 nF 
+ 
+ 
+ 
+ 
+ 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+ 
+ 
+68 nF 
+ 
+ 
+ 
+ 
+ 
+1.60± 0.2 
+1.60± 0.2 
+1.60± 0.2 
+ 
+ 
+82 nF 
+ 
+ 
+ 
+ 
+ 
+1.60± 0.2 
+1.60± 0.2 
+1.60± 0.2 
+ 
+ 
+100 nF 
+ 
+ 
+ 
+ 
+ 
+1.60± 0.2 
+1.60± 0.2 
+1.60± 0.2 
+ 
+ 
+NOTE 
+1. Values in shaded cells indicate thickness class in mm 
+2. Capacitance value of non E-12 series is on request 
+ 
+Table 8 Sizes from 0805 to 1206 
+CAPACITANCE RANGE & THICKNESS FOR NP0 
+ 
+ 
+www.yageo.com
+May.14, 2025  V.21 
+ 
+Surface-Mount Ceramic Multilayer Capacitors
+11 
+23 
+Product specification
+General Purpose 
+16 V to 250 V 
+NP0 
+CAP. 
+1210 
+ 
+ 
+ 
+ 
+ 
+25 V 
+50 V 
+100 V 
+200 V 
+250 V 
+120 pF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+150 pF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+180 pF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+220 pF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+270 pF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+330 pF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+390 pF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+470 pF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+560 pF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+680 pF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+820 pF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.0 nF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.2 nF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.5 nF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.8 nF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+2.2 nF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+2.7 nF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+3.3 nF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+3.9 nF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+4.7 nF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+5.6 nF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+ 
+ 
+6.8 nF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+ 
+ 
+8.2 nF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+ 
+ 
+10 nF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+ 
+ 
+12 nF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+ 
+ 
+15 nF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+ 
+ 
+18 nF 
+1.60± 0.2 
+1.60± 0.2 
+1.60± 0.2 
+ 
+ 
+22 nF 
+1.60± 0.2 
+1.60± 0.2 
+1.60± 0.2 
+ 
+ 
+33 nF 
+ 
+ 
+ 
+ 
+ 
+47 nF 
+1.60± 0.2 
+1.60± 0.2 
+ 
+ 
+ 
+56 nF 
+ 
+ 
+ 
+ 
+ 
+68 nF 
+ 
+ 
+ 
+ 
+ 
+82 nF 
+ 
+ 
+ 
+ 
+ 
+100 nF 
+ 
+ 
+ 
+ 
+ 
+NOTE 
+3. Values in shaded cells indicate thickness class in mm 
+4. Capacitance value of non E-12 series is on request 
+ 
+Table 9 Sizes from 1210 
+CAPACITANCE RANGE & THICKNESS FOR NP0 
+ 
+ 
+www.yageo.com
+May.14, 2025  V.21 
+ 
+Surface-Mount Ceramic Multilayer Capacitors
+12 
+23 
+Product specification
+General Purpose 
+16 V to 250 V 
+NP0 
+CAPACITANCE RANGE & THICKNESS FOR NP0 
+Table 10  Sizes 1812 
+ 
+CAP. 
+1812 
+ 
+ 
+ 
+ 
+50 V 
+100 V 
+200 V 
+250 V 
+10 pF 
+ 
+ 
+ 
+ 
+12 pF 
+ 
+ 
+ 
+ 
+15 pF 
+ 
+ 
+ 
+ 
+18 pF 
+ 
+ 
+ 
+ 
+22 pF 
+ 
+ 
+ 
+ 
+27 pF 
+ 
+ 
+ 
+ 
+33 pF 
+ 
+ 
+ 
+ 
+39 pF 
+ 
+ 
+ 
+ 
+47 pF 
+ 
+ 
+ 
+ 
+56 pF 
+1.25± 0.2 
+ 
+ 
+ 
+68 pF 
+1.25± 0.2 
+ 
+ 
+ 
+82 pF 
+1.25± 0.2 
+ 
+ 
+ 
+100 pF 
+1.25± 0.2 
+ 
+ 
+ 
+120 pF 
+1.25± 0.2 
+ 
+ 
+ 
+150 pF 
+1.25± 0.2 
+ 
+ 
+ 
+180 pF 
+1.25± 0.2 
+ 
+ 
+ 
+220 pF 
+1.25± 0.2 
+ 
+ 
+ 
+270 pF 
+1.25± 0.2 
+ 
+ 
+ 
+330 pF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+390 pF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+470 pF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+560 pF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+680 pF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+820 pF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1 nF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.2 nF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.5 nF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.8 nF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+2.2 nF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+2.7 nF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+3.3 nF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+3.9 nF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+4.7 nF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+5.6 nF 
+1.25± 0.2 
+1.25± 0.2 
+1.25± 0.2 
+ 
+6.8 nF 
+1.25± 0.2 
+1.25± 0.2 
+ 
+ 
+8.2 nF 
+1.25± 0.2 
+1.25± 0.2 
+ 
+ 
+10 nF 
+1.25± 0.2 
+1.25± 0.2 
+ 
+ 
+12 nF 
+1.25± 0.2 
+1.25± 0.2 
+ 
+ 
+15 nF 
+1.25± 0.2 
+1.25± 0.2 
+ 
+ 
+18 nF 
+1.25± 0.2 
+1.25± 0.2 
+ 
+ 
+22 nF 
+1.25± 0.2 
+1.25± 0.2 
+ 
+ 
+33 nF 
+1.25± 0.2 
+ 
+ 
+ 
+NOTE 
+1. Values in shaded cells indicate thickness class in mm  
+2. Capacitance value of non E-12 series is on request  
+ 
+ 
+www.yageo.com
+May.14, 2025  V.21 
+ 
+Surface-Mount Ceramic Multilayer Capacitors
+13 
+23 
+Product specification
+General Purpose 
+16 V to 250 V 
+NP0 
+MBG251-1
+E
+F
+W
+P2
+P0
+P1
+D0
+B0
+A0
+T
+cover tape
+K0
+ 
+Fig. 3  Paper/PE tape 
+PAPER/PE TAPE SPECIFICATION 
+Table 11 Dimensions of paper/PE tape for relevant chip size; see Fig.3 
+SIZE 
+CODE 
+SYMBOL 
+Unit: mm 
+A0  
+B0 
+W 
+E 
+F 
+P0 (1) 
+P1 
+P2 
+Ø D0 
+K0 
+T  
+01005 0.24 ± 0.03 0.45 ± 0.03 8.0 ±0.20 1.75 ± 0.1 3.50 ± 0.05 4.0 ±0.05 2.0 ±0.05 2.0 ±0.05 1.50 ± 0.1 
+0.24 ± 0.03 
+0.36 ± 0.01 
+0201 
+0.39 ± 0.06 0.70 ± 0.06 8.0 ±0.20 1.75 ± 0.1 3.50 ± 0.05 4.0 ±0.05 2.0 ±0.05 2.0 ±0.05 1.55 ± 0.03 
+0.38 ± 0.05 
+(0.47 / 0.55)±0.10 
+0402 
+0.70 ± 0.15 1.21 ± 0.12 8.0 ±0.20 1.75 ± 0.1 3.50 ± 0.05 4.0 ±0.05 2.0 ±0.05 2.0 ±0.05 1.50 +0.1 /-0 (0.75 / 0.60)±0.10 
+(0.85 / 0.70)±0.10 
+0603 
+1.05 ± 0.14 1.86 ± 0.13 8.0 ±0.20 1.75 ± 0.1 3.50 ± 0.05 4.0 ±0.10 4.0 ±0.10 2.0 ±0.05 1.50 +0.1 /-0 (1.05 / 0.95 / 0.75)± 0.10 
+(1.15 / 1.05 / 0.85)± 0.10 
+0805 
+1.50 ± 0.15 2.26 ± 0.20 8.0 ±0.20 1.75 ± 0.1 3.50 ± 0.05 4.0 ±0.10 4.0 ±0.10 2.0 ±0.05 1.50 +0.1 /-0 (1.05 / 0.95 / 0.75)± 0.10 
+(1.15 / 1.05 / 0.85)± 0.10 
+1206 
+1.90 ± 0.15 3.50 ± 0.20 8.0 ±0.20 1.75 ± 0.1 3.50 ± 0.05 4.0 ±0.10 4.0 ±0.10 2.0 ±0.05 1.50 +0.1 /-0 (0.95 / 0.75)±0.10 
+(1.05 / 0.85)± 0.10 
+4 × 0402 1.50 ± 0.15 2.26 ± 0.20 8.0 ±0.20 1.75 ± 0.1 3.50 ± 0.05 4.0 ±0.10 4.0 ±0.10 2.0 ±0.05 1.50 +0.1 /-0 (1.05 / 0.95 / 0.75)± 0.10 
+(1.15 / 1.05 / 0.85)± 0.10 
+4 × 0603 1.90 ± 0.15 3.50 ± 0.20 8.0 ±0.20 1.75 ± 0.1 3.50 ± 0.05 4.0 ±0.10 4.0 ±0.10 2.0 ±0.05 1.50 +0.1 /-0 (0.95 / 0.75)±0.10 
+(1.05 / 0.85)±0.10 
+0508 
+1.50 ± 0.15 2.26 ± 0.20 8.0 ±0.20 1.75 ± 0.1 3.50 ± 0.05 4.0 ±0.10 4.0 ±0.10 2.0 ±0.05 1.50 +0.1 /-0 (1.05 / 0.95 / 0.75)± 0.10 
+(1.15 / 1.05 / 0.85)± 0.10 
+0612 
+1.90 ± 0.15 3.50 ± 0.20 8.0 ±0.20 1.75 ± 0.1 3.50 ± 0.05 4.0 ±0.10 4.0 ±0.10 2.0 ± .05 1.50 +0.1 /-0 (0.95 / 0.75)±0.10 
+(1.05 / 0.85)±0.10 
+NOTE 
+1. P0 pitch tolerance over any 10 pitches is 0.2 mm 
+2. 4 x 0402 stands for 0508 array 
+3. 4 x 0603 stands for 0612 array 
+ 
+ 
+www.yageo.com
+May.14, 2025  V.21 
+ 
+Surface-Mount Ceramic Multilayer Capacitors
+14 
+23 
+Product specification
+General Purpose 
+16 V to 250 V 
+NP0 
+ 
+          SCM015
+E
+F
+W
+P2
+P0
+D0
+B0
+A0
+D 1
+P1
+direction of unreeling
+K0
+cover tape
+T2
+ 
+ 
+ 
+Fig. 4   Blister tape 
+BLISTER TAPE SPECIFICATION 
+Table 12 Dimensions of blister tape for relevant chip size; see Fig.4 
+SIZE 
+CODE 
+SYMBOL  
+Unit: mm 
+A0  
+B0 
+K0 
+W 
+E 
+F 
+Ø D0 
+Ø D1 
+P0 (2) 
+P1 
+P2 
+T2 
+Min. Max. Min. Max. Min. Max. 
+Min. 
+Min. Max. 
+0805 
+1.29  1.65 
+2.09 
+2.60 
+1.25 
+1.62  8.1 ± 0.20 
+1.75 ± 0.1 
+3.5 ± 0.05 
+1.5 +0.1/-0.0 1 +0.1/-0.0 
+4.0 ± 0.10 
+4.0 ± 0.10 
+2.0 ± 0.05 
+1.30 
+1.67 
+1206 
+1.65 
+2.12 
+3.30 
+3.75 
+1.22 
+2.15  8.1 ± 0.20 
+1.75 ± 0.1 
+3.5 ± 0.05 
+1.5 +0.1/-0.0 1 +0.1/-0.0 
+4.0 ± 0.10 
+4.0 ± 0.10 
+2.0 ± 0.05 
+1.27 
+2.20 
+1210 
+2.55 
+3.02 
+3.31 
+3.88 
+0.97 
+2.92 
+8.1 ± 0.20 
+1.75 ± 0.1 
+3.5 ± 0.05 
+1.5 +0.1/-0.0 1 +0.1/-0.0 
+4.0 ± 0.10 
+4.0 ± 0.10 
+2.0 ± 0.05 
+1.02 
+2.97 
+1808 
+2.05 
+2.55 
+4.80 
+5.45 
+1.30 
+2.45 
+12.1 ± 0.20 
+1.75 ± 0.1 
+5.5 ± 0.05 
+1.5 +0.1/-0.0 1.5 +0.1/-0.0 4.0 ± 0.10 
+4.0 ± 0.10 
+2.0 ± 0.05 
+1.35 
+2.50 
+1812 
+3.35 
+3.75 
+4.70 
+5.33 
+0.70 
+2.40 
+12.1 ± 0.20 
+1.75 ± 0.1 
+5.5 ± 0.05 
+1.5 +0.1/-0.0 1.5 +0.1/-0.0 4.0 ± 0.10 
+8.0 ± 0.10 
+2.0 ± 0.05 
+0.75 
+2.45 
+2220 
+5.12  5.32  5.84  6.04  1.28  1.48  12.0 ± 0.20 
+1.75 ± 0.1 
+5.5 ± 0.05 
+1.5 +0.1/-0.0 1.5 +0.1/-0.0 4.0 ± 0.10 
+8.0 ± 0.10 
+2.0 ± 0.05 
+1.33 
+1.53 
+NOTE 
+1.  Typical capacitor displacement in pocket 
+2.  P0 pitch tolerance over any 10 pitches is ±0.2 mm 
+K0: so chosen that the orientation of 
+the component cannot change 
+For W = 8 mm: T2 = 3.5 mm max. 
+For W = 12 mm: T2 = 6.5 mm max. 
+For dimension see Table 4 
+ 
+ 
+www.yageo.com
+May.14, 2025  V.21 
+ 
+Surface-Mount Ceramic Multilayer Capacitors
+15 
+23 
+Product specification
+General Purpose 
+16 V to 250 V 
+NP0 
+REEL SPECIFICATION 
+ 
+N
+C
+A
+W1
+W2
+HBK039
+ 
+ 
+ 
+Fig. 5   Reel 
+Table 13  Reel dimensions; see Fig.5 
+TAPE WIDTH 
+SYMBOL  
+Unit: mm
+A 
+N 
+C 
+W1 
+W2max. 
+8 (Ø 178 mm/7") 
+178 ± 1.0 
+60 ± 1.0 
+13 +0.50/-0.20 
+9.4 ± 1.5 
+14.4 
+8 (Ø 330 mm/13") 
+330 ± 1.0 
+100 ± 1.0 
+13 +0.50/-0.20 
+9.0 ± 0.2 
+14.4 
+12 (Ø 178 mm/7") 
+178 ± 1.0 
+60 ± 1.0 
+13 +0.50/-0.20 
+13.4 ± 1.5 
+18.4 
+ 
+PROPERTIES OF REEL 
+Material: polystyrene 
+Surface resistance: <1010 X/sq. 
+ 
+ 
+www.yageo.com
+May.14, 2025  V.21 
+ 
+Surface-Mount Ceramic Multilayer Capacitors
+16 
+23 
+Product specification
+General Purpose 
+16 V to 250 V 
+NP0 
+Table 14  
+THICKNESS CLASSES AND PACKING QUANTITY 
+SIZE 
+CODE 
+THICKNESS 
+CLASSIFICATION 
+TAPE WIDTH 
+QUANTITY PER REEL 
+Ø 180 MM / 7 INCH 
+Ø 330 MM / 13 INCH 
+QUANTITY 
+PER BULK CASE 
+Paper/PE 
+Blister 
+Paper/PE 
+Blister 
+0201 
+0.3 ± 0.03 mm 
+8 mm 
+15,000 
+--- 
+50,000 
+--- 
+--- 
+0402 
+0.5 ± 0.05 mm 
+8 mm 
+10,000 
+--- 
+50,000 
+--- 
+50,000 
+0603 
+0.8 ± 0.1 mm 
+8 mm 
+4,000 
+--- 
+15,000 
+--- 
+15,000 
+ 
+0.6 ± 0.1 mm 
+8 mm 
+4,000 
+--- 
+20,000 
+--- 
+10,000 
+0805 
+0.85 ± 0.1 mm 
+8 mm 
+4,000 
+--- 
+15,000 
+--- 
+8,000 
+ 
+1.25 ± 0.2 mm 
+8 mm 
+--- 
+3,000 
+--- 
+10,000 
+5,000 
+1206 
+0.6 ± 0.1 mm 
+8 mm 
+4,000 
+--- 
+20,000 
+--- 
+--- 
+0.85 ± 0.1 mm 
+8 mm 
+4,000 
+--- 
+15,000 
+--- 
+--- 
+1.00 / 1.15 ± 0.1 mm 
+8 mm 
+--- 
+3,000 
+--- 
+10,000 
+--- 
+1.25 ± 0.2 mm 
+8 mm 
+--- 
+3,000 
+--- 
+10,000 
+--- 
+1.6 ± 0.15 mm 
+8 mm 
+--- 
+2,500 
+--- 
+10,000 
+--- 
+1.6 ± 0.2 mm 
+8 mm 
+--- 
+2,000 
+--- 
+8,000 
+--- 
+1210 
+0.6 / 0.7 ± 0.1 mm 
+8 mm 
+--- 
+4,000 
+--- 
+15,000 
+--- 
+0.85 ± 0.1 mm 
+8 mm 
+--- 
+4,000 
+--- 
+10,000 
+--- 
+1.15 ± 0.1 mm 
+8 mm 
+--- 
+3,000 
+--- 
+10,000 
+--- 
+1.15 ± 0.15 mm 
+8 mm 
+--- 
+3,000 
+--- 
+10,000 
+--- 
+1.25 ± 0.2 mm 
+8 mm 
+--- 
+3,000 
+--- 
+--- 
+--- 
+1.5 ± 0.1 mm 
+8 mm 
+--- 
+2,000 
+--- 
+--- 
+--- 
+1.6 / 1.9 ± 0.2 mm 
+8 mm 
+--- 
+2,000 
+--- 
+--- 
+--- 
+2.0 ± 0.2 mm 
+8 mm 
+--- 
+2,000 
+1,000 
+--- 
+--- 
+--- 
+2.5 ± 0.2 mm 
+8 mm 
+--- 
+1,000 
+ 500 
+--- 
+--- 
+--- 
+1808 
+1.15 ± 0.15 mm 
+12 mm 
+--- 
+3,000 
+--- 
+--- 
+--- 
+1.25 ± 0.2 mm 
+12 mm 
+--- 
+3,000 
+--- 
+--- 
+--- 
+1.35 ± 0.15 mm 
+12 mm 
+--- 
+2,000 
+--- 
+--- 
+--- 
+1.5 ± 0.1 mm 
+12 mm 
+--- 
+2,000 
+--- 
+--- 
+--- 
+1.6 ± 0.2 mm 
+12 mm 
+--- 
+2,000 
+--- 
+--- 
+--- 
+2.0 ± 0.2 mm 
+12 mm 
+--- 
+2,000 
+--- 
+--- 
+--- 
+1812 
+0.6 / 0.85 ± 0.1 mm 
+12 mm 
+--- 
+2,000 
+--- 
+--- 
+--- 
+1.15 ± 0.1 mm 
+12 mm 
+--- 
+1,000 
+--- 
+--- 
+--- 
+1.25 ± 0.2 mm 
+12 mm 
+--- 
+1,000 
+--- 
+--- 
+--- 
+1.5 ± 0.1 mm 
+12 mm 
+--- 
+1,000 
+--- 
+--- 
+--- 
+1.6 ± 0.2 mm 
+12 mm 
+--- 
+1,000 
+--- 
+--- 
+--- 
+2.0 ± 0.2 mm 
+12 mm 
+--- 
+1,000 
+--- 
+--- 
+--- 
+2.5 ± 0.2 mm 
+12 mm 
+--- 
+500 
+--- 
+--- 
+--- 
+ 
+ 
+ 
+www.yageo.com
+May.14, 2025  V.21 
+ 
+Surface-Mount Ceramic Multilayer Capacitors
+17 
+23 
+Product specification
+General Purpose 
+16 V to 250 V 
+NP0 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ELECTRICAL CHARACTERISTICS 
+NP0 DIELECTRIC CAPACITORS; NISN TERMINATIONS 
+Unless otherwise stated all electrical values apply at an ambient temperature of 20±1 °C, an atmospheric 
+pressure of 86 to 106 kPa, and a relative humidity of 63 to 67%. 
+DESCRIPTION 
+VALUE 
+Capacitance range 
+0.22 pF to 100 nF 
+Capacitance tolerance 
+ 
+C < 10 pF 
+± 0.1 pF, ± 0.25 pF, ± 0.5 pF 
+C ≥ 10 pF 
+± 1%, ± 2%, ± 5%, ± 10% 
+Dissipation factor (D.F.) 
+ 
+C < 30 pF 
+≤ 1 / ( 400 + 20C ) 
+C ≥ 30 pF 
+≤ 0.1 % 
+Insulation resistance after 1 minute at Ur (DC) 
+Rins ≥ 10 GΩ or Rins × Cr ≥ 500 seconds whichever is less 
+Maximum capacitance change as a function of temperature 
+(temperature characteristic/coefficient): 
+ 
+± 30 ppm/°C 
+Operating temperature range: 
+–55 °C to +125 °C 
+Table 15    
+ 
+0
+50
+40
+10
+10
+CCB107
+5
+5
+0
+20
+30
+10
+C
+(%)
+C
+VDC  (V)
+ 
+Fig. 7 
+Typical capacitance change with respect to 
+the capacitance at 1 V as a function of DC voltage 
+ 
+40
+40
+40
+MEA607
+20
+0
+20
+0
+40
+80
+120
+T  (  C)
+o
+TC
+(x10    /K)
+6
+ 
+ 
+Fig. 6 
+Typical temperature coefficient as a function of 
+temperature 
+Sample limits (broken lines). 
+Requirement levels (dotted lines) 
+ 
+ 
+www.yageo.com
+May.14, 2025  V.21 
+ 
+Surface-Mount Ceramic Multilayer Capacitors
+18 
+23 
+Product specification
+General Purpose 
+16 V to 250 V 
+NP0 
+ 
+CCA044
+7.5
+5
+2.5
+0
+40
+0
+40
+80
+120
+T (oC)
+tan
+( 10 4)
+10
+ 
+ 
+Fig. 8 
+Typical tan δ as a function of temperature 
+SOLDERING RECOMMENDATION 
+Table 16 
+SOLDERING 
+METHOD 
+SIZE 
+0201 
+ 
+0402 
+0603 
+0805 
+1206 
+≥ 1210 
+Reflow 
+O 
+O 
+O 
+O 
+O 
+O 
+Wave 
+--- 
+--- 
+O 
+O 
+O 
+--- 
+ 
+ 
+ 
+www.yageo.com
+May.14, 2025  V.21 
+ 
+Surface-Mount Ceramic Multilayer Capacitors
+19 
+23 
+Product specification
+General Purpose 
+16 V to 250 V 
+NP0 
+TESTS AND REQUIREMENTS 
+Table 17  Test procedures and requirements 
+TEST 
+TEST METHOD 
+PROCEDURE 
+REQUIREMENTS 
+Mounting 
+ 
+IEC 60384-
+21/22  
+4.3 
+The capacitors may be mounted on printed-circuit boards 
+or ceramic substrates 
+No visible damage 
+Visual 
+inspection 
+and dimension
+check 
+ 
+4.4 
+Any applicable method using × 10 magnification 
+In accordance with specification
+Capacitance 
+ 
+4.5.1 
+Class 1: 
+f = 1 MHz for C ≤ 1 nF, measuring at voltage 1 Vrms at 20 °C 
+f = 1 KHz for C > 1 nF, measuring at voltage 1 Vrms at 20 °C 
+Within specified tolerance 
+Dissipation 
+factor (D.F.) 
+ 
+4.5.2 
+Class 1: 
+f = 1 MHz for C ≤ 1 nF , measuring at voltage 1 Vrms at 20 °C  
+f = 1 KHz for C > 1 nF, measuring at voltage 1 Vrms at 20 °C 
+In accordance with specification
+Insulation 
+resistance 
+ 
+4.5.3 
+At Ur (DC) for 1 minute 
+In accordance with specification
+Temperature 
+coefficient  
+ 
+4.6 
+Capacitance shall be measured by the steps shown in the 
+following table. 
+The capacitance change should be measured after 5 min at each 
+specified temperature stage. 
+Step 
+Temperature(°C) 
+a 
+25± 2 
+b 
+Lower temperature± 3 °C 
+c 
+25± 2 
+d 
+Upper Temperature± 2 °C 
+e 
+25± 2 
+(1)  Class I 
+Temperature Coefficient shall be calculated from the formula as 
+below 
+Temp, Coefficient =
+6
+10
+T
+ x
+C1
+C1
+-
+C2
+
+Δ
+ [ppm/°C] 
+C1: Capacitance at step c 
+C2: Capacitance at 125 °C 
+∆T:  100°C (=125°C -25 °C) 
+(2)  Class II 
+Capacitance Change shall be calculated from the formula as 
+below 
+∆C = 
+C1
+C1
+-
+C2
+ 
+x 100% 
+C1: Capacitance at step c 
+C2: Capacitance at step b or d 
+Class1:  
+∆ C/C: ± 30ppm 
+ 
+ 
+ 
+www.yageo.com
+May.14, 2025  V.21 
+ 
+Surface-Mount Ceramic Multilayer Capacitors
+20 
+23 
+Product specification
+General Purpose 
+16 V to 250 V 
+NP0 
+TEST 
+TEST METHOD PROCEDURE 
+REQUIREMENTS 
+Adhesion 
+ 
+4.7 
+A force applied for 10 seconds to the line joining the 
+terminations and in a plane parallel to the substrate 
+Force 
+size ≥ 0603: 5N  
+size = 0402: 2.5N 
+size = 0201: 1N 
+Bond strength 
+of plating on 
+end face 
+ 
+4.8 
+Mounting in accordance with IEC 60384-22 paragraph 4.3 
+No visible damage 
+Conditions: bending 1 mm at a rate of 1 mm/s, radius jig 5 
+mm 
+∆C/C 
+Class 1: 
+NP0: within ± 1% or 0.5 pF 
+whichever is greater 
+Resistance to 
+soldering heat 
+IEC 60384-
+21/22 
+4.9 
+Precondition: 150 +0/–10 °C for 1 hour, then keep for 24 
+± 1 hours at room temperature 
+Preheating: for size ≤ 1206: 120 °C to 150 °C for 1 minute 
+Preheating: for size >1206: 100 °C to 120 °C for 1 minute 
+and 170 °C to 200 °C for 1 minute 
+Solder bath temperature: 260 ± 5 °C 
+Dipping time: 10 ± 0.5 seconds 
+Recovery time: 24 ± 2 hours 
+ 
+Dissolution of the end face plating shall 
+not exceed 25% of the length of the 
+edge concerned 
+∆C/C 
+Class 1: 
+NP0: within ± 0.5% or 0.5 pF 
+whichever is greater 
+D.F. within initial specified value 
+Rins within initial specified value 
+Solderability 
+ 
+4.10 
+Preheated the temperature of 80 °C to 140 °C 
+and maintained for 30 seconds to 60 seconds. 
+ 
+1. Temperature: 235± 5°C / Dipping time: 2 ± 0.5 s 
+2. Temperature: 245± 5°C / Dipping time: 3 ± 0.5 s  
+(lead free) Depth of immersion: 10mm 
+The solder should cover over 95% of 
+the critical area of each termination 
+Rapid change 
+of  
+temperature 
+ 
+ 
+4.11 
+Preconditioning: 
+150 +0/–10 °C for 1 hour, then keep for 
+24 ± 1 hours at room temperature 
+ 
+5 cycles with following detail: 
+30 minutes at lower category temperature 
+30 minutes at upper category temperature 
+ 
+Recovery time 24 ± 2 hours 
+No visual damage 
+∆C/C 
+Class 1: 
+NP0: within ± 1% or 1 pF 
+whichever is greater 
+D.F. meet initial specified value 
+Rins meet initial specified value 
+ 
+ 
+ 
+www.yageo.com
+May.14, 2025  V.21 
+ 
+Surface-Mount Ceramic Multilayer Capacitors
+21 
+23 
+Product specification
+General Purpose 
+16 V to 250 V 
+NP0 
+ TEST 
+TEST METHOD 
+PROCEDURE 
+REQUIREMENTS 
+Damp heat 
+with Ur load 
+IEC 60384-
+21/22 
+4.13 
+1. Preconditioning, class 2 only: 
+150 +0/-10 °C /1 hour, then keep for 
+24 ± 1 hour at room temp 
+2. Initial measure: 
+Spec: refer to initial spec C, D, IR 
+3. Damp heat test:  
+500 ± 12 hours at 40 ± 2 °C; 
+90 to 95% R.H. 1.0 Ur applied. 
+4. Recovery: Class 1: 6 to 24 hours 
+5. Final measure: C, D, IR 
+ 
+P.S. If the capacitance value is less than the minimum value 
+permitted, then after the other measurements have been 
+made the capacitor shall be preconditioned according to 
+“IEC 60384 4.1” and then the requirement shall be met. 
+No visual damage after recovery 
+∆C/C 
+Class 1: 
+NP0: within ± 2% or 1 pF 
+whichever is greater 
+D.F. 
+Class 1: 
+NP0: ≤ 2 x specified value                  
+Rins  
+Class 1: 
+NP0: ≥ 2,500 MΩ or Rins x Cr ≥ 25s 
+whichever is less 
+Endurance 
+ 
+4.14 
+1. Preconditioning, class 2 only: 
+150 +0/-10 °C /1 hour, then keep for 
+24 ± 1 hour at room temp 
+2. Initial measure: 
+Spec: refer to initial spec C, D, IR 
+3. Endurance test:  
+Temperature: NP0: 125 °C 
+Specified stress voltage applied for 1,000 hours: 
+Applied 2.0 x Ur for general product.  
+4. High voltage series follows with below stress condition: 
+Voltage 
+NPO 
+≤ 100V 
+2.0 x Ur 
+200/250V 
+1.5 x Ur 
+500/630V 
+1.3 x Ur 
+≥ 1KV 
+1.2 x Ur 
+* NPO, 0603, 100V, 5.1nF to 10nF, apply voltage : 1.5 x Ur 
+5. Recovery time: 24 ± 2 hours 
+6. Final measure: C, D, IR 
+ 
+P.S. If the capacitance value is less than the minimum value 
+permitted, then after the other measurements have been 
+made the capacitor shall be preconditioned according to 
+“IEC 60384 4.1” and then the requirement shall be met. 
+No visual damage  
+∆C/C 
+Class1: 
+NP0: within ± 2% or 1 pF 
+whichever is greater 
+D.F. 
+Class1: 
+NP0: ≤ 2 x specified value 
+Rins 
+Class1: 
+NP0: ≥ 4,000 MΩ or Rins x Cr ≥ 40s 
+whichever is less 
+ 
+Voltage proof 
+IEC 60384-1 
+4.6 
+Specified stress voltage applied for 1 minute 
+Ur ≤ 100 V: series applied 2.5 Ur 
+100 V < Ur ≤ 200 V series applied (1.5 Ur + 100) 
+200 V < Ur ≤ 500 V series applied (1.3 Ur + 100) 
+Ur > 500 V: 1.3 Ur 
+I: 7.5 mA 
+No breakdown or flashover 
+ 
+ 
+ 
+www.yageo.com
+May.14, 2025  V.21 
+ 
+Surface-Mount Ceramic Multilayer Capacitors
+22 
+23 
+Product specification
+General Purpose 
+16 V to 250 V 
+NP0 
+REVISION HISTORY 
+REVISION 
+DATE 
+CHANGE NOTIFICATION 
+DESCRIPTION 
+Version 21 
+May.14, 2025 
+- 
+- Add 1206, 12nF to 82nF, 100V 
+Version 20 
+Mar. 11, 2025 
+- 
+- Add 1206, 100nF, 100V 
+Version 19 
+Jan. 29, 2024 
+- 
+- Add 100 V to 250 V product range 
+Version 19 
+Jan. 29, 2024 
+- 
+- Add 100 V to 250 V product range 
+Version 18 
+Jun. 14, 2023 
+- 
+- Update 1206/12nF to 47nF dimension 
+Version 17 
+Jul. 29, 2019 
+- 
+- Update 0805/10nF dimension 
+Version 16 
+Mar. 7, 2017 
+- 
+- 0805 L4 spec updated 
+Version 15 
+Nov. 21, 2016 
+- 
+- Product range updated 
+Version 14 
+Jul. 22, 2016 
+- 
+- Add 0805/8.2nF and 10nF/ 16V to 50V, T=1.25mm 
+Version 13 
+May. 16, 2016 
+- 
+- Product range updated 
+Version 12 
+Feb. 16, 2016 
+- 
+- Product range updated 
+Version 11 
+Sep. 11, 2014 
+- 
+- Product range updated 
+Version 10 
+Feb. 18, 2014 
+- 
+- Product range updated 
+Version 9 
+Jun. 17, 2013 
+- 
+- Product range updated 
+Version 8 
+Aug 05, 2011 
+- 
+- Dimension updated 
+Version 7 
+Jun 14, 2011 
+- 
+- Size1210 T=1.0mm SPQ added 
+- Dimension updated 
+Version 6 
+Jan 06, 2011 
+- 
+- Dimension updated 
+Version 5 
+Dec 29, 2010 
+- 
+- Dimension updated 
+Version 4 
+Nov 23, 2010 
+- 
+- Dimension updated 
+Version 3 
+Apr 20, 2010 
+- 
+- The statement of "Halogen Free" on the cover added 
+- Dimension updated 
+Version 2 
+Oct 26, 2009 
+- 
+- Typo updated 
+Version 1 
+Jun 02, 2009 
+- 
+- 12NC code updated 
+Version 0 
+Apr 15, 2009 
+- 
+- New datasheet for general purpose NP0 series with  
+ RoHS compliant  
+- Replace the "16V to 50V" part of pdf files: NP0_16V_7, NP0_16V-to-
+100V_6, NP0_25V_7, NP0_50-to-500V_11 
+- Combine 0201 from pdf files: UP-NP0X5RX7RY5V_0201_6.3-to-
+50V_2 and UY-NPOX5RX7RY5V_0201_6.3-to-50V_2 
+- Define global part number 
+- Description of "Halogen Free compliant" added 
+- Test method and procedure updated 
+ 
+ 
+ 
+www.yageo.com
+May.14, 2025  V.21 
+ 
+Surface-Mount Ceramic Multilayer Capacitors
+23 
+23 
+Product specification
+General Purpose 
+16 V to 250 V 
+NP0 
+ LEGAL DISCLAIMER 
+ 
+YAGEO, its distributors and agents (collectively, “YAGEO”), hereby disclaims any and all liabilities for any 
+errors, inaccuracies or incompleteness contained in any product related information, including but not 
+limited to product specifications, datasheets, pictures and/or graphics. YAGEO may make changes, 
+modifications and/or improvements to product related information at any time and without notice.  
+YAGEO makes no representation, warranty, and/or guarantee about the fitness of its products for any 
+particular purpose or the continuing production of any of its products. To the maximum extent permitted by 
+law, YAGEO disclaims (i) any and all liability arising out of the application or use of any YAGEO product, (ii) 
+any and all liability, including without limitation special, consequential or incidental damages, and (iii) any and all 
+implied warranties, including warranties of fitness for a particular purpose, non -infringement 
+and merchantability.  
+YAGEO products are designed for general purpose applications under normal operation and usage conditions. 
+Please contact YAGEO for the applications listed below which require especially high reliability for the 
+prevention of defects which might directly cause damage to the third party's life, body or property: Aerospace 
+equipment (artificial satellite, rocket, etc.), Atomic energy-related equipment, Aviation equipment, Disaster 
+prevention equipment, crime prevention equipment, Electric heating apparatus, burning equipment, Highly 
+public information network equipment, data-processing equipment , Medical devices, Military equipment, Power 
+generation control equipment, Safety equipment, Traffic signal equipment, Transportation equipment 
+and Undersea equipment, or for any other application or use in which the failure of YAGEO 
+products could result in personal injury or death, or serious property damage. Particularly YAGEO 
+Corporation and its affiliates do not recommend the use of commercial, automotive, and/or COTS 
+grade products for high reliability applications or manned space flight. 
+Information provided here is intended to indicate product specifications only. YAGEO reserves all the rights 
+for revising this content without further notification, as long as products are unchanged. Any product change 
+will be announced by PCN. 

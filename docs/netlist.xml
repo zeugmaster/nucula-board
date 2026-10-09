@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>nucula-v2.kicad_sch</source>
-    <date>2026-10-08T21:47:06</date>
+    <date>2026-10-09T12:52:52</date>
     <tool>Eeschema 10.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -615,16 +615,16 @@
     <comp ref="C10">
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
-      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf</datasheet>
+      <datasheet>https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do</datasheet>
       <fields>
         <field name="Voltage">50 V</field>
         <field name="Dielectric">X7R</field>
         <field name="Tolerance">10%</field>
         <field name="Manufacturer">Samsung Electro-Mechanics</field>
-        <field name="MPN">CL10B104KB8NNNC</field>
-        <field name="LCSC">C1591</field>
+        <field name="MPN">CL10B104KB8NNNL</field>
+        <field name="LCSC">C913912</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf</field>
+        <field name="Datasheet">https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -632,8 +632,8 @@
       <property name="Dielectric" value="X7R"/>
       <property name="Tolerance" value="10%"/>
       <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
-      <property name="MPN" value="CL10B104KB8NNNC"/>
-      <property name="LCSC" value="C1591"/>
+      <property name="MPN" value="CL10B104KB8NNNL"/>
+      <property name="LCSC" value="C913912"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -652,16 +652,16 @@
     <comp ref="C11">
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
-      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf</datasheet>
+      <datasheet>https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do</datasheet>
       <fields>
         <field name="Voltage">50 V</field>
         <field name="Dielectric">X7R</field>
         <field name="Tolerance">10%</field>
         <field name="Manufacturer">Samsung Electro-Mechanics</field>
-        <field name="MPN">CL10B104KB8NNNC</field>
-        <field name="LCSC">C1591</field>
+        <field name="MPN">CL10B104KB8NNNL</field>
+        <field name="LCSC">C913912</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf</field>
+        <field name="Datasheet">https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -669,8 +669,8 @@
       <property name="Dielectric" value="X7R"/>
       <property name="Tolerance" value="10%"/>
       <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
-      <property name="MPN" value="CL10B104KB8NNNC"/>
-      <property name="LCSC" value="C1591"/>
+      <property name="MPN" value="CL10B104KB8NNNL"/>
+      <property name="LCSC" value="C913912"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -726,16 +726,16 @@
     <comp ref="C13">
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
-      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf</datasheet>
+      <datasheet>https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do</datasheet>
       <fields>
         <field name="Voltage">50 V</field>
         <field name="Dielectric">X7R</field>
         <field name="Tolerance">10%</field>
         <field name="Manufacturer">Samsung Electro-Mechanics</field>
-        <field name="MPN">CL10B104KB8NNNC</field>
-        <field name="LCSC">C1591</field>
+        <field name="MPN">CL10B104KB8NNNL</field>
+        <field name="LCSC">C913912</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf</field>
+        <field name="Datasheet">https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -743,8 +743,8 @@
       <property name="Dielectric" value="X7R"/>
       <property name="Tolerance" value="10%"/>
       <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
-      <property name="MPN" value="CL10B104KB8NNNC"/>
-      <property name="LCSC" value="C1591"/>
+      <property name="MPN" value="CL10B104KB8NNNL"/>
+      <property name="LCSC" value="C913912"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -763,16 +763,16 @@
     <comp ref="C14">
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
-      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf</datasheet>
+      <datasheet>https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do</datasheet>
       <fields>
         <field name="Voltage">50 V</field>
         <field name="Dielectric">X7R</field>
         <field name="Tolerance">10%</field>
         <field name="Manufacturer">Samsung Electro-Mechanics</field>
-        <field name="MPN">CL10B104KB8NNNC</field>
-        <field name="LCSC">C1591</field>
+        <field name="MPN">CL10B104KB8NNNL</field>
+        <field name="LCSC">C913912</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf</field>
+        <field name="Datasheet">https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -780,8 +780,8 @@
       <property name="Dielectric" value="X7R"/>
       <property name="Tolerance" value="10%"/>
       <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
-      <property name="MPN" value="CL10B104KB8NNNC"/>
-      <property name="LCSC" value="C1591"/>
+      <property name="MPN" value="CL10B104KB8NNNL"/>
+      <property name="LCSC" value="C913912"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -800,16 +800,16 @@
     <comp ref="C55">
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
-      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf</datasheet>
+      <datasheet>https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do</datasheet>
       <fields>
         <field name="Voltage">50 V</field>
         <field name="Dielectric">X7R</field>
         <field name="Tolerance">10%</field>
         <field name="Manufacturer">Samsung Electro-Mechanics</field>
-        <field name="MPN">CL10B104KB8NNNC</field>
-        <field name="LCSC">C1591</field>
+        <field name="MPN">CL10B104KB8NNNL</field>
+        <field name="LCSC">C913912</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf</field>
+        <field name="Datasheet">https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -817,8 +817,8 @@
       <property name="Dielectric" value="X7R"/>
       <property name="Tolerance" value="10%"/>
       <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
-      <property name="MPN" value="CL10B104KB8NNNC"/>
-      <property name="LCSC" value="C1591"/>
+      <property name="MPN" value="CL10B104KB8NNNL"/>
+      <property name="LCSC" value="C913912"/>
       <property name="Sheetname" value="Power + ESP32-C3"/>
       <property name="Sheetfile" value="power-mcu.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2185,16 +2185,16 @@
     <comp ref="C16">
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
-      <datasheet>https://product.samsungsem.com/mlcc/CL10B104KB8NNN.do</datasheet>
+      <datasheet>https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do</datasheet>
       <fields>
         <field name="Voltage">50 V</field>
         <field name="Dielectric">X7R</field>
         <field name="Tolerance">10%</field>
         <field name="Manufacturer">Samsung Electro-Mechanics</field>
-        <field name="MPN">CL10B104KB8NNNC</field>
-        <field name="LCSC">C1591</field>
+        <field name="MPN">CL10B104KB8NNNL</field>
+        <field name="LCSC">C913912</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL10B104KB8NNN.do</field>
+        <field name="Datasheet">https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -2202,8 +2202,8 @@
       <property name="Dielectric" value="X7R"/>
       <property name="Tolerance" value="10%"/>
       <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
-      <property name="MPN" value="CL10B104KB8NNNC"/>
-      <property name="LCSC" value="C1591"/>
+      <property name="MPN" value="CL10B104KB8NNNL"/>
+      <property name="LCSC" value="C913912"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2261,16 +2261,16 @@
     <comp ref="C18">
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
-      <datasheet>https://product.samsungsem.com/mlcc/CL10B104KB8NNN.do</datasheet>
+      <datasheet>https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do</datasheet>
       <fields>
         <field name="Voltage">50 V</field>
         <field name="Dielectric">X7R</field>
         <field name="Tolerance">10%</field>
         <field name="Manufacturer">Samsung Electro-Mechanics</field>
-        <field name="MPN">CL10B104KB8NNNC</field>
-        <field name="LCSC">C1591</field>
+        <field name="MPN">CL10B104KB8NNNL</field>
+        <field name="LCSC">C913912</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL10B104KB8NNN.do</field>
+        <field name="Datasheet">https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -2278,8 +2278,8 @@
       <property name="Dielectric" value="X7R"/>
       <property name="Tolerance" value="10%"/>
       <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
-      <property name="MPN" value="CL10B104KB8NNNC"/>
-      <property name="LCSC" value="C1591"/>
+      <property name="MPN" value="CL10B104KB8NNNL"/>
+      <property name="LCSC" value="C913912"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2337,16 +2337,16 @@
     <comp ref="C20">
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
-      <datasheet>https://product.samsungsem.com/mlcc/CL10B104KB8NNN.do</datasheet>
+      <datasheet>https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do</datasheet>
       <fields>
         <field name="Voltage">50 V</field>
         <field name="Dielectric">X7R</field>
         <field name="Tolerance">10%</field>
         <field name="Manufacturer">Samsung Electro-Mechanics</field>
-        <field name="MPN">CL10B104KB8NNNC</field>
-        <field name="LCSC">C1591</field>
+        <field name="MPN">CL10B104KB8NNNL</field>
+        <field name="LCSC">C913912</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL10B104KB8NNN.do</field>
+        <field name="Datasheet">https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -2354,8 +2354,8 @@
       <property name="Dielectric" value="X7R"/>
       <property name="Tolerance" value="10%"/>
       <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
-      <property name="MPN" value="CL10B104KB8NNNC"/>
-      <property name="LCSC" value="C1591"/>
+      <property name="MPN" value="CL10B104KB8NNNL"/>
+      <property name="LCSC" value="C913912"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2538,16 +2538,16 @@
     <comp ref="C25">
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
-      <datasheet>https://product.samsungsem.com/mlcc/CL10B104KB8NNN.do</datasheet>
+      <datasheet>https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do</datasheet>
       <fields>
         <field name="Voltage">50 V</field>
         <field name="Dielectric">X7R</field>
         <field name="Tolerance">10%</field>
         <field name="Manufacturer">Samsung Electro-Mechanics</field>
-        <field name="MPN">CL10B104KB8NNNC</field>
-        <field name="LCSC">C1591</field>
+        <field name="MPN">CL10B104KB8NNNL</field>
+        <field name="LCSC">C913912</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL10B104KB8NNN.do</field>
+        <field name="Datasheet">https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -2555,8 +2555,8 @@
       <property name="Dielectric" value="X7R"/>
       <property name="Tolerance" value="10%"/>
       <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
-      <property name="MPN" value="CL10B104KB8NNNC"/>
-      <property name="LCSC" value="C1591"/>
+      <property name="MPN" value="CL10B104KB8NNNL"/>
+      <property name="LCSC" value="C913912"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2653,17 +2653,17 @@
     <comp ref="C28">
       <value>1nF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
-      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM2165C2A102JA01D_C162289.pdf</datasheet>
+      <datasheet>https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1811151646_YAGEO-CC0805JRNPO0BN102_C326940.pdf</datasheet>
       <fields>
         <field name="Voltage">100 V</field>
         <field name="Dielectric">C0G/NP0</field>
         <field name="Tolerance">5%</field>
         <field name="Status">PROTOTYPE START: validate with VNA / AGC / RF stress measurements</field>
-        <field name="Manufacturer">Murata Electronics</field>
-        <field name="MPN">GRM2165C2A102JA01D</field>
-        <field name="LCSC">C162289</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">CC0805JRNPO0BN102</field>
+        <field name="LCSC">C326940</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</field>
-        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM2165C2A102JA01D_C162289.pdf</field>
+        <field name="Datasheet">https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1811151646_YAGEO-CC0805JRNPO0BN102_C326940.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -2671,9 +2671,9 @@
       <property name="Dielectric" value="C0G/NP0"/>
       <property name="Tolerance" value="5%"/>
       <property name="Status" value="PROTOTYPE START: validate with VNA / AGC / RF stress measurements"/>
-      <property name="Manufacturer" value="Murata Electronics"/>
-      <property name="MPN" value="GRM2165C2A102JA01D"/>
-      <property name="LCSC" value="C162289"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="CC0805JRNPO0BN102"/>
+      <property name="LCSC" value="C326940"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2692,17 +2692,17 @@
     <comp ref="C29">
       <value>1nF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
-      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM2165C2A102JA01D_C162289.pdf</datasheet>
+      <datasheet>https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1811151646_YAGEO-CC0805JRNPO0BN102_C326940.pdf</datasheet>
       <fields>
         <field name="Voltage">100 V</field>
         <field name="Dielectric">C0G/NP0</field>
         <field name="Tolerance">5%</field>
         <field name="Status">PROTOTYPE START: validate with VNA / AGC / RF stress measurements</field>
-        <field name="Manufacturer">Murata Electronics</field>
-        <field name="MPN">GRM2165C2A102JA01D</field>
-        <field name="LCSC">C162289</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="MPN">CC0805JRNPO0BN102</field>
+        <field name="LCSC">C326940</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</field>
-        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM2165C2A102JA01D_C162289.pdf</field>
+        <field name="Datasheet">https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1811151646_YAGEO-CC0805JRNPO0BN102_C326940.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -2710,9 +2710,9 @@
       <property name="Dielectric" value="C0G/NP0"/>
       <property name="Tolerance" value="5%"/>
       <property name="Status" value="PROTOTYPE START: validate with VNA / AGC / RF stress measurements"/>
-      <property name="Manufacturer" value="Murata Electronics"/>
-      <property name="MPN" value="GRM2165C2A102JA01D"/>
-      <property name="LCSC" value="C162289"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="MPN" value="CC0805JRNPO0BN102"/>
+      <property name="LCSC" value="C326940"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2953,27 +2953,27 @@
     <comp ref="C36">
       <value>100pF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
-      <datasheet>https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2005222139_YAGEO-CC0805GRNPO0BN101_C527192.pdf</datasheet>
+      <datasheet>https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_FH--Guangdong-Fenghua-Advanced-Tech-0805CG101F101NT_C464454.pdf</datasheet>
       <fields>
         <field name="Voltage">100 V</field>
         <field name="Dielectric">C0G/NP0</field>
-        <field name="Tolerance">2%</field>
+        <field name="Tolerance">1%</field>
         <field name="Status">PROTOTYPE START: validate with VNA / AGC / RF stress measurements</field>
-        <field name="Manufacturer">YAGEO</field>
-        <field name="MPN">CC0805GRNPO0BN101</field>
-        <field name="LCSC">C527192</field>
+        <field name="Manufacturer">FH (Guangdong Fenghua Advanced Tech)</field>
+        <field name="MPN">0805CG101F101NT</field>
+        <field name="LCSC">C464454</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</field>
-        <field name="Datasheet">https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2005222139_YAGEO-CC0805GRNPO0BN101_C527192.pdf</field>
+        <field name="Datasheet">https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_FH--Guangdong-Fenghua-Advanced-Tech-0805CG101F101NT_C464454.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Voltage" value="100 V"/>
       <property name="Dielectric" value="C0G/NP0"/>
-      <property name="Tolerance" value="2%"/>
+      <property name="Tolerance" value="1%"/>
       <property name="Status" value="PROTOTYPE START: validate with VNA / AGC / RF stress measurements"/>
-      <property name="Manufacturer" value="YAGEO"/>
-      <property name="MPN" value="CC0805GRNPO0BN101"/>
-      <property name="LCSC" value="C527192"/>
+      <property name="Manufacturer" value="FH (Guangdong Fenghua Advanced Tech)"/>
+      <property name="MPN" value="0805CG101F101NT"/>
+      <property name="LCSC" value="C464454"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2992,27 +2992,27 @@
     <comp ref="C37">
       <value>100pF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
-      <datasheet>https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2005222139_YAGEO-CC0805GRNPO0BN101_C527192.pdf</datasheet>
+      <datasheet>https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_FH--Guangdong-Fenghua-Advanced-Tech-0805CG101F101NT_C464454.pdf</datasheet>
       <fields>
         <field name="Voltage">100 V</field>
         <field name="Dielectric">C0G/NP0</field>
-        <field name="Tolerance">2%</field>
+        <field name="Tolerance">1%</field>
         <field name="Status">PROTOTYPE START: validate with VNA / AGC / RF stress measurements</field>
-        <field name="Manufacturer">YAGEO</field>
-        <field name="MPN">CC0805GRNPO0BN101</field>
-        <field name="LCSC">C527192</field>
+        <field name="Manufacturer">FH (Guangdong Fenghua Advanced Tech)</field>
+        <field name="MPN">0805CG101F101NT</field>
+        <field name="LCSC">C464454</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</field>
-        <field name="Datasheet">https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2005222139_YAGEO-CC0805GRNPO0BN101_C527192.pdf</field>
+        <field name="Datasheet">https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_FH--Guangdong-Fenghua-Advanced-Tech-0805CG101F101NT_C464454.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Voltage" value="100 V"/>
       <property name="Dielectric" value="C0G/NP0"/>
-      <property name="Tolerance" value="2%"/>
+      <property name="Tolerance" value="1%"/>
       <property name="Status" value="PROTOTYPE START: validate with VNA / AGC / RF stress measurements"/>
-      <property name="Manufacturer" value="YAGEO"/>
-      <property name="MPN" value="CC0805GRNPO0BN101"/>
-      <property name="LCSC" value="C527192"/>
+      <property name="Manufacturer" value="FH (Guangdong Fenghua Advanced Tech)"/>
+      <property name="MPN" value="0805CG101F101NT"/>
+      <property name="LCSC" value="C464454"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3176,28 +3176,28 @@
     </comp>
     <comp ref="L2">
       <value>150nH</value>
-      <footprint>Nucula_Project:L_Coilcraft_0805HP</footprint>
-      <datasheet>https://www.coilcraft.com/en-us/products/rf/ceramic-core-chip-inductors/0805-(2012)/0805hp/0805hp-151/</datasheet>
+      <footprint>Nucula_Project:L_Coilcraft_0805CS_RevALands</footprint>
+      <datasheet>https://www.coilcraft.com/getmedia/dd5f20e4-1ff7-43df-8317-b693eb2dce3e/0805cs.pdf</datasheet>
       <fields>
-        <field name="Status">PROTOTYPE: RF model included; 0.60A thermal reference, verify actual RF heating</field>
+        <field name="Status">RF substitute qualified by paired models; 0.40A DC thermal reference; verify RF heating and read range on hardware</field>
         <field name="Reference Role">L1</field>
         <field name="Manufacturer">Coilcraft</field>
-        <field name="MPN">0805HP-151XGRC</field>
+        <field name="MPN">0805CS-151XGLC</field>
         <field name="Tolerance">2%</field>
-        <field name="LCSC">C20417049</field>
-        <field name="Supply Status">2026-09-20: JLCPCB C20417049 orderable 21; 10 boards require 20; secure stock before assembly</field>
-        <field name="Footprint">Nucula_Project:L_Coilcraft_0805HP</field>
-        <field name="Datasheet">https://www.coilcraft.com/en-us/products/rf/ceramic-core-chip-inductors/0805-(2012)/0805hp/0805hp-151/</field>
+        <field name="LCSC">C38190612</field>
+        <field name="Supply Status">2026-10-09: selected stocked substitute; see current JLC stock snapshot and qualification report</field>
+        <field name="Footprint">Nucula_Project:L_Coilcraft_0805CS_RevALands</field>
+        <field name="Datasheet">https://www.coilcraft.com/getmedia/dd5f20e4-1ff7-43df-8317-b693eb2dce3e/0805cs.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="L" description="Inductor"/>
-      <property name="Status" value="PROTOTYPE: RF model included; 0.60A thermal reference, verify actual RF heating"/>
+      <property name="Status" value="RF substitute qualified by paired models; 0.40A DC thermal reference; verify RF heating and read range on hardware"/>
       <property name="Reference Role" value="L1"/>
       <property name="Manufacturer" value="Coilcraft"/>
-      <property name="MPN" value="0805HP-151XGRC"/>
+      <property name="MPN" value="0805CS-151XGLC"/>
       <property name="Tolerance" value="2%"/>
-      <property name="LCSC" value="C20417049"/>
-      <property name="Supply Status" value="2026-09-20: JLCPCB C20417049 orderable 21; 10 boards require 20; secure stock before assembly"/>
+      <property name="LCSC" value="C38190612"/>
+      <property name="Supply Status" value="2026-10-09: selected stocked substitute; see current JLC stock snapshot and qualification report"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
@@ -3215,28 +3215,28 @@
     </comp>
     <comp ref="L3">
       <value>150nH</value>
-      <footprint>Nucula_Project:L_Coilcraft_0805HP</footprint>
-      <datasheet>https://www.coilcraft.com/en-us/products/rf/ceramic-core-chip-inductors/0805-(2012)/0805hp/0805hp-151/</datasheet>
+      <footprint>Nucula_Project:L_Coilcraft_0805CS_RevALands</footprint>
+      <datasheet>https://www.coilcraft.com/getmedia/dd5f20e4-1ff7-43df-8317-b693eb2dce3e/0805cs.pdf</datasheet>
       <fields>
-        <field name="Status">PROTOTYPE: RF model included; 0.60A thermal reference, verify actual RF heating</field>
+        <field name="Status">RF substitute qualified by paired models; 0.40A DC thermal reference; verify RF heating and read range on hardware</field>
         <field name="Reference Role">L2</field>
         <field name="Manufacturer">Coilcraft</field>
-        <field name="MPN">0805HP-151XGRC</field>
+        <field name="MPN">0805CS-151XGLC</field>
         <field name="Tolerance">2%</field>
-        <field name="LCSC">C20417049</field>
-        <field name="Supply Status">2026-09-20: JLCPCB C20417049 orderable 21; 10 boards require 20; secure stock before assembly</field>
-        <field name="Footprint">Nucula_Project:L_Coilcraft_0805HP</field>
-        <field name="Datasheet">https://www.coilcraft.com/en-us/products/rf/ceramic-core-chip-inductors/0805-(2012)/0805hp/0805hp-151/</field>
+        <field name="LCSC">C38190612</field>
+        <field name="Supply Status">2026-10-09: selected stocked substitute; see current JLC stock snapshot and qualification report</field>
+        <field name="Footprint">Nucula_Project:L_Coilcraft_0805CS_RevALands</field>
+        <field name="Datasheet">https://www.coilcraft.com/getmedia/dd5f20e4-1ff7-43df-8317-b693eb2dce3e/0805cs.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="L" description="Inductor"/>
-      <property name="Status" value="PROTOTYPE: RF model included; 0.60A thermal reference, verify actual RF heating"/>
+      <property name="Status" value="RF substitute qualified by paired models; 0.40A DC thermal reference; verify RF heating and read range on hardware"/>
       <property name="Reference Role" value="L2"/>
       <property name="Manufacturer" value="Coilcraft"/>
-      <property name="MPN" value="0805HP-151XGRC"/>
+      <property name="MPN" value="0805CS-151XGLC"/>
       <property name="Tolerance" value="2%"/>
-      <property name="LCSC" value="C20417049"/>
-      <property name="Supply Status" value="2026-09-20: JLCPCB C20417049 orderable 21; 10 boards require 20; secure stock before assembly"/>
+      <property name="LCSC" value="C38190612"/>
+      <property name="Supply Status" value="2026-10-09: selected stocked substitute; see current JLC stock snapshot and qualification report"/>
       <property name="Sheetname" value="NFC / PN7160 / 0x28"/>
       <property name="Sheetfile" value="nfc.kicad_sch"/>
       <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
@@ -3878,16 +3878,16 @@
     <comp ref="C43">
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
-      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf</datasheet>
+      <datasheet>https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do</datasheet>
       <fields>
         <field name="Voltage">50 V</field>
         <field name="Dielectric">X7R</field>
         <field name="Tolerance">10%</field>
         <field name="Manufacturer">Samsung Electro-Mechanics</field>
-        <field name="MPN">CL10B104KB8NNNC</field>
-        <field name="LCSC">C1591</field>
+        <field name="MPN">CL10B104KB8NNNL</field>
+        <field name="LCSC">C913912</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf</field>
+        <field name="Datasheet">https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -3895,8 +3895,8 @@
       <property name="Dielectric" value="X7R"/>
       <property name="Tolerance" value="10%"/>
       <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
-      <property name="MPN" value="CL10B104KB8NNNC"/>
-      <property name="LCSC" value="C1591"/>
+      <property name="MPN" value="CL10B104KB8NNNL"/>
+      <property name="LCSC" value="C913912"/>
       <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
       <property name="Sheetfile" value="oled.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3952,16 +3952,16 @@
     <comp ref="C45">
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
-      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf</datasheet>
+      <datasheet>https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do</datasheet>
       <fields>
         <field name="Voltage">50 V</field>
         <field name="Dielectric">X7R</field>
         <field name="Tolerance">10%</field>
         <field name="Manufacturer">Samsung Electro-Mechanics</field>
-        <field name="MPN">CL10B104KB8NNNC</field>
-        <field name="LCSC">C1591</field>
+        <field name="MPN">CL10B104KB8NNNL</field>
+        <field name="LCSC">C913912</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf</field>
+        <field name="Datasheet">https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -3969,8 +3969,8 @@
       <property name="Dielectric" value="X7R"/>
       <property name="Tolerance" value="10%"/>
       <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
-      <property name="MPN" value="CL10B104KB8NNNC"/>
-      <property name="LCSC" value="C1591"/>
+      <property name="MPN" value="CL10B104KB8NNNL"/>
+      <property name="LCSC" value="C913912"/>
       <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
       <property name="Sheetfile" value="oled.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -4063,16 +4063,16 @@
     <comp ref="C48">
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
-      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf</datasheet>
+      <datasheet>https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do</datasheet>
       <fields>
         <field name="Voltage">50 V</field>
         <field name="Dielectric">X7R</field>
         <field name="Tolerance">10%</field>
         <field name="Manufacturer">Samsung Electro-Mechanics</field>
-        <field name="MPN">CL10B104KB8NNNC</field>
-        <field name="LCSC">C1591</field>
+        <field name="MPN">CL10B104KB8NNNL</field>
+        <field name="LCSC">C913912</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf</field>
+        <field name="Datasheet">https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -4080,8 +4080,8 @@
       <property name="Dielectric" value="X7R"/>
       <property name="Tolerance" value="10%"/>
       <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
-      <property name="MPN" value="CL10B104KB8NNNC"/>
-      <property name="LCSC" value="C1591"/>
+      <property name="MPN" value="CL10B104KB8NNNL"/>
+      <property name="LCSC" value="C913912"/>
       <property name="Sheetname" value="OLED / SSD1309 / 0x3C"/>
       <property name="Sheetfile" value="oled.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -4606,17 +4606,17 @@
     <comp ref="C51">
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
-      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf</datasheet>
+      <datasheet>https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do</datasheet>
       <fields>
         <field name="PCB Region">BREAKAWAY_KEYBOARD</field>
         <field name="Voltage">50 V</field>
         <field name="Dielectric">X7R</field>
         <field name="Tolerance">10%</field>
         <field name="Manufacturer">Samsung Electro-Mechanics</field>
-        <field name="MPN">CL10B104KB8NNNC</field>
-        <field name="LCSC">C1591</field>
+        <field name="MPN">CL10B104KB8NNNL</field>
+        <field name="LCSC">C913912</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf</field>
+        <field name="Datasheet">https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -4625,8 +4625,8 @@
       <property name="Dielectric" value="X7R"/>
       <property name="Tolerance" value="10%"/>
       <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
-      <property name="MPN" value="CL10B104KB8NNNC"/>
-      <property name="LCSC" value="C1591"/>
+      <property name="MPN" value="CL10B104KB8NNNL"/>
+      <property name="LCSC" value="C913912"/>
       <property name="Sheetname" value="Keyboard / breakaway / 0x20"/>
       <property name="Sheetfile" value="keyboard.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>

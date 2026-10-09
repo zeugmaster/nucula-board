@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "layers": {
+    "F_Cu.gtl": {
+      "difference_mm2": 4.179443759983996e-15,
+      "baseline_area_mm2": 496.0133137434126,
+      "current_area_mm2": 496.0133137434143,
+      "passed": true,
+      "baseline_sha256": "0b2f84e1d6fb4506a043d911a19f80fca78dc4ac4272a1c83fe591cf38e3f0a3",
+      "current_sha256": "e0ca66de3a490df2e637aef9145d82c7a910bafad46bd3775cbcb9a2123ee2ba"
+    },
+    "In1_Cu.g1": {
+      "difference_mm2": 1.8321511872986525e-18,
+      "baseline_area_mm2": 36.47742337938688,
+      "current_area_mm2": 36.47742337938692,
+      "passed": true,
+      "baseline_sha256": "70259e0dff23273b92a4cefc57cbce844ae56ccf4574a9551d9431ebe14948c6",
+      "current_sha256": "c2bd54c07e8ed56648a28cb7940f5c9788b4664d8923f58166e32fd13cb27bc8"
+    },
+    "In2_Cu.g2": {
+      "difference_mm2": 9.815535240098594e-16,
+      "baseline_area_mm2": 32.3480463665796,
+      "current_area_mm2": 32.3480463665796,
+      "passed": true,
+      "baseline_sha256": "6c935d4e3ade417d8b5dc50db86c280b6448d98545210cee2a7d3b692a2e0d3c",
+      "current_sha256": "0ae54dfde32631d3e5cfcd111ac25d8262b71d5a448d0eaab5334a60b6350c1c"
+    },
+    "B_Cu.gbl": {
+      "difference_mm2": 0.0,
+      "baseline_area_mm2": 46.06644224409112,
+      "current_area_mm2": 46.06644224409114,
+      "passed": true,
+      "baseline_sha256": "221aa8c0b819d3a8c4cb2f1f678ba7080b303be30b87317bad3a0ba9c37063a2",
+      "current_sha256": "b1af495ba5b806015502df8755a31e65d9e81edf7d4f3a723377d87af7dc5a98"
+    },
+    "F_Mask.gts": {
+      "difference_mm2": 0.0,
+      "baseline_area_mm2": 149.05437902924083,
+      "current_area_mm2": 149.05437902924083,
+      "passed": true,
+      "baseline_sha256": "8d40c8634fbb93609b246f9bfd7ddcdeb4e3a1fd91c97dabd7612c122926f816",
+      "current_sha256": "663e77d708432fc0f92283c7ee613f2aaae1bdd60c89509740d966ddc790157d"
+    },
+    "B_Mask.gbs": {
+      "difference_mm2": 0.0,
+      "baseline_area_mm2": 0.0,
+      "current_area_mm2": 0.0,
+      "passed": true,
+      "baseline_sha256": "6447222e27a3305a51cacb6f13c4648d912f59f5f72361faef851f860ea0fdd1",
+      "current_sha256": "8ad6bedb049bf36d00c604a92ce0723480fa4818a6693c68909ad305ebed4fd9"
+    }
+  },
+  "region_export_mm": [
+    9.5,
+    68.5,
+    52,
+    111
+  ],
+  "curve_approximation_mm": 0.0001,
+  "scope": "Independent Gerber readback against submitted rev-A copper and mask in the frozen NFC area. No EM or material measurements."
+}

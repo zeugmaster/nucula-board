@@ -18,6 +18,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from generate_coil import geometry, WIDTH, GAP, OUTER, TURNS, ROOT
+from inductor_models import MODELS, SELECTED
 
 MU0 = 4 * math.pi * 1e-7
 F0 = 13.56e6
@@ -71,14 +72,15 @@ def inductance_estimates():
 
 
 def inductor_z(f, scale=1.):
-    """Coilcraft 0805HP-151 model, doc 158-1/158-27 (2017).
+    """Selected Coilcraft model; provenance in inductor_models.py.
     R2 + ((Rvar + jwL) || (R1 + 1/jwC)); Rvar=k*sqrt(f).
     Typical model values; mounted board parasitics are not included.
     """
     w = 2 * np.pi * f
-    branch_l = 1.554e-4 * np.sqrt(f) + 1j * w * 148.8e-9 * scale
-    branch_c = 10. + 1 / (1j * w * .135e-12)
-    return .288 + 1 / (1 / branch_l + 1 / branch_c)
+    m = MODELS[SELECTED]
+    branch_l = m['k'] * np.sqrt(f) + 1j * w * m['l'] * scale
+    branch_c = m['rpar'] + 1 / (1j * w * m['c'])
+    return m['rdc'] + 1 / (1 / branch_l + 1 / branch_c)
 
 
 def coil_z(f, la, ra, ca):
@@ -184,7 +186,7 @@ def main():
     rmc = rng.uniform(1., 2.5, size)
     camc = rng.uniform(1e-12, 5e-12, size)
     zmc, _ = network(F0, lmc, rmc, camc, rq * rng.uniform(.99, 1.01, size),
-                      c1 * rng.uniform(.99, 1.01, size), c2 * rng.uniform(.98, 1.02, size),
+                      c1 * rng.uniform(.99, 1.01, size), c2 * rng.uniform(.99, 1.01, size),
                       330e-12 * rng.uniform(.99, 1.01, size), rng.uniform(.98, 1.02, size),
                       c0_trim=33e-12 * rng.uniform(.95, 1.05, size))
     # Fundamental estimate for ideal differential square drive: V1rms=2sqrt(2)VTVDD/pi.
@@ -204,7 +206,7 @@ def main():
             for r in [1., 1.5, 2.5]:
                 sensitivity.append(dict(la_uH=la * lfactor * 1e6, ra_ohm=r, ca_pF=cp,
                     **solve(la * lfactor, r, cp * 1e-12, args.target_ohm)))
-    report = dict(frequency_Hz=F0, estimates=estimates,
+    report = dict(frequency_Hz=F0, estimates=estimates, inductor_mpn=SELECTED,
                   fitted_model_assumptions=dict(la_uH=la*1e6, ra_ohm=ra, ca_pF=ca*1e12,
                       measured=False, capacitor_esr_each_ohm=.03, rx_internal_each_ohm=2200.),
                   nxp_figure24_regression=nxp_example_check(), exact_solve=baseline,

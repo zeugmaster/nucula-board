@@ -1,0 +1,673 @@
+{
+  "authorization": "User allows different RF part after revalidation, 2026-10-09; preserve matching values and copper wherever possible.",
+  "footprints": {
+    "C55": {
+      "properties": {
+        "MPN": {
+          "old": "CL10B104KB8NNNC",
+          "new": "CL10B104KB8NNNL"
+        },
+        "LCSC": {
+          "old": "C1591",
+          "new": "C913912"
+        },
+        "Datasheet": {
+          "old": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf",
+          "new": "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
+        }
+      }
+    },
+    "C18": {
+      "properties": {
+        "MPN": {
+          "old": "CL10B104KB8NNNC",
+          "new": "CL10B104KB8NNNL"
+        },
+        "LCSC": {
+          "old": "C1591",
+          "new": "C913912"
+        },
+        "Datasheet": {
+          "old": "https://product.samsungsem.com/mlcc/CL10B104KB8NNN.do",
+          "new": "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
+        }
+      }
+    },
+    "C10": {
+      "properties": {
+        "MPN": {
+          "old": "CL10B104KB8NNNC",
+          "new": "CL10B104KB8NNNL"
+        },
+        "LCSC": {
+          "old": "C1591",
+          "new": "C913912"
+        },
+        "Datasheet": {
+          "old": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf",
+          "new": "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
+        }
+      }
+    },
+    "C25": {
+      "properties": {
+        "MPN": {
+          "old": "CL10B104KB8NNNC",
+          "new": "CL10B104KB8NNNL"
+        },
+        "LCSC": {
+          "old": "C1591",
+          "new": "C913912"
+        },
+        "Datasheet": {
+          "old": "https://product.samsungsem.com/mlcc/CL10B104KB8NNN.do",
+          "new": "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
+        }
+      }
+    },
+    "C14": {
+      "properties": {
+        "MPN": {
+          "old": "CL10B104KB8NNNC",
+          "new": "CL10B104KB8NNNL"
+        },
+        "LCSC": {
+          "old": "C1591",
+          "new": "C913912"
+        },
+        "Datasheet": {
+          "old": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf",
+          "new": "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
+        }
+      }
+    },
+    "C51": {
+      "properties": {
+        "MPN": {
+          "old": "CL10B104KB8NNNC",
+          "new": "CL10B104KB8NNNL"
+        },
+        "LCSC": {
+          "old": "C1591",
+          "new": "C913912"
+        },
+        "Datasheet": {
+          "old": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf",
+          "new": "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
+        }
+      }
+    },
+    "C11": {
+      "properties": {
+        "MPN": {
+          "old": "CL10B104KB8NNNC",
+          "new": "CL10B104KB8NNNL"
+        },
+        "LCSC": {
+          "old": "C1591",
+          "new": "C913912"
+        },
+        "Datasheet": {
+          "old": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf",
+          "new": "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
+        }
+      }
+    },
+    "L2": {
+      "properties": {
+        "MPN": {
+          "old": "0805HP-151XGRC",
+          "new": "0805CS-151XGLC"
+        },
+        "LCSC": {
+          "old": "C20417049",
+          "new": "C38190612"
+        },
+        "Datasheet": {
+          "old": "https://www.coilcraft.com/en-us/products/rf/ceramic-core-chip-inductors/0805-(2012)/0805hp/0805hp-151/",
+          "new": "https://www.coilcraft.com/getmedia/dd5f20e4-1ff7-43df-8317-b693eb2dce3e/0805cs.pdf"
+        },
+        "Footprint": {
+          "old": "Nucula_Project:L_Coilcraft_0805HP",
+          "new": "Nucula_Project:L_Coilcraft_0805CS_RevALands"
+        },
+        "Status": {
+          "old": "PROTOTYPE: RF model included; 0.60A thermal reference, verify actual RF heating",
+          "new": "RF substitute qualified by paired models; 0.40A DC thermal reference; verify RF heating and read range on hardware"
+        },
+        "Supply Status": {
+          "old": "2026-09-20: JLCPCB C20417049 orderable 21; 10 boards require 20; secure stock before assembly",
+          "new": "2026-10-09: selected stocked substitute; see current JLC stock snapshot and qualification report"
+        }
+      }
+    },
+    "C36": {
+      "properties": {
+        "MPN": {
+          "old": "CC0805GRNPO0BN101",
+          "new": "0805CG101F101NT"
+        },
+        "LCSC": {
+          "old": "C527192",
+          "new": "C464454"
+        },
+        "Manufacturer": {
+          "old": "YAGEO",
+          "new": "FH (Guangdong Fenghua Advanced Tech)"
+        },
+        "Datasheet": {
+          "old": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2005222139_YAGEO-CC0805GRNPO0BN101_C527192.pdf",
+          "new": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_FH--Guangdong-Fenghua-Advanced-Tech-0805CG101F101NT_C464454.pdf"
+        },
+        "Tolerance": {
+          "old": "2%",
+          "new": "1%"
+        }
+      }
+    },
+    "C45": {
+      "properties": {
+        "MPN": {
+          "old": "CL10B104KB8NNNC",
+          "new": "CL10B104KB8NNNL"
+        },
+        "LCSC": {
+          "old": "C1591",
+          "new": "C913912"
+        },
+        "Datasheet": {
+          "old": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf",
+          "new": "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
+        }
+      }
+    },
+    "C13": {
+      "properties": {
+        "MPN": {
+          "old": "CL10B104KB8NNNC",
+          "new": "CL10B104KB8NNNL"
+        },
+        "LCSC": {
+          "old": "C1591",
+          "new": "C913912"
+        },
+        "Datasheet": {
+          "old": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf",
+          "new": "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
+        }
+      }
+    },
+    "C29": {
+      "properties": {
+        "MPN": {
+          "old": "GRM2165C2A102JA01D",
+          "new": "CC0805JRNPO0BN102"
+        },
+        "LCSC": {
+          "old": "C162289",
+          "new": "C326940"
+        },
+        "Manufacturer": {
+          "old": "Murata Electronics",
+          "new": "YAGEO"
+        },
+        "Datasheet": {
+          "old": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM2165C2A102JA01D_C162289.pdf",
+          "new": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1811151646_YAGEO-CC0805JRNPO0BN102_C326940.pdf"
+        }
+      }
+    },
+    "C43": {
+      "properties": {
+        "MPN": {
+          "old": "CL10B104KB8NNNC",
+          "new": "CL10B104KB8NNNL"
+        },
+        "LCSC": {
+          "old": "C1591",
+          "new": "C913912"
+        },
+        "Datasheet": {
+          "old": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf",
+          "new": "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
+        }
+      }
+    },
+    "C37": {
+      "properties": {
+        "MPN": {
+          "old": "CC0805GRNPO0BN101",
+          "new": "0805CG101F101NT"
+        },
+        "LCSC": {
+          "old": "C527192",
+          "new": "C464454"
+        },
+        "Manufacturer": {
+          "old": "YAGEO",
+          "new": "FH (Guangdong Fenghua Advanced Tech)"
+        },
+        "Datasheet": {
+          "old": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2005222139_YAGEO-CC0805GRNPO0BN101_C527192.pdf",
+          "new": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_FH--Guangdong-Fenghua-Advanced-Tech-0805CG101F101NT_C464454.pdf"
+        },
+        "Tolerance": {
+          "old": "2%",
+          "new": "1%"
+        }
+      }
+    },
+    "C20": {
+      "properties": {
+        "MPN": {
+          "old": "CL10B104KB8NNNC",
+          "new": "CL10B104KB8NNNL"
+        },
+        "LCSC": {
+          "old": "C1591",
+          "new": "C913912"
+        },
+        "Datasheet": {
+          "old": "https://product.samsungsem.com/mlcc/CL10B104KB8NNN.do",
+          "new": "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
+        }
+      }
+    },
+    "L3": {
+      "properties": {
+        "MPN": {
+          "old": "0805HP-151XGRC",
+          "new": "0805CS-151XGLC"
+        },
+        "LCSC": {
+          "old": "C20417049",
+          "new": "C38190612"
+        },
+        "Datasheet": {
+          "old": "https://www.coilcraft.com/en-us/products/rf/ceramic-core-chip-inductors/0805-(2012)/0805hp/0805hp-151/",
+          "new": "https://www.coilcraft.com/getmedia/dd5f20e4-1ff7-43df-8317-b693eb2dce3e/0805cs.pdf"
+        },
+        "Footprint": {
+          "old": "Nucula_Project:L_Coilcraft_0805HP",
+          "new": "Nucula_Project:L_Coilcraft_0805CS_RevALands"
+        },
+        "Status": {
+          "old": "PROTOTYPE: RF model included; 0.60A thermal reference, verify actual RF heating",
+          "new": "RF substitute qualified by paired models; 0.40A DC thermal reference; verify RF heating and read range on hardware"
+        },
+        "Supply Status": {
+          "old": "2026-09-20: JLCPCB C20417049 orderable 21; 10 boards require 20; secure stock before assembly",
+          "new": "2026-10-09: selected stocked substitute; see current JLC stock snapshot and qualification report"
+        }
+      }
+    },
+    "C16": {
+      "properties": {
+        "MPN": {
+          "old": "CL10B104KB8NNNC",
+          "new": "CL10B104KB8NNNL"
+        },
+        "LCSC": {
+          "old": "C1591",
+          "new": "C913912"
+        },
+        "Datasheet": {
+          "old": "https://product.samsungsem.com/mlcc/CL10B104KB8NNN.do",
+          "new": "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
+        }
+      }
+    },
+    "C48": {
+      "properties": {
+        "MPN": {
+          "old": "CL10B104KB8NNNC",
+          "new": "CL10B104KB8NNNL"
+        },
+        "LCSC": {
+          "old": "C1591",
+          "new": "C913912"
+        },
+        "Datasheet": {
+          "old": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf",
+          "new": "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
+        }
+      }
+    },
+    "C28": {
+      "properties": {
+        "MPN": {
+          "old": "GRM2165C2A102JA01D",
+          "new": "CC0805JRNPO0BN102"
+        },
+        "LCSC": {
+          "old": "C162289",
+          "new": "C326940"
+        },
+        "Manufacturer": {
+          "old": "Murata Electronics",
+          "new": "YAGEO"
+        },
+        "Datasheet": {
+          "old": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM2165C2A102JA01D_C162289.pdf",
+          "new": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1811151646_YAGEO-CC0805JRNPO0BN102_C326940.pdf"
+        }
+      }
+    }
+  },
+  "schematic_properties": {
+    "C14": {
+      "MPN": {
+        "old": "CL10B104KB8NNNC",
+        "new": "CL10B104KB8NNNL"
+      },
+      "LCSC": {
+        "old": "C1591",
+        "new": "C913912"
+      },
+      "Datasheet": {
+        "old": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf",
+        "new": "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
+      }
+    },
+    "C10": {
+      "MPN": {
+        "old": "CL10B104KB8NNNC",
+        "new": "CL10B104KB8NNNL"
+      },
+      "LCSC": {
+        "old": "C1591",
+        "new": "C913912"
+      },
+      "Datasheet": {
+        "old": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf",
+        "new": "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
+      }
+    },
+    "C11": {
+      "MPN": {
+        "old": "CL10B104KB8NNNC",
+        "new": "CL10B104KB8NNNL"
+      },
+      "LCSC": {
+        "old": "C1591",
+        "new": "C913912"
+      },
+      "Datasheet": {
+        "old": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf",
+        "new": "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
+      }
+    },
+    "C13": {
+      "MPN": {
+        "old": "CL10B104KB8NNNC",
+        "new": "CL10B104KB8NNNL"
+      },
+      "LCSC": {
+        "old": "C1591",
+        "new": "C913912"
+      },
+      "Datasheet": {
+        "old": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf",
+        "new": "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
+      }
+    },
+    "C55": {
+      "MPN": {
+        "old": "CL10B104KB8NNNC",
+        "new": "CL10B104KB8NNNL"
+      },
+      "LCSC": {
+        "old": "C1591",
+        "new": "C913912"
+      },
+      "Datasheet": {
+        "old": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf",
+        "new": "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
+      }
+    },
+    "C16": {
+      "MPN": {
+        "old": "CL10B104KB8NNNC",
+        "new": "CL10B104KB8NNNL"
+      },
+      "LCSC": {
+        "old": "C1591",
+        "new": "C913912"
+      },
+      "Datasheet": {
+        "old": "https://product.samsungsem.com/mlcc/CL10B104KB8NNN.do",
+        "new": "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
+      }
+    },
+    "C18": {
+      "MPN": {
+        "old": "CL10B104KB8NNNC",
+        "new": "CL10B104KB8NNNL"
+      },
+      "LCSC": {
+        "old": "C1591",
+        "new": "C913912"
+      },
+      "Datasheet": {
+        "old": "https://product.samsungsem.com/mlcc/CL10B104KB8NNN.do",
+        "new": "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
+      }
+    },
+    "C20": {
+      "MPN": {
+        "old": "CL10B104KB8NNNC",
+        "new": "CL10B104KB8NNNL"
+      },
+      "LCSC": {
+        "old": "C1591",
+        "new": "C913912"
+      },
+      "Datasheet": {
+        "old": "https://product.samsungsem.com/mlcc/CL10B104KB8NNN.do",
+        "new": "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
+      }
+    },
+    "C25": {
+      "MPN": {
+        "old": "CL10B104KB8NNNC",
+        "new": "CL10B104KB8NNNL"
+      },
+      "LCSC": {
+        "old": "C1591",
+        "new": "C913912"
+      },
+      "Datasheet": {
+        "old": "https://product.samsungsem.com/mlcc/CL10B104KB8NNN.do",
+        "new": "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
+      }
+    },
+    "L2": {
+      "MPN": {
+        "old": "0805HP-151XGRC",
+        "new": "0805CS-151XGLC"
+      },
+      "LCSC": {
+        "old": "C20417049",
+        "new": "C38190612"
+      },
+      "Datasheet": {
+        "old": "https://www.coilcraft.com/en-us/products/rf/ceramic-core-chip-inductors/0805-(2012)/0805hp/0805hp-151/",
+        "new": "https://www.coilcraft.com/getmedia/dd5f20e4-1ff7-43df-8317-b693eb2dce3e/0805cs.pdf"
+      },
+      "Footprint": {
+        "old": "Nucula_Project:L_Coilcraft_0805HP",
+        "new": "Nucula_Project:L_Coilcraft_0805CS_RevALands"
+      },
+      "Status": {
+        "old": "PROTOTYPE: RF model included; 0.60A thermal reference, verify actual RF heating",
+        "new": "RF substitute qualified by paired models; 0.40A DC thermal reference; verify RF heating and read range on hardware"
+      },
+      "Supply Status": {
+        "old": "2026-09-20: JLCPCB C20417049 orderable 21; 10 boards require 20; secure stock before assembly",
+        "new": "2026-10-09: selected stocked substitute; see current JLC stock snapshot and qualification report"
+      }
+    },
+    "L3": {
+      "MPN": {
+        "old": "0805HP-151XGRC",
+        "new": "0805CS-151XGLC"
+      },
+      "LCSC": {
+        "old": "C20417049",
+        "new": "C38190612"
+      },
+      "Datasheet": {
+        "old": "https://www.coilcraft.com/en-us/products/rf/ceramic-core-chip-inductors/0805-(2012)/0805hp/0805hp-151/",
+        "new": "https://www.coilcraft.com/getmedia/dd5f20e4-1ff7-43df-8317-b693eb2dce3e/0805cs.pdf"
+      },
+      "Footprint": {
+        "old": "Nucula_Project:L_Coilcraft_0805HP",
+        "new": "Nucula_Project:L_Coilcraft_0805CS_RevALands"
+      },
+      "Status": {
+        "old": "PROTOTYPE: RF model included; 0.60A thermal reference, verify actual RF heating",
+        "new": "RF substitute qualified by paired models; 0.40A DC thermal reference; verify RF heating and read range on hardware"
+      },
+      "Supply Status": {
+        "old": "2026-09-20: JLCPCB C20417049 orderable 21; 10 boards require 20; secure stock before assembly",
+        "new": "2026-10-09: selected stocked substitute; see current JLC stock snapshot and qualification report"
+      }
+    },
+    "C36": {
+      "MPN": {
+        "old": "CC0805GRNPO0BN101",
+        "new": "0805CG101F101NT"
+      },
+      "LCSC": {
+        "old": "C527192",
+        "new": "C464454"
+      },
+      "Manufacturer": {
+        "old": "YAGEO",
+        "new": "FH (Guangdong Fenghua Advanced Tech)"
+      },
+      "Datasheet": {
+        "old": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2005222139_YAGEO-CC0805GRNPO0BN101_C527192.pdf",
+        "new": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_FH--Guangdong-Fenghua-Advanced-Tech-0805CG101F101NT_C464454.pdf"
+      },
+      "Tolerance": {
+        "old": "2%",
+        "new": "1%"
+      }
+    },
+    "C37": {
+      "MPN": {
+        "old": "CC0805GRNPO0BN101",
+        "new": "0805CG101F101NT"
+      },
+      "LCSC": {
+        "old": "C527192",
+        "new": "C464454"
+      },
+      "Manufacturer": {
+        "old": "YAGEO",
+        "new": "FH (Guangdong Fenghua Advanced Tech)"
+      },
+      "Datasheet": {
+        "old": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2005222139_YAGEO-CC0805GRNPO0BN101_C527192.pdf",
+        "new": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_FH--Guangdong-Fenghua-Advanced-Tech-0805CG101F101NT_C464454.pdf"
+      },
+      "Tolerance": {
+        "old": "2%",
+        "new": "1%"
+      }
+    },
+    "C28": {
+      "MPN": {
+        "old": "GRM2165C2A102JA01D",
+        "new": "CC0805JRNPO0BN102"
+      },
+      "LCSC": {
+        "old": "C162289",
+        "new": "C326940"
+      },
+      "Manufacturer": {
+        "old": "Murata Electronics",
+        "new": "YAGEO"
+      },
+      "Datasheet": {
+        "old": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM2165C2A102JA01D_C162289.pdf",
+        "new": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1811151646_YAGEO-CC0805JRNPO0BN102_C326940.pdf"
+      }
+    },
+    "C29": {
+      "MPN": {
+        "old": "GRM2165C2A102JA01D",
+        "new": "CC0805JRNPO0BN102"
+      },
+      "LCSC": {
+        "old": "C162289",
+        "new": "C326940"
+      },
+      "Manufacturer": {
+        "old": "Murata Electronics",
+        "new": "YAGEO"
+      },
+      "Datasheet": {
+        "old": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Murata-Electronics-GRM2165C2A102JA01D_C162289.pdf",
+        "new": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1811151646_YAGEO-CC0805JRNPO0BN102_C326940.pdf"
+      }
+    },
+    "C43": {
+      "MPN": {
+        "old": "CL10B104KB8NNNC",
+        "new": "CL10B104KB8NNNL"
+      },
+      "LCSC": {
+        "old": "C1591",
+        "new": "C913912"
+      },
+      "Datasheet": {
+        "old": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf",
+        "new": "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
+      }
+    },
+    "C45": {
+      "MPN": {
+        "old": "CL10B104KB8NNNC",
+        "new": "CL10B104KB8NNNL"
+      },
+      "LCSC": {
+        "old": "C1591",
+        "new": "C913912"
+      },
+      "Datasheet": {
+        "old": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf",
+        "new": "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
+      }
+    },
+    "C48": {
+      "MPN": {
+        "old": "CL10B104KB8NNNC",
+        "new": "CL10B104KB8NNNL"
+      },
+      "LCSC": {
+        "old": "C1591",
+        "new": "C913912"
+      },
+      "Datasheet": {
+        "old": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf",
+        "new": "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
+      }
+    },
+    "C51": {
+      "MPN": {
+        "old": "CL10B104KB8NNNC",
+        "new": "CL10B104KB8NNNL"
+      },
+      "LCSC": {
+        "old": "C1591",
+        "new": "C913912"
+      },
+      "Datasheet": {
+        "old": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf",
+        "new": "https://product.samsungsem.com/cn/mlcc/CL10B104KB8NNN.do"
+      }
+    }
+  }
+}

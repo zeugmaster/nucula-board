@@ -3,15 +3,15 @@
 An ESP32-C3 hardware prototype with USB-C, battery charging, PN7160 NFC,
 an SSD1309 OLED interface, and a detachable I²C keyboard section.
 
-**Current production files: [production-2026-10-08-package.zip](manufacturing/production-2026-10-08-package.zip).**
-The current board restores the tested rev-A NFC circuit and local layout exactly,
+**Current production files: [production-2026-10-09-package.zip](manufacturing/production-2026-10-09-package.zip).**
+The current board preserves rev-A NFC copper, matching values and placement,
 including its small vias, filled/capped fabrication and JLC04161H-3313 stackup.
 It retains the corrected display mapping, USB isolation redesign, MINI-1 module,
 six M2 holes, inward battery connector and rounded cable notch.
 [Production instructions and validation scope](docs/production-release.md).
 All previous October packages are superseded for this order. Revised USB/display
-operation still requires bench validation; the user reports rev-A NFC worked
-without tuning.
+operation and the new NFC substitutes still require bench validation. See the
+stock-substitution qualification included in this release.
 
 ![Nucula v2 PCB layout](docs/pcb/top.png)
 
@@ -48,7 +48,7 @@ routed, with all components on top and the NFC circuitry inside the coil.
 - [Rev-A bench procedure with enlarged probe-pad map (PDF)](docs/bringup/rev-A-usb-bench-guide.pdf)
 - [Routing repair, before/after comparison and geometry audit](docs/routing-review.md)
 - [Standard manufacturing package and order settings](docs/manufacturing-release.md)
-- [Current prototype manufacturing ZIP](manufacturing/production-2026-10-08-package.zip)
+- [Current prototype manufacturing ZIP](manufacturing/production-2026-10-09-package.zip)
 - [Side-entry battery connector selection, polarity and assembly instructions](docs/battery-connector.md)
 - [Circuit simulation screening, findings and model limits](docs/simulation/README.md)
 - [Schematic PDF](docs/schematic.pdf)
