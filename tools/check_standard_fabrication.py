@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Audit the ordinary-fabrication revision and the OLED ribbon access area.
+"""Audit rev-A-compatible fabrication and the OLED ribbon access area.
 
 Run with KiCad's pcbnew-enabled Python after a full native DRC with zone refill.
 This checks physical geometry, not impedance, thermal performance or board function.
@@ -31,14 +31,18 @@ def footprint_geometry_hashes(tree):
 
 
 def run(path, drc_path):
+    from check_nfc_rev_a import audit as nfc_audit, BASELINE
+    from zipfile import ZipFile
+    nfc = nfc_audit(path)
+    assert nfc['passed'], 'NFC must match the independently pinned rev-A baseline'
     board = k.LoadBoard(str(path))
     tree = parse(path.read_text())
     fps = {f.GetReference(): f for f in board.GetFootprints()}
     vias = [t for t in board.GetTracks() if isinstance(t, k.PCB_VIA)]
     checks = {}
     checks['four_copper_layers'] = board.GetCopperLayerCount() == 4
-    checks['all_routing_vias_0_30_drill_0_70_pad'] = all(
-        v.GetDrillValue() == k.FromMM(.3) and v.GetWidth(k.F_Cu) == k.FromMM(.7)
+    checks['routing_vias_match_supported_filled_capped_sizes'] = all(
+        (round(k.ToMM(v.GetDrillValue()), 3), round(k.ToMM(v.GetWidth(k.F_Cu)), 3)) in [(.3,.7),(.3,.6),(.2,.45)]
         and v.GetViaType() == k.VIATYPE_THROUGH for v in vias)
     keepouts = [z for z in board.Zones() if z.GetZoneName().startswith('OLED ribbon insertion')]
     access = rectangle(ACCESS)
@@ -65,7 +69,8 @@ def run(path, drc_path):
             if overlap > 1e-8:
                 intersections.append({'via': v.m_Uuid.AsString(), 'reference': ref,
                                       'pad': p.GetNumber(), 'overlap_mm2': round(overlap, 8)})
-    checks['open_vias_separated_from_solderable_smd_pads'] = not intersections
+    checks['via_in_pad_confined_to_preserved_NFC'] = all(
+        i['reference'] in nfc['NFC_references'] for i in intersections)
     u3 = fps['U3']
     epad = [p for p in u3.Pads() if p.GetNumber() == '49']
     checks['esp32_centre_pad_has_no_holes_mask_or_paste'] = len(epad) == 1 and all(
@@ -81,14 +86,7 @@ def run(path, drc_path):
         min(p.GetSize().x-p.GetDrillSize().x, p.GetSize().y-p.GetDrillSize().y) >= k.FromMM(.6)
         for p in slots)
     setup = child(tree, 'setup')
-    checks['no_filling_capping_plugging_or_covering'] = all(
-        not children(setup, tag) or child(setup, tag)[1] == 'no' for tag in ['filling', 'capping']) and all(
-        not children(setup, tag) or all(child(child(setup, tag), side)[1] == 'no' for side in ['front','back'])
-        for tag in ['plugging', 'covering'])
-    checks['open_vias_in_mask_data'] = all(child(child(setup, 'tenting'), s)[1] == 'no' for s in ['front','back'])
-    stack = child(setup, 'stackup')
-    checks['green_mask_enig_no_custom_dielectric_constraint'] = child(stack,'copper_finish')[1] == '"ENIG"' and child(stack,'dielectric_constraints')[1] == 'no' and all(
-        child(layer,'color')[1] == '"Green"' for layer in children(stack,'layer') if uq(layer[1]) in ['F.Mask','B.Mask'])
+    checks['rev_A_stackup_mask_and_filled_capped_process'] = nfc['checks']['submitted_stackup_and_via_process_identical']
     drc = json.loads(drc_path.read_text())
     checks['native_drc_zero_errors'] = not any(v['severity'] == 'error' for v in drc['violations'])
     checks['native_drc_zero_unconnected'] = not drc['unconnected_items']
@@ -171,6 +169,12 @@ def run(path, drc_path):
             for ref, amendment in revision['footprints'].items():
                 assert expected[ref] == amendment['from_sha256'], ref
                 expected[ref] = amendment['to_sha256']
+        # User-directed restoration is checked against immutable submitted
+        # source, never against a freshly blessed current-board hash.
+        with ZipFile(BASELINE) as archive:
+            original = footprint_geometry_hashes(parse(archive.read('nucula-v2.kicad_pcb').decode()))
+        for ref in nfc['NFC_references']:
+            expected[ref] = original[ref]
         checks['silk_edits_preserve_all_other_footprint_geometry'] = (
             footprint_geometry_hashes(tree) == expected)
     return {'passed': all(checks.values()), 'checks': checks,

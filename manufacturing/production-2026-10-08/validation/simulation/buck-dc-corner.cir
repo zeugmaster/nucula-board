@@ -1,0 +1,10 @@
+Nucula buck: ideal regulated DC operating point
+* Unlimited ideal regulator; no input/dropout/current-limit/dynamic model.
+Vref ref 0 0.612
+Ereg n2 0 ref n45 1e9
+R6 n2 n45 220220
+R7 n45 0 48748.7
+Ibias n45 0 5e-08
+.options reltol=1e-9
+.op
+.end

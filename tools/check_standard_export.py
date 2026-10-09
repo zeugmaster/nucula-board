@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Read current standard-fabrication Gerbers/drills with the existing Gerbonara stack.
+"""Read current production Gerbers/drills with the existing Gerbonara stack.
 
-Unlike inspect_jlcpcb.py's historical r2 checks, this accepts the ordinary
-0.30/0.70 mm routing vias and checks the corrected mounted display mapping.
+Checks restored NFC mixed via sizes, corrected mounted display mapping, and
+every native footprint anchor and assembly pad against the exported files.
 """
 import argparse
 from collections import Counter, defaultdict
@@ -112,6 +112,55 @@ def main():
     checks['J2_exact_side_entry_order_code_in_BOM'] = len(j2_bom) == 1 and (
         j2_bom[0]['Comment'] == 'SM02B-SRSS-TB(LF)(SN)' and j2_bom[0]['LCSC Part #'] == 'C160402')
     cpl = list(csv.DictReader((out/'assembly/jlcpcb-cpl.csv').open()))
+    # Independently read the source footprint anchors, not the exporter copy
+    # or its position CSV. This catches the old shared body-center-offset bug.
+    from kicad_sexpr import parse, children, child, uq
+    source = parse((ROOT/'nucula-v2.kicad_pcb').read_text())
+    anchors = {}
+    for fp in children(source, 'footprint'):
+        ref = next(uq(p[2]) for p in children(fp, 'property') if uq(p[1]) == 'Reference')
+        at = child(fp, 'at')
+        anchors[ref] = (float(at[1])-50, 160-float(at[2]),
+                        float(at[3]) % 360 if len(at) > 3 else 0,
+                        uq(child(fp, 'layer')[1]))
+    audit_rows = []
+    for row in cpl:
+        ref = row['Designator']
+        x, y, angle, layer = anchors[ref]
+        dx, dy = float(row['Mid X'])-x, float(row['Mid Y'])-y
+        da = (float(row['Rotation'])-angle+180) % 360-180
+        audit_rows.append([ref, round(x,6), round(y,6), angle,
+                           round(dx,6), round(dy,6), round(da,6),
+                           layer == 'F.Cu' and row['Layer'] == 'Top'
+                           and max(abs(dx),abs(dy),abs(da)) < 1e-6])
+    checks['every_CPL_anchor_angle_and_side_matches_source_PCB'] = (
+        len(audit_rows) == 119 and all(row[-1] for row in audit_rows))
+    checks['native_position_CSV_matches_source_PCB'] = all(
+        max(abs(float(row['PosX'])-anchors[row['Ref']][0]),
+            abs(float(row['PosY'])-anchors[row['Ref']][1]),
+            abs((float(row['Rot'])-anchors[row['Ref']][2]+180) % 360-180)) < 1e-6
+        and row['Side'] == 'top' for row in placements)
+    def normalized_net(net):
+        return net.replace('{slash}', '/') if net not in ['', 'N/C'] else ''
+    expected_pads = Counter((q['ref'], q['num'], normalized_net(q['net']),
+                             round(q['xy'][0]-50,6), round(160-q['xy'][1],6))
+                            for q in geometry['items'] if q['type'] == 'pad'
+                            and q['ref'] in populated and q['num'] and 0 in q['layers'])
+    exported_pads = Counter((o.attrs['.P'][0], o.attrs['.P'][1],
+                             normalized_net(o.attrs.get('.N', ('',))[0]),
+                             round(o.x,6), round(o.y,6))
+                            for o in stack.graphic_layers['top', 'copper'].objects
+                            if isinstance(o,Flash) and o.attrs.get('.P', ('',))[0] in populated)
+    table_pads = Counter((r['Reference'],r['Pad'],normalized_net(r['Net']),
+                          round(float(r['X_mm']),6),round(float(r['Y_mm']),6))
+                         for r in csv.DictReader((out/'assembly/pad-coordinates.csv').open()))
+    checks['all_413_assembly_pad_positions_and_nets_match_source_Gerber_and_table'] = (
+        sum(expected_pads.values()) == 413 and expected_pads == exported_pads == table_pads)
+    with (out/'assembly/placement-audit.csv').open('w', newline='') as stream:
+        writer = csv.writer(stream, lineterminator='\n')
+        writer.writerow(['Reference','Expected_X_mm','Expected_Y_mm','Expected_rotation',
+                         'CPL_delta_X_mm','CPL_delta_Y_mm','CPL_delta_rotation','Passed'])
+        writer.writerows(audit_rows)
     j2_cpl = [r for r in cpl if r['Designator'] == 'J2']
     checks['J2_CPL_anchor_rotation_and_side'] = len(j2_cpl) == 1 and (
         tuple(float(j2_cpl[0][k]) for k in ['Mid X','Mid Y','Rotation']) == (7.7,59.1,270.)

@@ -1,0 +1,14 @@
+Revised USB circuit; bounded DC isolation screen
+Vlogic logic 0 3.3
+Rpull logic phy 1.5k
+Rseries phy switched 22.0
+Rswitch switched dp 10
+Rhost dp 0 15k
+R18 vbus 0 10100.0
+Iother 0 vbus 0.0
+R17 logic oe 10100.0
+Icontrol oe 0 1u
+Rq2 oe 0 10
+Vusb vbus 0 5
+.op
+.end

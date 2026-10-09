@@ -1,0 +1,10 @@
+Nucula oled-boost: ideal regulated DC operating point
+* Unlimited ideal regulator; no input/dropout/current-limit/dynamic model.
+Vref ref 0 1.33
+Ereg n34 0 ref n36 1e9
+R30 n34 n36 1801800
+R31 n36 0 200200
+Ibias n36 0 1e-07
+.options reltol=1e-9
+.op
+.end

@@ -1,0 +1,80 @@
+{
+  "status": "pass",
+  "four_layer_fixtures": {
+    "baseline": {
+      "winding_keepout_blocks": false,
+      "drc_types": []
+    },
+    "center_front": {
+      "winding_keepout_blocks": false,
+      "drc_types": [
+        "track_dangling"
+      ]
+    },
+    "center_inner": {
+      "winding_keepout_blocks": false,
+      "drc_types": [
+        "track_dangling"
+      ]
+    },
+    "entry_bottom": {
+      "winding_keepout_blocks": false,
+      "drc_types": [
+        "track_dangling"
+      ]
+    },
+    "entry_front": {
+      "winding_keepout_blocks": true,
+      "drc_types": [
+        "items_not_allowed",
+        "track_dangling"
+      ]
+    },
+    "entry_inner1": {
+      "winding_keepout_blocks": true,
+      "drc_types": [
+        "items_not_allowed",
+        "track_dangling"
+      ]
+    },
+    "entry_inner2": {
+      "winding_keepout_blocks": true,
+      "drc_types": [
+        "items_not_allowed",
+        "track_dangling"
+      ]
+    },
+    "winding_bottom": {
+      "winding_keepout_blocks": true,
+      "drc_types": [
+        "items_not_allowed",
+        "track_dangling"
+      ]
+    },
+    "entry_via": {
+      "winding_keepout_blocks": true,
+      "drc_types": [
+        "items_not_allowed",
+        "via_dangling"
+      ]
+    },
+    "center_via": {
+      "winding_keepout_blocks": false,
+      "drc_types": [
+        "via_dangling"
+      ]
+    },
+    "center_component": {
+      "winding_keepout_blocks": false,
+      "drc_types": []
+    },
+    "winding_component": {
+      "winding_keepout_blocks": true,
+      "drc_types": [
+        "items_not_allowed",
+        "courtyards_overlap",
+        "courtyards_overlap"
+      ]
+    }
+  }
+}

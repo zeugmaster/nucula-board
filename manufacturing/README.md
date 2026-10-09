@@ -1,24 +1,17 @@
 # Manufacturing releases
 
-The editable PCB now has J2 moved 4 mm inward and a rounded 5 × 3 mm battery
-cable notch. Existing archives predate this change and retain the previous
-outline and connector placement. Generate a new export before ordering the
-current design; see [the battery geometry](../docs/battery-connector.md).
+**Current release: [production-2026-10-08-package.zip](production-2026-10-08-package.zip).**
 
-**Latest archived prototype: [mounting-2026-10-08-package.zip](mounting-2026-10-08-package.zip).**
-Six 2.2 mm NPTH holes accept M2 hardware: four main-board corners and the
-two lower keyboard corners. [Mounting plan](../docs/mounting-holes.md).
-The MINI-1-H4X module replaces WROOM-02. Its antenna tip is flush with the right
-board edge, with a resized milled notch. [Compatibility and firmware requirements](../docs/esp32-mini.md).
-The earlier MINI package has no mounts; the battery-pads package is the archived WROOM version.
-Includes side-entry battery J2 **JST SM02B-SRSS-TB / C160402**, 2.95 mm high, requiring an SH lead.
-J6 adds two labeled 2.2 × 2.5 mm pads for directly soldered battery leads, in parallel
-with J2, with no stencil paste or assembly component. Use one battery connection.
-It also includes the October display-pin correction and USB redesign. Gerbers, drill/stencil data, 119-part
-assembly BOM/CPL and drawings are regenerated together. See its
-[assembly instructions](mounting-2026-10-08/README.md) and the
-[connector review](../docs/battery-connector.md). Revised USB/display hardware
-still requires bench validation; supplier CAM and placement acceptance remain pending.
+Includes the latest battery notch and placement, artwork, six M2 holes, MINI-1,
+display/USB corrections, and restored rev-A NFC geometry and manufacturing process.
+Use the [production instructions](production-2026-10-08/README.md): **black mask,
+JLC04161H-3313, filled/capped vias**. The earlier generic-stackup/open-via settings
+are superseded. All 119 CPL anchors and all 413 assembly pad coordinates are
+independently checked. Physical USB/display qualification and supplier preview
+acceptance remain distinct from the completed file checks.
+
+Earlier October packages, including `mounting-2026-10-08`, are historical and
+must not be used for this order. They predate the latest geometry or NFC restoration.
 
 The historical **[routing-review-2026-09-22-package.zip](routing-review-2026-09-22-package.zip)**
 contains ordinary unfilled-via Gerbers,

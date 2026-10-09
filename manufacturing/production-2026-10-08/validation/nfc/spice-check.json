@@ -1,0 +1,19 @@
+{
+  "status": "pass",
+  "engine": "ngspice shared library bundled with KiCad",
+  "version_output": [
+    "stdout ** ngspice-45.2 shared library",
+    "stdout ** ngspice-45.2 : Circuit level simulation program"
+  ],
+  "frequency_Hz": 13560000.0,
+  "full_differential_Z_ohm": [
+    18.837651170226895,
+    -0.1402741344119984
+  ],
+  "half_circuit_Z_ohm": [
+    18.8376511702052,
+    -0.14027413435957214
+  ],
+  "relative_difference": 3.011884932053176e-12,
+  "note": "Numerical agreement validates circuit math only, not the assumed antenna parameters."
+}

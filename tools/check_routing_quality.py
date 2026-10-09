@@ -140,6 +140,9 @@ def audit(data):
         if angle < 89.9:
             acute.append({'net': net, 'layer': layer, 'xy': xy, 'angle_degrees': round(angle, 3)})
 
+    weak_pairs = sorted(sorted([items[i]['id'], items[j]['id']])
+                        for i in range(len(items)) for j in same[i]
+                        if i < j and robust.root(i) != robust.root(j))
     checks = {'tracks_follow_45_degree_convention': not non45,
               'all_track_ends_have_full_entries_or_centreline_joins': not shallow,
               'no_connections_depend_only_on_edge_overlap': not weak_bridges,
@@ -157,6 +160,7 @@ def audit(data):
                            'exposed_short_segments': len(short)},
             'non45': non45, 'shallow_ends': shallow, 'weak_connections': weak_bridges,
             'duplicates': duplicates, 'acute_bends': acute, 'exposed_short_segments': short,
+            'weak_pairs': weak_pairs,
             'scope': 'Copper geometry; native DRC additionally checks clearances, filled zones and netlist parity. No SI, RF, thermal or yield guarantee.'}
 
 

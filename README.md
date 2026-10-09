@@ -3,23 +3,15 @@
 An ESP32-C3 hardware prototype with USB-C, battery charging, PN7160 NFC,
 an SSD1309 OLED interface, and a detachable I²C keyboard section.
 
-**Status: Rev-A bring-up found a reversed display interface and USB backfeed.**
-The editable design now corrects and reroutes all 24 display contacts at the
-unchanged socket orientation. The USB redesign replaces the VBUS-steering ESD
-array with ground-referenced protection and adds a VBUS-controlled data switch.
-It uses the accepted diagnosis from the existing measurements; revised hardware
-still needs bench validation. See the [USB fix](docs/bringup/usb-backfeed-fix.md)
-and [display correction and measurements](docs/bringup/rev-b-display-and-usb.md).
-The editable PCB also moves J2 **4 mm inward** and adds a **5 × 3 mm battery
-cable notch with 0.5 mm inner and outer corner radii**. Existing manufacturing
-archives predate this change; regenerate fabrication and placement files before
-ordering. See the [battery cable detail](docs/battery-connector.md).
-The [October prototype package](manufacturing/mounting-2026-10-08-package.zip)
-includes six M2 mounting holes, the MINI-1 module with a flush antenna cutout, these corrections,
-the side-entry battery connector and labeled J6
-pads for directly soldered battery leads. Revised
-hardware still needs bench validation. September archives are historical.
-The ordinary unfilled vias and 17.70 × 5.00 mm ribbon access remain.
+**Current production files: [production-2026-10-08-package.zip](manufacturing/production-2026-10-08-package.zip).**
+The current board restores the tested rev-A NFC circuit and local layout exactly,
+including its small vias, filled/capped fabrication and JLC04161H-3313 stackup.
+It retains the corrected display mapping, USB isolation redesign, MINI-1 module,
+six M2 holes, inward battery connector and rounded cable notch.
+[Production instructions and validation scope](docs/production-release.md).
+All previous October packages are superseded for this order. Revised USB/display
+operation still requires bench validation; the user reports rev-A NFC worked
+without tuning.
 
 ![Nucula v2 PCB layout](docs/pcb/top.png)
 
@@ -56,7 +48,7 @@ routed, with all components on top and the NFC circuitry inside the coil.
 - [Rev-A bench procedure with enlarged probe-pad map (PDF)](docs/bringup/rev-A-usb-bench-guide.pdf)
 - [Routing repair, before/after comparison and geometry audit](docs/routing-review.md)
 - [Standard manufacturing package and order settings](docs/manufacturing-release.md)
-- [Current prototype manufacturing ZIP](manufacturing/mounting-2026-10-08-package.zip)
+- [Current prototype manufacturing ZIP](manufacturing/production-2026-10-08-package.zip)
 - [Side-entry battery connector selection, polarity and assembly instructions](docs/battery-connector.md)
 - [Circuit simulation screening, findings and model limits](docs/simulation/README.md)
 - [Schematic PDF](docs/schematic.pdf)
@@ -92,8 +84,8 @@ its symbol and electrical footprint are included.
 All 130 schematic components have assigned footprints; the PCB also includes
 two breakaway footprints and six mechanical mounting holes. A1 is a reusable four-turn
 40 × 40 mm PCB coil with its bottom return and copper keepout included. The NFC
-tree now has calculated starting values, 0805 manual tuning pads and TX isolation
-links. [A separate bare-coil coupon](prototypes/nfc-antenna/nfc-antenna.kicad_pro)
+tree retains the rev-A values, 0805 tuning pads and TX isolation links; no retuning
+change was made for this release. [A separate bare-coil coupon](prototypes/nfc-antenna/nfc-antenna.kicad_pro)
 is available for fabrication and measurement. The OLED now uses the **24-contact
 CON24 pinout** in the reference breakout schematic, superseding the earlier
 26-contact assumption. DS1 is a Hirose FH12A-24S-0.5SH(55), 0.5 mm top-contact socket (C506794).
@@ -124,18 +116,20 @@ capacitor ordering codes and larger bulk footprints are selected using archived
 manufacturer DC-bias curves. Run `python3 tools/check_component_choices.py` to
 reproduce those estimates. RF tuning, oscillator qualification and power
 measurements remain prototype bring-up work. **Placement and routing are complete**
-for the agreed USB-powered prototype. Native PCB DRC has zero errors and zero
-unconnected items; the layout report records 43 reviewed cosmetic warnings
-and the remaining prototype measurements. All six independent routing-quality
-checks pass after repairing the free-form routing regression. The 261 scoped
-SPICE cases were rerun.
+for the agreed USB-powered prototype. Native PCB DRC has zero errors and zero unconnected or schematic-parity findings.
+The 33 reviewed warnings are cosmetic. The exact NFC comparison covers 43
+footprints and 366 routing objects. Strict routing findings inherited from the
+proven NFC layout are disclosed and preserved; there are no new routing findings.
+The 261 preflight and 57 USB SPICE cases were rerun, plus the independent NFC
+numerical cross-check. [Full scope](docs/production-release.md).
 
 Git tracks design files, project libraries and documentation. Local editor state,
 lock files, automatic backups and KiCad's `.history` are ignored.
 
 Manufacturing files now target five bare four-layer boards, nominal 1.6 mm,
-green mask, white legend and ENIG using the supplier's standard stackup.
-Routing vias are 0.30 mm drill / 0.70 mm land, without filling or capping.
+black mask, white legend and ENIG using the rev-A JLC04161H-3313 stackup.
+All small plated round holes require epoxy filling and copper capping; the
+restored NFC uses 0.20 mm drill / 0.45 mm land and 0.30 / 0.60 mm vias.
 There is no controlled-impedance requirement. The October package includes
 119-part placements, stencil data, assembly drawings, and JLCPCB BOM/CPL inputs.
 Its BOM includes the USB redesign and side-entry J2. J6 direct battery wire pads

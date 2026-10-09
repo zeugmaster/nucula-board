@@ -1,0 +1,35 @@
+{
+  "source_commit": "f26e233",
+  "source_board_sha256": "b0ce1ca4c0d21ab13d8bbfc00cbf26308f6b054d0c4042b27a7a3db4dbd03b9c",
+  "reason": "Six M2 clearance holes at the four main-board corners and two lower keyboard corners. Move R16 from (104,120) to (105,115.75), retaining 90-degree orientation, values and nets. Other footprints and the routed outline are preserved.",
+  "footprints": {
+    "H1": {
+      "from_sha256": null,
+      "to_sha256": "d2ae5022d95326e9e04687eb48395363dae18402e69697278e0072fd788b2104"
+    },
+    "H2": {
+      "from_sha256": null,
+      "to_sha256": "41d3ee01af2c0a464cbf8b8055a3d5fdde6a77958fe72ed962fa6c79060790d9"
+    },
+    "H3": {
+      "from_sha256": null,
+      "to_sha256": "316991b51c9d3f57457e8bf0df9655d4e69f7764b051ea436207017e82a33db7"
+    },
+    "H4": {
+      "from_sha256": null,
+      "to_sha256": "bd32b857a885f239e2865f7bf9fb4298d6abe447945a5aeeedd4014da589ca82"
+    },
+    "H5": {
+      "from_sha256": null,
+      "to_sha256": "3b2a28ca4d7b15e6fa9227ce35b902453478d9051d9d4b6b1acdfa704932badd"
+    },
+    "H6": {
+      "from_sha256": null,
+      "to_sha256": "8b22712cc4e36898b25971b26529a694f7da502ebf61bd34b320edf54d346539"
+    },
+    "R16": {
+      "from_sha256": "d0f3795c774af258db104d11563a175131e9fcd8c6f7b479a121a012e877d3a8",
+      "to_sha256": "d7cb3317a3a6ecae4c6bba609d23134d85b16233816b62f6e543c8abf6a0bbef"
+    }
+  }
+}

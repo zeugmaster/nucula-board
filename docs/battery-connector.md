@@ -128,16 +128,17 @@ origin (50,160) and Y upward:
 | J6 pin 2, GND wire pad | 2.700 | 64.000 | — |
 
 CPL coordinates preserve the KiCad anchor without assumed centre offsets.
-Use the pad-coordinate CSV for an independent preview check. **Existing
-manufacturing archives, including mounting-2026-10-08, predate this connector
-move and notch.** Generate a new manufacturing export from the current PCB
-before ordering; the archives retain their original outline and J2 coordinates.
+Use the pad-coordinate CSV and enlarged placement-reference drawing for an
+independent preview check. **production-2026-10-08 includes this connector move
+and notch.** Earlier packages, including mounting-2026-10-08, retain the old
+outline and J2 coordinates and must not be used for the current order.
 
 The [connector audit](assembly/battery-connector-check.json) checks exact part,
 land dimensions, polarity, orientation, model, paste and plug approach.
 The audit also checks notch dimensions, all four corner radii and removed
 material. DRC with copper refill has zero errors, zero unconnected items and
-zero schematic-parity findings. The same 43 existing cosmetic warnings remain.
-All six independent routing checks pass. Manufacturing Gerber readback reports
-belong to their archived exports and do not cover this newer notch. The October
-USB/display redesigns still require testing on revised hardware.
+zero schematic-parity findings. There are 33 reviewed cosmetic warnings.
+The current production Gerber readback checks the notch, all connector lands,
+and all 119 placement anchors. The routing regression preserves only identical
+rev-A NFC findings. The October USB/display redesigns still require testing
+on revised hardware.

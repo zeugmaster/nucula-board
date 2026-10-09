@@ -1,5 +1,7 @@
 # Standard-fabrication revision and OLED ribbon access
 
+**Superseded for the current order:** use [production-2026-10-08](production-release.md), which restores rev-A NFC and requires its filled/capped vias, black mask and JLC04161H-3313 stackup. The specifications below describe earlier releases.
+
 The current release is **mounting-2026-10-08**, adding [six M2 mounting holes](mounting-holes.md). The MINI revision adds the smaller
 ESP32-C3-MINI-1-H4X and flush antenna cutout; see [MINI checks](esp32-mini.md).
 The sections below also retain the September fabrication history. It retains the fabrication

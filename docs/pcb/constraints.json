@@ -78,8 +78,8 @@
     ],
     "U6": [
       75.9375,
-      63.55,
-      0.0
+      69.75,
+      0
     ],
     "U8": [
       60.15,
@@ -2759,5 +2759,6 @@
       "ae198ebd-3e95-4d23-a354-b994ef4c1d3d"
     ]
   ],
-  "reviewed_existing_silk_mask_note": "R15 reference against VBAT_ADC via and R17 reference against U3 pad 51: identical in native DRC before/after the cable-notch edit; these items and footprint geometries are unchanged. Supplier plots clip silkscreen against mask."
+  "reviewed_existing_silk_mask_note": "R15 reference against VBAT_ADC via and R17 reference against U3 pad 51: identical in native DRC before/after the cable-notch edit; these items and footprint geometries are unchanged. Supplier plots clip silkscreen against mask.",
+  "nfc_revision_note": "Restore exact submitted rev-A NFC design at user request; see nfc-rev-a-check.json. Filled/capped small vias and submitted stackup required."
 }

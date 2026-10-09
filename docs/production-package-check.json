@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "release": "production-2026-10-08",
+  "board_sha256": "8852e059ae1ec0fe568638ea75a2c05ff7038b7050331c42e5a82f5bb76be64d",
+  "package_sha256": "41d191af4095ca5651bf01b492d70ea011e08d44e0d3bb3c2d0e0ca622ff3555",
+  "package_bytes": 27854637,
+  "manifested_files": 131,
+  "source_inputs_checked": 34,
+  "ERC_violations": 0,
+  "DRC_errors": 0,
+  "unconnected": 0,
+  "schematic_parity_findings": 0,
+  "reviewed_DRC_warnings": 33,
+  "placements_checked": 119,
+  "assembly_pads_checked": 413,
+  "SPICE_cases": 318,
+  "independent_NFC_SPICE_crosscheck": "pass",
+  "NFC_keepout_fixtures": 12,
+  "NFC_Gerber_copper_and_mask_comparison": "pass, all four copper and both mask layers",
+  "supplier_preview_approved": false,
+  "revised_hardware_bench_qualified": false,
+  "scope": "Production-file integrity and documented engineering checks; supplier CAM/assembly acceptance and physical qualification are separate."
+}

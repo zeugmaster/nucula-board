@@ -1,5 +1,7 @@
 # Standard fabrication release — five bare boards
 
+**Superseded for the current order:** use [production-2026-10-08](production-release.md), which restores rev-A NFC and requires its filled/capped vias, black mask and JLC04161H-3313 stackup. The specifications below describe earlier releases.
+
 Current MCU revision (8 October 2026): **ESP32-C3-MINI-1-H4X / C41349510**.
 The antenna is flush with the right PCB edge; the smaller milled notch includes
 1 mm side clearance and 0.5 mm internal corner radii. GPIO functions and the

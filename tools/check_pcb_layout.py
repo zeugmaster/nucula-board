@@ -226,7 +226,10 @@ def run(board_path, constraints, drc_path):
     advisory_names = set(constraints.get("advisory_checks", []))
     assert advisory_names <= set(checks), "Unknown advisory check"
     advisory = {name: checks.pop(name) for name in sorted(advisory_names)}
-    return {"board": board_path.name, "checks": checks, "advisory_checks": advisory,
+    return {"board": board_path.name,
+            "board_sha256": hashlib.sha256(board_path.read_bytes()).hexdigest(),
+            "drc_sha256": hashlib.sha256(drc_path.read_bytes()).hexdigest() if drc_path else None,
+            "checks": checks, "advisory_checks": advisory,
             "passed": all(checks.values()),
             "footprints": len(fps), "tracks": len(tracks), "vias": len(vias),
             "fixed_placements": fixed, "nfc_courtyard_outside_area_mm2": outside,

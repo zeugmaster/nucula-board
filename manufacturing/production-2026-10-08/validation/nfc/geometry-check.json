@@ -1,0 +1,17 @@
+{
+  "status": "pass",
+  "outer_winding_copper_mm": [
+    40,
+    40
+  ],
+  "trace_width_mm": 0.5,
+  "minimum_nonadjacent_trace_gap_mm": {
+    "F.Cu": 0.29999999999999716,
+    "B.Cu": null
+  },
+  "front_segments": 25,
+  "back_segments": 2,
+  "plated_return_holes": 2,
+  "each_layer_path_connected": true,
+  "no_unintended_same_layer_turn_contacts": true
+}

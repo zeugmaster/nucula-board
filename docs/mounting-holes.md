@@ -69,5 +69,5 @@ locators and 28 0.60 mm mouse bites.
 [Footprint amendment record](pcb/mounting-footprint-amendments.json) ·
 [Native DRC](pcb/drc.json) · [Routing audit](pcb/routing-quality.json)
 
-Use the **mounting-2026-10-08** manufacturing package. The earlier MINI and
+Use the **production-2026-10-08** manufacturing package. The earlier MINI and
 battery/connector packages remain unchanged historical records.

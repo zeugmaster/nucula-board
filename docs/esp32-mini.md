@@ -88,8 +88,9 @@ The manufacturer's antenna-side ground lands end at x = 104.30 mm, leaving
 **0.30 mm copper-to-cutout clearance**. A custom DRC rule requires at least
 0.25 mm for U3 ground lands only. Other copper retains the existing 0.50 mm
 edge rule. This dimension and the milled notch must be accepted by supplier CAM.
-Ordinary 0.30/0.70 mm open vias, the OLED ribbon access, NFC loop and keyboard
-breakaway remain. The antenna keepout prohibits pads, tracks, vias and pours
+The OLED ribbon access and keyboard breakaway remain. The current production
+release restores the rev-A NFC layout and requires filled/capped vias and the
+rev-A stackup; see the production instructions. The antenna keepout prohibits pads, tracks, vias and pours
 on all four copper layers. Ground stitching sits on the module side of the cutout.
 
 Espressif recommends this open notch arrangement when the antenna cannot
@@ -121,5 +122,5 @@ resized board outline.
 - [Exact selected JLCPCB part](https://jlcpcb.com/partdetail/Espressif-ESP32_C3_MINI_1H4X/C41349510)
 
 Run `tools/check_mini_module.py` with KiCad's Python after schematic export and
-native DRC with zone refill. Use the **mounting-2026-10-08** manufacturing package;
+native DRC with zone refill. Use the **production-2026-10-08** manufacturing package;
 the previous MINI and WROOM packages remain historical records.

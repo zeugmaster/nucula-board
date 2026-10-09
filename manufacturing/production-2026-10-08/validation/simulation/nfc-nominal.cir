@@ -1,0 +1,50 @@
+Nucula current schematic: passive NFC network
+* Ideal balanced 1 V differential AC excitation; no PN7160 macro-model.
+* Coil RL || C is an assumed scenario, NOT extracted from the routed PCB.
+* Coilcraft loss frozen at 13.56 MHz; sweeps are approximate away from f0.
+VP n19 0 DC 0 AC .5 0
+VN n20 0 DC 0 AC .5 180
+R41 n19 n27 1e-06
+R42 n20 n26 1e-06
+R_dc_L2 n27 x_L2 .288
+R_skin_L2 x_L2 y_L2 0.572243488036343
+L2 y_L2 n29 1.488e-07
+C_par_L2 x_L2 z_L2 .135p
+R_par_L2 z_L2 n29 10
+R_dc_L3 n26 x_L3 .288
+R_skin_L3 x_L3 y_L3 0.572243488036343
+L3 y_L3 n28 1.488e-07
+C_par_L3 x_L3 z_L3 .135p
+R_par_L3 z_L3 n28 10
+R_esr_C28 n16 x_C28 .03
+C28 x_C28 n62 1e-09
+R_esr_C29 n17 x_C29 .03
+C29 x_C29 n63 1e-09
+R_esr_C30 n29 x_C30 .03
+C30 x_C30 0 3.3e-10
+R_esr_C31 0 x_C31 .03
+C31 x_C31 n28 3.3e-10
+R_esr_C32 n29 x_C32 .03
+C32 x_C32 n31 6.8e-11
+R_esr_C33 n28 x_C33 .03
+C33 x_C33 n30 6.8e-11
+R_esr_C36 n31 x_C36 .03
+C36 x_C36 0 1e-10
+R_esr_C37 0 x_C37 .03
+C37 x_C37 n30 1e-10
+R_esr_C53 n29 x_C53 .03
+C53 x_C53 0 3.3e-11
+R_esr_C54 0 x_C54 .03
+C54 x_C54 n28 3.3e-11
+R25 n62 n29 2200
+R26 n63 n28 2200
+R27 n31 n60 2.7
+R28 n30 n61 2.7
+Ra n60 coil_inner 1.5
+La coil_inner n61 1.55900493254921e-06
+Ca n60 n61 2e-12
+R_rxn n16 0 2200
+R_rxp n17 0 2200
+.options reltol=1e-7 abstol=1e-12
+.ac lin 1 13.56Meg 13.56Meg
+.end

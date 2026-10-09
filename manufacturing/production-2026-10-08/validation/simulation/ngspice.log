@@ -1,0 +1,1398 @@
+stderr Warning: can't find the initialization file spinit.
+stdout ******
+stdout ** ngspice-45.2 shared library
+stdout ******
+stdout ******
+stdout ** ngspice-45.2 : Circuit level simulation program
+stdout ** Compiled with KLU Direct Linear Solver
+stdout ** The U. C. Berkeley CAD Group
+stdout ** Copyright 1985-1994, Regents of the University of California.
+stdout ** Copyright 2001-2025, The ngspice team.
+stdout ** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html
+stdout ** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html
+stdout ******
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  1.35600e+07
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 801
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 801
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula current schematic: passive nfc network
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 801
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula r19 i2c pull-up release, cbus=1e-10
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout n1                                           3
+stdout n4                                    0.129199
+stdout ctrl                                         1
+stdout vctrl#branch                                 0
+stdout vrail#branch                       -0.00129199
+ Reference value :  0.00000e+00
+stdout No. of Data Rows : 5031
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula r19 i2c pull-up release, cbus=2e-10
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout n1                                           3
+stdout n4                                    0.129199
+stdout ctrl                                         1
+stdout vctrl#branch                                 0
+stdout vrail#branch                       -0.00129199
+stdout No. of Data Rows : 5033
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula r19 i2c pull-up release, cbus=4e-10
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout n1                                           3
+stdout n4                                    0.129199
+stdout ctrl                                         1
+stdout vctrl#branch                                 0
+stdout vrail#branch                       -0.00129199
+stdout No. of Data Rows : 5028
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula r19 i2c pull-up release, cbus=6e-10
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout n1                                           3
+stdout n4                                    0.129199
+stdout ctrl                                         1
+stdout vctrl#branch                                 0
+stdout vrail#branch                       -0.00129199
+stdout No. of Data Rows : 5032
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula r20 i2c pull-up release, cbus=1e-10
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout n1                                           3
+stdout n3                                    0.129199
+stdout ctrl                                         1
+stdout vctrl#branch                                 0
+stdout vrail#branch                       -0.00129199
+stdout No. of Data Rows : 5031
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula r20 i2c pull-up release, cbus=2e-10
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout n1                                           3
+stdout n3                                    0.129199
+stdout ctrl                                         1
+stdout vctrl#branch                                 0
+stdout vrail#branch                       -0.00129199
+stdout No. of Data Rows : 5033
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula r20 i2c pull-up release, cbus=4e-10
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout n1                                           3
+stdout n3                                    0.129199
+stdout ctrl                                         1
+stdout vctrl#branch                                 0
+stdout vrail#branch                       -0.00129199
+stdout No. of Data Rows : 5028
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula r20 i2c pull-up release, cbus=6e-10
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout n1                                           3
+stdout n3                                    0.129199
+stdout ctrl                                         1
+stdout vctrl#branch                                 0
+stdout vrail#branch                       -0.00129199
+stdout No. of Data Rows : 5032
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula esp-enable passive release, +r and +c tolerance
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Operating point simulation skipped by 'uic',
+stdout now using transient initial conditions.
+stdout No. of Data Rows : 10016
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula oled-reset passive release, +r and +c tolerance
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Operating point simulation skipped by 'uic',
+stdout now using transient initial conditions.
+stdout No. of Data Rows : 10018
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula battery sense divider startup, +r and +c tolerance
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Operating point simulation skipped by 'uic',
+stdout now using transient initial conditions.
+stdout No. of Data Rows : 15018
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula buck: ideal regulated dc operating point
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula buck: ideal regulated dc operating point
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula buck: ideal regulated dc operating point
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula buck: ideal regulated dc operating point
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula buck: ideal regulated dc operating point
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula buck: ideal regulated dc operating point
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula buck: ideal regulated dc operating point
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula buck: ideal regulated dc operating point
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula buck: ideal regulated dc operating point
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula buck: ideal regulated dc operating point
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula buck: ideal regulated dc operating point
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula buck: ideal regulated dc operating point
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula buck: ideal regulated dc operating point
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula buck: ideal regulated dc operating point
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula buck: ideal regulated dc operating point
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula buck: ideal regulated dc operating point
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula oled-boost: ideal regulated dc operating point
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula oled-boost: ideal regulated dc operating point
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula oled-boost: ideal regulated dc operating point
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula oled-boost: ideal regulated dc operating point
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula oled-boost: ideal regulated dc operating point
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula oled-boost: ideal regulated dc operating point
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula oled-boost: ideal regulated dc operating point
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula oled-boost: ideal regulated dc operating point
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula oled-boost: ideal regulated dc operating point
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula oled-boost: ideal regulated dc operating point
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula oled-boost: ideal regulated dc operating point
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula oled-boost: ideal regulated dc operating point
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula oled-boost: ideal regulated dc operating point
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula oled-boost: ideal regulated dc operating point
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula oled-boost: ideal regulated dc operating point
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
+stdout Note: No compatibility mode selected!
+stdout Circuit: nucula oled-boost: ideal regulated dc operating point
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 1
